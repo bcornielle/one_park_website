@@ -1,0 +1,6 @@
+driver: smtp
+host: smtp.gmail.com
+port: 587
+encryption: tls
+username: site.oneparkfinancial@gmail.com
+password: oneparkfinancial998

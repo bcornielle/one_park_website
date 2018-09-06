@@ -1,0 +1,16 @@
+title: Post
+hide: true
+sections:
+  main:
+    display: Main
+    fields:
+      title:
+        type: text
+        display: Title
+        localizable: true
+      content:
+        type: markdown
+        display: Content
+        localizable: true
+taxonomies: true
+create_title: 'New Post'

@@ -1,0 +1,14 @@
+start_page: dashboard
+date_format: n/d/Y
+pagination_size: 10
+widgets:
+  -
+    type: collection
+    collection: blog
+    limit: 5
+    width: full
+  -
+    type: collection
+    collection: press
+    limit: 5
+    width: full

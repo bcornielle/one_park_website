@@ -1,0 +1,27 @@
+routes:
+  /blog/tags: blog/taxonomies
+  /blog/feed:
+    layout: feed
+    template: feeds/blog
+    content_type: atom
+  /press/feed:
+    layout: feed
+    template: feeds/press
+    content_type: atom
+  /search: search/search
+  /login: auth/login
+  /register: auth/register
+  /forgot-password: auth/password-forgot
+  /reset-password: auth/password-reset
+collections:
+  blog:
+    en: '{slug}'
+    es: '{slug}'
+  press:
+    en: '/press/{slug}'
+    es: '/medios/{slug}'
+  lp:
+    en: '/lp/{slug}'
+    es: '/lp/{slug}'
+taxonomies:
+  tags: '/blog/tags/{slug}'

@@ -1,0 +1,61 @@
+d32e14fb-08c9-44c2-aaf8-21200852bafd:
+  title: God
+  slug: god
+  permissions:
+    - super
+eed6d071-91e2-404e-a017-bf3efc280ff8:
+  title: Admin
+  slug: admin
+  permissions:
+    - 'cp:access'
+    - 'content:view_drafts_on_frontend'
+    - resolve_duplicates
+    - 'pages:view'
+    - 'pages:edit'
+    - 'pages:create'
+    - 'pages:delete'
+    - 'pages:reorder'
+    - 'collections:lp:view'
+    - 'collections:lp:edit'
+    - 'collections:lp:create'
+    - 'collections:lp:delete'
+    - 'collections:blog:view'
+    - 'collections:blog:edit'
+    - 'collections:blog:create'
+    - 'collections:blog:delete'
+    - 'collections:press:view'
+    - 'collections:press:edit'
+    - 'collections:press:create'
+    - 'collections:press:delete'
+    - 'taxonomies:tags:view'
+    - 'taxonomies:tags:edit'
+    - 'taxonomies:tags:create'
+    - 'taxonomies:tags:delete'
+    - 'globals:global:view'
+    - 'globals:global:edit'
+    - 'assets:main:view'
+    - 'assets:main:edit'
+    - 'assets:main:create'
+    - 'assets:main:delete'
+    - forms
+    - 'users:view'
+    - 'users:edit'
+    - 'users:create'
+    - 'users:delete'
+    - 'users:edit-passwords'
+    - 'users:edit-roles'
+df978c70-ff4d-4f31-86b2-079fcd559c7b:
+  title: Marketer
+  slug: marketer
+  permissions:
+    - 'cp:access'
+    - 'content:view_drafts_on_frontend'
+    - resolve_duplicates
+    - 'collections:blog:view'
+    - 'collections:blog:edit'
+    - 'collections:blog:create'
+    - 'collections:blog:delete'
+    - 'collections:press:view'
+    - 'collections:press:edit'
+    - 'collections:press:create'
+    - 'collections:press:delete'

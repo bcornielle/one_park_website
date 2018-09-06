@@ -1,0 +1,29 @@
+<main>
+    {{ FormStackAddon:qualification }}
+        {{ if !status }}
+            {{ redirect to="{ url }" }}
+        {{ /if }}
+        <section id="hero">
+            <div class="container">
+                <div class="description">
+                    <h1>{{ title }}</h1>
+                </div>
+            </div>
+        </section>
+        <section id="form">
+            <div class="container">
+                <div class="row">
+                    <div class="form">
+                        <script type="text/javascript" src="https://oneparkfinancial.formstack.com/forms/js.php/{{ form }}"></script>
+                        <noscript>
+                            <a href="https://oneparkfinancial.formstack.com/forms/{{ form }}" title="Online Form"></a>
+                        </noscript>
+                    </div>
+                    <div class="legal-notice">
+                        <p>By clicking “Get Approved Now”, you expressly consent to receive phone calls and text messages – Msg and data rates may apply – from OPF at the number you provided above. Calls may be generated using an autodialer and may contain pre-recorded messages. Consent is not a required condition of purchase. Opt out at any time. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    {{ /FormStackAddon:qualification }}
+</main>

@@ -1,0 +1,89 @@
+body {
+  background: $white;
+  &#statamic {
+    .cp-head {
+      padding: 24px 24px 24px 0;
+      .logo {
+        display: none;
+      }
+    }
+    .application-grid {
+      border-top: solid 1px $border-color;
+      padding: 30px 0 0;
+      a {
+        &:focus, &:hover {
+          outline: none;
+          box-shadow: none;
+          color: $brand-secondary;
+        }
+      }
+      .nav-main {
+        > ul {
+          > li {
+            &.active {
+              border-left: 3px solid $brand-primary;
+            }
+          }
+          .active {
+            > a {
+              color: $brand-primary;
+            }
+          }
+        }
+      }
+      .page-wrapper {
+        hr {
+          margin: 0;
+        }
+        .no-results {
+          h3 {
+            display: none;
+          }
+        }
+      }
+      .sticky {
+        background: $white;
+      }
+      .btn-primary {
+        background-color: $brand-primary;
+        border-bottom: 1px solid $brand-primary;
+      }
+      .btn-group {
+        &.btn-group-primary {
+          background-color: $brand-primary;
+          border-bottom: 1px solid $brand-primary;
+        }
+      }
+      .tabs {
+        a {
+          &.active {
+            color: $brand-secondary;
+            box-shadow: inset 0 3px $brand-primary, inset -1px 0 $brand-primary;
+          }
+        }
+      }
+      .column-sortable {
+        &.active {
+          &::before {
+            background: $brand-primary;
+          }
+        }
+      }
+      .content-type-entry {
+        .publish-form {
+          h1 {
+            span {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  &.outside {
+    display: flex;
+    padding: 0;
+    align-items: center;
+    background: $white;
+  }
+}

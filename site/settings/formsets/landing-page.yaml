@@ -1,0 +1,32 @@
+title: 'Landing Page'
+fields:
+  name:
+    display: Name
+    validate: 'required|min:2'
+  phone:
+    display: Phone
+    validate: required|integer
+  email:
+    display: Email
+    validate: required|email
+  business_name:
+    display: 'Business Name'
+    validate: string|required
+  monthly_revenue:
+    display: 'Monthly Revenue'
+    validate: required|integer
+columns:
+  - name
+  - phone
+  - email
+  - business_name
+  - monthly_revenue
+metrics:
+  -
+    type: total
+    label: Total
+email:
+  -
+    to: julian@krodox.com
+    subject: 'New Landing Page Submission'
+    reply_to: "{{ email }}"

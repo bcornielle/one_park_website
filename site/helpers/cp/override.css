@@ -1,0 +1,90 @@
+body {
+  background: #fff;
+}
+body#statamic {
+  width: 1170px;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+body#statamic .cp-head {
+  padding: 24px 24px 24px 0;
+}
+body#statamic .cp-head .logo {
+  display: none;
+}
+body#statamic .application-grid {
+  border-top: solid 1px #eeeeee;
+  padding: 30px 0 0;
+}
+body#statamic .application-grid a:focus,
+body#statamic .application-grid a:hover {
+  outline: none;
+  box-shadow: none;
+  color: #1d5077;
+}
+body#statamic .application-grid .nav-main > ul > li.active {
+  border-left: 3px solid #6EB95A;
+}
+body#statamic .application-grid .nav-main > ul .active > a {
+  color: #6EB95A;
+}
+body#statamic .application-grid .page-wrapper hr {
+  margin: 0;
+}
+body#statamic .application-grid .page-wrapper .no-results h3 {
+  display: none;
+}
+body#statamic .application-grid .sticky {
+  background: #fff;
+}
+body#statamic .application-grid .btn-primary {
+  background-color: #6EB95A;
+  border-bottom: 1px solid #6EB95A;
+}
+body#statamic .application-grid .btn-group.btn-group-primary {
+  background-color: #6EB95A;
+  border-bottom: 1px solid #6EB95A;
+}
+body#statamic .application-grid .tabs a.active {
+  color: #1d5077;
+  box-shadow: inset 0 3px #6EB95A, inset -1px 0 #6EB95A;
+}
+body#statamic .application-grid .column-sortable.active::before {
+  background: #6EB95A;
+}
+body#statamic .application-grid .content-type-entry .publish-form h1 span {
+  display: none;
+}
+body#statamic .site-warning-stripe {
+  background: #fff;
+  box-shadow: none;
+}
+body#statamic .site-warning-stripe .fill {
+  visibility: hidden;
+}
+body#statamic .application-grid .selectize-control.multi .selectize-input > div, .selectize-control.multi .selectize-input > div.active, .selectize-control.multi .selectize-input > div.focus {
+  background: #6EB95A;
+}
+
+body.outside {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  align-items: center;
+  background: #19354e;
+}
+body.outside .logo {
+  display: none;
+}
+body.outside .card {
+  border-radius: 0;
+}
+body.outside .card input[type=text], body.outside .card input[type=password] {
+  box-shadow: none;
+  border: solid 2px #eee;
+  background: #fff;
+  padding: 20px 10px;
+}

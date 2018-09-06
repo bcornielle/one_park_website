@@ -1,0 +1,22 @@
+sections:
+  main:
+    display: Main
+    fields:
+      title:
+        display: Title
+        type: text
+        localizable: true
+      slug:
+        display: Slug
+        type: text
+        localizable: true
+      content:
+        cheatsheet: false
+        restrict_assets: false
+        type: markdown
+        localizable: true
+        display: Content
+taxonomies: true
+title: 'Press Release'
+hide: true
+create_title: 'New Press Release'
