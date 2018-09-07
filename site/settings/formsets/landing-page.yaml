@@ -5,16 +5,16 @@ fields:
     validate: 'required|min:2'
   phone:
     display: Phone
-    validate: required|integer
+    validate: 'required|min:10'
   email:
     display: Email
-    validate: required|email
+    validate: 'required|email'
   business_name:
     display: 'Business Name'
-    validate: string|required
+    validate: 'string|required'
   monthly_revenue:
     display: 'Monthly Revenue'
-    validate: required|integer
+    validate: 'required|integer'
 columns:
   - name
   - phone
