@@ -60,6 +60,7 @@ class FormSubmissionListener extends Listener {
 		$params['visitor_content'] = null;
 		$params['ga_client_id'] = null;
 		$response = $this->pushToFormStack($form_id,$params);
+		\Log::info(print_r($response,true));
 		if (isset($response['id'])){
 			return $response['id'];
 		}else{
