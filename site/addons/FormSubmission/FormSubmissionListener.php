@@ -49,18 +49,17 @@ class FormSubmissionListener extends Listener {
 	private function pushContactSubmissionToFormStack($submission) {
 		$form_id = '2446707';
 		$params = array();
-		$params['name'] = $submission->get('firstname');
+		$params['name'] = $submission->get('firstname') . ' ' . $submission->get('lastname');
 		$params['business_name'] = $submission->get('business_name');
 		$params['contact_phone'] = $submission->get('phone');
 		$params['email'] = $submission->get('email');
-		$params['visitor_source'] = null;
-		$params['visitor_medium'] = null;
-		$params['visitor_campaign'] = null;
-		$params['visitor_term'] = null;
-		$params['visitor_content'] = null;
-		$params['ga_client_id'] = null;
+		$params['visitor_source'] = (isset($_COOKIE['Visitor_Source__c'])) ? $_COOKIE['Visitor_Source__c'] : null;
+		$params['visitor_medium'] = (isset($_COOKIE['Visitor_Medium__c'])) ? $_COOKIE['Visitor_Medium__c'] : null;
+		$params['visitor_campaign'] = (isset($_COOKIE['Visitor_Campaign__c'])) ? $_COOKIE['Visitor_Campaign__c'] : null;
+		$params['visitor_term'] = (isset($_COOKIE['Visitor_Term__c'])) ? $_COOKIE['Visitor_Term__c'] : null;
+		$params['visitor_content'] = (isset($_COOKIE['Visitor_Content__c'])) ? $_COOKIE['Visitor_Content__c'] : null;
+		$params['ga_client_id'] = (isset($_COOKIE['GA_Client_ID'])) ? $_COOKIE['GA_Client_ID'] : null;
 		$response = $this->pushToFormStack($form_id,$params);
-		\Log::info(print_r($response,true));
 		if (isset($response['id'])){
 			return $response['id'];
 		}else{
