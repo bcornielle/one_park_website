@@ -84,7 +84,7 @@ class FormSubmissionListener extends Listener {
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 		curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
 		curl_setopt($ch, CURLOPT_POSTFIELDS, $idleRequest);
-		\Log::info(print_r($idleRequest,true));
+		//\Log::info(print_r($idleRequest,true));
 		$result = curl_exec($ch);
 		return $result = json_decode($result, true);
 	}
