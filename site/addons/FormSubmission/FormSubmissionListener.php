@@ -49,8 +49,7 @@ class FormSubmissionListener extends Listener {
 	private function pushContactSubmissionToFormStack($submission) {
 		$form_id = '2446707';
 		$params = array();
-		$params['first'] = $submission->get('firstname');
-		$params['last'] = $submission->get('lastname');
+		$params['name'] = $submission->get('firstname');
 		$params['business_name'] = $submission->get('business_name');
 		$params['contact_phone'] = $submission->get('phone');
 		$params['email'] = $submission->get('email');
@@ -61,6 +60,7 @@ class FormSubmissionListener extends Listener {
 		$params['visitor_content'] = null;
 		$params['ga_client_id'] = null;
 		$response = $this->pushToFormStack($form_id,$params);
+		\Log::info(print_r($response,true));
 		if (isset($response['id'])){
 			return $response['id'];
 		}else{
@@ -74,7 +74,6 @@ class FormSubmissionListener extends Listener {
 		$json_url = $get_api_url .'?oauth_token='.$oauth_token;
 		$json = file_get_contents($json_url);
 		$data = json_decode($json, true);
-		\Log::info(print_r($data,true));
 		foreach($data as $key=>$val){
 			if(isset($params[$val['name']]) && $params[$val['name']]){
 				$idleRequest .= "&field_".$val['id']."=".$params[$val['name']];
