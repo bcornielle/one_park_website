@@ -2650,8 +2650,8 @@ body > header nav#branding > ul.branding > li.logo a.logo {
 }
 
 body > header nav#branding > ul.branding > li.phone {
-  -ms-flex-order: 3;
-  order: 3;
+  -ms-flex-order: 2;
+  order: 2;
   -ms-flex-item-align: end;
   align-self: flex-end;
 }
@@ -2676,6 +2676,14 @@ body > header nav#branding > ul.branding > li.phone a span.number {
   color: #6EB95A;
   padding-top: 3px;
   font-weight: 200;
+}
+
+body > header nav#branding > ul.branding > li.join-now {
+  -ms-flex-order: 3;
+  order: 3;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  display: none;
 }
 
 body > main {
@@ -5197,7 +5205,6 @@ body.section-lp > main section#hero .lp-form-wrapper #form.lp-form {
 body.section-lp > main section#hero .lp-form-wrapper #form.lp-form .phone-header {
   border: 2px solid #a2a2a2;
   border-radius: 6px;
-  margin: 1em;
   text-align: center;
 }
 
@@ -5214,7 +5221,8 @@ body.section-lp > main section#hero .lp-form-wrapper #form.lp-form .phone-header
 }
 
 body.section-lp > main section#hero .lp-form-wrapper #form.lp-form .phone-header .number {
-  margin: .4rem 0 .5em 0;
+  margin: 0 0 10px;
+  line-height: 1;
   font-size: 1.4em;
   display: block;
   color: #e88f0b;
@@ -5228,9 +5236,9 @@ body.section-lp > main section#hero .lp-form-wrapper #form.lp-form .phone-header
 body.section-lp > main section#hero .lp-form-wrapper #form.lp-form h2 {
   font-size: 1em;
   text-transform: uppercase;
-  line-height: 1.3;
   font-weight: 400;
   color: #fff;
+  padding: 15px 0 0;
 }
 
 body.section-lp > main section#hero .lp-form-wrapper #form.lp-form h2 strong {
@@ -5260,8 +5268,9 @@ body.section-lp > main section#hero .lp-form-wrapper #form.lp-form article .fiel
 body.section-lp > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=number] {
   border: none;
   outline: none;
-  border-radius: 0;
   background: #f7f7f7;
+  padding: 7px 10px;
+  border-radius: 6px;
 }
 
 body.section-lp > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=text]:focus,
@@ -7628,6 +7637,37 @@ body.section-lp > main section#call-to-action-3 {
     font-size: 1.3em;
   }
 
+  body.section-lp > header nav#branding > ul.branding > li.logo a.logo {
+    background-position: left;
+  }
+
+  body.section-lp > header nav#branding > ul.branding > li.join-now {
+    display: inline-block;
+  }
+
+  body.section-lp > header nav#branding > ul.branding > li.join-now a {
+    color: #19354e;
+    text-align: right;
+  }
+
+  body.section-lp > header nav#branding > ul.branding > li.join-now a span {
+    display: block;
+  }
+
+  body.section-lp > header nav#branding > ul.branding > li.join-now a span.text {
+    font-size: .9em;
+    font-weight: 900;
+    text-transform: none;
+  }
+
+  body.section-lp > header nav#branding > ul.branding > li.join-now a span.number {
+    font-size: .9em;
+    line-height: 1;
+    color: #6EB95A;
+    padding-top: 3px;
+    font-weight: 200;
+  }
+
   body.section-lp > main section#hero {
     background: #fff;
     text-align: center;
@@ -7690,6 +7730,7 @@ body.section-lp > main section#call-to-action-3 {
   }
 
   body.section-lp > main section#hero .lp-form-wrapper #form.lp-form .phone-header {
+    display: none;
     border-color: #fff;
   }
 
