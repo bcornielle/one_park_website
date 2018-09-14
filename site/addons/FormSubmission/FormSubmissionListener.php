@@ -49,7 +49,8 @@ class FormSubmissionListener extends Listener {
 	private function pushContactSubmissionToFormStack($submission) {
 		$form_id = '2446707';
 		$params = array();
-		$params['name'] = $submission->get('firstname') . ' ' . $submission->get('lastname');
+		$params['first_name'] = $submission->get('firstname');
+		$params['last_name'] = $submission->get('lastname');
 		$params['business_name'] = $submission->get('business_name');
 		$params['contact_phone'] = $submission->get('phone');
 		$params['email'] = $submission->get('email');
