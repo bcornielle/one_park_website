@@ -8,13 +8,13 @@ fields:
     validate: 'required|min:10'
   email:
     display: Email
-    validate: 'required|email'
+    validate: required|email
   business_name:
     display: 'Business Name'
-    validate: 'string|required'
+    validate: string|required
   monthly_revenue:
     display: 'Monthly Revenue'
-    validate: 'required|integer'
+    validate: required|integer
 columns:
   - name
   - phone
@@ -25,8 +25,3 @@ metrics:
   -
     type: total
     label: Total
-email:
-  -
-    to: julian@krodox.com
-    subject: 'New Landing Page Submission'
-    reply_to: "{{ email }}"
