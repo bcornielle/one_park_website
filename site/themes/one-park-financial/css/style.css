@@ -6808,7 +6808,7 @@ body.section-lp > main section#call-to-action-3 {
 
   body > header nav#branding > ul.branding {
     width: 100%;
-    padding: 5px 0 0;
+    padding: 25px 0 0;
     border: none;
   }
 
@@ -6821,6 +6821,36 @@ body.section-lp > main section#call-to-action-3 {
 
   body > header nav#branding > ul.branding > li.phone {
     display: none;
+  }
+
+  body > header nav#branding > ul.branding > li.join-now {
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    right: 60px;
+  }
+
+  body > header nav#branding > ul.branding > li.join-now a {
+    color: #19354e;
+    text-align: right;
+  }
+
+  body > header nav#branding > ul.branding > li.join-now a span {
+    display: block;
+  }
+
+  body > header nav#branding > ul.branding > li.join-now a span.text {
+    font-size: .9em;
+    font-weight: 900;
+    text-transform: none;
+  }
+
+  body > header nav#branding > ul.branding > li.join-now a span.number {
+    font-size: .9em;
+    line-height: 1;
+    color: #6EB95A;
+    padding-top: 3px;
+    font-weight: 200;
   }
 
   body > main section#article .heading h1 {
@@ -6962,7 +6992,7 @@ body.section-lp > main section#call-to-action-3 {
     -ms-flex-pack: center;
     justify-content: center;
     position: relative;
-    padding: 30px 0 0;
+    padding: 15px 0 0;
   }
 
   body.section-home > main section#hero .button-wrapper .btn {
@@ -7223,6 +7253,11 @@ body.section-lp > main section#call-to-action-3 {
     padding: 5px 10px;
   }
 
+  body.section-products > main section#hero,
+  body.section-nuestros-productos > main section#hero {
+    margin-top: 15px;
+  }
+
   body.section-products > main section#hero .description,
   body.section-nuestros-productos > main section#hero .description {
     text-align: center;
@@ -7286,6 +7321,11 @@ body.section-lp > main section#call-to-action-3 {
     clear: left;
   }
 
+  body.section-privacy-policy > main section#hero,
+  body.section-politica-de-privacidad > main section#hero {
+    margin-top: 15px;
+  }
+
   body.section-privacy-policy > main section#hero .description,
   body.section-politica-de-privacidad > main section#hero .description {
     text-align: center;
@@ -7301,6 +7341,11 @@ body.section-lp > main section#call-to-action-3 {
     font-size: 1.7em;
   }
 
+  body.section-terms-of-use > main section#hero,
+  body.section-condiciones-de-uso > main section#hero {
+    margin-top: 15px;
+  }
+
   body.section-terms-of-use > main section#hero .description,
   body.section-condiciones-de-uso > main section#hero .description {
     text-align: center;
@@ -7314,6 +7359,11 @@ body.section-lp > main section#call-to-action-3 {
   body.section-terms-of-use.es > main section#hero .description h1,
   body.section-condiciones-de-uso.es > main section#hero .description h1 {
     font-size: 1.7em;
+  }
+
+  body.section-faq > main section#hero,
+  body.section-preguntas-comunes > main section#hero {
+    margin-top: 15px;
   }
 
   body.section-faq > main section#hero .description,
@@ -7345,6 +7395,11 @@ body.section-lp > main section#call-to-action-3 {
     font-size: .8em;
     white-space: inherit;
     text-align: left;
+  }
+
+  body.section-contact > main section#hero,
+  body.section-contactenos > main section#hero {
+    margin-top: 15px;
   }
 
   body.section-contact > main section#hero .description,
@@ -7642,30 +7697,8 @@ body.section-lp > main section#call-to-action-3 {
   }
 
   body.section-lp > header nav#branding > ul.branding > li.join-now {
-    display: inline-block;
-  }
-
-  body.section-lp > header nav#branding > ul.branding > li.join-now a {
-    color: #19354e;
-    text-align: right;
-  }
-
-  body.section-lp > header nav#branding > ul.branding > li.join-now a span {
-    display: block;
-  }
-
-  body.section-lp > header nav#branding > ul.branding > li.join-now a span.text {
-    font-size: .9em;
-    font-weight: 900;
-    text-transform: none;
-  }
-
-  body.section-lp > header nav#branding > ul.branding > li.join-now a span.number {
-    font-size: .9em;
-    line-height: 1;
-    color: #6EB95A;
-    padding-top: 3px;
-    font-weight: 200;
+    top: 20px;
+    right: 15px;
   }
 
   body.section-lp > main section#hero {

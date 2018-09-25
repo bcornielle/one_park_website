@@ -3415,7 +3415,7 @@ body {
           > ul {
             &.branding {
               width: 100%;
-              padding: 5px 0 0;
+              padding: 25px 0 0;
               border: none;
               > li {
                 &.logo {
@@ -3430,6 +3430,31 @@ body {
                 }
                 &.phone {
                   display: none;
+                }
+                &.join-now {
+                  display: inline-block;
+                  position: absolute;
+                  top: 15px;
+                  right: 60px;
+                  a {
+                    color: $text-color;
+                    text-align: right;
+                    span {
+                      display: block;
+                      &.text {
+                        font-size: .9em;
+                        font-weight: 900;
+                        text-transform: none;
+                      }
+                      &.number {
+                        font-size: .9em;
+                        line-height: 1;
+                        color: $brand-primary;
+                        padding-top: 3px;
+                        font-weight: 200;
+                      }
+                    }
+                  }
                 }
               }
             }
@@ -3545,7 +3570,7 @@ body {
               align-items: center;
               justify-content: center;
               position: relative;
-              padding: 30px 0 0;
+              padding: 15px 0 0;
               .btn {
                 margin: 0;
                 padding: 0;
@@ -3776,6 +3801,7 @@ body {
       > main {
         section {
           &#hero {
+            margin-top: 15px;
             .description {
               text-align: center;
               padding: 30px 0;
@@ -3812,6 +3838,7 @@ body {
       > main {
         section {
           &#hero {
+            margin-top: 15px;
             .description {
               text-align: center;
             }
@@ -3839,6 +3866,7 @@ body {
       > main {
         section {
           &#hero {
+            margin-top: 15px;
             .description {
               text-align: center;
             }
@@ -3866,6 +3894,7 @@ body {
       > main {
         section {
           &#hero {
+            margin-top: 15px;
             .description {
               padding: 30px 0;
               text-align: center;
@@ -3897,6 +3926,7 @@ body {
       > main {
         section {
           &#hero {
+            margin-top: 15px;
             .description {
               padding: 30px 0;
               text-align: center;
@@ -4145,26 +4175,8 @@ body {
                     }
                   }
                   &.join-now {
-                    display: inline-block;
-                    a {
-                      color: $text-color;
-                      text-align: right;
-                      span {
-                        display: block;
-                        &.text {
-                          font-size: .9em;
-                          font-weight: 900;
-                          text-transform: none;
-                        }
-                        &.number {
-                          font-size: .9em;
-                          line-height: 1;
-                          color: $brand-primary;
-                          padding-top: 3px;
-                          font-weight: 200;
-                        }
-                      }
-                    }
+                    top: 20px;
+                    right: 15px;
                   }
                 }
               }
