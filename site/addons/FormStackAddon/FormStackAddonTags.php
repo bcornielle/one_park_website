@@ -101,9 +101,9 @@ class FormStackAddonTags extends Tags {
 								}
 							}
 						}
+						$job = (new FormStackJob($form_id,$this->oauth_token,$params['email'],$idleRequest . $idleString))->delay(720);
+						dispatch($job);
 					}
-					$job = (new FormStackJob($form_id,$this->oauth_token,$params['email'],$idleRequest . $idleString))->delay(720);
-					dispatch($job);
 					$response = [
 						'status'=> true,
 						'first_name' => (isset($params['first_name'])) ? $params['first_name'] : null,
