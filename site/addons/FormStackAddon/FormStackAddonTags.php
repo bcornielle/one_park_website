@@ -70,33 +70,35 @@ class FormStackAddonTags extends Tags {
 					$restRequest = null;
 					$idleRequest = null;
 					$idleString  =  null;
-					foreach($data as $key=>$val){
-						if($val['hidden'] == 1){
-							if($val['name'] == 'company_address'){
-								if (isset($params['company_address-address'])){
-									$restRequest .= "&field".$val['id']."-address=".$params['company_address-address'];
-									$idleString .= "&field_".$val['id']."[address]=".$params['company_address-address'];
+					if (is_array($data)){
+						foreach($data as $key=>$val){
+							if($val['hidden'] == 1){
+								if($val['name'] == 'company_address'){
+									if (isset($params['company_address-address'])){
+										$restRequest .= "&field".$val['id']."-address=".$params['company_address-address'];
+										$idleString .= "&field_".$val['id']."[address]=".$params['company_address-address'];
+									}
+									if (isset($params['company_address-address2'])){
+										$restRequest .= "&field".$val['id']."-address2=".$params['company_address-address2'];
+										$idleString .= "&field_".$val['id']."[address2]=".$params['company_address-address2'];
+									}
+									if (isset($params['company_address-state'])){
+										$restRequest .= "&field".$val['id']."-state=".$params['company_address-state'];
+										$idleString .= "&field_".$val['id']."[state]=".$params['company_address-state'];
+									}
+									if (isset($params['company_address-city'])){
+										$restRequest .= "&field".$val['id']."-city=".$params['company_address-city'];
+										$idleString .= "&field_".$val['id']."[city]=".$params['company_address-city'];
+									}
+									if (isset($params['company_address-zip'])){
+										$restRequest .= "&field".$val['id']."-zip=".$params['company_address-zip'];
+										$idleString .= "&field_".$val['id']."[zip]=".$params['company_address-zip'];
+									}
 								}
-								if (isset($params['company_address-address2'])){
-									$restRequest .= "&field".$val['id']."-address2=".$params['company_address-address2'];
-									$idleString .= "&field_".$val['id']."[address2]=".$params['company_address-address2'];
+								if(isset($params[$val['name']]) && $params[$val['name']]){
+									$restRequest .= "&field".$val['id']."=".$params[$val['name']];
+									$idleRequest .= "&field_".$val['id']."=".$params[$val['name']];
 								}
-								if (isset($params['company_address-state'])){
-									$restRequest .= "&field".$val['id']."-state=".$params['company_address-state'];
-									$idleString .= "&field_".$val['id']."[state]=".$params['company_address-state'];
-								}
-								if (isset($params['company_address-city'])){
-									$restRequest .= "&field".$val['id']."-city=".$params['company_address-city'];
-									$idleString .= "&field_".$val['id']."[city]=".$params['company_address-city'];
-								}
-								if (isset($params['company_address-zip'])){
-									$restRequest .= "&field".$val['id']."-zip=".$params['company_address-zip'];
-									$idleString .= "&field_".$val['id']."[zip]=".$params['company_address-zip'];
-								}
-							}
-							if(isset($params[$val['name']]) && $params[$val['name']]){
-								$restRequest .= "&field".$val['id']."=".$params[$val['name']];
-								$idleRequest .= "&field_".$val['id']."=".$params[$val['name']];
 							}
 						}
 					}
