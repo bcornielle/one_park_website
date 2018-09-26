@@ -105,7 +105,7 @@ class FormStackAddonTags extends Tags {
 						dispatch($job);
 					}
 					$response = [
-						'status'=> true,
+						'status'=> false,
 						'first_name' => (isset($params['first_name'])) ? $params['first_name'] : null,
 						'last_name' => (isset($params['last_name'])) ? $params['last_name'] : null,
 						'email' => (isset($params['email'])) ? $params['email'] : null,
@@ -129,6 +129,7 @@ class FormStackAddonTags extends Tags {
 						'data'=> $data,
 						'rest_request' => $restRequest,
 						'form' => $this->forms_en[1]['name'],
+						'url' => 'https://'.$_SERVER['SERVER_NAME'].'/complete?status=ok',
 					];
 				} else {
 					$response = [
