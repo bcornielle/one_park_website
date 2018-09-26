@@ -28,12 +28,15 @@
                                 <p>in capital for {{ business.name }}</p>
                             </div>
                             <br>
-                            <p>Please fill out the form below if you would like to complete your application online, otherwise, one of our agents will be with you shortly</p>
+                            <p style="display: none">Please fill out the form below if you would like to complete your application online, otherwise, one of our agents will be with you shortly</p>
+                            <p>Thank you for submitting your request. An agent will reach you soon.</p>
                         </div>
-                        <script type="text/javascript" src="https://oneparkfinancial.formstack.com/forms/js.php/{{ form }}?{{ rest_request }}"></script>
-                        <noscript>
-                            <a href="https://oneparkfinancial.formstack.com/forms/{{ form }}" title="Online Form"></a>
-                        </noscript>
+                        <div style="display: none">
+                            <script type="text/javascript" src="https://oneparkfinancial.formstack.com/forms/js.php/{{ form }}?{{ rest_request }}"></script>
+                            <noscript>
+                                <a href="https://oneparkfinancial.formstack.com/forms/{{ form }}" title="Online Form"></a>
+                            </noscript>
+                        </div>
                     </div>
                 </div>
             </div>
