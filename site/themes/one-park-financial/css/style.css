@@ -4722,7 +4722,7 @@ body.section-feliz > main section#form .form,
 body.section-gracias > main section#form .form {
   box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.75);
   background: #fff;
-  padding: 60px;
+  padding: 60px 60px 30px;
   margin: -60px 0 0;
   width: 100%;
   min-height: 400px;
@@ -4770,36 +4770,39 @@ body.section-gracias > main section#form .form .btn:hover {
   background-color: #1f384b;
 }
 
-body.section-pre-qualification > main section#form .legal-notice,
-body.section-congrats > main section#form .legal-notice,
-body.section-complete > main section#form .legal-notice,
-body.section-preaprob > main section#form .legal-notice,
-body.section-feliz > main section#form .legal-notice,
-body.section-gracias > main section#form .legal-notice {
+body.section-pre-qualification > main section#form .form .legal-notice,
+body.section-congrats > main section#form .form .legal-notice,
+body.section-complete > main section#form .form .legal-notice,
+body.section-preaprob > main section#form .form .legal-notice,
+body.section-feliz > main section#form .form .legal-notice,
+body.section-gracias > main section#form .form .legal-notice {
   color: #888;
   font-size: .8em;
-  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
-body.section-pre-qualification > main section#form .legal-notice p,
-body.section-congrats > main section#form .legal-notice p,
-body.section-complete > main section#form .legal-notice p,
-body.section-preaprob > main section#form .legal-notice p,
-body.section-feliz > main section#form .legal-notice p,
-body.section-gracias > main section#form .legal-notice p {
-  margin: 30px;
+body.section-pre-qualification > main section#form .form .legal-notice p,
+body.section-congrats > main section#form .form .legal-notice p,
+body.section-complete > main section#form .form .legal-notice p,
+body.section-preaprob > main section#form .form .legal-notice p,
+body.section-feliz > main section#form .form .legal-notice p,
+body.section-gracias > main section#form .form .legal-notice p {
   color: #888;
-  max-width: 600px;
+  max-width: 769px;
   text-align: center;
-  padding: 30px;
 }
 
-body.section-pre-qualification > main section#form .legal-notice p a,
-body.section-congrats > main section#form .legal-notice p a,
-body.section-complete > main section#form .legal-notice p a,
-body.section-preaprob > main section#form .legal-notice p a,
-body.section-feliz > main section#form .legal-notice p a,
-body.section-gracias > main section#form .legal-notice p a {
+body.section-pre-qualification > main section#form .form .legal-notice p a,
+body.section-congrats > main section#form .form .legal-notice p a,
+body.section-complete > main section#form .form .legal-notice p a,
+body.section-preaprob > main section#form .form .legal-notice p a,
+body.section-feliz > main section#form .form .legal-notice p a,
+body.section-gracias > main section#form .form .legal-notice p a {
   color: #6EB95A;
 }
 
