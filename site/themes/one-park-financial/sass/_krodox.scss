@@ -1572,13 +1572,12 @@ body {
               }
             }
             .legal-notice {
-              color: $legal-text;
               font-size: .8em;
               display: flex;
               align-items: center;
               justify-content: center;
               p {
-                color: #888;
+                color: #5f5e5e;
                 max-width: 769px;
                 text-align: center;
                 a {

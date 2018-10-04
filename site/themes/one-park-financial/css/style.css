@@ -4776,7 +4776,6 @@ body.section-complete > main section#form .form .legal-notice,
 body.section-preaprob > main section#form .form .legal-notice,
 body.section-feliz > main section#form .form .legal-notice,
 body.section-gracias > main section#form .form .legal-notice {
-  color: #888;
   font-size: .8em;
   display: -ms-flexbox;
   display: flex;
@@ -4792,7 +4791,7 @@ body.section-complete > main section#form .form .legal-notice p,
 body.section-preaprob > main section#form .form .legal-notice p,
 body.section-feliz > main section#form .form .legal-notice p,
 body.section-gracias > main section#form .form .legal-notice p {
-  color: #888;
+  color: #5f5e5e;
   max-width: 769px;
   text-align: center;
 }
