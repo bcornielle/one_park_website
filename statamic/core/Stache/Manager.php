@@ -103,6 +103,10 @@ class Manager
 
     protected function waitForUpdateToComplete()
     {
+        if (! Config::get('caching.stache_lock_enabled')) {
+            return;
+        }
+
         $start = time();
 
         while ($this->isLocked()) {
