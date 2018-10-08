@@ -3,11 +3,8 @@ bd7687cf-1672-4f53-ac8c-1bc0865a2cb0:
   slug: admins
   roles:
     - eed6d071-91e2-404e-a017-bf3efc280ff8
-    - d32e14fb-08c9-44c2-aaf8-21200852bafd
   users:
-    - ba2f31c7-f3fb-4253-aa2f-f198e9175eb5
     - 01f5a19f-869d-49fa-9e85-c8f9a3fcc547
-    - a5ae7a55-9703-4958-983a-f2ddf2a5f7ad
 c77d5753-68c3-48f2-81fa-c3b3a49509d4:
   title: Marketers
   slug: marketers
@@ -15,7 +12,13 @@ c77d5753-68c3-48f2-81fa-c3b3a49509d4:
     - df978c70-ff4d-4f31-86b2-079fcd559c7b
   users:
     - a5ae7a55-9703-4958-983a-f2ddf2a5f7ad
-    - 01f5a19f-869d-49fa-9e85-c8f9a3fcc547
     - e6c0cd3c-cb45-4bc4-947a-08d6a2e20f2e
     - 7815f5ca-e5d5-46e8-9dc1-128af360be3d
     - a9639367-2ed3-4fa7-aca2-149cad808d4b
+b98a487f-fc86-4f93-ba17-a98e7f17b16f:
+  title: Gods
+  slug: gods
+  roles:
+    - d32e14fb-08c9-44c2-aaf8-21200852bafd
+  users:
+    - ba2f31c7-f3fb-4253-aa2f-f198e9175eb5
