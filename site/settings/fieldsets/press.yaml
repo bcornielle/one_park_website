@@ -16,6 +16,14 @@ sections:
         type: markdown
         localizable: true
         display: Content
+      meta_title:
+        type: text
+        localizable: true
+        display: 'Meta Title'
+      meta_description:
+        type: textarea
+        localizable: true
+        display: 'Meta Description'
 taxonomies: true
 title: 'Press Release'
 hide: true

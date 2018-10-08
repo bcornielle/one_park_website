@@ -10,6 +10,14 @@ sections:
         display: Slug
         type: text
         localizable: true
+      meta_title:
+        type: text
+        localizable: true
+        display: 'Meta Title'
+      meta_description:
+        type: textarea
+        localizable: true
+        display: 'Meta Description'
 taxonomies: true
 title: Landing
 create_title: 'New Landing Page'

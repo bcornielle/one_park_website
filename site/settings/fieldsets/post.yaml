@@ -12,5 +12,13 @@ sections:
         type: markdown
         display: Content
         localizable: true
+      meta_title:
+        type: text
+        localizable: true
+        display: 'Meta Title'
+      meta_description:
+        type: textarea
+        localizable: true
+        display: 'Meta Description'
 taxonomies: true
 create_title: 'New Post'
