@@ -1,2 +1,20 @@
-User-agent: *
+User-Agent: *
+
+Disallow: /cdn-cgi/*
+
+Allow: /blog$
+Disallow: /blog?*page=
+
+Allow: /pre-qualification$
+Disallow: /pre-qualification?*package=
+
+Allow: /press$
+Disallow: /press?*page=
+
+Allow: /es/preaprob$
+Disallow: /es/preaprob?*package=
+
+Disallow: /wp-content/uploads/*
+Disallow: /wp-content/plugins/*
+
 Disallow: /lp/
