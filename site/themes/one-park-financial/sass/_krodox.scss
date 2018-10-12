@@ -113,7 +113,7 @@ body {
                       &.btn-primary {
                         background: $brand-primary;
                         border-color:$brand-primary;
-                        border-radius: 0;
+                        border-radius: 6px;
                         transition: ease all .4s;
                         color: $white;
                         &:hover {
@@ -548,6 +548,17 @@ body {
             }
           }
         }
+        &#call-to-action-3 {
+          background-image: none;
+          background: $brand-secondary;
+          color: $white;
+          .flexed {
+            .btn {
+              background-color: $brand-primary;
+              border-color: $brand-primary;
+            }
+          }
+        }
         &#testimonials {
           margin: 90px 0 0;
           h2 {
@@ -684,7 +695,6 @@ body {
                   padding: 0;
                   color: $brand-primary;
                   border: none;
-                  border-radius: 0;
                   font-size: .9em;
                   font-weight: 600;
                   text-transform: uppercase;
@@ -718,7 +728,6 @@ body {
               box-shadow: none;
               max-width: 500px;
               border: solid 2px $border-color;
-              border-radius: 0;
             }
           }
         }
@@ -965,7 +974,6 @@ body {
                 padding: 30px;
                 .badge {
                   border-bottom: solid 2px $brand-primary;
-                  border-radius: 0;
                   text-transform: uppercase;
                   padding: 0 0 2px 0;
                 }

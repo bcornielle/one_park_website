@@ -2606,7 +2606,7 @@ body > header nav#menu > div.navbar-collapse#nav-menu > ul > li > a.btn {
 body > header nav#menu > div.navbar-collapse#nav-menu > ul > li > a.btn.btn-primary {
   background: #6EB95A;
   border-color: #6EB95A;
-  border-radius: 0;
+  border-radius: 6px;
   transition: ease all .4s;
   color: #fff;
 }
@@ -3147,6 +3147,17 @@ body.section-home > main section#call-to-action-3 .flexed .btn:hover {
   transform: translateX(0px) scale(1.05);
 }
 
+body.section-home > main section#call-to-action-3 {
+  background-image: none;
+  background: #19354e;
+  color: #fff;
+}
+
+body.section-home > main section#call-to-action-3 .flexed .btn {
+  background-color: #6EB95A;
+  border-color: #6EB95A;
+}
+
 body.section-home > main section#testimonials {
   margin: 90px 0 0;
 }
@@ -3371,7 +3382,6 @@ body.section-home > main section#products .products-wrapper .product .descriptio
   padding: 0;
   color: #6EB95A;
   border: none;
-  border-radius: 0;
   font-size: .9em;
   font-weight: 600;
   text-transform: uppercase;
@@ -3399,7 +3409,6 @@ body.section-search main .heading form .input-group input[type=text] {
   box-shadow: none;
   max-width: 500px;
   border: solid 2px #eeeeee;
-  border-radius: 0;
 }
 
 body.section-search main article {
@@ -3792,7 +3801,6 @@ body.section-nuestros-productos > main section#packages ul li .text {
 body.section-products > main section#packages ul li .text .badge,
 body.section-nuestros-productos > main section#packages ul li .text .badge {
   border-bottom: solid 2px #6EB95A;
-  border-radius: 0;
   text-transform: uppercase;
   padding: 0 0 2px 0;
 }
