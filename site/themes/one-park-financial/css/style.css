@@ -2599,6 +2599,22 @@ body > header nav#menu > div.navbar-collapse#nav-menu > ul > li > a:hover {
   color: #6EB95A;
 }
 
+body > header nav#menu > div.navbar-collapse#nav-menu > ul > li > a.btn {
+  padding: 6px 12px;
+}
+
+body > header nav#menu > div.navbar-collapse#nav-menu > ul > li > a.btn.btn-primary {
+  background: #6EB95A;
+  border-color: #6EB95A;
+  border-radius: 0;
+  transition: ease all .4s;
+  color: #fff;
+}
+
+body > header nav#menu > div.navbar-collapse#nav-menu > ul > li > a.btn.btn-primary:hover {
+  background: #5ca847;
+}
+
 body > header nav#branding {
   display: -ms-flexbox;
   display: flex;
@@ -6121,6 +6137,19 @@ body.section-lp > main section#call-to-action-3 {
   body > header nav#menu > div.navbar-collapse#nav-menu.collapse.show ul li a {
     padding: 15px 0;
     font-size: 3em;
+  }
+
+  body > header nav#menu > div.navbar-collapse#nav-menu > ul > li {
+    text-align: center;
+  }
+
+  body > header nav#menu > div.navbar-collapse#nav-menu > ul > li > a {
+    display: inline-block;
+  }
+
+  body > header nav#menu > div.navbar-collapse#nav-menu > ul > li > a.btn.btn-primary {
+    padding: 12px;
+    border-radius: 6px;
   }
 
   body > footer .phone a {

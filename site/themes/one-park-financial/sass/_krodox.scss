@@ -108,6 +108,19 @@ body {
                       text-decoration: none;
                       color: $brand-primary;
                     }
+                    &.btn {
+                      padding: 6px 12px;
+                      &.btn-primary {
+                        background: $brand-primary;
+                        border-color:$brand-primary;
+                        border-radius: 0;
+                        transition: ease all .4s;
+                        color: $white;
+                        &:hover {
+                          background: darken($brand-primary,7%);
+                        }
+                      }
+                    }
                   }
                 }
               }
@@ -2754,6 +2767,20 @@ body {
                         a {
                           padding: 15px 0;
                           font-size: 3em;
+                        }
+                      }
+                    }
+                  }
+                }
+                >ul {
+                  > li {
+                    text-align: center;
+                    > a {
+                      display: inline-block;
+                      &.btn {
+                        &.btn-primary {
+                          padding: 12px;
+                          border-radius: 6px;
                         }
                       }
                     }
