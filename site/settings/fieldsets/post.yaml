@@ -20,9 +20,5 @@ sections:
         type: textarea
         localizable: true
         display: 'Meta Description'
-      this_is_a_text_area:
-        type: textarea
-        localizable: true
-        display: 'This is a text area'
 taxonomies: true
 create_title: 'New Post'
