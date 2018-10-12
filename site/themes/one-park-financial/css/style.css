@@ -2606,7 +2606,7 @@ body > header nav#menu > div.navbar-collapse#nav-menu > ul > li > a.btn {
 body > header nav#menu > div.navbar-collapse#nav-menu > ul > li > a.btn.btn-primary {
   background: #6EB95A;
   border-color: #6EB95A;
-  border-radius: 6px;
+  border-radius: 3px;
   transition: ease all .4s;
   color: #fff;
 }
@@ -2990,7 +2990,7 @@ body.section-home > main section#hero .button-wrapper a.btn {
   -ms-flex-align: center;
   align-items: center;
   border: none;
-  border-radius: 6px;
+  border-radius: 3px;
   transition: all ease .3s;
   background-color: #6EB95A;
   border-color: #6EB95A;
@@ -3130,7 +3130,7 @@ body.section-home > main section#call-to-action-3 .flexed .btn {
   padding: 15px 0;
   border: none;
   display: block;
-  border-radius: 6px;
+  border-radius: 3px;
   transition: all ease .3s;
   background-color: #19354e;
   border-color: #19354e;
@@ -3692,7 +3692,7 @@ body.section-nuestros-productos > main section#hero .button-wrapper a.btn {
   justify-content: center;
   -ms-flex-align: center;
   align-items: center;
-  border-radius: 6px;
+  border-radius: 3px;
   transition: all ease .3s;
   background-color: #6EB95A;
   border-color: #6EB95A;
@@ -3815,7 +3815,7 @@ body.section-nuestros-productos > main section#packages ul li .text a.btn {
   position: relative;
   text-decoration: none;
   border: none;
-  border-radius: 6px;
+  border-radius: 3px;
   transition: all ease .3s;
   background-color: #6EB95A;
   border-color: #6EB95A;
@@ -3953,7 +3953,7 @@ body.section-preguntas-comunes > main section#hero .button-wrapper a.btn {
   -ms-flex-align: center;
   align-items: center;
   border: none;
-  border-radius: 6px;
+  border-radius: 3px;
   transition: all ease .3s;
   background-color: #6EB95A;
   border-color: #6EB95A;
@@ -4128,7 +4128,7 @@ body.section-contactenos > main section#hero .button-wrapper a.btn {
   -ms-flex-align: center;
   align-items: center;
   border: none;
-  border-radius: 6px;
+  border-radius: 3px;
   transition: all ease .3s;
   background-color: #6EB95A;
   border-color: #6EB95A;
@@ -4175,7 +4175,7 @@ body.section-contactenos > main section#form article .btn {
   position: relative;
   text-decoration: none;
   border: none;
-  border-radius: 6px;
+  border-radius: 3px;
   transition: all ease .3s;
   background-color: #6EB95A;
   border-color: #6EB95A;
@@ -5018,7 +5018,7 @@ body.section-television > main section#hero .button-wrapper a.btn {
   -ms-flex-align: center;
   align-items: center;
   border: none;
-  border-radius: 6px;
+  border-radius: 3px;
   transition: all ease .3s;
   background-color: #6EB95A;
   border-color: #6EB95A;
@@ -5230,7 +5230,7 @@ body.section-lp > main section#hero .lp-form-wrapper #form.lp-form {
 
 body.section-lp > main section#hero .lp-form-wrapper #form.lp-form .phone-header {
   border: 2px solid #a2a2a2;
-  border-radius: 6px;
+  border-radius: 3px;
   text-align: center;
 }
 
@@ -5296,7 +5296,7 @@ body.section-lp > main section#hero .lp-form-wrapper #form.lp-form article .fiel
   outline: none;
   background: #f7f7f7;
   padding: 7px 10px;
-  border-radius: 6px;
+  border-radius: 3px;
 }
 
 body.section-lp > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=text]:focus,
@@ -5543,7 +5543,7 @@ body.section-lp > main section#call-to-action-3 .flexed .btn {
   padding: 15px 0;
   border: none;
   display: block;
-  border-radius: 6px;
+  border-radius: 3px;
   transition: all ease .3s;
   background-color: #19354e;
   border-color: #19354e;
@@ -6157,7 +6157,7 @@ body.section-lp > main section#call-to-action-3 {
 
   body > header nav#menu > div.navbar-collapse#nav-menu > ul > li > a.btn.btn-primary {
     padding: 12px;
-    border-radius: 6px;
+    border-radius: 3px;
   }
 
   body > footer .phone a {

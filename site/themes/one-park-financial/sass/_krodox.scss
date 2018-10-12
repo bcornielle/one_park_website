@@ -113,7 +113,7 @@ body {
                       &.btn-primary {
                         background: $brand-primary;
                         border-color:$brand-primary;
-                        border-radius: 6px;
+                        border-radius: 3px;
                         transition: ease all .4s;
                         color: $white;
                         &:hover {
@@ -438,7 +438,7 @@ body {
                 justify-content: center;
                 align-items: center;
                 border: none;
-                border-radius: 6px;
+                border-radius: 3px;
                 transition: all ease .3s;
                 background-color: $brand-primary;
                 border-color: $brand-primary;
@@ -533,7 +533,7 @@ body {
               padding: 15px 0;
               border: none;
               display: block;
-              border-radius: 6px;
+              border-radius: 3px;
               transition: all ease .3s;
               background-color: $brand-secondary;
               border-color: $brand-secondary;
@@ -912,7 +912,7 @@ body {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                border-radius: 6px;
+                border-radius: 3px;
                 transition: all ease .3s;
                 background-color: $brand-primary;
                 border-color: $brand-primary;
@@ -988,7 +988,7 @@ body {
                     position: relative;
                     text-decoration: none;
                     border: none;
-                    border-radius: 6px;
+                    border-radius: 3px;
                     transition: all ease .3s;
                     background-color: $brand-primary;
                     border-color: $brand-primary;
@@ -1102,7 +1102,7 @@ body {
                 justify-content: center;
                 align-items: center;
                 border: none;
-                border-radius: 6px;
+                border-radius: 3px;
                 transition: all ease .3s;
                 background-color: $brand-primary;
                 border-color: $brand-primary;
@@ -1198,7 +1198,7 @@ body {
                 justify-content: center;
                 align-items: center;
                 border: none;
-                border-radius: 6px;
+                border-radius: 3px;
                 transition: all ease .3s;
                 background-color: $brand-primary;
                 border-color: $brand-primary;
@@ -1232,7 +1232,7 @@ body {
               position: relative;
               text-decoration: none;
               border: none;
-              border-radius: 6px;
+              border-radius: 3px;
               transition: all ease .3s;
               background-color: $brand-primary;
               border-color: $brand-primary;
@@ -1774,7 +1774,7 @@ body {
                 margin: 0 auto;
                 align-items: center;
                 border: none;
-                border-radius: 6px;
+                border-radius: 3px;
                 transition: all ease .3s;
                 background-color: $brand-primary;
                 border-color: $brand-primary;
@@ -1941,7 +1941,7 @@ body {
                 text-align: center;
                 .phone-header {
                   border: 2px solid #a2a2a2;
-                  border-radius: 6px;
+                  border-radius: 3px;
                   text-align: center;
                   .label {
                     text-align: center;
@@ -1992,7 +1992,7 @@ body {
                       outline: none;
                       background: #f7f7f7;
                       padding: 7px 10px;
-                      border-radius: 6px;
+                      border-radius: 3px;
                       &:focus {
                         outline: none;
                         box-shadow: none;
@@ -2169,7 +2169,7 @@ body {
               padding: 15px 0;
               border: none;
               display: block;
-              border-radius: 6px;
+              border-radius: 3px;
               transition: all ease .3s;
               background-color: $brand-secondary;
               border-color: $brand-secondary;
@@ -2788,7 +2788,7 @@ body {
                       &.btn {
                         &.btn-primary {
                           padding: 12px;
-                          border-radius: 6px;
+                          border-radius: 3px;
                         }
                       }
                     }
