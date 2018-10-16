@@ -1,0 +1,15 @@
+license_key: a019af6b-ebeb-4c02-9ed7-4fb1f3bf5980
+sitemap_index_url: sitemap.xml
+single_sitemap_url: '{alias}-sitemap{page}.xml'
+trailing_slash_urls: false
+max_entires_per_sitemap: 1000
+show_page_number_if_only_page: false
+cache_length: 60
+flush_cache_on_save: true
+show_page_sitemap: true
+page_sitemap_alias: page
+collection_sitemaps:
+  -
+    collection: blog
+  -
+    collection: press

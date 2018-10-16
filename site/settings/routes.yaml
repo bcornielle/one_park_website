@@ -15,8 +15,8 @@ routes:
   /reset-password: auth/password-reset
 collections:
   blog:
-    en: '{slug}'
-    es: '{slug}'
+    en: '/blog/{slug}'
+    es: '/articulos/{slug}'
   press:
     en: '/press/{slug}'
     es: '/medios/{slug}'
