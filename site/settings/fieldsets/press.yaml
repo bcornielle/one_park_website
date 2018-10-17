@@ -24,6 +24,10 @@ sections:
         type: textarea
         localizable: true
         display: 'Meta Description'
+      canonical:
+        type: text
+        localizable: true
+        display: canonical
 taxonomies: true
 title: 'Press Release'
 hide: true
