@@ -5,4 +5,3 @@ template: press/index
 meta_title: 'News & Press Releases | One Park Financial'
 meta_description: 'Find out how One Park Financial is growing and innovating the lending industry. Check out our press releases and news. Keep up with One Park Financial!'
 es_url: medios
-canonical: https://www.oneparkfinancial.com/press/
