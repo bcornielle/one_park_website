@@ -5,3 +5,4 @@ template: form-stack/qualification
 meta_title: 'Pre-Qualifying for a Small Business Loan | One Park Financial'
 meta_description: 'We work with over 35 lenders and are able to offer a wide variety of flexible financing and funding options without all the hassles. Get Funded today!'
 es_url: preaprob
+canonical: https://www.oneparkfinancial.com/pre-qualification/
