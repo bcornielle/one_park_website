@@ -4,4 +4,3 @@ meta_title: 'One Park Financial TV | ¿Necesita capital?'
 meta_description: 'UNA SOLICITUD - MÁS DE 30 PRÉSTAMOS! Sin crédito, mal crédito, no hay problema! Aceptamos ingresos mensuales de $ 5,000 o más. Llame hoy: 888-327-0685'
 template: television/es/television
 en_url: television
-canonical: https://www.oneparkfinancial.com/es/television
