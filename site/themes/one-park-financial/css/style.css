@@ -3435,6 +3435,22 @@ body.section-home > main section#lp-form .container #form ul.fields li .form-con
   box-shadow: none;
 }
 
+body.section-home > main section#lp-form .container #form ul.disclaimer li {
+  line-height: 8px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+body.section-home > main section#lp-form .container #form ul.disclaimer li .terms-of-use {
+  color: #807a7a;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+body.section-home > main section#lp-form .container #form ul.disclaimer li .terms-of-use:hover {
+  color: white;
+}
+
 body.section-home > main section#lp-form .container #form .honeypot {
   display: none;
 }
@@ -3444,19 +3460,8 @@ body.section-home > main section#lp-form .container #form .btn {
   border: solid 2px #b77109;
   padding: 8px 15px;
   text-transform: uppercase;
-  margin: 10px 0 30px;
+  margin: 10px 0 15px;
   color: white;
-}
-
-body.section-home > main section#lp-form .container #form .terms-of-use {
-  color: #807a7a;
-  text-decoration: none;
-  padding-bottom: 1px;
-  font-size: .9rem;
-}
-
-body.section-home > main section#lp-form .container #form .terms-of-use:hover {
-  border-bottom: solid 1px #807a7a;
 }
 
 body.section-search main .heading {
@@ -7230,6 +7235,36 @@ body.section-lp > main section#call-to-action-3 {
 
   body.section-home > main section#products .products-wrapper .product .description {
     min-height: 200px;
+  }
+
+  body.section-home > main section#lp-form .container #form h2 {
+    font-size: 1.7em;
+  }
+
+  body.section-home > main section#lp-form .container #form ul.fields li {
+    float: left;
+    width: 100% !important;
+    margin: 0 2% 2% 0;
+  }
+
+  body.section-home > main section#lp-form .container #form ul.fields li:nth-child(1n) {
+    margin-right: 0;
+  }
+
+  body.section-home > main section#lp-form .container #form ul.fields li:nth-child(1n + 2) {
+    clear: left;
+  }
+
+  body.section-home > main section#lp-form .container #form ul.fields li .form-control {
+    width: 300px;
+  }
+
+  body.section-home > main section#lp-form .container #form ul.disclaimer li {
+    max-width: 250px;
+  }
+
+  body.section-home > main section#lp-form .container #form .honeypot {
+    display: none;
   }
 
   body.section-home.en > main section#hero .description h1 {
