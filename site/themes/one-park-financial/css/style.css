@@ -3392,6 +3392,73 @@ body.section-home > main section#products .products-wrapper .product .descriptio
   color: #6EB95A;
 }
 
+body.section-home > main section#lp-form {
+  background: #19354e;
+  color: #fff;
+  margin: 90px 0 0;
+}
+
+body.section-home > main section#lp-form .container #form {
+  padding: 45px 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+
+body.section-home > main section#lp-form .container #form h2 {
+  margin-bottom: 30px;
+}
+
+body.section-home > main section#lp-form .container #form ul.fields li {
+  float: left;
+  width: 18.4% !important;
+  margin: 0 2% 2% 0;
+}
+
+body.section-home > main section#lp-form .container #form ul.fields li:nth-child(5n) {
+  margin-right: 0;
+}
+
+body.section-home > main section#lp-form .container #form ul.fields li:nth-child(5n + 6) {
+  clear: left;
+}
+
+body.section-home > main section#lp-form .container #form ul.fields li .form-control {
+  border-radius: 2px;
+  border: none;
+  box-shadow: none;
+}
+
+body.section-home > main section#lp-form .container #form .honeypot {
+  display: none;
+}
+
+body.section-home > main section#lp-form .container #form .btn {
+  background: #e88f0b;
+  border: solid 2px #b77109;
+  padding: 8px 15px;
+  text-transform: uppercase;
+  margin: 10px 0 30px;
+  color: white;
+}
+
+body.section-home > main section#lp-form .container #form .terms-of-use {
+  color: #807a7a;
+  text-decoration: none;
+  padding-bottom: 1px;
+  font-size: .9rem;
+}
+
+body.section-home > main section#lp-form .container #form .terms-of-use:hover {
+  border-bottom: solid 1px #807a7a;
+}
+
 body.section-search main .heading {
   display: -ms-flexbox;
   display: flex;

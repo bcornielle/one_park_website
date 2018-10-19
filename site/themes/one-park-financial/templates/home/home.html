@@ -195,13 +195,70 @@
             </div>
         </div>
     </section>
-    <section id="call-to-action-3">
+    <section id="lp-form">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="flexed">
+            <div id="form" class="lp-form">
+                <div class="row">
+                    <div class="col-md-12">
                         <h2>Hassle-free funding starts today!</h2>
-                        <a href="/pre-qualification" class="btn btn-primary">Apply Now!</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <article class="content">
+                            {{ form:set is="landing-page" }}
+                            {{ form:create }}
+                            <input type="text" name="honeypot" class="honeypot"/>
+                            <ul class="fields">
+                                <li>
+                                    <input type="text" name="name" class="form-control" value="{{ old:name }}"
+                                           placeholder="First & Last Name" required/>
+                                </li>
+                                <li>
+                                    <input type="tel" name="phone" id="phone-number" class="form-control" value="{{ old:phone }}"
+                                           placeholder="Phone" required/>
+                                </li>
+                                <li>
+                                    <input type="email" name="email" class="form-control" value="{{ old:email }}"
+                                           placeholder="Email" required/>
+                                </li>
+                                <li>
+                                    <input type="text" name="business_name" class="form-control" value="{{ old:business_name }}"
+                                           placeholder="Business Name" required/>
+                                </li>
+                                <li>
+                                    <select name="monthly_revenue" class="form-control" title="Monthly Revenue">
+                                        <option value="" disabled selected>Gross Monthly Sales</option>
+                                        <option value="1">Less than $2,500</option>
+                                        <option value="5000">$2,500 - $7,500</option>
+                                        <option value="8000">$7,500 - $ 10,000</option>
+                                        <option value="15000">$10,000 - $25,000</option>
+                                        <option value="35000">$25,000 - $50,000</option>
+                                        <option value="75000">$50,000 - $100,000</option>
+                                        <option value="125000">$100,000 - $500,000</option>
+                                        <option value="1000000">Over $500,000</option>
+                                    </select>
+                                </li>
+                            </ul>
+                            {{ if errors }}
+                                <div id="error-alert">
+                                    {{ errors }}
+                                    {{ value }}<br>
+                                    {{ /errors }}
+                                </div>
+                            {{ /if }}
+                            {{ if {form:success} }}
+                                {{ form_submission }}
+                            {{ /if }}
+                            <button class="btn btn-third">Get Approved Now</button>
+                            {{ /form:create }}
+                            {{ /form:set }}
+                            <ul>
+                                <li>
+                                    <a href="/terms-of-use" target="_blank" class="terms-of-use">By clicking "Get Approved Now" I agree to all <span>terms and conditions</span></a>
+                                </li>
+                            </ul>
+                        </article>
                     </div>
                 </div>
             </div>
