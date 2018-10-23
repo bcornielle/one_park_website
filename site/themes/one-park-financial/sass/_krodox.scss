@@ -477,7 +477,6 @@ body {
           text-align: center;
           h2 {
             font-weight: 300;
-            font-size: 2.5em;
             margin: 0 0 12px;
           }
           h3 {
@@ -485,6 +484,11 @@ body {
             font-size: 1em;
             margin: 0;
             text-transform: uppercase;
+          }
+          p {
+            max-width: 900px;
+            margin: 10px auto 30px;
+            text-align: center;
           }
           ul {
             margin: 30px 0 0;
@@ -568,6 +572,13 @@ body {
             text-align: center;
             font-size: 1em;
             margin-bottom: 45px;
+            font-weight: 900;
+            text-transform: none;
+          }
+          p {
+            max-width: 900px;
+            margin: 10px auto 30px;
+            text-align: center;
           }
         }
         &#about-us, &#sobre-nosotros {
@@ -659,8 +670,20 @@ body {
         &#products {
           text-align: center;
           margin: 90px 0 0;
+          h2 {
+            text-align: center;
+          }
           h3 {
+            text-align: center;
             font-size: 1em;
+            margin-bottom: 15px;
+            font-weight: 900;
+            text-transform: none;
+          }
+          p {
+            max-width: 900px;
+            margin: 10px auto 30px;
+            text-align: center;
           }
           .products-wrapper {
             padding: 0;
@@ -684,10 +707,12 @@ body {
                 h4 {
                   font-size: 1em;
                   font-weight: 900;
+                  text-align: left;
                   text-transform: uppercase;
                 }
                 p {
                   margin: 15px 0;
+                  text-align: left;
                   font-size: 1rem;
                 }
                 a {
@@ -720,7 +745,12 @@ body {
               justify-content: center;
               text-align: center;
               h2 {
-                margin-bottom: 30px;
+                margin-bottom: 15px;
+              }
+              p {
+                max-width: 900px;
+                margin: 10px auto 30px;
+                text-align: center;
               }
               ul {
                 &.fields {

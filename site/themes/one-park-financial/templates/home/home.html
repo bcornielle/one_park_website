@@ -64,7 +64,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>Most businesses qualify within minutes</h2>
+                    <h2>Why Wait? <br>Simple Application, Fast Approval Process</h2>
+                    <p>If you are the owner of a small or mid-sized business and you need funding now – even if your credit isn’t great – we’re here to assist you in finding business funding sources that understand the needs of smaller businesses and will work with you to help you succeed. Whether you need $5,000 to $5,000,000 in business funding now, we can get you an pre-approval decision within 24 hours – and if pre-approved, you’ll have access to the funds you need in under 72-hours.</p>
                     <h3>ONE APPLICATION — OVER 30 FUNDERS!</h3>
                     <ul class="services-wrapper">
                         <li class="service">
@@ -81,11 +82,11 @@
                         </li>
                         <li class="service">
                             <img src="/assets/img/circle9.jpg">
-                            <div class="description">Applications from all 50 U.S. states accepted.</div>
+                            <div class="description">Serving all 50 U.S. States (and Puerto Rico)</div>
                         </li>
                         <li class="service">
                             <img src="/assets/img/circle10.jpg">
-                            <div class="description">We serve <span>all industries!</span></div>
+                            <div class="description">Working Capital For Small and Mid-Sized Businesses </div>
                         </li>
                     </ul>
                 </div>
@@ -109,7 +110,8 @@
             <div class="row">
                 <div class="col-sm-12">
                     <h2>We succeed when you succeed!</h2>
-                    <h3>BUSINESSES WE’VE HELPED</h3>
+                    <p>We can help you find the funds you need, even if you have imperfect credit or have experienced a bankruptcy or tax lien. Contact us for your free, no obligation business funding pre-approval assessment. We have low competitive rates, and the whole process is hassle-free.</p>
+                    <h3>But, don’t just take our word for it…</h3>
                 </div>
             </div>
             <div class="row">
@@ -195,12 +197,14 @@
             </div>
         </div>
     </section>
+    {{ partial:products }}
     <section id="lp-form">
         <div class="container">
             <div id="form" class="lp-form">
                 <div class="row">
                     <div class="col-md-12">
                         <h2>Hassle-free funding starts today!</h2>
+                        <p>The bottom line is this: We believe that small and mid-sized businesses are critical to the well-being of their communities and the financial strength of our nation. We look forward to talking to you about your business, and helping you acquire the working capital it needs to succeed.</p>
                     </div>
                 </div>
                 <div class="row">
@@ -241,14 +245,14 @@
                                 </li>
                             </ul>
                             {{ if errors }}
-                                <div id="error-alert">
-                                    {{ errors }}
-                                    {{ value }}<br>
-                                    {{ /errors }}
-                                </div>
+                            <div id="error-alert">
+                                {{ errors }}
+                                {{ value }}<br>
+                                {{ /errors }}
+                            </div>
                             {{ /if }}
                             {{ if {form:success} }}
-                                {{ form_submission }}
+                            {{ form_submission }}
                             {{ /if }}
                             <button class="btn btn-third">Apply Now</button>
                             {{ /form:create }}
