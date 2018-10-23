@@ -3035,7 +3035,6 @@ body.section-home > main section#services {
 
 body.section-home > main section#services h2 {
   font-weight: 300;
-  font-size: 2.5em;
   margin: 0 0 12px;
 }
 
@@ -3044,6 +3043,12 @@ body.section-home > main section#services h3 {
   font-size: 1em;
   margin: 0;
   text-transform: uppercase;
+}
+
+body.section-home > main section#services p {
+  max-width: 900px;
+  margin: 10px auto 30px;
+  text-align: center;
 }
 
 body.section-home > main section#services ul {
@@ -3170,6 +3175,14 @@ body.section-home > main section#testimonials h3 {
   text-align: center;
   font-size: 1em;
   margin-bottom: 45px;
+  font-weight: 900;
+  text-transform: none;
+}
+
+body.section-home > main section#testimonials p {
+  max-width: 900px;
+  margin: 10px auto 30px;
+  text-align: center;
 }
 
 body.section-home > main section#about-us,
@@ -3323,8 +3336,22 @@ body.section-home > main section#products {
   margin: 90px 0 0;
 }
 
+body.section-home > main section#products h2 {
+  text-align: center;
+}
+
 body.section-home > main section#products h3 {
+  text-align: center;
   font-size: 1em;
+  margin-bottom: 15px;
+  font-weight: 900;
+  text-transform: none;
+}
+
+body.section-home > main section#products p {
+  max-width: 900px;
+  margin: 10px auto 30px;
+  text-align: center;
 }
 
 body.section-home > main section#products .products-wrapper {
@@ -3369,11 +3396,13 @@ body.section-home > main section#products .products-wrapper .product .descriptio
 body.section-home > main section#products .products-wrapper .product .description h4 {
   font-size: 1em;
   font-weight: 900;
+  text-align: left;
   text-transform: uppercase;
 }
 
 body.section-home > main section#products .products-wrapper .product .description p {
   margin: 15px 0;
+  text-align: left;
   font-size: 1rem;
 }
 
@@ -3412,7 +3441,13 @@ body.section-home > main section#lp-form .container #form {
 }
 
 body.section-home > main section#lp-form .container #form h2 {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+}
+
+body.section-home > main section#lp-form .container #form p {
+  max-width: 900px;
+  margin: 10px auto 30px;
+  text-align: center;
 }
 
 body.section-home > main section#lp-form .container #form ul.fields li {
