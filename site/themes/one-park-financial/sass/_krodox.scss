@@ -552,17 +552,6 @@ body {
             }
           }
         }
-        &#call-to-action-3 {
-          background-image: none;
-          background: $brand-secondary;
-          color: $white;
-          .flexed {
-            .btn {
-              background-color: $brand-primary;
-              border-color: $brand-primary;
-            }
-          }
-        }
         &#testimonials {
           margin: 90px 0 0;
           h2 {
@@ -576,7 +565,6 @@ body {
             text-transform: none;
           }
           p {
-            max-width: 900px;
             margin: 10px auto 30px;
             text-align: center;
           }
@@ -680,10 +668,11 @@ body {
             font-weight: 900;
             text-transform: none;
           }
+          h4 {
+            margin-top: 60px;
+          }
           p {
-            max-width: 900px;
-            margin: 10px auto 30px;
-            text-align: center;
+            text-align: left;
           }
           .products-wrapper {
             padding: 0;
@@ -709,6 +698,7 @@ body {
                   font-weight: 900;
                   text-align: left;
                   text-transform: uppercase;
+                  margin-top: 0;
                 }
                 p {
                   margin: 15px 0;

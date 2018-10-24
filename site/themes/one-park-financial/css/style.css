@@ -3152,17 +3152,6 @@ body.section-home > main section#call-to-action-3 .flexed .btn:hover {
   transform: translateX(0px) scale(1.05);
 }
 
-body.section-home > main section#call-to-action-3 {
-  background-image: none;
-  background: #19354e;
-  color: #fff;
-}
-
-body.section-home > main section#call-to-action-3 .flexed .btn {
-  background-color: #6EB95A;
-  border-color: #6EB95A;
-}
-
 body.section-home > main section#testimonials {
   margin: 90px 0 0;
 }
@@ -3180,7 +3169,6 @@ body.section-home > main section#testimonials h3 {
 }
 
 body.section-home > main section#testimonials p {
-  max-width: 900px;
   margin: 10px auto 30px;
   text-align: center;
 }
@@ -3348,10 +3336,12 @@ body.section-home > main section#products h3 {
   text-transform: none;
 }
 
+body.section-home > main section#products h4 {
+  margin-top: 60px;
+}
+
 body.section-home > main section#products p {
-  max-width: 900px;
-  margin: 10px auto 30px;
-  text-align: center;
+  text-align: left;
 }
 
 body.section-home > main section#products .products-wrapper {
@@ -3398,6 +3388,7 @@ body.section-home > main section#products .products-wrapper .product .descriptio
   font-weight: 900;
   text-align: left;
   text-transform: uppercase;
+  margin-top: 0;
 }
 
 body.section-home > main section#products .products-wrapper .product .description p {
