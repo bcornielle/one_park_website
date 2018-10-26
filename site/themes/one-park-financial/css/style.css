@@ -2716,16 +2716,38 @@ body > main section#article .heading {
   background: #eeeeee;
 }
 
-body > main section#article .heading .date .day {
-  font-size: 1.5em;
-  color: #19354e;
-  line-height: 1;
+body > main section#article .heading.title {
+  letter-spacing: 0;
 }
 
-body > main section#article .heading h1 {
+body > main section#article .heading.title .date {
+  text-align: left;
+}
+
+body > main section#article .heading.title .date .day {
+  font-size: 1.5em;
+  color: #fff;
+  line-height: 1;
+  background: #19354e;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+}
+
+body > main section#article .heading.title h1 {
   margin-top: 15px;
   font-size: 2em;
+  text-align: left;
   text-transform: uppercase;
+  letter-spacing: 0;
 }
 
 body > main section#article article {
@@ -2778,6 +2800,84 @@ body > main section#article .article-footer .block a h3 {
 
 body > main section#not-found {
   padding: 30px 0;
+}
+
+body > main section#lp-form {
+  background: #19354e;
+  color: #fff;
+  margin: 90px 0 0;
+}
+
+body > main section#lp-form .container #form {
+  padding: 45px 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+
+body > main section#lp-form .container #form h2 {
+  margin-bottom: 15px;
+}
+
+body > main section#lp-form .container #form p {
+  max-width: 900px;
+  margin: 10px auto 30px;
+  text-align: center;
+}
+
+body > main section#lp-form .container #form ul.fields li {
+  float: left;
+  width: 18.4% !important;
+  margin: 0 2% 2% 0;
+}
+
+body > main section#lp-form .container #form ul.fields li:nth-child(5n) {
+  margin-right: 0;
+}
+
+body > main section#lp-form .container #form ul.fields li:nth-child(5n + 6) {
+  clear: left;
+}
+
+body > main section#lp-form .container #form ul.fields li .form-control {
+  border-radius: 2px;
+  border: none;
+  box-shadow: none;
+}
+
+body > main section#lp-form .container #form ul.disclaimer li {
+  line-height: 8px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+body > main section#lp-form .container #form ul.disclaimer li .terms-of-use {
+  color: #807a7a;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+body > main section#lp-form .container #form ul.disclaimer li .terms-of-use:hover {
+  color: white;
+}
+
+body > main section#lp-form .container #form .honeypot {
+  display: none;
+}
+
+body > main section#lp-form .container #form .btn {
+  background: #e88f0b;
+  border: solid 2px #b77109;
+  padding: 8px 15px;
+  text-transform: uppercase;
+  margin: 10px 0 15px;
+  color: white;
 }
 
 body > footer {
@@ -3412,84 +3512,6 @@ body.section-home > main section#products .products-wrapper .product .descriptio
   color: #6EB95A;
 }
 
-body.section-home > main section#lp-form {
-  background: #19354e;
-  color: #fff;
-  margin: 90px 0 0;
-}
-
-body.section-home > main section#lp-form .container #form {
-  padding: 45px 0;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  text-align: center;
-}
-
-body.section-home > main section#lp-form .container #form h2 {
-  margin-bottom: 15px;
-}
-
-body.section-home > main section#lp-form .container #form p {
-  max-width: 900px;
-  margin: 10px auto 30px;
-  text-align: center;
-}
-
-body.section-home > main section#lp-form .container #form ul.fields li {
-  float: left;
-  width: 18.4% !important;
-  margin: 0 2% 2% 0;
-}
-
-body.section-home > main section#lp-form .container #form ul.fields li:nth-child(5n) {
-  margin-right: 0;
-}
-
-body.section-home > main section#lp-form .container #form ul.fields li:nth-child(5n + 6) {
-  clear: left;
-}
-
-body.section-home > main section#lp-form .container #form ul.fields li .form-control {
-  border-radius: 2px;
-  border: none;
-  box-shadow: none;
-}
-
-body.section-home > main section#lp-form .container #form ul.disclaimer li {
-  line-height: 8px;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-body.section-home > main section#lp-form .container #form ul.disclaimer li .terms-of-use {
-  color: #807a7a;
-  text-decoration: none;
-  font-size: 10px;
-}
-
-body.section-home > main section#lp-form .container #form ul.disclaimer li .terms-of-use:hover {
-  color: white;
-}
-
-body.section-home > main section#lp-form .container #form .honeypot {
-  display: none;
-}
-
-body.section-home > main section#lp-form .container #form .btn {
-  background: #e88f0b;
-  border: solid 2px #b77109;
-  padding: 8px 15px;
-  text-transform: uppercase;
-  margin: 10px 0 15px;
-  color: white;
-}
-
 body.section-search main .heading {
   display: -ms-flexbox;
   display: flex;
@@ -3624,6 +3646,18 @@ body.section-articulos main .pagination li.active {
   background: #6EB95A;
   color: #fff;
   border-color: #6EB95A;
+}
+
+body.section-press main .heading,
+body.section-medios main .heading {
+  padding: 30px 0 0;
+  text-align: center;
+}
+
+body.section-press main .heading h1,
+body.section-medios main .heading h1 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
 
 body.section-press main article,
@@ -7261,36 +7295,6 @@ body.section-lp > main section#call-to-action-3 {
 
   body.section-home > main section#products .products-wrapper .product .description {
     min-height: 200px;
-  }
-
-  body.section-home > main section#lp-form .container #form h2 {
-    font-size: 1.7em;
-  }
-
-  body.section-home > main section#lp-form .container #form ul.fields li {
-    float: left;
-    width: 100% !important;
-    margin: 0 2% 2% 0;
-  }
-
-  body.section-home > main section#lp-form .container #form ul.fields li:nth-child(1n) {
-    margin-right: 0;
-  }
-
-  body.section-home > main section#lp-form .container #form ul.fields li:nth-child(1n + 2) {
-    clear: left;
-  }
-
-  body.section-home > main section#lp-form .container #form ul.fields li .form-control {
-    width: 300px;
-  }
-
-  body.section-home > main section#lp-form .container #form ul.disclaimer li {
-    max-width: 250px;
-  }
-
-  body.section-home > main section#lp-form .container #form .honeypot {
-    display: none;
   }
 
   body.section-home.en > main section#hero .description h1 {
