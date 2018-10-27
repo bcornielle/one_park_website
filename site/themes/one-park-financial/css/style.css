@@ -2852,15 +2852,16 @@ body > main section#lp-form .container #form ul.fields li .form-control {
 }
 
 body > main section#lp-form .container #form ul.disclaimer li {
-  line-height: 8px;
+  line-height: 10px;
   max-width: 700px;
   margin: 0 auto;
+  color: #807a7a;
+  font-size: 10px;
 }
 
 body > main section#lp-form .container #form ul.disclaimer li .terms-of-use {
-  color: #807a7a;
   text-decoration: none;
-  font-size: 10px;
+  color: #807a7a;
 }
 
 body > main section#lp-form .container #form ul.disclaimer li .terms-of-use:hover {
@@ -3458,17 +3459,17 @@ body.section-home > main section#products .products-wrapper:after {
 
 body.section-home > main section#products .products-wrapper .product {
   float: left;
-  width: 32% !important;
+  width: 49% !important;
   margin: 0 2% 2% 0;
   display: block;
   border: solid 1px #eeeeee;
 }
 
-body.section-home > main section#products .products-wrapper .product:nth-child(3n) {
+body.section-home > main section#products .products-wrapper .product:nth-child(2n) {
   margin-right: 0;
 }
 
-body.section-home > main section#products .products-wrapper .product:nth-child(3n + 4) {
+body.section-home > main section#products .products-wrapper .product:nth-child(2n + 3) {
   clear: left;
 }
 
@@ -3479,7 +3480,7 @@ body.section-home > main section#products .products-wrapper .product .image-wrap
 
 body.section-home > main section#products .products-wrapper .product .description {
   padding: 30px;
-  min-height: 250px;
+  min-height: 300px;
   overflow: hidden;
 }
 
