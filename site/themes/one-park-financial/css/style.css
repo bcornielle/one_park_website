@@ -5862,17 +5862,17 @@ body.section-lp > main section#products .products-wrapper:after {
 
 body.section-lp > main section#products .products-wrapper .product {
   float: left;
-  width: 32% !important;
+  width: 49% !important;
   margin: 0 2% 2% 0;
   display: block;
   border: solid 1px #eeeeee;
 }
 
-body.section-lp > main section#products .products-wrapper .product:nth-child(3n) {
+body.section-lp > main section#products .products-wrapper .product:nth-child(2n) {
   margin-right: 0;
 }
 
-body.section-lp > main section#products .products-wrapper .product:nth-child(3n + 4) {
+body.section-lp > main section#products .products-wrapper .product:nth-child(2n + 3) {
   clear: left;
 }
 
