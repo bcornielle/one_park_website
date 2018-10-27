@@ -7050,6 +7050,20 @@ body.section-lp > main section#call-to-action-3 {
     clear: left;
   }
 
+  body > main section#lp-form .container #form ul.fields li {
+    float: left;
+    width: 100% !important;
+    margin: 0 2% 2% 0;
+  }
+
+  body > main section#lp-form .container #form ul.fields li:nth-child(1n) {
+    margin-right: 0;
+  }
+
+  body > main section#lp-form .container #form ul.fields li:nth-child(1n + 2) {
+    clear: left;
+  }
+
   body > footer {
     text-align: center;
   }

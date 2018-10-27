@@ -3615,7 +3615,19 @@ body {
             }
           }
         }
-
+        &#lp-form {
+          .container {
+            #form {
+              ul {
+                &.fields {
+                  li {
+                    @include columns(1);
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
     > footer {
