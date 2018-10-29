@@ -1,0 +1,63 @@
+sections:
+  main:
+    display: Main
+    fields:
+      title:
+        display: Title
+        type: text
+        localizable: true
+      location:
+        type: text
+        display: location
+      salary:
+        type: text
+        display: salary
+      description_short:
+        type: textarea
+        display: 'Short Description'
+      description:
+        cheatsheet: false
+        restrict_assets: false
+        type: markdown
+        display: Description
+        container: main
+        folder: /
+      office:
+        type: text
+        width: 33
+        display: Office
+      department:
+        type: text
+        width: 33
+        display: Department
+      company:
+        type: text
+        width: 33
+        display: Company
+      compensation_type:
+        type: text
+        display: 'Compensation Type'
+      starting_date:
+        allow_blank: false
+        allow_time: true
+        require_time: false
+        earliest_date: 'January 1, 1900'
+        type: date
+        display: 'Starting Date'
+      assigned_to:
+        type: text
+        display: 'Assigned To'
+      status:
+        type: text
+        display: Status
+      posting_date:
+        allow_blank: false
+        allow_time: false
+        require_time: false
+        earliest_date: 'January 1, 1900'
+        type: date
+        display: 'Posting Date'
+taxonomies: true
+title: Jobs
+create_title: 'New Job'
+hide: true

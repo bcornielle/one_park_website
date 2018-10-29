@@ -1,0 +1,23 @@
+title: Jobs
+fields:
+  name:
+    display: Name
+  email:
+    display: Email
+  phone:
+    display: Phone
+  address:
+    display: Address
+  resume:
+    display: Resume
+    type: file
+    destination: uploads/
+  job_id:
+    display: 'Job ID'
+columns:
+  - name
+  - email
+  - phone
+  - address
+  - resume
+  - job_id

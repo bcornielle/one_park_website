@@ -23,5 +23,8 @@ collections:
   lp:
     en: '/lp/{slug}'
     es: '/lp/{slug}'
+  jobs:
+    en: '/jobs/{slug}'
+    es: '/empleos/{slug}'
 taxonomies:
   tags: '/blog/tags/{slug}'

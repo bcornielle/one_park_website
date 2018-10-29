@@ -5,8 +5,8 @@
                 <h1>{{ title }}</h1>
             </div>
             <article class="list">
+                {{ collection:blog paginate="true" as="posts" limit="4" locale="only {locale}" }}
                <ul>
-                  {{ collection:blog paginate="true" as="posts" limit="4" locale="only {locale}" }}
                   {{ posts scope="tag" }}
                   {{ partial:block }}
                   {{ /posts }}

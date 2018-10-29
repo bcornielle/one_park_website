@@ -1,0 +1,12 @@
+<li class="block">
+    <a href="{{ url }}">
+        <h3>{{ title }}</h3>
+        <div class="office">{{ location }}</div>
+        <div class="compensation">{{ salary }}</div>
+        <p>{{ description_short | macro:summary }}</p>
+        <a href="{{ url }}" class="btn btn-primary">Apply Now</a>
+        <div class="meta">
+            Posted: {{ posting_date format="M j, Y" }}
+        </div>
+    </a>
+</li>

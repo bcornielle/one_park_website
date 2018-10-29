@@ -1,20 +1,20 @@
 <main>
     <div class="container">
-        <section id="blog">
+        <section id="jobs">
             <div class="heading">
-                <h1>{{ title }}</h1>
+                <h1>Jobs</h1>
+                <h2>One Park Financial</h2>
             </div>
             <article class="list">
-                {{ collection:blog paginate="true" as="posts" limit="4" locale="only {locale}" }}
+                {{ collection:jobs paginate="true" as="posts" limit="4" locale="only {locale}" }}
                <ul>
                   {{ posts scope="tag" }}
-                  {{ partial:block }}
+                  {{ partial:job-block }}
                   {{ /posts }}
                </ul>
                 {{ partial:pagination }}
-                {{ /collection:blog }}
+                {{ /collection:jobs }}
             </article>
         </section>
     </div>
-    {{ partial:lp-form }}
 </main>
