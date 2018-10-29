@@ -8,10 +8,13 @@ sections:
         localizable: true
       location:
         type: text
-        display: location
+        display: Location
       salary:
         type: text
-        display: salary
+        display: Salary
+      compensation_type:
+        type: text
+        display: 'Compensation Type'
       description_short:
         type: textarea
         display: 'Short Description'
@@ -34,9 +37,6 @@ sections:
         type: text
         width: 33
         display: Company
-      compensation_type:
-        type: text
-        display: 'Compensation Type'
       starting_date:
         allow_blank: false
         allow_time: true
@@ -58,6 +58,6 @@ sections:
         type: date
         display: 'Posting Date'
 taxonomies: true
-title: Jobs
-create_title: 'New Job'
+title: Careers
+create_title: 'New Listing Job'
 hide: true
