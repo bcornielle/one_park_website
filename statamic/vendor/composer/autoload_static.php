@@ -2542,6 +2542,7 @@ class ComposerStaticInitfac2c5b84ddd2671641040439a58937d
         'Statamic\\API\\Widont' => __DIR__ . '/../..' . '/core/API/Widont.php',
         'Statamic\\API\\YAML' => __DIR__ . '/../..' . '/core/API/YAML.php',
         'Statamic\\API\\Zip' => __DIR__ . '/../..' . '/core/API/Zip.php',
+        'Statamic\\Addons\\APIAddon\\APIAddonListener' => __DIR__ . '/../..' . '/../site/addons/APIAddon/APIAddonListener.php',
         'Statamic\\Addons\\Arr\\ArrFieldtype' => __DIR__ . '/../..' . '/bundles/Arr/ArrFieldtype.php',
         'Statamic\\Addons\\AssetContainer\\AssetContainerFieldtype' => __DIR__ . '/../..' . '/bundles/AssetContainer/AssetContainerFieldtype.php',
         'Statamic\\Addons\\AssetFolder\\AssetFolderFieldtype' => __DIR__ . '/../..' . '/bundles/AssetFolder/AssetFolderFieldtype.php',

@@ -2118,6 +2118,7 @@ return array(
     'Statamic\\API\\Widont' => $baseDir . '/core/API/Widont.php',
     'Statamic\\API\\YAML' => $baseDir . '/core/API/YAML.php',
     'Statamic\\API\\Zip' => $baseDir . '/core/API/Zip.php',
+    'Statamic\\Addons\\APIAddon\\APIAddonListener' => $baseDir . '/../site/addons/APIAddon/APIAddonListener.php',
     'Statamic\\Addons\\Arr\\ArrFieldtype' => $baseDir . '/bundles/Arr/ArrFieldtype.php',
     'Statamic\\Addons\\AssetContainer\\AssetContainerFieldtype' => $baseDir . '/bundles/AssetContainer/AssetContainerFieldtype.php',
     'Statamic\\Addons\\AssetFolder\\AssetFolderFieldtype' => $baseDir . '/bundles/AssetFolder/AssetFolderFieldtype.php',
