@@ -3519,6 +3519,7 @@ body.section-home > main section#products.bullets .products-wrapper .product {
   padding: 30px 15px 15px;
   text-align: center;
   transition: ease all .4s;
+  border-width: 2px;
 }
 
 body.section-home > main section#products.bullets .products-wrapper .product i.fa {
