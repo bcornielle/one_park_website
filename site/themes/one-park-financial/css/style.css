@@ -3581,6 +3581,10 @@ body.section-home > main section#products.bullets .products-wrapper .product:fir
   color: #6EB95A;
 }
 
+body.section-home > main section#products.bullets .products-wrapper .product:first-child .description h4 {
+  color: #6EB95A;
+}
+
 body.section-home > main section#products.bullets .products-wrapper .product:first-child .description a.btn {
   background-color: #6EB95A;
   border-color: #6EB95A;
@@ -3594,6 +3598,10 @@ body.section-home > main section#products.bullets .products-wrapper .product:fir
 }
 
 body.section-home > main section#products.bullets .products-wrapper .product:last-child i.fa {
+  color: #19354e;
+}
+
+body.section-home > main section#products.bullets .products-wrapper .product:last-child .description h4 {
   color: #19354e;
 }
 
@@ -7713,6 +7721,14 @@ body.section-empleos main #tags ul li {
 
   body.section-home > main section#products .products-wrapper .product .description {
     min-height: 200px;
+  }
+
+  body.section-home > main section#products.bullets .products-wrapper .product .description {
+    padding: 15px;
+  }
+
+  body.section-home > main section#products.bullets .products-wrapper .product .description ul.items li {
+    font-size: 1rem;
   }
 
   body.section-home.en > main section#hero .description h1 {

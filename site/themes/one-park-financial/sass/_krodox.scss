@@ -862,9 +862,11 @@ body {
                     &.fa {
                       color: $brand-primary;
                     }
-
                   }
                   .description {
+                    h4 {
+                      color: $brand-primary;
+                    }
                     a {
                       &.btn {
                         background-color: $brand-primary;
@@ -886,6 +888,9 @@ body {
                     }
                   }
                   .description {
+                    h4 {
+                      color: $brand-secondary;
+                    }
                     a {
                       &.btn {
                         background-color: $brand-secondary;
@@ -4136,6 +4141,22 @@ body {
                 @include columns(1);
                 .description {
                   min-height: 200px;
+                }
+              }
+            }
+            &.bullets {
+              .products-wrapper {
+                .product {
+                  .description {
+                    padding: 15px;
+                    ul {
+                      &.items {
+                        li {
+                          font-size: 1rem;
+                        }
+                      }
+                    }
+                  }
                 }
               }
             }
