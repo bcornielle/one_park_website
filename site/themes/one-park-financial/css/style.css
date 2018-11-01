@@ -3427,6 +3427,7 @@ body.section-home > main section#products {
 
 body.section-home > main section#products h2 {
   text-align: center;
+  margin-bottom: 15px;
 }
 
 body.section-home > main section#products h3 {
@@ -3437,12 +3438,8 @@ body.section-home > main section#products h3 {
   text-transform: none;
 }
 
-body.section-home > main section#products h4 {
-  margin-top: 60px;
-}
-
 body.section-home > main section#products p {
-  text-align: left;
+  text-align: center;
 }
 
 body.section-home > main section#products .products-wrapper {
@@ -3511,6 +3508,112 @@ body.section-home > main section#products .products-wrapper .product .descriptio
 
 body.section-home > main section#products .products-wrapper .product .description a:hover {
   color: #6EB95A;
+}
+
+body.section-home > main section#products.bullets .products-wrapper {
+  margin-top: 60px;
+}
+
+body.section-home > main section#products.bullets .products-wrapper .product {
+  position: relative;
+  padding: 30px 15px 15px;
+  text-align: center;
+  transition: ease all .4s;
+}
+
+body.section-home > main section#products.bullets .products-wrapper .product i.fa {
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  top: -15px;
+  font-size: 44px;
+  background: #fff;
+}
+
+body.section-home > main section#products.bullets .products-wrapper .product .description h4 {
+  font-size: 1em;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+body.section-home > main section#products.bullets .products-wrapper .product .description p {
+  margin: 30px 0;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+body.section-home > main section#products.bullets .products-wrapper .product .description ul {
+  margin: 30px 0;
+  text-align: center;
+}
+
+body.section-home > main section#products.bullets .products-wrapper .product .description ul.items li {
+  border-bottom: solid 1px #eee;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+body.section-home > main section#products.bullets .products-wrapper .product .description a {
+  margin: 0;
+  padding: 0;
+  color: #6EB95A;
+  border: none;
+  font-size: .9em;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+body.section-home > main section#products.bullets .products-wrapper .product .description a.btn {
+  padding: 10px 15px;
+  color: #fff;
+  text-decoration: none;
+}
+
+body.section-home > main section#products.bullets .products-wrapper .product .description a:hover {
+  color: #6EB95A;
+}
+
+body.section-home > main section#products.bullets .products-wrapper .product:first-child i.fa {
+  color: #6EB95A;
+}
+
+body.section-home > main section#products.bullets .products-wrapper .product:first-child .description a.btn {
+  background-color: #6EB95A;
+  border-color: #6EB95A;
+}
+
+body.section-home > main section#products.bullets .products-wrapper .product:first-child .description a.btn:hover {
+  background-color: #5ca847;
+  border-color: #5ca847;
+  transform: translateX(0px) scale(1.05);
+  color: #fff;
+}
+
+body.section-home > main section#products.bullets .products-wrapper .product:last-child i.fa {
+  color: #19354e;
+}
+
+body.section-home > main section#products.bullets .products-wrapper .product:last-child .description a.btn {
+  background-color: #19354e;
+  border-color: #19354e;
+}
+
+body.section-home > main section#products.bullets .products-wrapper .product:last-child .description a.btn:hover {
+  background-color: #102333;
+  border-color: #102333;
+  transform: translateX(0px) scale(1.05);
+  color: #fff;
+}
+
+body.section-home > main section#products.bullets .products-wrapper .product:hover:first-child {
+  border-color: #6EB95A;
+}
+
+body.section-home > main section#products.bullets .products-wrapper .product:hover:last-child {
+  border-color: #19354e;
 }
 
 body.section-home.es > main section#products .products-wrapper .product .description {
