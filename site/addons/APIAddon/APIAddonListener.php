@@ -9,8 +9,8 @@ class APIAddonListener extends Listener {
     ];
 	public function saved(EntrySaved $event) {
 		$context = $event->contextualData();
-		if ($context['collection'] === 'press'){
-			//Log::info(print_r($context['id'],true));
+		if ($context['collection'] === 'careers'){
+			Log::info(print_r($context,true));
 		}
 		return $event;
 	}

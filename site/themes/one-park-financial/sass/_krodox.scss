@@ -2626,9 +2626,6 @@ body {
               }
             }
           }
-          .meta {
-            text-align: right;
-          }
         }
         .pagination {
           align-items: center;
@@ -2678,6 +2675,12 @@ body {
             &.office {
               display: block;
               text-transform: capitalize;
+            }
+            &.status {
+              span {
+                text-transform: uppercase;
+                font-weight: 900;
+              }
             }
           }
         }
@@ -2729,6 +2732,10 @@ body {
                 }
               }
             }
+          }
+          label {
+            text-transform: uppercase;
+            margin: 15px 0;
           }
           .honeypot {
             display: none;

@@ -2,7 +2,7 @@
     <div id="form" class="lp-form">
         <div class="row">
             <div class="col-md-12">
-                <div class="job-id">{{ title }}</div>
+                <div class="job-id">Posting ID: #{{ slug }}</div>
             </div>
         </div>
         <div class="row">
@@ -26,7 +26,10 @@
                             <input type="text" name="address" class="form-control" value="{{ old:address }}" placeholder="Address"/>
                         </li>
                         <li>
-                            <input type="file" name="resume"/>
+                            <label>
+                                Upload your Resume
+                                <input type="file" name="resume"/>
+                            </label>
                         </li>
                     </ul>
                     {{ if errors }}

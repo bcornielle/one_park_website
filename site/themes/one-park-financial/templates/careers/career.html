@@ -3,33 +3,17 @@
         <div class="container">
             <div class="heading title">
                 <h1>{{ title }}</h1>
-                <div class="location">{{ location }}</div>
+                <div class="location">In {{ location }}</div>
                 <div class="salary">{{ salary }}</div>
+                <div class="status">Status: <span>{{ status }}</span></div>
             </div>
             <article class="content">
                 <div class="row">
                     <div class="col-sm-8">
-                        {{ description | markdown}}
-                        <ul class="tags">
-                            {{ tags }}
-                            <li><a href="{{ url }}">{{ title }}</a></li>
-                            {{ /tags }}
-                        </ul>
+                        {{ job_description | markdown}}
                     </div>
                     <div class="col-sm-4">
                         {{ partial:careers-form }}
-                        <div id="tags">
-                            <h2>Keywords</h2>
-                            <ul class="tags">
-                                <li>Front-end</li>
-                                <li>CSS</li>
-                                <li>HTML</li>
-                                <li>Vue.js</li>
-                                <li>Laravel</li>
-                                <li>SASS</li>
-                                <li>PHP-STORM</li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </article>

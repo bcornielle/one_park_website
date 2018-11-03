@@ -8,16 +8,12 @@
             </div>
                 <article class="list">
                     {{ collection:careers paginate="true" as="posts" limit="4" locale="only {locale}" }}
-                        {{ if count > 0 }}
-                           <ul>
-                              {{ posts scope="tag" }}
-                              {{ partial:career-block }}
-                              {{ /posts }}
-                           </ul>
-                           {{ partial:pagination }}
-                        {{ else }}
-                            <code class="no-results">No Results</code>
-                        {{ /if }}
+                        <ul>
+                            {{ posts scope="tag" }}
+                                {{ partial:career-block }}
+                            {{ /posts }}
+                        </ul>
+                        {{ partial:pagination }}
                     {{ /collection:careers }}
                 </article>
         </section>

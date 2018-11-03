@@ -6141,11 +6141,6 @@ body.section-empleos main #careers .block a.btn.btn-primary:hover {
   background: #5ca847;
 }
 
-body.section-careers main #careers .block .meta,
-body.section-empleos main #careers .block .meta {
-  text-align: right;
-}
-
 body.section-careers main #careers .pagination,
 body.section-empleos main #careers .pagination {
   -ms-flex-align: center;
@@ -6209,6 +6204,12 @@ body.section-careers main #article .heading div.office,
 body.section-empleos main #article .heading div.office {
   display: block;
   text-transform: capitalize;
+}
+
+body.section-careers main #article .heading div.status span,
+body.section-empleos main #article .heading div.status span {
+  text-transform: uppercase;
+  font-weight: 900;
 }
 
 body.section-careers main #careers-form,
@@ -6287,6 +6288,12 @@ body.section-empleos main #careers-form #form ul.disclaimer li .terms-of-use {
 body.section-careers main #careers-form #form ul.disclaimer li .terms-of-use:hover,
 body.section-empleos main #careers-form #form ul.disclaimer li .terms-of-use:hover {
   color: white;
+}
+
+body.section-careers main #careers-form #form label,
+body.section-empleos main #careers-form #form label {
+  text-transform: uppercase;
+  margin: 15px 0;
 }
 
 body.section-careers main #careers-form #form .honeypot,

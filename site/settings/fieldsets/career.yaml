@@ -13,30 +13,40 @@ sections:
         type: text
         display: Salary
       compensation_type:
-        type: text
+        options:
+          'Hourly + Bonus': 'Hourly + Bonus'
+          'Salary + Bonus': 'Salary + Bonus'
+        type: select
         display: 'Compensation Type'
-      description_short:
+      office:
+        options:
+          'OPF - Miami': 'OPF - Miami'
+          'OPF - Santo Domingo': 'OPF - Santo Domingo'
+          'OPF - Santiago': 'OPF - Santiago'
+          'MCK - Miami': 'MCK - Miami'
+        type: select
+        width: 50
+        display: Office
+      company:
+        options:
+          OPF: OPF
+          MCK: MCK
+        type: select
+        width: 50
+        display: Company
+      department:
+        type: text
+        display: Department
+      short_description:
         type: textarea
         display: 'Short Description'
-      description:
+      job_description:
         cheatsheet: false
         restrict_assets: false
         type: markdown
         display: Description
         container: main
         folder: /
-      office:
-        type: text
-        width: 33
-        display: Office
-      department:
-        type: text
-        width: 33
-        display: Department
-      company:
-        type: text
-        width: 33
-        display: Company
       starting_date:
         allow_blank: false
         allow_time: true
@@ -44,12 +54,6 @@ sections:
         earliest_date: 'January 1, 1900'
         type: date
         display: 'Starting Date'
-      assigned_to:
-        type: text
-        display: 'Assigned To'
-      status:
-        type: text
-        display: Status
       posting_date:
         allow_blank: false
         allow_time: false
@@ -57,6 +61,13 @@ sections:
         earliest_date: 'January 1, 1900'
         type: date
         display: 'Posting Date'
+      status:
+        options:
+          Open: Open
+          Close: Close
+          Hired: Hired
+        type: select
+        display: Status
 taxonomies: true
 title: Careers
 create_title: 'New Listing Job'
