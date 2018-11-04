@@ -6,18 +6,28 @@ sections:
         display: Title
         type: text
         localizable: true
-      location:
-        type: text
-        display: Location
-      salary:
-        type: text
-        display: Salary
+      status:
+        options:
+          Open: Open
+          Close: Close
+          Hired: Hired
+        type: select
+        display: Status
+        width: 50
       compensation_type:
         options:
           'Hourly + Bonus': 'Hourly + Bonus'
           'Salary + Bonus': 'Salary + Bonus'
         type: select
         display: 'Compensation Type'
+        width: 50
+      company:
+        options:
+          OPF: OPF
+          MCK: MCK
+        type: select
+        width: 50
+        display: Company
       office:
         options:
           'OPF - Miami': 'OPF - Miami'
@@ -27,26 +37,25 @@ sections:
         type: select
         width: 50
         display: Office
-      company:
-        options:
-          OPF: OPF
-          MCK: MCK
-        type: select
-        width: 50
-        display: Company
-      department:
-        type: text
-        display: Department
       short_description:
         type: textarea
         display: 'Short Description'
-      job_description:
+      description:
         cheatsheet: false
         restrict_assets: false
         type: markdown
         display: Description
         container: main
         folder: /
+      location:
+        type: text
+        display: Location
+      salary:
+        type: text
+        display: Salary
+      department:
+        type: text
+        display: Department
       starting_date:
         allow_blank: false
         allow_time: true
@@ -61,13 +70,6 @@ sections:
         earliest_date: 'January 1, 1900'
         type: date
         display: 'Posting Date'
-      status:
-        options:
-          Open: Open
-          Close: Close
-          Hired: Hired
-        type: select
-        display: Status
 taxonomies: true
 title: Careers
 create_title: 'New Listing Job'

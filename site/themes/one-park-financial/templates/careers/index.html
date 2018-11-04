@@ -7,10 +7,10 @@
                 <h3>We want you to be a part of that team!</h3>
             </div>
                 <article class="list">
-                    {{ collection:careers paginate="true" as="posts" limit="4" locale="only {locale}" }}
+                    {{ collection:careers paginate="true" as="posts" limit="4" locale="only {locale}" status:is="Open"}}
                         <ul>
                             {{ posts scope="tag" }}
-                                {{ partial:career-block }}
+                            {{ partial:career-block }}
                             {{ /posts }}
                         </ul>
                         {{ partial:pagination }}
