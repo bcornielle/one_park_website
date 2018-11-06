@@ -79,7 +79,7 @@ export default {
             const str = this.link;
 
             return str.match(/^\w[\w\-_\.]+\.(co|uk|com|org|net|gov|biz|info|us|eu|de|fr|it|es|pl|nz)/i) ?
-                        'http://' + str :
+                        'https://' + str :
                             str;
         }
 
