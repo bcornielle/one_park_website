@@ -14,8 +14,7 @@ class APIAddonListener extends Listener {
 		if ($context['collection'] === 'careers'){
 			$context['posting_id'] = $context['slug'];
 			$context['entry_id'] = $context['id'];
-			$response = $this->api_save($context);
-			//Log::info(print_r($response,true));
+			$this->api_save($context);
 		}
 		return $event;
 	}
@@ -24,16 +23,21 @@ class APIAddonListener extends Listener {
 		$this->api_delete($context['id']);
 		return $event;
 	}
-
 	private function api_save($career){
-		$url = env('API_URL') . env('API_VERSION') . '/jobs?api_token='.env('API_TOKEN');
-		$method = "PUT";
-		return $this->sync($url,$method,json_encode($career));
+		if (env('API_URL') && env('API_VERSION') && env('API_TOKEN')){
+			$url = env('API_URL') . env('API_VERSION') . '/jobs?api_token='.env('API_TOKEN');
+			$method = "PUT";
+			return $this->sync($url,$method,json_encode($career));
+		}
+		return false;
 	}
 	private function api_delete($entry_id){
-		$url = env('API_URL') . env('API_VERSION') . '/jobs/' . $entry_id . '?api_token='.env('API_TOKEN');
-		$method = "DELETE";
-		return $this->sync($url,$method,$entry_id);
+		if (env('API_URL') && env('API_VERSION') && env('API_TOKEN')){
+			$url = env('API_URL') . env('API_VERSION') . '/jobs/' . $entry_id . '?api_token='.env('API_TOKEN');
+			$method = "DELETE";
+			return $this->sync($url,$method,$entry_id);
+		}
+		return false;
 	}
 	private function sync($url,$method,$post_fields){
 		$ch = curl_init();
