@@ -10,6 +10,7 @@ fields:
     display: Address
   resume:
     display: Resume
+    validate: mimes:doc,docx,pdf
     type: file
     destination: uploads/
   job_id:

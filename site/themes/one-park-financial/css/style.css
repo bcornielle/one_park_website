@@ -6066,7 +6066,6 @@ body.section-empleos main #careers .block {
   border: solid 2px #eeeeee;
   padding: 30px;
   background: #eeeeee;
-  min-height: 100px;
   float: left;
   width: 49% !important;
   margin: 0 2% 2% 0;
@@ -6120,6 +6119,7 @@ body.section-empleos main #careers .block a div.office {
 body.section-careers main #careers .block a p,
 body.section-empleos main #careers .block a p {
   margin: 30px 0;
+  min-height: 120px;
 }
 
 body.section-careers main #careers .block a.btn,
@@ -6139,11 +6139,6 @@ body.section-empleos main #careers .block a.btn.btn-primary {
 body.section-careers main #careers .block a.btn.btn-primary:hover,
 body.section-empleos main #careers .block a.btn.btn-primary:hover {
   background: #5ca847;
-}
-
-body.section-careers main #careers .block .meta,
-body.section-empleos main #careers .block .meta {
-  text-align: right;
 }
 
 body.section-careers main #careers .pagination,
@@ -6209,6 +6204,12 @@ body.section-careers main #article .heading div.office,
 body.section-empleos main #article .heading div.office {
   display: block;
   text-transform: capitalize;
+}
+
+body.section-careers main #article .heading div.status span,
+body.section-empleos main #article .heading div.status span {
+  text-transform: uppercase;
+  font-weight: 900;
 }
 
 body.section-careers main #careers-form,
@@ -6287,6 +6288,12 @@ body.section-empleos main #careers-form #form ul.disclaimer li .terms-of-use {
 body.section-careers main #careers-form #form ul.disclaimer li .terms-of-use:hover,
 body.section-empleos main #careers-form #form ul.disclaimer li .terms-of-use:hover {
   color: white;
+}
+
+body.section-careers main #careers-form #form label,
+body.section-empleos main #careers-form #form label {
+  text-transform: uppercase;
+  margin: 15px 0;
 }
 
 body.section-careers main #careers-form #form .honeypot,
