@@ -14,7 +14,8 @@ class APIAddonListener extends Listener {
 		if ($context['collection'] === 'careers'){
 			$context['posting_id'] = $context['slug'];
 			$context['entry_id'] = $context['id'];
-			$this->api_save($context);
+			$response = $this->api_save($context);
+			//Log::info(print_r($response,true));
 		}
 		return $event;
 	}
