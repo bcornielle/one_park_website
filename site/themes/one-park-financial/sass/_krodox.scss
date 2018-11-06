@@ -2585,7 +2585,6 @@ body {
           border: solid 2px $border-color;
           padding: 30px;
           background: $border-color;
-          min-height: 100px;
           @include clearfix;
           @include columns(2);
           &:not(:last-child){
@@ -2609,8 +2608,9 @@ body {
                 text-transform: capitalize;
               }
             }
-            p{
+            p {
               margin: 30px 0;
+              min-height: 120px;
             }
             &.btn {
               padding: 6px 12px;

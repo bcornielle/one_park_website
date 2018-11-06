@@ -6066,7 +6066,6 @@ body.section-empleos main #careers .block {
   border: solid 2px #eeeeee;
   padding: 30px;
   background: #eeeeee;
-  min-height: 100px;
   float: left;
   width: 49% !important;
   margin: 0 2% 2% 0;
@@ -6120,6 +6119,7 @@ body.section-empleos main #careers .block a div.office {
 body.section-careers main #careers .block a p,
 body.section-empleos main #careers .block a p {
   margin: 30px 0;
+  min-height: 120px;
 }
 
 body.section-careers main #careers .block a.btn,
