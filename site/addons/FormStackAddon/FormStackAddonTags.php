@@ -45,16 +45,24 @@ class FormStackAddonTags extends Tags {
 					$parts = explode("|",$value);
 					$params['revenue'] = trim($parts[0]);
 					if ($params['revenue'] == 1) {
-						if (isset($params['how_much_funding_do_you_need']) && $params['how_much_funding_do_you_need'] < 2500){
-							$params['amount'] = $params['how_much_funding_do_you_need'];
+						if (isset($params['how_much_funding_do_you_need'])){
+							if (intval($params['how_much_funding_do_you_need']) < 2500){
+								$params['amount'] = intval($params['how_much_funding_do_you_need']);
+							}else{
+								$params['amount'] = 2500;
+							}
 						}else{
 							$params['amount'] = 2500;
 						}
 					}else{
-						if (isset($params['how_much_funding_do_you_need']) && ($params['how_much_funding_do_you_need'] < $params['revenue'])){
-							$params['amount'] = $params['how_much_funding_do_you_need'];
+						if (isset($params['how_much_funding_do_you_need'])){
+							if (intval($params['how_much_funding_do_you_need']) < intval($params['revenue'])){
+								$params['amount'] = intval($params['how_much_funding_do_you_need']);
+							}else{
+								$params['amount'] = intval($params['revenue']);
+							}
 						}else{
-							$params['amount'] = number_format($params['revenue']);
+							$params['amount'] = intval($params['revenue']);
 						}
 					}
 					$value = $params['revenue'];
