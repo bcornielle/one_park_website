@@ -45,9 +45,17 @@ class FormStackAddonTags extends Tags {
 					$parts = explode("|",$value);
 					$params['revenue'] = trim($parts[0]);
 					if ($params['revenue'] == 1) {
-						$params['amount'] = 2500 * 1.5;
+						if (isset($params['how_much_funding_do_you_need']) && number_format($params['how_much_funding_do_you_need']) < 2500){
+							$params['amount'] = $params['how_much_funding_do_you_need'];
+						}else{
+							$params['amount'] = 2500;
+						}
 					}else{
-						$params['amount'] = number_format($params['revenue'] * 1.5);
+						if (isset($params['how_much_funding_do_you_need']) && number_format($params['how_much_funding_do_you_need']) < number_format($params['revenue'])){
+							$params['amount'] = $params['how_much_funding_do_you_need'];
+						}else{
+							$params['amount'] = number_format($params['revenue']);
+						}
 					}
 					$value = $params['revenue'];
 				}
@@ -179,9 +187,9 @@ class FormStackAddonTags extends Tags {
 					$parts = explode("|",$value);
 					$params['revenue'] = trim($parts[0]);
 					if ($params['revenue'] == 1) {
-						$params['amount'] = 2500 * 1.5;
+						$params['amount'] = 2500;
 					}else{
-						$params['amount'] = number_format($params['revenue'] * 1.5);
+						$params['amount'] = number_format($params['revenue']);
 					}
 					$value = $params['revenue'];
 				}
