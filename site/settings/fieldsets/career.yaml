@@ -9,7 +9,7 @@ sections:
       status:
         options:
           Open: Open
-          Close: Close
+          Closed: Closed
           Hired: Hired
         type: select
         display: Status

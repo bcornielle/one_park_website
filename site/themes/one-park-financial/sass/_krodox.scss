@@ -2748,6 +2748,18 @@ body {
             margin: 10px 0 15px;
             color: white;
           }
+          #error-alert {
+            background: red;
+            padding: 5px;
+            color: $white;
+            border-radius: 5px;
+          }
+          #success-alert {
+            background: $brand-primary;
+            padding: 5px;
+            color: $white;
+            border-radius: 5px;
+          }
         }
       }
       #tags {

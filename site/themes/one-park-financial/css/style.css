@@ -6311,6 +6311,22 @@ body.section-empleos main #careers-form #form .btn {
   color: white;
 }
 
+body.section-careers main #careers-form #form #error-alert,
+body.section-empleos main #careers-form #form #error-alert {
+  background: red;
+  padding: 5px;
+  color: #fff;
+  border-radius: 5px;
+}
+
+body.section-careers main #careers-form #form #success-alert,
+body.section-empleos main #careers-form #form #success-alert {
+  background: #6EB95A;
+  padding: 5px;
+  color: #fff;
+  border-radius: 5px;
+}
+
 body.section-careers main #tags h2,
 body.section-empleos main #tags h2 {
   text-transform: uppercase;
