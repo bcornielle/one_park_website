@@ -7600,6 +7600,10 @@ body.section-empleos main #tags ul li {
     margin: 0;
   }
 
+  body.section-lp > main section#services {
+    margin: 60px 0 0;
+  }
+
   body.section-lp.en > main section#hero .description h1 {
     font-size: 2em;
   }
