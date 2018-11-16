@@ -40,7 +40,9 @@
                     </div>
                     {{ /if }}
                     {{ if {form:success} }}
-                    {{ form_submission }}
+                        <div id="success-alert">
+                            Your request was submitted.
+                        </div>
                     {{ /if }}
                     <button class="btn btn-third">Apply Now</button>
                     {{ /form:create }}
