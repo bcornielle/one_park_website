@@ -205,6 +205,23 @@ body {
     background: $white;
     border: none;
     section {
+      &#hero {
+        .description {
+          h1 {
+            strong {
+              font-family: $font-forge;
+              font-weight: 900;
+              letter-spacing: -4px;
+            }
+          }
+          h4 {
+            font-family: $font-forge;
+            strong {
+              font-weight: 900;
+            }
+          }
+        }
+      }
       &#article {
         padding: 30px 0;
         .heading {
@@ -336,6 +353,375 @@ body {
           }
         }
       }
+      &#services {
+        margin: 90px 0 0;
+        text-align: center;
+        h2 {
+          font-weight: 300;
+          margin: 0 0 12px;
+        }
+        h3 {
+          font-weight: 300;
+          font-size: 1em;
+          margin: 0;
+          text-transform: uppercase;
+        }
+        p {
+          max-width: 900px;
+          margin: 10px auto 30px;
+          text-align: center;
+        }
+        ul {
+          margin: 30px 0 0;
+          li {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            border: dashed 2px $border-color;
+            @include columns(5,1%);
+            padding: 10px;
+            img {
+              margin-bottom: 20px;
+              width: 75px;
+              height: 75px;
+            }
+            .description {
+              min-height: 10px;
+            }
+          }
+        }
+      }
+      &#call-to-action-1, &#call-to-action-2, &#call-to-action-3 {
+        text-align: center;
+        background-image: url("/assets/img/apply-bc.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 90px 0 0;
+        .flexed {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          height: 244px;
+          h2, h3 {
+            font-family: inherit;
+          }
+          .btn {
+            text-transform: uppercase;
+            color: $white;
+            margin: 0 auto;
+            width: 220px;
+            padding: 15px 0;
+            border: none;
+            display: block;
+            border-radius: 3px;
+            transition: all ease .3s;
+            background-color: $brand-secondary;
+            border-color: $brand-secondary;
+            font-size: 1.3em;
+            font-family: $font-forge;
+            font-weight: 900;
+            &:hover {
+              background-color: $brand-primary;
+              border-color: $brand-primary;
+              transform: translateX(0px) scale(1.05);
+            }
+          }
+        }
+      }
+      &#testimonials {
+        margin: 90px 0 0;
+        h2 {
+          text-align: center;
+        }
+        h3 {
+          text-align: center;
+          font-size: 1em;
+          margin-bottom: 45px;
+          font-weight: 900;
+          text-transform: none;
+        }
+        p {
+          margin: 10px auto 30px;
+          text-align: center;
+        }
+      }
+      &#about-us, &#sobre-nosotros {
+        margin: 90px 0 0;
+        h2 {
+          text-align: center;
+          margin-bottom: 30px;
+        }
+        .image-wrapper {
+          @include clearfix;
+          margin: 30px 0;
+          text-align: center;
+          img {
+            max-width: 100%;
+          }
+          ul {
+            li {
+              @include columns(3);
+              border: dashed 2px $border-color;
+              height: 100px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              padding: 10px;
+            }
+          }
+          .iframe-wrapper {
+            width: 100%;
+            position: relative;
+            height: 250px;
+            iframe {
+              POSITION: ABSOLUTE;
+              TOP: 0;
+              LEFT: 0;
+              RIGHT: 0;
+              BOTTOM: 0;
+              WIDTH: 100%;
+              HEIGHT: 100%;
+              BORDER: SOLID 1PX #EEE;
+            }
+          }
+          .trustpilot-widget-wrapper {
+            margin-top: 30px;
+          }
+        }
+        .description {
+          @include clearfix;
+          margin: 0;
+          padding: 0 20px;
+          p {
+            font-size: 1rem;
+          }
+          h4 {
+            text-align: center;
+            font-size: 1em;
+            text-transform: uppercase;
+            margin: 30px 0;
+          }
+          ul {
+            column-count: 2;
+            column-gap: 20px;
+            line-height: 1.8;
+            li {
+              margin-left: 1.2em;
+              line-height: 1.2;
+              margin-bottom: 5px;
+            }
+          }
+          .advantages {
+            border: dashed 2px $border-color;
+            margin-top: 30px;
+            h4 {
+              margin: 0;
+              text-align: left;
+              border-bottom: dashed 2px $border-color;
+              padding: 10px;
+            }
+            ul {
+              list-style: circle;
+              padding: 15px;
+              li {
+                font-size: .9rem;
+              }
+            }
+          }
+        }
+      }
+      &#products {
+        text-align: center;
+        margin: 90px 0 0;
+        h2 {
+          text-align: center;
+          margin-bottom: 15px;
+        }
+        h3 {
+          text-align: center;
+          font-size: 1em;
+          margin-bottom: 15px;
+          font-weight: 900;
+          text-transform: none;
+        }
+        p {
+          text-align: center;
+        }
+        .products-wrapper {
+          padding: 0;
+          text-align: left;
+          margin: 30px 0;
+          @include clearfix;
+          .product {
+            @include columns(2);
+            display: block;
+            border: solid 1px $border-color;
+            .image-wrapper {
+              img {
+                max-width: 100%;
+                width: 100%;
+              }
+            }
+            .description {
+              padding: 30px;
+              min-height: 300px;
+              overflow: hidden;
+              h4 {
+                font-size: 1em;
+                font-weight: 900;
+                text-align: left;
+                text-transform: uppercase;
+                margin-top: 0;
+              }
+              p {
+                margin: 15px 0;
+                text-align: left;
+                font-size: 1rem;
+              }
+              a {
+                margin: 0;
+                padding: 0;
+                color: $brand-primary;
+                border: none;
+                font-size: .9em;
+                font-weight: 600;
+                text-transform: uppercase;
+                text-decoration: underline;
+                &:hover {
+                  color: $brand-primary;
+                }
+              }
+            }
+          }
+        }
+        &.bullets {
+          .products-wrapper {
+            margin-top: 60px;
+            .product {
+              position: relative;
+              padding: 30px 15px 15px;
+              text-align: center;
+              transition: ease all .4s;
+              border-width: 2px;
+              i {
+                &.fa {
+                  left: 50%;
+                  position: absolute;
+                  transform: translateX(-50%);
+                  top: -15px;
+                  font-size: 44px;
+                  background: $white;
+                }
+              }
+              .description {
+                h4 {
+                  font-size: 1em;
+                  font-weight: 900;
+                  text-align: center;
+                  text-transform: uppercase;
+                  margin-top: 0;
+                }
+                p {
+                  margin: 30px 0;
+                  text-align: center;
+                  font-size: 1.1rem;
+                }
+                ul {
+                  margin: 30px 0;
+                  text-align: center;
+                  &.items {
+                    li {
+                      border-bottom: solid 1px #eee;
+                      padding-bottom: 10px;
+                      margin-bottom: 10px;
+                    }
+                  }
+                }
+                a {
+                  margin: 0;
+                  padding: 0;
+                  color: $brand-primary;
+                  border: none;
+                  font-size: .9em;
+                  font-weight: 600;
+                  text-transform: uppercase;
+                  text-decoration: underline;
+                  &.btn {
+                    padding: 10px 15px;
+                    color: $white;
+                    text-decoration: none;
+                  }
+                  &:hover {
+                    color: $brand-primary;
+                  }
+                }
+              }
+              &:first-child {
+                i {
+                  &.fa {
+                    color: $brand-primary;
+                  }
+                }
+                .description {
+                  h4 {
+                    color: $brand-primary;
+                  }
+                  a {
+                    &.btn {
+                      background-color: $brand-primary;
+                      border-color: $brand-primary;
+                      &:hover {
+                        background-color: darken($brand-primary,7%);
+                        border-color: darken($brand-primary,7%);
+                        transform: translateX(0px) scale(1.05);
+                        color: $white;
+                      }
+                    }
+                  }
+                }
+              }
+              &:last-child {
+                i {
+                  &.fa {
+                    color: $brand-secondary;
+                  }
+                }
+                .description {
+                  h4 {
+                    color: $brand-secondary;
+                  }
+                  a {
+                    &.btn {
+                      background-color: $brand-secondary;
+                      border-color: $brand-secondary;
+                      &:hover {
+                        background-color: darken($brand-secondary,7%);
+                        border-color: darken($brand-secondary,7%);
+                        transform: translateX(0px) scale(1.05);
+                        color: $white;
+                      }
+                    }
+                  }
+                }
+              }
+              &:hover {
+                &:first-child {
+                  border-color: $brand-primary;
+                }
+                &:last-child {
+                  border-color: $brand-secondary;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
   > footer {
@@ -460,7 +846,7 @@ body {
             padding: 60px 0 60px 0;
             h1 {
               font-family: inherit;
-              font-size: 3.5em;
+              font-size: 3em;
               font-weight: 300;
               line-height: 1;
               .why-we-do-it {
@@ -548,375 +934,6 @@ body {
             }
           }
         }
-        &#services {
-          margin: 90px 0 0;
-          text-align: center;
-          h2 {
-            font-weight: 300;
-            margin: 0 0 12px;
-          }
-          h3 {
-            font-weight: 300;
-            font-size: 1em;
-            margin: 0;
-            text-transform: uppercase;
-          }
-          p {
-            max-width: 900px;
-            margin: 10px auto 30px;
-            text-align: center;
-          }
-          ul {
-            margin: 30px 0 0;
-            li {
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-              align-items: center;
-              height: 200px;
-              border: dashed 2px $border-color;
-              @include columns(5,1%);
-              padding: 10px;
-              img {
-                margin-bottom: 20px;
-                width: 75px;
-                height: 75px;
-              }
-              .description {
-                min-height: 10px;
-              }
-            }
-          }
-        }
-        &#call-to-action-1, &#call-to-action-2, &#call-to-action-3 {
-          text-align: center;
-          background-image: url("/assets/img/apply-bc.jpg");
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-          margin: 90px 0 0;
-          .flexed {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            height: 244px;
-            h2, h3 {
-              font-family: inherit;
-            }
-            .btn {
-              text-transform: uppercase;
-              color: $white;
-              margin: 0 auto;
-              width: 220px;
-              padding: 15px 0;
-              border: none;
-              display: block;
-              border-radius: 3px;
-              transition: all ease .3s;
-              background-color: $brand-secondary;
-              border-color: $brand-secondary;
-              font-size: 1.3em;
-              font-family: $font-forge;
-              font-weight: 900;
-              &:hover {
-                background-color: $brand-primary;
-                border-color: $brand-primary;
-                transform: translateX(0px) scale(1.05);
-              }
-            }
-          }
-        }
-        &#testimonials {
-          margin: 90px 0 0;
-          h2 {
-            text-align: center;
-          }
-          h3 {
-            text-align: center;
-            font-size: 1em;
-            margin-bottom: 45px;
-            font-weight: 900;
-            text-transform: none;
-          }
-          p {
-            margin: 10px auto 30px;
-            text-align: center;
-          }
-        }
-        &#about-us, &#sobre-nosotros {
-          margin: 90px 0 0;
-          h2 {
-            text-align: center;
-            margin-bottom: 30px;
-          }
-          .image-wrapper {
-            @include clearfix;
-            margin: 30px 0;
-            text-align: center;
-            img {
-              max-width: 100%;
-            }
-            ul {
-              li {
-                @include columns(3);
-                border: dashed 2px $border-color;
-                height: 100px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                padding: 10px;
-              }
-            }
-            .iframe-wrapper {
-              width: 100%;
-              position: relative;
-              height: 250px;
-              iframe {
-                POSITION: ABSOLUTE;
-                TOP: 0;
-                LEFT: 0;
-                RIGHT: 0;
-                BOTTOM: 0;
-                WIDTH: 100%;
-                HEIGHT: 100%;
-                BORDER: SOLID 1PX #EEE;
-              }
-            }
-            .trustpilot-widget-wrapper {
-              margin-top: 30px;
-            }
-          }
-          .description {
-            @include clearfix;
-            margin: 0;
-            padding: 0 20px;
-            p {
-              font-size: 1rem;
-            }
-            h4 {
-              text-align: center;
-              font-size: 1em;
-              text-transform: uppercase;
-              margin: 30px 0;
-            }
-            ul {
-              column-count: 2;
-              column-gap: 20px;
-              line-height: 1.8;
-              li {
-                margin-left: 1.2em;
-                line-height: 1.2;
-                margin-bottom: 5px;
-              }
-            }
-            .advantages {
-              border: dashed 2px $border-color;
-              margin-top: 30px;
-              h4 {
-                margin: 0;
-                text-align: left;
-                border-bottom: dashed 2px $border-color;
-                padding: 10px;
-              }
-              ul {
-                list-style: circle;
-                padding: 15px;
-                li {
-                  font-size: .9rem;
-                }
-              }
-            }
-          }
-        }
-        &#products {
-          text-align: center;
-          margin: 90px 0 0;
-          h2 {
-            text-align: center;
-            margin-bottom: 15px;
-          }
-          h3 {
-            text-align: center;
-            font-size: 1em;
-            margin-bottom: 15px;
-            font-weight: 900;
-            text-transform: none;
-          }
-          p {
-            text-align: center;
-          }
-          .products-wrapper {
-            padding: 0;
-            text-align: left;
-            margin: 30px 0;
-            @include clearfix;
-            .product {
-              @include columns(2);
-              display: block;
-              border: solid 1px $border-color;
-              .image-wrapper {
-                img {
-                  max-width: 100%;
-                  width: 100%;
-                }
-              }
-              .description {
-                padding: 30px;
-                min-height: 300px;
-                overflow: hidden;
-                h4 {
-                  font-size: 1em;
-                  font-weight: 900;
-                  text-align: left;
-                  text-transform: uppercase;
-                  margin-top: 0;
-                }
-                p {
-                  margin: 15px 0;
-                  text-align: left;
-                  font-size: 1rem;
-                }
-                a {
-                  margin: 0;
-                  padding: 0;
-                  color: $brand-primary;
-                  border: none;
-                  font-size: .9em;
-                  font-weight: 600;
-                  text-transform: uppercase;
-                  text-decoration: underline;
-                  &:hover {
-                    color: $brand-primary;
-                  }
-                }
-              }
-            }
-          }
-          &.bullets {
-            .products-wrapper {
-              margin-top: 60px;
-              .product {
-                position: relative;
-                padding: 30px 15px 15px;
-                text-align: center;
-                transition: ease all .4s;
-                border-width: 2px;
-                i {
-                  &.fa {
-                    left: 50%;
-                    position: absolute;
-                    transform: translateX(-50%);
-                    top: -15px;
-                    font-size: 44px;
-                    background: $white;
-                  }
-                }
-                .description {
-                  h4 {
-                    font-size: 1em;
-                    font-weight: 900;
-                    text-align: center;
-                    text-transform: uppercase;
-                    margin-top: 0;
-                  }
-                  p {
-                    margin: 30px 0;
-                    text-align: center;
-                    font-size: 1.1rem;
-                  }
-                  ul {
-                    margin: 30px 0;
-                    text-align: center;
-                    &.items {
-                      li {
-                        border-bottom: solid 1px #eee;
-                        padding-bottom: 10px;
-                        margin-bottom: 10px;
-                      }
-                    }
-                  }
-                  a {
-                    margin: 0;
-                    padding: 0;
-                    color: $brand-primary;
-                    border: none;
-                    font-size: .9em;
-                    font-weight: 600;
-                    text-transform: uppercase;
-                    text-decoration: underline;
-                    &.btn {
-                      padding: 10px 15px;
-                      color: $white;
-                      text-decoration: none;
-                    }
-                    &:hover {
-                      color: $brand-primary;
-                    }
-                  }
-                }
-                &:first-child {
-                  i {
-                    &.fa {
-                      color: $brand-primary;
-                    }
-                  }
-                  .description {
-                    h4 {
-                      color: $brand-primary;
-                    }
-                    a {
-                      &.btn {
-                        background-color: $brand-primary;
-                        border-color: $brand-primary;
-                        &:hover {
-                          background-color: darken($brand-primary,7%);
-                          border-color: darken($brand-primary,7%);
-                          transform: translateX(0px) scale(1.05);
-                          color: $white;
-                        }
-                      }
-                    }
-                  }
-                }
-                &:last-child {
-                  i {
-                    &.fa {
-                      color: $brand-secondary;
-                    }
-                  }
-                  .description {
-                    h4 {
-                      color: $brand-secondary;
-                    }
-                    a {
-                      &.btn {
-                        background-color: $brand-secondary;
-                        border-color: $brand-secondary;
-                        &:hover {
-                          background-color: darken($brand-secondary,7%);
-                          border-color: darken($brand-secondary,7%);
-                          transform: translateX(0px) scale(1.05);
-                          color: $white;
-                        }
-                      }
-                    }
-                  }
-                }
-                &:hover {
-                  &:first-child {
-                    border-color: $brand-primary;
-                  }
-                  &:last-child {
-                    border-color: $brand-secondary;
-                  }
-                }
-              }
-            }
-          }
-        }
       }
     }
     &.es {
@@ -930,6 +947,292 @@ body {
                 }
               }
             }
+          }
+        }
+      }
+    }
+  }
+  &.section-lp {
+    header {
+      nav {
+        &#menu {
+          display: none;
+        }
+        &#branding {
+          ul {
+            &.branding {
+              border-top: none;
+              > li {
+                &.phone {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    > main {
+      section {
+        &#hero {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background-image: url("/assets/img/hero-bg2.jpg");
+          background-position: 20% 20%;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+          &.restaurant {
+            background-image: url("/assets/img/restaurant.jpeg");
+          }
+          &.trucking {
+            background-image: url("/assets/img/trucking.jpg");
+          }
+          &.overlay {
+            h1,li {
+              color: $white;
+            }
+            &:before {
+              background-color: rgba(0,0,0,0.7);
+            }
+          }
+          &:before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+          }
+          .description {
+            padding: 60px 0 60px 0;
+            h1 {
+              font-family: inherit;
+              font-size: 3em;
+              font-weight: 300;
+              line-height: 1;
+              .why-we-do-it {
+                padding-left: 5px;
+              }
+            }
+            h4 {
+              font-size: 1em;
+              font-weight: 300;
+              line-height: 1.2;
+              margin: 30px 0;
+              text-transform: uppercase;
+              color: $brand-primary;
+              span {
+                display: block;
+              }
+            }
+            ul {
+              &.xl {
+                display: block;
+              }
+              &.xs {
+                display: none;
+              }
+              li {
+                display: flex;
+                align-items: center;
+                margin-bottom: 3px;
+                img {
+                  width: 16px;
+                  height: 16px;
+                }
+                span {
+                  padding-left: 5px;
+                }
+              }
+            }
+          }
+          .lp-form-wrapper {
+            position: relative;
+            font-family: $font-forge;
+            #form {
+              $form_color: $brand-secondary;
+              &.lp-form {
+                min-height: 500px;
+                position: absolute;
+                top: -75px;
+                right: -5px;
+                background: $form_color;
+                border: solid 4px #fff;
+                width: 100%;
+                opacity: 1;
+                padding: 20px;
+                text-align: center;
+                .phone-header {
+                  border: 2px solid #a2a2a2;
+                  border-radius: 3px;
+                  text-align: center;
+                  .label {
+                    text-align: center;
+                    text-transform: uppercase;
+                    padding: .5em;
+                    position: relative;
+                    top: -9px;
+                    font-size: 10px;
+                    letter-spacing: 1px;
+                    color: $white;
+                    background-color: $form_color;
+                  }
+                  .number {
+                    margin: 0 0 10px;
+                    line-height: 1;
+                    font-size: 1.4em;
+                    display: block;
+                    color: $brand-third;
+                    a {
+                      color: $white;
+                      text-decoration: none;
+                    }
+                  }
+                }
+                h2 {
+                  font-size: 1em;
+                  text-transform: uppercase;
+                  font-weight: 400;
+                  color: $white;
+                  padding: 15px 0 0;
+                  strong {
+                    font-weight: normal;
+                  }
+                }
+                article {
+                  padding: 15px 0 0;
+                  .fields {
+                    position: relative;
+                    margin-bottom: 15px;
+                    .form-group, .form-row {
+                      margin-bottom: 10px;
+                    }
+                    .honeypot {
+                      display: none;
+                    }
+                    input[type=text], input[type=email], input[type = number] {
+                      border: none;
+                      outline: none;
+                      background: #f7f7f7;
+                      padding: 7px 10px;
+                      border-radius: 3px;
+                      &:focus {
+                        outline: none;
+                        box-shadow: none;
+                      }
+                    }
+                    .alert {
+                      position: absolute;
+                      top: 0;
+                      bottom: 0;
+                      right: 0;
+                      left: 0;
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      justify-content: center;
+                      max-height: 250px;
+                      border-radius: 0;
+                      margin: 15px;
+                      transition: ease all.4s;
+                      text-align: left;
+                      font-size: 14px;
+                      opacity: .98;
+                      &.error {
+                        background: red;
+                        border: solid 4px darken(red,25%);
+                        color: #fff;
+                        .close {
+                          background: darken(red,25%);
+                        }
+                      }
+                      &.success {
+                        background: $brand-primary;
+                        border: solid 4px darken($brand-primary,25%);
+                        color: #fff;
+                        .close {
+                          background: darken($brand-primary,25%);
+                        }
+                      }
+                      &.hidden {
+                        display: none;
+                      }
+                      .close {
+                        padding: 5px 10px;
+                        margin-top: 5px;
+                        color: #fff;
+                        font-weight: normal;
+                        font-size: 16px;
+                        border-radius: 3px;
+                        opacity: 1;
+                      }
+                    }
+                  }
+                }
+                button {
+                  &.btn {
+                    background: $brand-third;
+                    border: solid 2px darken($brand-third,10%);
+                    width: 100%;
+                    padding: 15px;
+                    text-transform: uppercase;
+                  }
+                }
+                ul {
+                  display: flex;
+                  align-items: center;
+                  margin: 0;
+                  padding: 20px 0 0;
+                  li {
+                    @include columns(2,0);
+                    &:first-child {
+                      font-size: 10px;
+                      text-align: left;
+                      a {
+                        color: #aba9a9;
+                        text-decoration: none;
+                        line-height: 1.2;
+                        text-align: left;
+                        transition: color ease .4s;
+                        span {
+                          border-bottom: solid 1px #aba9a9;
+                        }
+                        &:hover {
+                          span {
+                            color: $brand-third;
+                            border-bottom-color: $brand-third;
+                          }
+                        }
+                      }
+                    }
+                    &:last-child {
+                      text-align: right;
+                      img {
+                        max-width: 100%;
+                        max-height: 50px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        &#testimonials {
+          margin: 120px 0 0;
+          h2 {
+            display: none;
+            text-align: left;
+          }
+          h3 {
+            display: none;
+            text-align: left;
+            font-size: 1em;
+            margin-bottom: 45px;
           }
         }
       }
@@ -2081,486 +2384,6 @@ body {
       }
     }
   }
-  &.section-lp {
-    header {
-      nav {
-        &#menu {
-          display: none;
-        }
-        &#branding {
-          ul {
-            &.branding {
-              border-top: none;
-              > li {
-                &.phone {
-                  display: none;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    > main {
-      section {
-        &#hero {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          background-image: url("/assets/img/hero-bg2.jpg");
-          background-position: 20% 20%;
-          background-repeat: no-repeat;
-          background-size: cover;
-          position: relative;
-          .description {
-            padding: 60px 0 60px 0;
-            h1 {
-              font-family: inherit;
-              font-size: 3.5em;
-              font-weight: 300;
-              line-height: 1;
-              .why-we-do-it {
-                padding-left: 5px;
-              }
-            }
-            h4 {
-              font-size: 1em;
-              font-weight: 300;
-              line-height: 1.2;
-              margin: 30px 0;
-              text-transform: uppercase;
-              color: $brand-primary;
-              span {
-                display: block;
-              }
-            }
-            ul {
-              &.xl {
-                display: block;
-              }
-              &.xs {
-                display: none;
-              }
-              li {
-                display: flex;
-                align-items: center;
-                margin-bottom: 3px;
-                img {
-                  width: 16px;
-                  height: 16px;
-                }
-                span {
-                  padding-left: 5px;
-                }
-              }
-            }
-          }
-          .lp-form-wrapper {
-            position: relative;
-            font-family: $font-forge;
-            #form {
-              $form_color: $brand-secondary;
-              &.lp-form {
-                min-height: 500px;
-                position: absolute;
-                top: -75px;
-                right: -5px;
-                background: $form_color;
-                border: solid 4px #fff;
-                width: 100%;
-                opacity: 1;
-                padding: 20px;
-                text-align: center;
-                .phone-header {
-                  border: 2px solid #a2a2a2;
-                  border-radius: 3px;
-                  text-align: center;
-                  .label {
-                    text-align: center;
-                    text-transform: uppercase;
-                    padding: .5em;
-                    position: relative;
-                    top: -9px;
-                    font-size: 10px;
-                    letter-spacing: 1px;
-                    color: $white;
-                    background-color: $form_color;
-                  }
-                  .number {
-                    margin: 0 0 10px;
-                    line-height: 1;
-                    font-size: 1.4em;
-                    display: block;
-                    color: $brand-third;
-                    a {
-                      color: $white;
-                      text-decoration: none;
-                    }
-                  }
-                }
-                h2 {
-                  font-size: 1em;
-                  text-transform: uppercase;
-                  font-weight: 400;
-                  color: $white;
-                  padding: 15px 0 0;
-                  strong {
-                    font-weight: normal;
-                  }
-                }
-                article {
-                  padding: 15px 0 0;
-                  .fields {
-                    position: relative;
-                    margin-bottom: 15px;
-                    .form-group, .form-row {
-                      margin-bottom: 10px;
-                    }
-                    .honeypot {
-                      display: none;
-                    }
-                    input[type=text], input[type=email], input[type = number] {
-                     border: none;
-                      outline: none;
-                      background: #f7f7f7;
-                      padding: 7px 10px;
-                      border-radius: 3px;
-                      &:focus {
-                        outline: none;
-                        box-shadow: none;
-                      }
-                    }
-                    .alert {
-                      position: absolute;
-                      top: 0;
-                      bottom: 0;
-                      right: 0;
-                      left: 0;
-                      display: flex;
-                      flex-direction: column;
-                      align-items: center;
-                      justify-content: center;
-                      max-height: 250px;
-                      border-radius: 0;
-                      margin: 15px;
-                      transition: ease all.4s;
-                      text-align: left;
-                      font-size: 14px;
-                      opacity: .98;
-                      &.error {
-                        background: red;
-                        border: solid 4px darken(red,25%);
-                        color: #fff;
-                        .close {
-                          background: darken(red,25%);
-                        }
-                      }
-                      &.success {
-                        background: $brand-primary;
-                        border: solid 4px darken($brand-primary,25%);
-                        color: #fff;
-                        .close {
-                          background: darken($brand-primary,25%);
-                        }
-                      }
-                      &.hidden {
-                        display: none;
-                      }
-                      .close {
-                        padding: 5px 10px;
-                        margin-top: 5px;
-                        color: #fff;
-                        font-weight: normal;
-                        font-size: 16px;
-                        border-radius: 3px;
-                        opacity: 1;
-                      }
-                    }
-                  }
-                }
-                button {
-                  &.btn {
-                    background: $brand-third;
-                    border: solid 2px darken($brand-third,10%);
-                    width: 100%;
-                    padding: 15px;
-                    text-transform: uppercase;
-                  }
-                }
-                ul {
-                  display: flex;
-                  align-items: center;
-                  margin: 0;
-                  padding: 20px 0 0;
-                  li {
-                    @include columns(2,0);
-                    &:first-child {
-                      font-size: 10px;
-                      text-align: left;
-                      a {
-                        color: #aba9a9;
-                        text-decoration: none;
-                        line-height: 1.2;
-                        text-align: left;
-                        transition: color ease .4s;
-                        span {
-                          border-bottom: solid 1px #aba9a9;
-                        }
-                        &:hover {
-                          span {
-                            color: $brand-third;
-                            border-bottom-color: $brand-third;
-                          }
-                        }
-                      }
-                    }
-                    &:last-child {
-                      text-align: right;
-                      img {
-                        max-width: 100%;
-                        max-height: 50px;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-        &#testimonials {
-          margin: 120px 0 0;
-          h2 {
-            display: none;
-            text-align: left;
-          }
-          h3 {
-            display: none;
-            text-align: left;
-            font-size: 1em;
-            margin-bottom: 45px;
-          }
-        }
-        &#services {
-          margin: 90px 0 0;
-          text-align: center;
-          h2 {
-            font-weight: 300;
-            font-size: 2.5em;
-            margin: 0 0 12px;
-          }
-          h3 {
-            font-weight: 300;
-            font-size: 1em;
-            margin: 0;
-            text-transform: uppercase;
-          }
-          ul {
-            margin: 30px 0 0;
-            li {
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-              align-items: center;
-              height: 200px;
-              border: dashed 2px $border-color;
-              @include columns(5,1%);
-              padding: 10px;
-              img {
-                margin-bottom: 20px;
-                width: 75px;
-                height: 75px;
-              }
-              .description {
-                min-height: 10px;
-              }
-            }
-          }
-        }
-        &#call-to-action-1, &#call-to-action-2, &#call-to-action-3 {
-          text-align: center;
-          background-image: url("/assets/img/apply-bc.jpg");
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-          margin: 90px 0 0;
-          .flexed {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            height: 244px;
-            h2, h3 {
-              font-family: inherit;
-            }
-            .btn {
-              text-transform: uppercase;
-              color: $white;
-              margin: 0 auto;
-              width: 220px;
-              padding: 15px 0;
-              border: none;
-              display: block;
-              border-radius: 3px;
-              transition: all ease .3s;
-              background-color: $brand-secondary;
-              border-color: $brand-secondary;
-              font-size: 1.3em;
-              font-family: $font-forge;
-              font-weight: 900;
-              &:hover {
-                background-color: $brand-primary;
-                border-color: $brand-primary;
-                transform: translateX(0px) scale(1.05);
-              }
-            }
-          }
-        }
-        &#about-us, &#sobre-nosotros {
-          margin: 90px 0 0;
-          h2 {
-            text-align: center;
-            margin-bottom: 30px;
-          }
-          .image-wrapper {
-            @include clearfix;
-            margin: 30px 0;
-            text-align: center;
-            img {
-              max-width: 100%;
-            }
-            ul {
-              li {
-                @include columns(3);
-                border: dashed 2px $border-color;
-                height: 100px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                padding: 10px;
-              }
-            }
-            .iframe-wrapper {
-              width: 100%;
-              position: relative;
-              height: 250px;
-              iframe {
-                POSITION: ABSOLUTE;
-                TOP: 0;
-                LEFT: 0;
-                RIGHT: 0;
-                BOTTOM: 0;
-                WIDTH: 100%;
-                HEIGHT: 100%;
-                BORDER: SOLID 1PX #EEE;
-              }
-            }
-            .trustpilot-widget-wrapper {
-              margin-top: 30px;
-            }
-          }
-          .description {
-            @include clearfix;
-            margin: 0;
-            padding: 0 20px;
-            p {
-              font-size: 1rem;
-            }
-            h4 {
-              text-align: center;
-              font-size: 1em;
-              text-transform: uppercase;
-              margin: 30px 0;
-            }
-            ul {
-              column-count: 2;
-              column-gap: 20px;
-              line-height: 1.8;
-              li {
-                margin-left: 1.2em;
-                line-height: 1.2;
-                margin-bottom: 5px;
-              }
-            }
-            .advantages {
-              border: dashed 2px $border-color;
-              margin-top: 30px;
-              h4 {
-                margin: 0;
-                text-align: left;
-                border-bottom: dashed 2px $border-color;
-                padding: 10px;
-              }
-              ul {
-                list-style: circle;
-                padding: 15px;
-                li {
-                  font-size: .9rem;
-                }
-              }
-            }
-          }
-        }
-        &#products {
-          text-align: center;
-          margin: 90px 0 0;
-          h3 {
-            font-size: 1em;
-          }
-          .products-wrapper {
-            padding: 0;
-            text-align: left;
-            margin: 30px 0;
-            @include clearfix;
-            .product {
-              @include columns(2);
-              display: block;
-              border: solid 1px $border-color;
-              .image-wrapper {
-                img {
-                  max-width: 100%;
-                  width: 100%;
-                }
-              }
-              .description {
-                padding: 30px;
-                min-height: 250px;
-                overflow: hidden;
-                h4 {
-                  font-size: 1em;
-                  font-weight: 900;
-                  text-transform: uppercase;
-                }
-                p {
-                  margin: 15px 0;
-                  font-size: 1rem;
-                }
-                a {
-                  margin: 0;
-                  padding: 0;
-                  color: $brand-primary;
-                  border: none;
-                  border-radius: 0;
-                  font-size: .9em;
-                  font-weight: 600;
-                  text-transform: uppercase;
-                  text-decoration: underline;
-                  &:hover {
-                    color: $brand-primary;
-                  }
-                }
-              }
-            }
-          }
-        }
-        &#call-to-action-3 {
-          margin: 30px 0 0;
-        }
-      }
-    }
-  }
   &.section-careers, &.section-empleos {
     main {
       #careers {
@@ -2787,6 +2610,34 @@ body {
   }
 
   @media (max-width: 1200px) {
+    > header {
+
+    }
+    > main {
+      section {
+        &#testimonials {
+          h2 {
+            font-size: 2em;
+          }
+          h3 {
+            font-size: .8em;
+          }
+        }
+        &#products {
+          .products-wrapper {
+            .product {
+              .description {
+                min-height: 220px;
+              }
+            }
+          }
+        }
+      }
+    }
+    > footer {
+
+    }
+
     &.section-home {
       > main {
         section {
@@ -2817,22 +2668,39 @@ body {
               }
             }
           }
-          &#testimonials {
-            h2 {
-              font-size: 2em;
-            }
-            h3 {
-              font-size: .8em;
-            }
-          }
-          &#products {
-            .products-wrapper {
-              .product {
-                .description {
-                  min-height: 220px;
+        }
+      }
+    }
+    &.section-lp {
+      > main {
+        section {
+          &#hero {
+            .description {
+              padding: 60px 0;
+              h1 {
+                font-size: 2.5em;
+              }
+              ul {
+                &.xl {
+                  display: block;
+                }
+                &.xs {
+                  display: none;
                 }
               }
             }
+            .lp-form-wrapper {
+              #form {
+                &.lp-form {
+                  ul {
+                    padding: 15px 0 0;
+                  }
+                }
+              }
+            }
+          }
+          &#testimonials {
+            margin: 90px 0 0;
           }
         }
       }
@@ -2898,58 +2766,44 @@ body {
         }
       }
     }
-    &.section-lp {
-      > main {
-        section {
-          &#hero {
-            .description {
-              padding: 60px 0;
-              h1 {
-                font-size: 2.5em;
-              }
-              ul {
-                &.xl {
-                  display: block;
-                }
-                &.xs {
-                  display: none;
-                }
-              }
-            }
-            .lp-form-wrapper {
-              #form {
-                &.lp-form {
-                  ul {
-                    padding: 15px 0 0;
-                  }
-                }
-              }
-            }
+  }
+  @media (max-width: 1024px) {
+    > header {
+
+    }
+    > main {
+      section {
+        &#services {
+          h2 {
+            font-size: 2em;
           }
-          &#testimonials {
+        }
+        &#call-to-action-1, &#call-to-action-2, &#call-to-action-3 {
+          .flexed {
             h2 {
-              text-align: left;
               font-size: 2em;
             }
-            h3 {
-              text-align: left;
-              font-size: .8em;
-            }
           }
-          &#products {
-            .products-wrapper {
-              .product {
-                .description {
-                  min-height: 220px;
-                }
+        }
+        &#testimonials {
+          h2 {
+            font-size: 2em;
+          }
+          h3 {
+            font-size: .8em;
+          }
+        }
+        &#products {
+          .products-wrapper {
+            .product {
+              .description {
+                min-height: 220px;
               }
             }
           }
         }
       }
     }
-  }
-  @media (max-width: 1024px) {
     > footer {
       .phone {
         a {
@@ -2957,6 +2811,7 @@ body {
         }
       }
     }
+
     &.section-home {
       > main {
         section {
@@ -2987,34 +2842,30 @@ body {
               }
             }
           }
-          &#services {
-            h2 {
-              font-size: 2em;
-            }
-          }
-          &#call-to-action-1, &#call-to-action-2, &#call-to-action-3 {
-            .flexed {
-              h2 {
-                font-size: 2em;
+        }
+      }
+    }
+    &.section-lp {
+      > main {
+        section {
+          &#hero {
+            .description {
+              padding: 60px 0;
+              h1 {
+                font-size: 2.5em;
+              }
+              ul {
+                &.xl {
+                  display: block;
+                }
+                &.xs {
+                  display: none;
+                }
               }
             }
           }
           &#testimonials {
-            h2 {
-              font-size: 2em;
-            }
-            h3 {
-              font-size: .8em;
-            }
-          }
-          &#products {
-            .products-wrapper {
-              .product {
-                .description {
-                  min-height: 220px;
-                }
-              }
-            }
+            margin: 90px 0 0;
           }
         }
       }
@@ -3139,59 +2990,6 @@ body {
         }
       }
     }
-    &.section-lp {
-      > main {
-        section {
-          &#hero {
-            .description {
-              padding: 60px 0;
-              h1 {
-                font-size: 2.5em;
-              }
-              ul {
-                &.xl {
-                  display: block;
-                }
-                &.xs {
-                  display: none;
-                }
-              }
-            }
-          }
-          &#testimonials {
-            h2 {
-              text-align: left;
-              font-size: 2em;
-            }
-            h3 {
-              text-align: left;
-              font-size: .8em;
-            }
-          }
-          &#services {
-            h2 {
-              font-size: 2em;
-            }
-          }
-          &#call-to-action-1, &#call-to-action-2, &#call-to-action-3 {
-            .flexed {
-              h2 {
-                font-size: 2em;
-              }
-            }
-          }
-          &#products {
-            .products-wrapper {
-              .product {
-                .description {
-                  min-height: 220px;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
   }
   @media (max-width: 992px) {
     > header {
@@ -3257,6 +3055,52 @@ body {
         }
       }
     }
+    > main {
+      section {
+        &#services {
+          margin: 60px 0 0;
+          h2 {
+            font-size: 1.5em;
+          }
+          h3 {
+            font-size: .9em;
+          }
+          ul {
+            li {
+              @include columns(5);
+              padding: 0;
+            }
+          }
+        }
+        &#call-to-action-1, &#call-to-action-2, &#call-to-action-3 {
+          .flexed {
+            h2 {
+              font-size: 2em;
+            }
+          }
+        }
+        &#testimonials {
+          h2 {
+            font-size: 2em;
+          }
+          h3 {
+            font-size: .8em;
+          }
+        }
+        &#products {
+          h2 {
+            font-size: 1.5em;
+          }
+          .products-wrapper {
+            .product {
+              .description {
+                min-height: 220px;
+              }
+            }
+          }
+        }
+      }
+    }
     > footer {
       .phone {
         a {
@@ -3264,6 +3108,7 @@ body {
         }
       }
     }
+
     &.section-home {
       > main {
         section {
@@ -3291,47 +3136,30 @@ body {
               }
             }
           }
-          &#services {
-            margin: 60px 0 0;
-            h2 {
-              font-size: 1.5em;
-            }
-            h3 {
-              font-size: .9em;
-            }
-            ul {
-              li {
-                @include columns(5);
-                padding: 0;
+        }
+      }
+    }
+    &.section-lp {
+      > main {
+        section {
+          &#hero {
+            .description {
+              padding: 30px 0 15px;
+              h1 {
+                font-size: 2.5em;
               }
-            }
-          }
-          &#call-to-action-1, &#call-to-action-2, &#call-to-action-3 {
-            .flexed {
-              h2 {
-                font-size: 2em;
+              ul {
+                &.xl {
+                  display: block;
+                }
+                &.xs {
+                  display: none;
+                }
               }
             }
           }
           &#testimonials {
-            h2 {
-              font-size: 2em;
-            }
-            h3 {
-              font-size: .8em;
-            }
-          }
-          &#products {
-            h2 {
-              font-size: 1.5em;
-            }
-            .products-wrapper {
-              .product {
-                .description {
-                  min-height: 220px;
-                }
-              }
-            }
+            margin: 90px 0 0;
           }
         }
       }
@@ -3417,66 +3245,64 @@ body {
         }
       }
     }
-    &.section-lp {
-      > main {
-        section {
-          &#hero {
-            .description {
-              padding: 30px 0 15px;
-              h1 {
-                font-size: 2.5em;
-              }
-              ul {
-                &.xl {
-                  display: block;
-                }
-                &.xs {
+  }
+  @media (max-width: 768px) {
+    > header {
+      nav {
+        &#menu {
+          > button {
+            &.navbar-toggler {
+              display: block;
+            }
+          }
+          > div {
+            &.navbar-collapse {
+              &#nav-menu {
+                display: none;
+                &.collapse:not(.show) {
                   display: none;
                 }
-              }
-            }
-          }
-          &#testimonials {
-            margin: 15px 0 0;
-            h2 {
-              display: none;
-              font-size: 2em;
-            }
-            h3 {
-              display: none;
-              font-size: .8em;
-            }
-          }
-          &#services {
-            margin: 60px 0 0;
-            h2 {
-              font-size: 1.5em;
-            }
-            h3 {
-              font-size: .9em;
-            }
-            ul {
-              li {
-                @include columns(5);
-                padding: 0;
-              }
-            }
-          }
-          &#call-to-action-1, &#call-to-action-2, &#call-to-action-3 {
-            .flexed {
-              h2 {
-                font-size: 2em;
-              }
-            }
-          }
-          &#products {
-            h2 {
-              font-size: 1.5em;
-            }
-            .products-wrapper {
-              .product {
-                .description {
-                  min-height: 220px;
+                &.collapse {
+                  &.show {
+                    display: block;
+                    position: absolute;
+                    top: 56px;
+                    height: calc(100vh - 55px);
+                    background: rgba(255,255,255,.95);
+                    z-index: 9999;
+                    left: 0;
+                    right: 0;
+                    ul {
+                      background: $white;
+                      display: flex;
+                      flex-direction: column;
+                      height: calc(100vh - 55px);
+                      align-items: center;
+                      justify-content: center;
+                      li {
+                        @include columns(1,0);
+                        margin: 0;
+                        a {
+                          padding: 15px 0;
+                          font-size: 3em;
+                        }
+                      }
+                    }
+                  }
+                }
+                >ul {
+                  > li {
+                    text-align: center;
+                    > a {
+                      display: inline-block;
+                      &.btn {
+                        &.btn-primary {
+                          padding: 12px;
+                          border-radius: 3px;
+                        }
+                      }
+                    }
+                  }
                 }
               }
             }
@@ -3484,8 +3310,56 @@ body {
         }
       }
     }
-  }
-  @media (max-width: 768px) {
+    > main {
+      section {
+        &#services {
+          margin: 60px 0 0;
+          h2 {
+            font-size: 1.5em;
+          }
+          ul {
+            li {
+              @include columns(5);
+              border: none;
+            }
+          }
+        }
+        &#testimonials {
+          h2 {
+            font-size: 2em;
+          }
+          h3 {
+            font-size: .8em;
+          }
+        }
+        &#products {
+          h2 {
+            font-size: 2.5em;
+            line-height: 1;
+          }
+          h3 {
+            font-size: .85em;
+            margin-top: 15px;
+          }
+          .products-wrapper {
+            .product {
+              @include columns(2);
+              .description {
+                min-height: 250px;
+              }
+            }
+          }
+        }
+      }
+    }
+    > footer {
+      .phone {
+        a {
+          font-size: 1.5em;
+        }
+      }
+    }
+
     &.section-home {
       > main {
         section {
@@ -3534,43 +3408,63 @@ body {
               }
             }
           }
-          &#services {
-            margin: 60px 0 0;
-            h2 {
-              font-size: 1.5em;
+        }
+      }
+    }
+    &.section-lp {
+      > main {
+        section {
+          &#hero {
+            background: #fff;
+            text-align: left;
+            &.restaurant {
+              background-image:none;
             }
-            ul {
-              li {
-                @include columns(5);
-                border: none;
+            &.trucking {
+              background-image: none;
+            }
+            &.overlay {
+              h1,li {
+                color: $brand-secondary;
+              }
+              &:before {
+                background-color: white;
+              }
+            }
+            .description {
+              padding: 30px 0;
+              h1 {
+                font-size: 2rem;
+              }
+              h4 {
+                font-size: 1.5rem;
+              }
+              ul {
+                &.xl {
+                  display: block;
+                }
+                &.xs {
+                  display: none;
+                  li {
+                    justify-content: center;
+                    @include columns(3);
+                    img {
+                      //display: none;
+                    }
+                  }
+                }
+              }
+            }
+            .lp-form-wrapper {
+              #form {
+                &.lp-form {
+                  border: none;
+                }
               }
             }
           }
           &#testimonials {
-            h2 {
-              font-size: 2em;
-            }
-            h3 {
-              font-size: .8em;
-            }
-          }
-          &#products {
-            h2 {
-              font-size: 2.5em;
-              line-height: 1;
-            }
-            h3 {
-              font-size: .85em;
-              margin-top: 15px;
-            }
-            .products-wrapper {
-              .product {
-                @include columns(2);
-                .description {
-                  min-height: 250px;
-                }
-              }
-            }
+            margin: 0;
           }
         }
       }
@@ -3788,79 +3682,6 @@ body {
         }
       }
     }
-    &.section-lp {
-      > main {
-        section {
-          &#hero {
-            background: #fff;
-            text-align: left;
-            .description {
-              padding: 30px 0;
-              ul {
-                &.xl {
-                  display: block;
-                }
-                &.xs {
-                  display: none;
-                  li {
-                    justify-content: center;
-                    @include columns(3);
-                    img {
-                      //display: none;
-                    }
-                  }
-                }
-              }
-            }
-            .lp-form-wrapper {
-              #form {
-                &.lp-form {
-                  border: none;
-                }
-              }
-            }
-          }
-          &#testimonials {
-            margin: 0;
-            h2 {
-              display: none;
-            }
-            h3 {
-              display: none;
-            }
-          }
-          &#services {
-            margin: 90px 0 0;
-            h2 {
-              font-size: 1.5em;
-            }
-            ul {
-              li {
-                @include columns(5);
-              }
-            }
-          }
-          &#products {
-            h2 {
-              font-size: 2.5em;
-              line-height: 1;
-            }
-            h3 {
-              font-size: .85em;
-              margin-top: 15px;
-            }
-            .products-wrapper {
-              .product {
-                @include columns(2);
-                .description {
-                  min-height: 250px;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
   }
   @media (max-width: 576px) {
     > header {
@@ -3986,6 +3807,80 @@ body {
             }
           }
         }
+        &#services {
+          margin: 60px 0 0;
+          h2 {
+            font-size: 2em;
+            line-height: 1;
+          }
+          h3 {
+            font-size: .8em;
+          }
+          ul {
+            margin: 0;
+            li {
+              @include columns(2);
+              margin: 0;
+              padding: 0;
+              &:last-child {
+                width: 100% !important;
+              }
+            }
+          }
+        }
+        &#call-to-action-1, &#call-to-action-2, &#call-to-action-3 {
+          margin: 30px 0 0;
+          h2 {
+            font-size: 1em;
+          }
+        }
+        &#testimonials {
+          margin: 30px 0 90px;
+          h2 {
+            font-size: 2em;
+          }
+          h3 {
+            font-size: .8em;
+          }
+        }
+        &#about-us, &#sobre-nosotros {
+          margin: 30px 0 0;
+          .description {
+            padding: 0;
+            .advantages {
+              ul {
+                column-count: 1;
+              }
+            }
+          }
+        }
+        &#products {
+          margin: 30px 0 0;
+          .products-wrapper {
+            .product {
+              @include columns(1);
+              .description {
+                min-height: 200px;
+              }
+            }
+          }
+          &.bullets {
+            .products-wrapper {
+              .product {
+                .description {
+                  padding: 15px;
+                  ul {
+                    &.items {
+                      li {
+                        font-size: 1rem;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
     > footer {
@@ -4035,6 +3930,7 @@ body {
         }
       }
     }
+
     &.section-home {
       > main {
         section {
@@ -4106,79 +4002,215 @@ body {
               }
             }
           }
-          &#services {
-            margin: 60px 0 0;
-            h2 {
-              font-size: 2em;
-              line-height: 1;
+        }
+      }
+      &.en {
+        > main {
+          section {
+            &#hero {
+              .description {
+                h1 {
+                  font-size: 2em;
+                }
+                h4 {
+                  font-size: .9em;
+                }
+              }
             }
-            h3 {
-              font-size: .8em;
+            &#services {
+              h2 {
+                font-size: 1.7em;
+              }
             }
-            ul {
-              margin: 0;
-              li {
-                @include columns(2);
-                margin: 0;
-                padding: 0;
-                &:last-child {
-                  width: 100% !important;
+            &#call-to-action-1, &#call-to-action-2, &#call-to-action-3 {
+              h2 {
+                font-size: 1.3em;
+              }
+            }
+            &#testimonials {
+              h2 {
+                font-size: 1.3em;
+              }
+            }
+            &#about-us, &#sobre-nosotros {
+              h2 {
+                font-size: 1.2em;
+              }
+              .description {
+                .advantages {
+                  h4 {
+                    font-size: .8em;
+                  }
+                }
+              }
+            }
+            &#products {
+              h2 {
+                font-size: 1.5em;
+              }
+            }
+          }
+        }
+      }
+      &.es {
+        > main {
+          section {
+            &#hero {
+              .description {
+                h1 {
+                  font-size: 2em;
+                }
+                h4 {
+                  font-size: .75em;
+                  line-height: 1.5;
+                }
+              }
+            }
+            &#services {
+              h2 {
+                font-size: 1.3em;
+              }
+            }
+            &#call-to-action-1, &#call-to-action-2, &#call-to-action-3 {
+              h2 {
+                font-size: 1.3em;
+              }
+            }
+            &#testimonials {
+              h2 {
+                font-size: 1.5em;
+              }
+            }
+            &#about-us, &#sobre-nosotros {
+              h2 {
+                font-size: 1.2em;
+              }
+              .description {
+                .advantages {
+                  h4 {
+                    font-size: .8em;
+                  }
+                }
+              }
+            }
+            &#products {
+              h2 {
+                font-size: 1.2em;
+              }
+            }
+          }
+        }
+      }
+    }
+    &.section-lp {
+      > header {
+        nav {
+          &#branding {
+            > ul {
+              &.branding {
+                > li {
+                  &.logo {
+                    a {
+                      &.logo {
+                        background-position: left;
+                      }
+                    }
+                  }
+                  &.join-now {
+                    top: 20px;
+                    right: 15px;
+                  }
                 }
               }
             }
           }
-          &#call-to-action-1, &#call-to-action-2, &#call-to-action-3 {
-            margin: 30px 0 0;
-            h2 {
-              font-size: 1em;
-            }
-          }
-          &#testimonials {
-            margin: 30px 0 90px;
-            h2 {
-              font-size: 2em;
-            }
-            h3 {
-              font-size: .8em;
-            }
-          }
-          &#about-us, &#sobre-nosotros {
-            margin: 30px 0 0;
+        }
+      }
+      > main {
+        section {
+          &#hero {
+            background: $white;
+            text-align: center;
             .description {
-              padding: 0;
-              .advantages {
-                ul {
-                  column-count: 1;
+              padding: 30px 0 15px;
+              h1 {
+                line-height: .9;
+                padding: 0;
+                margin: 0;
+              }
+              h4 {
+                font-size: .8em;
+                margin: 0;
+                padding: 15px 0 0;
+              }
+              ul {
+                padding: 15px 0 0;
+                &.xl {
+                  display: none;
+                }
+                &.xs {
+                  display: block;
+                  li {
+                    justify-content: center;
+                    @include columns(1,0);
+                    img {
+                      display: none;
+                    }
+                  }
                 }
               }
             }
-          }
-          &#products {
-            margin: 30px 0 0;
-            .products-wrapper {
-              .product {
-                @include columns(1);
-                .description {
-                  min-height: 200px;
-                }
-              }
-            }
-            &.bullets {
-              .products-wrapper {
-                .product {
-                  .description {
-                    padding: 15px;
-                    ul {
-                      &.items {
-                        li {
-                          font-size: 1rem;
-                        }
+            .lp-form-wrapper {
+              #form {
+                &.lp-form {
+                  padding: 0;
+                  border: none;
+                  position: relative;
+                  top: 0;
+                  background: #ffffff;
+                  .phone-header {
+                    display: none;
+                    border-color: #fff;
+                    .label {
+                      background: #fff;
+                      color: $text-color;
+                      line-height: 1.2;
+                      font-size: 1em;
+                      text-transform: none;
+                      letter-spacing: 0;
+                      padding: 0;
+                    }
+                    .number {
+                      color: $brand-primary;
+                      font-weight: 900;
+                      margin: 0;
+                      line-height: 10px;
+                    }
+                  }
+                  h2 {
+                    display: none;
+                  }
+                  article {
+                    background: $brand-secondary;
+                    padding: 20px;
+                    border-radius: 3px;
+                    margin-top: 10px;
+                    .fields {
+                      input[type=text], input[type=email], input[type=number] {
+                        background: #fff;
+                        border: solid 1px #bbb;
+                        border-radius: 3px;
+                        margin-bottom: 10px;
                       }
                     }
                   }
                 }
               }
             }
+          }
+          &#testimonials {
+            display: block;
+            margin: 0;
           }
         }
       }
@@ -4674,265 +4706,6 @@ body {
             &#services {
               h2 {
                 font-size: 1.3em;
-              }
-            }
-          }
-        }
-      }
-    }
-    &.section-lp {
-      > header {
-        nav {
-          &#branding {
-            > ul {
-              &.branding {
-                > li {
-                  &.logo {
-                    a {
-                      &.logo {
-                        background-position: left;
-                      }
-                    }
-                  }
-                  &.join-now {
-                    top: 20px;
-                    right: 15px;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-      > main {
-        section {
-          &#hero {
-            background: $white;
-            text-align: center;
-            .description {
-              padding: 30px 0 15px;
-              h1 {
-                line-height: .9;
-                padding: 0;
-                margin: 0;
-              }
-              h4 {
-                font-size: .9em;
-                margin: 0;
-                padding: 15px 0 0;
-              }
-              ul {
-                padding: 15px 0 0;
-                &.xl {
-                  display: none;
-                }
-                &.xs {
-                  display: block;
-                  li {
-                    justify-content: center;
-                    @include columns(1,0);
-                    img {
-                      display: none;
-                    }
-                  }
-                }
-              }
-            }
-            .lp-form-wrapper {
-              #form {
-                &.lp-form {
-                  padding: 0;
-                  border: none;
-                  position: relative;
-                  top: 0;
-                  background: #ffffff;
-                  .phone-header {
-                    display: none;
-                    border-color: #fff;
-                    .label {
-                      background: #fff;
-                      color: $text-color;
-                      line-height: 1.2;
-                      font-size: 1em;
-                      text-transform: none;
-                      letter-spacing: 0;
-                      padding: 0;
-                    }
-                    .number {
-                      color: $brand-primary;
-                      font-weight: 900;
-                      margin: 0;
-                      line-height: 10px;
-                    }
-                  }
-                  h2 {
-                    display: none;
-                  }
-                  article {
-                    background: $brand-secondary;
-                    padding: 20px;
-                    border-radius: 3px;
-                    margin-top: 10px;
-                    .fields {
-                      input[type=text], input[type=email], input[type=number] {
-                        background: #fff;
-                        border: solid 1px #bbb;
-                        border-radius: 3px;
-                        margin-bottom: 10px;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-          &#testimonials {
-            display: block;
-          }
-          &#services {
-            margin: 60px 0 0;
-            h2 {
-              font-size: 2em;
-              line-height: 1;
-            }
-            h3 {
-              font-size: .8em;
-            }
-            ul {
-              margin: 0;
-              li {
-                @include columns(2);
-                margin: 0;
-                padding: 0;
-                border: none;
-                &:last-child {
-                  width: 100% !important;
-                }
-              }
-            }
-          }
-          &#call-to-action-1, &#call-to-action-2, &#call-to-action-3 {
-            margin: 30px 0 0;
-            h2 {
-              font-size: 1em;
-            }
-          }
-          &#about-us, &#sobre-nosotros {
-            margin: 30px 0 0;
-            .description {
-              padding: 0;
-              .advantages {
-                ul {
-                  column-count: 1;
-                }
-              }
-            }
-          }
-          &#products {
-            margin: 30px 0 0;
-            .products-wrapper {
-              .product {
-                @include columns(1);
-                .description {
-                  min-height: 200px;
-                }
-              }
-            }
-          }
-        }
-      }
-      &.en {
-        > main {
-          section {
-            &#hero {
-              .description {
-                h1 {
-                  font-size: 2em;
-                }
-                h4 {
-                  font-size: .9em;
-                }
-              }
-            }
-            &#services {
-              h2 {
-                font-size: 1.7em;
-              }
-            }
-            &#call-to-action-1, &#call-to-action-2, &#call-to-action-3 {
-              h2 {
-                font-size: 1.3em;
-              }
-            }
-            &#testimonials {
-              h2 {
-                font-size: 1.3em;
-              }
-            }
-            &#about-us, &#sobre-nosotros {
-              h2 {
-                font-size: 1.2em;
-              }
-              .description {
-                .advantages {
-                  h4 {
-                    font-size: .8em;
-                  }
-                }
-              }
-            }
-            &#products {
-              h2 {
-                font-size: 1.5em;
-              }
-            }
-          }
-        }
-      }
-      &.es {
-        > main {
-          section {
-            &#hero {
-              .description {
-                h1 {
-                  font-size: 2em;
-                }
-                h4 {
-                  font-size: .75em;
-                  line-height: 1.5;
-                }
-              }
-            }
-            &#services {
-              h2 {
-                font-size: 1.3em;
-              }
-            }
-            &#call-to-action-1, &#call-to-action-2, &#call-to-action-3 {
-              h2 {
-                font-size: 1.3em;
-              }
-            }
-            &#testimonials {
-              h2 {
-                font-size: 1.5em;
-              }
-            }
-            &#about-us, &#sobre-nosotros {
-              h2 {
-                font-size: 1.2em;
-              }
-              .description {
-                .advantages {
-                  h4 {
-                    font-size: .8em;
-                  }
-                }
-              }
-            }
-            &#products {
-              h2 {
-                font-size: 1.2em;
               }
             }
           }
