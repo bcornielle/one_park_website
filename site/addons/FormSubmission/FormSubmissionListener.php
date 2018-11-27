@@ -39,6 +39,12 @@ class FormSubmissionListener extends Listener {
 		$params['email'] = $submission->get('email');
 		$params['business'] = $submission->get('business_name');
 		$params['how_much_are_your_estimated_gross_monthly_sales'] = $submission->get('monthly_revenue');
+		$params['visitor_source'] = (isset($_COOKIE['Visitor_Source__c'])) ? $_COOKIE['Visitor_Source__c'] : null;
+		$params['visitor_medium'] = (isset($_COOKIE['Visitor_Medium__c'])) ? $_COOKIE['Visitor_Medium__c'] : null;
+		$params['visitor_campaign'] = (isset($_COOKIE['Visitor_Campaign__c'])) ? $_COOKIE['Visitor_Campaign__c'] : null;
+		$params['visitor_term'] = (isset($_COOKIE['Visitor_Term__c'])) ? $_COOKIE['Visitor_Term__c'] : null;
+		$params['visitor_content'] = (isset($_COOKIE['Visitor_Content__c'])) ? $_COOKIE['Visitor_Content__c'] : null;
+		$params['ga_client_id'] = (isset($_COOKIE['GA_Client_ID'])) ? $_COOKIE['GA_Client_ID'] : null;
 		$response = $this->pushToFormStack($form_id,$params);
 		if (isset($response['id']) && isset($response['redirect_url'])){
 			return $response['redirect_url'];
