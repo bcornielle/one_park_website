@@ -36,15 +36,16 @@ class FormSubmissionListener extends Listener {
 		$params['first_name'] = (isset($names[0])) ? $names[0] : null;
 		$params['last_name'] = (isset($names[1])) ? $names[1] : null;
 		$params['contact_phone'] = $submission->get('phone');
+		$params['company_phone_number'] = $submission->get('phone');
 		$params['email'] = $submission->get('email');
 		$params['business'] = $submission->get('business_name');
 		$params['how_much_are_your_estimated_gross_monthly_sales'] = $submission->get('monthly_revenue');
-		$params['visitor_source'] = (isset($_COOKIE['Visitor_Source__c'])) ? $_COOKIE['Visitor_Source__c'] : null;
-		$params['visitor_medium'] = (isset($_COOKIE['Visitor_Medium__c'])) ? $_COOKIE['Visitor_Medium__c'] : null;
-		$params['visitor_campaign'] = (isset($_COOKIE['Visitor_Campaign__c'])) ? $_COOKIE['Visitor_Campaign__c'] : null;
-		$params['visitor_term'] = (isset($_COOKIE['Visitor_Term__c'])) ? $_COOKIE['Visitor_Term__c'] : null;
-		$params['visitor_content'] = (isset($_COOKIE['Visitor_Content__c'])) ? $_COOKIE['Visitor_Content__c'] : null;
-		$params['ga_client_id'] = (isset($_COOKIE['GA_Client_ID'])) ? $_COOKIE['GA_Client_ID'] : null;
+		$params['campaign_source'] = (isset($_COOKIE['Visitor_Source__c'])) ? $_COOKIE['Visitor_Source__c'] : null;
+		$params['campaign_medium'] = (isset($_COOKIE['Visitor_Medium__c'])) ? $_COOKIE['Visitor_Medium__c'] : null;
+		$params['campaign_term'] = (isset($_COOKIE['Visitor_Term__c'])) ? $_COOKIE['Visitor_Term__c'] : null;
+		$params['campaign_content'] = (isset($_COOKIE['Visitor_Content__c'])) ? $_COOKIE['Visitor_Content__c'] : null;
+		$params['campaign_name'] = (isset($_COOKIE['Visitor_Campaign__c'])) ? $_COOKIE['Visitor_Campaign__c'] : null;
+		$params['gclid_google_click_identifier'] = (isset($_COOKIE['GA_Client_ID'])) ? $_COOKIE['GA_Client_ID'] : null;
 		$response = $this->pushToFormStack($form_id,$params);
 		if (isset($response['id']) && isset($response['redirect_url'])){
 			return $response['redirect_url'];
@@ -60,12 +61,12 @@ class FormSubmissionListener extends Listener {
 		$params['business_name'] = $submission->get('business_name');
 		$params['contact_phone'] = $submission->get('phone');
 		$params['email'] = $submission->get('email');
-		$params['visitor_source'] = (isset($_COOKIE['Visitor_Source__c'])) ? $_COOKIE['Visitor_Source__c'] : null;
-		$params['visitor_medium'] = (isset($_COOKIE['Visitor_Medium__c'])) ? $_COOKIE['Visitor_Medium__c'] : null;
-		$params['visitor_campaign'] = (isset($_COOKIE['Visitor_Campaign__c'])) ? $_COOKIE['Visitor_Campaign__c'] : null;
-		$params['visitor_term'] = (isset($_COOKIE['Visitor_Term__c'])) ? $_COOKIE['Visitor_Term__c'] : null;
-		$params['visitor_content'] = (isset($_COOKIE['Visitor_Content__c'])) ? $_COOKIE['Visitor_Content__c'] : null;
-		$params['ga_client_id'] = (isset($_COOKIE['GA_Client_ID'])) ? $_COOKIE['GA_Client_ID'] : null;
+		$params['campaign_source'] = (isset($_COOKIE['Visitor_Source__c'])) ? $_COOKIE['Visitor_Source__c'] : null;
+		$params['campaign_medium'] = (isset($_COOKIE['Visitor_Medium__c'])) ? $_COOKIE['Visitor_Medium__c'] : null;
+		$params['campaign_term'] = (isset($_COOKIE['Visitor_Term__c'])) ? $_COOKIE['Visitor_Term__c'] : null;
+		$params['campaign_content'] = (isset($_COOKIE['Visitor_Content__c'])) ? $_COOKIE['Visitor_Content__c'] : null;
+		$params['campaign_name'] = (isset($_COOKIE['Visitor_Campaign__c'])) ? $_COOKIE['Visitor_Campaign__c'] : null;
+		$params['gclid_google_click_identifier'] = (isset($_COOKIE['GA_Client_ID'])) ? $_COOKIE['GA_Client_ID'] : null;
 		$response = $this->pushToFormStack($form_id,$params);
 		if (isset($response['id'])){
 			return $response['id'];
