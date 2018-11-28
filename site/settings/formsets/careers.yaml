@@ -10,15 +10,15 @@ fields:
     display: Address
   resume:
     display: Resume
-    validate: mimes:doc,docx,pdf
+    validate: 'mimes:doc,docx,pdf'
     type: file
     destination: uploads/
-  job_id:
-    display: 'Job ID'
+  career_slug:
+    display: 'Career Slug'
 columns:
   - name
   - email
   - phone
   - address
   - resume
-  - job_id
+  - career_slug
