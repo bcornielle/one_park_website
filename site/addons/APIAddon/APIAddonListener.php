@@ -14,15 +14,16 @@ class APIAddonListener extends Listener {
 	public function saved(EntrySaved $event) {
 		$context = $event->contextualData();
 		if ($context['collection'] === 'careers'){
-			$context['posting_id'] = $context['slug'];
 			$context['entry_id'] = $context['id'];
-			$this->api_job_save($context);
+			$context['status_id'] = $context['status'];
+			$context['office_id'] = $context['office'];
+			$this->api_career_save($context);
 		}
 		return $event;
 	}
 	public function deleted(EntryDeleted $event) {
 		$context = $event->contextualData();
-		$this->api_job_delete($context['id']);
+		$this->api_career_delete($context['id']);
 		return $event;
 	}
 	public function submissionCreated(Submission $submission) {
@@ -33,17 +34,17 @@ class APIAddonListener extends Listener {
 		return $submission;
 	}
 
-	private function api_job_save($career){
+	private function api_career_save($career){
 		if (env('API_URL') && env('API_VERSION') && env('API_TOKEN')){
-			$url = env('API_URL') . env('API_VERSION') . '/jobs?api_token='.env('API_TOKEN');
+			$url = env('API_URL') . env('API_VERSION') . '/careers?api_token='.env('API_TOKEN');
 			$method = "PUT";
 			return $this->sync($url,$method,json_encode($career));
 		}
 		return false;
 	}
-	private function api_job_delete($entry_id){
+	private function api_career_delete($entry_id){
 		if (env('API_URL') && env('API_VERSION') && env('API_TOKEN')){
-			$url = env('API_URL') . env('API_VERSION') . '/jobs/' . $entry_id . '?api_token='.env('API_TOKEN');
+			$url = env('API_URL') . env('API_VERSION') . '/careers/' . $entry_id . '?api_token='.env('API_TOKEN');
 			$method = "DELETE";
 			return $this->sync($url,$method,$entry_id);
 		}
@@ -53,7 +54,6 @@ class APIAddonListener extends Listener {
 		if (env('API_URL') && env('API_VERSION') && env('API_TOKEN')){
 			$url = env('API_URL') . env('API_VERSION') . '/submissions?api_token='.env('API_TOKEN');
 			$method = "PUT";
-			$submission['posting_id'] = $submission['job_id'];
 			return $this->sync($url,$method,json_encode($submission));
 		}
 		return false;
