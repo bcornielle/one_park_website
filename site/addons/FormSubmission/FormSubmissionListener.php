@@ -34,7 +34,7 @@ class FormSubmissionListener extends Listener {
 		$name = $submission->get('name');
 		$names = explode(' ', $name);
 		$params['first_name'] = (isset($names[0])) ? $names[0] : null;
-		$params['last_name'] = (isset($names[1])) ? $names[1] : null;
+		$params['last_name'] = (isset($names[1])) ? $names[1] : 'lastname';
 		$params['contact_phone'] = $submission->get('phone');
 		$params['company_phone_number'] = $submission->get('phone');
 		$params['email'] = $submission->get('email');
