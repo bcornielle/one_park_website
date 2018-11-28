@@ -47,9 +47,9 @@ class FormStackAddonTags extends Tags {
 					if ($params['revenue'] == 1) {
 						$params['amount'] = 2500;
 					}else{
-						$params['amount'] = $params['revenue'];
+						$params['amount'] = number_format($params['revenue']);
 					}
-					$value = number_format($params['revenue']);
+					$value = $params['revenue'];
 				}
 				$params[$key] = $value;
 			}
