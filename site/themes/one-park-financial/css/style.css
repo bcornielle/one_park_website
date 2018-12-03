@@ -4038,6 +4038,11 @@ body.section-articulos main .heading h1 {
   letter-spacing: 5px;
 }
 
+body.section-blog main article h2,
+body.section-articulos main article h2 {
+  font-size: 1rem;
+}
+
 body.section-blog main article .block,
 body.section-articulos main article .block {
   border: solid 2px #eeeeee;
@@ -4133,6 +4138,11 @@ body.section-medios main .heading h1 {
 body.section-press main article,
 body.section-medios main article {
   padding: 30px 0;
+}
+
+body.section-press main article h2,
+body.section-medios main article h2 {
+  font-size: 1rem;
 }
 
 body.section-press main article .block,
