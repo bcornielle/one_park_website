@@ -23,7 +23,7 @@ class FormStackAddonTags extends Tags {
 			'name'=>'prequal_es_2',
 		]
 	];
-	private $oauth_token= '6c8b7a6f01a6de69169d8fa627d5dd41';
+	private $oauth_token= '5a07bf17f343ddbfc5c3a6f6e005d6c0';
 	//English Forms
 	public function qualification() {
 		return array(
