@@ -15,12 +15,15 @@ fields:
   monthly_revenue:
     display: 'Monthly Revenue'
     validate: required|integer
+  source:
+    display: Source
 columns:
   - name
   - phone
   - email
   - business_name
   - monthly_revenue
+  - source
 metrics:
   -
     type: total

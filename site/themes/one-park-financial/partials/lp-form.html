@@ -13,10 +13,10 @@
                         {{ form:set is="landing-page" }}
                         {{ form:create }}
                         <input type="text" name="honeypot" class="honeypot"/>
+                        <input type="hidden" name="source" value="home-form"/>
                         <ul class="fields">
                             <li>
-                                <input type="text" name="name" class="form-control" value="{{ old:name }}"
-                                       placeholder="First & Last Name" required/>
+                                <input type="text" name="name" class="form-control" value="{{ old:name }}" placeholder="First & Last Name" required/>
                             </li>
                             <li>
                                 <input type="tel" name="phone" id="phone-number" class="form-control" value="{{ old:phone }}"
