@@ -20,7 +20,7 @@ class GitTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals([
             'git add one.txt',
             'git add two.txt',
-            "git commit -m 'Data saved by johnsmith'", # Action is the "pretty" version of the class name.
+            'git commit -m "Data saved by johnsmith"', # Action is the "pretty" version of the class name.
         ], $git->commands());
     }
 
@@ -32,7 +32,7 @@ class GitTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals([
             'git add one.txt',
             'git add two.txt',
-            "git commit -m 'Data saved'",
+            'git commit -m "Data saved"',
         ], $git->commands());
     }
 
@@ -47,7 +47,7 @@ class GitTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals([
             'git add one.txt',
             'git add two.txt',
-            "git commit -m 'Data saved by johnsmith'",
+            'git commit -m "Data saved by johnsmith"',
             'git push',
         ], $git->commands());
     }
@@ -67,7 +67,7 @@ class GitTest extends \PHPUnit_Framework_TestCase
             'echo two',
             'git add one.txt',
             'git add two.txt',
-            "git commit -m 'Data saved by johnsmith'",
+            'git commit -m "Data saved by johnsmith"',
         ], $git->commands());
     }
 
@@ -84,10 +84,37 @@ class GitTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals([
             'git add one.txt',
             'git add two.txt',
-            "git commit -m 'Data saved by johnsmith'",
+            'git commit -m "Data saved by johnsmith"',
             'echo one',
             'echo two',
         ], $git->commands());
+    }
+
+    /** @test */
+    function it_adds_username_to_commit_command_if_configured()
+    {
+        $git = new Git(['git_username' => 'Spock'], new DataSaved);
+
+        $this->assertContains('git -c "user.name=Spock" commit -m "Data saved"', $git->commands());
+    }
+
+    /** @test */
+    function it_adds_email_to_commit_command_if_configured()
+    {
+        $git = new Git(['git_email' => 'spock@domain.com'], new DataSaved);
+
+        $this->assertContains('git -c "user.email=spock@domain.com" commit -m "Data saved"', $git->commands());
+    }
+
+    /** @test */
+    function it_adds_email_and_username_to_commit_command_if_configured()
+    {
+        $git = new Git([
+            'git_username' => 'Spock',
+            'git_email' => 'spock@domain.com'
+        ], new DataSaved);
+
+        $this->assertContains('git -c "user.name=Spock" -c "user.email=spock@domain.com" commit -m "Data saved"', $git->commands());
     }
 }
 
