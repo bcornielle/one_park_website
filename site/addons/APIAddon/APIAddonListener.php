@@ -17,7 +17,7 @@ class APIAddonListener extends Listener {
 			$context['entry_id'] = $context['id'];
 			$context['status_id'] = $context['status'];
 			$context['office_id'] = $context['office'];
-			$this->api_career_save($context);
+			$response = $this->api_career_save($context);
 		}
 		return $event;
 	}
