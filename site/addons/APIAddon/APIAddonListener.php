@@ -48,36 +48,24 @@ class APIAddonListener extends Listener {
 	}
 
 	private function api_career_save($career){
-		if (env('API_URL') && env('API_VERSION') && env('API_TOKEN')){
-			$url = env('API_URL') . env('API_VERSION') . '/careers?api_token='.env('API_TOKEN');
-			$method = "PUT";
-			return $this->sync($url,$method,json_encode($career));
-		}
-		return false;
+		$url = env('API_URL') . env('API_VERSION') . '/careers?api_token='.env('API_TOKEN');
+		$method = "PUT";
+		return $this->sync($url,$method,json_encode($career));
 	}
 	private function api_career_delete($entry_id){
-		if (env('API_URL') && env('API_VERSION') && env('API_TOKEN')){
-			$url = env('API_URL') . env('API_VERSION') . '/careers/' . $entry_id . '?api_token='.env('API_TOKEN');
-			$method = "DELETE";
-			return $this->sync($url,$method,$entry_id);
-		}
-		return false;
+		$url = env('API_URL') . env('API_VERSION') . '/careers/' . $entry_id . '?api_token='.env('API_TOKEN');
+		$method = "DELETE";
+		return $this->sync($url,$method,$entry_id);
 	}
 	private function api_submission_created($submission){
-		if (env('API_URL') && env('API_VERSION') && env('API_TOKEN')){
-			$url = env('API_URL') . env('API_VERSION') . '/submissions?api_token='.env('API_TOKEN');
-			$method = "PUT";
-			return $this->sync($url,$method,json_encode($submission));
-		}
-		return false;
+		$url = env('API_URL') . env('API_VERSION') . '/submissions?api_token='.env('API_TOKEN');
+		$method = "PUT";
+		return $this->sync($url,$method,json_encode($submission));
 	}
 	private function api_lead_created($data){
-		if (env('API_URL') && env('API_VERSION') && env('API_TOKEN')){
-			$url = env('API_URL') . env('API_VERSION') . '/leads?api_token='.env('API_TOKEN');
-			$method = "PUT";
-			return $this->sync($url,$method,json_encode($data));
-		}
-		return false;
+		$url = env('API_URL') . env('API_VERSION') . '/leads?api_token='.env('API_TOKEN');
+		$method = "PUT";
+		return $this->sync($url,$method,json_encode($data));
 	}
 
 	private function sync($url,$method,$post_fields){
