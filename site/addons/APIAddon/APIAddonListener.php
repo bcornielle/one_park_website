@@ -47,7 +47,8 @@ class APIAddonListener extends Listener {
 			$params['campaign_content'] = (isset($_COOKIE['Visitor_Content__c'])) ? $_COOKIE['Visitor_Content__c'] : null;
 			$params['campaign_name'] = (isset($_COOKIE['Visitor_Campaign__c'])) ? $_COOKIE['Visitor_Campaign__c'] : null;
 			$params['gclid_google_click_identifier'] = (isset($_COOKIE['GA_Client_ID'])) ? $_COOKIE['GA_Client_ID'] : null;
-			$this->api_lead_created($params);
+			$response = $this->api_lead_created($params);
+			Log::info(print_r($response,true));
 		}
 		return $submission;
 	}
