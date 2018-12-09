@@ -39,8 +39,19 @@ class APIAddonListener extends Listener {
 			$params['lname'] = (isset($names[1])) ? $names[1] : 'lastname';
 			$params['phone'] = $submission->get('phone');
 			$params['email'] = $submission->get('email');
+			$params['source'] = $submission->get('source');
 			$params['company_name'] = $submission->get('business_name');
 			$params['company_revenue'] = $submission->get('monthly_revenue');
+			$this->api_lead_created($params);
+		}
+		if ($form_name === 'contact'){
+			$params = array();
+			$params['fname'] = $submission->get('firstname');
+			$params['lname'] = $submission->get('lastname');
+			$params['phone'] = $submission->get('phone');
+			$params['email'] = $submission->get('email');
+			$params['company_name'] = $submission->get('business_name');
+			$params['source'] = 'contact-form';
 			$this->api_lead_created($params);
 		}
 		return $submission;
