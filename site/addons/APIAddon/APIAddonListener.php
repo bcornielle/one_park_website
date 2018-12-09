@@ -31,6 +31,25 @@ class APIAddonListener extends Listener {
 		if ($form_name === 'careers'){
 			$this->api_submission_created($submission->data());
 		}
+		if ($form_name === 'landing-page'){
+			$params = array();
+			$name = $submission->get('name');
+			$names = explode(' ', $name);
+			$params['fname'] = (isset($names[0])) ? $names[0] : null;
+			$params['lname'] = (isset($names[1])) ? $names[1] : 'lastname';
+			$params['phone'] = $submission->get('phone');
+			$params['email'] = $submission->get('email');
+			$params['company_name'] = $submission->get('company_name');
+			$params['company_revenue'] = $submission->get('monthly_revenue');
+			$params['campaign_source'] = (isset($_COOKIE['Visitor_Source__c'])) ? $_COOKIE['Visitor_Source__c'] : null;
+			$params['campaign_medium'] = (isset($_COOKIE['Visitor_Medium__c'])) ? $_COOKIE['Visitor_Medium__c'] : null;
+			$params['campaign_term'] = (isset($_COOKIE['Visitor_Term__c'])) ? $_COOKIE['Visitor_Term__c'] : null;
+			$params['campaign_content'] = (isset($_COOKIE['Visitor_Content__c'])) ? $_COOKIE['Visitor_Content__c'] : null;
+			$params['campaign_name'] = (isset($_COOKIE['Visitor_Campaign__c'])) ? $_COOKIE['Visitor_Campaign__c'] : null;
+			$params['gclid_google_click_identifier'] = (isset($_COOKIE['GA_Client_ID'])) ? $_COOKIE['GA_Client_ID'] : null;
+			Log::info(print_r($params,true));
+			$this->api_lead_created($params);
+		}
 		return $submission;
 	}
 
@@ -58,6 +77,15 @@ class APIAddonListener extends Listener {
 		}
 		return false;
 	}
+	private function api_lead_created($data){
+		if (env('API_URL') && env('API_VERSION') && env('API_TOKEN')){
+			$url = env('API_URL') . env('API_VERSION') . '/leads?api_token='.env('API_TOKEN');
+			$method = "PUT";
+			return $this->sync($url,$method,json_encode($data));
+		}
+		return false;
+	}
+
 	private function sync($url,$method,$post_fields){
 		$ch = curl_init();
 		curl_setopt($ch, CURLOPT_URL,$url);
