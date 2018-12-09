@@ -41,8 +41,7 @@ class APIAddonListener extends Listener {
 			$params['email'] = $submission->get('email');
 			$params['company_name'] = $submission->get('business_name');
 			$params['company_revenue'] = $submission->get('monthly_revenue');
-			$response = $this->api_lead_created($params);
-			Log::info(print_r($response,true));
+			$this->api_lead_created($params);
 		}
 		return $submission;
 	}
