@@ -1,0 +1,82 @@
+<nav class="apple">
+    <div class="nav-wrapper" v-bind:class="{'shown':menu_opened}">
+        <ul class="menu">
+            <li class="menu-item"><a href="">Home</a></li>
+            <li class="menu-item"><a href="">Home</a></li>
+            <li class="menu-item"><a href="">Home</a></li>
+            <li class="menu-item"><a href="">Home</a></li>
+            <li class="menu-item"><a href="">Home</a></li>
+            <li class="menu-item"><a href="">Home</a></li>
+            <li class="menu-item"><a href="">Home</a></li>
+            <li class="menu-item"><a href="">Home</a></li>
+        </ul>
+        <div class="burger-container" v-on:click="toggle_menu">
+            <div id="burger">
+                <div class="bar topBar"></div>
+                <div class="bar btmBar"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="menus">
+                <div class="navbar-left">
+                    <a href="/" class="branding logo">One Park Financial</a>
+                </div>
+                <div class="navbar-right">
+                    <ul class="nav-top">
+                        <li class="phone">
+                            <span class="text">Questions? Call Us.</span>
+                            <a href="tel:+18883271044" data-ctm-watch-id="3" data-ctm-tracked="1">
+                                <span class="number">1-888-327-1044</span>
+                            </a>
+                        </li>
+                        <li class="language">
+                            <a href="/es/{{ es_url }}" class="btn">
+                                <span>Español</span>
+                                <i class="fas fa-globe"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav-bottom">
+                        {{ if current_uri == "/how-it-works" }}
+                        <li class="how-it-works active">
+                        {{ else }}
+                        <li class="how-it-works">
+                        {{ /if }}
+                            <a href="/how-it-works">
+                                How it works
+                            </a>
+                        </li>
+                        {{ if current_uri == "/about-us" }}
+                        <li class="about-us active">
+                        {{ else }}
+                        <li class="about-us">
+                        {{ /if }}
+                            <a href="/about-us">
+                                About Us
+                            </a>
+                        </li>
+                        {{ if current_uri == "/faq" }}
+                        <li class="faqs active">
+                        {{ else }}
+                        <li class="faqs">
+                        {{ /if }}
+                            <a href="/faq">
+                                FAQs
+                            </a>
+                        </li>
+                        <li class="apply-now">
+                            <a href="/pre-qualification" class="btn btn-primary">
+                                Apply now
+                            </a>
+                        </li>
+                        {{ if logged_in }}
+                        <li>
+                            <a href="{{ user:logout_url }}">Log out</a>
+                        </li>
+                        {{ /if }}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

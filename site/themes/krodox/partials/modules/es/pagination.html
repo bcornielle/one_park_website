@@ -1,0 +1,10 @@
+{{ if paginate:total_pages > 1 }}
+{{ paginate }}
+<div>
+    <hr>
+    <p class="text-center">Pagina {{ current_page }} de {{ total_pages }} ({{ total_results }} articles)</p>
+    <hr>
+</div>
+{{ /paginate }}
+{{ paginate:auto_links }}
+{{ /if }}

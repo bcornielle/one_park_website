@@ -1,0 +1,10 @@
+{{ collection:next in="blog" limit="5" as="next_posts" }}
+{{ unless no_results }}
+    <h4>Popular Articles</h4>
+    <ul>
+        {{ next_posts scope="tag" }}
+        {{ partial:blog/blockless }}
+        {{ /next_posts }}
+    </ul>
+{{ /unless }}
+{{ /collection:next }}

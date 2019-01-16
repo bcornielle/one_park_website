@@ -24,5 +24,12 @@ sections:
         type: text
         localizable: true
         display: canonical
+      image:
+        container: main
+        folder: img
+        restrict: true
+        max_files: 1
+        type: assets
+        display: Image
 taxonomies: true
 create_title: 'New Post'

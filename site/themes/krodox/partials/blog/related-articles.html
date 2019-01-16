@@ -1,0 +1,10 @@
+{{ collection:next in="blog" limit="3" as="next_posts" }}
+{{ unless no_results }}
+<h4>Related Articles</h4>
+<ul>
+    {{ next_posts scope="tag" }}
+    {{ partial:blog/block }}
+    {{ /next_posts }}
+</ul>
+{{ /unless }}
+{{ /collection:next }}

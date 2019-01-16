@@ -1,0 +1,23 @@
+<li class="item">
+    <a href="{{ url }}">
+        <div class="image-wrapper">
+            {{ if image }}
+                <img src="{{ glide:image :src='image' width='140' height='140' fit='crop' filter='sepia'}}" class="small-image">
+            {{ else }}
+            <img src="/assets/img/article1.png" class="small-image">
+            {{ /if }}
+        </div>
+        <div class="content-wrapper">
+            <h3>{{ title }}</h3>
+        </div>
+        <div class="meta-wrapper">
+            {{ if (date | days_ago) < 21 }}
+            {{ date | relative }}
+            {{ elseif (date | format:Y) == now | format:Y }}
+            {{ date format="M j" }}
+            {{ else }}
+            {{ date format="M j, Y" }}
+            {{ /if }}
+        </div>
+    </a>
+</li>
