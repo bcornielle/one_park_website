@@ -2,7 +2,7 @@
     <a href="{{ url }}">
         <div class="image-wrapper">
             {{ if image }}
-                <img src="{{ glide:image :src='image' width='140' height='140' fit='crop'}}" class="small-image">
+                <img src="{{ glide:image :src='image' width='400' height='290' fit='crop'}}">
             {{ else }}
             <div class="no-image">
                 <h3>{{ title }}</h3>
@@ -14,14 +14,6 @@
                 <h3>{{ title }}</h3>
             {{ else }}
             <h3>{{ content | read_time }} minute read</h3>
-            {{ /if }}
-
-            {{ if tag:long_form }}
-            {{ tag:long_form where="type:text" limit="1" }}
-            <p>{{ text | macro:summary }}</p>
-            {{ /tag:long_form }}
-            {{ else }}
-            <p>{{ content | macro:summary }}</p>
             {{ /if }}
         </div>
         <div class="meta-wrapper">

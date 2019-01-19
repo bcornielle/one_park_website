@@ -3175,7 +3175,18 @@ body #app > main section#hero {
   min-height: 500px;
 }
 
-body #app > main section#hero h1 {
+body #app > main section#hero .hero-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+body #app > main section#hero .hero-content h1 {
+  -ms-flex-order: 1;
+  order: 1;
   font-weight: 900;
   letter-spacing: -2px;
   color: #162c4e;
@@ -3183,31 +3194,37 @@ body #app > main section#hero h1 {
   line-height: 1;
 }
 
-body #app > main section#hero h1 span {
+body #app > main section#hero .hero-content h1 span {
   display: block;
   font-size: 2.5rem;
 }
 
-body #app > main section#hero h2 {
-  font-size: 1rem;
+body #app > main section#hero .hero-content h2 {
+  -ms-flex-order: 2;
+  order: 2;
+  font-size: 2rem;
   margin-bottom: 30px;
-  margin-top: 10px;
+  font-weight: 900;
+  letter-spacing: -1px;
+  color: #162c4e;
 }
 
-body #app > main section#hero h2 span:last-child {
-  margin-left: 5px;
-  border-left: solid 1px #323831;
-  padding-left: 8px;
+body #app > main section#hero .hero-content h3 {
+  -ms-flex-order: 3;
+  order: 3;
+  font-size: 1.2rem;
+  color: #323831;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
 }
 
-body #app > main section#hero h2 span:last-child:before {
-  content: '';
-  height: 10px;
-  width: 5px;
-  background: #eee;
+body #app > main section#hero .hero-content h3 span {
+  display: block;
 }
 
-body #app > main section#hero a.btn {
+body #app > main section#hero .hero-content a.btn {
+  -ms-flex-order: 4;
+  order: 4;
   background: #359c1c;
   border: none;
   padding: 8px 15px;
@@ -3217,11 +3234,44 @@ body #app > main section#hero a.btn {
   transition: all ease .4s;
   font-size: 1em;
   font-weight: 900;
+  max-width: 200px;
 }
 
-body #app > main section#hero a.btn:hover {
+body #app > main section#hero .hero-content a.btn:hover {
   background-color: #267114;
   transform: translateX(0px) scale(1.05);
+}
+
+body #app > main section#hero .hero-content ul {
+  -ms-flex-order: 5;
+  order: 5;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 60px 100px 0 0;
+}
+
+body #app > main section#hero .hero-content ul li {
+  float: left;
+  width: 30% !important;
+  margin: 0 5% 5% 0;
+}
+
+body #app > main section#hero .hero-content ul li:nth-child(3n) {
+  margin-right: 0;
+}
+
+body #app > main section#hero .hero-content ul li:nth-child(3n + 4) {
+  clear: left;
+}
+
+body #app > main section#hero .hero-content ul li img {
+  max-width: 100px;
 }
 
 body #app > main section#highlights {
@@ -3400,6 +3450,29 @@ body #app > main section#features h2 span {
   display: block;
 }
 
+body #app > main section#features h4 {
+  margin: 60px 0 15px;
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+body #app > main section#features a.btn {
+  background: #359c1c;
+  border: none;
+  padding: 8px 15px;
+  margin: 0;
+  text-transform: uppercase;
+  color: white;
+  transition: all ease .4s;
+  font-size: 1em;
+  font-weight: 900;
+}
+
+body #app > main section#features a.btn:hover {
+  background-color: #267114;
+  transform: translateX(0px) scale(1.05);
+}
+
 body #app > main section#features .tabs {
   display: -ms-flexbox;
   display: flex;
@@ -3457,74 +3530,102 @@ body #app > main section#features .tabs .tab-headings nav .nav-tabs a.active spa
   color: #359c1c;
 }
 
+body #app > main section#features .tabs .tab-headings nav .nav-tabs a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px -4px rgba(83, 167, 61, 0.3);
+}
+
 body #app > main section#features .tabs .tab-descriptions {
   -ms-flex-order: 1;
   order: 1;
 }
 
-body #app > main section#features table {
+body #app > main section#features .table-wrapper {
   box-shadow: 0 16px 48px rgba(83, 167, 61, 0.1);
+  margin-top: 30px;
+  padding: 60px 60px 30px;
+}
+
+body #app > main section#features .table-wrapper table {
   margin: 30px 0;
 }
 
-body #app > main section#features table thead tr th {
-  background: #162c4e;
-  color: #fff;
+body #app > main section#features .table-wrapper table thead tr th {
+  background: #f1f6ef;
   letter-spacing: 1px;
-  font-weight: normal;
   border: none;
   padding: 30px;
+  color: #162c4e;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
-body #app > main section#features table thead tr th:not(:last-child) {
-  border-right: solid 1px #1c3762;
+body #app > main section#features .table-wrapper table thead tr th:first-child {
+  border-right: solid 3px #359c1c;
+  text-align: right;
 }
 
-body #app > main section#features table tbody tr {
+body #app > main section#features .table-wrapper table thead tr th:nth-child(2) {
+  border-top: solid 3px #359c1c;
+  border-right: solid 3px #359c1c;
+  padding: 30px 10px;
+}
+
+body #app > main section#features .table-wrapper table thead tr th:nth-child(2) a.branding.logo {
+  background-image: url(/assets/img/one-park-logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  float: left;
+  width: 100%;
+  height: 40px;
+  background-size: contain;
+}
+
+body #app > main section#features .table-wrapper table tbody tr {
   border: none;
 }
 
-body #app > main section#features table tbody tr td {
+body #app > main section#features .table-wrapper table tbody tr td {
   border: none;
-  background: #fff;
+  background: #f1f6ef;
   padding: 15px 20px;
   letter-spacing: 0;
   font-size: .9em;
+  border-bottom: solid 1px #cacec9;
 }
 
-body #app > main section#features table tbody tr td i {
+body #app > main section#features .table-wrapper table tbody tr td i {
   font-size: 20px;
   color: #359c1c;
 }
 
-body #app > main section#features table tbody tr td:not(:last-child) {
+body #app > main section#features .table-wrapper table tbody tr td:not(:last-child) {
   border-right: solid 1px #eee;
 }
 
-body #app > main section#features table tbody tr.odd td {
-  background: #f7f7f7;
-}
-
-body #app > main section#features h4 {
-  margin: 30px 0 15px;
-  font-size: 1rem;
-}
-
-body #app > main section#features a.btn {
-  background: #359c1c;
-  border: none;
-  padding: 8px 15px;
-  margin: 0;
-  text-transform: uppercase;
-  color: white;
-  transition: all ease .4s;
-  font-size: 1em;
+body #app > main section#features .table-wrapper table tbody tr td:first-child {
+  border-right: solid 3px #359c1c;
+  text-align: right;
+  color: #162c4e;
   font-weight: 900;
 }
 
-body #app > main section#features a.btn:hover {
-  background-color: #267114;
-  transform: translateX(0px) scale(1.05);
+body #app > main section#features .table-wrapper table tbody tr td:nth-child(2) {
+  border-right: solid 3px #359c1c;
+}
+
+body #app > main section#features .table-wrapper table tbody tr.odd td {
+  background: #f1f6ef;
+}
+
+body #app > main section#features .table-wrapper table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+body #app > main section#features .table-wrapper table tbody tr:last-child td:nth-child(2) {
+  padding-bottom: 45px;
+  border-bottom: solid 3px #359c1c;
 }
 
 body #app > main section#features .tab-content .tab-pane {
@@ -3647,10 +3748,10 @@ body #app > main section#products .products-wrapper .product {
   position: relative;
   padding: 30px 15px 15px;
   text-align: center;
-  transition: ease all .4s;
   border: none;
   border-radius: 20px;
   box-shadow: 0 16px 48px rgba(83, 167, 61, 0.1);
+  transition: ease all .4s;
 }
 
 body #app > main section#products .products-wrapper .product:nth-child(2n) {
@@ -3731,14 +3832,15 @@ body #app > main section#products .products-wrapper .product:last-child .descrip
 }
 
 body #app > main section#products .products-wrapper .product:hover {
-  transform: translateX(0px) scale(1.05);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px -4px rgba(83, 167, 61, 0.3);
 }
 
 body #app > main section#lp-form {
   background: #323831;
   color: #fff;
   padding: 90px 0;
-  border-bottom: solid 3px #359c1c;
+  border-bottom: solid 1px #359c1c;
 }
 
 body #app > main section#lp-form .container #form {
@@ -3768,8 +3870,7 @@ body #app > main section#lp-form .container #form p {
 }
 
 body #app > main section#lp-form .container #form p span {
-  border-bottom: solid 2px #e88f0b;
-  color: #e88f0b;
+  color: #fff;
   font-weight: 900;
   position: relative;
 }
@@ -4014,7 +4115,7 @@ body #app > footer .brand-info .logo {
 body #app > footer .brand-info .copyright,
 body #app > footer .brand-info .notice {
   font-size: .8em;
-  color: #888;
+  color: #eee;
   margin: 0;
 }
 
@@ -4024,6 +4125,467 @@ body #app > footer .badget {
 
 body.section-home #app > main section#hero {
   background-image: url("/assets/img/woman.jpg");
+}
+
+body.section-how-it-works #app > main section#how-it-works .intro,
+body.section-como-trabaja #app > main section#how-it-works .intro {
+  padding: 90px 0;
+}
+
+body.section-how-it-works #app > main section#how-it-works .intro h1,
+body.section-como-trabaja #app > main section#how-it-works .intro h1 {
+  margin: 0 0 60px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
+body.section-how-it-works #app > main section#how-it-works .intro .description p,
+body.section-como-trabaja #app > main section#how-it-works .intro .description p {
+  padding-right: 30px;
+}
+
+body.section-how-it-works #app > main section#how-it-works .intro .image-wrapper .iframe-wrapper iframe,
+body.section-como-trabaja #app > main section#how-it-works .intro .image-wrapper .iframe-wrapper iframe {
+  width: 100%;
+  min-height: 300px;
+}
+
+body.section-how-it-works #app > main section#how-it-works .requirements,
+body.section-how-it-works #app > main section#how-it-works .values,
+body.section-how-it-works #app > main section#how-it-works .process,
+body.section-how-it-works #app > main section#how-it-works .advantages,
+body.section-como-trabaja #app > main section#how-it-works .requirements,
+body.section-como-trabaja #app > main section#how-it-works .values,
+body.section-como-trabaja #app > main section#how-it-works .process,
+body.section-como-trabaja #app > main section#how-it-works .advantages {
+  border-top: solid 1px #eee;
+  padding: 90px 0;
+}
+
+body.section-how-it-works #app > main section#how-it-works .requirements h2,
+body.section-how-it-works #app > main section#how-it-works .values h2,
+body.section-how-it-works #app > main section#how-it-works .process h2,
+body.section-how-it-works #app > main section#how-it-works .advantages h2,
+body.section-como-trabaja #app > main section#how-it-works .requirements h2,
+body.section-como-trabaja #app > main section#how-it-works .values h2,
+body.section-como-trabaja #app > main section#how-it-works .process h2,
+body.section-como-trabaja #app > main section#how-it-works .advantages h2 {
+  font-weight: 900;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+body.section-how-it-works #app > main section#how-it-works .requirements h3,
+body.section-how-it-works #app > main section#how-it-works .values h3,
+body.section-how-it-works #app > main section#how-it-works .process h3,
+body.section-how-it-works #app > main section#how-it-works .advantages h3,
+body.section-como-trabaja #app > main section#how-it-works .requirements h3,
+body.section-como-trabaja #app > main section#how-it-works .values h3,
+body.section-como-trabaja #app > main section#how-it-works .process h3,
+body.section-como-trabaja #app > main section#how-it-works .advantages h3 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+body.section-how-it-works #app > main section#how-it-works .requirements ul.items li,
+body.section-how-it-works #app > main section#how-it-works .values ul.items li,
+body.section-how-it-works #app > main section#how-it-works .process ul.items li,
+body.section-how-it-works #app > main section#how-it-works .advantages ul.items li,
+body.section-como-trabaja #app > main section#how-it-works .requirements ul.items li,
+body.section-como-trabaja #app > main section#how-it-works .values ul.items li,
+body.section-como-trabaja #app > main section#how-it-works .process ul.items li,
+body.section-como-trabaja #app > main section#how-it-works .advantages ul.items li {
+  box-shadow: 0 0 48px rgba(83, 167, 61, 0.1);
+  float: left;
+  width: 100% !important;
+  margin: 0 2% 2% 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 15px;
+  background: #fff;
+  transition: all ease .4s;
+}
+
+body.section-how-it-works #app > main section#how-it-works .requirements ul.items li:nth-child(1n),
+body.section-how-it-works #app > main section#how-it-works .values ul.items li:nth-child(1n),
+body.section-how-it-works #app > main section#how-it-works .process ul.items li:nth-child(1n),
+body.section-how-it-works #app > main section#how-it-works .advantages ul.items li:nth-child(1n),
+body.section-como-trabaja #app > main section#how-it-works .requirements ul.items li:nth-child(1n),
+body.section-como-trabaja #app > main section#how-it-works .values ul.items li:nth-child(1n),
+body.section-como-trabaja #app > main section#how-it-works .process ul.items li:nth-child(1n),
+body.section-como-trabaja #app > main section#how-it-works .advantages ul.items li:nth-child(1n) {
+  margin-right: 0;
+}
+
+body.section-how-it-works #app > main section#how-it-works .requirements ul.items li:nth-child(1n + 2),
+body.section-how-it-works #app > main section#how-it-works .values ul.items li:nth-child(1n + 2),
+body.section-how-it-works #app > main section#how-it-works .process ul.items li:nth-child(1n + 2),
+body.section-how-it-works #app > main section#how-it-works .advantages ul.items li:nth-child(1n + 2),
+body.section-como-trabaja #app > main section#how-it-works .requirements ul.items li:nth-child(1n + 2),
+body.section-como-trabaja #app > main section#how-it-works .values ul.items li:nth-child(1n + 2),
+body.section-como-trabaja #app > main section#how-it-works .process ul.items li:nth-child(1n + 2),
+body.section-como-trabaja #app > main section#how-it-works .advantages ul.items li:nth-child(1n + 2) {
+  clear: left;
+}
+
+body.section-how-it-works #app > main section#how-it-works .requirements ul.items li div.left,
+body.section-how-it-works #app > main section#how-it-works .values ul.items li div.left,
+body.section-how-it-works #app > main section#how-it-works .process ul.items li div.left,
+body.section-how-it-works #app > main section#how-it-works .advantages ul.items li div.left,
+body.section-como-trabaja #app > main section#how-it-works .requirements ul.items li div.left,
+body.section-como-trabaja #app > main section#how-it-works .values ul.items li div.left,
+body.section-como-trabaja #app > main section#how-it-works .process ul.items li div.left,
+body.section-como-trabaja #app > main section#how-it-works .advantages ul.items li div.left {
+  background: #162c4e;
+  padding: 30px;
+  float: left;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  font-size: .8rem;
+}
+
+body.section-how-it-works #app > main section#how-it-works .requirements ul.items li div.left span,
+body.section-how-it-works #app > main section#how-it-works .requirements ul.items li div.left i,
+body.section-how-it-works #app > main section#how-it-works .values ul.items li div.left span,
+body.section-how-it-works #app > main section#how-it-works .values ul.items li div.left i,
+body.section-how-it-works #app > main section#how-it-works .process ul.items li div.left span,
+body.section-how-it-works #app > main section#how-it-works .process ul.items li div.left i,
+body.section-how-it-works #app > main section#how-it-works .advantages ul.items li div.left span,
+body.section-how-it-works #app > main section#how-it-works .advantages ul.items li div.left i,
+body.section-como-trabaja #app > main section#how-it-works .requirements ul.items li div.left span,
+body.section-como-trabaja #app > main section#how-it-works .requirements ul.items li div.left i,
+body.section-como-trabaja #app > main section#how-it-works .values ul.items li div.left span,
+body.section-como-trabaja #app > main section#how-it-works .values ul.items li div.left i,
+body.section-como-trabaja #app > main section#how-it-works .process ul.items li div.left span,
+body.section-como-trabaja #app > main section#how-it-works .process ul.items li div.left i,
+body.section-como-trabaja #app > main section#how-it-works .advantages ul.items li div.left span,
+body.section-como-trabaja #app > main section#how-it-works .advantages ul.items li div.left i {
+  display: block;
+  text-transform: uppercase;
+  color: #359c1c;
+  font-weight: 900;
+  width: 75px;
+}
+
+body.section-how-it-works #app > main section#how-it-works .requirements ul.items li div.left i,
+body.section-how-it-works #app > main section#how-it-works .values ul.items li div.left i,
+body.section-how-it-works #app > main section#how-it-works .process ul.items li div.left i,
+body.section-how-it-works #app > main section#how-it-works .advantages ul.items li div.left i,
+body.section-como-trabaja #app > main section#how-it-works .requirements ul.items li div.left i,
+body.section-como-trabaja #app > main section#how-it-works .values ul.items li div.left i,
+body.section-como-trabaja #app > main section#how-it-works .process ul.items li div.left i,
+body.section-como-trabaja #app > main section#how-it-works .advantages ul.items li div.left i {
+  margin-top: 30px;
+  font-size: 3rem;
+}
+
+body.section-how-it-works #app > main section#how-it-works .requirements ul.items li div.right,
+body.section-how-it-works #app > main section#how-it-works .values ul.items li div.right,
+body.section-how-it-works #app > main section#how-it-works .process ul.items li div.right,
+body.section-how-it-works #app > main section#how-it-works .advantages ul.items li div.right,
+body.section-como-trabaja #app > main section#how-it-works .requirements ul.items li div.right,
+body.section-como-trabaja #app > main section#how-it-works .values ul.items li div.right,
+body.section-como-trabaja #app > main section#how-it-works .process ul.items li div.right,
+body.section-como-trabaja #app > main section#how-it-works .advantages ul.items li div.right {
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 0 30px;
+  background: #fff;
+}
+
+body.section-how-it-works #app > main section#how-it-works .requirements ul.items li div.right p,
+body.section-how-it-works #app > main section#how-it-works .values ul.items li div.right p,
+body.section-how-it-works #app > main section#how-it-works .process ul.items li div.right p,
+body.section-how-it-works #app > main section#how-it-works .advantages ul.items li div.right p,
+body.section-como-trabaja #app > main section#how-it-works .requirements ul.items li div.right p,
+body.section-como-trabaja #app > main section#how-it-works .values ul.items li div.right p,
+body.section-como-trabaja #app > main section#how-it-works .process ul.items li div.right p,
+body.section-como-trabaja #app > main section#how-it-works .advantages ul.items li div.right p {
+  line-height: 1.2;
+  padding: 0;
+  margin: 0;
+}
+
+body.section-how-it-works #app > main section#how-it-works .requirements ul.items li:hover,
+body.section-how-it-works #app > main section#how-it-works .values ul.items li:hover,
+body.section-how-it-works #app > main section#how-it-works .process ul.items li:hover,
+body.section-how-it-works #app > main section#how-it-works .advantages ul.items li:hover,
+body.section-como-trabaja #app > main section#how-it-works .requirements ul.items li:hover,
+body.section-como-trabaja #app > main section#how-it-works .values ul.items li:hover,
+body.section-como-trabaja #app > main section#how-it-works .process ul.items li:hover,
+body.section-como-trabaja #app > main section#how-it-works .advantages ul.items li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px -4px rgba(83, 167, 61, 0.3);
+}
+
+body.section-how-it-works #app > main section#how-it-works .requirements a.btn,
+body.section-how-it-works #app > main section#how-it-works .values a.btn,
+body.section-how-it-works #app > main section#how-it-works .process a.btn,
+body.section-how-it-works #app > main section#how-it-works .advantages a.btn,
+body.section-como-trabaja #app > main section#how-it-works .requirements a.btn,
+body.section-como-trabaja #app > main section#how-it-works .values a.btn,
+body.section-como-trabaja #app > main section#how-it-works .process a.btn,
+body.section-como-trabaja #app > main section#how-it-works .advantages a.btn {
+  background: #359c1c;
+  border: none;
+  padding: 8px 15px;
+  margin: 0;
+  text-transform: uppercase;
+  color: white;
+  transition: all ease .4s;
+  font-size: 1em;
+  font-weight: 900;
+  min-width: 130px;
+}
+
+body.section-how-it-works #app > main section#how-it-works .requirements a.btn:hover,
+body.section-how-it-works #app > main section#how-it-works .values a.btn:hover,
+body.section-how-it-works #app > main section#how-it-works .process a.btn:hover,
+body.section-how-it-works #app > main section#how-it-works .advantages a.btn:hover,
+body.section-como-trabaja #app > main section#how-it-works .requirements a.btn:hover,
+body.section-como-trabaja #app > main section#how-it-works .values a.btn:hover,
+body.section-como-trabaja #app > main section#how-it-works .process a.btn:hover,
+body.section-como-trabaja #app > main section#how-it-works .advantages a.btn:hover {
+  background-color: #267114;
+  transform: translateX(0px) scale(1.05);
+}
+
+body.section-how-it-works #app > main section#how-it-works .requirements .description,
+body.section-how-it-works #app > main section#how-it-works .values .description,
+body.section-how-it-works #app > main section#how-it-works .process .description,
+body.section-how-it-works #app > main section#how-it-works .advantages .description,
+body.section-como-trabaja #app > main section#how-it-works .requirements .description,
+body.section-como-trabaja #app > main section#how-it-works .values .description,
+body.section-como-trabaja #app > main section#how-it-works .process .description,
+body.section-como-trabaja #app > main section#how-it-works .advantages .description {
+  padding: 0 30px;
+}
+
+body.section-how-it-works #app > main section#how-it-works .requirements h2,
+body.section-como-trabaja #app > main section#how-it-works .requirements h2 {
+  padding-bottom: 0;
+}
+
+body.section-how-it-works #app > main section#how-it-works .requirements h3,
+body.section-como-trabaja #app > main section#how-it-works .requirements h3 {
+  padding-bottom: 60px;
+}
+
+body.section-how-it-works #app > main section#how-it-works .process,
+body.section-como-trabaja #app > main section#how-it-works .process {
+  background: #f1f6ef;
+}
+
+body.section-how-it-works #app > main section#how-it-works .process h2,
+body.section-como-trabaja #app > main section#how-it-works .process h2 {
+  padding-bottom: 5px;
+}
+
+body.section-how-it-works #app > main section#how-it-works .process h3,
+body.section-como-trabaja #app > main section#how-it-works .process h3 {
+  margin-bottom: 60px;
+}
+
+body.section-how-it-works #app > main section#how-it-works .process p,
+body.section-como-trabaja #app > main section#how-it-works .process p {
+  padding: 60px 0 0;
+  text-align: center;
+}
+
+body.section-how-it-works #app > main section#how-it-works .process a,
+body.section-como-trabaja #app > main section#how-it-works .process a {
+  color: #359c1c;
+}
+
+body.section-how-it-works #app > main section#how-it-works .process .item,
+body.section-como-trabaja #app > main section#how-it-works .process .item {
+  margin: 0 auto;
+  background: #162c4e;
+  color: #fff;
+  border-radius: 50%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  transition: all ease .4s;
+}
+
+body.section-how-it-works #app > main section#how-it-works .process .item .number,
+body.section-como-trabaja #app > main section#how-it-works .process .item .number {
+  display: -ms-flexbox;
+  display: flex;
+  background: green;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 1;
+}
+
+body.section-how-it-works #app > main section#how-it-works .process .item i,
+body.section-como-trabaja #app > main section#how-it-works .process .item i {
+  font-size: 4rem;
+  margin-top: -3px;
+  z-index: 0;
+}
+
+body.section-how-it-works #app > main section#how-it-works .process .item .title,
+body.section-como-trabaja #app > main section#how-it-works .process .item .title {
+  color: #359c1c;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-top: 15px;
+}
+
+body.section-how-it-works #app > main section#how-it-works .process .item .description,
+body.section-como-trabaja #app > main section#how-it-works .process .item .description {
+  font-size: .9rem;
+  line-height: 1.5;
+  padding: 5px 30px;
+}
+
+body.section-how-it-works #app > main section#how-it-works .process .item:hover,
+body.section-como-trabaja #app > main section#how-it-works .process .item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px -4px rgba(83, 167, 61, 0.3);
+}
+
+body.section-how-it-works #app > main section#how-it-works .advantages,
+body.section-como-trabaja #app > main section#how-it-works .advantages {
+  text-align: center;
+  background: #f1f6ef;
+}
+
+body.section-how-it-works #app > main section#how-it-works .advantages ol,
+body.section-como-trabaja #app > main section#how-it-works .advantages ol {
+  counter-reset: li;
+  list-style: none;
+  *list-style: decimal;
+  /* Keep using default numbering for IE6/7 */
+  padding: 0;
+  column-count: 3;
+  column-gap: 20px;
+  margin: 60px 0 0;
+}
+
+body.section-how-it-works #app > main section#how-it-works .advantages ol ol,
+body.section-como-trabaja #app > main section#how-it-works .advantages ol ol {
+  margin-left: 2em;
+}
+
+body.section-how-it-works #app > main section#how-it-works .advantages ol li,
+body.section-como-trabaja #app > main section#how-it-works .advantages ol li {
+  float: left;
+  width: 100% !important;
+  margin: 0 2% 2% 0;
+  position: relative;
+  margin: .5em 0;
+  background: #fff;
+  color: #444;
+  text-decoration: none;
+  border-radius: .3em;
+  transition: all .5s ease-out;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  padding-left: 60px;
+  height: 75px;
+  font-size: 1rem;
+  text-align: left;
+}
+
+body.section-how-it-works #app > main section#how-it-works .advantages ol li:nth-child(1n),
+body.section-como-trabaja #app > main section#how-it-works .advantages ol li:nth-child(1n) {
+  margin-right: 0;
+}
+
+body.section-how-it-works #app > main section#how-it-works .advantages ol li:nth-child(1n + 2),
+body.section-como-trabaja #app > main section#how-it-works .advantages ol li:nth-child(1n + 2) {
+  clear: left;
+}
+
+body.section-how-it-works #app > main section#how-it-works .advantages ol li i,
+body.section-como-trabaja #app > main section#how-it-works .advantages ol li i {
+  display: none;
+}
+
+body.section-how-it-works #app > main section#how-it-works .advantages ol li:hover,
+body.section-como-trabaja #app > main section#how-it-works .advantages ol li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px -4px rgba(83, 167, 61, 0.3);
+}
+
+body.section-how-it-works #app > main section#how-it-works .advantages ol li:before,
+body.section-como-trabaja #app > main section#how-it-works .advantages ol li:before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  margin-top: -2em;
+  background: #162c4e;
+  color: #359c1c;
+  height: 4em;
+  width: 4em;
+  line-height: 2em;
+  border: .3em solid #fff;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 2em;
+  transition: all .3s ease-out;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+body.section-how-it-works #app > main section#how-it-works .advantages ul,
+body.section-como-trabaja #app > main section#how-it-works .advantages ul {
+  column-count: 2;
+  column-gap: 20px;
+  line-height: 1.8;
+  list-style: none;
+  padding: 15px;
+  width: 900px;
+  margin: 30px auto 0;
+}
+
+body.section-how-it-works #app > main section#how-it-works .advantages ul li,
+body.section-como-trabaja #app > main section#how-it-works .advantages ul li {
+  text-align: left;
+}
+
+body.section-how-it-works #app > main section#how-it-works .advantages ul li i,
+body.section-como-trabaja #app > main section#how-it-works .advantages ul li i {
+  color: #359c1c;
 }
 
 body.section-about-us #app > main section#about-us .intro,
@@ -4099,6 +4661,7 @@ body.section-sobre-nosotros #app > main section#about-us .why ul.items li {
   align-items: center;
   margin-bottom: 15px;
   background: #fff;
+  transition: all ease .4s;
 }
 
 body.section-about-us #app > main section#about-us .brand ul.items li:nth-child(1n),
@@ -4180,13 +4743,93 @@ body.section-sobre-nosotros #app > main section#about-us .why ul.items li div.ri
   background: #fff;
 }
 
+body.section-about-us #app > main section#about-us .brand ul.items li div.right p,
+body.section-about-us #app > main section#about-us .values ul.items li div.right p,
+body.section-about-us #app > main section#about-us .why ul.items li div.right p,
+body.section-sobre-nosotros #app > main section#about-us .brand ul.items li div.right p,
+body.section-sobre-nosotros #app > main section#about-us .values ul.items li div.right p,
+body.section-sobre-nosotros #app > main section#about-us .why ul.items li div.right p {
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+}
+
+body.section-about-us #app > main section#about-us .brand ul.items li div.right ul,
+body.section-about-us #app > main section#about-us .values ul.items li div.right ul,
+body.section-about-us #app > main section#about-us .why ul.items li div.right ul,
+body.section-sobre-nosotros #app > main section#about-us .brand ul.items li div.right ul,
+body.section-sobre-nosotros #app > main section#about-us .values ul.items li div.right ul,
+body.section-sobre-nosotros #app > main section#about-us .why ul.items li div.right ul {
+  list-style: circle;
+  column-count: 2;
+  column-gap: 20px;
+}
+
+body.section-about-us #app > main section#about-us .brand ul.items li div.right ul li,
+body.section-about-us #app > main section#about-us .values ul.items li div.right ul li,
+body.section-about-us #app > main section#about-us .why ul.items li div.right ul li,
+body.section-sobre-nosotros #app > main section#about-us .brand ul.items li div.right ul li,
+body.section-sobre-nosotros #app > main section#about-us .values ul.items li div.right ul li,
+body.section-sobre-nosotros #app > main section#about-us .why ul.items li div.right ul li {
+  float: left;
+  width: 100% !important;
+  margin: 0 2% 2% 0;
+  text-align: left;
+  box-shadow: none;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  position: relative;
+}
+
+body.section-about-us #app > main section#about-us .brand ul.items li div.right ul li:nth-child(1n),
+body.section-about-us #app > main section#about-us .values ul.items li div.right ul li:nth-child(1n),
+body.section-about-us #app > main section#about-us .why ul.items li div.right ul li:nth-child(1n),
+body.section-sobre-nosotros #app > main section#about-us .brand ul.items li div.right ul li:nth-child(1n),
+body.section-sobre-nosotros #app > main section#about-us .values ul.items li div.right ul li:nth-child(1n),
+body.section-sobre-nosotros #app > main section#about-us .why ul.items li div.right ul li:nth-child(1n) {
+  margin-right: 0;
+}
+
+body.section-about-us #app > main section#about-us .brand ul.items li div.right ul li:nth-child(1n + 2),
+body.section-about-us #app > main section#about-us .values ul.items li div.right ul li:nth-child(1n + 2),
+body.section-about-us #app > main section#about-us .why ul.items li div.right ul li:nth-child(1n + 2),
+body.section-sobre-nosotros #app > main section#about-us .brand ul.items li div.right ul li:nth-child(1n + 2),
+body.section-sobre-nosotros #app > main section#about-us .values ul.items li div.right ul li:nth-child(1n + 2),
+body.section-sobre-nosotros #app > main section#about-us .why ul.items li div.right ul li:nth-child(1n + 2) {
+  clear: left;
+}
+
+body.section-about-us #app > main section#about-us .brand ul.items li div.right ul li:before,
+body.section-about-us #app > main section#about-us .values ul.items li div.right ul li:before,
+body.section-about-us #app > main section#about-us .why ul.items li div.right ul li:before,
+body.section-sobre-nosotros #app > main section#about-us .brand ul.items li div.right ul li:before,
+body.section-sobre-nosotros #app > main section#about-us .values ul.items li div.right ul li:before,
+body.section-sobre-nosotros #app > main section#about-us .why ul.items li div.right ul li:before {
+  content: '\25CF';
+  position: absolute;
+  top: 50%;
+  left: -15px;
+  transform: translateY(-50%);
+  color: #359c1c;
+}
+
+body.section-about-us #app > main section#about-us .brand ul.items li:hover,
+body.section-about-us #app > main section#about-us .values ul.items li:hover,
+body.section-about-us #app > main section#about-us .why ul.items li:hover,
+body.section-sobre-nosotros #app > main section#about-us .brand ul.items li:hover,
+body.section-sobre-nosotros #app > main section#about-us .values ul.items li:hover,
+body.section-sobre-nosotros #app > main section#about-us .why ul.items li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px -4px rgba(83, 167, 61, 0.3);
+}
+
 body.section-about-us #app > main section#about-us .brand .description,
 body.section-about-us #app > main section#about-us .values .description,
 body.section-about-us #app > main section#about-us .why .description,
 body.section-sobre-nosotros #app > main section#about-us .brand .description,
 body.section-sobre-nosotros #app > main section#about-us .values .description,
 body.section-sobre-nosotros #app > main section#about-us .why .description {
-  padding: 30px;
+  padding: 0 30px;
 }
 
 body.section-about-us #app > main section#about-us .values,
@@ -4205,6 +4848,7 @@ body.section-sobre-nosotros #app > main section#about-us .why .item {
   background: #fff;
   display: -ms-flexbox;
   display: flex;
+  transition: all ease .4s;
 }
 
 body.section-about-us #app > main section#about-us .why .item .number,
@@ -4253,6 +4897,17 @@ body.section-sobre-nosotros #app > main section#about-us .why .item:hover .descr
 body.section-sobre-nosotros #app > main section#about-us .why .item.active .description {
   border-left-color: #fff;
   color: #359c1c;
+}
+
+body.section-about-us #app > main section#about-us .why .item:hover,
+body.section-sobre-nosotros #app > main section#about-us .why .item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px -4px rgba(83, 167, 61, 0.3);
+}
+
+body.section-about-us #app > main section#about-us .why .item-tooltip,
+body.section-sobre-nosotros #app > main section#about-us .why .item-tooltip {
+  display: none;
 }
 
 body.section-faq #app > main section#faqs .intro,
@@ -4743,6 +5398,53 @@ body.section-articulos #app > main section#article .intro .meta .date .day {
   padding-right: 5px;
 }
 
+body.section-blog #app > main section#article .intro .meta ul.social-media,
+body.section-articulos #app > main section#article .intro .meta ul.social-media {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-order: 2;
+  order: 2;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin: 0;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+body.section-blog #app > main section#article .intro .meta ul.social-media li,
+body.section-articulos #app > main section#article .intro .meta ul.social-media li {
+  font-size: 3em;
+  float: left;
+}
+
+body.section-blog #app > main section#article .intro .meta ul.social-media li a,
+body.section-articulos #app > main section#article .intro .meta ul.social-media li a {
+  background: #162c4e;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  font-size: 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-right: 5px;
+  text-decoration: none;
+  transition: background-color ease .4s;
+}
+
+body.section-blog #app > main section#article .intro .meta ul.social-media li a i,
+body.section-articulos #app > main section#article .intro .meta ul.social-media li a i {
+  color: #fff;
+}
+
+body.section-blog #app > main section#article .intro .meta ul.social-media li a:hover,
+body.section-articulos #app > main section#article .intro .meta ul.social-media li a:hover {
+  background-color: #0b1626;
+}
+
 body.section-blog #app > main section#article article.content,
 body.section-articulos #app > main section#article article.content {
   padding: 60px 0 30px;
@@ -4768,51 +5470,6 @@ body.section-articulos #app > main section#article article.content p:first-child
 body.section-blog #app > main section#article article.content p a,
 body.section-articulos #app > main section#article article.content p a {
   color: #359c1c;
-}
-
-body.section-blog #app > main section#article article.content ul.social-media,
-body.section-articulos #app > main section#article article.content ul.social-media {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  margin: 60px 0 0;
-}
-
-body.section-blog #app > main section#article article.content ul.social-media li,
-body.section-articulos #app > main section#article article.content ul.social-media li {
-  font-size: 3em;
-  float: left;
-}
-
-body.section-blog #app > main section#article article.content ul.social-media li a,
-body.section-articulos #app > main section#article article.content ul.social-media li a {
-  background: #162c4e;
-  height: 32px;
-  width: 32px;
-  border-radius: 50%;
-  font-size: 20px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-right: 5px;
-  text-decoration: none;
-  transition: background-color ease .4s;
-}
-
-body.section-blog #app > main section#article article.content ul.social-media li a i,
-body.section-articulos #app > main section#article article.content ul.social-media li a i {
-  color: #fff;
-}
-
-body.section-blog #app > main section#article article.content ul.social-media li a:hover,
-body.section-articulos #app > main section#article article.content ul.social-media li a:hover {
-  background-color: #0b1626;
 }
 
 body.section-blog #app > main section#article .sidebar .widget,
@@ -6206,405 +6863,6 @@ body.section-forgot-password #app > footer,
 body.section-password-reset #app > footer,
 body.section-register #app > footer {
   display: none;
-}
-
-body.section-how-it-works #app > main section#how-it-works .intro,
-body.section-como-trabaja #app > main section#how-it-works .intro {
-  padding: 90px 0;
-}
-
-body.section-how-it-works #app > main section#how-it-works .intro h1,
-body.section-como-trabaja #app > main section#how-it-works .intro h1 {
-  margin: 0 0 60px;
-  text-align: center;
-  font-weight: 900;
-  font-size: 2.5rem;
-}
-
-body.section-how-it-works #app > main section#how-it-works .intro .description p,
-body.section-como-trabaja #app > main section#how-it-works .intro .description p {
-  padding-right: 30px;
-}
-
-body.section-how-it-works #app > main section#how-it-works .intro .image-wrapper .iframe-wrapper iframe,
-body.section-como-trabaja #app > main section#how-it-works .intro .image-wrapper .iframe-wrapper iframe {
-  width: 100%;
-  min-height: 300px;
-}
-
-body.section-how-it-works #app > main section#how-it-works .requirements,
-body.section-how-it-works #app > main section#how-it-works .values,
-body.section-how-it-works #app > main section#how-it-works .process,
-body.section-how-it-works #app > main section#how-it-works .advantages,
-body.section-como-trabaja #app > main section#how-it-works .requirements,
-body.section-como-trabaja #app > main section#how-it-works .values,
-body.section-como-trabaja #app > main section#how-it-works .process,
-body.section-como-trabaja #app > main section#how-it-works .advantages {
-  border-top: solid 1px #eee;
-  padding: 90px 0;
-}
-
-body.section-how-it-works #app > main section#how-it-works .requirements h2,
-body.section-how-it-works #app > main section#how-it-works .values h2,
-body.section-how-it-works #app > main section#how-it-works .process h2,
-body.section-how-it-works #app > main section#how-it-works .advantages h2,
-body.section-como-trabaja #app > main section#how-it-works .requirements h2,
-body.section-como-trabaja #app > main section#how-it-works .values h2,
-body.section-como-trabaja #app > main section#how-it-works .process h2,
-body.section-como-trabaja #app > main section#how-it-works .advantages h2 {
-  font-weight: 900;
-  text-align: center;
-  padding-bottom: 60px;
-}
-
-body.section-how-it-works #app > main section#how-it-works .requirements h3,
-body.section-how-it-works #app > main section#how-it-works .values h3,
-body.section-how-it-works #app > main section#how-it-works .process h3,
-body.section-how-it-works #app > main section#how-it-works .advantages h3,
-body.section-como-trabaja #app > main section#how-it-works .requirements h3,
-body.section-como-trabaja #app > main section#how-it-works .values h3,
-body.section-como-trabaja #app > main section#how-it-works .process h3,
-body.section-como-trabaja #app > main section#how-it-works .advantages h3 {
-  text-align: center;
-  font-size: 1.2rem;
-}
-
-body.section-how-it-works #app > main section#how-it-works .requirements ul.items li,
-body.section-how-it-works #app > main section#how-it-works .values ul.items li,
-body.section-how-it-works #app > main section#how-it-works .process ul.items li,
-body.section-how-it-works #app > main section#how-it-works .advantages ul.items li,
-body.section-como-trabaja #app > main section#how-it-works .requirements ul.items li,
-body.section-como-trabaja #app > main section#how-it-works .values ul.items li,
-body.section-como-trabaja #app > main section#how-it-works .process ul.items li,
-body.section-como-trabaja #app > main section#how-it-works .advantages ul.items li {
-  box-shadow: 0 0 48px rgba(83, 167, 61, 0.1);
-  float: left;
-  width: 100% !important;
-  margin: 0 2% 2% 0;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-bottom: 15px;
-  background: #fff;
-}
-
-body.section-how-it-works #app > main section#how-it-works .requirements ul.items li:nth-child(1n),
-body.section-how-it-works #app > main section#how-it-works .values ul.items li:nth-child(1n),
-body.section-how-it-works #app > main section#how-it-works .process ul.items li:nth-child(1n),
-body.section-how-it-works #app > main section#how-it-works .advantages ul.items li:nth-child(1n),
-body.section-como-trabaja #app > main section#how-it-works .requirements ul.items li:nth-child(1n),
-body.section-como-trabaja #app > main section#how-it-works .values ul.items li:nth-child(1n),
-body.section-como-trabaja #app > main section#how-it-works .process ul.items li:nth-child(1n),
-body.section-como-trabaja #app > main section#how-it-works .advantages ul.items li:nth-child(1n) {
-  margin-right: 0;
-}
-
-body.section-how-it-works #app > main section#how-it-works .requirements ul.items li:nth-child(1n + 2),
-body.section-how-it-works #app > main section#how-it-works .values ul.items li:nth-child(1n + 2),
-body.section-how-it-works #app > main section#how-it-works .process ul.items li:nth-child(1n + 2),
-body.section-how-it-works #app > main section#how-it-works .advantages ul.items li:nth-child(1n + 2),
-body.section-como-trabaja #app > main section#how-it-works .requirements ul.items li:nth-child(1n + 2),
-body.section-como-trabaja #app > main section#how-it-works .values ul.items li:nth-child(1n + 2),
-body.section-como-trabaja #app > main section#how-it-works .process ul.items li:nth-child(1n + 2),
-body.section-como-trabaja #app > main section#how-it-works .advantages ul.items li:nth-child(1n + 2) {
-  clear: left;
-}
-
-body.section-how-it-works #app > main section#how-it-works .requirements ul.items li div.left,
-body.section-how-it-works #app > main section#how-it-works .values ul.items li div.left,
-body.section-how-it-works #app > main section#how-it-works .process ul.items li div.left,
-body.section-how-it-works #app > main section#how-it-works .advantages ul.items li div.left,
-body.section-como-trabaja #app > main section#how-it-works .requirements ul.items li div.left,
-body.section-como-trabaja #app > main section#how-it-works .values ul.items li div.left,
-body.section-como-trabaja #app > main section#how-it-works .process ul.items li div.left,
-body.section-como-trabaja #app > main section#how-it-works .advantages ul.items li div.left {
-  background: #162c4e;
-  padding: 30px;
-  float: left;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  text-align: center;
-}
-
-body.section-how-it-works #app > main section#how-it-works .requirements ul.items li div.left span,
-body.section-how-it-works #app > main section#how-it-works .requirements ul.items li div.left i,
-body.section-how-it-works #app > main section#how-it-works .values ul.items li div.left span,
-body.section-how-it-works #app > main section#how-it-works .values ul.items li div.left i,
-body.section-how-it-works #app > main section#how-it-works .process ul.items li div.left span,
-body.section-how-it-works #app > main section#how-it-works .process ul.items li div.left i,
-body.section-how-it-works #app > main section#how-it-works .advantages ul.items li div.left span,
-body.section-how-it-works #app > main section#how-it-works .advantages ul.items li div.left i,
-body.section-como-trabaja #app > main section#how-it-works .requirements ul.items li div.left span,
-body.section-como-trabaja #app > main section#how-it-works .requirements ul.items li div.left i,
-body.section-como-trabaja #app > main section#how-it-works .values ul.items li div.left span,
-body.section-como-trabaja #app > main section#how-it-works .values ul.items li div.left i,
-body.section-como-trabaja #app > main section#how-it-works .process ul.items li div.left span,
-body.section-como-trabaja #app > main section#how-it-works .process ul.items li div.left i,
-body.section-como-trabaja #app > main section#how-it-works .advantages ul.items li div.left span,
-body.section-como-trabaja #app > main section#how-it-works .advantages ul.items li div.left i {
-  display: block;
-  text-transform: uppercase;
-  color: #359c1c;
-  font-weight: 900;
-  width: 75px;
-}
-
-body.section-how-it-works #app > main section#how-it-works .requirements ul.items li div.left i,
-body.section-how-it-works #app > main section#how-it-works .values ul.items li div.left i,
-body.section-how-it-works #app > main section#how-it-works .process ul.items li div.left i,
-body.section-how-it-works #app > main section#how-it-works .advantages ul.items li div.left i,
-body.section-como-trabaja #app > main section#how-it-works .requirements ul.items li div.left i,
-body.section-como-trabaja #app > main section#how-it-works .values ul.items li div.left i,
-body.section-como-trabaja #app > main section#how-it-works .process ul.items li div.left i,
-body.section-como-trabaja #app > main section#how-it-works .advantages ul.items li div.left i {
-  margin-top: 30px;
-  font-size: 3rem;
-}
-
-body.section-how-it-works #app > main section#how-it-works .requirements ul.items li div.right,
-body.section-how-it-works #app > main section#how-it-works .values ul.items li div.right,
-body.section-how-it-works #app > main section#how-it-works .process ul.items li div.right,
-body.section-how-it-works #app > main section#how-it-works .advantages ul.items li div.right,
-body.section-como-trabaja #app > main section#how-it-works .requirements ul.items li div.right,
-body.section-como-trabaja #app > main section#how-it-works .values ul.items li div.right,
-body.section-como-trabaja #app > main section#how-it-works .process ul.items li div.right,
-body.section-como-trabaja #app > main section#how-it-works .advantages ul.items li div.right {
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  padding: 0 30px;
-  background: #fff;
-}
-
-body.section-how-it-works #app > main section#how-it-works .requirements a.btn,
-body.section-how-it-works #app > main section#how-it-works .values a.btn,
-body.section-how-it-works #app > main section#how-it-works .process a.btn,
-body.section-how-it-works #app > main section#how-it-works .advantages a.btn,
-body.section-como-trabaja #app > main section#how-it-works .requirements a.btn,
-body.section-como-trabaja #app > main section#how-it-works .values a.btn,
-body.section-como-trabaja #app > main section#how-it-works .process a.btn,
-body.section-como-trabaja #app > main section#how-it-works .advantages a.btn {
-  background: #359c1c;
-  border: none;
-  padding: 8px 15px;
-  margin: 0;
-  text-transform: uppercase;
-  color: white;
-  transition: all ease .4s;
-  font-size: 1em;
-  font-weight: 900;
-  min-width: 130px;
-}
-
-body.section-how-it-works #app > main section#how-it-works .requirements a.btn:hover,
-body.section-how-it-works #app > main section#how-it-works .values a.btn:hover,
-body.section-how-it-works #app > main section#how-it-works .process a.btn:hover,
-body.section-how-it-works #app > main section#how-it-works .advantages a.btn:hover,
-body.section-como-trabaja #app > main section#how-it-works .requirements a.btn:hover,
-body.section-como-trabaja #app > main section#how-it-works .values a.btn:hover,
-body.section-como-trabaja #app > main section#how-it-works .process a.btn:hover,
-body.section-como-trabaja #app > main section#how-it-works .advantages a.btn:hover {
-  background-color: #267114;
-  transform: translateX(0px) scale(1.05);
-}
-
-body.section-how-it-works #app > main section#how-it-works .requirements .description,
-body.section-how-it-works #app > main section#how-it-works .values .description,
-body.section-how-it-works #app > main section#how-it-works .process .description,
-body.section-how-it-works #app > main section#how-it-works .advantages .description,
-body.section-como-trabaja #app > main section#how-it-works .requirements .description,
-body.section-como-trabaja #app > main section#how-it-works .values .description,
-body.section-como-trabaja #app > main section#how-it-works .process .description,
-body.section-como-trabaja #app > main section#how-it-works .advantages .description {
-  padding: 30px;
-}
-
-body.section-how-it-works #app > main section#how-it-works .requirements h2,
-body.section-como-trabaja #app > main section#how-it-works .requirements h2 {
-  padding-bottom: 0;
-}
-
-body.section-how-it-works #app > main section#how-it-works .requirements h3,
-body.section-como-trabaja #app > main section#how-it-works .requirements h3 {
-  padding-bottom: 60px;
-}
-
-body.section-how-it-works #app > main section#how-it-works .process,
-body.section-como-trabaja #app > main section#how-it-works .process {
-  background: #f1f6ef;
-}
-
-body.section-how-it-works #app > main section#how-it-works .process h2,
-body.section-como-trabaja #app > main section#how-it-works .process h2 {
-  padding-bottom: 5px;
-}
-
-body.section-how-it-works #app > main section#how-it-works .process h3,
-body.section-como-trabaja #app > main section#how-it-works .process h3 {
-  margin-bottom: 60px;
-}
-
-body.section-how-it-works #app > main section#how-it-works .process p,
-body.section-como-trabaja #app > main section#how-it-works .process p {
-  padding: 60px 0 0;
-  text-align: center;
-}
-
-body.section-how-it-works #app > main section#how-it-works .process a,
-body.section-como-trabaja #app > main section#how-it-works .process a {
-  color: #359c1c;
-}
-
-body.section-how-it-works #app > main section#how-it-works .process .item,
-body.section-como-trabaja #app > main section#how-it-works .process .item {
-  margin: 0 auto;
-  background: #162c4e;
-  color: #fff;
-  border-radius: 50%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 300px;
-  height: 300px;
-  text-align: center;
-}
-
-body.section-how-it-works #app > main section#how-it-works .process .item .number,
-body.section-como-trabaja #app > main section#how-it-works .process .item .number {
-  display: -ms-flexbox;
-  display: flex;
-  background: green;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-align: center;
-  align-items: center;
-  z-index: 1;
-}
-
-body.section-how-it-works #app > main section#how-it-works .process .item i,
-body.section-como-trabaja #app > main section#how-it-works .process .item i {
-  font-size: 4rem;
-  margin-top: -3px;
-  z-index: 0;
-}
-
-body.section-how-it-works #app > main section#how-it-works .process .item .title,
-body.section-como-trabaja #app > main section#how-it-works .process .item .title {
-  color: #359c1c;
-  text-transform: uppercase;
-  font-weight: 900;
-  margin-top: 15px;
-}
-
-body.section-how-it-works #app > main section#how-it-works .process .item .description,
-body.section-como-trabaja #app > main section#how-it-works .process .item .description {
-  font-size: .9rem;
-  line-height: 1.5;
-  padding: 15px 30px;
-}
-
-body.section-how-it-works #app > main section#how-it-works .advantages,
-body.section-como-trabaja #app > main section#how-it-works .advantages {
-  text-align: center;
-}
-
-body.section-how-it-works #app > main section#how-it-works .advantages ol,
-body.section-como-trabaja #app > main section#how-it-works .advantages ol {
-  counter-reset: li;
-  list-style: none;
-  *list-style: decimal;
-  /* Keep using default numbering for IE6/7 */
-  padding: 0;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-  margin: 0 auto;
-  width: 600px;
-}
-
-body.section-how-it-works #app > main section#how-it-works .advantages ol ol,
-body.section-como-trabaja #app > main section#how-it-works .advantages ol ol {
-  margin-left: 2em;
-}
-
-body.section-how-it-works #app > main section#how-it-works .advantages ol li,
-body.section-como-trabaja #app > main section#how-it-works .advantages ol li {
-  float: left;
-  width: 100% !important;
-  margin: 0 2% 2% 0;
-  position: relative;
-  padding: .4em .4em .4em 2em;
-  margin: .5em 0;
-  background: #fff;
-  color: #444;
-  text-decoration: none;
-  border-radius: .3em;
-  transition: all .5s ease-out;
-  box-shadow: 0 16px 48px rgba(83, 167, 61, 0.1);
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 75px;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  font-size: 1rem;
-}
-
-body.section-how-it-works #app > main section#how-it-works .advantages ol li:nth-child(1n),
-body.section-como-trabaja #app > main section#how-it-works .advantages ol li:nth-child(1n) {
-  margin-right: 0;
-}
-
-body.section-how-it-works #app > main section#how-it-works .advantages ol li:nth-child(1n + 2),
-body.section-como-trabaja #app > main section#how-it-works .advantages ol li:nth-child(1n + 2) {
-  clear: left;
-}
-
-body.section-how-it-works #app > main section#how-it-works .advantages ol li:hover,
-body.section-como-trabaja #app > main section#how-it-works .advantages ol li:hover {
-  background: #eee;
-}
-
-body.section-how-it-works #app > main section#how-it-works .advantages ol li:before,
-body.section-como-trabaja #app > main section#how-it-works .advantages ol li:before {
-  content: counter(li);
-  counter-increment: li;
-  position: absolute;
-  left: -3em;
-  top: 50%;
-  margin-top: -2em;
-  background: #162c4e;
-  color: #359c1c;
-  height: 4em;
-  width: 4em;
-  line-height: 2em;
-  border: .3em solid #fff;
-  text-align: center;
-  font-weight: bold;
-  border-radius: 2em;
-  transition: all .3s ease-out;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  font-size: 1rem;
 }
 
 body.section-pre-qualification #app > main section#hero,
