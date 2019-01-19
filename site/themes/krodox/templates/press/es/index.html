@@ -1,20 +1,19 @@
 <main>
     <div class="container">
         <section id="press-releases">
-            <div class="heading">
+            <div class="intro">
                 <h1>{{ title }}</h1>
             </div>
-            <article class="list">
-                {{ collection:press paginate="true" as="posts" limit="4" locale="{ locale }" }}
-                <ul>
+            <div class="posts">
+                {{ collection:press paginate="true" as="posts" limit="9" locale="{ locale }" }}
+                <ul class="items">
                     {{ posts scope="tag" }}
-                    {{ partial:block }}
+                    {{ partial:press/block }}
                     {{ /posts }}
                 </ul>
-                {{ partial:pagination }}
+                {{ partial:modules/pagination }}
                 {{ /collection:press }}
-            </article>
+            </div>
         </section>
     </div>
-    {{ partial:modules/es/lp-form }}
 </main>

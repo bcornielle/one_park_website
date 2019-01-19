@@ -1,0 +1,10 @@
+{{ collection:next in="press" limit="5" as="next_posts" }}
+{{ unless no_results }}
+    <h4>Press Releases</h4>
+    <ul>
+        {{ next_posts scope="tag" }}
+        {{ partial:press/blockless }}
+        {{ /next_posts }}
+    </ul>
+{{ /unless }}
+{{ /collection:next }}

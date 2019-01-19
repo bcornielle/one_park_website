@@ -5201,8 +5201,8 @@ body.section-articulos #app > main section#blog .posts .items .item {
   margin: 0 2% 2% 0;
   text-align: center;
   box-shadow: 0 16px 48px rgba(83, 167, 61, 0.1);
-  transition: ease all .4s;
   border-radius: 10px;
+  transition: ease all .4s;
 }
 
 body.section-blog #app > main section#blog .posts .items .item:after,
@@ -5256,7 +5256,7 @@ body.section-articulos #app > main section#blog .posts .items .item a .image-wra
   justify-content: center;
   height: 290px;
   padding: 30px;
-  background: #666;
+  background: #323831;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -5264,7 +5264,7 @@ body.section-articulos #app > main section#blog .posts .items .item a .image-wra
 body.section-blog #app > main section#blog .posts .items .item a .image-wrapper .no-image h3,
 body.section-articulos #app > main section#blog .posts .items .item a .image-wrapper .no-image h3 {
   font-weight: 900;
-  color: #fff;
+  color: #d89347;
 }
 
 body.section-blog #app > main section#blog .posts .items .item a .content-wrapper,
@@ -5300,7 +5300,8 @@ body.section-articulos #app > main section#blog .posts .items .item a .meta-wrap
 
 body.section-blog #app > main section#blog .posts .items .item:hover,
 body.section-articulos #app > main section#blog .posts .items .item:hover {
-  transform: translateX(0px) scale(1.05);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px -4px rgba(83, 167, 61, 0.3);
 }
 
 body.section-blog #app > main section#blog .pagination,
@@ -5352,6 +5353,10 @@ body.section-blog #app > main section#article .intro ul.breadcrumbs,
 body.section-articulos #app > main section#article .intro ul.breadcrumbs {
   display: -ms-flexbox;
   display: flex;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 body.section-blog #app > main section#article .intro ul.breadcrumbs li,
@@ -5659,7 +5664,7 @@ body.section-articulos #app > main section#article .related-articles ul .item a 
   justify-content: center;
   height: 290px;
   padding: 30px;
-  background: #f1f6ef;
+  background: #323831;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -5667,7 +5672,7 @@ body.section-articulos #app > main section#article .related-articles ul .item a 
 body.section-blog #app > main section#article .related-articles ul .item a .image-wrapper .no-image h3,
 body.section-articulos #app > main section#article .related-articles ul .item a .image-wrapper .no-image h3 {
   font-weight: 900;
-  color: #323831;
+  color: #d89347;
 }
 
 body.section-blog #app > main section#article .related-articles ul .item a .content-wrapper,
@@ -5703,7 +5708,8 @@ body.section-articulos #app > main section#article .related-articles ul .item a 
 
 body.section-blog #app > main section#article .related-articles ul .item:hover,
 body.section-articulos #app > main section#article .related-articles ul .item:hover {
-  transform: translateX(0px) scale(1.05);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px -4px rgba(83, 167, 61, 0.3);
 }
 
 body.section-press #app > main section#press-releases .intro,
@@ -5714,9 +5720,17 @@ body.section-medios #app > main section#press-releases .intro {
 
 body.section-press #app > main section#press-releases .intro h1,
 body.section-medios #app > main section#press-releases .intro h1 {
-  text-transform: uppercase;
   font-weight: 900;
-  margin: 0;
+  margin: 0 0 15px;
+  text-transform: uppercase;
+}
+
+body.section-press #app > main section#press-releases .intro h2,
+body.section-medios #app > main section#press-releases .intro h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+  font-size: 1.5em;
 }
 
 body.section-press #app > main section#press-releases .posts,
@@ -5768,7 +5782,6 @@ body.section-medios #app > main section#press-releases .posts .items .item a {
 body.section-press #app > main section#press-releases .posts .items .item a .image-wrapper,
 body.section-medios #app > main section#press-releases .posts .items .item a .image-wrapper {
   height: 290px;
-  background: #eee;
 }
 
 body.section-press #app > main section#press-releases .posts .items .item a .image-wrapper img,
@@ -5777,6 +5790,28 @@ body.section-medios #app > main section#press-releases .posts .items .item a .im
   height: 290px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+
+body.section-press #app > main section#press-releases .posts .items .item a .image-wrapper .no-image,
+body.section-medios #app > main section#press-releases .posts .items .item a .image-wrapper .no-image {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 290px;
+  padding: 30px;
+  background: #323831;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+body.section-press #app > main section#press-releases .posts .items .item a .image-wrapper .no-image h3,
+body.section-medios #app > main section#press-releases .posts .items .item a .image-wrapper .no-image h3 {
+  font-weight: 900;
+  color: #d89347;
+  font-size: 1.5rem;
 }
 
 body.section-press #app > main section#press-releases .posts .items .item a .content-wrapper,
@@ -5812,7 +5847,8 @@ body.section-medios #app > main section#press-releases .posts .items .item a .me
 
 body.section-press #app > main section#press-releases .posts .items .item:hover,
 body.section-medios #app > main section#press-releases .posts .items .item:hover {
-  transform: translateX(0px) scale(1.05);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px -4px rgba(83, 167, 61, 0.3);
 }
 
 body.section-press #app > main section#press-releases .pagination,
@@ -5854,10 +5890,20 @@ body.section-medios #app > main section#article {
   padding: 60px 0;
 }
 
+body.section-press #app > main section#article .intro h1,
+body.section-medios #app > main section#article .intro h1 {
+  padding: 60px 0 0;
+  font-weight: 900;
+}
+
 body.section-press #app > main section#article .intro ul.breadcrumbs,
 body.section-medios #app > main section#article .intro ul.breadcrumbs {
   display: -ms-flexbox;
   display: flex;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 body.section-press #app > main section#article .intro ul.breadcrumbs li,
@@ -5883,43 +5929,83 @@ body.section-medios #app > main section#article .intro ul.breadcrumbs li a:hover
   color: #359c1c;
 }
 
-body.section-press #app > main section#article .intro h1,
-body.section-medios #app > main section#article .intro h1 {
-  padding: 30px 0;
-  font-weight: 900;
+body.section-press #app > main section#article .intro .meta,
+body.section-medios #app > main section#article .intro .meta {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-body.section-press #app > main section#article .intro .date,
-body.section-medios #app > main section#article .intro .date {
+body.section-press #app > main section#article .intro .meta .date,
+body.section-medios #app > main section#article .intro .meta .date {
+  -ms-flex-order: 1;
+  order: 1;
   display: -ms-flexbox;
   display: flex;
 }
 
-body.section-press #app > main section#article .intro .date .day,
-body.section-medios #app > main section#article .intro .date .day {
+body.section-press #app > main section#article .intro .meta .date .day,
+body.section-medios #app > main section#article .intro .meta .date .day {
   padding-right: 5px;
+}
+
+body.section-press #app > main section#article .intro .meta ul.social-media,
+body.section-medios #app > main section#article .intro .meta ul.social-media {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-order: 2;
+  order: 2;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin: 0;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+body.section-press #app > main section#article .intro .meta ul.social-media li,
+body.section-medios #app > main section#article .intro .meta ul.social-media li {
+  font-size: 3em;
+  float: left;
+}
+
+body.section-press #app > main section#article .intro .meta ul.social-media li a,
+body.section-medios #app > main section#article .intro .meta ul.social-media li a {
+  background: #162c4e;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  font-size: 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-right: 5px;
+  text-decoration: none;
+  transition: background-color ease .4s;
+}
+
+body.section-press #app > main section#article .intro .meta ul.social-media li a i,
+body.section-medios #app > main section#article .intro .meta ul.social-media li a i {
+  color: #fff;
+}
+
+body.section-press #app > main section#article .intro .meta ul.social-media li a:hover,
+body.section-medios #app > main section#article .intro .meta ul.social-media li a:hover {
+  background-color: #0b1626;
 }
 
 body.section-press #app > main section#article article.content,
 body.section-medios #app > main section#article article.content {
-  padding: 30px 0;
+  padding: 60px 0 30px;
 }
 
 body.section-press #app > main section#article article.content h2,
 body.section-medios #app > main section#article article.content h2 {
   margin: 30px 0 5px;
   font-size: 1.5em;
-}
-
-body.section-press #app > main section#article article.content p:first-child:first-letter,
-body.section-medios #app > main section#article article.content p:first-child:first-letter {
-  text-transform: uppercase;
-  font-weight: 900;
-  border: solid 1px #359c1c;
-  color: #359c1c;
-  padding: 5px 15px;
-  margin-right: 5px;
-  font-size: 2rem;
 }
 
 body.section-press #app > main section#article article.content p a,
@@ -5980,7 +6066,7 @@ body.section-medios #app > main section#article .sidebar .widget .description a.
 
 body.section-press #app > main section#article .sidebar .popular-articles,
 body.section-medios #app > main section#article .sidebar .popular-articles {
-  margin-bottom: 30px;
+  margin: 90px 0 60px;
 }
 
 body.section-press #app > main section#article .sidebar .popular-articles h4,
@@ -6020,8 +6106,21 @@ body.section-medios #app > main section#article .sidebar .popular-articles ul li
   font-size: 1rem;
 }
 
+body.section-press #app > main section#article .sidebar .popular-articles ul li a i,
+body.section-medios #app > main section#article .sidebar .popular-articles ul li a i {
+  width: 64px;
+  height: 64px;
+  font-size: 4rem;
+  color: #359c1c;
+}
+
 body.section-press #app > main section#article .sidebar .popular-articles ul li:hover a h5,
 body.section-medios #app > main section#article .sidebar .popular-articles ul li:hover a h5 {
+  color: #359c1c;
+}
+
+body.section-press #app > main section#article .sidebar .popular-articles ul li:hover a .meta-wrapper,
+body.section-medios #app > main section#article .sidebar .popular-articles ul li:hover a .meta-wrapper {
   color: #359c1c;
 }
 
@@ -6074,14 +6173,13 @@ body.section-medios #app > main section#article .related-articles ul .item:not(:
 
 body.section-press #app > main section#article .related-articles ul .item a,
 body.section-medios #app > main section#article .related-articles ul .item a {
-  color: #162c4e;
+  color: #323831;
   text-decoration: none;
 }
 
 body.section-press #app > main section#article .related-articles ul .item a .image-wrapper,
 body.section-medios #app > main section#article .related-articles ul .item a .image-wrapper {
   height: 290px;
-  background: #eee;
 }
 
 body.section-press #app > main section#article .related-articles ul .item a .image-wrapper img,
@@ -6090,6 +6188,28 @@ body.section-medios #app > main section#article .related-articles ul .item a .im
   height: 290px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+
+body.section-press #app > main section#article .related-articles ul .item a .image-wrapper .no-image,
+body.section-medios #app > main section#article .related-articles ul .item a .image-wrapper .no-image {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 290px;
+  padding: 30px;
+  background: #323831;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+body.section-press #app > main section#article .related-articles ul .item a .image-wrapper .no-image h3,
+body.section-medios #app > main section#article .related-articles ul .item a .image-wrapper .no-image h3 {
+  font-weight: 900;
+  color: #d89347;
+  font-size: 1.5rem;
 }
 
 body.section-press #app > main section#article .related-articles ul .item a .content-wrapper,
@@ -6125,7 +6245,8 @@ body.section-medios #app > main section#article .related-articles ul .item a .me
 
 body.section-press #app > main section#article .related-articles ul .item:hover,
 body.section-medios #app > main section#article .related-articles ul .item:hover {
-  transform: translateX(0px) scale(1.05);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px -4px rgba(83, 167, 61, 0.3);
 }
 
 body.section-careers #app > main section#careers .intro,
@@ -6389,6 +6510,10 @@ body.section-empleos #app > main section#career .content ul.breadcrumbs {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 30px;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 body.section-careers #app > main section#career .content ul.breadcrumbs li,
