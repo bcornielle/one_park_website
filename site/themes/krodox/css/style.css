@@ -3053,7 +3053,7 @@ body #app > main section#highlights ul.highlights li {
   float: left;
   width: 33.3333333333% !important;
   margin: 0 0 0 0;
-  box-shadow: 0 16px 48px rgba(83, 167, 61, 0.1);
+  box-shadow: 0 16px 48px rgba(83, 167, 61, 0.3);
   background: white;
   padding: 30px;
   display: block;
@@ -3260,7 +3260,7 @@ body #app > main section#features .tabs .tab-headings nav .nav-tabs a {
   -ms-flex-align: center;
   align-items: center;
   background: white;
-  box-shadow: 0 16px 48px rgba(83, 167, 61, 0.1);
+  box-shadow: 0 16px 48px rgba(83, 167, 61, 0.3);
   margin-bottom: 10px;
   padding: 0;
   border: none;
@@ -3516,7 +3516,7 @@ body #app > main section#products .products-wrapper .product {
   text-align: center;
   border: none;
   border-radius: 20px;
-  box-shadow: 0 16px 48px rgba(83, 167, 61, 0.1);
+  box-shadow: 0 16px 48px rgba(83, 167, 61, 0.3);
   transition: ease all .4s;
 }
 
@@ -3962,7 +3962,7 @@ body.section-como-trabaja #app > main section#how-it-works .requirements ul.item
 body.section-como-trabaja #app > main section#how-it-works .values ul.items li,
 body.section-como-trabaja #app > main section#how-it-works .process ul.items li,
 body.section-como-trabaja #app > main section#how-it-works .advantages ul.items li {
-  box-shadow: 0 0 48px rgba(83, 167, 61, 0.1);
+  box-shadow: 0 0 48px rgba(83, 167, 61, 0.3);
   float: left;
   width: 100% !important;
   margin: 0 2% 2% 0;
@@ -4418,7 +4418,7 @@ body.section-about-us #app > main section#about-us .why ul.items li,
 body.section-sobre-nosotros #app > main section#about-us .brand ul.items li,
 body.section-sobre-nosotros #app > main section#about-us .values ul.items li,
 body.section-sobre-nosotros #app > main section#about-us .why ul.items li {
-  box-shadow: 0 0 48px rgba(83, 167, 61, 0.1);
+  box-shadow: 0 0 48px rgba(83, 167, 61, 0.3);
   float: left;
   width: 100% !important;
   margin: 0 2% 2% 0;
@@ -4613,7 +4613,7 @@ body.section-sobre-nosotros #app > main section#about-us .why {
 
 body.section-about-us #app > main section#about-us .why .item,
 body.section-sobre-nosotros #app > main section#about-us .why .item {
-  box-shadow: 0 16px 48px rgba(83, 167, 61, 0.1);
+  box-shadow: 0 16px 48px rgba(83, 167, 61, 0.3);
   background: #fff;
   display: -ms-flexbox;
   display: flex;
@@ -4759,7 +4759,7 @@ body.section-preguntas-comunes #app > main section#faqs .faqs #accordion-4 .card
   border-bottom: none;
   border-color: #eeeeee;
   border-radius: 0;
-  box-shadow: 0 16px 48px rgba(83, 167, 61, 0.1);
+  box-shadow: 0 16px 48px rgba(83, 167, 61, 0.3);
 }
 
 body.section-faq #app > main section#faqs .faqs #accordion .card .card-header,
@@ -4969,7 +4969,7 @@ body.section-articulos #app > main section#blog .posts .items .item {
   width: 32% !important;
   margin: 0 2% 2% 0;
   text-align: center;
-  box-shadow: 0 16px 48px rgba(83, 167, 61, 0.1);
+  box-shadow: 0 16px 48px rgba(83, 167, 61, 0.3);
   border-radius: 10px;
   transition: ease all .4s;
 }
@@ -5249,7 +5249,7 @@ body.section-articulos #app > main section#article article.content p a {
 body.section-blog #app > main section#article .sidebar .widget,
 body.section-articulos #app > main section#article .sidebar .widget {
   border-radius: 10px;
-  box-shadow: 0 16px 48px rgba(83, 167, 61, 0.1);
+  box-shadow: 0 16px 48px rgba(83, 167, 61, 0.3);
 }
 
 body.section-blog #app > main section#article .sidebar .widget h4,
@@ -5377,7 +5377,7 @@ body.section-articulos #app > main section#article .related-articles ul .item {
   width: 32% !important;
   margin: 0 2% 2% 0;
   text-align: center;
-  box-shadow: 0 16px 48px rgba(83, 167, 61, 0.1);
+  box-shadow: 0 16px 48px rgba(83, 167, 61, 0.3);
   transition: ease all .4s;
   border-radius: 10px;
 }
@@ -5515,7 +5515,7 @@ body.section-medios #app > main section#press-releases .posts .items .item {
   width: 32% !important;
   margin: 0 2% 2% 0;
   text-align: center;
-  box-shadow: 0 16px 48px rgba(83, 167, 61, 0.1);
+  box-shadow: 0 16px 48px rgba(83, 167, 61, 0.3);
   transition: ease all .4s;
   border-radius: 10px;
 }
@@ -5785,7 +5785,7 @@ body.section-medios #app > main section#article article.content p a {
 body.section-press #app > main section#article .sidebar .widget,
 body.section-medios #app > main section#article .sidebar .widget {
   border-radius: 10px;
-  box-shadow: 0 16px 48px rgba(83, 167, 61, 0.1);
+  box-shadow: 0 16px 48px rgba(83, 167, 61, 0.3);
 }
 
 body.section-press #app > main section#article .sidebar .widget h4,
@@ -5913,7 +5913,7 @@ body.section-medios #app > main section#article .related-articles ul .item {
   width: 32% !important;
   margin: 0 2% 2% 0;
   text-align: center;
-  box-shadow: 0 16px 48px rgba(83, 167, 61, 0.1);
+  box-shadow: 0 16px 48px rgba(83, 167, 61, 0.3);
   transition: ease all .4s;
   border-radius: 10px;
 }
@@ -6365,7 +6365,7 @@ body.section-careers #app > main section#career .form ul.fields li .form-control
 body.section-empleos #app > main section#career .form ul.fields li .form-control {
   border-radius: 2px;
   border: none;
-  box-shadow: 0 16px 48px rgba(83, 167, 61, 0.1);
+  box-shadow: 0 16px 48px rgba(83, 167, 61, 0.3);
 }
 
 body.section-careers #app > main section#career .form ul.disclaimer,

@@ -366,7 +366,7 @@ body {
               z-index: 2;
               li {
                 @include columns(3,0);
-                box-shadow: 0 16px 48px rgba(83, 167, 61, 0.1);
+                box-shadow: 0 16px 48px rgba(83, 167, 61, 0.3);
                 background: white;
                 padding: 30px;
                 display: block;
@@ -522,7 +522,7 @@ body {
                     display: flex;
                     align-items: center;
                     background: white;
-                    box-shadow: 0 16px 48px rgba(83, 167, 61, 0.1);
+                    box-shadow: 0 16px 48px rgba(83, 167, 61, 0.3);
                     margin-bottom: 10px;
                     padding: 0;
                     border: none;
@@ -752,7 +752,7 @@ body {
               text-align: center;
               border: none;
               border-radius: 20px;
-              box-shadow: 0 16px 48px rgba(83, 167, 61, 0.1);
+              box-shadow: 0 16px 48px rgba(83, 167, 61, 0.3);
               transition: ease all .4s;
               i {
                 font-size: 44px;
@@ -1112,7 +1112,7 @@ body {
               ul {
                 &.items {
                   li {
-                    box-shadow: 0 0 48px rgba(83, 167, 61, 0.1);
+                    box-shadow: 0 0 48px rgba(83, 167, 61, 0.3);
                     @include columns(1);
                     display: flex;
                     justify-content: center;
@@ -1378,7 +1378,7 @@ body {
               ul {
                 &.items {
                   li {
-                    box-shadow: 0 0 48px rgba(83, 167, 61, 0.1);
+                    box-shadow: 0 0 48px rgba(83, 167, 61, 0.3);
                     @include columns(1);
                     display: flex;
                     justify-content: center;
@@ -1456,7 +1456,7 @@ body {
             .why {
               background: $light-bg;
               .item {
-                box-shadow: 0 16px 48px rgba(83, 167, 61, 0.1);
+                box-shadow: 0 16px 48px rgba(83, 167, 61, 0.3);
                 background: $white;
                 display: flex;
                 transition: all ease .4s;
@@ -1559,7 +1559,7 @@ body {
                   border-bottom: none;
                   border-color: $border-color;
                   border-radius: 0;
-                  box-shadow: 0 16px 48px rgba(83, 167, 61, 0.1);
+                  box-shadow: 0 16px 48px rgba(83, 167, 61, 0.3);
                   .card-header {
                     background: $white;
                     border-bottom: none;
@@ -1653,7 +1653,7 @@ body {
                   @include clearfix;
                   @include columns(3);
                   text-align: center;
-                  box-shadow: 0 16px 48px rgba(83, 167, 61, 0.1);
+                  box-shadow: 0 16px 48px rgba(83, 167, 61, 0.3);
                   border-radius: 10px;
                   transition: ease all .4s;
                   &:not(:last-child){
@@ -1849,7 +1849,7 @@ body {
             .sidebar {
               .widget {
                 border-radius: 10px;
-                box-shadow: 0 16px 48px rgba(83, 167, 61, 0.1);
+                box-shadow: 0 16px 48px rgba(83, 167, 61, 0.3);
                 h4 {
                   padding: 15px;
                   background: $brand-secondary;
@@ -1941,7 +1941,7 @@ body {
                   @include clearfix;
                   @include columns(3);
                   text-align: center;
-                  box-shadow: 0 16px 48px rgba(83, 167, 61, 0.1);
+                  box-shadow: 0 16px 48px rgba(83, 167, 61, 0.3);
                   transition: ease all .4s;
                   border-radius: 10px;
                   &:not(:last-child){
@@ -2037,7 +2037,7 @@ body {
                   @include clearfix;
                   @include columns(3);
                   text-align: center;
-                  box-shadow: 0 16px 48px rgba(83, 167, 61, 0.1);
+                  box-shadow: 0 16px 48px rgba(83, 167, 61, 0.3);
                   transition: ease all .4s;
                   border-radius: 10px;
                   &:not(:last-child){
@@ -2223,7 +2223,7 @@ body {
             .sidebar {
               .widget {
                 border-radius: 10px;
-                box-shadow: 0 16px 48px rgba(83, 167, 61, 0.1);
+                box-shadow: 0 16px 48px rgba(83, 167, 61, 0.3);
                 h4 {
                   padding: 15px;
                   background: $brand-secondary;
@@ -2315,7 +2315,7 @@ body {
                   @include clearfix;
                   @include columns(3);
                   text-align: center;
-                  box-shadow: 0 16px 48px rgba(83, 167, 61, 0.1);
+                  box-shadow: 0 16px 48px rgba(83, 167, 61, 0.3);
                   transition: ease all .4s;
                   border-radius: 10px;
                   &:not(:last-child){
@@ -2627,7 +2627,7 @@ body {
                     .form-control {
                       border-radius: 2px;
                       border: none;
-                      box-shadow: 0 16px 48px rgba(83, 167, 61, 0.1);
+                      box-shadow: 0 16px 48px rgba(83, 167, 61, 0.3);
                     }
                   }
                 }
