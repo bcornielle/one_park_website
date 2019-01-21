@@ -125,18 +125,10 @@
             </div>
         </div>
     </section>
-    {{ partial:services }}
-    {{ partial:call-to-action-1 }}
-    {{ partial:testimonials }}
-    {{ partial:call-to-action-2 }}
-    {{ partial:about-us }}
-    {{ partial:call-to-action-3 }}
-    {{ partial:products }}
-    {{ partial:lp-form }}
+    {{ partial:modules/highlights }}
+    {{ partial:modules/services }}
+    {{ partial:modules/features }}
+    {{ partial:modules/testimonials }}
+    {{ partial:modules/products }}
+    {{ partial:modules/lp-form }}
 </main>
-<script>
-    document.getElementById('phone-number').addEventListener('blur', function (e) {
-        var x = e.target.value.replace(/\D/g, '').match(/(\d{3})(\d{3})(\d{4})/);
-        e.target.value = '(' + x[1] + ') ' + x[2] + '-' + x[3];
-    });
-</script>

@@ -14,10 +14,10 @@ body {
         position: relative;
         display: block;
         width: 100%;
-        height: 121px;
+        height: 120px;
         margin: 0;
         overflow: hidden;
-        border-bottom: solid 1px #eee;
+        border: none;
         .nav-wrapper {
           display: flex;
           position: fixed;
@@ -32,7 +32,7 @@ body {
           background: white;
           &.shown {
             height: 100%;
-            background-color: #000;
+            background-color: $brand-secondary;
             transition: all 0.3s ease-in, background 0.5s ease-in;
             transition-delay: 0.25s;
             .burger-container {
@@ -73,7 +73,7 @@ body {
             list-style: none;
             @include clearfix;
             li.menu-item {
-              border-bottom: 1px solid #333;
+              border-bottom: 1px solid darken($brand-secondary,10%);
               margin-top: 5px;
               transform: scale(1.15) translateY(-30px);
               opacity: 0;
@@ -229,9 +229,6 @@ body {
                   justify-content: flex-end;
                   align-items: center;
                   li {
-                    &:not(:last-child){
-                      margin-right: 30px;
-                    }
                     a {
                       color: $text-color;
                       font-weight: 900;
@@ -258,218 +255,14 @@ body {
                         }
                       }
                     }
+                    &:not(:last-child){
+                      margin-right: 30px;
+                    }
                     &.active {
                       a {
                         color: $brand-primary;
                         border-bottom: solid 3px $brand-primary;
                         padding-bottom: 5px;
-                      }
-                    }
-                    &.dropdown {
-                      &.show {
-                        background: $brand-secondary;
-                        a {
-                          background: $brand-secondary;
-                        }
-                        div {
-                          &.dropdown-menu {
-                            position: fixed;
-                            top: 65px;
-                            right: 0;
-                            margin: 0;
-                            padding: 0;
-                            border: none;
-                            background: $brand-secondary;
-                            &.call-out {
-                              min-height: 50px;
-                              margin: 10px;
-                              box-shadow: 0 0 20px #999;
-                              background-color: $brand-secondary;
-                              background-image: -moz-linear-gradient(top, $brand-secondary, $brand-secondary);
-                              text-shadow: 0 0 1px #000;
-                              color: white;
-                              padding: 10px;
-                              &:before {
-                                content: "";
-                                width: 0;
-                                height: 0;
-                                border: 0.8em solid transparent;
-                                position: absolute;
-                                left: 85%;
-                                top: -20px;
-                                border-bottom: 10px solid #444;
-                              }
-                              &.notifications {
-                                width: 300px;
-                                padding: 0;
-                                top: 10px !important;
-                                &:before {
-                                  left: 90%;
-                                }
-                                h4 {
-                                  margin: 0;
-                                  border-bottom: solid 1px lighten($brand-secondary, 2%);
-                                  padding: 0 0 0 15px;
-                                  a {
-                                    display: flex;
-                                    justify-content: center;
-                                    width: 100%;
-                                    color: $brand-primary;
-                                    i {
-                                      color: $brand-primary;
-                                    }
-                                    span {
-                                      font-size: 14px;
-                                      width: 100%;
-                                      white-space: nowrap;
-                                      overflow: hidden;
-                                      text-overflow: ellipsis;
-                                      padding-left: 10px;
-                                      text-align: left;
-                                      height: 50px;
-                                      line-height: 1.2;
-                                      display: flex;
-                                      justify-content: center;
-                                      flex-direction: column;
-                                      p, time {
-                                        display: block;
-                                        padding: 0;
-                                        font-weight: 900;
-                                        text-transform: uppercase;
-                                      }
-                                      time {
-                                        font-size: 10px;
-                                        color: #767772;
-                                      }
-                                      p {
-                                        margin: 0;
-                                      }
-                                    }
-                                  }
-                                }
-                                ul {
-                                  overflow: hidden;
-                                  max-height: 200px;
-                                  margin-bottom: 15px;
-                                  li {
-                                    animation: slideDown;
-                                    animation-duration: .4s;
-                                    a {
-                                      overflow: hidden;
-                                      padding-right: 10px;
-                                      padding-left: 12px;
-                                      position: relative;
-                                      height: 50px;
-                                      width: 300px;
-                                      text-decoration: line-through;
-                                      &.UNREAD {
-                                        text-decoration: none;
-                                        div {
-                                          time {
-                                            small {
-                                              &:before {
-                                                content: ' | ';
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                      div {
-                                        font-size: 14px;
-                                        width: 300px;
-                                        white-space: nowrap;
-                                        overflow: hidden;
-                                        text-overflow: ellipsis;
-                                        text-align: left;
-                                        height: 50px;
-                                        line-height: 1.2;
-                                        display: flex;
-                                        justify-content: center;
-                                        flex-direction: column;
-                                        i {
-                                          width: 20px;
-                                          line-height: 30px;
-                                          height: 30px;
-                                          font-size: 10px;
-                                          position: absolute;
-                                          top: 10px;
-                                          color: $brand-primary;
-                                        }
-                                        span, time {
-                                          display: block;
-                                          padding: 0 0 0 20px;
-                                        }
-                                        span {
-                                          color: white;
-                                          font-size: 13px;
-                                          max-width: 250px;
-                                          text-overflow: ellipsis;
-                                          overflow: hidden;
-                                          white-space: nowrap;
-                                        }
-                                        time {
-                                          text-transform: uppercase;
-                                          font-size: 10px;
-                                          color: #767772;
-                                          font-weight: 900;
-                                          small {
-                                            color: #928476;
-                                          }
-                                        }
-                                      }
-                                    }
-                                    &:last-child {
-                                      a {
-                                        text-align: left;
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                              ul {
-                                li {
-                                  color: $white;
-                                  padding: 0;
-                                  margin: 0;
-                                  a {
-                                    font-weight: normal;
-                                    margin: 0;
-                                    padding: 0 5px 0 15px;
-                                    display: flex;
-                                    align-items: center;
-                                    color: inherit;
-                                    line-height: 50px;
-                                    height: 50px;
-                                    border-bottom: solid 1px lighten($brand-secondary, 2%);
-                                    width: 250px;
-                                    font-size: 16px;
-                                    i {
-                                      width: 32px;
-                                      line-height: 50px;
-                                      height: 50px;
-                                    }
-                                    span {
-                                      padding-left: 15px;
-                                      display: inline-block;
-                                    }
-                                    &:hover {
-                                      color: $brand-primary;
-                                    }
-                                  }
-                                  &:last-child {
-                                    a {
-                                      color: $white;
-                                      border-bottom: none;
-                                      &:hover {
-                                        color: $brand-primary;
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
                       }
                     }
                   }
@@ -626,12 +419,13 @@ body {
                   transform: translateX(-75%);
                   background: $brand-secondary;
                   color: $white;
-                  width: 32px;
-                  height: 32px;
+                  width: 48px;
+                  height: 48px;
                   display: flex;
                   align-items: center;
                   justify-content: center;
                   border-radius: 50%;
+                  font-size: 1.5rem;
                 }
                 i {
                   font-size: 5rem;
@@ -649,13 +443,13 @@ body {
               &:not(:last-child){
                 &:after {
                   content: '';
-                  height: 2px;
+                  height: 5px;
                   width: 100px;
                   position: absolute;
                   top: 50%;
                   left: 100%;
                   transform: translate(-50%,-50%);
-                  background: $brand-primary;
+                  background: $brand-secondary;
                 }
               }
             }
@@ -685,7 +479,7 @@ body {
         &#features {
           margin: 0;
           padding: 90px 0;
-          background: #f1f6ef;
+          background: $light-bg;
           h2 {
             text-align: center;
             letter-spacing: 1px;
@@ -779,7 +573,7 @@ body {
               thead {
                 tr {
                   th {
-                    background: #f1f6ef;
+                    background: $light-bg;
                     letter-spacing: 1px;
                     border: none;
                     padding: 30px;
@@ -820,7 +614,7 @@ body {
                   border: none;
                   td {
                     border: none;
-                    background: #f1f6ef;
+                    background: $light-bg;
                     padding: 15px 20px;
                     letter-spacing: 0;
                     font-size: .9em;
@@ -844,7 +638,7 @@ body {
                   }
                   &.odd {
                     td {
-                      background: #f1f6ef;
+                      background: $light-bg;
                     }
                   }
                   &:last-child {
@@ -922,7 +716,7 @@ body {
           }
         }
         &#products {
-          background: #f1f6ef;
+          background: $light-bg;
           color: $text-color;
           text-align: center;
           padding: 90px 0;
@@ -1399,7 +1193,7 @@ body {
               }
             }
             .process {
-              background: #f1f6ef;
+              background: $light-bg;
               h2 {
                 padding-bottom: 5px;
               }
@@ -1427,11 +1221,14 @@ body {
                 text-align: center;
                 transition:  all ease .4s;
                 .number {
+                  position: absolute;
+                  top: -15px;
                   display: flex;
                   background: green;
                   border-radius: 50%;
-                  width: 32px;
-                  height: 32px;
+                  width: 48px;
+                  height: 48px;
+                  font-size: 1.5rem;
                   justify-content: center;
                   align-items: center;
                   z-index: 1;
@@ -1460,7 +1257,7 @@ body {
             }
             .advantages {
               text-align: center;
-              background: #f1f6ef;
+              background: $light-bg;
               ol {
                 counter-reset: li;
                 list-style: none;
@@ -1476,7 +1273,7 @@ body {
                   @include columns(1);
                   position: relative;;
                   margin: .5em 0;
-                  background: #fff;
+                  background: $white;
                   color: #444;
                   text-decoration: none;
                   border-radius: .3em;
@@ -1507,7 +1304,7 @@ body {
                     height: 4em;
                     width: 4em;
                     line-height: 2em;
-                    border: .3em solid #fff;
+                    border: .3em solid $white;
                     text-align: center;
                     font-weight: bold;
                     border-radius: 2em;
@@ -1655,10 +1452,10 @@ body {
               }
             }
             .values {
-              background: #f1f6ef;
+              background: $light-bg;
             }
             .why {
-              background: #f1f6ef;
+              background: $light-bg;
               .item {
                 box-shadow: 0 16px 48px rgba(83, 167, 61, 0.1);
                 background: $white;
@@ -1737,7 +1534,7 @@ body {
               }
             }
             .faqs {
-              background: #f1f6ef;
+              background: $light-bg;
               padding: 90px 0 30px;
               h1 {
                 margin: 0 0 60px;
@@ -2615,7 +2412,7 @@ body {
             }
             .careers {
               padding: 90px 0;
-              background: #f1f6ef;
+              background: $light-bg;
               h2 {
                 text-align: center;
                 margin: 0 0 5px;
@@ -2640,7 +2437,7 @@ body {
                 padding: 0 120px;
                 .item {
                   border: none;
-                  background: #f1f6ef;
+                  background: $light-bg;
                   display: flex;
                   @include clearfix;
                   @include columns(2);
@@ -2740,7 +2537,7 @@ body {
             }
           }
           &#career {
-            background: #f1f6ef;
+            background: $light-bg;
             .intro {
               text-align: center;
               padding: 90px 0 60px;
@@ -2808,7 +2605,7 @@ body {
               display: flex;
               flex-direction: column;
               align-items: center;
-              background: #f1f6ef;
+              background: $light-bg;
               color: $text-color;
               text-align: center;
               padding: 30px 0;
@@ -3113,6 +2910,281 @@ body {
       }
     }
   }
+  &.section-lp {
+    #app {
+      > nav {
+        &.apple {
+          z-index: 0;
+          .nav-wrapper {
+            .container {
+              .menus {
+                .navbar-right {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+      > main {
+        section {
+          &#hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-image: url("/assets/img/business.jpg");
+            background-position: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            min-height: 400px;
+            height: 400px;
+            &.restaurant {
+              background-image: url("/assets/img/restaurant.jpeg");
+            }
+            &.trucking {
+              background-image: url("/assets/img/trucking.jpg");
+            }
+            &.overlay {
+              h1,li {
+                color: $white;
+              }
+              &:before {
+                background-color: rgba(0,0,0,0.7);
+              }
+            }
+            &:before {
+              position: absolute;
+              content: '';
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              z-index: 0;
+            }
+            .description {
+              padding: 60px 0 60px 0;
+              h1 {
+                font-family: inherit;
+                font-size: 2.5em;
+                font-weight: 900;
+                line-height: 1;
+                .why-we-do-it {
+                  padding-left: 5px;
+                }
+              }
+              h4 {
+                font-size: 1em;
+                font-weight: 300;
+                line-height: 1.2;
+                margin: 30px 0;
+                text-transform: uppercase;
+                color: $brand-primary;
+                span {
+                  display: block;
+                }
+              }
+              ul {
+                font-size: .9rem;
+                &.xl {
+                  display: block;
+                }
+                &.xs {
+                  display: none;
+                }
+                li {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 3px;
+                  img {
+                    width: 16px;
+                    height: 16px;
+                  }
+                  span {
+                    padding-left: 5px;
+                  }
+                }
+              }
+            }
+            .lp-form-wrapper {
+              position: relative;
+              #form {
+                $form_color: $brand-secondary;
+                &.lp-form {
+                  min-height: 500px;
+                  position: absolute;
+                  top: -75px;
+                  right: -5px;
+                  background: $form_color;
+                  border: solid 4px $white;
+                  width: 100%;
+                  opacity: 1;
+                  padding: 20px;
+                  text-align: center;
+                  .phone-header {
+                    border: 2px solid #a2a2a2;
+                    border-radius: 3px;
+                    text-align: center;
+                    .label {
+                      text-align: center;
+                      text-transform: uppercase;
+                      padding: .5em;
+                      position: relative;
+                      top: -9px;
+                      font-size: 10px;
+                      letter-spacing: 1px;
+                      color: $white;
+                      background-color: $form_color;
+                    }
+                    .number {
+                      margin: 0 0 10px;
+                      line-height: 1;
+                      font-size: 1.4em;
+                      display: block;
+                      color: $brand-third;
+                      a {
+                        color: $white;
+                        text-decoration: none;
+                      }
+                    }
+                  }
+                  h2 {
+                    font-size: 1em;
+                    text-transform: uppercase;
+                    font-weight: 400;
+                    color: $white;
+                    padding: 15px 0 0;
+                    strong {
+                      font-weight: normal;
+                    }
+                  }
+                  article {
+                    padding: 15px 0 0;
+                    .fields {
+                      position: relative;
+                      margin-bottom: 15px;
+                      .form-group, .form-row {
+                        margin-bottom: 10px;
+                      }
+                      .honeypot {
+                        display: none;
+                      }
+                      input[type=text], input[type=email], input[type = number] {
+                        border: none;
+                        outline: none;
+                        background: #f7f7f7;
+                        padding: 7px 10px;
+                        border-radius: 3px;
+                        &:focus {
+                          outline: none;
+                          box-shadow: none;
+                        }
+                      }
+                      .alert {
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        right: 0;
+                        left: 0;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        max-height: 250px;
+                        border-radius: 0;
+                        margin: 15px;
+                        transition: ease all.4s;
+                        text-align: left;
+                        font-size: 14px;
+                        opacity: .98;
+                        &.error {
+                          background: red;
+                          border: solid 4px darken(red,25%);
+                          color: $white;
+                          .close {
+                            background: darken(red,25%);
+                          }
+                        }
+                        &.success {
+                          background: $brand-primary;
+                          border: solid 4px darken($brand-primary,25%);
+                          color: $white;
+                          .close {
+                            background: darken($brand-primary,25%);
+                          }
+                        }
+                        &.hidden {
+                          display: none;
+                        }
+                        .close {
+                          padding: 5px 10px;
+                          margin-top: 5px;
+                          color: $white;
+                          font-weight: normal;
+                          font-size: 16px;
+                          border-radius: 3px;
+                          opacity: 1;
+                        }
+                      }
+                    }
+                  }
+                  button {
+                    &.btn {
+                      background: $brand-third;
+                      border: solid 2px darken($brand-third,10%);
+                      width: 100%;
+                      padding: 15px;
+                      text-transform: uppercase;
+                    }
+                  }
+                  ul {
+                    display: flex;
+                    align-items: center;
+                    margin: 0;
+                    padding: 20px 0 0;
+                    li {
+                      @include columns(2,0);
+                      &:first-child {
+                        font-size: 10px;
+                        text-align: left;
+                        a {
+                          color: #aba9a9;
+                          text-decoration: none;
+                          line-height: 1.2;
+                          text-align: left;
+                          transition: color ease .4s;
+                          span {
+                            border-bottom: solid 1px #aba9a9;
+                          }
+                          &:hover {
+                            span {
+                              color: $brand-third;
+                              border-bottom-color: $brand-third;
+                            }
+                          }
+                        }
+                      }
+                      &:last-child {
+                        text-align: right;
+                        img {
+                          max-width: 100%;
+                          max-height: 50px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          &#highlights {
+            margin: 60px 0;
+          }
+        }
+      }
+    }
+  }
 
   &.section-pre-qualification, &.section-congrats, &.section-complete, &.section-preaprob, &.section-feliz, &.section-gracias {
    #app {
@@ -3363,7 +3435,7 @@ body {
 
   #not-found {
     padding: 90px 0;
-    background: #f1f6ef;
+    background: $light-bg;
     min-height: 600px;
     h1 {
       font-weight: 900;
@@ -3752,291 +3824,6 @@ body {
     }
   }
 
-  &.section-lp {
-    header {
-      nav {
-        &#menu {
-          display: none;
-        }
-        &#branding {
-          ul {
-            &.branding {
-              border-top: none;
-              > li {
-                &.phone {
-                  display: none;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    > main {
-      section {
-        &#hero {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          background-image: url("/assets/img/hero-bg2.jpg");
-          background-position: 20% 20%;
-          background-repeat: no-repeat;
-          background-size: cover;
-          position: relative;
-          &.restaurant {
-            background-image: url("/assets/img/restaurant.jpeg");
-          }
-          &.trucking {
-            background-image: url("/assets/img/trucking.jpg");
-          }
-          &.overlay {
-            h1,li {
-              color: $white;
-            }
-            &:before {
-              background-color: rgba(0,0,0,0.7);
-            }
-          }
-          &:before {
-            position: absolute;
-            content: '';
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 0;
-          }
-          .description {
-            padding: 60px 0 60px 0;
-            h1 {
-              font-family: inherit;
-              font-size: 3em;
-              font-weight: 300;
-              line-height: 1;
-              .why-we-do-it {
-                padding-left: 5px;
-              }
-            }
-            h4 {
-              font-size: 1em;
-              font-weight: 300;
-              line-height: 1.2;
-              margin: 30px 0;
-              text-transform: uppercase;
-              color: $brand-primary;
-              span {
-                display: block;
-              }
-            }
-            ul {
-              &.xl {
-                display: block;
-              }
-              &.xs {
-                display: none;
-              }
-              li {
-                display: flex;
-                align-items: center;
-                margin-bottom: 3px;
-                img {
-                  width: 16px;
-                  height: 16px;
-                }
-                span {
-                  padding-left: 5px;
-                }
-              }
-            }
-          }
-          .lp-form-wrapper {
-            position: relative;
-            #form {
-              $form_color: $brand-secondary;
-              &.lp-form {
-                min-height: 500px;
-                position: absolute;
-                top: -75px;
-                right: -5px;
-                background: $form_color;
-                border: solid 4px #fff;
-                width: 100%;
-                opacity: 1;
-                padding: 20px;
-                text-align: center;
-                .phone-header {
-                  border: 2px solid #a2a2a2;
-                  border-radius: 3px;
-                  text-align: center;
-                  .label {
-                    text-align: center;
-                    text-transform: uppercase;
-                    padding: .5em;
-                    position: relative;
-                    top: -9px;
-                    font-size: 10px;
-                    letter-spacing: 1px;
-                    color: $white;
-                    background-color: $form_color;
-                  }
-                  .number {
-                    margin: 0 0 10px;
-                    line-height: 1;
-                    font-size: 1.4em;
-                    display: block;
-                    color: $brand-third;
-                    a {
-                      color: $white;
-                      text-decoration: none;
-                    }
-                  }
-                }
-                h2 {
-                  font-size: 1em;
-                  text-transform: uppercase;
-                  font-weight: 400;
-                  color: $white;
-                  padding: 15px 0 0;
-                  strong {
-                    font-weight: normal;
-                  }
-                }
-                article {
-                  padding: 15px 0 0;
-                  .fields {
-                    position: relative;
-                    margin-bottom: 15px;
-                    .form-group, .form-row {
-                      margin-bottom: 10px;
-                    }
-                    .honeypot {
-                      display: none;
-                    }
-                    input[type=text], input[type=email], input[type = number] {
-                      border: none;
-                      outline: none;
-                      background: #f7f7f7;
-                      padding: 7px 10px;
-                      border-radius: 3px;
-                      &:focus {
-                        outline: none;
-                        box-shadow: none;
-                      }
-                    }
-                    .alert {
-                      position: absolute;
-                      top: 0;
-                      bottom: 0;
-                      right: 0;
-                      left: 0;
-                      display: flex;
-                      flex-direction: column;
-                      align-items: center;
-                      justify-content: center;
-                      max-height: 250px;
-                      border-radius: 0;
-                      margin: 15px;
-                      transition: ease all.4s;
-                      text-align: left;
-                      font-size: 14px;
-                      opacity: .98;
-                      &.error {
-                        background: red;
-                        border: solid 4px darken(red,25%);
-                        color: #fff;
-                        .close {
-                          background: darken(red,25%);
-                        }
-                      }
-                      &.success {
-                        background: $brand-primary;
-                        border: solid 4px darken($brand-primary,25%);
-                        color: #fff;
-                        .close {
-                          background: darken($brand-primary,25%);
-                        }
-                      }
-                      &.hidden {
-                        display: none;
-                      }
-                      .close {
-                        padding: 5px 10px;
-                        margin-top: 5px;
-                        color: #fff;
-                        font-weight: normal;
-                        font-size: 16px;
-                        border-radius: 3px;
-                        opacity: 1;
-                      }
-                    }
-                  }
-                }
-                button {
-                  &.btn {
-                    background: $brand-third;
-                    border: solid 2px darken($brand-third,10%);
-                    width: 100%;
-                    padding: 15px;
-                    text-transform: uppercase;
-                  }
-                }
-                ul {
-                  display: flex;
-                  align-items: center;
-                  margin: 0;
-                  padding: 20px 0 0;
-                  li {
-                    @include columns(2,0);
-                    &:first-child {
-                      font-size: 10px;
-                      text-align: left;
-                      a {
-                        color: #aba9a9;
-                        text-decoration: none;
-                        line-height: 1.2;
-                        text-align: left;
-                        transition: color ease .4s;
-                        span {
-                          border-bottom: solid 1px #aba9a9;
-                        }
-                        &:hover {
-                          span {
-                            color: $brand-third;
-                            border-bottom-color: $brand-third;
-                          }
-                        }
-                      }
-                    }
-                    &:last-child {
-                      text-align: right;
-                      img {
-                        max-width: 100%;
-                        max-height: 50px;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-        &#testimonials {
-          margin: 120px 0 0;
-          h2 {
-            display: none;
-            text-align: left;
-          }
-          h3 {
-            display: none;
-            text-align: left;
-            font-size: 1em;
-            margin-bottom: 45px;
-          }
-        }
-      }
-    }
-  }
   &.section-search {
     main {
       .heading {
@@ -4384,7 +4171,7 @@ body {
           text-align: left;
           .day {
             font-size: 1.5em;
-            color: #fff;
+            color: $white;
             line-height: 1;
             background: #19354e;
             display: flex;
@@ -5245,7 +5032,7 @@ body {
       > main {
         section {
           &#hero {
-            background: #fff;
+            background: $white;
             text-align: left;
             &.restaurant {
               background-image:none;
@@ -5995,12 +5782,12 @@ body {
                   border: none;
                   position: relative;
                   top: 0;
-                  background: #ffffff;
+                  background: $white;
                   .phone-header {
                     display: none;
-                    border-color: #fff;
+                    border-color: $white;
                     .label {
-                      background: #fff;
+                      background: $white;
                       color: $text-color;
                       line-height: 1.2;
                       font-size: 1em;
@@ -6025,7 +5812,7 @@ body {
                     margin-top: 10px;
                     .fields {
                       input[type=text], input[type=email], input[type=number] {
-                        background: #fff;
+                        background: $white;
                         border: solid 1px #bbb;
                         border-radius: 3px;
                         margin-bottom: 10px;

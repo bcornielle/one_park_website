@@ -2556,10 +2556,10 @@ body #app > nav.apple {
   position: relative;
   display: block;
   width: 100%;
-  height: 121px;
+  height: 120px;
   margin: 0;
   overflow: hidden;
-  border-bottom: solid 1px #eee;
+  border: none;
 }
 
 body #app > nav.apple .nav-wrapper {
@@ -2579,7 +2579,7 @@ body #app > nav.apple .nav-wrapper {
 
 body #app > nav.apple .nav-wrapper.shown {
   height: 100%;
-  background-color: #000;
+  background-color: #162c4e;
   transition: all 0.3s ease-in, background 0.5s ease-in;
   transition-delay: 0.25s;
 }
@@ -2656,7 +2656,7 @@ body #app > nav.apple .nav-wrapper .menu:after {
 }
 
 body #app > nav.apple .nav-wrapper .menu li.menu-item {
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #0b1626;
   margin-top: 5px;
   transform: scale(1.15) translateY(-30px);
   opacity: 0;
@@ -2879,10 +2879,6 @@ body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom {
   align-items: center;
 }
 
-body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li:not(:last-child) {
-  margin-right: 30px;
-}
-
 body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li a {
   color: #323831;
   font-weight: 900;
@@ -2913,246 +2909,14 @@ body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom l
   transform: translateX(0px) scale(1.05);
 }
 
+body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li:not(:last-child) {
+  margin-right: 30px;
+}
+
 body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li.active a {
   color: #359c1c;
   border-bottom: solid 3px #359c1c;
   padding-bottom: 5px;
-}
-
-body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li.dropdown.show {
-  background: #162c4e;
-}
-
-body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li.dropdown.show a {
-  background: #162c4e;
-}
-
-body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li.dropdown.show div.dropdown-menu {
-  position: fixed;
-  top: 65px;
-  right: 0;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background: #162c4e;
-}
-
-body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li.dropdown.show div.dropdown-menu.call-out {
-  min-height: 50px;
-  margin: 10px;
-  box-shadow: 0 0 20px #999;
-  background-color: #162c4e;
-  background-image: -moz-linear-gradient(top, #162c4e, #162c4e);
-  text-shadow: 0 0 1px #000;
-  color: white;
-  padding: 10px;
-}
-
-body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li.dropdown.show div.dropdown-menu.call-out:before {
-  content: "";
-  width: 0;
-  height: 0;
-  border: 0.8em solid transparent;
-  position: absolute;
-  left: 85%;
-  top: -20px;
-  border-bottom: 10px solid #444;
-}
-
-body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li.dropdown.show div.dropdown-menu.call-out.notifications {
-  width: 300px;
-  padding: 0;
-  top: 10px !important;
-}
-
-body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li.dropdown.show div.dropdown-menu.call-out.notifications:before {
-  left: 90%;
-}
-
-body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li.dropdown.show div.dropdown-menu.call-out.notifications h4 {
-  margin: 0;
-  border-bottom: solid 1px #183056;
-  padding: 0 0 0 15px;
-}
-
-body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li.dropdown.show div.dropdown-menu.call-out.notifications h4 a {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 100%;
-  color: #359c1c;
-}
-
-body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li.dropdown.show div.dropdown-menu.call-out.notifications h4 a i {
-  color: #359c1c;
-}
-
-body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li.dropdown.show div.dropdown-menu.call-out.notifications h4 a span {
-  font-size: 14px;
-  width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  padding-left: 10px;
-  text-align: left;
-  height: 50px;
-  line-height: 1.2;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li.dropdown.show div.dropdown-menu.call-out.notifications h4 a span p,
-body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li.dropdown.show div.dropdown-menu.call-out.notifications h4 a span time {
-  display: block;
-  padding: 0;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
-body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li.dropdown.show div.dropdown-menu.call-out.notifications h4 a span time {
-  font-size: 10px;
-  color: #767772;
-}
-
-body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li.dropdown.show div.dropdown-menu.call-out.notifications h4 a span p {
-  margin: 0;
-}
-
-body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li.dropdown.show div.dropdown-menu.call-out.notifications ul {
-  overflow: hidden;
-  max-height: 200px;
-  margin-bottom: 15px;
-}
-
-body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li.dropdown.show div.dropdown-menu.call-out.notifications ul li {
-  animation: slideDown;
-  animation-duration: .4s;
-}
-
-body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li.dropdown.show div.dropdown-menu.call-out.notifications ul li a {
-  overflow: hidden;
-  padding-right: 10px;
-  padding-left: 12px;
-  position: relative;
-  height: 50px;
-  width: 300px;
-  text-decoration: line-through;
-}
-
-body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li.dropdown.show div.dropdown-menu.call-out.notifications ul li a.UNREAD {
-  text-decoration: none;
-}
-
-body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li.dropdown.show div.dropdown-menu.call-out.notifications ul li a.UNREAD div time small:before {
-  content: ' | ';
-}
-
-body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li.dropdown.show div.dropdown-menu.call-out.notifications ul li a div {
-  font-size: 14px;
-  width: 300px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  text-align: left;
-  height: 50px;
-  line-height: 1.2;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li.dropdown.show div.dropdown-menu.call-out.notifications ul li a div i {
-  width: 20px;
-  line-height: 30px;
-  height: 30px;
-  font-size: 10px;
-  position: absolute;
-  top: 10px;
-  color: #359c1c;
-}
-
-body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li.dropdown.show div.dropdown-menu.call-out.notifications ul li a div span,
-body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li.dropdown.show div.dropdown-menu.call-out.notifications ul li a div time {
-  display: block;
-  padding: 0 0 0 20px;
-}
-
-body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li.dropdown.show div.dropdown-menu.call-out.notifications ul li a div span {
-  color: white;
-  font-size: 13px;
-  max-width: 250px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li.dropdown.show div.dropdown-menu.call-out.notifications ul li a div time {
-  text-transform: uppercase;
-  font-size: 10px;
-  color: #767772;
-  font-weight: 900;
-}
-
-body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li.dropdown.show div.dropdown-menu.call-out.notifications ul li a div time small {
-  color: #928476;
-}
-
-body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li.dropdown.show div.dropdown-menu.call-out.notifications ul li:last-child a {
-  text-align: left;
-}
-
-body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li.dropdown.show div.dropdown-menu.call-out ul li {
-  color: #fff;
-  padding: 0;
-  margin: 0;
-}
-
-body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li.dropdown.show div.dropdown-menu.call-out ul li a {
-  font-weight: normal;
-  margin: 0;
-  padding: 0 5px 0 15px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center;
-  color: inherit;
-  line-height: 50px;
-  height: 50px;
-  border-bottom: solid 1px #183056;
-  width: 250px;
-  font-size: 16px;
-}
-
-body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li.dropdown.show div.dropdown-menu.call-out ul li a i {
-  width: 32px;
-  line-height: 50px;
-  height: 50px;
-}
-
-body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li.dropdown.show div.dropdown-menu.call-out ul li a span {
-  padding-left: 15px;
-  display: inline-block;
-}
-
-body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li.dropdown.show div.dropdown-menu.call-out ul li a:hover {
-  color: #359c1c;
-}
-
-body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li.dropdown.show div.dropdown-menu.call-out ul li:last-child a {
-  color: #fff;
-  border-bottom: none;
-}
-
-body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li.dropdown.show div.dropdown-menu.call-out ul li:last-child a:hover {
-  color: #359c1c;
 }
 
 body #app > main {
@@ -3374,8 +3138,8 @@ body #app > main section#services ul li div span {
   transform: translateX(-75%);
   background: #162c4e;
   color: #fff;
-  width: 32px;
-  height: 32px;
+  width: 48px;
+  height: 48px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -3383,6 +3147,7 @@ body #app > main section#services ul li div span {
   -ms-flex-pack: center;
   justify-content: center;
   border-radius: 50%;
+  font-size: 1.5rem;
 }
 
 body #app > main section#services ul li div i {
@@ -3402,13 +3167,13 @@ body #app > main section#services ul li div div:last-child {
 
 body #app > main section#services ul li:not(:last-child):after {
   content: '';
-  height: 2px;
+  height: 5px;
   width: 100px;
   position: absolute;
   top: 50%;
   left: 100%;
   transform: translate(-50%, -50%);
-  background: #359c1c;
+  background: #162c4e;
 }
 
 body #app > main section#services h4 {
@@ -4431,12 +4196,15 @@ body.section-como-trabaja #app > main section#how-it-works .process .item {
 
 body.section-how-it-works #app > main section#how-it-works .process .item .number,
 body.section-como-trabaja #app > main section#how-it-works .process .item .number {
+  position: absolute;
+  top: -15px;
   display: -ms-flexbox;
   display: flex;
   background: green;
   border-radius: 50%;
-  width: 32px;
-  height: 32px;
+  width: 48px;
+  height: 48px;
+  font-size: 1.5rem;
   -ms-flex-pack: center;
   justify-content: center;
   -ms-flex-align: center;
@@ -4553,7 +4321,7 @@ body.section-como-trabaja #app > main section#how-it-works .advantages ol li:bef
   height: 4em;
   width: 4em;
   line-height: 2em;
-  border: .3em solid #fff;
+  border: 0.3em solid #fff;
   text-align: center;
   font-weight: bold;
   border-radius: 2em;
@@ -6990,6 +6758,334 @@ body.section-register #app > footer {
   display: none;
 }
 
+body.section-lp #app > nav.apple {
+  z-index: 0;
+}
+
+body.section-lp #app > nav.apple .nav-wrapper .container .menus .navbar-right {
+  display: none;
+}
+
+body.section-lp #app > main section#hero {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-image: url("/assets/img/business.jpg");
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 400px;
+  height: 400px;
+}
+
+body.section-lp #app > main section#hero.restaurant {
+  background-image: url("/assets/img/restaurant.jpeg");
+}
+
+body.section-lp #app > main section#hero.trucking {
+  background-image: url("/assets/img/trucking.jpg");
+}
+
+body.section-lp #app > main section#hero.overlay h1,
+body.section-lp #app > main section#hero.overlay li {
+  color: #fff;
+}
+
+body.section-lp #app > main section#hero.overlay:before {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+body.section-lp #app > main section#hero:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+body.section-lp #app > main section#hero .description {
+  padding: 60px 0 60px 0;
+}
+
+body.section-lp #app > main section#hero .description h1 {
+  font-family: inherit;
+  font-size: 2.5em;
+  font-weight: 900;
+  line-height: 1;
+}
+
+body.section-lp #app > main section#hero .description h1 .why-we-do-it {
+  padding-left: 5px;
+}
+
+body.section-lp #app > main section#hero .description h4 {
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 30px 0;
+  text-transform: uppercase;
+  color: #359c1c;
+}
+
+body.section-lp #app > main section#hero .description h4 span {
+  display: block;
+}
+
+body.section-lp #app > main section#hero .description ul {
+  font-size: .9rem;
+}
+
+body.section-lp #app > main section#hero .description ul.xl {
+  display: block;
+}
+
+body.section-lp #app > main section#hero .description ul.xs {
+  display: none;
+}
+
+body.section-lp #app > main section#hero .description ul li {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 3px;
+}
+
+body.section-lp #app > main section#hero .description ul li img {
+  width: 16px;
+  height: 16px;
+}
+
+body.section-lp #app > main section#hero .description ul li span {
+  padding-left: 5px;
+}
+
+body.section-lp #app > main section#hero .lp-form-wrapper {
+  position: relative;
+}
+
+body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form {
+  min-height: 500px;
+  position: absolute;
+  top: -75px;
+  right: -5px;
+  background: #162c4e;
+  border: solid 4px #fff;
+  width: 100%;
+  opacity: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form .phone-header {
+  border: 2px solid #a2a2a2;
+  border-radius: 3px;
+  text-align: center;
+}
+
+body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form .phone-header .label {
+  text-align: center;
+  text-transform: uppercase;
+  padding: .5em;
+  position: relative;
+  top: -9px;
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #fff;
+  background-color: #162c4e;
+}
+
+body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form .phone-header .number {
+  margin: 0 0 10px;
+  line-height: 1;
+  font-size: 1.4em;
+  display: block;
+  color: #e88f0b;
+}
+
+body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form .phone-header .number a {
+  color: #fff;
+  text-decoration: none;
+}
+
+body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form h2 {
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #fff;
+  padding: 15px 0 0;
+}
+
+body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form h2 strong {
+  font-weight: normal;
+}
+
+body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form article {
+  padding: 15px 0 0;
+}
+
+body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form article .fields {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form article .fields .form-group,
+body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form article .fields .form-row {
+  margin-bottom: 10px;
+}
+
+body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form article .fields .honeypot {
+  display: none;
+}
+
+body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=text],
+body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=email],
+body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=number] {
+  border: none;
+  outline: none;
+  background: #f7f7f7;
+  padding: 7px 10px;
+  border-radius: 3px;
+}
+
+body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=text]:focus,
+body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=email]:focus,
+body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=number]:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form article .fields .alert {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-height: 250px;
+  border-radius: 0;
+  margin: 15px;
+  transition: ease all 0.4s;
+  text-align: left;
+  font-size: 14px;
+  opacity: .98;
+}
+
+body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form article .fields .alert.error {
+  background: red;
+  border: solid 4px maroon;
+  color: #fff;
+}
+
+body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form article .fields .alert.error .close {
+  background: maroon;
+}
+
+body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form article .fields .alert.success {
+  background: #359c1c;
+  border: solid 4px #103009;
+  color: #fff;
+}
+
+body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form article .fields .alert.success .close {
+  background: #103009;
+}
+
+body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form article .fields .alert.hidden {
+  display: none;
+}
+
+body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form article .fields .alert .close {
+  padding: 5px 10px;
+  margin-top: 5px;
+  color: #fff;
+  font-weight: normal;
+  font-size: 16px;
+  border-radius: 3px;
+  opacity: 1;
+}
+
+body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form button.btn {
+  background: #e88f0b;
+  border: solid 2px #b77109;
+  width: 100%;
+  padding: 15px;
+  text-transform: uppercase;
+}
+
+body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+  padding: 20px 0 0;
+}
+
+body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form ul li {
+  float: left;
+  width: 50% !important;
+  margin: 0 0 0 0;
+}
+
+body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form ul li:nth-child(2n) {
+  margin-right: 0;
+}
+
+body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form ul li:nth-child(2n + 3) {
+  clear: left;
+}
+
+body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form ul li:first-child {
+  font-size: 10px;
+  text-align: left;
+}
+
+body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form ul li:first-child a {
+  color: #aba9a9;
+  text-decoration: none;
+  line-height: 1.2;
+  text-align: left;
+  transition: color ease .4s;
+}
+
+body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form ul li:first-child a span {
+  border-bottom: solid 1px #aba9a9;
+}
+
+body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form ul li:first-child a:hover span {
+  color: #e88f0b;
+  border-bottom-color: #e88f0b;
+}
+
+body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form ul li:last-child {
+  text-align: right;
+}
+
+body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form ul li:last-child img {
+  max-width: 100%;
+  max-height: 50px;
+}
+
+body.section-lp #app > main section#highlights {
+  margin: 60px 0;
+}
+
 body.section-pre-qualification #app > main section#hero,
 body.section-congrats #app > main section#hero,
 body.section-complete #app > main section#hero,
@@ -7755,344 +7851,6 @@ body #not-found h1 {
     background-image: none;
     min-height: 0;
   }
-}
-
-body.section-lp header nav#menu {
-  display: none;
-}
-
-body.section-lp header nav#branding ul.branding {
-  border-top: none;
-}
-
-body.section-lp header nav#branding ul.branding > li.phone {
-  display: none;
-}
-
-body.section-lp > main section#hero {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  background-image: url("/assets/img/hero-bg2.jpg");
-  background-position: 20% 20%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-body.section-lp > main section#hero.restaurant {
-  background-image: url("/assets/img/restaurant.jpeg");
-}
-
-body.section-lp > main section#hero.trucking {
-  background-image: url("/assets/img/trucking.jpg");
-}
-
-body.section-lp > main section#hero.overlay h1,
-body.section-lp > main section#hero.overlay li {
-  color: #fff;
-}
-
-body.section-lp > main section#hero.overlay:before {
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-body.section-lp > main section#hero:before {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-}
-
-body.section-lp > main section#hero .description {
-  padding: 60px 0 60px 0;
-}
-
-body.section-lp > main section#hero .description h1 {
-  font-family: inherit;
-  font-size: 3em;
-  font-weight: 300;
-  line-height: 1;
-}
-
-body.section-lp > main section#hero .description h1 .why-we-do-it {
-  padding-left: 5px;
-}
-
-body.section-lp > main section#hero .description h4 {
-  font-size: 1em;
-  font-weight: 300;
-  line-height: 1.2;
-  margin: 30px 0;
-  text-transform: uppercase;
-  color: #359c1c;
-}
-
-body.section-lp > main section#hero .description h4 span {
-  display: block;
-}
-
-body.section-lp > main section#hero .description ul.xl {
-  display: block;
-}
-
-body.section-lp > main section#hero .description ul.xs {
-  display: none;
-}
-
-body.section-lp > main section#hero .description ul li {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-bottom: 3px;
-}
-
-body.section-lp > main section#hero .description ul li img {
-  width: 16px;
-  height: 16px;
-}
-
-body.section-lp > main section#hero .description ul li span {
-  padding-left: 5px;
-}
-
-body.section-lp > main section#hero .lp-form-wrapper {
-  position: relative;
-}
-
-body.section-lp > main section#hero .lp-form-wrapper #form.lp-form {
-  min-height: 500px;
-  position: absolute;
-  top: -75px;
-  right: -5px;
-  background: #162c4e;
-  border: solid 4px #fff;
-  width: 100%;
-  opacity: 1;
-  padding: 20px;
-  text-align: center;
-}
-
-body.section-lp > main section#hero .lp-form-wrapper #form.lp-form .phone-header {
-  border: 2px solid #a2a2a2;
-  border-radius: 3px;
-  text-align: center;
-}
-
-body.section-lp > main section#hero .lp-form-wrapper #form.lp-form .phone-header .label {
-  text-align: center;
-  text-transform: uppercase;
-  padding: .5em;
-  position: relative;
-  top: -9px;
-  font-size: 10px;
-  letter-spacing: 1px;
-  color: #fff;
-  background-color: #162c4e;
-}
-
-body.section-lp > main section#hero .lp-form-wrapper #form.lp-form .phone-header .number {
-  margin: 0 0 10px;
-  line-height: 1;
-  font-size: 1.4em;
-  display: block;
-  color: #e88f0b;
-}
-
-body.section-lp > main section#hero .lp-form-wrapper #form.lp-form .phone-header .number a {
-  color: #fff;
-  text-decoration: none;
-}
-
-body.section-lp > main section#hero .lp-form-wrapper #form.lp-form h2 {
-  font-size: 1em;
-  text-transform: uppercase;
-  font-weight: 400;
-  color: #fff;
-  padding: 15px 0 0;
-}
-
-body.section-lp > main section#hero .lp-form-wrapper #form.lp-form h2 strong {
-  font-weight: normal;
-}
-
-body.section-lp > main section#hero .lp-form-wrapper #form.lp-form article {
-  padding: 15px 0 0;
-}
-
-body.section-lp > main section#hero .lp-form-wrapper #form.lp-form article .fields {
-  position: relative;
-  margin-bottom: 15px;
-}
-
-body.section-lp > main section#hero .lp-form-wrapper #form.lp-form article .fields .form-group,
-body.section-lp > main section#hero .lp-form-wrapper #form.lp-form article .fields .form-row {
-  margin-bottom: 10px;
-}
-
-body.section-lp > main section#hero .lp-form-wrapper #form.lp-form article .fields .honeypot {
-  display: none;
-}
-
-body.section-lp > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=text],
-body.section-lp > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=email],
-body.section-lp > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=number] {
-  border: none;
-  outline: none;
-  background: #f7f7f7;
-  padding: 7px 10px;
-  border-radius: 3px;
-}
-
-body.section-lp > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=text]:focus,
-body.section-lp > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=email]:focus,
-body.section-lp > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=number]:focus {
-  outline: none;
-  box-shadow: none;
-}
-
-body.section-lp > main section#hero .lp-form-wrapper #form.lp-form article .fields .alert {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  max-height: 250px;
-  border-radius: 0;
-  margin: 15px;
-  transition: ease all 0.4s;
-  text-align: left;
-  font-size: 14px;
-  opacity: .98;
-}
-
-body.section-lp > main section#hero .lp-form-wrapper #form.lp-form article .fields .alert.error {
-  background: red;
-  border: solid 4px maroon;
-  color: #fff;
-}
-
-body.section-lp > main section#hero .lp-form-wrapper #form.lp-form article .fields .alert.error .close {
-  background: maroon;
-}
-
-body.section-lp > main section#hero .lp-form-wrapper #form.lp-form article .fields .alert.success {
-  background: #359c1c;
-  border: solid 4px #103009;
-  color: #fff;
-}
-
-body.section-lp > main section#hero .lp-form-wrapper #form.lp-form article .fields .alert.success .close {
-  background: #103009;
-}
-
-body.section-lp > main section#hero .lp-form-wrapper #form.lp-form article .fields .alert.hidden {
-  display: none;
-}
-
-body.section-lp > main section#hero .lp-form-wrapper #form.lp-form article .fields .alert .close {
-  padding: 5px 10px;
-  margin-top: 5px;
-  color: #fff;
-  font-weight: normal;
-  font-size: 16px;
-  border-radius: 3px;
-  opacity: 1;
-}
-
-body.section-lp > main section#hero .lp-form-wrapper #form.lp-form button.btn {
-  background: #e88f0b;
-  border: solid 2px #b77109;
-  width: 100%;
-  padding: 15px;
-  text-transform: uppercase;
-}
-
-body.section-lp > main section#hero .lp-form-wrapper #form.lp-form ul {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center;
-  margin: 0;
-  padding: 20px 0 0;
-}
-
-body.section-lp > main section#hero .lp-form-wrapper #form.lp-form ul li {
-  float: left;
-  width: 50% !important;
-  margin: 0 0 0 0;
-}
-
-body.section-lp > main section#hero .lp-form-wrapper #form.lp-form ul li:nth-child(2n) {
-  margin-right: 0;
-}
-
-body.section-lp > main section#hero .lp-form-wrapper #form.lp-form ul li:nth-child(2n + 3) {
-  clear: left;
-}
-
-body.section-lp > main section#hero .lp-form-wrapper #form.lp-form ul li:first-child {
-  font-size: 10px;
-  text-align: left;
-}
-
-body.section-lp > main section#hero .lp-form-wrapper #form.lp-form ul li:first-child a {
-  color: #aba9a9;
-  text-decoration: none;
-  line-height: 1.2;
-  text-align: left;
-  transition: color ease .4s;
-}
-
-body.section-lp > main section#hero .lp-form-wrapper #form.lp-form ul li:first-child a span {
-  border-bottom: solid 1px #aba9a9;
-}
-
-body.section-lp > main section#hero .lp-form-wrapper #form.lp-form ul li:first-child a:hover span {
-  color: #e88f0b;
-  border-bottom-color: #e88f0b;
-}
-
-body.section-lp > main section#hero .lp-form-wrapper #form.lp-form ul li:last-child {
-  text-align: right;
-}
-
-body.section-lp > main section#hero .lp-form-wrapper #form.lp-form ul li:last-child img {
-  max-width: 100%;
-  max-height: 50px;
-}
-
-body.section-lp > main section#testimonials {
-  margin: 120px 0 0;
-}
-
-body.section-lp > main section#testimonials h2 {
-  display: none;
-  text-align: left;
-}
-
-body.section-lp > main section#testimonials h3 {
-  display: none;
-  text-align: left;
-  font-size: 1em;
-  margin-bottom: 45px;
 }
 
 body.section-search main .heading {
@@ -10118,7 +9876,7 @@ body#articlee .article-footer .block a h3 {
     border: none;
     position: relative;
     top: 0;
-    background: #ffffff;
+    background: #fff;
   }
 
   body.section-lp > main section#hero .lp-form-wrapper #form.lp-form .phone-header {
