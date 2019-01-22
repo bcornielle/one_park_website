@@ -585,6 +585,9 @@ body {
                     &:first-child {
                       border-right: solid 3px $brand-primary;
                       text-align: right;
+                      span {
+                        display: none;
+                      }
                     }
                     &:nth-child(2){
                       border-top: solid 3px $brand-primary;
@@ -646,6 +649,71 @@ body {
                       &:nth-child(2){
                         padding-bottom: 45px;
                         border-bottom: solid 3px $brand-primary;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            &.classic {
+              box-shadow: none;
+              padding: 0;
+              margin-top: 60px;
+              table {
+                box-shadow: 0 16px 48px rgba(83, 167, 61, 0.3);
+                border: none;
+                thead {
+                  tr {
+                    th {
+                      background: $brand-secondary;
+                      color: $white;
+                      &:first-child {
+                        text-align: left !important;
+                        border-right: none;
+                        span {
+                          display: inline-block;
+
+                        }
+                      }
+                      &:nth-child(2){
+                        border-top: none;
+                        border-right: none;
+                        a {
+                          &.branding {
+                            &.logo {
+                              background-image: url(/assets/img/one-park-logo-drk.png);
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                tbody {
+                  tr {
+                    td {
+                      background: $white;
+                      border-bottom: $border-color;
+                       &:first-child {
+                         text-align: left !important;
+                         border-right: none;
+                       }
+                       &:nth-child(2){
+                         border-right: none;
+                       }
+                     }
+                    &.odd {
+                      td {
+                        background: $light-bg;
+                      }
+                    }
+                    &:last-child {
+                      td {
+                        border-bottom: none;
+                        &:nth-child(2){
+                          padding-bottom:0;
+                          border-bottom: none;
+                        }
                       }
                     }
                   }
@@ -851,8 +919,9 @@ body {
                 text-align: left;
                 padding: 30px 30px 30px 0;
                 span {
-                  color: $white;
+                  color: #d8d4d4;
                   font-weight: 900;
+                  border-bottom: 1px solid #d8d4d4;
                   position: relative;
                 }
                 &.disclaimer {
@@ -1055,6 +1124,18 @@ body {
         }
       }
       .badget {
+        ul {
+          display: flex;
+          align-items: center;
+          &.badgets {
+            li {
+              @include columns(3);
+              img {
+                max-width: 100%;
+              }
+            }
+          }
+        }
         float: right;
       }
     }
@@ -1455,49 +1536,103 @@ body {
             }
             .why {
               background: $light-bg;
-              .item {
-                box-shadow: 0 16px 48px rgba(83, 167, 61, 0.3);
-                background: $white;
-                display: flex;
-                transition: all ease .4s;
-                .number {
+              .item-wrapper {
+                position: relative;
+                .item {
+                  box-shadow: 0 16px 48px rgba(83, 167, 61, 0.3);
+                  background: $white;
                   display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  width: 75px;
-                  transition: ease all .4s;
-                  background: $brand-primary;
-                  color: $white;
-                }
-                .description {
-                  flex-grow: 1;
-                  text-transform: uppercase;
-                  border-left: solid 2px #eee;
-                  height: 75px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: flex-start;
-                  padding: 0 0 0 15px;
-                  border-left-color: $white;
-                  color: $brand-primary;
-                }
-                &:hover, &.active {
+                  transition: all ease .4s;
                   .number {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 75px;
+                    transition: ease all .4s;
                     background: $brand-primary;
                     color: $white;
                   }
                   .description {
+                    flex-grow: 1;
+                    text-transform: uppercase;
+                    border-left: solid 2px #eee;
+                    height: 75px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    padding: 0 0 0 15px;
                     border-left-color: $white;
                     color: $brand-primary;
                   }
+                  &:hover, &.active {
+                    .number {
+                      background: $brand-primary;
+                      color: $white;
+                    }
+                    .description {
+                      border-left-color: $white;
+                      color: $brand-primary;
+                    }
+                  }
+                  &:hover {
+                    transform: translateY(-2px);
+                    box-shadow: 0 8px 16px -4px rgba(83, 167, 61, 0.3);
+                  }
+                }
+                .item-tooltip {
+                  display: none;
+                  position: absolute;
+                  top: -220px;
+                  background: #fff;
+                  padding: 30px;
+                  line-height: 1.5;
+                  border-left: solid 10px $brand-primary;
+                  border-top-left-radius: 0;
+                  border-bottom-left-radius: 0;
+                  border-top-right-radius: 10px;
+                  border-bottom-right-radius: 10px;
+                  box-shadow: 0 0 48px rgba(83, 167, 61, 0.3);
+                  &:before {
+                    content: "";
+                    width: 0px;
+                    height: 0px;
+                    border: 0.8em solid transparent;
+                    position: absolute;
+                    left: 7px;
+                    bottom: -20px;
+                    border-top: 10px solid #fff;
+                  }
+                }
+                &.a {
+                  .item-tooltip {
+                    top: -220px;
+                  }
+                }
+                &.b {
+                  .item-tooltip {
+                    top: -220px;
+                  }
+                }
+                &.c {
+                  .item-tooltip {
+                    top: -168px;
+                  }
+                }
+                &.d {
+                  .item-tooltip {
+                    top: -122px;
+                  }
+                }
+                &.e {
+                  .item-tooltip {
+                    top: -220px;
+                  }
                 }
                 &:hover {
-                  transform: translateY(-2px);
-                  box-shadow: 0 8px 16px -4px rgba(83, 167, 61, 0.3);
+                  .item-tooltip {
+                    display: block;
+                  }
                 }
-              }
-              .item-tooltip {
-                display: none;
               }
             }
           }

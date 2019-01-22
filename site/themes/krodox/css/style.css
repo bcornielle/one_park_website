@@ -3331,6 +3331,10 @@ body #app > main section#features .table-wrapper table thead tr th:first-child {
   text-align: right;
 }
 
+body #app > main section#features .table-wrapper table thead tr th:first-child span {
+  display: none;
+}
+
 body #app > main section#features .table-wrapper table thead tr th:nth-child(2) {
   border-top: solid 3px #359c1c;
   border-right: solid 3px #359c1c;
@@ -3392,6 +3396,67 @@ body #app > main section#features .table-wrapper table tbody tr:last-child td {
 body #app > main section#features .table-wrapper table tbody tr:last-child td:nth-child(2) {
   padding-bottom: 45px;
   border-bottom: solid 3px #359c1c;
+}
+
+body #app > main section#features .table-wrapper.classic {
+  box-shadow: none;
+  padding: 0;
+  margin-top: 60px;
+}
+
+body #app > main section#features .table-wrapper.classic table {
+  box-shadow: 0 16px 48px rgba(83, 167, 61, 0.3);
+  border: none;
+}
+
+body #app > main section#features .table-wrapper.classic table thead tr th {
+  background: #162c4e;
+  color: #fff;
+}
+
+body #app > main section#features .table-wrapper.classic table thead tr th:first-child {
+  text-align: left !important;
+  border-right: none;
+}
+
+body #app > main section#features .table-wrapper.classic table thead tr th:first-child span {
+  display: inline-block;
+}
+
+body #app > main section#features .table-wrapper.classic table thead tr th:nth-child(2) {
+  border-top: none;
+  border-right: none;
+}
+
+body #app > main section#features .table-wrapper.classic table thead tr th:nth-child(2) a.branding.logo {
+  background-image: url(/assets/img/one-park-logo-drk.png);
+}
+
+body #app > main section#features .table-wrapper.classic table tbody tr td {
+  background: #fff;
+  border-bottom: #eeeeee;
+}
+
+body #app > main section#features .table-wrapper.classic table tbody tr td:first-child {
+  text-align: left !important;
+  border-right: none;
+}
+
+body #app > main section#features .table-wrapper.classic table tbody tr td:nth-child(2) {
+  border-right: none;
+}
+
+body #app > main section#features .table-wrapper.classic table tbody tr.odd td {
+  background: #f1f6ef;
+}
+
+body #app > main section#features .table-wrapper.classic table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+body #app > main section#features .table-wrapper.classic table tbody tr:last-child td:nth-child(2) {
+  padding-bottom: 0;
+  border-bottom: none;
 }
 
 body #app > main section#features .tab-content .tab-pane {
@@ -3636,8 +3701,9 @@ body #app > main section#lp-form .container #form p {
 }
 
 body #app > main section#lp-form .container #form p span {
-  color: #fff;
+  color: #d8d4d4;
   font-weight: 900;
+  border-bottom: 1px solid #d8d4d4;
   position: relative;
 }
 
@@ -3887,6 +3953,31 @@ body #app > footer .brand-info .notice {
 
 body #app > footer .badget {
   float: right;
+}
+
+body #app > footer .badget ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+body #app > footer .badget ul.badgets li {
+  float: left;
+  width: 32% !important;
+  margin: 0 2% 2% 0;
+}
+
+body #app > footer .badget ul.badgets li:nth-child(3n) {
+  margin-right: 0;
+}
+
+body #app > footer .badget ul.badgets li:nth-child(3n + 4) {
+  clear: left;
+}
+
+body #app > footer .badget ul.badgets li img {
+  max-width: 100%;
 }
 
 body.section-home #app > main section#hero {
@@ -4611,8 +4702,13 @@ body.section-sobre-nosotros #app > main section#about-us .why {
   background: #f1f6ef;
 }
 
-body.section-about-us #app > main section#about-us .why .item,
-body.section-sobre-nosotros #app > main section#about-us .why .item {
+body.section-about-us #app > main section#about-us .why .item-wrapper,
+body.section-sobre-nosotros #app > main section#about-us .why .item-wrapper {
+  position: relative;
+}
+
+body.section-about-us #app > main section#about-us .why .item-wrapper .item,
+body.section-sobre-nosotros #app > main section#about-us .why .item-wrapper .item {
   box-shadow: 0 16px 48px rgba(83, 167, 61, 0.3);
   background: #fff;
   display: -ms-flexbox;
@@ -4620,8 +4716,8 @@ body.section-sobre-nosotros #app > main section#about-us .why .item {
   transition: all ease .4s;
 }
 
-body.section-about-us #app > main section#about-us .why .item .number,
-body.section-sobre-nosotros #app > main section#about-us .why .item .number {
+body.section-about-us #app > main section#about-us .why .item-wrapper .item .number,
+body.section-sobre-nosotros #app > main section#about-us .why .item-wrapper .item .number {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -4634,8 +4730,8 @@ body.section-sobre-nosotros #app > main section#about-us .why .item .number {
   color: #fff;
 }
 
-body.section-about-us #app > main section#about-us .why .item .description,
-body.section-sobre-nosotros #app > main section#about-us .why .item .description {
+body.section-about-us #app > main section#about-us .why .item-wrapper .item .description,
+body.section-sobre-nosotros #app > main section#about-us .why .item-wrapper .item .description {
   -ms-flex-positive: 1;
   flex-grow: 1;
   text-transform: uppercase;
@@ -4652,31 +4748,84 @@ body.section-sobre-nosotros #app > main section#about-us .why .item .description
   color: #359c1c;
 }
 
-body.section-about-us #app > main section#about-us .why .item:hover .number,
-body.section-about-us #app > main section#about-us .why .item.active .number,
-body.section-sobre-nosotros #app > main section#about-us .why .item:hover .number,
-body.section-sobre-nosotros #app > main section#about-us .why .item.active .number {
+body.section-about-us #app > main section#about-us .why .item-wrapper .item:hover .number,
+body.section-about-us #app > main section#about-us .why .item-wrapper .item.active .number,
+body.section-sobre-nosotros #app > main section#about-us .why .item-wrapper .item:hover .number,
+body.section-sobre-nosotros #app > main section#about-us .why .item-wrapper .item.active .number {
   background: #359c1c;
   color: #fff;
 }
 
-body.section-about-us #app > main section#about-us .why .item:hover .description,
-body.section-about-us #app > main section#about-us .why .item.active .description,
-body.section-sobre-nosotros #app > main section#about-us .why .item:hover .description,
-body.section-sobre-nosotros #app > main section#about-us .why .item.active .description {
+body.section-about-us #app > main section#about-us .why .item-wrapper .item:hover .description,
+body.section-about-us #app > main section#about-us .why .item-wrapper .item.active .description,
+body.section-sobre-nosotros #app > main section#about-us .why .item-wrapper .item:hover .description,
+body.section-sobre-nosotros #app > main section#about-us .why .item-wrapper .item.active .description {
   border-left-color: #fff;
   color: #359c1c;
 }
 
-body.section-about-us #app > main section#about-us .why .item:hover,
-body.section-sobre-nosotros #app > main section#about-us .why .item:hover {
+body.section-about-us #app > main section#about-us .why .item-wrapper .item:hover,
+body.section-sobre-nosotros #app > main section#about-us .why .item-wrapper .item:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 16px -4px rgba(83, 167, 61, 0.3);
 }
 
-body.section-about-us #app > main section#about-us .why .item-tooltip,
-body.section-sobre-nosotros #app > main section#about-us .why .item-tooltip {
+body.section-about-us #app > main section#about-us .why .item-wrapper .item-tooltip,
+body.section-sobre-nosotros #app > main section#about-us .why .item-wrapper .item-tooltip {
   display: none;
+  position: absolute;
+  top: -220px;
+  background: #fff;
+  padding: 30px;
+  line-height: 1.5;
+  border-left: solid 10px #359c1c;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 0 48px rgba(83, 167, 61, 0.3);
+}
+
+body.section-about-us #app > main section#about-us .why .item-wrapper .item-tooltip:before,
+body.section-sobre-nosotros #app > main section#about-us .why .item-wrapper .item-tooltip:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border: 0.8em solid transparent;
+  position: absolute;
+  left: 7px;
+  bottom: -20px;
+  border-top: 10px solid #fff;
+}
+
+body.section-about-us #app > main section#about-us .why .item-wrapper.a .item-tooltip,
+body.section-sobre-nosotros #app > main section#about-us .why .item-wrapper.a .item-tooltip {
+  top: -220px;
+}
+
+body.section-about-us #app > main section#about-us .why .item-wrapper.b .item-tooltip,
+body.section-sobre-nosotros #app > main section#about-us .why .item-wrapper.b .item-tooltip {
+  top: -220px;
+}
+
+body.section-about-us #app > main section#about-us .why .item-wrapper.c .item-tooltip,
+body.section-sobre-nosotros #app > main section#about-us .why .item-wrapper.c .item-tooltip {
+  top: -168px;
+}
+
+body.section-about-us #app > main section#about-us .why .item-wrapper.d .item-tooltip,
+body.section-sobre-nosotros #app > main section#about-us .why .item-wrapper.d .item-tooltip {
+  top: -122px;
+}
+
+body.section-about-us #app > main section#about-us .why .item-wrapper.e .item-tooltip,
+body.section-sobre-nosotros #app > main section#about-us .why .item-wrapper.e .item-tooltip {
+  top: -220px;
+}
+
+body.section-about-us #app > main section#about-us .why .item-wrapper:hover .item-tooltip,
+body.section-sobre-nosotros #app > main section#about-us .why .item-wrapper:hover .item-tooltip {
+  display: block;
 }
 
 body.section-faq #app > main section#faqs .intro,
