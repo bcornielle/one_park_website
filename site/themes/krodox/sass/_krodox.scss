@@ -1625,7 +1625,7 @@ body {
                 }
                 &.e {
                   .item-tooltip {
-                    top: -220px;
+                    top: -120px;
                   }
                 }
                 &:hover {
@@ -3453,6 +3453,18 @@ body {
                       &.active {
                         background: $brand-primary;
                         color: $white;
+                        transform: translateY(-2px);
+                        box-shadow: 0 8px 16px -4px rgba(83, 167, 61, 0.3);
+                        &:before {
+                          content: "";
+                          width: 0px;
+                          height: 0px;
+                          border: 0.8em solid transparent;
+                          position: absolute;
+                          left: 7px;
+                          bottom: -20px;
+                          border-top: 10px solid $brand-primary;
+                        }
                       }
                       &:hover {
                         transform: translateY(-2px);

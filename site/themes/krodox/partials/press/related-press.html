@@ -1,10 +1,10 @@
-{{ collection:next in="press" limit="3" as="next_posts" }}
+{{ collection from="press" as="posts" limit="3" sort="random" }}
 {{ unless no_results }}
 <h4>Related Press</h4>
 <ul>
-    {{ next_posts scope="tag" }}
+    {{ posts scope="tag" }}
     {{ partial:press/block }}
-    {{ /next_posts }}
+    {{ /posts }}
 </ul>
 {{ /unless }}
-{{ /collection:next }}
+{{ /collection }}

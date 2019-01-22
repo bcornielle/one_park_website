@@ -1,10 +1,10 @@
-{{ collection:next in="press" limit="5" as="next_posts" }}
+{{ collection from="press" as="posts" limit="5" sort="random" }}
 {{ unless no_results }}
     <h4>Press Releases</h4>
     <ul>
-        {{ next_posts scope="tag" }}
+        {{ posts scope="tag" }}
         {{ partial:press/blockless }}
-        {{ /next_posts }}
+        {{ /posts }}
     </ul>
 {{ /unless }}
-{{ /collection:next }}
+{{ /collection }}

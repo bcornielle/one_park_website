@@ -4820,7 +4820,7 @@ body.section-sobre-nosotros #app > main section#about-us .why .item-wrapper.d .i
 
 body.section-about-us #app > main section#about-us .why .item-wrapper.e .item-tooltip,
 body.section-sobre-nosotros #app > main section#about-us .why .item-wrapper.e .item-tooltip {
-  top: -220px;
+  top: -120px;
 }
 
 body.section-about-us #app > main section#about-us .why .item-wrapper:hover .item-tooltip,
@@ -7421,6 +7421,20 @@ body.section-contact #app > main section#contact-us #map .map ul.locations li.ac
 body.section-contactenos #app > main section#contact-us #map .map ul.locations li.active {
   background: #359c1c;
   color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px -4px rgba(83, 167, 61, 0.3);
+}
+
+body.section-contact #app > main section#contact-us #map .map ul.locations li.active:before,
+body.section-contactenos #app > main section#contact-us #map .map ul.locations li.active:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border: 0.8em solid transparent;
+  position: absolute;
+  left: 7px;
+  bottom: -20px;
+  border-top: 10px solid #359c1c;
 }
 
 body.section-contact #app > main section#contact-us #map .map ul.locations li:hover,
