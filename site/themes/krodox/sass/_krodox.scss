@@ -332,7 +332,7 @@ body {
                 transition: all ease .4s;
                 font-size: 1em;
                 font-weight: 900;
-                max-width: 200px;
+                max-width: 250px;
                 &:hover {
                   background-color: darken($brand-primary,10%);
                   transform: translateX(0px) scale(1.05);
@@ -3499,165 +3499,439 @@ body {
       }
     }
   }
+  &.section-tv, &.section-television {
+    #app {
+      > main {
+        section {
+          &#hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: calc(100vh - 160px);
+            background-image: url("/assets/img/bacground2_oneparkfinancial_v2-u33040-fr_2x3-1.jpg");
+            background-position: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            .description {
+              padding: 60px 0 60px 0;
+              text-align: center;
+              h1 {
+                font-family: inherit;
+                font-size: 3.5em;
+                font-weight: 300;
+                line-height: 1;
+                .why-we-do-it {
+                  padding-left: 5px;
+                }
+              }
+              h4 {
+                font-size: 1em;
+                font-weight: 300;
+                line-height: 1.2;
+                margin: 30px 0;
+                text-transform: uppercase;
+                color: inherit;
+                span {
+                  display: block;
+                }
+              }
+              ul {
+                &.xl {
+                  display: block;
+                }
+                &.xs {
+                  display: none;
+                }
+                li {
+                  text-align: center;
+                  font-size: .9em;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin-bottom: 3px;
+                  img {
+                    width: 16px;
+                    height: 16px;
+                    display: none;
+                  }
+                  span {
+                    padding-left: 5px;
+                    font-size: 1em;
+                  }
+                }
+              }
+            }
+            .button-wrapper {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              height: 100%;
+              text-align: center;
+              a {
+                &.btn {
+                  position: relative;
+                  text-decoration: none;
+                  width: 250px;
+                  height: 50px;
+                  display: flex;
+                  justify-content: center;
+                  margin: 0 auto;
+                  align-items: center;
+                  border: none;
+                  border-radius: 3px;
+                  transition: all ease .4s;
+                  background-color: $brand-primary;
+                  border-color: $brand-primary;
+                  span {
+                    color: $white;
+                    font-size: 1.3em;
+                    font-weight: 900;
+                  }
+                  &:hover {
+                    background-color: rgba(31, 56, 75, 1);
+                    transform: translateX(0px) scale(1.05);
+                  }
+                }
+              }
+              .phone {
+                display: none;
+              }
+              .slogan {
+                padding-top: 45px;
+                font-size: 1.2em;
+                display: none;
+              }
+              .badges {
+                margin: 30px 0 0;
+                display: block;
+                img {
+                  border: solid 1px $border-color;
+                  width: 100px;
+                }
+              }
+            }
+          }
+          &#services {
+            margin: 90px 0 0;
+            text-align: center;
+            h2 {
+              font-weight: 300;
+              font-size: 2.5em;
+              margin: 0 0 12px;
+            }
+            h3 {
+              font-weight: 300;
+              font-size: 1em;
+              margin: 0;
+              text-transform: uppercase;
+            }
+            ul {
+              margin: 30px 0;
+              li {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 200px;
+                border: none;
+                @include columns(5,1%);
+                padding: 10px;
+                img {
+                  margin-bottom: 20px;
+                  width: 75px;
+                  height: 75px;
+                }
+                .description {
+                  min-height: 10px;
+                  font-size: .9em;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &.section-business-insurance {
+    #app {
+      > main {
+        padding: 30px 0;
+        h1 {
+          text-align: center;
+          padding-bottom: 15px;
+          display: none;
+        }
+      }
+    }
+  }
+  &.section-search {
+    #app {
+      main {
+        .heading {
+          display: flex;
+          align-items: center;
+          padding: 30px 0 0;
+          form {
+            .input-group {
+              .input-group-prepend {
+                span {
+                  border: solid 2px $border-color;
+                }
+              }
+              input[type=text]{
+                font-size: 2em;
+                box-shadow: none;
+                max-width: 500px;
+                border: solid 2px $border-color;
+              }
+            }
+          }
+        }
+        article {
+          padding: 30px 0;
+          min-height: 400px;
+          h4 {
+            font-weight: 900;
+            text-align: left;
+          }
+          .result {
+            border: solid 2px $border-color;
+            padding: 30px;
+            background: $border-color;
+            &:not(:last-child){
+              margin-bottom: 30px;
+            }
+            a {
+              color: $brand-secondary;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  &.section-users {
+    section {
+      &#profile {
+        padding: 90px 0;
+        text-align: center;
+        .heading {
+          h1 {
+            text-transform: uppercase;
+          }
+          img {
+            border-radius: 50%;
+          }
+        }
+      }
+      &#users {
+        padding: 90px 0;
+        text-align: center;
+        .heading {
+          h1 {
+            text-transform: uppercase;
+          }
+        }
+        article {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+
+  &.es {
+    #app {
+      > nav {
+
+      }
+      > main {
+        section {
+          &#hero {
+            .hero-content {
+              h1 {
+                font-size: 2.5em;
+              }
+            }
+          }
+          &#highlights {
+            ul {
+              &.highlights {
+                li {
+                  padding: 30px 15px;
+                  div {
+                    font-size: .9rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      > footer {
+
+      }
+    }
+  }
 
   &.section-pre-qualification, &.section-congrats, &.section-complete, &.section-preaprob, &.section-feliz, &.section-gracias {
-   #app {
-     > main {
-       section {
-         &#hero {
-           display: flex;
-           flex-direction: column;
-           align-items: center;
-           background: $brand-secondary;
-           min-height: 100px;
-           .description {
-             padding: 0;
-             .component-progressbar {
-               display: flex;
-               flex-direction: row;
-               align-items: center;
-               justify-content: center;
-               max-width: 300px;
-               margin: 0 auto;
-               .step-number {
-                 @include columns(3,0);
-                 display: inline-block;
-                 text-align: center;
-                 font-size: 26px;
-                 position: relative;
-                 .number {
-                   display: flex;
-                   flex-direction: column;
-                   align-items: center;
-                   justify-content: center;
-                   width: 1.7em;
-                   height: 1.7em;
-                   border-radius: 50%;
-                   background-color: #dedede;
-                   color: #5a5a5a;
-                   margin-left: calc(50% - 1.7em / 2 );
-                   border: 4px solid #dedede;
-                   transition:  ease all .4s;
-                   font-weight: 900;
-                   i {
-                     font-size: 24px;
-                   }
-                   &:before {
-                     content: ' ';
-                     position: absolute;
-                     border: 4px solid #dedede;
-                     left: -4px;
-                     right: calc( 50% + 1.4em/2 );
-                     top: calc( 1.4em / 2 );
-                     transition:  ease all .2s;
-                   }
-                   &:after {
-                     content: ' ';
-                     position: absolute;
-                     border: 4px solid #dedede;
-                     left: calc( 50% + 1.4em/2 );
-                     right: -4px;
-                     top: calc( 1.4em / 2 );
-                     transition:  ease all .8s;
-                   }
-                   &.refresh {
-                     background-color: $brand-secondary;
-                     border-color: $brand-secondary;
-                     color: $white;
-                     i {
-                       animation: swing 2s ease infinite;
-                     }
-                     &:before, &:after {
-                       background-color: $brand-secondary;
-                       border: 4px solid $brand-secondary;
-                       color: white;
-                     }
-                   }
-                 }
-                 &.done {
-                   .number {
-                     background-color: $brand-primary;
-                     border-color: $brand-primary;
-                     color: $white;
-                     &:before, &:after {
-                       background-color: $brand-primary;
-                       border: 4px solid $brand-primary;
-                       color: white;
-                     }
-                   }
-                 }
-                 &.doing {
-                   .number {
-                     background-color: $brand-primary;
-                     border-color: $brand-primary;
-                     color: $white;
-                     &:before, &:after {
-                       background-color: $brand-primary;
-                       border: 4px solid $brand-primary;
-                       color: white;
-                     }
-                   }
-                 }
-               }
-             }
-             h1 {
-               text-align: center;
-               color: $white;
-               font-weight: 900;
-               margin: 0;
-               padding: 90px 0;
-             }
-           }
-         }
-         &#form {
-           margin: 0;
-           padding: 0 0 60px;
-           .form {
-             box-shadow: 0 0 25px 0 rgba(0,0,0,0.75);
-             background: $white;
-             padding: 60px 60px 30px;
-             margin: -60px 0 0;
-             width: 100%;
-             min-height: 400px;
-             z-index: 1;
-             .btn {
-               position: relative;
-               text-decoration: none;
-               display: flex;
-               justify-content: center;
-               align-items: center;
-               border: none;
-               transition: all ease .4s;
-               background-color: $brand-primary;
-               border-color: $brand-primary;
-               margin: 0 auto;
-               span {
-                 color: $white;
-                 font-size: 1.3em;
-                 font-weight: 900;
-               }
-               &:hover {
-                 background-color: rgba(31, 56, 75, 1);
-               }
-             }
-             .legal-notice {
-               font-size: .8em;
-               display: flex;
-               align-items: center;
-               justify-content: center;
-               p {
-                 color: #5f5e5e;
-                 text-align: center;
-                 a {
-                   color: $brand-primary;
-                 }
-               }
-             }
-           }
-         }
-       }
-     }
-   }
+    #app {
+      > main {
+        section {
+          &#hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: $brand-secondary;
+            min-height: 100px;
+            .description {
+              padding: 0;
+              .component-progressbar {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                max-width: 300px;
+                margin: 0 auto;
+                .step-number {
+                  @include columns(3,0);
+                  display: inline-block;
+                  text-align: center;
+                  font-size: 26px;
+                  position: relative;
+                  .number {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 1.7em;
+                    height: 1.7em;
+                    border-radius: 50%;
+                    background-color: #dedede;
+                    color: #5a5a5a;
+                    margin-left: calc(50% - 1.7em / 2 );
+                    border: 4px solid #dedede;
+                    transition:  ease all .4s;
+                    font-weight: 900;
+                    i {
+                      font-size: 24px;
+                    }
+                    &:before {
+                      content: ' ';
+                      position: absolute;
+                      border: 4px solid #dedede;
+                      left: -4px;
+                      right: calc( 50% + 1.4em/2 );
+                      top: calc( 1.4em / 2 );
+                      transition:  ease all .2s;
+                    }
+                    &:after {
+                      content: ' ';
+                      position: absolute;
+                      border: 4px solid #dedede;
+                      left: calc( 50% + 1.4em/2 );
+                      right: -4px;
+                      top: calc( 1.4em / 2 );
+                      transition:  ease all .8s;
+                    }
+                    &.refresh {
+                      background-color: $brand-secondary;
+                      border-color: $brand-secondary;
+                      color: $white;
+                      i {
+                        animation: swing 2s ease infinite;
+                      }
+                      &:before, &:after {
+                        background-color: $brand-secondary;
+                        border: 4px solid $brand-secondary;
+                        color: white;
+                      }
+                    }
+                  }
+                  &.done {
+                    .number {
+                      background-color: $brand-primary;
+                      border-color: $brand-primary;
+                      color: $white;
+                      &:before, &:after {
+                        background-color: $brand-primary;
+                        border: 4px solid $brand-primary;
+                        color: white;
+                      }
+                    }
+                  }
+                  &.doing {
+                    .number {
+                      background-color: $brand-primary;
+                      border-color: $brand-primary;
+                      color: $white;
+                      &:before, &:after {
+                        background-color: $brand-primary;
+                        border: 4px solid $brand-primary;
+                        color: white;
+                      }
+                    }
+                  }
+                }
+              }
+              h1 {
+                text-align: center;
+                color: $white;
+                font-weight: 900;
+                margin: 0;
+                padding: 90px 0;
+              }
+            }
+          }
+          &#form {
+            margin: 0;
+            padding: 0 0 60px;
+            .form {
+              box-shadow: 0 0 25px 0 rgba(0,0,0,0.75);
+              background: $white;
+              padding: 60px 60px 30px;
+              margin: -60px 0 0;
+              width: 100%;
+              min-height: 400px;
+              z-index: 1;
+              .btn {
+                position: relative;
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: none;
+                transition: all ease .4s;
+                background-color: $brand-primary;
+                border-color: $brand-primary;
+                margin: 0 auto;
+                span {
+                  color: $white;
+                  font-size: 1.3em;
+                  font-weight: 900;
+                }
+                &:hover {
+                  background-color: rgba(31, 56, 75, 1);
+                }
+              }
+              .legal-notice {
+                font-size: .8em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                p {
+                  color: #5f5e5e;
+                  text-align: center;
+                  a {
+                    color: $brand-primary;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
   &.section-pre-qualification, &.section-preaprob {
     #app {
@@ -4138,277 +4412,7 @@ body {
     }
   }
 
-  &.section-tv, &.section-television {
-    > main {
-      section {
-        &#hero {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          min-height: calc(100vh - 160px);
-          background-image: url("/assets/img/bacground2_oneparkfinancial_v2-u33040-fr_2x3-1.jpg");
-          background-position: 100%;
-          background-repeat: no-repeat;
-          background-size: cover;
-          .description {
-            padding: 60px 0 60px 0;
-            text-align: center;
-            h1 {
-              font-family: inherit;
-              font-size: 3.5em;
-              font-weight: 300;
-              line-height: 1;
-              .why-we-do-it {
-                padding-left: 5px;
-              }
-            }
-            h4 {
-              font-size: 1em;
-              font-weight: 300;
-              line-height: 1.2;
-              margin: 30px 0;
-              text-transform: uppercase;
-              color: inherit;
-              span {
-                display: block;
-              }
-            }
-            ul {
-              &.xl {
-                display: block;
-              }
-              &.xs {
-                display: none;
-              }
-              li {
-                text-align: center;
-                font-size: .9em;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-bottom: 3px;
-                img {
-                  width: 16px;
-                  height: 16px;
-                  display: none;
-                }
-                span {
-                  padding-left: 5px;
-                  font-size: 1em;
-                }
-              }
-            }
-          }
-          .button-wrapper {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            height: 100%;
-            text-align: center;
-            a {
-              &.btn {
-                position: relative;
-                text-decoration: none;
-                width: 250px;
-                height: 50px;
-                display: flex;
-                justify-content: center;
-                margin: 0 auto;
-                align-items: center;
-                border: none;
-                border-radius: 3px;
-                transition: all ease .4s;
-                background-color: $brand-primary;
-                border-color: $brand-primary;
-                span {
-                  color: $white;
-                  font-size: 1.3em;
-                  font-weight: 900;
-                }
-                &:hover {
-                  background-color: rgba(31, 56, 75, 1);
-                  transform: translateX(0px) scale(1.05);
-                }
-              }
-            }
-            .phone {
-              display: none;
-            }
-            .slogan {
-              padding-top: 45px;
-              font-size: 1.2em;
-              display: none;
-            }
-            .badges {
-              margin: 30px 0 0;
-              display: block;
-              img {
-                border: solid 1px $border-color;
-                width: 100px;
-              }
-            }
-          }
-        }
-        &#services {
-          margin: 90px 0 0;
-          text-align: center;
-          h2 {
-            font-weight: 300;
-            font-size: 2.5em;
-            margin: 0 0 12px;
-          }
-          h3 {
-            font-weight: 300;
-            font-size: 1em;
-            margin: 0;
-            text-transform: uppercase;
-          }
-          ul {
-            margin: 30px 0;
-            li {
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-              align-items: center;
-              height: 200px;
-              border: none;
-              @include columns(5,1%);
-              padding: 10px;
-              img {
-                margin-bottom: 20px;
-                width: 75px;
-                height: 75px;
-              }
-              .description {
-                min-height: 10px;
-                font-size: .9em;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  &.section-business-insurance {
-    > main {
-      padding: 30px 0;
-      h1 {
-        text-align: center;
-        padding-bottom: 15px;
-        display: none;
-      }
-    }
-  }
-  &.section-search {
-    main {
-      .heading {
-        display: flex;
-        align-items: center;
-        padding: 30px 0 0;
-        form {
-          .input-group {
-            .input-group-prepend {
-              span {
-                border: solid 2px $border-color;
-              }
-            }
-            input[type=text]{
-              font-size: 2em;
-              box-shadow: none;
-              max-width: 500px;
-              border: solid 2px $border-color;
-            }
-          }
-        }
-      }
-      article {
-        padding: 30px 0;
-        min-height: 400px;
-        h4 {
-          font-weight: 900;
-          text-align: left;
-        }
-        .result {
-          border: solid 2px $border-color;
-          padding: 30px;
-          background: $border-color;
-          &:not(:last-child){
-            margin-bottom: 30px;
-          }
-          a {
-            color: $brand-secondary;
-            text-decoration: none;
-          }
-        }
-      }
-    }
-  }
-  &.section-users {
-    section {
-      &#profile {
-        padding: 90px 0;
-        text-align: center;
-        .heading {
-          h1 {
-            text-transform: uppercase;
-          }
-          img {
-            border-radius: 50%;
-          }
-        }
-      }
-      &#users {
-        padding: 90px 0;
-        text-align: center;
-        .heading {
-          h1 {
-            text-transform: uppercase;
-          }
-        }
-        article {
-          margin-top: 30px;
-        }
-      }
-    }
-  }
-
-
-  &.es {
-    #app {
-      > nav {
-
-      }
-      > main {
-        section {
-          &#hero {
-            .hero-content {
-              h1 {
-                font-size: 2.5em;
-              }
-            }
-          }
-          &#highlights {
-            ul {
-              &.highlights {
-                li {
-                  padding: 30px 15px;
-                  div {
-                    font-size: .9rem;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-      > footer {
-
-      }
-    }
-  }
-
-
+  //vintage
   @media (max-width: 1200px) {
     > header {
 
