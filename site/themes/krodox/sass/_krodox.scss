@@ -4538,9 +4538,11 @@ body {
               .menus {
                 .navbar-left {
                   height: 65px;
+                  width: 100%;
                   .branding {
                     &.logo {
                       background-size: 80%;
+                      width: 200px;
                     }
                   }
                 }

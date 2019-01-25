@@ -8585,10 +8585,12 @@ body #not-found h1 {
 
   body #app > nav.apple .nav-wrapper .container .menus .navbar-left {
     height: 65px;
+    width: 100%;
   }
 
   body #app > nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo {
     background-size: 80%;
+    width: 200px;
   }
 
   body #app > nav.apple .nav-wrapper .container .menus .navbar-right {
