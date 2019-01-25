@@ -1156,20 +1156,34 @@ body {
         section {
           &#hero {
             background-image: url("/assets/img/woman.jpg");
-            ul {
-              &.xs {
-                order: 4;
-                display: none;
-                margin: 0;
-                padding: 0;
-                line-height: 1;
-                li {
-                  @include columns(1);
+            .hero-content {
+              .branding {
+                &.logo {
+                  background-image: url(/assets/img/one-park-logo.png);
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  text-indent: -9999px;
+                  float: left;
+                  height: 65px;
+                  width: 291px;
+                  display: none;
                 }
               }
-            }
-            .phone {
-              display: none;
+              ul {
+                &.xs {
+                  order: 4;
+                  display: none;
+                  margin: 0;
+                  padding: 0;
+                  line-height: 1;
+                  li {
+                    @include columns(1);
+                  }
+                }
+              }
+              .phone {
+                display: none;
+              }
             }
           }
         }
@@ -4043,24 +4057,41 @@ body {
       > nav {
         &.apple {
           .nav-wrapper {
-            .burger-container {
-              display: block;
-            }
-            .menus {
-              .navbar-right {
-                .nav-top {
-                  li {
-                    span {
-                      &.questions {
-                        display: none;
+            .container {
+              .burger-container {
+                display: none;
+              }
+              .menus {
+                .navbar-left {
+                  width: 200px;
+                  a {
+                    &.branding {
+                      &.logo {
+                        width: 200px;
+                        background-size: 100%;
                       }
                     }
                   }
                 }
-                .nav-bottom {
-                  li {
-                    &:not(:last-child){
-                      display: none;
+                .navbar-right {
+                  .nav-top {
+                    li {
+                      span {
+                        &.questions {
+                          display: inline-block;
+                        }
+                      }
+                    }
+                  }
+                  .nav-bottom {
+                    li {
+                      &:not(:last-child){
+                        display: inline-block;
+                        margin-right: 20px;
+                        a {
+                          font-size: .9rem;
+                        }
+                      }
                     }
                   }
                 }
@@ -4522,6 +4553,33 @@ body {
         }
       }
     }
+    &.es {
+      #app {
+        > nav {
+          &.apple {
+            .nav-wrapper {
+              .container {
+                .menus {
+                  .navbar-right {
+                    .nav-bottom {
+                      li {
+                        &:not(:last-child){
+                          margin-right: 15px;
+                          text-align: center;
+                          a {
+                            font-size: .8rem;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
   @media (max-width: 576px) {
     #app {
@@ -4531,7 +4589,7 @@ body {
           .nav-wrapper {
             height: 65px;
             .burger-container {
-              height: 65px;
+              height: 90px;
               display: none;
             }
             .container {
@@ -4539,6 +4597,7 @@ body {
                 .navbar-left {
                   height: 65px;
                   width: 100%;
+                  order:2;
                   .branding {
                     &.logo {
                       background-size: 80%;
@@ -4547,11 +4606,57 @@ body {
                   }
                 }
                 .navbar-right {
+                  order:1;
+                  display: block;
+                  padding: 0;
+                  margin: 0;
+                  .nav-top {
+                    height: 30px;
+                    margin: 0;
+                    width: 330px;
+                    li {
+                      &.phone {
+                        display: none;
+                        .questions {
+                          display: none;
+                        }
+                      }
+                      &.language {
+                        a {
+                          &.btn {
+                            width: auto;
+                            border: none;
+                            padding: 0;
+                            margin: 0;
+                            span {
+                              font-size: .8rem;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  .nav-bottom {
+                    height: auto;
+                    width: 330px;
+                    li {
+                      &.faqs {
+                        margin-right: 0;
+                      }
+                      a {
+                        text-transform: capitalize;
+                        &.btn {
+                          display: none;
+                        }
+                      }
+                    }
+                  }
+                }
+                .navbar-left {
                   display: none;
                 }
               }
             }
-
           }
         }
       }
@@ -4566,8 +4671,11 @@ body {
                 padding: 0;
                 li {
                   @include columns(1);
-                  padding: 30px;
+                  padding: 30px 30px 0;
                   box-shadow: none;
+                  i {
+                    margin-bottom: 5px;
+                  }
                 }
               }
             }
@@ -4818,7 +4926,7 @@ body {
             &#hero {
               min-height: 0;
               .hero-content{
-                padding-top: 30px;
+                padding-top: 0;
                 h1 {
                   font-size: 2em;
                 }
@@ -4844,7 +4952,16 @@ body {
                 }
                 a {
                   &.btn {
-                    margin-top: 30px;
+                    margin-top: 15px;
+                  }
+                  &.branding {
+                    &.logo {
+                      height: 65px;
+                      width: 200px;
+                      display: block;
+                      background-size: 100%;
+                      margin: 0 auto;
+                    }
                   }
                 }
                 .phone {
@@ -4871,6 +4988,7 @@ body {
           section {
             &#how-it-works {
               .intro {
+                padding: 30px 0;
                 h1 {
                   margin-bottom: 30px;
                 }
@@ -4886,6 +5004,7 @@ body {
           section {
             &#about-us {
               .intro {
+                padding: 30px 0;
                 h1 {
                   margin-bottom: 30px;
                 }
@@ -4934,6 +5053,7 @@ body {
           section {
             &#faqs {
               .faqs {
+                padding: 30px 0;
                 #accordion, #accordion-1, #accordion-2, #accordion-3, #accordion-4 {
                   .card {
                     .card-header {
@@ -5106,27 +5226,6 @@ body {
               }
             }
           }
-        }
-      }
-    }
-    &.es {
-      #app {
-        > nav {
-
-        }
-        > main {
-          section {
-            &#hero {
-              .hero-content {
-                h1 {
-                  font-size: 1.5em;
-                }
-              }
-            }
-          }
-        }
-        > footer {
-
         }
       }
     }
