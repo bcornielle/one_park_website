@@ -7770,272 +7770,28 @@ body.section-users section#users article {
   margin-top: 30px;
 }
 
-body.es #app > main section#hero .hero-content h1 {
-  font-size: 2.5em;
-}
-
-body.es #app > main section#highlights ul.highlights li {
-  padding: 30px 15px;
-}
-
-body.es #app > main section#highlights ul.highlights li div {
-  font-size: .9rem;
-}
-
-body.section-pre-qualification #app > main section#hero,
-body.section-congrats #app > main section#hero,
-body.section-complete #app > main section#hero,
-body.section-preaprob #app > main section#hero,
-body.section-feliz #app > main section#hero,
-body.section-gracias #app > main section#hero {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-align: center;
-  align-items: center;
-  background: #162c4e;
-  min-height: 100px;
-}
-
-body.section-pre-qualification #app > main section#hero .description,
-body.section-congrats #app > main section#hero .description,
-body.section-complete #app > main section#hero .description,
-body.section-preaprob #app > main section#hero .description,
-body.section-feliz #app > main section#hero .description,
-body.section-gracias #app > main section#hero .description {
-  padding: 0;
-}
-
-body.section-pre-qualification #app > main section#hero .description .component-progressbar,
-body.section-congrats #app > main section#hero .description .component-progressbar,
-body.section-complete #app > main section#hero .description .component-progressbar,
-body.section-preaprob #app > main section#hero .description .component-progressbar,
-body.section-feliz #app > main section#hero .description .component-progressbar,
-body.section-gracias #app > main section#hero .description .component-progressbar {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  max-width: 300px;
-  margin: 0 auto;
-}
-
-body.section-pre-qualification #app > main section#hero .description .component-progressbar .step-number,
-body.section-congrats #app > main section#hero .description .component-progressbar .step-number,
-body.section-complete #app > main section#hero .description .component-progressbar .step-number,
-body.section-preaprob #app > main section#hero .description .component-progressbar .step-number,
-body.section-feliz #app > main section#hero .description .component-progressbar .step-number,
-body.section-gracias #app > main section#hero .description .component-progressbar .step-number {
-  float: left;
-  width: 33.3333333333% !important;
-  margin: 0 0 0 0;
-  display: inline-block;
-  text-align: center;
-  font-size: 26px;
-  position: relative;
-}
-
-body.section-pre-qualification #app > main section#hero .description .component-progressbar .step-number:nth-child(3n),
-body.section-congrats #app > main section#hero .description .component-progressbar .step-number:nth-child(3n),
-body.section-complete #app > main section#hero .description .component-progressbar .step-number:nth-child(3n),
-body.section-preaprob #app > main section#hero .description .component-progressbar .step-number:nth-child(3n),
-body.section-feliz #app > main section#hero .description .component-progressbar .step-number:nth-child(3n),
-body.section-gracias #app > main section#hero .description .component-progressbar .step-number:nth-child(3n) {
-  margin-right: 0;
-}
-
-body.section-pre-qualification #app > main section#hero .description .component-progressbar .step-number:nth-child(3n + 4),
-body.section-congrats #app > main section#hero .description .component-progressbar .step-number:nth-child(3n + 4),
-body.section-complete #app > main section#hero .description .component-progressbar .step-number:nth-child(3n + 4),
-body.section-preaprob #app > main section#hero .description .component-progressbar .step-number:nth-child(3n + 4),
-body.section-feliz #app > main section#hero .description .component-progressbar .step-number:nth-child(3n + 4),
-body.section-gracias #app > main section#hero .description .component-progressbar .step-number:nth-child(3n + 4) {
-  clear: left;
-}
-
-body.section-pre-qualification #app > main section#hero .description .component-progressbar .step-number .number,
-body.section-congrats #app > main section#hero .description .component-progressbar .step-number .number,
-body.section-complete #app > main section#hero .description .component-progressbar .step-number .number,
-body.section-preaprob #app > main section#hero .description .component-progressbar .step-number .number,
-body.section-feliz #app > main section#hero .description .component-progressbar .step-number .number,
-body.section-gracias #app > main section#hero .description .component-progressbar .step-number .number {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 1.7em;
-  height: 1.7em;
-  border-radius: 50%;
-  background-color: #dedede;
-  color: #5a5a5a;
-  margin-left: calc(50% - 1.7em / 2);
-  border: 4px solid #dedede;
-  transition: ease all .4s;
-  font-weight: 900;
-}
-
-body.section-pre-qualification #app > main section#hero .description .component-progressbar .step-number .number i,
-body.section-congrats #app > main section#hero .description .component-progressbar .step-number .number i,
-body.section-complete #app > main section#hero .description .component-progressbar .step-number .number i,
-body.section-preaprob #app > main section#hero .description .component-progressbar .step-number .number i,
-body.section-feliz #app > main section#hero .description .component-progressbar .step-number .number i,
-body.section-gracias #app > main section#hero .description .component-progressbar .step-number .number i {
-  font-size: 24px;
-}
-
-body.section-pre-qualification #app > main section#hero .description .component-progressbar .step-number .number:before,
-body.section-congrats #app > main section#hero .description .component-progressbar .step-number .number:before,
-body.section-complete #app > main section#hero .description .component-progressbar .step-number .number:before,
-body.section-preaprob #app > main section#hero .description .component-progressbar .step-number .number:before,
-body.section-feliz #app > main section#hero .description .component-progressbar .step-number .number:before,
-body.section-gracias #app > main section#hero .description .component-progressbar .step-number .number:before {
-  content: ' ';
-  position: absolute;
-  border: 4px solid #dedede;
-  left: -4px;
-  right: calc( 50% + 1.4em/2);
-  top: calc( 1.4em / 2);
-  transition: ease all .2s;
-}
-
-body.section-pre-qualification #app > main section#hero .description .component-progressbar .step-number .number:after,
-body.section-congrats #app > main section#hero .description .component-progressbar .step-number .number:after,
-body.section-complete #app > main section#hero .description .component-progressbar .step-number .number:after,
-body.section-preaprob #app > main section#hero .description .component-progressbar .step-number .number:after,
-body.section-feliz #app > main section#hero .description .component-progressbar .step-number .number:after,
-body.section-gracias #app > main section#hero .description .component-progressbar .step-number .number:after {
-  content: ' ';
-  position: absolute;
-  border: 4px solid #dedede;
-  left: calc( 50% + 1.4em/2);
-  right: -4px;
-  top: calc( 1.4em / 2);
-  transition: ease all .8s;
-}
-
-body.section-pre-qualification #app > main section#hero .description .component-progressbar .step-number .number.refresh,
-body.section-congrats #app > main section#hero .description .component-progressbar .step-number .number.refresh,
-body.section-complete #app > main section#hero .description .component-progressbar .step-number .number.refresh,
-body.section-preaprob #app > main section#hero .description .component-progressbar .step-number .number.refresh,
-body.section-feliz #app > main section#hero .description .component-progressbar .step-number .number.refresh,
-body.section-gracias #app > main section#hero .description .component-progressbar .step-number .number.refresh {
-  background-color: #162c4e;
-  border-color: #162c4e;
-  color: #fff;
-}
-
-body.section-pre-qualification #app > main section#hero .description .component-progressbar .step-number .number.refresh i,
-body.section-congrats #app > main section#hero .description .component-progressbar .step-number .number.refresh i,
-body.section-complete #app > main section#hero .description .component-progressbar .step-number .number.refresh i,
-body.section-preaprob #app > main section#hero .description .component-progressbar .step-number .number.refresh i,
-body.section-feliz #app > main section#hero .description .component-progressbar .step-number .number.refresh i,
-body.section-gracias #app > main section#hero .description .component-progressbar .step-number .number.refresh i {
-  animation: swing 2s ease infinite;
-}
-
-body.section-pre-qualification #app > main section#hero .description .component-progressbar .step-number .number.refresh:before,
-body.section-pre-qualification #app > main section#hero .description .component-progressbar .step-number .number.refresh:after,
-body.section-congrats #app > main section#hero .description .component-progressbar .step-number .number.refresh:before,
-body.section-congrats #app > main section#hero .description .component-progressbar .step-number .number.refresh:after,
-body.section-complete #app > main section#hero .description .component-progressbar .step-number .number.refresh:before,
-body.section-complete #app > main section#hero .description .component-progressbar .step-number .number.refresh:after,
-body.section-preaprob #app > main section#hero .description .component-progressbar .step-number .number.refresh:before,
-body.section-preaprob #app > main section#hero .description .component-progressbar .step-number .number.refresh:after,
-body.section-feliz #app > main section#hero .description .component-progressbar .step-number .number.refresh:before,
-body.section-feliz #app > main section#hero .description .component-progressbar .step-number .number.refresh:after,
-body.section-gracias #app > main section#hero .description .component-progressbar .step-number .number.refresh:before,
-body.section-gracias #app > main section#hero .description .component-progressbar .step-number .number.refresh:after {
-  background-color: #162c4e;
-  border: 4px solid #162c4e;
-  color: white;
-}
-
-body.section-pre-qualification #app > main section#hero .description .component-progressbar .step-number.done .number,
-body.section-congrats #app > main section#hero .description .component-progressbar .step-number.done .number,
-body.section-complete #app > main section#hero .description .component-progressbar .step-number.done .number,
-body.section-preaprob #app > main section#hero .description .component-progressbar .step-number.done .number,
-body.section-feliz #app > main section#hero .description .component-progressbar .step-number.done .number,
-body.section-gracias #app > main section#hero .description .component-progressbar .step-number.done .number {
-  background-color: #359c1c;
-  border-color: #359c1c;
-  color: #fff;
-}
-
-body.section-pre-qualification #app > main section#hero .description .component-progressbar .step-number.done .number:before,
-body.section-pre-qualification #app > main section#hero .description .component-progressbar .step-number.done .number:after,
-body.section-congrats #app > main section#hero .description .component-progressbar .step-number.done .number:before,
-body.section-congrats #app > main section#hero .description .component-progressbar .step-number.done .number:after,
-body.section-complete #app > main section#hero .description .component-progressbar .step-number.done .number:before,
-body.section-complete #app > main section#hero .description .component-progressbar .step-number.done .number:after,
-body.section-preaprob #app > main section#hero .description .component-progressbar .step-number.done .number:before,
-body.section-preaprob #app > main section#hero .description .component-progressbar .step-number.done .number:after,
-body.section-feliz #app > main section#hero .description .component-progressbar .step-number.done .number:before,
-body.section-feliz #app > main section#hero .description .component-progressbar .step-number.done .number:after,
-body.section-gracias #app > main section#hero .description .component-progressbar .step-number.done .number:before,
-body.section-gracias #app > main section#hero .description .component-progressbar .step-number.done .number:after {
-  background-color: #359c1c;
-  border: 4px solid #359c1c;
-  color: white;
-}
-
-body.section-pre-qualification #app > main section#hero .description .component-progressbar .step-number.doing .number,
-body.section-congrats #app > main section#hero .description .component-progressbar .step-number.doing .number,
-body.section-complete #app > main section#hero .description .component-progressbar .step-number.doing .number,
-body.section-preaprob #app > main section#hero .description .component-progressbar .step-number.doing .number,
-body.section-feliz #app > main section#hero .description .component-progressbar .step-number.doing .number,
-body.section-gracias #app > main section#hero .description .component-progressbar .step-number.doing .number {
-  background-color: #359c1c;
-  border-color: #359c1c;
-  color: #fff;
-}
-
-body.section-pre-qualification #app > main section#hero .description .component-progressbar .step-number.doing .number:before,
-body.section-pre-qualification #app > main section#hero .description .component-progressbar .step-number.doing .number:after,
-body.section-congrats #app > main section#hero .description .component-progressbar .step-number.doing .number:before,
-body.section-congrats #app > main section#hero .description .component-progressbar .step-number.doing .number:after,
-body.section-complete #app > main section#hero .description .component-progressbar .step-number.doing .number:before,
-body.section-complete #app > main section#hero .description .component-progressbar .step-number.doing .number:after,
-body.section-preaprob #app > main section#hero .description .component-progressbar .step-number.doing .number:before,
-body.section-preaprob #app > main section#hero .description .component-progressbar .step-number.doing .number:after,
-body.section-feliz #app > main section#hero .description .component-progressbar .step-number.doing .number:before,
-body.section-feliz #app > main section#hero .description .component-progressbar .step-number.doing .number:after,
-body.section-gracias #app > main section#hero .description .component-progressbar .step-number.doing .number:before,
-body.section-gracias #app > main section#hero .description .component-progressbar .step-number.doing .number:after {
-  background-color: #359c1c;
-  border: 4px solid #359c1c;
-  color: white;
-}
-
-body.section-pre-qualification #app > main section#hero .description h1,
-body.section-congrats #app > main section#hero .description h1,
-body.section-complete #app > main section#hero .description h1,
-body.section-preaprob #app > main section#hero .description h1,
-body.section-feliz #app > main section#hero .description h1,
-body.section-gracias #app > main section#hero .description h1 {
-  text-align: center;
-  color: #fff;
-  font-weight: 900;
-  margin: 0;
-  padding: 90px 0;
-}
-
 body.section-pre-qualification #app > main section#form,
 body.section-congrats #app > main section#form,
 body.section-complete #app > main section#form,
 body.section-preaprob #app > main section#form,
 body.section-feliz #app > main section#form,
 body.section-gracias #app > main section#form {
+  background: #f1f6ef;
   margin: 0;
-  padding: 0 0 60px;
+  padding: 90px 0;
+}
+
+body.section-pre-qualification #app > main section#form h1,
+body.section-congrats #app > main section#form h1,
+body.section-complete #app > main section#form h1,
+body.section-preaprob #app > main section#form h1,
+body.section-feliz #app > main section#form h1,
+body.section-gracias #app > main section#form h1 {
+  margin: 0 0 60px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 2.5rem;
+  margin: 0 auto;
 }
 
 body.section-pre-qualification #app > main section#form .form,
@@ -8044,21 +7800,18 @@ body.section-complete #app > main section#form .form,
 body.section-preaprob #app > main section#form .form,
 body.section-feliz #app > main section#form .form,
 body.section-gracias #app > main section#form .form {
-  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.75);
-  background: #fff;
-  padding: 60px 60px 30px;
-  margin: -60px 0 0;
   width: 100%;
   min-height: 400px;
   z-index: 1;
+  padding: 60px 0 0;
 }
 
-body.section-pre-qualification #app > main section#form .form .btn,
-body.section-congrats #app > main section#form .form .btn,
-body.section-complete #app > main section#form .form .btn,
-body.section-preaprob #app > main section#form .form .btn,
-body.section-feliz #app > main section#form .form .btn,
-body.section-gracias #app > main section#form .form .btn {
+body.section-pre-qualification #app > main section#form .form input[type=submit],
+body.section-congrats #app > main section#form .form input[type=submit],
+body.section-complete #app > main section#form .form input[type=submit],
+body.section-preaprob #app > main section#form .form input[type=submit],
+body.section-feliz #app > main section#form .form input[type=submit],
+body.section-gracias #app > main section#form .form input[type=submit] {
   position: relative;
   text-decoration: none;
   display: -ms-flexbox;
@@ -8071,27 +7824,88 @@ body.section-gracias #app > main section#form .form .btn {
   transition: all ease .4s;
   background-color: #359c1c;
   border-color: #359c1c;
-  margin: 0 auto;
+  margin-top: 30px;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 15px;
 }
 
-body.section-pre-qualification #app > main section#form .form .btn span,
-body.section-congrats #app > main section#form .form .btn span,
-body.section-complete #app > main section#form .form .btn span,
-body.section-preaprob #app > main section#form .form .btn span,
-body.section-feliz #app > main section#form .form .btn span,
-body.section-gracias #app > main section#form .form .btn span {
+body.section-pre-qualification #app > main section#form .form input[type=submit] span,
+body.section-congrats #app > main section#form .form input[type=submit] span,
+body.section-complete #app > main section#form .form input[type=submit] span,
+body.section-preaprob #app > main section#form .form input[type=submit] span,
+body.section-feliz #app > main section#form .form input[type=submit] span,
+body.section-gracias #app > main section#form .form input[type=submit] span {
   color: #fff;
   font-size: 1.3em;
   font-weight: 900;
 }
 
-body.section-pre-qualification #app > main section#form .form .btn:hover,
-body.section-congrats #app > main section#form .form .btn:hover,
-body.section-complete #app > main section#form .form .btn:hover,
-body.section-preaprob #app > main section#form .form .btn:hover,
-body.section-feliz #app > main section#form .form .btn:hover,
-body.section-gracias #app > main section#form .form .btn:hover {
+body.section-pre-qualification #app > main section#form .form input[type=submit]:hover,
+body.section-congrats #app > main section#form .form input[type=submit]:hover,
+body.section-complete #app > main section#form .form input[type=submit]:hover,
+body.section-preaprob #app > main section#form .form input[type=submit]:hover,
+body.section-feliz #app > main section#form .form input[type=submit]:hover,
+body.section-gracias #app > main section#form .form input[type=submit]:hover {
   background-color: #1f384b;
+}
+
+body.section-pre-qualification #app > main section#form .form input[type=text],
+body.section-pre-qualification #app > main section#form .form input[type=tel],
+body.section-pre-qualification #app > main section#form .form input[type=number],
+body.section-pre-qualification #app > main section#form .form input[type=email],
+body.section-pre-qualification #app > main section#form .form select,
+body.section-congrats #app > main section#form .form input[type=text],
+body.section-congrats #app > main section#form .form input[type=tel],
+body.section-congrats #app > main section#form .form input[type=number],
+body.section-congrats #app > main section#form .form input[type=email],
+body.section-congrats #app > main section#form .form select,
+body.section-complete #app > main section#form .form input[type=text],
+body.section-complete #app > main section#form .form input[type=tel],
+body.section-complete #app > main section#form .form input[type=number],
+body.section-complete #app > main section#form .form input[type=email],
+body.section-complete #app > main section#form .form select,
+body.section-preaprob #app > main section#form .form input[type=text],
+body.section-preaprob #app > main section#form .form input[type=tel],
+body.section-preaprob #app > main section#form .form input[type=number],
+body.section-preaprob #app > main section#form .form input[type=email],
+body.section-preaprob #app > main section#form .form select,
+body.section-feliz #app > main section#form .form input[type=text],
+body.section-feliz #app > main section#form .form input[type=tel],
+body.section-feliz #app > main section#form .form input[type=number],
+body.section-feliz #app > main section#form .form input[type=email],
+body.section-feliz #app > main section#form .form select,
+body.section-gracias #app > main section#form .form input[type=text],
+body.section-gracias #app > main section#form .form input[type=tel],
+body.section-gracias #app > main section#form .form input[type=number],
+body.section-gracias #app > main section#form .form input[type=email],
+body.section-gracias #app > main section#form .form select {
+  padding: 10px !important;
+  margin-bottom: 15px !important;
+  box-shadow: 0 5px 48px rgba(83, 167, 61, 0.1);
+  border: none;
+  transition: ease all .4s;
+  background: #fff;
+}
+
+body.section-pre-qualification #app > main section#form .form fieldset span,
+body.section-congrats #app > main section#form .form fieldset span,
+body.section-complete #app > main section#form .form fieldset span,
+body.section-preaprob #app > main section#form .form fieldset span,
+body.section-feliz #app > main section#form .form fieldset span,
+body.section-gracias #app > main section#form .form fieldset span {
+  font-size: 1rem;
+}
+
+body.section-pre-qualification #app > main section#form .form fieldset select,
+body.section-congrats #app > main section#form .form fieldset select,
+body.section-complete #app > main section#form .form fieldset select,
+body.section-preaprob #app > main section#form .form fieldset select,
+body.section-feliz #app > main section#form .form fieldset select,
+body.section-gracias #app > main section#form .form fieldset select {
+  min-width: 75px;
+  margin-right: 15px;
 }
 
 body.section-pre-qualification #app > main section#form .form .legal-notice,
@@ -8100,7 +7914,7 @@ body.section-complete #app > main section#form .form .legal-notice,
 body.section-preaprob #app > main section#form .form .legal-notice,
 body.section-feliz #app > main section#form .form .legal-notice,
 body.section-gracias #app > main section#form .form .legal-notice {
-  font-size: .8em;
+  margin-top: 60px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -8117,6 +7931,8 @@ body.section-feliz #app > main section#form .form .legal-notice p,
 body.section-gracias #app > main section#form .form .legal-notice p {
   color: #5f5e5e;
   text-align: center;
+  line-height: 1.5;
+  text-align: left;
 }
 
 body.section-pre-qualification #app > main section#form .form .legal-notice p a,
@@ -8128,9 +7944,122 @@ body.section-gracias #app > main section#form .form .legal-notice p a {
   color: #359c1c;
 }
 
-body.section-pre-qualification #app > main section#hero,
-body.section-preaprob #app > main section#hero {
-  background: #162c4e;
+body.section-pre-qualification #app > main section ul.items,
+body.section-congrats #app > main section ul.items,
+body.section-complete #app > main section ul.items,
+body.section-preaprob #app > main section ul.items,
+body.section-feliz #app > main section ul.items,
+body.section-gracias #app > main section ul.items {
+  margin-top: 75px;
+  padding: 0 30px;
+}
+
+body.section-pre-qualification #app > main section ul.items li,
+body.section-congrats #app > main section ul.items li,
+body.section-complete #app > main section ul.items li,
+body.section-preaprob #app > main section ul.items li,
+body.section-feliz #app > main section ul.items li,
+body.section-gracias #app > main section ul.items li {
+  float: left;
+  width: 100% !important;
+  margin: 0 2% 2% 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+body.section-pre-qualification #app > main section ul.items li:nth-child(1n),
+body.section-congrats #app > main section ul.items li:nth-child(1n),
+body.section-complete #app > main section ul.items li:nth-child(1n),
+body.section-preaprob #app > main section ul.items li:nth-child(1n),
+body.section-feliz #app > main section ul.items li:nth-child(1n),
+body.section-gracias #app > main section ul.items li:nth-child(1n) {
+  margin-right: 0;
+}
+
+body.section-pre-qualification #app > main section ul.items li:nth-child(1n + 2),
+body.section-congrats #app > main section ul.items li:nth-child(1n + 2),
+body.section-complete #app > main section ul.items li:nth-child(1n + 2),
+body.section-preaprob #app > main section ul.items li:nth-child(1n + 2),
+body.section-feliz #app > main section ul.items li:nth-child(1n + 2),
+body.section-gracias #app > main section ul.items li:nth-child(1n + 2) {
+  clear: left;
+}
+
+body.section-pre-qualification #app > main section ul.items li:not(:last-child),
+body.section-congrats #app > main section ul.items li:not(:last-child),
+body.section-complete #app > main section ul.items li:not(:last-child),
+body.section-preaprob #app > main section ul.items li:not(:last-child),
+body.section-feliz #app > main section ul.items li:not(:last-child),
+body.section-gracias #app > main section ul.items li:not(:last-child) {
+  border-top: solid 2px #e6dede;
+}
+
+body.section-pre-qualification #app > main section ul.items li:last-child,
+body.section-congrats #app > main section ul.items li:last-child,
+body.section-complete #app > main section ul.items li:last-child,
+body.section-preaprob #app > main section ul.items li:last-child,
+body.section-feliz #app > main section ul.items li:last-child,
+body.section-gracias #app > main section ul.items li:last-child {
+  border-top: solid 2px #e6dede;
+  border-bottom: solid 2px #e6dede;
+}
+
+body.section-pre-qualification #app > main section ul.items li i,
+body.section-congrats #app > main section ul.items li i,
+body.section-complete #app > main section ul.items li i,
+body.section-preaprob #app > main section ul.items li i,
+body.section-feliz #app > main section ul.items li i,
+body.section-gracias #app > main section ul.items li i {
+  font-size: 3.5rem;
+  color: #359c1c;
+  margin-bottom: 15px;
+}
+
+body.section-pre-qualification #app > main section ul.badgets li,
+body.section-congrats #app > main section ul.badgets li,
+body.section-complete #app > main section ul.badgets li,
+body.section-preaprob #app > main section ul.badgets li,
+body.section-feliz #app > main section ul.badgets li,
+body.section-gracias #app > main section ul.badgets li {
+  float: left;
+  width: 49% !important;
+  margin: 0 2% 2% 0;
+  padding: 30px 15px;
+}
+
+body.section-pre-qualification #app > main section ul.badgets li:nth-child(2n),
+body.section-congrats #app > main section ul.badgets li:nth-child(2n),
+body.section-complete #app > main section ul.badgets li:nth-child(2n),
+body.section-preaprob #app > main section ul.badgets li:nth-child(2n),
+body.section-feliz #app > main section ul.badgets li:nth-child(2n),
+body.section-gracias #app > main section ul.badgets li:nth-child(2n) {
+  margin-right: 0;
+}
+
+body.section-pre-qualification #app > main section ul.badgets li:nth-child(2n + 3),
+body.section-congrats #app > main section ul.badgets li:nth-child(2n + 3),
+body.section-complete #app > main section ul.badgets li:nth-child(2n + 3),
+body.section-preaprob #app > main section ul.badgets li:nth-child(2n + 3),
+body.section-feliz #app > main section ul.badgets li:nth-child(2n + 3),
+body.section-gracias #app > main section ul.badgets li:nth-child(2n + 3) {
+  clear: left;
+}
+
+body.section-pre-qualification #app > main section ul.badgets li img,
+body.section-congrats #app > main section ul.badgets li img,
+body.section-complete #app > main section ul.badgets li img,
+body.section-preaprob #app > main section ul.badgets li img,
+body.section-feliz #app > main section ul.badgets li img,
+body.section-gracias #app > main section ul.badgets li img {
+  max-width: 100%;
 }
 
 body.section-congrats #app > main section#hero.ok,
@@ -8197,6 +8126,18 @@ body.section-gracias #app > main section#form .form #prequalifed-content img {
 body.section-complete #app > main section#form .form a.btn,
 body.section-gracias #app > main section#form .form a.btn {
   display: inline-block;
+}
+
+body.es #app > main section#hero .hero-content h1 {
+  font-size: 2.5em;
+}
+
+body.es #app > main section#highlights ul.highlights li {
+  padding: 30px 15px;
+}
+
+body.es #app > main section#highlights ul.highlights li div {
+  font-size: .9rem;
 }
 
 body #not-found {

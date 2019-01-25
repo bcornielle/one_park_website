@@ -3,24 +3,44 @@
     {{ if !status }}
     {{ redirect to="{ url }" }}
     {{ /if }}
-    <section id="hero" class="ok">
-        <div class="container">
-            <div class="description">
-                <h1>{{ title }}</h1>
-            </div>
-        </div>
-    </section>
     <section id="form">
         <div class="container">
             <div class="row">
-                <div class="form">
-                    <div id="prequalifed-content">
-                        <img src="/assets/img/checkmark.png">
-                        <h1>Gracias</h1>
-                        <p>Su aplicación fue enviada exitosamente. En breve recibirá un documento de Docusign en su correo electrónico para completar su solicitud. En ese correo, tambien encontrará el vínculo para cargar sus estados de cuenta bancarios, , su licencia de conducir y su cheque cancelado</p>
+                <h1>{{ title }}</h1>
+                <div class="col-lg-9">
+                    <div class="form">
+                        <div id="prequalifed-content">
+                            <img src="/assets/img/checkmark.png">
+                            <h1>Gracias</h1>
+                            <p>Su aplicación fue enviada exitosamente. En breve recibirá un documento de Docusign en su correo electrónico para completar su solicitud. En ese correo, tambien encontrará el vínculo para cargar sus estados de cuenta bancarios, , su licencia de conducir y su cheque cancelado</p>
+                        </div>
+                        <hr>
+                        <a href="/" class="btn btn-primary">Cerrar</a>
                     </div>
-                    <hr>
-                    <a href="/" class="btn btn-primary">Cerrar</a>
+                </div>
+                <div class="col-lg-3">
+                    <ul class="items">
+                        <li>
+                            <i class="far fa-compass"></i>
+                            <div>Get a Quote with no impact to your credit score</div>
+                        </li>
+                        <li>
+                            <i class="far fa-clock"></i>
+                            <div>Get pre-qualified in a few minutes</div>
+                        </li>
+                        <li>
+                            <i class="fas fa-chart-line"></i>
+                            <div>Get up to $500K in financing to grow your business</div>
+                        </li>
+                    </ul>
+                    <ul class="badgets">
+                        <li>
+                            <img src="/assets/img/comodo.png">
+                        </li>
+                        <li>
+                            <img src="/assets/img/bbbb.png">
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

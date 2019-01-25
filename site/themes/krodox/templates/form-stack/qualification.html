@@ -3,24 +3,44 @@
         {{ if !status }}
             {{ redirect to="{ url }" }}
         {{ /if }}
-        <section id="hero">
-            <div class="container">
-                <div class="description">
-                    <h1>{{ title }}</h1>
-                </div>
-            </div>
-        </section>
         <section id="form">
             <div class="container">
                 <div class="row">
-                    <div class="form">
-                        <script type="text/javascript" src="https://oneparkfinancial.formstack.com/forms/js.php/{{ form }}"></script>
-                        <noscript>
-                            <a href="https://oneparkfinancial.formstack.com/forms/{{ form }}" title="Online Form"></a>
-                        </noscript>
-                        <div class="legal-notice">
-                            <p>By clicking “Get Funded”, you (i) consent to receiving telemarketing calls and messages, including calls using an automatic telephone dialing system, from One Park Financial and those acting on its behalf at the telephone number you have provided above (including your cellular phone number); agree that this consent applies even if the number you have provided is currently on any state, federal, or corporate Do-Not-Call registry; and understand that you are not required to provide this consent as a condition of receiving any credit or services from One Park Financial and that you may apply for business credit by contacting us directly; and (ii) acknowledge that you have read One Park Financials <a href="/terms-of-use/" target="_blank">Terms of Use</a> and <a href="/privacy-policy/" target="_blank">Privacy Policy</a> and understand that you may opt out of receiving communications of your choice from One Park Financial as provided in the Privacy Policy.</p>
+                    <h1>Pre-Qualification</h1>
+                    <div class="col-lg-9">
+                        <div class="form">
+                            <script type="text/javascript" src="https://oneparkfinancial.formstack.com/forms/js.php/{{ form }}"></script>
+                            <noscript>
+                                <a href="https://oneparkfinancial.formstack.com/forms/{{ form }}" title="Online Form"></a>
+                            </noscript>
+                            <div class="legal-notice">
+                                <p>By clicking “Get Funded”, you (i) consent to receiving telemarketing calls and messages, including calls using an automatic telephone dialing system, from One Park Financial and those acting on its behalf at the telephone number you have provided above (including your cellular phone number); agree that this consent applies even if the number you have provided is currently on any state, federal, or corporate Do-Not-Call registry; and understand that you are not required to provide this consent as a condition of receiving any credit or services from One Park Financial and that you may apply for business credit by contacting us directly; and (ii) acknowledge that you have read One Park Financials <a href="/terms-of-use/" target="_blank">Terms of Use</a> and <a href="/privacy-policy/" target="_blank">Privacy Policy</a> and understand that you may opt out of receiving communications of your choice from One Park Financial as provided in the Privacy Policy.</p>
+                            </div>
                         </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <ul class="items">
+                            <li>
+                                <i class="far fa-compass"></i>
+                                <div>Get a Quote with no impact to your credit score</div>
+                            </li>
+                            <li>
+                                <i class="far fa-clock"></i>
+                                <div>Get pre-qualified in a few minutes</div>
+                            </li>
+                            <li>
+                                <i class="fas fa-chart-line"></i>
+                                <div>Get up to $500K in financing to grow your business</div>
+                            </li>
+                        </ul>
+                        <ul class="badgets">
+                            <li>
+                                <img src="/assets/img/comodo.png">
+                            </li>
+                            <li>
+                                <img src="/assets/img/bbbb.png">
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

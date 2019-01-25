@@ -3739,162 +3739,27 @@ body {
       }
     }
   }
-
-  &.es {
-    #app {
-      > nav {
-
-      }
-      > main {
-        section {
-          &#hero {
-            .hero-content {
-              h1 {
-                font-size: 2.5em;
-              }
-            }
-          }
-          &#highlights {
-            ul {
-              &.highlights {
-                li {
-                  padding: 30px 15px;
-                  div {
-                    font-size: .9rem;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-      > footer {
-
-      }
-    }
-  }
-
   &.section-pre-qualification, &.section-congrats, &.section-complete, &.section-preaprob, &.section-feliz, &.section-gracias {
     #app {
       > main {
         section {
-          &#hero {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background: $brand-secondary;
-            min-height: 100px;
-            .description {
-              padding: 0;
-              .component-progressbar {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: center;
-                max-width: 300px;
-                margin: 0 auto;
-                .step-number {
-                  @include columns(3,0);
-                  display: inline-block;
-                  text-align: center;
-                  font-size: 26px;
-                  position: relative;
-                  .number {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    width: 1.7em;
-                    height: 1.7em;
-                    border-radius: 50%;
-                    background-color: #dedede;
-                    color: #5a5a5a;
-                    margin-left: calc(50% - 1.7em / 2 );
-                    border: 4px solid #dedede;
-                    transition:  ease all .4s;
-                    font-weight: 900;
-                    i {
-                      font-size: 24px;
-                    }
-                    &:before {
-                      content: ' ';
-                      position: absolute;
-                      border: 4px solid #dedede;
-                      left: -4px;
-                      right: calc( 50% + 1.4em/2 );
-                      top: calc( 1.4em / 2 );
-                      transition:  ease all .2s;
-                    }
-                    &:after {
-                      content: ' ';
-                      position: absolute;
-                      border: 4px solid #dedede;
-                      left: calc( 50% + 1.4em/2 );
-                      right: -4px;
-                      top: calc( 1.4em / 2 );
-                      transition:  ease all .8s;
-                    }
-                    &.refresh {
-                      background-color: $brand-secondary;
-                      border-color: $brand-secondary;
-                      color: $white;
-                      i {
-                        animation: swing 2s ease infinite;
-                      }
-                      &:before, &:after {
-                        background-color: $brand-secondary;
-                        border: 4px solid $brand-secondary;
-                        color: white;
-                      }
-                    }
-                  }
-                  &.done {
-                    .number {
-                      background-color: $brand-primary;
-                      border-color: $brand-primary;
-                      color: $white;
-                      &:before, &:after {
-                        background-color: $brand-primary;
-                        border: 4px solid $brand-primary;
-                        color: white;
-                      }
-                    }
-                  }
-                  &.doing {
-                    .number {
-                      background-color: $brand-primary;
-                      border-color: $brand-primary;
-                      color: $white;
-                      &:before, &:after {
-                        background-color: $brand-primary;
-                        border: 4px solid $brand-primary;
-                        color: white;
-                      }
-                    }
-                  }
-                }
-              }
-              h1 {
-                text-align: center;
-                color: $white;
-                font-weight: 900;
-                margin: 0;
-                padding: 90px 0;
-              }
-            }
-          }
           &#form {
+            background: $light-bg;
             margin: 0;
-            padding: 0 0 60px;
+            padding: 90px 0;
+            h1 {
+              margin: 0 0 60px;
+              text-align: center;
+              font-weight: 900;
+              font-size: 2.5rem;
+              margin: 0 auto;
+            }
             .form {
-              box-shadow: 0 0 25px 0 rgba(0,0,0,0.75);
-              background: $white;
-              padding: 60px 60px 30px;
-              margin: -60px 0 0;
               width: 100%;
               min-height: 400px;
               z-index: 1;
-              .btn {
+              padding: 60px 0 0;
+              input[type=submit] {
                 position: relative;
                 text-decoration: none;
                 display: flex;
@@ -3904,7 +3769,11 @@ body {
                 transition: all ease .4s;
                 background-color: $brand-primary;
                 border-color: $brand-primary;
-                margin: 0 auto;
+                margin-top: 30px;
+                font-weight: 900;
+                color: $white;
+                text-transform: uppercase;
+                padding: 10px 15px;
                 span {
                   color: $white;
                   font-size: 1.3em;
@@ -3914,14 +3783,33 @@ body {
                   background-color: rgba(31, 56, 75, 1);
                 }
               }
+              input[type=text], input[type=tel], input[type=number], input[type=email], select {
+                padding: 10px !important;
+                margin-bottom: 15px !important;
+                box-shadow: 0 5px 48px rgba(83, 167, 61, 0.1);
+                border: none;
+                transition: ease all .4s;
+                background: $white;
+              }
+              fieldset {
+                span {
+                  font-size: 1rem;
+                }
+                select {
+                  min-width: 75px;
+                  margin-right: 15px;
+                }
+              }
               .legal-notice {
-                font-size: .8em;
+                margin-top: 60px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 p {
                   color: #5f5e5e;
                   text-align: center;
+                  line-height: 1.5;
+                  text-align: left;
                   a {
                     color: $brand-primary;
                   }
@@ -3929,16 +3817,41 @@ body {
               }
             }
           }
-        }
-      }
-    }
-  }
-  &.section-pre-qualification, &.section-preaprob {
-    #app {
-      > main {
-        section {
-          &#hero {
-            background: $brand-secondary;
+          ul {
+            &.items {
+              margin-top: 75px;
+              padding: 0 30px;
+              li {
+                @include columns(1);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 30px 20px;
+                text-align: center;
+                &:not(:last-child){
+                  border-top: solid 2px #e6dede;
+                }
+                &:last-child {
+                  border-top: solid 2px #e6dede;
+                  border-bottom: solid 2px #e6dede;
+                }
+                i {
+                  font-size: 3.5rem;
+                  color: $brand-primary;
+                  margin-bottom: 15px;
+                }
+              }
+            }
+            &.badgets {
+              li {
+                @include columns(2);
+                padding: 30px 15px;
+                img {
+                  max-width: 100%;
+                }
+              }
+            }
           }
         }
       }
@@ -4020,7 +3933,39 @@ body {
       }
     }
   }
+  &.es {
+    #app {
+      > nav {
 
+      }
+      > main {
+        section {
+          &#hero {
+            .hero-content {
+              h1 {
+                font-size: 2.5em;
+              }
+            }
+          }
+          &#highlights {
+            ul {
+              &.highlights {
+                li {
+                  padding: 30px 15px;
+                  div {
+                    font-size: .9rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      > footer {
+
+      }
+    }
+  }
   #not-found {
     padding: 90px 0;
     background: $light-bg;
