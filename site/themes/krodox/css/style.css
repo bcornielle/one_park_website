@@ -2941,6 +2941,7 @@ body #app > nav.apple .nav-wrapper .container .menus .navbar-right .join-now {
   -ms-flex-align: center;
   align-items: center;
   width: 120px;
+  float: right;
   display: none;
 }
 
@@ -8352,6 +8353,16 @@ body #not-found h1 {
   }
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-top li:not(:last-child) {
+    display: none;
+  }
+
+  body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li:not(:last-child) {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   body #app > nav.apple .nav-wrapper .container {
     max-width: 100%;
@@ -8863,7 +8874,7 @@ body #not-found h1 {
   }
 }
 
-@media (max-width: 736px) {
+@media (max-width: 767px) {
   body #app > nav.apple {
     height: 65px;
   }

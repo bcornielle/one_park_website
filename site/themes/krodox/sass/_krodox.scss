@@ -290,6 +290,7 @@ body  {
                   justify-content: flex-end;
                   align-items: center;
                   width: 120px;
+                  float: right;
                   display: none;
                   span, i, a {
                     display: inline-block;
@@ -4132,6 +4133,36 @@ body  {
       }
     }
   }
+  @media (min-width: 768px) and (max-width: 991px){
+    #app {
+      > nav {
+        &.apple {
+          .nav-wrapper {
+            .container {
+              .menus {
+                .navbar-right {
+                  .nav-top {
+                    li {
+                      &:not(:last-child){
+                        display: none;
+                      }
+                    }
+                  }
+                  .nav-bottom {
+                    li {
+                      &:not(:last-child){
+                        display: none;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
   @media (max-width: 768px) {
     #app {
       > nav {
@@ -4724,7 +4755,7 @@ body  {
       }
     }
   }
-  @media (max-width: 736px) {
+  @media (max-width: 767px) {
     #app {
       > nav {
         &.apple {
