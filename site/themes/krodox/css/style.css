@@ -9704,6 +9704,7 @@ body #not-found h1 {
   body #app > nav.apple .nav-wrapper.shown {
     background-color: #000;
     z-index: 9999 !important;
+    height: 100vh;
   }
 
   body #app > nav.apple .nav-wrapper.shown .burger-container {

@@ -5511,6 +5511,7 @@ body {
            &.shown {
              background-color: #000;
              z-index: 9999 !important;
+             height: 100vh;
              .burger-container {
                position: absolute;
              }
