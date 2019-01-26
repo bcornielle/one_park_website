@@ -1,47 +1,4 @@
 <nav class="menu apple">
-    <div id="menu" class="container" role="navigation">
-        <ul class="languages">
-            <li class="en active"><a href="{{ current_url }}"><span>English</span></a></li>
-            <li class="es"><a href="/es/{{ es_url }}"><span>Español</span></a></li>
-        </ul>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-menu" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa fa-bars"></i>
-        </button>
-        <div id="nav-menu" class="right collapse navbar-collapse">
-            <ul>
-                <li class="funding-options">
-                    <a href="/#products">
-                        Business Funding
-                    </a>
-                </li>
-                <li class="about-us">
-                    <a href="/#about-us">
-                        About Us
-                    </a>
-                </li>
-                <li class="press">
-                    <a href="/press">
-                        Press
-                    </a>
-                </li>
-                <li class="faqs">
-                    <a href="/faq">
-                        FAQs
-                    </a>
-                </li>
-                <li class="contact-us">
-                    <a href="/pre-qualification" class="btn btn-primary">
-                        Apply now
-                    </a>
-                </li>
-                {{ if logged_in }}
-                <li>
-                    <a href="{{ user:logout_url }}">Log out</a>
-                </li>
-                {{ /if }}
-            </ul>
-        </div>
-    </div>
     <div class="nav-wrapper" v-bind:class="{'shown':menu_opened}">
         <ul class="menu">
             <li class="menu-item"><a href="">Home</a></li>

@@ -4515,6 +4515,12 @@ body.section-sobre-nosotros #app > main section#about-us .intro .description p {
   padding-right: 30px;
 }
 
+body.section-about-us #app > main section#about-us .intro .image-wrapper .iframe-wrapper .iframe-wrapper iframe,
+body.section-sobre-nosotros #app > main section#about-us .intro .image-wrapper .iframe-wrapper .iframe-wrapper iframe {
+  width: 100%;
+  min-height: 300px;
+}
+
 body.section-about-us #app > main section#about-us .brand,
 body.section-about-us #app > main section#about-us .values,
 body.section-about-us #app > main section#about-us .why,
@@ -4712,7 +4718,7 @@ body.section-sobre-nosotros #app > main section#about-us .why ul.items li div.ri
   position: absolute;
   top: 50%;
   left: -15px;
-  transform: translateY(-50%);
+  transform: translateY(-70%);
   color: #359c1c;
 }
 
@@ -4748,6 +4754,7 @@ body.section-sobre-nosotros #app > main section#about-us .why {
 body.section-about-us #app > main section#about-us .why .item-wrapper,
 body.section-sobre-nosotros #app > main section#about-us .why .item-wrapper {
   position: relative;
+  margin-bottom: 30px;
 }
 
 body.section-about-us #app > main section#about-us .why .item-wrapper .item,
@@ -6485,11 +6492,6 @@ body.section-empleos #app > main section#careers .careers h4 {
   font-size: 1.2rem;
 }
 
-body.section-careers #app > main section#careers .careers ul,
-body.section-empleos #app > main section#careers .careers ul {
-  padding: 0 120px;
-}
-
 body.section-careers #app > main section#careers .careers ul .item,
 body.section-empleos #app > main section#careers .careers ul .item {
   border: none;
@@ -6527,6 +6529,8 @@ body.section-careers #app > main section#careers .careers ul .item .description,
 body.section-empleos #app > main section#careers .careers ul .item .description {
   color: #323831;
   text-decoration: none;
+  width: 100%;
+  text-align: center;
 }
 
 body.section-careers #app > main section#careers .careers ul .item .description h5,
@@ -6534,7 +6538,7 @@ body.section-empleos #app > main section#careers .careers ul .item .description 
   margin: 0;
   text-transform: lowercase;
   font-size: 1rem;
-  display: inline-block;
+  display: block;
   font-weight: 900;
 }
 
@@ -6562,6 +6566,7 @@ body.section-empleos #app > main section#careers .careers ul .item .description 
 body.section-careers #app > main section#careers .careers ul .item .description div.meta,
 body.section-empleos #app > main section#careers .careers ul .item .description div.meta {
   font-style: italic;
+  margin-top: 10px;
 }
 
 body.section-careers #app > main section#careers .careers ul .pagination,
@@ -6681,6 +6686,11 @@ body.section-careers #app > main section#career .intro div.status span,
 body.section-empleos #app > main section#career .intro div.status span {
   text-transform: uppercase;
   font-weight: 900;
+}
+
+body.section-careers #app > main section#career .content p,
+body.section-empleos #app > main section#career .content p {
+  line-height: 1.5 !important;
 }
 
 body.section-careers #app > main section#career .content ul.breadcrumbs,
@@ -7811,7 +7821,7 @@ body.section-feliz #app > main section#form,
 body.section-gracias #app > main section#form {
   background: #f1f6ef;
   margin: 0;
-  padding: 90px 0;
+  padding: 60px 0;
 }
 
 body.section-pre-qualification #app > main section#form h1,
@@ -7862,6 +7872,7 @@ body.section-gracias #app > main section#form .form input[type=submit] {
   color: #fff;
   text-transform: uppercase;
   padding: 10px 15px;
+  width: 300px;
 }
 
 body.section-pre-qualification #app > main section#form .form input[type=submit] span,
@@ -7941,6 +7952,87 @@ body.section-gracias #app > main section#form .form fieldset select {
   margin-right: 15px;
 }
 
+body.section-pre-qualification #app > main section#form .form #fsCell59894904 #autofill59894904,
+body.section-congrats #app > main section#form .form #fsCell59894904 #autofill59894904,
+body.section-complete #app > main section#form .form #fsCell59894904 #autofill59894904,
+body.section-preaprob #app > main section#form .form #fsCell59894904 #autofill59894904,
+body.section-feliz #app > main section#form .form #fsCell59894904 #autofill59894904,
+body.section-gracias #app > main section#form .form #fsCell59894904 #autofill59894904 {
+  width: 16px;
+  background: #fff;
+}
+
+body.section-pre-qualification #app > main section#form .form #fsCell59894904 #autofill59894904 + label,
+body.section-congrats #app > main section#form .form #fsCell59894904 #autofill59894904 + label,
+body.section-complete #app > main section#form .form #fsCell59894904 #autofill59894904 + label,
+body.section-preaprob #app > main section#form .form #fsCell59894904 #autofill59894904 + label,
+body.section-feliz #app > main section#form .form #fsCell59894904 #autofill59894904 + label,
+body.section-gracias #app > main section#form .form #fsCell59894904 #autofill59894904 + label {
+  font-size: .8rem;
+}
+
+body.section-pre-qualification #app > main section#form .form #fsCell59894904 #field59894904,
+body.section-congrats #app > main section#form .form #fsCell59894904 #field59894904,
+body.section-complete #app > main section#form .form #fsCell59894904 #field59894904,
+body.section-preaprob #app > main section#form .form #fsCell59894904 #field59894904,
+body.section-feliz #app > main section#form .form #fsCell59894904 #field59894904,
+body.section-gracias #app > main section#form .form #fsCell59894904 #field59894904 {
+  margin-bottom: 0 !important;
+  font-size: .7rem;
+}
+
+body.section-pre-qualification #app > main section#form .form #fsCell59894904 #fsSupporting59894904,
+body.section-congrats #app > main section#form .form #fsCell59894904 #fsSupporting59894904,
+body.section-complete #app > main section#form .form #fsCell59894904 #fsSupporting59894904,
+body.section-preaprob #app > main section#form .form #fsCell59894904 #fsSupporting59894904,
+body.section-feliz #app > main section#form .form #fsCell59894904 #fsSupporting59894904,
+body.section-gracias #app > main section#form .form #fsCell59894904 #fsSupporting59894904 {
+  margin-bottom: 15px !important;
+  font-size: .7rem;
+}
+
+body.section-pre-qualification #app > main section#form .form #label59894903,
+body.section-congrats #app > main section#form .form #label59894903,
+body.section-complete #app > main section#form .form #label59894903,
+body.section-preaprob #app > main section#form .form #label59894903,
+body.section-feliz #app > main section#form .form #label59894903,
+body.section-gracias #app > main section#form .form #label59894903 {
+  margin-top: 15px;
+}
+
+body.section-pre-qualification #app > main section#form .form #field59894903-city,
+body.section-pre-qualification #app > main section#form .form #field59894903-state,
+body.section-pre-qualification #app > main section#form .form #field59894903-zip,
+body.section-congrats #app > main section#form .form #field59894903-city,
+body.section-congrats #app > main section#form .form #field59894903-state,
+body.section-congrats #app > main section#form .form #field59894903-zip,
+body.section-complete #app > main section#form .form #field59894903-city,
+body.section-complete #app > main section#form .form #field59894903-state,
+body.section-complete #app > main section#form .form #field59894903-zip,
+body.section-preaprob #app > main section#form .form #field59894903-city,
+body.section-preaprob #app > main section#form .form #field59894903-state,
+body.section-preaprob #app > main section#form .form #field59894903-zip,
+body.section-feliz #app > main section#form .form #field59894903-city,
+body.section-feliz #app > main section#form .form #field59894903-state,
+body.section-feliz #app > main section#form .form #field59894903-zip,
+body.section-gracias #app > main section#form .form #field59894903-city,
+body.section-gracias #app > main section#form .form #field59894903-state,
+body.section-gracias #app > main section#form .form #field59894903-zip {
+  margin-bottom: 0 !important;
+  margin-top: 15px !important;
+}
+
+body.section-pre-qualification #app > main section#form .form .badgets,
+body.section-congrats #app > main section#form .form .badgets,
+body.section-complete #app > main section#form .form .badgets,
+body.section-preaprob #app > main section#form .form .badgets,
+body.section-feliz #app > main section#form .form .badgets,
+body.section-gracias #app > main section#form .form .badgets {
+  display: none;
+  width: 300px;
+  margin: 30px auto 0;
+}
+
 body.section-pre-qualification #app > main section#form .form .legal-notice,
 body.section-congrats #app > main section#form .form .legal-notice,
 body.section-complete #app > main section#form .form .legal-notice,
@@ -7963,7 +8055,6 @@ body.section-preaprob #app > main section#form .form .legal-notice p,
 body.section-feliz #app > main section#form .form .legal-notice p,
 body.section-gracias #app > main section#form .form .legal-notice p {
   color: #5f5e5e;
-  text-align: center;
   line-height: 1.5;
   text-align: left;
 }
@@ -8165,6 +8256,10 @@ body.es #app > main section#hero .hero-content h1 {
   font-size: 2.5em;
 }
 
+body.es #app > main section#highlights ul.highlights {
+  padding: 0 120px;
+}
+
 body.es #app > main section#highlights ul.highlights li {
   padding: 30px 15px;
 }
@@ -8273,7 +8368,7 @@ body #not-found h1 {
 
   body #app > main section#features .table-wrapper.classic table.table thead tr th:first-child span {
     font-size: .8rem;
-    text-align: center;
+    text-align: left;
   }
 
   body #app > main section#products .products-wrapper {
@@ -8577,10 +8672,38 @@ body #not-found h1 {
     padding: 0;
   }
 
+  body.section-careers #app > main section#careers .careers ul li.item,
+  body.section-empleos #app > main section#careers .careers ul li.item {
+    float: left;
+    width: 50% !important;
+    margin: 0 0 0 0;
+  }
+
+  body.section-careers #app > main section#careers .careers ul li.item:nth-child(2n),
+  body.section-empleos #app > main section#careers .careers ul li.item:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  body.section-careers #app > main section#careers .careers ul li.item:nth-child(2n + 3),
+  body.section-empleos #app > main section#careers .careers ul li.item:nth-child(2n + 3) {
+    clear: left;
+  }
+
+  body.section-careers #app > main section#careers .careers ul li.item .description,
+  body.section-empleos #app > main section#careers .careers ul li.item .description {
+    width: 100%;
+    text-align: center;
+  }
+
+  body.section-careers #app > main section#careers .careers ul li.item .description h5,
+  body.section-empleos #app > main section#careers .careers ul li.item .description h5 {
+    display: block;
+  }
+
   body.section-careers #app > main section#career .intro,
   body.section-empleos #app > main section#career .intro {
     text-align: left;
-    padding: 60px 0;
+    padding: 60px 0 30px;
   }
 
   body.section-privacy-policy #app > main section#intro,
@@ -8593,6 +8716,81 @@ body #not-found h1 {
     padding: 60px 0 0;
   }
 
+  body.section-pre-qualification #app > main section#form .form .badgets,
+  body.section-congrats #app > main section#form .form .badgets,
+  body.section-complete #app > main section#form .form .badgets,
+  body.section-preaprob #app > main section#form .form .badgets,
+  body.section-feliz #app > main section#form .form .badgets,
+  body.section-gracias #app > main section#form .form .badgets {
+    display: block;
+  }
+
+  body.section-pre-qualification #app > main section#form .form .legal-notice,
+  body.section-congrats #app > main section#form .form .legal-notice,
+  body.section-complete #app > main section#form .form .legal-notice,
+  body.section-preaprob #app > main section#form .form .legal-notice,
+  body.section-feliz #app > main section#form .form .legal-notice,
+  body.section-gracias #app > main section#form .form .legal-notice {
+    margin-top: 0;
+  }
+
+  body.section-pre-qualification #app > main section ul.items,
+  body.section-congrats #app > main section ul.items,
+  body.section-complete #app > main section ul.items,
+  body.section-preaprob #app > main section ul.items,
+  body.section-feliz #app > main section ul.items,
+  body.section-gracias #app > main section ul.items {
+    display: none;
+  }
+
+  body.section-pre-qualification #app > main section ul.badgets,
+  body.section-congrats #app > main section ul.badgets,
+  body.section-complete #app > main section ul.badgets,
+  body.section-preaprob #app > main section ul.badgets,
+  body.section-feliz #app > main section ul.badgets,
+  body.section-gracias #app > main section ul.badgets {
+    display: none;
+  }
+
+  body.section-pre-qualification #app > main section ul.badgets li,
+  body.section-congrats #app > main section ul.badgets li,
+  body.section-complete #app > main section ul.badgets li,
+  body.section-preaprob #app > main section ul.badgets li,
+  body.section-feliz #app > main section ul.badgets li,
+  body.section-gracias #app > main section ul.badgets li {
+    float: left;
+    width: 49% !important;
+    margin: 0 2% 2% 0;
+    padding: 30px 15px;
+  }
+
+  body.section-pre-qualification #app > main section ul.badgets li:nth-child(2n),
+  body.section-congrats #app > main section ul.badgets li:nth-child(2n),
+  body.section-complete #app > main section ul.badgets li:nth-child(2n),
+  body.section-preaprob #app > main section ul.badgets li:nth-child(2n),
+  body.section-feliz #app > main section ul.badgets li:nth-child(2n),
+  body.section-gracias #app > main section ul.badgets li:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  body.section-pre-qualification #app > main section ul.badgets li:nth-child(2n + 3),
+  body.section-congrats #app > main section ul.badgets li:nth-child(2n + 3),
+  body.section-complete #app > main section ul.badgets li:nth-child(2n + 3),
+  body.section-preaprob #app > main section ul.badgets li:nth-child(2n + 3),
+  body.section-feliz #app > main section ul.badgets li:nth-child(2n + 3),
+  body.section-gracias #app > main section ul.badgets li:nth-child(2n + 3) {
+    clear: left;
+  }
+
+  body.section-pre-qualification #app > main section ul.badgets li img,
+  body.section-congrats #app > main section ul.badgets li img,
+  body.section-complete #app > main section ul.badgets li img,
+  body.section-preaprob #app > main section ul.badgets li img,
+  body.section-feliz #app > main section ul.badgets li img,
+  body.section-gracias #app > main section ul.badgets li img {
+    max-width: 100%;
+  }
+
   body.es #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li:not(:last-child) {
     margin-right: 15px;
     text-align: center;
@@ -8601,9 +8799,21 @@ body #not-found h1 {
   body.es #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li:not(:last-child) a {
     font-size: .8rem;
   }
+
+  body.es #app > main section#highlights ul.highlights {
+    padding: 0;
+  }
+
+  body.es #app > main section#highlights ul.highlights li {
+    padding: 30px 0;
+  }
+
+  body.es #app > main section#highlights ul.highlights li div {
+    font-size: .8rem;
+  }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 667px) {
   body #app > nav.apple {
     height: 65px;
   }
@@ -8640,7 +8850,7 @@ body #not-found h1 {
   body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-top {
     height: 30px;
     margin: 0;
-    width: 330px;
+    width: 100%;
   }
 
   body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-top li.phone {
@@ -8664,7 +8874,7 @@ body #not-found h1 {
 
   body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom {
     height: auto;
-    width: 330px;
+    width: 100%;
   }
 
   body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li.faqs {
@@ -8686,6 +8896,7 @@ body #not-found h1 {
   body #app > main section#highlights {
     margin: 0;
     padding: 0;
+    display: none;
   }
 
   body #app > main section#highlights ul.highlights {
@@ -8715,7 +8926,7 @@ body #not-found h1 {
 
   body #app > main section#services {
     margin: 0;
-    padding: 30px 0;
+    padding: 60px 0;
   }
 
   body #app > main section#services h2 {
@@ -8732,7 +8943,7 @@ body #not-found h1 {
     float: left;
     width: 100% !important;
     margin: 0 2% 2% 0;
-    padding: 30px;
+    padding: 30px 0;
   }
 
   body #app > main section#services ul li:nth-child(1n) {
@@ -8741,6 +8952,10 @@ body #not-found h1 {
 
   body #app > main section#services ul li:nth-child(1n + 2) {
     clear: left;
+  }
+
+  body #app > main section#services ul li > div i {
+    margin-bottom: 8px;
   }
 
   body #app > main section#services ul li:not(:last-child) {
@@ -8752,25 +8967,21 @@ body #not-found h1 {
     width: 0;
   }
 
-  body #app > main section#services svg {
-    display: none;
+  body #app > main section#services ul li:first-child {
+    padding: 0 0 30px;
+  }
+
+  body #app > main section#services ul li:last-child {
+    padding-bottom: 0;
   }
 
   body #app > main section#features {
-    padding: 30px 0;
+    padding: 60px 0;
   }
 
   body #app > main section#features h2 {
     font-size: 1.5rem;
     margin-bottom: 30px;
-  }
-
-  body #app > main section#features table thead tr th:nth-child(n + 3) {
-    display: none;
-  }
-
-  body #app > main section#features table tbody tr td:nth-child(n + 3) {
-    display: none;
   }
 
   body #app > main section#features .tabs {
@@ -8793,11 +9004,32 @@ body #not-found h1 {
   }
 
   body #app > main section#features .tabs .tab-descriptions .tab-content .tab-pane p {
-    padding: 0;
+    padding: 0 20px;
+  }
+
+  body #app > main section#features .table-wrapper.classic {
+    margin-top: 30px;
+  }
+
+  body #app > main section#features .table-wrapper.classic table thead tr th:first-child span {
+    text-align: left;
+  }
+
+  body #app > main section#features .table-wrapper.classic table thead tr th:nth-child(2) a.branding.logo {
+    width: 90%;
+    background-size: 100%;
+  }
+
+  body #app > main section#features .table-wrapper.classic table thead tr th:nth-child(n + 3) {
+    display: none;
+  }
+
+  body #app > main section#features .table-wrapper.classic table tbody tr td:nth-child(n + 3) {
+    display: none;
   }
 
   body #app > main section#testimonials {
-    padding: 30px 0;
+    padding: 60px 0;
   }
 
   body #app > main section#testimonials h2 {
@@ -8808,20 +9040,8 @@ body #not-found h1 {
     display: none;
   }
 
-  body #app > main section#call-to-action-1,
-  body #app > main section#call-to-action-2,
-  body #app > main section#call-to-action-3 {
-    padding: 30px 0;
-  }
-
-  body #app > main section#call-to-action-1 h2,
-  body #app > main section#call-to-action-2 h2,
-  body #app > main section#call-to-action-3 h2 {
-    font-size: 1.5rem;
-  }
-
   body #app > main section#products {
-    padding: 30px 0;
+    padding: 60px 0;
   }
 
   body #app > main section#products h2 {
@@ -8942,13 +9162,12 @@ body #not-found h1 {
     display: flex;
     -ms-flex-align: center;
     align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
-  body #app > footer .brand-links ul.locations li.separator {
-    height: 1px;
-    background: #4a4747;
-    margin: 15px 0;
-    max-width: 120px;
+  body #app > footer .brand-links ul.locations li hr {
+    display: none;
   }
 
   body #app > footer .brand-links .contact-us {
@@ -9006,6 +9225,7 @@ body #not-found h1 {
 
   body.section-home #app > main section#hero .hero-content h1 {
     font-size: 2em;
+    margin-top: 15px;
   }
 
   body.section-home #app > main section#hero .hero-content h2 {
@@ -9019,6 +9239,7 @@ body #not-found h1 {
 
   body.section-home #app > main section#hero .hero-content ul.xs {
     display: block;
+    margin: 0 auto;
   }
 
   body.section-home #app > main section#hero .hero-content ul.badgets {
@@ -9064,6 +9285,22 @@ body #not-found h1 {
     margin-bottom: 30px;
   }
 
+  body.section-how-it-works #app > main section#how-it-works .process p,
+  body.section-como-trabaja #app > main section#how-it-works .process p {
+    line-height: 1.5;
+    padding: 20px;
+  }
+
+  body.section-how-it-works #app > main section#how-it-works .advantages,
+  body.section-como-trabaja #app > main section#how-it-works .advantages {
+    padding: 60px 0;
+  }
+
+  body.section-how-it-works #app > main section#how-it-works .advantages h2,
+  body.section-como-trabaja #app > main section#how-it-works .advantages h2 {
+    padding-bottom: 30px;
+  }
+
   body.section-about-us #app > main section#about-us .intro,
   body.section-sobre-nosotros #app > main section#about-us .intro {
     padding: 30px 0;
@@ -9081,13 +9318,33 @@ body #not-found h1 {
 
   body.section-about-us #app > main section#about-us .brand,
   body.section-sobre-nosotros #app > main section#about-us .brand {
-    padding: 0;
+    padding: 30px 0;
   }
 
   body.section-about-us #app > main section#about-us .brand ul.items li > div.right,
   body.section-sobre-nosotros #app > main section#about-us .brand ul.items li > div.right {
     padding: 10px;
     font-size: .8rem;
+  }
+
+  body.section-about-us #app > main section#about-us .values,
+  body.section-sobre-nosotros #app > main section#about-us .values {
+    padding: 60px 0;
+  }
+
+  body.section-about-us #app > main section#about-us .values h2,
+  body.section-sobre-nosotros #app > main section#about-us .values h2 {
+    padding-bottom: 30px;
+  }
+
+  body.section-about-us #app > main section#about-us .values p,
+  body.section-sobre-nosotros #app > main section#about-us .values p {
+    text-align: center;
+  }
+
+  body.section-about-us #app > main section#about-us .why h2,
+  body.section-sobre-nosotros #app > main section#about-us .why h2 {
+    padding-bottom: 30px;
   }
 
   body.section-about-us #app > main section#about-us .why .item-wrapper .item .number,
@@ -9103,6 +9360,30 @@ body #not-found h1 {
   body.section-faq #app > main section#faqs .faqs,
   body.section-preguntas-comunes #app > main section#faqs .faqs {
     padding: 30px 0;
+  }
+
+  body.section-faq #app > main section#faqs .faqs h1,
+  body.section-preguntas-comunes #app > main section#faqs .faqs h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  body.section-faq #app > main section#faqs .faqs h3,
+  body.section-preguntas-comunes #app > main section#faqs .faqs h3 {
+    text-align: center;
+  }
+
+  body.section-faq #app > main section#faqs .faqs #accordion,
+  body.section-faq #app > main section#faqs .faqs #accordion-1,
+  body.section-faq #app > main section#faqs .faqs #accordion-2,
+  body.section-faq #app > main section#faqs .faqs #accordion-3,
+  body.section-faq #app > main section#faqs .faqs #accordion-4,
+  body.section-preguntas-comunes #app > main section#faqs .faqs #accordion,
+  body.section-preguntas-comunes #app > main section#faqs .faqs #accordion-1,
+  body.section-preguntas-comunes #app > main section#faqs .faqs #accordion-2,
+  body.section-preguntas-comunes #app > main section#faqs .faqs #accordion-3,
+  body.section-preguntas-comunes #app > main section#faqs .faqs #accordion-4 {
+    margin-bottom: 30px;
   }
 
   body.section-faq #app > main section#faqs .faqs #accordion .card .card-header button,
@@ -9133,6 +9414,7 @@ body #not-found h1 {
     float: left;
     width: 100% !important;
     margin: 0 2% 2% 0;
+    font-size: 1rem;
   }
 
   body.section-contact #app > main section#contact-us #map .map ul.locations li:nth-child(1n),
@@ -9162,6 +9444,44 @@ body #not-found h1 {
     clear: left;
   }
 
+  body.section-blog #app > main section#blog .posts .items .item a,
+  body.section-articulos #app > main section#blog .posts .items .item a {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  body.section-blog #app > main section#blog .posts .items .item a .image-wrapper,
+  body.section-articulos #app > main section#blog .posts .items .item a .image-wrapper {
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  body.section-blog #app > main section#blog .posts .items .item a .image-wrapper img,
+  body.section-articulos #app > main section#blog .posts .items .item a .image-wrapper img {
+    height: 250px;
+  }
+
+  body.section-blog #app > main section#blog .posts .items .item a .content-wrapper,
+  body.section-articulos #app > main section#blog .posts .items .item a .content-wrapper {
+    -ms-flex-order: 2;
+    order: 2;
+    padding-bottom: 15px;
+    background: #162c4e;
+  }
+
+  body.section-blog #app > main section#blog .posts .items .item a .content-wrapper h3,
+  body.section-articulos #app > main section#blog .posts .items .item a .content-wrapper h3 {
+    color: #fff;
+  }
+
+  body.section-blog #app > main section#blog .posts .items .item a .meta-wrapper,
+  body.section-articulos #app > main section#blog .posts .items .item a .meta-wrapper {
+    -ms-flex-order: 3;
+    order: 3;
+  }
+
   body.section-blog #app > main section#article .related-articles ul .item,
   body.section-articulos #app > main section#article .related-articles ul .item {
     float: left;
@@ -9177,6 +9497,44 @@ body #not-found h1 {
   body.section-blog #app > main section#article .related-articles ul .item:nth-child(1n + 2),
   body.section-articulos #app > main section#article .related-articles ul .item:nth-child(1n + 2) {
     clear: left;
+  }
+
+  body.section-blog #app > main section#article .related-articles ul .item a,
+  body.section-articulos #app > main section#article .related-articles ul .item a {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  body.section-blog #app > main section#article .related-articles ul .item a .image-wrapper,
+  body.section-articulos #app > main section#article .related-articles ul .item a .image-wrapper {
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  body.section-blog #app > main section#article .related-articles ul .item a .image-wrapper img,
+  body.section-articulos #app > main section#article .related-articles ul .item a .image-wrapper img {
+    height: 250px;
+  }
+
+  body.section-blog #app > main section#article .related-articles ul .item a .content-wrapper,
+  body.section-articulos #app > main section#article .related-articles ul .item a .content-wrapper {
+    -ms-flex-order: 2;
+    order: 2;
+    padding-bottom: 15px;
+    background: #162c4e;
+  }
+
+  body.section-blog #app > main section#article .related-articles ul .item a .content-wrapper h3,
+  body.section-articulos #app > main section#article .related-articles ul .item a .content-wrapper h3 {
+    color: #fff;
+  }
+
+  body.section-blog #app > main section#article .related-articles ul .item a .meta-wrapper,
+  body.section-articulos #app > main section#article .related-articles ul .item a .meta-wrapper {
+    -ms-flex-order: 3;
+    order: 3;
   }
 
   body.section-press #app > main section#press-releases .posts .items .item,
@@ -9233,6 +9591,34 @@ body #not-found h1 {
     padding: 0;
   }
 
+  body.section-careers #app > main section#careers .careers ul li.item,
+  body.section-empleos #app > main section#careers .careers ul li.item {
+    float: left;
+    width: 100% !important;
+    margin: 0 2% 2% 0;
+  }
+
+  body.section-careers #app > main section#careers .careers ul li.item:nth-child(1n),
+  body.section-empleos #app > main section#careers .careers ul li.item:nth-child(1n) {
+    margin-right: 0;
+  }
+
+  body.section-careers #app > main section#careers .careers ul li.item:nth-child(1n + 2),
+  body.section-empleos #app > main section#careers .careers ul li.item:nth-child(1n + 2) {
+    clear: left;
+  }
+
+  body.section-careers #app > main section#careers .careers ul li.item .description,
+  body.section-empleos #app > main section#careers .careers ul li.item .description {
+    width: 100%;
+    text-align: center;
+  }
+
+  body.section-careers #app > main section#careers .careers ul li.item .description h5,
+  body.section-empleos #app > main section#careers .careers ul li.item .description h5 {
+    display: block;
+  }
+
   body.section-careers #app > main section#career .intro,
   body.section-empleos #app > main section#career .intro {
     text-align: center;
@@ -9252,5 +9638,12 @@ body #not-found h1 {
   body.section-terms-of-use #app > main section#intro h1,
   body.section-condiciones-de-uso #app > main section#intro h1 {
     text-align: left;
+  }
+}
+
+@media (max-width: 576px) {
+  body #app > footer .brand-links ul.locations li span {
+    padding: 0 30px;
+    margin-bottom: 15px;
   }
 }
