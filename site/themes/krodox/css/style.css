@@ -2941,6 +2941,7 @@ body #app > nav.apple .nav-wrapper .container .menus .navbar-right .join-now {
   -ms-flex-align: center;
   align-items: center;
   width: 120px;
+  display: none;
 }
 
 body #app > nav.apple .nav-wrapper .container .menus .navbar-right .join-now span,

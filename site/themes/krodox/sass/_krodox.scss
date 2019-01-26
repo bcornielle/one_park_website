@@ -1,4 +1,4 @@
-body {
+body  {
   #app {
     > nav {
       order: 1;
@@ -290,6 +290,7 @@ body {
                   justify-content: flex-end;
                   align-items: center;
                   width: 120px;
+                  display: none;
                   span, i, a {
                     display: inline-block;
                   }
