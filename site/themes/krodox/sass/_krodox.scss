@@ -33,7 +33,7 @@ body {
           background: white;
           &.shown {
             height: 100%;
-            background-color: #000;
+            background-color: $white;
             .burger-container {
               transform: rotate(90deg);
               #burger {
@@ -85,12 +85,28 @@ body {
               a {
                 display: block;
                 position: relative;
-                color: $white;
+                color: $text-color;
                 text-decoration: none;
                 font-size: 22px;
                 line-height: 2.35;
                 font-weight: 200;
                 width: 100%;
+              }
+            }
+            a {
+              &.branding {
+                &.logo {
+                  background-image: url(/assets/img/tree.png);
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  text-indent: -9999px;
+                  height: 48px;
+                  width: 48px;
+                  position: absolute;
+                  top: 15px;
+                  right: 15px;
+                  background-size: contain;
+                }
               }
             }
           }
@@ -269,7 +285,27 @@ body {
                   }
                 }
                 .join-now {
-                  display: none;
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: flex-end;
+                  align-items: center;
+                  width: 120px;
+                  span, i, a {
+                    display: inline-block;
+                  }
+                  a {
+                    span {
+                      &.text {
+                        font-size: .7rem;
+                      }
+                    }
+                    i {
+                      animation: swing 2s ease infinite;
+                      color: $brand-primary;
+                      border: solid 1px $brand-primary;
+                      padding: 3px;
+                    }
+                  }
                 }
               }
             }
@@ -4820,7 +4856,7 @@ body {
               }
             }
             &.shown {
-              background-color: #000;
+              background-color: $white;
               .burger-container {
                 position: absolute;
               }
@@ -4830,7 +4866,7 @@ body {
                 overflow: auto;
                 li {
                   &:not(:last-child){
-                    border-bottom: 1px solid #333;
+                    border-bottom: 1px solid $border-color;
                   }
                   &:last-child {
                     border-bottom: none;
@@ -5551,13 +5587,15 @@ body {
              padding-left: 0;
              .menus {
                .navbar-left {
-                 width: 100px;
+                 width: 40px;
                  display: block;
                  order: 1;
                  a {
                    &.branding {
                      &.logo {
-                       width: 100px;
+                       width: 40px;
+                       background-size: contain;
+                       background-image: url(/assets/img/tree.png);
                      }
                    }
                  }
@@ -5570,9 +5608,10 @@ body {
                  }
                  .join-now {
                    display: flex;
-                   flex-direction: column;
-                   align-items: flex-end;
-                   justify-content: center;
+                   flex-direction: row;
+                   align-items: center;
+                   justify-content: flex-end;
+                   float: right;
                    a {
                      span {
                        &:first-child {
@@ -5590,7 +5629,7 @@ body {
              }
            }
            &.shown {
-             background-color: #000;
+             background-color: $white;
              z-index: 9999 !important;
              height: 100vh;
              .burger-container {
@@ -5601,7 +5640,7 @@ body {
                width: 100%;
                li {
                  &:not(:last-child){
-                   border-bottom: 1px solid #333;
+                   border-bottom: 1px solid $border-color;
                  }
                  &:last-child {
                    border-bottom: none;
@@ -5639,6 +5678,11 @@ body {
                 .menus {
                   .navbar-left {
                     display: none;
+                  }
+                  .navbar-right {
+                    .join-now {
+                      width: 150px;
+                    }
                   }
                 }
               }

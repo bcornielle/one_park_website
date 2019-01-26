@@ -2580,7 +2580,7 @@ body #app > nav.apple .nav-wrapper {
 
 body #app > nav.apple .nav-wrapper.shown {
   height: 100%;
-  background-color: #000;
+  background-color: #fff;
 }
 
 body #app > nav.apple .nav-wrapper.shown .burger-container {
@@ -2693,12 +2693,25 @@ body #app > nav.apple .nav-wrapper .menu li.menu-item:nth-child(7) {
 body #app > nav.apple .nav-wrapper .menu li.menu-item a {
   display: block;
   position: relative;
-  color: #fff;
+  color: #323831;
   text-decoration: none;
   font-size: 22px;
   line-height: 2.35;
   font-weight: 200;
   width: 100%;
+}
+
+body #app > nav.apple .nav-wrapper .menu a.branding.logo {
+  background-image: url(/assets/img/tree.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  height: 48px;
+  width: 48px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-size: contain;
 }
 
 body #app > nav.apple .nav-wrapper .burger-container {
@@ -2919,7 +2932,32 @@ body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom l
 }
 
 body #app > nav.apple .nav-wrapper .container .menus .navbar-right .join-now {
-  display: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 120px;
+}
+
+body #app > nav.apple .nav-wrapper .container .menus .navbar-right .join-now span,
+body #app > nav.apple .nav-wrapper .container .menus .navbar-right .join-now i,
+body #app > nav.apple .nav-wrapper .container .menus .navbar-right .join-now a {
+  display: inline-block;
+}
+
+body #app > nav.apple .nav-wrapper .container .menus .navbar-right .join-now a span.text {
+  font-size: .7rem;
+}
+
+body #app > nav.apple .nav-wrapper .container .menus .navbar-right .join-now a i {
+  animation: swing 2s ease infinite;
+  color: #359c1c;
+  border: solid 1px #359c1c;
+  padding: 3px;
 }
 
 body #app > main {
@@ -8961,7 +8999,7 @@ body #not-found h1 {
   }
 
   body #app > nav.apple .nav-wrapper.shown {
-    background-color: #000;
+    background-color: #fff;
   }
 
   body #app > nav.apple .nav-wrapper.shown .burger-container {
@@ -8975,7 +9013,7 @@ body #not-found h1 {
   }
 
   body #app > nav.apple .nav-wrapper.shown .menu li:not(:last-child) {
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #eeeeee;
   }
 
   body #app > nav.apple .nav-wrapper.shown .menu li:last-child {
@@ -9749,14 +9787,16 @@ body #not-found h1 {
   }
 
   body #app > nav.apple .nav-wrapper .container .menus .navbar-left {
-    width: 100px;
+    width: 40px;
     display: block;
     -ms-flex-order: 1;
     order: 1;
   }
 
   body #app > nav.apple .nav-wrapper .container .menus .navbar-left a.branding.logo {
-    width: 100px;
+    width: 40px;
+    background-size: contain;
+    background-image: url(/assets/img/tree.png);
   }
 
   body #app > nav.apple .nav-wrapper .container .menus .navbar-right {
@@ -9772,12 +9812,13 @@ body #not-found h1 {
   body #app > nav.apple .nav-wrapper .container .menus .navbar-right .join-now {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-align: end;
-    align-items: flex-end;
-    -ms-flex-pack: center;
-    justify-content: center;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    float: right;
   }
 
   body #app > nav.apple .nav-wrapper .container .menus .navbar-right .join-now a span:first-child {
@@ -9791,7 +9832,7 @@ body #not-found h1 {
   }
 
   body #app > nav.apple .nav-wrapper.shown {
-    background-color: #000;
+    background-color: #fff;
     z-index: 9999 !important;
     height: 100vh;
   }
@@ -9806,7 +9847,7 @@ body #not-found h1 {
   }
 
   body #app > nav.apple .nav-wrapper.shown .menu li:not(:last-child) {
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #eeeeee;
   }
 
   body #app > nav.apple .nav-wrapper.shown .menu li:last-child {
@@ -9824,5 +9865,9 @@ body #not-found h1 {
 
   body.section-home #app > nav.apple .nav-wrapper .container .menus .navbar-left {
     display: none;
+  }
+
+  body.section-home #app > nav.apple .nav-wrapper .container .menus .navbar-right .join-now {
+    width: 150px;
   }
 }
