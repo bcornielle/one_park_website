@@ -8813,7 +8813,7 @@ body #not-found h1 {
   }
 }
 
-@media (max-width: 667px) {
+@media (max-width: 736px) {
   body #app > nav.apple {
     height: 65px;
   }
