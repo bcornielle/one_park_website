@@ -4005,9 +4005,6 @@ body {
   }
   &.es {
     #app {
-      > nav {
-
-      }
       > main {
         section {
           &#hero {
@@ -4031,9 +4028,6 @@ body {
             }
           }
         }
-      }
-      > footer {
-
       }
     }
   }
@@ -4656,7 +4650,7 @@ body {
                           margin-right: 15px;
                           text-align: center;
                           a {
-                            font-size: .8rem;
+                            font-size: .7rem;
                           }
                         }
                       }
@@ -5438,6 +5432,21 @@ body {
             &#intro {
               h1 {
                 text-align: left;
+              }
+            }
+          }
+        }
+      }
+    }
+    &.es {
+      #app {
+        > main {
+          section {
+            &#hero {
+              .hero-content {
+                h1 {
+                  font-size: 1.5em;
+                }
               }
             }
           }

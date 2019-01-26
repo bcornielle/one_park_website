@@ -8797,7 +8797,7 @@ body #not-found h1 {
   }
 
   body.es #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li:not(:last-child) a {
-    font-size: .8rem;
+    font-size: .7rem;
   }
 
   body.es #app > main section#highlights ul.highlights {
@@ -9638,6 +9638,10 @@ body #not-found h1 {
   body.section-terms-of-use #app > main section#intro h1,
   body.section-condiciones-de-uso #app > main section#intro h1 {
     text-align: left;
+  }
+
+  body.es #app > main section#hero .hero-content h1 {
+    font-size: 1.5em;
   }
 }
 
