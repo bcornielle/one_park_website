@@ -2919,6 +2919,10 @@ body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom l
   padding-bottom: 5px;
 }
 
+body #app > nav.apple .nav-wrapper .container .menus .navbar-right .join-now {
+  display: none;
+}
+
 body #app > main {
   background: #fff;
   border: none;
@@ -9646,8 +9650,88 @@ body #not-found h1 {
 }
 
 @media (max-width: 576px) {
+  body #app > nav.apple .nav-wrapper .burger-container {
+    display: block;
+    height: 65px;
+  }
+
+  body #app > nav.apple .nav-wrapper .container {
+    padding-left: 0;
+  }
+
+  body #app > nav.apple .nav-wrapper .container .menus .navbar-left {
+    width: 100px;
+    display: block;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  body #app > nav.apple .nav-wrapper .container .menus .navbar-left a.branding.logo {
+    width: 100px;
+  }
+
+  body #app > nav.apple .nav-wrapper .container .menus .navbar-right {
+    -ms-flex-order: 2;
+    order: 2;
+    height: 65px;
+  }
+
+  body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom {
+    display: none;
+  }
+
+  body #app > nav.apple .nav-wrapper .container .menus .navbar-right .join-now {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  body #app > nav.apple .nav-wrapper .container .menus .navbar-right .join-now a span:first-child {
+    font-weight: 900;
+    color: #162c4e;
+    font-size: .8rem;
+  }
+
+  body #app > nav.apple .nav-wrapper .container .menus .navbar-right .join-now a span:last-child {
+    color: #359c1c;
+  }
+
+  body #app > nav.apple .nav-wrapper.shown {
+    background-color: #000;
+  }
+
+  body #app > nav.apple .nav-wrapper.shown .burger-container {
+    position: absolute;
+  }
+
+  body #app > nav.apple .nav-wrapper.shown .menu {
+    padding: 45px;
+    width: 100%;
+  }
+
+  body #app > nav.apple .nav-wrapper.shown .menu li:not(:last-child) {
+    border-bottom: 1px solid #333;
+  }
+
+  body #app > nav.apple .nav-wrapper.shown .menu li:last-child {
+    border-bottom: none;
+  }
+
+  body #app > nav.apple .nav-wrapper.shown .container {
+    display: none;
+  }
+
   body #app > footer .brand-links ul.locations li span {
     padding: 0 30px;
     margin-bottom: 15px;
+  }
+
+  body.section-home #app > nav.apple .nav-wrapper .container .menus .navbar-left {
+    display: none;
   }
 }
