@@ -2560,6 +2560,7 @@ body #app > nav.apple {
   margin: 0;
   overflow: hidden;
   border: none;
+  position: static;
 }
 
 body #app > nav.apple .nav-wrapper {
