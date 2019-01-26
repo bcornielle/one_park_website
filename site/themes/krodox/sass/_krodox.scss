@@ -4099,6 +4099,7 @@ body {
         &.apple {
           .nav-wrapper {
             .container {
+              max-width: 100%;
               .burger-container {
                 display: none;
               }
@@ -4765,6 +4766,7 @@ body {
       }
       > nav {
         &.apple {
+          height: 100vh;
           .nav-wrapper {
             .burger-container {
               display: block;
@@ -4822,6 +4824,7 @@ body {
               .menu {
                 padding: 45px;
                 width: 100%;
+                overflow: auto;
                 li {
                   &:not(:last-child){
                     border-bottom: 1px solid #333;

@@ -8311,6 +8311,10 @@ body #not-found h1 {
 }
 
 @media (max-width: 768px) {
+  body #app > nav.apple .nav-wrapper .container {
+    max-width: 100%;
+  }
+
   body #app > nav.apple .nav-wrapper .container .burger-container {
     display: none;
   }
@@ -8897,6 +8901,10 @@ body #not-found h1 {
     display: none;
   }
 
+  body #app > nav.apple {
+    height: 100vh;
+  }
+
   body #app > nav.apple .nav-wrapper .burger-container {
     display: block;
     height: 65px;
@@ -8961,6 +8969,7 @@ body #not-found h1 {
   body #app > nav.apple .nav-wrapper.shown .menu {
     padding: 45px;
     width: 100%;
+    overflow: auto;
   }
 
   body #app > nav.apple .nav-wrapper.shown .menu li:not(:last-child) {
