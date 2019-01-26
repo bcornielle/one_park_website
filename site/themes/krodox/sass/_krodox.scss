@@ -188,7 +188,12 @@ body {
                         text-decoration: none;
                         border: none;
                         span,i {
-                          display: block;
+                          display: inline-block;
+                        }
+                        span {
+                          &.active {
+                            color: $brand-primary;
+                          }
                         }
                         &.btn {
                           border: solid 1px $text-color;
@@ -196,9 +201,6 @@ body {
                           width: 130px;
                           font-size: 1rem;
                           color: $text-color;
-                          i {
-                            display: none;
-                          }
                         }
                       }
                     }
@@ -1156,7 +1158,7 @@ body {
       > main {
         section {
           &#hero {
-            background-image: url("/assets/img/woman.jpg");
+            background-image: url("/assets/img/home-hero.png");
             .hero-content {
               .branding {
                 &.logo {
@@ -4009,6 +4011,7 @@ body {
       > main {
         section {
           &#hero {
+            background-image: url("/assets/img/home-hero-es.png");
             .hero-content {
               h1 {
                 font-size: 2.5em;

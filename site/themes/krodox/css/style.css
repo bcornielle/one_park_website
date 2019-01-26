@@ -2833,7 +2833,11 @@ body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-top li.l
 
 body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-top li.language a span,
 body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-top li.language a i {
-  display: block;
+  display: inline-block;
+}
+
+body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-top li.language a span.active {
+  color: #359c1c;
 }
 
 body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-top li.language a.btn {
@@ -2842,10 +2846,6 @@ body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-top li.l
   width: 130px;
   font-size: 1rem;
   color: #323831;
-}
-
-body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-top li.language a.btn i {
-  display: none;
 }
 
 body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-top li .btn {
@@ -3994,7 +3994,7 @@ body #app > footer .badget ul.badgets li img {
 }
 
 body.section-home #app > main section#hero {
-  background-image: url("/assets/img/woman.jpg");
+  background-image: url("/assets/img/home-hero.png");
 }
 
 body.section-home #app > main section#hero .hero-content .branding.logo {
@@ -8252,6 +8252,10 @@ body.section-gracias #app > main section#form .form #prequalifed-content img {
 body.section-complete #app > main section#form .form a.btn,
 body.section-gracias #app > main section#form .form a.btn {
   display: inline-block;
+}
+
+body.es #app > main section#hero {
+  background-image: url("/assets/img/home-hero-es.png");
 }
 
 body.es #app > main section#hero .hero-content h1 {
