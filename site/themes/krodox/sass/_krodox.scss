@@ -5510,6 +5510,7 @@ body {
            }
            &.shown {
              background-color: #000;
+             z-index: 9999 !important;
              .burger-container {
                position: absolute;
              }
