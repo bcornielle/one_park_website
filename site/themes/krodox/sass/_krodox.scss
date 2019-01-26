@@ -26,15 +26,13 @@ body {
           height: 120px;
           width: 100%;
           overflow: hidden;
-          transition: all 0.5s ease-out, background 1s ease-out;
+          transition: all 0.5s ease-out, background 0.4s ease-out;
           transition-delay: 0.2s;
           z-index: 2;
           background: white;
           &.shown {
             height: 100%;
-            background-color: $brand-secondary;
-            transition: all 0.3s ease-in, background 0.5s ease-in;
-            transition-delay: 0.25s;
+            background-color: #000;
             .burger-container {
               transform: rotate(90deg);
               #burger {
@@ -4766,7 +4764,10 @@ body {
       }
       > nav {
         &.apple {
-          height: 100vh;
+          &.shown {
+            height: 100vh;
+            overflow: auto;
+          }
           .nav-wrapper {
             .burger-container {
               display: block;
@@ -4816,8 +4817,6 @@ body {
             }
             &.shown {
               background-color: #000;
-              z-index: 9999 !important;
-              height: 100vh;
               .burger-container {
                 position: absolute;
               }

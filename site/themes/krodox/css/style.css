@@ -2571,7 +2571,7 @@ body #app > nav.apple .nav-wrapper {
   height: 120px;
   width: 100%;
   overflow: hidden;
-  transition: all 0.5s ease-out, background 1s ease-out;
+  transition: all 0.5s ease-out, background 0.4s ease-out;
   transition-delay: 0.2s;
   z-index: 2;
   background: white;
@@ -2579,9 +2579,7 @@ body #app > nav.apple .nav-wrapper {
 
 body #app > nav.apple .nav-wrapper.shown {
   height: 100%;
-  background-color: #162c4e;
-  transition: all 0.3s ease-in, background 0.5s ease-in;
-  transition-delay: 0.25s;
+  background-color: #000;
 }
 
 body #app > nav.apple .nav-wrapper.shown .burger-container {
@@ -8901,8 +8899,9 @@ body #not-found h1 {
     display: none;
   }
 
-  body #app > nav.apple {
+  body #app > nav.apple.shown {
     height: 100vh;
+    overflow: auto;
   }
 
   body #app > nav.apple .nav-wrapper .burger-container {
@@ -8958,8 +8957,6 @@ body #not-found h1 {
 
   body #app > nav.apple .nav-wrapper.shown {
     background-color: #000;
-    z-index: 9999 !important;
-    height: 100vh;
   }
 
   body #app > nav.apple .nav-wrapper.shown .burger-container {
