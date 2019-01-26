@@ -4763,6 +4763,81 @@ body {
           }
         }
       }
+      > nav {
+        &.apple {
+          .nav-wrapper {
+            .burger-container {
+              display: block;
+              height: 65px;
+            }
+            .container {
+              padding-left: 0;
+              .menus {
+                .navbar-left {
+                  width: 100px;
+                  display: block;
+                  order: 1;
+                  a {
+                    &.branding {
+                      &.logo {
+                        width: 100px;
+                      }
+                    }
+                  }
+                }
+                .navbar-right {
+                  order: 2;
+                  height: 65px;
+                  .nav-bottom {
+                    display: none;
+                  }
+                  .join-now {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    justify-content: center;
+                    a {
+                      span {
+                        &:first-child {
+                          font-weight: 900;
+                          color: $brand-secondary;
+                          font-size: .8rem;
+                        }
+                        &:last-child {
+                          color: $brand-primary;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            &.shown {
+              background-color: #000;
+              z-index: 9999 !important;
+              height: 100vh;
+              .burger-container {
+                position: absolute;
+              }
+              .menu {
+                padding: 45px;
+                width: 100%;
+                li {
+                  &:not(:last-child){
+                    border-bottom: 1px solid #333;
+                  }
+                  &:last-child {
+                    border-bottom: none;
+                  }
+                }
+              }
+              .container {
+                display: none;
+              }
+            }
+          }
+        }
+      }
       > main {
         section {
           &#highlights {
