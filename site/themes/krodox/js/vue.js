@@ -2,7 +2,7 @@ const app = new Vue({
     el: '#app>nav.menu.apple',
     data: {
         is_busy: false,
-        menu_opened: false,
+        menu_opened: false
     },
     created: function() {
         if (!String.prototype.includes) {
