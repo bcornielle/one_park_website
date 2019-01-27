@@ -7971,7 +7971,7 @@ body.section-feliz #app > main section#form,
 body.section-gracias #app > main section#form {
   background: #f1f6ef;
   margin: 0;
-  padding: 60px 0;
+  padding: 90px 0;
 }
 
 body.section-pre-qualification #app > main section#form h1,
@@ -7980,271 +7980,72 @@ body.section-complete #app > main section#form h1,
 body.section-preaprob #app > main section#form h1,
 body.section-feliz #app > main section#form h1,
 body.section-gracias #app > main section#form h1 {
-  margin: 0 0 60px;
-  text-align: center;
+  margin: 0;
+  text-align: left;
   font-weight: 900;
   font-size: 2.5rem;
-  margin: 0 auto;
+  text-transform: uppercase;
+  padding-left: 15px;
 }
 
-body.section-pre-qualification #app > main section#form .form,
-body.section-congrats #app > main section#form .form,
-body.section-complete #app > main section#form .form,
-body.section-preaprob #app > main section#form .form,
-body.section-feliz #app > main section#form .form,
-body.section-gracias #app > main section#form .form {
+body.section-pre-qualification #app > main section#form .form-wrapper .form,
+body.section-congrats #app > main section#form .form-wrapper .form,
+body.section-complete #app > main section#form .form-wrapper .form,
+body.section-preaprob #app > main section#form .form-wrapper .form,
+body.section-feliz #app > main section#form .form-wrapper .form,
+body.section-gracias #app > main section#form .form-wrapper .form {
   width: 100%;
   min-height: 400px;
   z-index: 1;
-  padding: 60px 0 0;
+  padding: 0;
 }
 
-body.section-pre-qualification #app > main section#form .form input[type=submit],
-body.section-congrats #app > main section#form .form input[type=submit],
-body.section-complete #app > main section#form .form input[type=submit],
-body.section-preaprob #app > main section#form .form input[type=submit],
-body.section-feliz #app > main section#form .form input[type=submit],
-body.section-gracias #app > main section#form .form input[type=submit] {
-  position: relative;
-  text-decoration: none;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border: none;
-  transition: all ease .4s;
-  background-color: #359c1c;
-  border-color: #359c1c;
-  margin-top: 30px;
-  font-weight: 900;
-  color: #fff;
-  text-transform: uppercase;
-  padding: 10px 15px;
-  width: 300px;
-}
-
-body.section-pre-qualification #app > main section#form .form input[type=submit] span,
-body.section-congrats #app > main section#form .form input[type=submit] span,
-body.section-complete #app > main section#form .form input[type=submit] span,
-body.section-preaprob #app > main section#form .form input[type=submit] span,
-body.section-feliz #app > main section#form .form input[type=submit] span,
-body.section-gracias #app > main section#form .form input[type=submit] span {
-  color: #fff;
-  font-size: 1.3em;
-  font-weight: 900;
-}
-
-body.section-pre-qualification #app > main section#form .form input[type=submit]:hover,
-body.section-congrats #app > main section#form .form input[type=submit]:hover,
-body.section-complete #app > main section#form .form input[type=submit]:hover,
-body.section-preaprob #app > main section#form .form input[type=submit]:hover,
-body.section-feliz #app > main section#form .form input[type=submit]:hover,
-body.section-gracias #app > main section#form .form input[type=submit]:hover {
-  background-color: #1f384b;
-}
-
-body.section-pre-qualification #app > main section#form .form input[type=text],
-body.section-pre-qualification #app > main section#form .form input[type=tel],
-body.section-pre-qualification #app > main section#form .form input[type=number],
-body.section-pre-qualification #app > main section#form .form input[type=email],
-body.section-pre-qualification #app > main section#form .form select,
-body.section-congrats #app > main section#form .form input[type=text],
-body.section-congrats #app > main section#form .form input[type=tel],
-body.section-congrats #app > main section#form .form input[type=number],
-body.section-congrats #app > main section#form .form input[type=email],
-body.section-congrats #app > main section#form .form select,
-body.section-complete #app > main section#form .form input[type=text],
-body.section-complete #app > main section#form .form input[type=tel],
-body.section-complete #app > main section#form .form input[type=number],
-body.section-complete #app > main section#form .form input[type=email],
-body.section-complete #app > main section#form .form select,
-body.section-preaprob #app > main section#form .form input[type=text],
-body.section-preaprob #app > main section#form .form input[type=tel],
-body.section-preaprob #app > main section#form .form input[type=number],
-body.section-preaprob #app > main section#form .form input[type=email],
-body.section-preaprob #app > main section#form .form select,
-body.section-feliz #app > main section#form .form input[type=text],
-body.section-feliz #app > main section#form .form input[type=tel],
-body.section-feliz #app > main section#form .form input[type=number],
-body.section-feliz #app > main section#form .form input[type=email],
-body.section-feliz #app > main section#form .form select,
-body.section-gracias #app > main section#form .form input[type=text],
-body.section-gracias #app > main section#form .form input[type=tel],
-body.section-gracias #app > main section#form .form input[type=number],
-body.section-gracias #app > main section#form .form input[type=email],
-body.section-gracias #app > main section#form .form select {
-  margin-bottom: 15px !important;
-  box-shadow: 0 5px 48px rgba(83, 167, 61, 0.1);
-  border: none;
-  transition: ease all .4s;
-  background: #fff;
-  height: 50px;
-  line-height: 1.5;
-  padding-left: 10px;
-}
-
-body.section-pre-qualification #app > main section#form .form fieldset span,
-body.section-congrats #app > main section#form .form fieldset span,
-body.section-complete #app > main section#form .form fieldset span,
-body.section-preaprob #app > main section#form .form fieldset span,
-body.section-feliz #app > main section#form .form fieldset span,
-body.section-gracias #app > main section#form .form fieldset span {
-  font-size: 1rem;
-}
-
-body.section-pre-qualification #app > main section#form .form fieldset select,
-body.section-congrats #app > main section#form .form fieldset select,
-body.section-complete #app > main section#form .form fieldset select,
-body.section-preaprob #app > main section#form .form fieldset select,
-body.section-feliz #app > main section#form .form fieldset select,
-body.section-gracias #app > main section#form .form fieldset select {
-  min-width: 75px;
-  margin-right: 15px;
-}
-
-body.section-pre-qualification #app > main section#form .form #fsCell59894904 #autofill59894904,
-body.section-congrats #app > main section#form .form #fsCell59894904 #autofill59894904,
-body.section-complete #app > main section#form .form #fsCell59894904 #autofill59894904,
-body.section-preaprob #app > main section#form .form #fsCell59894904 #autofill59894904,
-body.section-feliz #app > main section#form .form #fsCell59894904 #autofill59894904,
-body.section-gracias #app > main section#form .form #fsCell59894904 #autofill59894904 {
-  width: 16px;
-  background: #fff;
-}
-
-body.section-pre-qualification #app > main section#form .form #fsCell59894904 #autofill59894904 + label,
-body.section-congrats #app > main section#form .form #fsCell59894904 #autofill59894904 + label,
-body.section-complete #app > main section#form .form #fsCell59894904 #autofill59894904 + label,
-body.section-preaprob #app > main section#form .form #fsCell59894904 #autofill59894904 + label,
-body.section-feliz #app > main section#form .form #fsCell59894904 #autofill59894904 + label,
-body.section-gracias #app > main section#form .form #fsCell59894904 #autofill59894904 + label {
-  font-size: .8rem;
-}
-
-body.section-pre-qualification #app > main section#form .form #fsCell59894904 #field59894904,
-body.section-congrats #app > main section#form .form #fsCell59894904 #field59894904,
-body.section-complete #app > main section#form .form #fsCell59894904 #field59894904,
-body.section-preaprob #app > main section#form .form #fsCell59894904 #field59894904,
-body.section-feliz #app > main section#form .form #fsCell59894904 #field59894904,
-body.section-gracias #app > main section#form .form #fsCell59894904 #field59894904 {
-  margin-bottom: 0 !important;
-  font-size: .7rem;
-}
-
-body.section-pre-qualification #app > main section#form .form #fsCell59894904 #fsSupporting59894904,
-body.section-congrats #app > main section#form .form #fsCell59894904 #fsSupporting59894904,
-body.section-complete #app > main section#form .form #fsCell59894904 #fsSupporting59894904,
-body.section-preaprob #app > main section#form .form #fsCell59894904 #fsSupporting59894904,
-body.section-feliz #app > main section#form .form #fsCell59894904 #fsSupporting59894904,
-body.section-gracias #app > main section#form .form #fsCell59894904 #fsSupporting59894904 {
-  margin-bottom: 15px !important;
-  font-size: .7rem;
-}
-
-body.section-pre-qualification #app > main section#form .form #label59894903,
-body.section-congrats #app > main section#form .form #label59894903,
-body.section-complete #app > main section#form .form #label59894903,
-body.section-preaprob #app > main section#form .form #label59894903,
-body.section-feliz #app > main section#form .form #label59894903,
-body.section-gracias #app > main section#form .form #label59894903 {
-  margin-top: 15px;
-}
-
-body.section-pre-qualification #app > main section#form .form #field59894903-city,
-body.section-pre-qualification #app > main section#form .form #field59894903-state,
-body.section-pre-qualification #app > main section#form .form #field59894903-zip,
-body.section-congrats #app > main section#form .form #field59894903-city,
-body.section-congrats #app > main section#form .form #field59894903-state,
-body.section-congrats #app > main section#form .form #field59894903-zip,
-body.section-complete #app > main section#form .form #field59894903-city,
-body.section-complete #app > main section#form .form #field59894903-state,
-body.section-complete #app > main section#form .form #field59894903-zip,
-body.section-preaprob #app > main section#form .form #field59894903-city,
-body.section-preaprob #app > main section#form .form #field59894903-state,
-body.section-preaprob #app > main section#form .form #field59894903-zip,
-body.section-feliz #app > main section#form .form #field59894903-city,
-body.section-feliz #app > main section#form .form #field59894903-state,
-body.section-feliz #app > main section#form .form #field59894903-zip,
-body.section-gracias #app > main section#form .form #field59894903-city,
-body.section-gracias #app > main section#form .form #field59894903-state,
-body.section-gracias #app > main section#form .form #field59894903-zip {
-  margin-bottom: 0 !important;
-  margin-top: 15px !important;
-}
-
-body.section-pre-qualification #app > main section#form .form .fsSubField.fsFieldState,
-body.section-congrats #app > main section#form .form .fsSubField.fsFieldState,
-body.section-complete #app > main section#form .form .fsSubField.fsFieldState,
-body.section-preaprob #app > main section#form .form .fsSubField.fsFieldState,
-body.section-feliz #app > main section#form .form .fsSubField.fsFieldState,
-body.section-gracias #app > main section#form .form .fsSubField.fsFieldState {
-  margin-left: 15px;
-}
-
-body.section-pre-qualification #app > main section#form .form .fsSubField.fsFieldZip,
-body.section-congrats #app > main section#form .form .fsSubField.fsFieldZip,
-body.section-complete #app > main section#form .form .fsSubField.fsFieldZip,
-body.section-preaprob #app > main section#form .form .fsSubField.fsFieldZip,
-body.section-feliz #app > main section#form .form .fsSubField.fsFieldZip,
-body.section-gracias #app > main section#form .form .fsSubField.fsFieldZip {
-  margin-left: 15px;
-}
-
-body.section-pre-qualification #app > main section#form .form .fsError,
-body.section-congrats #app > main section#form .form .fsError,
-body.section-complete #app > main section#form .form .fsError,
-body.section-preaprob #app > main section#form .form .fsError,
-body.section-feliz #app > main section#form .form .fsError,
-body.section-gracias #app > main section#form .form .fsError {
-  padding: 15px !important;
-  margin-bottom: 30px !important;
-}
-
-body.section-pre-qualification #app > main section#form .form .badgets,
-body.section-congrats #app > main section#form .form .badgets,
-body.section-complete #app > main section#form .form .badgets,
-body.section-preaprob #app > main section#form .form .badgets,
-body.section-feliz #app > main section#form .form .badgets,
-body.section-gracias #app > main section#form .form .badgets {
+body.section-pre-qualification #app > main section#form .form-wrapper .badgets,
+body.section-congrats #app > main section#form .form-wrapper .badgets,
+body.section-complete #app > main section#form .form-wrapper .badgets,
+body.section-preaprob #app > main section#form .form-wrapper .badgets,
+body.section-feliz #app > main section#form .form-wrapper .badgets,
+body.section-gracias #app > main section#form .form-wrapper .badgets {
   display: none;
   width: 300px;
-  margin: 30px auto 0;
+  margin: 0 auto;
 }
 
-body.section-pre-qualification #app > main section#form .form .legal-notice,
-body.section-congrats #app > main section#form .form .legal-notice,
-body.section-complete #app > main section#form .form .legal-notice,
-body.section-preaprob #app > main section#form .form .legal-notice,
-body.section-feliz #app > main section#form .form .legal-notice,
-body.section-gracias #app > main section#form .form .legal-notice {
-  margin-top: 60px;
+body.section-pre-qualification #app > main section#form .form-wrapper .legal-notice,
+body.section-congrats #app > main section#form .form-wrapper .legal-notice,
+body.section-complete #app > main section#form .form-wrapper .legal-notice,
+body.section-preaprob #app > main section#form .form-wrapper .legal-notice,
+body.section-feliz #app > main section#form .form-wrapper .legal-notice,
+body.section-gracias #app > main section#form .form-wrapper .legal-notice {
+  margin: 0;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-pack: center;
   justify-content: center;
+  padding: 0;
 }
 
-body.section-pre-qualification #app > main section#form .form .legal-notice p,
-body.section-congrats #app > main section#form .form .legal-notice p,
-body.section-complete #app > main section#form .form .legal-notice p,
-body.section-preaprob #app > main section#form .form .legal-notice p,
-body.section-feliz #app > main section#form .form .legal-notice p,
-body.section-gracias #app > main section#form .form .legal-notice p {
+body.section-pre-qualification #app > main section#form .form-wrapper .legal-notice p,
+body.section-congrats #app > main section#form .form-wrapper .legal-notice p,
+body.section-complete #app > main section#form .form-wrapper .legal-notice p,
+body.section-preaprob #app > main section#form .form-wrapper .legal-notice p,
+body.section-feliz #app > main section#form .form-wrapper .legal-notice p,
+body.section-gracias #app > main section#form .form-wrapper .legal-notice p {
   color: #5f5e5e;
   line-height: 1.5;
   text-align: left;
+  background: #fff;
+  padding: 30px;
 }
 
-body.section-pre-qualification #app > main section#form .form .legal-notice p a,
-body.section-congrats #app > main section#form .form .legal-notice p a,
-body.section-complete #app > main section#form .form .legal-notice p a,
-body.section-preaprob #app > main section#form .form .legal-notice p a,
-body.section-feliz #app > main section#form .form .legal-notice p a,
-body.section-gracias #app > main section#form .form .legal-notice p a {
+body.section-pre-qualification #app > main section#form .form-wrapper .legal-notice p a,
+body.section-congrats #app > main section#form .form-wrapper .legal-notice p a,
+body.section-complete #app > main section#form .form-wrapper .legal-notice p a,
+body.section-preaprob #app > main section#form .form-wrapper .legal-notice p a,
+body.section-feliz #app > main section#form .form-wrapper .legal-notice p a,
+body.section-gracias #app > main section#form .form-wrapper .legal-notice p a {
   color: #359c1c;
 }
 
@@ -8254,7 +8055,7 @@ body.section-complete #app > main section ul.items,
 body.section-preaprob #app > main section ul.items,
 body.section-feliz #app > main section ul.items,
 body.section-gracias #app > main section ul.items {
-  margin-top: 75px;
+  margin-top: 40px;
   padding: 0 30px;
 }
 
@@ -8373,11 +8174,6 @@ body.section-preaprob #app > main section p,
 body.section-feliz #app > main section p,
 body.section-gracias #app > main section p {
   line-height: 1.5 !important;
-}
-
-body.section-congrats #app > main section#form .form,
-body.section-feliz #app > main section#form .form {
-  text-align: left;
 }
 
 body.section-congrats #app > main section#form .form #prequalifed-content,
@@ -8674,6 +8470,51 @@ body #not-found h1 {
   body.section-how-it-works #app > main section#how-it-works section#products,
   body.section-como-trabaja #app > main section#how-it-works section#products {
     padding: 60px 0;
+  }
+
+  body.section-pre-qualification #app > main section#form .form-wrapper .badgets,
+  body.section-congrats #app > main section#form .form-wrapper .badgets,
+  body.section-complete #app > main section#form .form-wrapper .badgets,
+  body.section-preaprob #app > main section#form .form-wrapper .badgets,
+  body.section-feliz #app > main section#form .form-wrapper .badgets,
+  body.section-gracias #app > main section#form .form-wrapper .badgets {
+    display: block;
+  }
+
+  body.section-pre-qualification #app > main section#form .form-wrapper .legal-notice,
+  body.section-congrats #app > main section#form .form-wrapper .legal-notice,
+  body.section-complete #app > main section#form .form-wrapper .legal-notice,
+  body.section-preaprob #app > main section#form .form-wrapper .legal-notice,
+  body.section-feliz #app > main section#form .form-wrapper .legal-notice,
+  body.section-gracias #app > main section#form .form-wrapper .legal-notice {
+    margin-top: 0;
+  }
+
+  body.section-pre-qualification #app > main section#form .form-wrapper .legal-notice p,
+  body.section-congrats #app > main section#form .form-wrapper .legal-notice p,
+  body.section-complete #app > main section#form .form-wrapper .legal-notice p,
+  body.section-preaprob #app > main section#form .form-wrapper .legal-notice p,
+  body.section-feliz #app > main section#form .form-wrapper .legal-notice p,
+  body.section-gracias #app > main section#form .form-wrapper .legal-notice p {
+    text-align: center;
+  }
+
+  body.section-pre-qualification #app > main section ul.items,
+  body.section-congrats #app > main section ul.items,
+  body.section-complete #app > main section ul.items,
+  body.section-preaprob #app > main section ul.items,
+  body.section-feliz #app > main section ul.items,
+  body.section-gracias #app > main section ul.items {
+    display: none;
+  }
+
+  body.section-pre-qualification #app > main section ul.badgets,
+  body.section-congrats #app > main section ul.badgets,
+  body.section-complete #app > main section ul.badgets,
+  body.section-preaprob #app > main section ul.badgets,
+  body.section-feliz #app > main section ul.badgets,
+  body.section-gracias #app > main section ul.badgets {
+    display: none;
   }
 
   body.es #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li:not(:last-child) {
@@ -9154,30 +8995,30 @@ body #not-found h1 {
     padding: 60px 0 0;
   }
 
-  body.section-pre-qualification #app > main section#form .form .badgets,
-  body.section-congrats #app > main section#form .form .badgets,
-  body.section-complete #app > main section#form .form .badgets,
-  body.section-preaprob #app > main section#form .form .badgets,
-  body.section-feliz #app > main section#form .form .badgets,
-  body.section-gracias #app > main section#form .form .badgets {
+  body.section-pre-qualification #app > main section#form .form-wrapper .badgets,
+  body.section-congrats #app > main section#form .form-wrapper .badgets,
+  body.section-complete #app > main section#form .form-wrapper .badgets,
+  body.section-preaprob #app > main section#form .form-wrapper .badgets,
+  body.section-feliz #app > main section#form .form-wrapper .badgets,
+  body.section-gracias #app > main section#form .form-wrapper .badgets {
     display: block;
   }
 
-  body.section-pre-qualification #app > main section#form .form .legal-notice,
-  body.section-congrats #app > main section#form .form .legal-notice,
-  body.section-complete #app > main section#form .form .legal-notice,
-  body.section-preaprob #app > main section#form .form .legal-notice,
-  body.section-feliz #app > main section#form .form .legal-notice,
-  body.section-gracias #app > main section#form .form .legal-notice {
+  body.section-pre-qualification #app > main section#form .form-wrapper .legal-notice,
+  body.section-congrats #app > main section#form .form-wrapper .legal-notice,
+  body.section-complete #app > main section#form .form-wrapper .legal-notice,
+  body.section-preaprob #app > main section#form .form-wrapper .legal-notice,
+  body.section-feliz #app > main section#form .form-wrapper .legal-notice,
+  body.section-gracias #app > main section#form .form-wrapper .legal-notice {
     margin-top: 0;
   }
 
-  body.section-pre-qualification #app > main section#form .form .legal-notice p,
-  body.section-congrats #app > main section#form .form .legal-notice p,
-  body.section-complete #app > main section#form .form .legal-notice p,
-  body.section-preaprob #app > main section#form .form .legal-notice p,
-  body.section-feliz #app > main section#form .form .legal-notice p,
-  body.section-gracias #app > main section#form .form .legal-notice p {
+  body.section-pre-qualification #app > main section#form .form-wrapper .legal-notice p,
+  body.section-congrats #app > main section#form .form-wrapper .legal-notice p,
+  body.section-complete #app > main section#form .form-wrapper .legal-notice p,
+  body.section-preaprob #app > main section#form .form-wrapper .legal-notice p,
+  body.section-feliz #app > main section#form .form-wrapper .legal-notice p,
+  body.section-gracias #app > main section#form .form-wrapper .legal-notice p {
     text-align: center;
   }
 
@@ -9197,45 +9038,6 @@ body #not-found h1 {
   body.section-feliz #app > main section ul.badgets,
   body.section-gracias #app > main section ul.badgets {
     display: none;
-  }
-
-  body.section-pre-qualification #app > main section ul.badgets li,
-  body.section-congrats #app > main section ul.badgets li,
-  body.section-complete #app > main section ul.badgets li,
-  body.section-preaprob #app > main section ul.badgets li,
-  body.section-feliz #app > main section ul.badgets li,
-  body.section-gracias #app > main section ul.badgets li {
-    float: left;
-    width: 49% !important;
-    margin: 0 2% 2% 0;
-    padding: 30px 15px;
-  }
-
-  body.section-pre-qualification #app > main section ul.badgets li:nth-child(2n),
-  body.section-congrats #app > main section ul.badgets li:nth-child(2n),
-  body.section-complete #app > main section ul.badgets li:nth-child(2n),
-  body.section-preaprob #app > main section ul.badgets li:nth-child(2n),
-  body.section-feliz #app > main section ul.badgets li:nth-child(2n),
-  body.section-gracias #app > main section ul.badgets li:nth-child(2n) {
-    margin-right: 0;
-  }
-
-  body.section-pre-qualification #app > main section ul.badgets li:nth-child(2n + 3),
-  body.section-congrats #app > main section ul.badgets li:nth-child(2n + 3),
-  body.section-complete #app > main section ul.badgets li:nth-child(2n + 3),
-  body.section-preaprob #app > main section ul.badgets li:nth-child(2n + 3),
-  body.section-feliz #app > main section ul.badgets li:nth-child(2n + 3),
-  body.section-gracias #app > main section ul.badgets li:nth-child(2n + 3) {
-    clear: left;
-  }
-
-  body.section-pre-qualification #app > main section ul.badgets li img,
-  body.section-congrats #app > main section ul.badgets li img,
-  body.section-complete #app > main section ul.badgets li img,
-  body.section-preaprob #app > main section ul.badgets li img,
-  body.section-feliz #app > main section ul.badgets li img,
-  body.section-gracias #app > main section ul.badgets li img {
-    max-width: 100%;
   }
 
   body.es #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li:not(:last-child) {
@@ -10169,6 +9971,51 @@ body #not-found h1 {
     text-align: left;
   }
 
+  body.section-pre-qualification #app > main section#form .form-wrapper .badgets,
+  body.section-congrats #app > main section#form .form-wrapper .badgets,
+  body.section-complete #app > main section#form .form-wrapper .badgets,
+  body.section-preaprob #app > main section#form .form-wrapper .badgets,
+  body.section-feliz #app > main section#form .form-wrapper .badgets,
+  body.section-gracias #app > main section#form .form-wrapper .badgets {
+    display: block;
+  }
+
+  body.section-pre-qualification #app > main section#form .form-wrapper .legal-notice,
+  body.section-congrats #app > main section#form .form-wrapper .legal-notice,
+  body.section-complete #app > main section#form .form-wrapper .legal-notice,
+  body.section-preaprob #app > main section#form .form-wrapper .legal-notice,
+  body.section-feliz #app > main section#form .form-wrapper .legal-notice,
+  body.section-gracias #app > main section#form .form-wrapper .legal-notice {
+    margin-top: 0;
+  }
+
+  body.section-pre-qualification #app > main section#form .form-wrapper .legal-notice p,
+  body.section-congrats #app > main section#form .form-wrapper .legal-notice p,
+  body.section-complete #app > main section#form .form-wrapper .legal-notice p,
+  body.section-preaprob #app > main section#form .form-wrapper .legal-notice p,
+  body.section-feliz #app > main section#form .form-wrapper .legal-notice p,
+  body.section-gracias #app > main section#form .form-wrapper .legal-notice p {
+    text-align: center;
+  }
+
+  body.section-pre-qualification #app > main section ul.items,
+  body.section-congrats #app > main section ul.items,
+  body.section-complete #app > main section ul.items,
+  body.section-preaprob #app > main section ul.items,
+  body.section-feliz #app > main section ul.items,
+  body.section-gracias #app > main section ul.items {
+    display: none;
+  }
+
+  body.section-pre-qualification #app > main section ul.badgets,
+  body.section-congrats #app > main section ul.badgets,
+  body.section-complete #app > main section ul.badgets,
+  body.section-preaprob #app > main section ul.badgets,
+  body.section-feliz #app > main section ul.badgets,
+  body.section-gracias #app > main section ul.badgets {
+    display: none;
+  }
+
   body.es #app > main section#hero .hero-content h1 {
     font-size: 1.5em;
   }
@@ -10271,5 +10118,24 @@ body #not-found h1 {
 
   body.section-home #app > nav.apple .nav-wrapper .container .menus .navbar-right .join-now {
     width: 150px;
+  }
+
+  body.section-pre-qualification #app > main section#form,
+  body.section-congrats #app > main section#form,
+  body.section-complete #app > main section#form,
+  body.section-preaprob #app > main section#form,
+  body.section-feliz #app > main section#form,
+  body.section-gracias #app > main section#form {
+    padding: 30px 0;
+    background: #fff;
+  }
+
+  body.section-pre-qualification #app > main section#form h1,
+  body.section-congrats #app > main section#form h1,
+  body.section-complete #app > main section#form h1,
+  body.section-preaprob #app > main section#form h1,
+  body.section-feliz #app > main section#form h1,
+  body.section-gracias #app > main section#form h1 {
+    font-size: 1.5rem;
   }
 }
