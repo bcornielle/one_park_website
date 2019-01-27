@@ -1,0 +1,10 @@
+{{ collection from="blog" as="posts" limit="3" sort="random"}}
+{{ unless no_results }}
+<h4>Related Articles</h4>
+<ul>
+    {{ posts scope="tag" }}
+    {{ partial:blog/block }}
+    {{ /posts }}
+</ul>
+{{ /unless }}
+{{ /collection }}

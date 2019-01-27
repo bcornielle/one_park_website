@@ -1,0 +1,10 @@
+{{ collection from="blog" as="posts" limit="5" sort="random" }}
+{{ unless no_results }}
+    <h4>Popular Articles</h4>
+    <ul>
+        {{ posts scope="tag" }}
+        {{ partial:blog/blockless }}
+        {{ /posts }}
+    </ul>
+{{ /unless }}
+{{ /collection }}

@@ -9,8 +9,8 @@ class LogbookController extends Controller
 {
     public function index()
     {
-        if (! auth()->check()) {
-            return redirect('/');
+        if (! $this->isSuper()) {
+            return redirect('/cp');
         }
 
         $logviewer = new LaravelLogViewer;
@@ -38,6 +38,7 @@ class LogbookController extends Controller
         }
 
         $data = [
+            'title' => 'Logbook',
             'logs' => $logviewer->all(),
             'files' => $logviewer->getFiles(true),
             'current_file' => $logviewer->getFileName(),
@@ -45,5 +46,9 @@ class LogbookController extends Controller
         ];
 
         return $this->view('index', $data);
+    }
+
+    private function isSuper() {
+        return ($user = auth()->user()) && $user->isSuper();
     }
 }

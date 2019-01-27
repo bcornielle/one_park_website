@@ -1,0 +1,22 @@
+<main>
+    <section id="career">
+        <div class="career">
+            <div class="container">
+                <div class="intro">
+                    <h1>{{ title }}</h1>
+                </div>
+                <div class="content">
+                    <ul class="breadcrumbs">
+                        {{ nav:breadcrumbs }}
+                        <li{{ if is_current }} class="current"{{ /if }}>
+                        <a href="{{ url }}">{{ title }}</a>
+                        </li>
+                        {{ /nav:breadcrumbs }}
+                    </ul>
+                    {{ description | markdown}}
+                </div>
+                {{ partial:careers/form }}
+            </div>
+        </div>
+    </section>
+</main>

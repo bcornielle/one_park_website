@@ -3,7 +3,6 @@
 namespace Statamic\Addons\Logbook;
 
 use Statamic\API\Nav;
-use Statamic\API\Config;
 use Statamic\Extend\Listener;
 
 class LogbookListener extends Listener
@@ -15,18 +14,24 @@ class LogbookListener extends Listener
 
     public function addToHead()
     {
-        $html = $this->js->tag('logbook');
-        $html .= $this->css->tag('logbook');
-        
-        return $html;
+        if ($this->isSuper()) {
+            $html = $this->js->tag('logbook');
+            $html .= $this->css->tag('logbook');
+
+            return $html;
+        }
     }
 
     public function addNavItem($nav)
     {
-        if (! $this->getConfig('hide_nav', false)) {
+        if ($this->isSuper() && ! $this->getConfig('hide_nav', false)) {
             $item = Nav::item('Logbook')->route('logs')->icon('book');
 
             $nav->addTo('tools', $item);
         }
+    }
+
+    private function isSuper() {
+        return ($user = auth()->user()) && $user->isSuper();
     }
 }

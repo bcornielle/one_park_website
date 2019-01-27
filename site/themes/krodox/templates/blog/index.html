@@ -1,0 +1,19 @@
+<main>
+    <div class="container">
+        <section id="blog">
+            <div class="intro">
+                <h1>{{ title }}</h1>
+            </div>
+            <div class="posts">
+               {{ collection:blog paginate="true" as="posts" limit="9" locale="only {locale}" }}
+               <ul class="items">
+                  {{ posts scope="tag" }}
+                  {{ partial:blog/block }}
+                  {{ /posts }}
+               </ul>
+               {{ partial:modules/pagination }}
+               {{ /collection:blog }}
+            </div>
+        </section>
+    </div>
+</main>

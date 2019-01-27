@@ -1,0 +1,97 @@
+<nav class="menu apple" v-bind:class="{'shown':menu_opened}">
+    <div class="nav-wrapper" v-bind:class="{'shown':menu_opened}">
+        <div class="menu">
+            <a href="/es" class="branding logo">One Park Financial</a>
+            <ul>
+                <li class="menu-item"><a href="/es">Página de Inicio</a></li>
+                <li class="menu-item"><a href="/es/como-trabaja">Cómo Funciona</a></li>
+                <li class="menu-item"><a href="/es/sobre-nosotros">Sobre nosotros</a></li>
+                <li class="menu-item"><a href="/es/contactenos">Contáctenos</a></li>
+                <li class="menu-item"><a href="/es/articulos">Blog</a></li>
+                <li class="menu-item"><a href="/es/preguntas-comunes">FAQs</a></li>
+            </ul>
+            <div class="cta-menu">
+                <a href="/es/preaprob" class="btn btn-primary"><span>Obtenga fondos ahora</span></a>
+            </div>
+        </div>
+        <div class="burger-container" v-on:click="toggle_menu">
+            <div id="burger">
+                <div class="bar topBar"></div>
+                <div class="bar btmBar"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="menus">
+                <div class="navbar-left">
+                    <a href="/es" class="branding logo">One Park Financial</a>
+                </div>
+                <div class="navbar-right">
+                    <ul class="nav-top">
+                        <li class="phone">
+                            <span class="questions">Preguntas?</span>
+                            <span class="text">Llámenos.</span>
+                            <a href="tel:+18883271044" data-ctm-watch-id="3" data-ctm-tracked="1">
+                                <span class="number">1-888-327-1044</span>
+                            </a>
+                        </li>
+                        <li class="language">
+                            <a href="/{{ en_url }}" class="btn">
+                                <i class="fas fa-globe"></i>
+                                <span>EN</span>
+                                <span>|</span>
+                                <span class="active">ES</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav-bottom">
+                        {{ if current_uri == "/como-trabaja" }}
+                        <li class="how-it-works active">
+                        {{ else }}
+                        <li class="how-it-works">
+                        {{ /if }}
+                            <a href="/es/como-trabaja">
+                                CÓMO FUNCIONA
+                            </a>
+                        </li>
+                        {{ if current_uri == "/sobre-nosotros" }}
+                        <li class="about-us active">
+                        {{ else }}
+                        <li class="about-us">
+                        {{ /if }}
+                            <a href="/es/sobre-nosotros">
+                                Sobre Nosotros
+                            </a>
+                        </li>
+                        {{ if current_uri == "/preguntas-comunes" }}
+                        <li class="faqs active">
+                        {{ else }}
+                        <li class="faqs">
+                        {{ /if }}
+                            <a href="/es/preguntas-comunes">
+                                FAQS
+                            </a>
+                        </li>
+                        <li class="contact-us">
+                            <a href="/es/preaprob" class="btn btn-primary">
+                                Aplique Ahora
+                            </a>
+                        </li>
+                        {{ if logged_in }}
+                        <li>
+                            <a href="{{ user:logout_url }}">Log out</a>
+                        </li>
+                        {{ /if }}
+                    </ul>
+                    <div class="join-now">
+                        <a class="link" href="/es/preaprob">
+                            <span class="text">Obtenga Fondos:</span>
+                        </a>
+                        <a class="btn" href="tel:+18883277846" data-ctm-watch-id="3" data-ctm-tracked="1" data-ctm-remark="1">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

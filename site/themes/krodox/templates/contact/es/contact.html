@@ -1,0 +1,99 @@
+<main>
+    <section id="contact-us">
+        <div class="container">
+            <div class="intro" style="display: none">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1>¡Ponte en contacto con un agente hoy!</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-lg-6">
+                        <div class="description">
+                            <p>En One Park Financial, entendemos que solicitar un préstamo bancario puede ser un proceso largo y prolongado para el cual muchas pequeñas y medianas empresas no calificarán. Somos expertos en asociar negocios con los proveedores de fondos adecuados, y desde 2010, hemos estado haciendo una diferencia en las vidas de los dueños de negocios en todo el país.</p>
+                            <p>Al trabajar con una gran red de financiadores (más de 20), podemos ofrecer una amplia variedad de opciones flexibles de financiamiento y financiamiento sin todas las molestias, obstáculos y juegos asociados con el financiamiento bancario tradicional.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-6">
+                        <div class="image-wrapper">
+                            <div class="iframe-wrapper">
+                                <img src="/assets/img/contact.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="form">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>Contáctenos</h2>
+                        <div class="form">
+                            {{ content }}
+                            {{ form:create in="contact" }}
+                            {{ if errors }}
+                            <div class="alert alert-danger">
+                                {{ errors }}
+                                {{ value }}<br>
+                                {{ /errors }}
+                            </div>
+                            {{ /if }}
+                            {{ if success }}
+                            <div class="alert alert-success">
+                                El formulario fue enviado con éxito.
+                            </div>
+                            {{ /if }}
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <input type="text" name="firstname" value="{{ old:firstname }}" class="form-control" placeholder="Primer Nombre"/>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="text" name="lastname" value="{{ old:lastname }}" class="form-control" placeholder="Apellido"/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="business_name" value="{{ old:business_name }}" class="form-control" placeholder="Nombre del Negocio"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="number" name="phone" value="{{ old:phone }}" class="form-control" placeholder="Teléfono"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" value="{{ old:email }}" class="form-control" placeholder="Correo Electronico"/>
+                            </div>
+                            <button class="btn btn-primary">Gracias</button>
+                            {{ /form:create }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="map">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="map">
+                            <ul class="locations">
+                                <li class="active">
+                                    <div>Localización de la oficina (HQ)</div>
+                                    <div>3390 Mary Street Suite 305 <span>Coconut Grove, FL 33133</span></div>
+                                </li>
+                                <li>
+                                    <div>Localización de la oficina</div>
+                                    <div>1321 Upland Drive #1690 <span>Houston, TX 77043</span></div>
+                                </li>
+                                <li>
+                                    <div>Contáctenos</div>
+                                    <div>1-800-327-1040 <span>info@oneparkfinancial.com</span></div>
+                                </li>
+                            </ul>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3594.2676822836884!2d-80.24224898497972!3d25.728659983651802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b7cefb237851%3A0x4431b2cfdad97c45!2s3390+Mary+St+%23305%2C+Coconut+Grove%2C+FL+33133!5e0!3m2!1sen!2sus!4v1548083441238" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{ partial:modules/es/testimonials }}
+    {{ partial:modules/es/lp-form }}
+</main>

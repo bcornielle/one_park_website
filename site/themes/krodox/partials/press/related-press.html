@@ -1,0 +1,10 @@
+{{ collection from="press" as="posts" limit="3" sort="random" }}
+{{ unless no_results }}
+<h4>Related Press</h4>
+<ul>
+    {{ posts scope="tag" }}
+    {{ partial:press/block }}
+    {{ /posts }}
+</ul>
+{{ /unless }}
+{{ /collection }}
