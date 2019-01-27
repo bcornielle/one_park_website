@@ -2701,6 +2701,10 @@ body #app > nav.apple .nav-wrapper .menu li.menu-item a {
   width: 100%;
 }
 
+body #app > nav.apple .nav-wrapper .menu li.menu-item:last-child {
+  border-bottom: none;
+}
+
 body #app > nav.apple .nav-wrapper .menu a.branding.logo {
   background-image: url(/assets/img/tree.png);
   background-position: center;
@@ -3332,11 +3336,11 @@ body #app > main section#features .tabs .tab-headings nav .nav-tabs a span {
 
 body #app > main section#features .tabs .tab-headings nav .nav-tabs a.active i {
   background: #162c4e;
-  color: #359c1c;
+  color: #c5e2bd;
 }
 
 body #app > main section#features .tabs .tab-headings nav .nav-tabs a.active span {
-  color: #359c1c;
+  color: #c5e2bd;
 }
 
 body #app > main section#features .tabs .tab-headings nav .nav-tabs a:hover {
@@ -4223,7 +4227,7 @@ body.section-como-trabaja #app > main section#how-it-works .advantages ul.items 
 body.section-como-trabaja #app > main section#how-it-works .advantages ul.items li div.left i {
   display: block;
   text-transform: uppercase;
-  color: #359c1c;
+  color: #c5e2bd;
   font-weight: 900;
   width: 75px;
 }
@@ -4376,6 +4380,7 @@ body.section-como-trabaja #app > main section#how-it-works .process .item {
   height: 300px;
   text-align: center;
   transition: all ease .4s;
+  position: relative;
 }
 
 body.section-how-it-works #app > main section#how-it-works .process .item .number,
@@ -4405,7 +4410,7 @@ body.section-como-trabaja #app > main section#how-it-works .process .item i {
 
 body.section-how-it-works #app > main section#how-it-works .process .item .title,
 body.section-como-trabaja #app > main section#how-it-works .process .item .title {
-  color: #359c1c;
+  color: #c5e2bd;
   text-transform: uppercase;
   font-weight: 900;
   margin-top: 15px;
@@ -4422,6 +4427,75 @@ body.section-how-it-works #app > main section#how-it-works .process .item:hover,
 body.section-como-trabaja #app > main section#how-it-works .process .item:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 16px -4px rgba(83, 167, 61, 0.3);
+}
+
+body.section-how-it-works #app > main section#how-it-works .process .circles,
+body.section-como-trabaja #app > main section#how-it-works .process .circles {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+body.section-how-it-works #app > main section#how-it-works .process .circle,
+body.section-how-it-works #app > main section#how-it-works .process p,
+body.section-como-trabaja #app > main section#how-it-works .process .circle,
+body.section-como-trabaja #app > main section#how-it-works .process p {
+  width: calc(100% / 3);
+  padding: 0 15px;
+}
+
+body.section-how-it-works #app > main section#how-it-works .process .circle1,
+body.section-como-trabaja #app > main section#how-it-works .process .circle1 {
+  margin-bottom: 2em;
+}
+
+body.section-how-it-works #app > main section#how-it-works .process .circle3,
+body.section-como-trabaja #app > main section#how-it-works .process .circle3 {
+  margin-top: 2em;
+}
+
+body.section-how-it-works #app > main section#how-it-works .process .circle1,
+body.section-how-it-works #app > main section#how-it-works .process .circle3,
+body.section-como-trabaja #app > main section#how-it-works .process .circle1,
+body.section-como-trabaja #app > main section#how-it-works .process .circle3 {
+  width: 100%;
+  text-align: center;
+}
+
+body.section-how-it-works #app > main section#how-it-works .process .circle1,
+body.section-como-trabaja #app > main section#how-it-works .process .circle1 {
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+body.section-how-it-works #app > main section#how-it-works .process .circle2,
+body.section-como-trabaja #app > main section#how-it-works .process .circle2 {
+  -ms-flex-order: 4;
+  order: 4;
+}
+
+body.section-how-it-works #app > main section#how-it-works .process .circle3,
+body.section-como-trabaja #app > main section#how-it-works .process .circle3 {
+  -ms-flex-order: 5;
+  order: 5;
+}
+
+body.section-how-it-works #app > main section#how-it-works .process .circle4,
+body.section-como-trabaja #app > main section#how-it-works .process .circle4 {
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+body.section-how-it-works #app > main section#how-it-works .process p,
+body.section-como-trabaja #app > main section#how-it-works .process p {
+  -ms-flex-order: 3;
+  order: 3;
+  padding: 0;
 }
 
 body.section-how-it-works #app > main section#how-it-works .advantages,
@@ -4501,7 +4575,7 @@ body.section-como-trabaja #app > main section#how-it-works .advantages ol li:bef
   top: 50%;
   margin-top: -2em;
   background: #162c4e;
-  color: #359c1c;
+  color: #c5e2bd;
   height: 4em;
   width: 4em;
   line-height: 2em;
@@ -4668,7 +4742,7 @@ body.section-sobre-nosotros #app > main section#about-us .why ul.items li div.le
 body.section-sobre-nosotros #app > main section#about-us .why ul.items li div.left i {
   display: block;
   text-transform: uppercase;
-  color: #359c1c;
+  color: #c5e2bd;
   font-weight: 900;
   width: 75px;
 }
@@ -8514,6 +8588,52 @@ body #not-found h1 {
   body.section-como-trabaja #app > main section#how-it-works .requirements .description {
     margin-top: 30px;
     text-align: center;
+  }
+
+  body.section-how-it-works #app > main section#how-it-works .process .circles,
+  body.section-como-trabaja #app > main section#how-it-works .process .circles {
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  body.section-how-it-works #app > main section#how-it-works .process .circle1,
+  body.section-como-trabaja #app > main section#how-it-works .process .circle1 {
+    -ms-flex-order: 1;
+    order: 1;
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  body.section-how-it-works #app > main section#how-it-works .process .circle2,
+  body.section-como-trabaja #app > main section#how-it-works .process .circle2 {
+    -ms-flex-order: 2;
+    order: 2;
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  body.section-how-it-works #app > main section#how-it-works .process .circle3,
+  body.section-como-trabaja #app > main section#how-it-works .process .circle3 {
+    -ms-flex-order: 3;
+    order: 3;
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  body.section-how-it-works #app > main section#how-it-works .process .circle4,
+  body.section-como-trabaja #app > main section#how-it-works .process .circle4 {
+    -ms-flex-order: 4;
+    order: 4;
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  body.section-how-it-works #app > main section#how-it-works .process p,
+  body.section-como-trabaja #app > main section#how-it-works .process p {
+    -ms-flex-order: 5;
+    order: 5;
+    width: 100%;
+    padding: 15px 0;
   }
 
   body.section-how-it-works #app > main section#how-it-works .advantages ol,

@@ -1,4 +1,4 @@
-body  {
+body {
   #app {
     > nav {
       order: 1;
@@ -91,6 +91,9 @@ body  {
                 line-height: 2.35;
                 font-weight: 200;
                 width: 100%;
+              }
+              &:last-child {
+                border-bottom: none;
               }
             }
             a {
@@ -587,10 +590,10 @@ body  {
                     &.active {
                       i {
                         background: $brand-secondary;
-                        color: $brand-primary;
+                        color: $text-green-light;
                       }
                       span {
-                        color: $brand-primary;
+                        color: $text-green-light;
                       }
                     }
                     &:hover {
@@ -1296,7 +1299,7 @@ body  {
                         span, i {
                           display: block;
                           text-transform: uppercase;
-                          color: $brand-primary;
+                          color: $text-green-light;
                           font-weight: 900;
                           width: 75px;
                         }
@@ -1381,6 +1384,7 @@ body  {
                 height: 300px;
                 text-align: center;
                 transition:  all ease .4s;
+                position: relative;
                 .number {
                   position: absolute;
                   top: -15px;
@@ -1400,7 +1404,7 @@ body  {
                   z-index: 0;
                 }
                 .title {
-                  color: $brand-primary;
+                  color: $text-green-light;
                   text-transform: uppercase;
                   font-weight: 900;
                   margin-top: 15px;
@@ -1414,6 +1418,42 @@ body  {
                   transform: translateY(-2px);
                   box-shadow: 0 8px 16px -4px rgba(83, 167, 61, 0.3);
                 }
+              }
+              .circles {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+              }
+              .circle, p {
+                width: calc(100% / 3);
+                padding: 0 15px;
+              }
+              .circle1 {
+                margin-bottom: 2em;
+              }
+              .circle3 {
+                margin-top: 2em;
+              }
+              .circle1, .circle3 {
+                width: 100%;
+                text-align: center;
+              }
+              .circle1 {
+                order: 1;
+              }
+              .circle2 {
+                order: 4;
+              }
+              .circle3 {
+                order: 5;
+              }
+              .circle4 {
+                order: 2;
+              }
+              p {
+                order: 3;
+                padding: 0;
               }
             }
             .advantages {
@@ -1461,7 +1501,7 @@ body  {
                     top: 50%;
                     margin-top: -2em;
                     background: $brand-secondary;
-                    color: $brand-primary;
+                    color: $text-green-light;
                     height: 4em;
                     width: 4em;
                     line-height: 2em;
@@ -1566,7 +1606,7 @@ body  {
                         span, i {
                           display: block;
                           text-transform: uppercase;
-                          color: $brand-primary;
+                          color: $text-green-light;
                           font-weight: 900;
                           width: 75px;
                         }
@@ -4381,6 +4421,36 @@ body  {
                 .description {
                   margin-top: 30px;
                   text-align: center;
+                }
+              }
+              .process {
+                .circles {
+                 flex-direction: column;
+                }
+                .circle1 {
+                  order: 1;
+                  width: 100%;
+                  padding: 15px 0;
+                }
+                .circle2 {
+                  order: 2;
+                  width: 100%;
+                  padding: 15px 0;
+                }
+                .circle3 {
+                  order: 3;
+                  width: 100%;
+                  padding: 15px 0;
+                }
+                .circle4 {
+                  order: 4;
+                  width: 100%;
+                  padding: 15px 0;
+                }
+                p {
+                  order: 5;
+                  width: 100%;
+                  padding: 15px 0;
                 }
               }
               .advantages {

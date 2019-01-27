@@ -1,13 +1,13 @@
 <nav class="menu apple" v-bind:class="{'shown':menu_opened}">
     <div class="nav-wrapper" v-bind:class="{'shown':menu_opened}">
         <ul class="menu">
+            <a href="/" class="branding logo">One Park Financial</a>
             <li class="menu-item"><a href="/">Home</a></li>
             <li class="menu-item"><a href="/how-it-works">How it works</a></li>
             <li class="menu-item"><a href="/about-us">About Us</a></li>
             <li class="menu-item"><a href="/faq">FAQs</a></li>
             <li class="menu-item"><a href="/contact">Contact Us</a></li>
             <li class="menu-item"><a href="/blog">Blog</a></li>
-            <a href="/" class="branding logo">One Park Financial</a>
         </ul>
         <div class="burger-container" v-on:click="toggle_menu">
             <div id="burger">
