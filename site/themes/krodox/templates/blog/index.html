@@ -2,8 +2,7 @@
     <div class="container">
         <section id="blog">
             <div class="intro">
-                <h1>Daily articles right in your face</h1>
-                <h2>{{ title }}</h2>
+                <h1>{{ title }}</h1>
             </div>
             <div class="posts">
                {{ collection:blog paginate="true" as="posts" limit="9" locale="only {locale}" }}

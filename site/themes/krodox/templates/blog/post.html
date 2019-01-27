@@ -52,11 +52,19 @@
                 <div class="col-lg-3">
                     <div class="sidebar">
                         <div class="widget get-funded">
-                            <h4>Get Funded</h4>
-                            <div class="description">
-                                <h5>Ready to take your business to the next level?</h5>
-                                <a href="/pre-qualification" class="btn">Apply Now</a>
-                            </div>
+                            {{ if locale === 'en' }}
+                                <h4>Get Funded</h4>
+                                <div class="description">
+                                    <h5>Ready to take your business to the next level?</h5>
+                                    <a href="/pre-qualification" class="btn">Apply Now</a>
+                                </div>
+                            {{ else }}
+                                <h4>Obtenga Fondos</h4>
+                                <div class="description">
+                                    <h5>¿Listo para llevar su negocio al siguiente nivel?</h5>
+                                    <a href="/es/preaprob" class="btn">Aplique Ahora</a>
+                                </div>
+                            {{ /if }}
                         </div>
                         <div class="popular-articles">
                             {{ partial:blog/popular-articles }}
