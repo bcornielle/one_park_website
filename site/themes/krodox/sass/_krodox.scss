@@ -333,6 +333,16 @@ body {
                       border: solid 1px $brand-primary;
                       padding: 3px;
                     }
+                    &.btn {
+                      padding: 0 0 0 5px;
+                    }
+                    &.link {
+                      span {
+                        &:last-child {
+                          color: $brand-secondary;
+                        }
+                      }
+                    }
                   }
                 }
               }

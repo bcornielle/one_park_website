@@ -2991,6 +2991,14 @@ body #app > nav.apple .nav-wrapper .container .menus .navbar-right .join-now a i
   padding: 3px;
 }
 
+body #app > nav.apple .nav-wrapper .container .menus .navbar-right .join-now a.btn {
+  padding: 0 0 0 5px;
+}
+
+body #app > nav.apple .nav-wrapper .container .menus .navbar-right .join-now a.link span:last-child {
+  color: #162c4e;
+}
+
 body #app > main {
   background: #fff;
   border: none;
