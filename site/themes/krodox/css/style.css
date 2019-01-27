@@ -8075,12 +8075,14 @@ body.section-gracias #app > main section#form .form input[type=tel],
 body.section-gracias #app > main section#form .form input[type=number],
 body.section-gracias #app > main section#form .form input[type=email],
 body.section-gracias #app > main section#form .form select {
-  padding: 10px !important;
   margin-bottom: 15px !important;
   box-shadow: 0 5px 48px rgba(83, 167, 61, 0.1);
   border: none;
   transition: ease all .4s;
   background: #fff;
+  height: 50px;
+  line-height: 1.5;
+  padding-left: 10px;
 }
 
 body.section-pre-qualification #app > main section#form .form fieldset span,
@@ -8170,6 +8172,34 @@ body.section-gracias #app > main section#form .form #field59894903-state,
 body.section-gracias #app > main section#form .form #field59894903-zip {
   margin-bottom: 0 !important;
   margin-top: 15px !important;
+}
+
+body.section-pre-qualification #app > main section#form .form .fsSubField.fsFieldState,
+body.section-congrats #app > main section#form .form .fsSubField.fsFieldState,
+body.section-complete #app > main section#form .form .fsSubField.fsFieldState,
+body.section-preaprob #app > main section#form .form .fsSubField.fsFieldState,
+body.section-feliz #app > main section#form .form .fsSubField.fsFieldState,
+body.section-gracias #app > main section#form .form .fsSubField.fsFieldState {
+  margin-left: 15px;
+}
+
+body.section-pre-qualification #app > main section#form .form .fsSubField.fsFieldZip,
+body.section-congrats #app > main section#form .form .fsSubField.fsFieldZip,
+body.section-complete #app > main section#form .form .fsSubField.fsFieldZip,
+body.section-preaprob #app > main section#form .form .fsSubField.fsFieldZip,
+body.section-feliz #app > main section#form .form .fsSubField.fsFieldZip,
+body.section-gracias #app > main section#form .form .fsSubField.fsFieldZip {
+  margin-left: 15px;
+}
+
+body.section-pre-qualification #app > main section#form .form .fsError,
+body.section-congrats #app > main section#form .form .fsError,
+body.section-complete #app > main section#form .form .fsError,
+body.section-preaprob #app > main section#form .form .fsError,
+body.section-feliz #app > main section#form .form .fsError,
+body.section-gracias #app > main section#form .form .fsError {
+  padding: 15px !important;
+  margin-bottom: 30px !important;
 }
 
 body.section-pre-qualification #app > main section#form .form .badgets,
@@ -8336,14 +8366,18 @@ body.section-gracias #app > main section ul.badgets li img {
   max-width: 100%;
 }
 
-body.section-congrats #app > main section#hero.ok,
-body.section-feliz #app > main section#hero.ok {
-  background: #359c1c;
+body.section-pre-qualification #app > main section p,
+body.section-congrats #app > main section p,
+body.section-complete #app > main section p,
+body.section-preaprob #app > main section p,
+body.section-feliz #app > main section p,
+body.section-gracias #app > main section p {
+  line-height: 1.5 !important;
 }
 
 body.section-congrats #app > main section#form .form,
 body.section-feliz #app > main section#form .form {
-  text-align: center;
+  text-align: left;
 }
 
 body.section-congrats #app > main section#form .form #prequalifed-content,
@@ -8351,6 +8385,19 @@ body.section-feliz #app > main section#form .form #prequalifed-content {
   background: #fff;
   padding: 30px 60px;
   font-size: 1.5em;
+  box-shadow: 0 16px 48px rgba(83, 167, 61, 0.3);
+}
+
+body.section-congrats #app > main section#form .form #prequalifed-content h1,
+body.section-feliz #app > main section#form .form #prequalifed-content h1 {
+  font-size: 3rem;
+  margin: 30px 0;
+}
+
+body.section-congrats #app > main section#form .form #prequalifed-content h2,
+body.section-feliz #app > main section#form .form #prequalifed-content h2 {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 body.section-congrats #app > main section#form .form #prequalifed-content img,
@@ -8365,16 +8412,51 @@ body.section-congrats #app > main section#form .form #prequalifed-content div p.
 body.section-feliz #app > main section#form .form #prequalifed-content div p.amount {
   font-weight: 900;
   font-size: 3em;
+  line-height: 1.2;
+}
+
+body.section-congrats #app > main section#form .form #prequalifed-content p,
+body.section-feliz #app > main section#form .form #prequalifed-content p {
+  line-height: 1.5 !important;
+}
+
+body.section-congrats #app > main section#form .form #prequalifed-content button,
+body.section-feliz #app > main section#form .form #prequalifed-content button {
+  position: relative;
+  text-decoration: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: none;
+  transition: all ease .4s;
+  background-color: #359c1c;
+  border-color: #359c1c;
+  margin-top: 30px;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  width: 100px;
+}
+
+body.section-congrats #app > main section#form .form #prequalifed-content button span,
+body.section-feliz #app > main section#form .form #prequalifed-content button span {
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: 900;
+}
+
+body.section-congrats #app > main section#form .form #prequalifed-content button:hover,
+body.section-feliz #app > main section#form .form #prequalifed-content button:hover {
+  background-color: #1f384b;
 }
 
 body.section-congrats #app > main section#form .form a.btn,
 body.section-feliz #app > main section#form .form a.btn {
   display: inline-block;
-}
-
-body.section-complete #app > main section#hero.ok,
-body.section-gracias #app > main section#hero.ok {
-  background: #359c1c;
 }
 
 body.section-complete #app > main section#form .form,
@@ -8387,6 +8469,8 @@ body.section-gracias #app > main section#form .form #prequalifed-content {
   background: #fff;
   padding: 30px 60px;
   font-size: 1.5em;
+  margin-bottom: 60px;
+  box-shadow: 0 16px 48px rgba(83, 167, 61, 0.3);
 }
 
 body.section-complete #app > main section#form .form #prequalifed-content img,

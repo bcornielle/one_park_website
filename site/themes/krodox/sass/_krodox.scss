@@ -3941,12 +3941,14 @@ body {
                 }
               }
               input[type=text], input[type=tel], input[type=number], input[type=email], select {
-                padding: 10px !important;
                 margin-bottom: 15px !important;
                 box-shadow: 0 5px 48px rgba(83, 167, 61, 0.1);
                 border: none;
                 transition: ease all .4s;
                 background: $white;
+                height: 50px;
+                line-height: 1.5;
+                padding-left: 10px;
               }
               fieldset {
                 span {
@@ -3980,6 +3982,18 @@ body {
               #field59894903-city , #field59894903-state, #field59894903-zip{
                 margin-bottom: 0 !important;
                 margin-top: 15px !important;
+              }
+              .fsSubField {
+                &.fsFieldState {
+                  margin-left: 15px;
+                }
+                &.fsFieldZip {
+                  margin-left: 15px;
+                }
+              }
+              .fsError {
+                padding: 15px !important;
+                margin-bottom: 30px !important;
               }
               .badgets {
                 display: none;
@@ -4038,6 +4052,9 @@ body {
               }
             }
           }
+          p {
+            line-height: 1.5 !important;
+          }
         }
       }
     }
@@ -4046,18 +4063,22 @@ body {
     #app {
       > main {
         section {
-          &#hero {
-            &.ok {
-              background: $brand-primary;
-            }
-          }
           &#form {
             .form {
-              text-align: center;
+              text-align: left;
               #prequalifed-content {
                 background: $white;
                 padding: 30px 60px;
                 font-size: 1.5em;
+                box-shadow: 0 16px 48px rgba(83, 167, 61, 0.3);
+                h1 {
+                  font-size: 3rem;
+                  margin: 30px 0;
+                }
+                h2 {
+                  text-align: center;
+                  margin-bottom: 30px;
+                }
                 img {
                   background: $brand-primary;
                   padding: 20px;
@@ -4069,7 +4090,36 @@ body {
                     &.amount {
                       font-weight: 900;
                       font-size: 3em;
+                      line-height: 1.2;
                     }
+                  }
+                }
+                p {
+                  line-height: 1.5 !important;
+                }
+                button {
+                  position: relative;
+                  text-decoration: none;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  border: none;
+                  transition: all ease .4s;
+                  background-color: $brand-primary;
+                  border-color: $brand-primary;
+                  margin-top: 30px;
+                  font-weight: 900;
+                  color: $white;
+                  text-transform: uppercase;
+                  padding: 10px 15px;
+                  width: 100px;
+                  span {
+                    color: $white;
+                    font-size: 1.3em;
+                    font-weight: 900;
+                  }
+                  &:hover {
+                    background-color: rgba(31, 56, 75, 1);
                   }
                 }
               }
@@ -4088,11 +4138,6 @@ body {
     #app {
       > main {
         section {
-          &#hero {
-            &.ok {
-              background: $brand-primary;
-            }
-          }
           &#form {
             .form {
               text-align: center;
@@ -4100,6 +4145,8 @@ body {
                 background: $white;
                 padding: 30px 60px;
                 font-size: 1.5em;
+                margin-bottom: 60px;
+                box-shadow: 0 16px 48px rgba(83, 167, 61, 0.3);
                 img {
                   background: $brand-primary;
                   padding: 20px;
