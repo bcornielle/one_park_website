@@ -8435,6 +8435,52 @@ body #not-found h1 {
   body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li:not(:last-child) {
     display: none;
   }
+
+  body.section-how-it-works #app > main section#how-it-works .process .circles,
+  body.section-como-trabaja #app > main section#how-it-works .process .circles {
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  body.section-how-it-works #app > main section#how-it-works .process .circle1,
+  body.section-como-trabaja #app > main section#how-it-works .process .circle1 {
+    -ms-flex-order: 1;
+    order: 1;
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  body.section-how-it-works #app > main section#how-it-works .process .circle2,
+  body.section-como-trabaja #app > main section#how-it-works .process .circle2 {
+    -ms-flex-order: 2;
+    order: 2;
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  body.section-how-it-works #app > main section#how-it-works .process .circle3,
+  body.section-como-trabaja #app > main section#how-it-works .process .circle3 {
+    -ms-flex-order: 3;
+    order: 3;
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  body.section-how-it-works #app > main section#how-it-works .process .circle4,
+  body.section-como-trabaja #app > main section#how-it-works .process .circle4 {
+    -ms-flex-order: 4;
+    order: 4;
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  body.section-how-it-works #app > main section#how-it-works .process p,
+  body.section-como-trabaja #app > main section#how-it-works .process p {
+    -ms-flex-order: 5;
+    order: 5;
+    width: 100%;
+    padding: 15px 0;
+  }
 }
 
 @media (max-width: 768px) {

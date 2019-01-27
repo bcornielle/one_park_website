@@ -4202,6 +4202,46 @@ body {
         }
       }
     }
+    &.section-how-it-works,&.section-como-trabaja {
+      #app {
+        > main {
+          section {
+            &#how-it-works {
+              .process {
+                .circles {
+                  flex-direction: column;
+                }
+                .circle1 {
+                  order: 1;
+                  width: 100%;
+                  padding: 15px 0;
+                }
+                .circle2 {
+                  order: 2;
+                  width: 100%;
+                  padding: 15px 0;
+                }
+                .circle3 {
+                  order: 3;
+                  width: 100%;
+                  padding: 15px 0;
+                }
+                .circle4 {
+                  order: 4;
+                  width: 100%;
+                  padding: 15px 0;
+                }
+                p {
+                  order: 5;
+                  width: 100%;
+                  padding: 15px 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
   @media (max-width: 768px) {
     #app {
