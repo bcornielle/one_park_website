@@ -2,26 +2,18 @@
 
 namespace Statamic\Addons\Spock;
 
-use Illuminate\Contracts\Logging\Log;
 use Statamic\Contracts\Data\Users\User;
-use Symfony\Component\Process\Exception\ProcessFailedException;
+use Illuminate\Foundation\Bus\DispatchesJobs;
 
 class Commander
 {
-    protected $log;
+    use DispatchesJobs;
+
     protected $user;
     protected $event;
     protected $config = [];
     protected $environment;
     protected $commands = [];
-
-    /**
-     * @param Log $log
-     */
-    public function __construct(Log $log)
-    {
-        $this->log = $log;
-    }
 
     /**
      * Handle execution of the commands.
@@ -30,13 +22,11 @@ class Commander
      */
     public function handle()
     {
-        if (!$this->shouldRunCommands()) {
+        if (! $this->shouldRunCommands()) {
             return;
         }
 
-        foreach ($this->commands() as $command) {
-            $this->run($command);
-        }
+        $this->dispatch(new RunProcesses($this->commands()));
     }
 
     /**
@@ -105,11 +95,21 @@ class Commander
         return $this->isEnvironmentAllowed() && $this->isEventAllowed();
     }
 
+    /**
+     * Is environment allowed?
+     *
+     * @return bool
+     */
     protected function isEnvironmentAllowed()
     {
         return in_array($this->environment, array_get($this->config, 'environments', []));
     }
 
+    /**
+     * Is event allowed?
+     *
+     * @return bool
+     */
     protected function isEventAllowed()
     {
         return !in_array(get_class($this->event), array_get($this->config, 'ignore_events', []));
@@ -158,37 +158,5 @@ class Commander
     protected function defaultCommands()
     {
         return (new Git($this->config, $this->event, $this->user))->commands();
-    }
-
-    /**
-     * Run a single command.
-     *
-     * @param Process $command
-     * @return void
-     */
-    protected function run(Process $command)
-    {
-        try {
-            $command->run();
-        } catch (ProcessFailedException $e) {
-            $this->logFailedCommand($command, $e);
-        } catch (\Exception $e) {
-            $this->log->error($e);
-        }
-    }
-
-    protected function logFailedCommand($command, $e)
-    {
-        $output = trim($e->getProcess()->getOutput());
-        $output = $output == '' ? 'No output' : "\n$output\n";
-
-        $error = trim($e->getProcess()->getErrorOutput());
-        $error = $error == '' ? 'No error' : "\n$error";
-
-        $this->log->error(vsprintf("Spock command exited unsuccessfully:\nCommand: %s\nOutput: %s\nError: %s", [
-            $command->command(),
-            $output,
-            $error
-        ]));
     }
 }
