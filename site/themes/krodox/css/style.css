@@ -2718,6 +2718,31 @@ body #app > nav.apple .nav-wrapper .menu a.branding.logo {
   background-size: contain;
 }
 
+body #app > nav.apple .nav-wrapper .menu .cta-menu {
+  text-align: left;
+  margin: 60px 0 0;
+}
+
+body #app > nav.apple .nav-wrapper .menu .cta-menu a.btn {
+  -ms-flex-order: 4;
+  order: 4;
+  background: #359c1c;
+  border: none;
+  padding: 8px 15px;
+  margin: 0;
+  text-transform: uppercase;
+  color: white;
+  transition: all ease .4s;
+  font-size: 1em;
+  font-weight: 900;
+  max-width: 250px;
+}
+
+body #app > nav.apple .nav-wrapper .menu .cta-menu a.btn:hover {
+  background-color: #267114;
+  transform: translateX(0px) scale(1.05);
+}
+
 body #app > nav.apple .nav-wrapper .burger-container {
   -ms-flex-order: 1;
   order: 1;
@@ -2732,7 +2757,7 @@ body #app > nav.apple .nav-wrapper .burger-container {
   -ms-user-select: none;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
-  display: block;
+  display: none;
 }
 
 body #app > nav.apple .nav-wrapper .burger-container #burger {
@@ -2944,7 +2969,7 @@ body #app > nav.apple .nav-wrapper .container .menus .navbar-right .join-now {
   justify-content: flex-end;
   -ms-flex-align: center;
   align-items: center;
-  width: 120px;
+  width: 140px;
   float: right;
   display: none;
 }
@@ -3340,7 +3365,7 @@ body #app > main section#features .tabs .tab-headings nav .nav-tabs a.active i {
 }
 
 body #app > main section#features .tabs .tab-headings nav .nav-tabs a.active span {
-  color: #c5e2bd;
+  color: #359c1c;
 }
 
 body #app > main section#features .tabs .tab-headings nav .nav-tabs a:hover {
@@ -8436,6 +8461,68 @@ body #not-found h1 {
     display: none;
   }
 
+  body #app > main section#highlights ul.highlights {
+    padding: 0;
+  }
+
+  body #app > main section#services ul li:not(:last-child):after {
+    width: 50px;
+  }
+
+  body #app > main section#features .tabs {
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  body #app > main section#features .tabs .tab-headings {
+    -ms-flex-order: 1;
+    order: 1;
+    margin-bottom: 30px;
+  }
+
+  body #app > main section#features .tabs .tab-descriptions {
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  body #app > main section#features .tabs .tab-descriptions p {
+    text-align: center;
+    padding: 0;
+  }
+
+  body #app > main section#features .table-wrapper.classic table.table thead tr th:first-child span {
+    font-size: .8rem;
+    text-align: left;
+  }
+
+  body #app > main section#products .products-wrapper {
+    padding: 0;
+  }
+
+  body #app > main section#products .products-wrapper .product {
+    padding: 30px 5px;
+  }
+
+  body #app > main section#products .products-wrapper .product .description {
+    padding: 30px 12px;
+  }
+
+  body #app > main section#products .products-wrapper .product .description p {
+    text-align: center;
+  }
+
+  body #app > main section#lp-form .container #form article form ul.fields {
+    padding: 30px 10px;
+  }
+
+  body #app > main section#lp-form .container #form p.disclaimer {
+    padding: 0;
+  }
+
+  body.section-home #app > main section#hero {
+    background-image: none;
+  }
+
   body.section-how-it-works #app > main section#how-it-works .process .circles,
   body.section-como-trabaja #app > main section#how-it-works .process .circles {
     -ms-flex-direction: column;
@@ -8481,15 +8568,47 @@ body #not-found h1 {
     width: 100%;
     padding: 15px 0;
   }
+
+  body.section-how-it-works #app > main section#how-it-works .advantages,
+  body.section-como-trabaja #app > main section#how-it-works .advantages {
+    padding: 90px 0 30px;
+  }
+
+  body.section-how-it-works #app > main section#how-it-works .advantages ol li,
+  body.section-como-trabaja #app > main section#how-it-works .advantages ol li {
+    font-size: .8rem;
+  }
+
+  body.section-how-it-works #app > main section#how-it-works section#products,
+  body.section-como-trabaja #app > main section#how-it-works section#products {
+    padding: 60px 0;
+  }
+
+  body.es #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li:not(:last-child) {
+    margin-right: 15px;
+    text-align: center;
+  }
+
+  body.es #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li:not(:last-child) a {
+    font-size: .7rem;
+  }
+
+  body.es #app > main section#highlights ul.highlights {
+    padding: 0;
+  }
+
+  body.es #app > main section#highlights ul.highlights li {
+    padding: 30px 0;
+  }
+
+  body.es #app > main section#highlights ul.highlights li div {
+    font-size: .8rem;
+  }
 }
 
 @media (max-width: 768px) {
   body #app > nav.apple .nav-wrapper .container {
     max-width: 100%;
-  }
-
-  body #app > nav.apple .nav-wrapper .container .burger-container {
-    display: none;
   }
 
   body #app > nav.apple .nav-wrapper .container .menus .navbar-left {
@@ -8959,6 +9078,15 @@ body #not-found h1 {
   body.section-feliz #app > main section#form .form .legal-notice,
   body.section-gracias #app > main section#form .form .legal-notice {
     margin-top: 0;
+  }
+
+  body.section-pre-qualification #app > main section#form .form .legal-notice p,
+  body.section-congrats #app > main section#form .form .legal-notice p,
+  body.section-complete #app > main section#form .form .legal-notice p,
+  body.section-preaprob #app > main section#form .form .legal-notice p,
+  body.section-feliz #app > main section#form .form .legal-notice p,
+  body.section-gracias #app > main section#form .form .legal-notice p {
+    text-align: center;
   }
 
   body.section-pre-qualification #app > main section ul.items,
@@ -10034,6 +10162,10 @@ body #not-found h1 {
 
   body #app > nav.apple .nav-wrapper.shown .container {
     display: none;
+  }
+
+  body #app > main section#services {
+    padding: 30px 0;
   }
 
   body #app > footer .brand-links ul.locations li span {

@@ -1,14 +1,19 @@
 <nav class="menu apple" v-bind:class="{'shown':menu_opened}">
     <div class="nav-wrapper" v-bind:class="{'shown':menu_opened}">
-        <ul class="menu">
+        <div class="menu">
             <a href="/" class="branding logo">One Park Financial</a>
-            <li class="menu-item"><a href="/es">Página de Inicio</a></li>
-            <li class="menu-item"><a href="/es/como-trabaja">Cómo Funciona</a></li>
-            <li class="menu-item"><a href="/es/sobre-nosotros">Sobre nosotros</a></li>
-            <li class="menu-item"><a href="/es/preguntas-comunes">Preguntas Frecuentes</a></li>
-            <li class="menu-item"><a href="/es/contactenos">Contáctenos</a></li>
-            <li class="menu-item"><a href="/es/articulos">Blog</a></li>
-        </ul>
+            <ul>
+                <li class="menu-item"><a href="/es">Página de Inicio</a></li>
+                <li class="menu-item"><a href="/es/como-trabaja">Cómo Funciona</a></li>
+                <li class="menu-item"><a href="/es/sobre-nosotros">Sobre nosotros</a></li>
+                <li class="menu-item"><a href="/es/preguntas-comunes">Preguntas Frecuentes</a></li>
+                <li class="menu-item"><a href="/es/contactenos">Contáctenos</a></li>
+                <li class="menu-item"><a href="/es/articulos">Blog</a></li>
+            </ul>
+            <div class="cta-menu">
+                <a href="/pre-qualification" class="btn btn-primary"><span>Obtenga fondos ahora</span></a>
+            </div>
+        </div>
         <div class="burger-container" v-on:click="toggle_menu">
             <div id="burger">
                 <div class="bar topBar"></div>
