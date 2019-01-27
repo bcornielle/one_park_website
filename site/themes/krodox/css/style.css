@@ -7985,7 +7985,7 @@ body.section-gracias #app > main section#form h1 {
   font-weight: 900;
   font-size: 2.5rem;
   text-transform: uppercase;
-  padding-left: 15px;
+  padding-left: 40px;
 }
 
 body.section-pre-qualification #app > main section#form .form-wrapper .form,
@@ -8045,7 +8045,7 @@ body.section-gracias #app > main section#form .form-wrapper .legal-notice p {
   color: #5f5e5e;
   line-height: 1.5;
   text-align: left;
-  padding: 0;
+  padding: 0 0 0 30px;
 }
 
 body.section-pre-qualification #app > main section#form .form-wrapper .legal-notice p a,
@@ -8096,7 +8096,7 @@ body.section-complete #app > main section ul.items,
 body.section-preaprob #app > main section ul.items,
 body.section-feliz #app > main section ul.items,
 body.section-gracias #app > main section ul.items {
-  margin-top: 40px;
+  margin-top: 90px;
   padding: 0 30px;
 }
 

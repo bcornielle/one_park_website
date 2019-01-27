@@ -3909,7 +3909,7 @@ body {
               font-weight: 900;
               font-size: 2.5rem;
               text-transform: uppercase;
-              padding-left: 15px;
+              padding-left: 40px;
             }
             .form-wrapper {
               .form {
@@ -3936,7 +3936,7 @@ body {
                   color: #5f5e5e;
                   line-height: 1.5;
                   text-align: left;
-                  padding: 0;
+                  padding: 0 0 0 30px;
                   a {
                     color: $brand-primary;
                   }
@@ -3949,7 +3949,7 @@ body {
           }
           ul {
             &.items {
-              margin-top: 40px;
+              margin-top: 90px;
               padding: 0 30px;
               li {
                 @include columns(1);
