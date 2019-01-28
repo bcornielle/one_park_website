@@ -328,7 +328,7 @@ body {
                       }
                     }
                     i {
-                      animation: swing 2s ease infinite;
+                      animation: swing 8s ease infinite;
                       color: $brand-primary;
                       border: solid 1px $brand-primary;
                       padding: 3px;
@@ -3902,109 +3902,61 @@ body {
           &#form {
             background: $light-bg;
             margin: 0;
-            padding: 60px 0;
+            padding: 90px 0;
             h1 {
-              margin: 0 0 60px;
-              text-align: center;
+              margin: 0;
+              text-align: left;
               font-weight: 900;
               font-size: 2.5rem;
-              margin: 0 auto;
+              text-transform: uppercase;
+              padding-left: 40px;
             }
-            .form {
-              width: 100%;
-              min-height: 400px;
-              z-index: 1;
-              padding: 60px 0 0;
-              input[type=submit] {
-                position: relative;
-                text-decoration: none;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border: none;
-                transition: all ease .4s;
-                background-color: $brand-primary;
-                border-color: $brand-primary;
-                margin-top: 30px;
-                font-weight: 900;
-                color: $white;
-                text-transform: uppercase;
-                padding: 10px 15px;
-                width: 300px;
-                span {
-                  color: $white;
-                  font-size: 1.3em;
-                  font-weight: 900;
+            .form-wrapper {
+              .form {
+                width: 100%;
+                min-height: 400px;
+                z-index: 1;
+                padding:0;
+                form {
+                  background-color: transparent !important;
                 }
-                &:hover {
-                  background-color: rgba(31, 56, 75, 1);
-                }
-              }
-              input[type=text], input[type=tel], input[type=number], input[type=email], select {
-                padding: 10px !important;
-                margin-bottom: 15px !important;
-                box-shadow: 0 5px 48px rgba(83, 167, 61, 0.1);
-                border: none;
-                transition: ease all .4s;
-                background: $white;
-              }
-              fieldset {
-                span {
-                  font-size: 1rem;
-                }
-                select {
-                  min-width: 75px;
-                  margin-right: 15px;
-                }
-              }
-              #fsCell59894904 {
-                #autofill59894904 {
-                  width: 16px;
-                  background: #fff;
-                  + label {
-                    font-size: .8rem;
-                  }
-                }
-                #field59894904 {
-                  margin-bottom: 0 !important;
-                  font-size: .7rem;
-                }
-                #fsSupporting59894904 {
-                  margin-bottom: 15px !important;
-                  font-size: .7rem;
-                }
-              }
-              #label59894903 {
-                margin-top: 15px;
-              }
-              #field59894903-city , #field59894903-state, #field59894903-zip{
-                margin-bottom: 0 !important;
-                margin-top: 15px !important;
               }
               .badgets {
                 display: none;
                 width: 300px;
-                margin: 30px auto 0;
+                margin: 0 auto;
               }
               .legal-notice {
-                margin-top: 60px;
+                margin: 0;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                padding: 0;
                 p {
                   color: #5f5e5e;
                   line-height: 1.5;
                   text-align: left;
+                  padding: 0 0 0 30px;
                   a {
                     color: $brand-primary;
                   }
                 }
               }
             }
+            input[type=text],input[type=tel],input[type=email],input[type=number],select{
+              box-shadow: 0 0 48px rgba(83, 167, 61, 0.3);
+              &:active {
+                transform: translateY(-2px);
+                box-shadow: 0 8px 16px -4px rgba(83, 167, 61, 0.3);
+              }
+            }
+            #fsSubmitButton2925351 {
+              width: 300px;
+            }
           }
           ul {
             &.items {
-              margin-top: 75px;
+              margin-top: 90px;
               padding: 0 30px;
               li {
                 @include columns(1);
@@ -4038,6 +3990,9 @@ body {
               }
             }
           }
+          p {
+            line-height: 1.5 !important;
+          }
         }
       }
     }
@@ -4046,18 +4001,23 @@ body {
     #app {
       > main {
         section {
-          &#hero {
-            &.ok {
-              background: $brand-primary;
-            }
-          }
           &#form {
             .form {
-              text-align: center;
               #prequalifed-content {
                 background: $white;
                 padding: 30px 60px;
                 font-size: 1.5em;
+                text-align: center;
+                box-shadow: 0 16px 48px rgba(83, 167, 61, 0.3);
+                h1 {
+                  font-size: 3rem;
+                  margin: 30px 0;
+                  text-align: center;
+                }
+                h2 {
+                  text-align: center;
+                  margin-bottom: 30px;
+                }
                 img {
                   background: $brand-primary;
                   padding: 20px;
@@ -4069,7 +4029,36 @@ body {
                     &.amount {
                       font-weight: 900;
                       font-size: 3em;
+                      line-height: 1.2;
                     }
+                  }
+                }
+                p {
+                  line-height: 1.5 !important;
+                }
+                button {
+                  position: relative;
+                  text-decoration: none;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  border: none;
+                  transition: all ease .4s;
+                  background-color: $brand-primary;
+                  border-color: $brand-primary;
+                  margin-top: 30px;
+                  font-weight: 900;
+                  color: $white;
+                  text-transform: uppercase;
+                  padding: 10px 15px;
+                  width: 100px;
+                  span {
+                    color: $white;
+                    font-size: 1.3em;
+                    font-weight: 900;
+                  }
+                  &:hover {
+                    background-color: rgba(31, 56, 75, 1);
                   }
                 }
               }
@@ -4088,11 +4077,6 @@ body {
     #app {
       > main {
         section {
-          &#hero {
-            &.ok {
-              background: $brand-primary;
-            }
-          }
           &#form {
             .form {
               text-align: center;
@@ -4100,6 +4084,11 @@ body {
                 background: $white;
                 padding: 30px 60px;
                 font-size: 1.5em;
+                margin-bottom: 60px;
+                box-shadow: 0 16px 48px rgba(83, 167, 61, 0.3);
+                h1 {
+                  text-align: center;
+                }
                 img {
                   background: $brand-primary;
                   padding: 20px;
@@ -4385,6 +4374,35 @@ body {
                 &#products {
                   padding: 60px 0;
                 }
+              }
+            }
+          }
+        }
+      }
+    }
+    &.section-pre-qualification, &.section-congrats, &.section-complete, &.section-preaprob, &.section-feliz, &.section-gracias {
+      #app {
+        > main {
+          section {
+            &#form {
+              .form-wrapper {
+                .badgets {
+                  display: block;
+                }
+                .legal-notice{
+                  margin-top: 0;
+                  p {
+                    text-align: center;
+                  }
+                }
+              }
+            }
+            ul {
+              &.items {
+                display: none;
+              }
+              &.badgets {
+                display: none;
               }
             }
           }
@@ -4982,7 +5000,7 @@ body {
         > main {
           section {
             &#form {
-              .form {
+              .form-wrapper {
                 .badgets {
                   display: block;
                 }
@@ -5000,13 +5018,6 @@ body {
               }
               &.badgets {
                 display: none;
-                li {
-                  @include columns(2);
-                  padding: 30px 15px;
-                  img {
-                    max-width: 100%;
-                  }
-                }
               }
             }
           }
@@ -5893,6 +5904,35 @@ body {
         }
       }
     }
+    &.section-pre-qualification, &.section-congrats, &.section-complete, &.section-preaprob, &.section-feliz, &.section-gracias {
+      #app {
+        > main {
+          section {
+            &#form {
+              .form-wrapper {
+                .badgets {
+                  display: block;
+                }
+                .legal-notice{
+                  margin-top: 0;
+                  p {
+                    text-align: center;
+                  }
+                }
+              }
+            }
+            ul {
+              &.items {
+                display: none;
+              }
+              &.badgets {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
     &.es {
       #app {
         > main {
@@ -6025,6 +6065,30 @@ body {
                     .join-now {
                       width: 150px;
                     }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &.section-pre-qualification, &.section-congrats, &.section-complete, &.section-preaprob, &.section-feliz, &.section-gracias {
+      #app {
+        > main {
+          section {
+            &#form {
+              padding: 30px 0;
+              background: $white;
+              h1 {
+                font-size: 1.5rem;
+                margin: 0 auto;
+                padding: 0;
+              }
+              .form-wrapper {
+                .legal-notice {
+                  p {
+                    padding: 0;
                   }
                 }
               }

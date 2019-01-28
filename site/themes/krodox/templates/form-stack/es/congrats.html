@@ -3,18 +3,12 @@
     {{ if ! status }}
     {{ redirect to="{ url }" }}
     {{ /if }}
-    <section id="hero" class="ok">
-        <div class="container">
-            <div class="description">
-                <h1>¡Usted ha sido precalificado!</h1>
-            </div>
-        </div>
-    </section>
     <section id="form">
         <div class="container">
             <div class="row">
                 <div class="form">
                     <div id="prequalifed-content">
+                        <h1>¡Usted ha sido precalificado!</h1>
                         <img src="/assets/img/checkmark.png">
                         <div>
                             <p>{{ first_name }}, usted ha sido pre-aprobado para un monto de hasta</p>

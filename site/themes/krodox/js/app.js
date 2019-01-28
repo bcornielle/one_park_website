@@ -731,7 +731,7 @@ $(window).bind('resize', function() {
     resizeTimer = setTimeout(collage, 200);
 });
 const app = new Vue({
-    el: '#app',
+    el: '#app>nav.menu.apple',
     data: {
         is_busy: false,
         menu_opened: false,
