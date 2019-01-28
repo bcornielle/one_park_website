@@ -3945,10 +3945,6 @@ body {
             }
             input[type=text],input[type=tel],input[type=email],input[type=number],select{
               box-shadow: 0 0 48px rgba(83, 167, 61, 0.3);
-              &:active {
-                transform: translateY(-2px);
-                box-shadow: 0 8px 16px -4px rgba(83, 167, 61, 0.3);
-              }
             }
             #fsSubmitButton2925351 {
               width: 300px;
