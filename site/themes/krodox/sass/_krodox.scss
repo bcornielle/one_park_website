@@ -4116,6 +4116,23 @@ body {
   }
   &.es {
     #app {
+      > nav {
+        &.apple {
+          .nav-wrapper {
+            .container {
+              .menus {
+                .navbar-right {
+                  .join-now {
+                    span {
+                      width: 140px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
       > main {
         section {
           &#hero {
