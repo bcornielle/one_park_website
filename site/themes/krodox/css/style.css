@@ -10185,6 +10185,10 @@ body #not-found h1 {
     display: none;
   }
 
+  body.section-lp #app > nav.apple .nav-wrapper .burger-container {
+    visibility: hidden;
+  }
+
   body.section-lp #app > main section#hero {
     background-image: none;
     height: auto;
@@ -10438,5 +10442,166 @@ body #not-found h1 {
   body.section-feliz #app > main section#form .form-wrapper .legal-notice p,
   body.section-gracias #app > main section#form .form-wrapper .legal-notice p {
     padding: 0;
+  }
+
+  body.section-lp #app > nav.apple .nav-wrapper .burger-container {
+    visibility: hidden;
+  }
+
+  body.section-lp #app > nav.apple .nav-wrapper .container .menus .navbar-left {
+    width: 100px;
+  }
+
+  body.section-lp #app > nav.apple .nav-wrapper .container .menus .navbar-left a.branding.logo {
+    width: 100px;
+    background-image: url(/assets/img/one-park-logo.png);
+  }
+
+  body.section-lp #app > nav.apple .nav-wrapper.shown {
+    background-color: #fff;
+    z-index: 9999 !important;
+    height: 100vh;
+  }
+
+  body.section-lp #app > nav.apple .nav-wrapper.shown .burger-container {
+    position: absolute;
+  }
+
+  body.section-lp #app > nav.apple .nav-wrapper.shown .menu {
+    padding: 45px;
+    width: 100%;
+  }
+
+  body.section-lp #app > nav.apple .nav-wrapper.shown .menu li:not(:last-child) {
+    border-bottom: 1px solid #eeeeee;
+  }
+
+  body.section-lp #app > nav.apple .nav-wrapper.shown .menu li:last-child {
+    border-bottom: none;
+  }
+
+  body.section-lp #app > nav.apple .nav-wrapper.shown .container {
+    display: none;
+  }
+
+  body.section-lp #app > main section#hero {
+    background-image: none;
+    height: auto;
+    padding: 0;
+  }
+
+  body.section-lp #app > main section#hero.overlay:before {
+    background-color: #fff;
+    opacity: 1;
+  }
+
+  body.section-lp #app > main section#hero .description {
+    display: none;
+  }
+
+  body.section-lp #app > main section#hero .lp-form-wrapper #form {
+    max-width: 540px;
+    margin: 0 auto;
+    padding: 30px 0;
+  }
+
+  body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form {
+    position: relative;
+    top: auto;
+    right: auto;
+    border: none;
+    background: #ffffff;
+  }
+
+  body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form .phone-header {
+    border-color: #162c4e;
+  }
+
+  body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form h2 {
+    color: #359c1c;
+    font-weight: 900;
+  }
+
+  body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form h2 strong {
+    font-weight: 900;
+  }
+
+  body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=number],
+  body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=text],
+  body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=tel],
+  body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=email],
+  body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form article .fields select {
+    background: #ffffff;
+    border: solid 2px #162c4e;
+  }
+
+  body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form article .fields select {
+    margin-top: 10px;
+  }
+
+  body.section-lp #app > main section#partners {
+    padding: 60px 0 0;
+  }
+
+  body.section-lp #app > main section#partners ul {
+    -ms-flex-flow: wrap;
+    flex-flow: wrap;
+    padding: 0 30px;
+  }
+
+  body.section-lp #app > main section#partners ul.partners li {
+    float: left;
+    width: 32% !important;
+    margin: 0 2% 2% 0;
+    border: solid 1px #bbb;
+    height: 50px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0 15px;
+  }
+
+  body.section-lp #app > main section#partners ul.partners li:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  body.section-lp #app > main section#partners ul.partners li:nth-child(3n + 4) {
+    clear: left;
+  }
+
+  body.section-lp #app > footer .brand-info {
+    margin: 0;
+    padding: 60px 0;
+  }
+
+  body.section-lp #app > footer .brand-info .links {
+    list-style: none;
+    padding-top: 15px;
+  }
+
+  body.section-lp #app > footer .brand-info .links li {
+    float: left;
+    width: 100% !important;
+    margin: 0 2% 2% 0;
+  }
+
+  body.section-lp #app > footer .brand-info .links li:nth-child(1n) {
+    margin-right: 0;
+  }
+
+  body.section-lp #app > footer .brand-info .links li:nth-child(1n + 2) {
+    clear: left;
+  }
+
+  body.section-lp #app > footer .brand-info .links li a {
+    border-bottom: solid 1px #fff;
+  }
+
+  body.section-lp #app > footer .brand-info .links li a:hover {
+    border-bottom: solid 1px #359c1c;
+    color: #359c1c;
   }
 }
