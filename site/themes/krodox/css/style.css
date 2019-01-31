@@ -3904,6 +3904,55 @@ body #app > main section#lp-form .container #form article:after {
   font-size: 24px;
 }
 
+body #app > main section#partners {
+  background: #f1f6ef;
+  padding: 90px 0 0;
+}
+
+body #app > main section#partners ul.partners {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+body #app > main section#partners ul.partners li {
+  float: left;
+  width: 9.3333333333% !important;
+  margin: 0 2% 2% 0;
+  border: solid 1px #bbb;
+  height: 50px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+body #app > main section#partners ul.partners li:nth-child(9n) {
+  margin-right: 0;
+}
+
+body #app > main section#partners ul.partners li:nth-child(9n + 10) {
+  clear: left;
+}
+
+body #app > main section#partners ul.partners li img {
+  max-width: 100%;
+  transition: all ease .1s;
+}
+
+body #app > main section#partners ul.partners li:hover img {
+  transform: translateY(-2px);
+}
+
 body #app > footer {
   background: #162c4e;
   font-size: 1em;
@@ -10172,6 +10221,43 @@ body #not-found h1 {
   body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form article .fields select {
     background: #ffffff;
     border: solid 2px #162c4e;
+  }
+
+  body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form article .fields select {
+    margin-top: 10px;
+  }
+
+  body.section-lp #app > main section#partners {
+    padding: 60px 0 0;
+  }
+
+  body.section-lp #app > main section#partners ul {
+    -ms-flex-flow: wrap;
+    flex-flow: wrap;
+    padding: 0 30px;
+  }
+
+  body.section-lp #app > main section#partners ul.partners li {
+    float: left;
+    width: 32% !important;
+    margin: 0 2% 2% 0;
+    border: solid 1px #bbb;
+    height: 50px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0 15px;
+  }
+
+  body.section-lp #app > main section#partners ul.partners li:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  body.section-lp #app > main section#partners ul.partners li:nth-child(3n + 4) {
+    clear: left;
   }
 
   body.section-lp #app > footer .brand-info {

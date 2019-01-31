@@ -1090,6 +1090,38 @@ body {
             }
           }
         }
+        &#partners {
+          background: $light-bg;
+          padding: 90px 0 0;
+          ul {
+            &.partners {
+              width: 100%;
+              padding: 0;
+              margin: 0;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              li {
+                @include columns(9);
+                border: solid 1px #bbb;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0 15px;
+                img {
+                  max-width: 100%;
+                  transition: all ease .1s;
+                }
+                &:hover {
+                  img {
+                    transform: translateY(-2px);
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
     > footer {
@@ -6042,8 +6074,29 @@ body {
                           background: #ffffff;
                           border: solid 2px $brand-secondary;
                         }
+                        select {
+                          margin-top: 10px;
+                        }
                       }
                     }
+                  }
+                }
+              }
+            }
+            &#partners {
+              padding: 60px 0 0;
+              ul {
+                flex-flow: wrap;
+                padding: 0 30px;
+                &.partners {
+                  li {
+                    @include columns(3);
+                    border: solid 1px #bbb;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0 15px;
                   }
                 }
               }
