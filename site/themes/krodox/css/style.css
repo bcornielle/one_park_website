@@ -3906,19 +3906,28 @@ body #app > main section#lp-form .container #form article:after {
 
 body #app > main section#partners {
   background: #f1f6ef;
-  padding: 90px 0 0;
+  padding: 120px 0 0;
+}
+
+body #app > main section#partners h2 {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #9c9b9b;
+  text-transform: uppercase;
 }
 
 body #app > main section#partners ul.partners {
   width: 100%;
   padding: 0;
-  margin: 0;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin-top: 30px;
 }
 
 body #app > main section#partners ul.partners li {
@@ -8391,6 +8400,10 @@ body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form ul li:la
 body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form ul li:last-child img {
   max-width: 100%;
   max-height: 50px;
+}
+
+body.section-lp #app > main section#features {
+  padding: 60px 0;
 }
 
 body.section-lp #app > footer .brand-info {

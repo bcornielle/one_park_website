@@ -1092,15 +1092,23 @@ body {
         }
         &#partners {
           background: $light-bg;
-          padding: 90px 0 0;
+          padding: 120px 0 0;
+          h2 {
+            text-align: center;
+            margin: 0 auto;
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: #9c9b9b;
+            text-transform: uppercase;
+          }
           ul {
             &.partners {
               width: 100%;
               padding: 0;
-              margin: 0;
               display: flex;
               align-items: center;
               justify-content: center;
+              margin-top: 30px;
               li {
                 @include columns(9);
                 border: solid 1px #bbb;
@@ -4132,6 +4140,9 @@ body {
                 }
               }
             }
+          }
+          &#features{
+            padding: 60px 0;
           }
         }
       }
