@@ -32,7 +32,7 @@ description: |
   - Have a consultative sales approach and Strong analytical and problem-solving skills.
   - Ability to handle multiple priorities and outstanding management of confidential information;
   - Good written and verbal communications skills; driven and motivated
-  
+compensation_type: 'Hourly + Bonus'
 starting_date: '2019-02-04'
 posting_date: '2019-02-04'
 id: 784a8889-7618-4988-a1de-540196d48b50
