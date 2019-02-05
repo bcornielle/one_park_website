@@ -6949,6 +6949,14 @@ body.section-empleos #app > main section#career .content ul.breadcrumbs li a:hov
   color: #359c1c;
 }
 
+body.section-careers #app > main section#career .content ul:not(.breadcrumbs),
+body.section-empleos #app > main section#career .content ul:not(.breadcrumbs) {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  list-style: disc;
+  padding-left: 30px;
+}
+
 body.section-careers #app > main section#career .form,
 body.section-empleos #app > main section#career .form {
   display: -ms-flexbox;

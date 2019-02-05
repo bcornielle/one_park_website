@@ -28,7 +28,7 @@ sections:
         display: Location
         width: 33
       description:
-        cheatsheet: false
+        cheatsheet: true
         restrict_assets: false
         type: markdown
         display: Description
