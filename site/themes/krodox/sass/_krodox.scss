@@ -1090,6 +1090,46 @@ body {
             }
           }
         }
+        &#partners {
+          background: $light-bg;
+          padding: 120px 0 0;
+          h2 {
+            text-align: center;
+            margin: 0 auto;
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: #9c9b9b;
+            text-transform: uppercase;
+          }
+          ul {
+            &.partners {
+              width: 100%;
+              padding: 0;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-top: 30px;
+              li {
+                @include columns(9);
+                border: solid 1px #bbb;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0 15px;
+                img {
+                  max-width: 100%;
+                  transition: all ease .1s;
+                }
+                &:hover {
+                  img {
+                    transform: translateY(-2px);
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
     > footer {
@@ -3390,282 +3430,6 @@ body {
       }
     }
   }
-  &.section-lp {
-    #app {
-      > nav {
-        &.apple {
-          z-index: 0;
-          .nav-wrapper {
-            position: relative;
-            .container {
-              .menus {
-                .navbar-right {
-                  display: none;
-                }
-              }
-            }
-          }
-        }
-      }
-      > main {
-        section {
-          &#hero {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background-image: url("/assets/img/business.jpg");
-            background-position: 100%;
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: relative;
-            min-height: 400px;
-            height: 400px;
-            &.restaurant {
-              background-image: url("/assets/img/restaurant.jpeg");
-            }
-            &.trucking {
-              background-image: url("/assets/img/trucking.jpg");
-            }
-            &.overlay {
-              h1,li {
-                color: $white;
-              }
-              &:before {
-                background-color: rgba(0,0,0,0.7);
-              }
-            }
-            &:before {
-              position: absolute;
-              content: '';
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-              z-index: 0;
-            }
-            .description {
-              padding: 60px 0 60px 0;
-              h1 {
-                font-family: inherit;
-                font-size: 2.5em;
-                font-weight: 900;
-                line-height: 1;
-                .why-we-do-it {
-                  padding-left: 5px;
-                }
-              }
-              h4 {
-                font-size: 1em;
-                font-weight: 300;
-                line-height: 1.2;
-                margin: 30px 0;
-                text-transform: uppercase;
-                color: $brand-primary;
-                span {
-                  display: block;
-                }
-              }
-              ul {
-                font-size: .9rem;
-                &.xl {
-                  display: block;
-                }
-                &.xs {
-                  display: none;
-                }
-                li {
-                  display: flex;
-                  align-items: center;
-                  margin-bottom: 3px;
-                  img {
-                    width: 16px;
-                    height: 16px;
-                  }
-                  span {
-                    padding-left: 5px;
-                  }
-                }
-              }
-            }
-            .lp-form-wrapper {
-              position: relative;
-              #form {
-                $form_color: $brand-secondary;
-                &.lp-form {
-                  min-height: 500px;
-                  position: absolute;
-                  top: -75px;
-                  right: -5px;
-                  background: $form_color;
-                  border: solid 4px $white;
-                  width: 100%;
-                  opacity: 1;
-                  padding: 20px;
-                  text-align: center;
-                  .phone-header {
-                    border: 2px solid #a2a2a2;
-                    border-radius: 3px;
-                    text-align: center;
-                    .label {
-                      text-align: center;
-                      text-transform: uppercase;
-                      padding: .5em;
-                      position: relative;
-                      top: -9px;
-                      font-size: 10px;
-                      letter-spacing: 1px;
-                      color: $white;
-                      background-color: $form_color;
-                    }
-                    .number {
-                      margin: 0 0 10px;
-                      line-height: 1;
-                      font-size: 1.4em;
-                      display: block;
-                      color: $brand-third;
-                      a {
-                        color: $white;
-                        text-decoration: none;
-                      }
-                    }
-                  }
-                  h2 {
-                    font-size: 1em;
-                    text-transform: uppercase;
-                    font-weight: 400;
-                    color: $white;
-                    padding: 15px 0 0;
-                    strong {
-                      font-weight: normal;
-                    }
-                  }
-                  article {
-                    padding: 15px 0 0;
-                    .fields {
-                      position: relative;
-                      margin-bottom: 15px;
-                      .form-group, .form-row {
-                        margin-bottom: 10px;
-                      }
-                      .honeypot {
-                        display: none;
-                      }
-                      input[type=text], input[type=email], input[type = number] {
-                        border: none;
-                        outline: none;
-                        background: #f7f7f7;
-                        padding: 7px 10px;
-                        border-radius: 3px;
-                        &:focus {
-                          outline: none;
-                          box-shadow: none;
-                        }
-                      }
-                      .alert {
-                        position: absolute;
-                        top: 0;
-                        bottom: 0;
-                        right: 0;
-                        left: 0;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
-                        max-height: 250px;
-                        border-radius: 0;
-                        margin: 15px;
-                        transition: ease all.4s;
-                        text-align: left;
-                        font-size: 14px;
-                        opacity: .98;
-                        &.error {
-                          background: red;
-                          border: solid 4px darken(red,25%);
-                          color: $white;
-                          .close {
-                            background: darken(red,25%);
-                          }
-                        }
-                        &.success {
-                          background: $brand-primary;
-                          border: solid 4px darken($brand-primary,25%);
-                          color: $white;
-                          .close {
-                            background: darken($brand-primary,25%);
-                          }
-                        }
-                        &.hidden {
-                          display: none;
-                        }
-                        .close {
-                          padding: 5px 10px;
-                          margin-top: 5px;
-                          color: $white;
-                          font-weight: normal;
-                          font-size: 16px;
-                          border-radius: 3px;
-                          opacity: 1;
-                        }
-                      }
-                    }
-                  }
-                  button {
-                    &.btn {
-                      background: $brand-third;
-                      border: solid 2px darken($brand-third,10%);
-                      width: 100%;
-                      padding: 15px;
-                      text-transform: uppercase;
-                    }
-                  }
-                  ul {
-                    display: flex;
-                    align-items: center;
-                    margin: 0;
-                    padding: 20px 0 0;
-                    li {
-                      @include columns(2,0);
-                      &:first-child {
-                        font-size: 10px;
-                        text-align: left;
-                        a {
-                          color: #aba9a9;
-                          text-decoration: none;
-                          line-height: 1.2;
-                          text-align: left;
-                          transition: color ease .4s;
-                          span {
-                            border-bottom: solid 1px #aba9a9;
-                          }
-                          &:hover {
-                            span {
-                              color: $brand-third;
-                              border-bottom-color: $brand-third;
-                            }
-                          }
-                        }
-                      }
-                      &:last-child {
-                        text-align: right;
-                        img {
-                          max-width: 100%;
-                          max-height: 50px;
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-          &#highlights {
-            margin: 60px 0;
-          }
-        }
-      }
-    }
-  }
   &.section-tv, &.section-television {
     #app {
       > main {
@@ -3688,9 +3452,6 @@ body {
                 font-size: 3.5em;
                 font-weight: 300;
                 line-height: 1;
-                .why-we-do-it {
-                  padding-left: 5px;
-                }
               }
               h4 {
                 font-size: 1em;
@@ -4114,6 +3875,299 @@ body {
       }
     }
   }
+  &.section-lp {
+    #app {
+      > nav {
+        &.apple {
+          z-index: 0;
+          .nav-wrapper {
+            position: relative;
+            .container {
+              .menus {
+                .navbar-right {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+      > main {
+        section {
+          &#hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-image: url("/assets/img/business.jpg");
+            background-position: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            min-height: 400px;
+            height: 400px;
+            &.restaurant {
+              background-image: url("/assets/img/restaurant.jpeg");
+            }
+            &.trucking {
+              background-image: url("/assets/img/trucking.jpg");
+            }
+            &.overlay {
+              h1,li {
+                color: $white;
+              }
+              &:before {
+                background-color: rgba(0,0,0,0.7);
+              }
+            }
+            &:before {
+              position: absolute;
+              content: '';
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              z-index: 0;
+            }
+            .description {
+              padding: 60px 0 60px 0;
+              h1 {
+                font-family: inherit;
+                font-size: 2.5em;
+                font-weight: 900;
+                line-height: 1;
+              }
+              h4 {
+                font-size: 1em;
+                font-weight: 300;
+                line-height: 1.2;
+                margin: 30px 0;
+                text-transform: uppercase;
+                color: $brand-primary;
+                span {
+                  display: block;
+                }
+              }
+              ul {
+                font-size: .9rem;
+                display: block;
+                li {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 3px;
+                  i {
+                    width: 16px;
+                    height: 16px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: $brand-primary;
+                  }
+                  span {
+                    padding-left: 5px;
+                  }
+                }
+              }
+            }
+            .lp-form-wrapper {
+              position: relative;
+              #form {
+                $form_color: $brand-secondary;
+                z-index: 11;
+                &.lp-form {
+                  min-height: 500px;
+                  position: absolute;
+                  top: -75px;
+                  right: -5px;
+                  background: $form_color;
+                  border: solid 4px $white;
+                  width: 100%;
+                  opacity: 1;
+                  padding: 20px;
+                  text-align: center;
+                  .phone-header {
+                    border: 2px solid #a2a2a2;
+                    border-radius: 3px;
+                    text-align: center;
+                    .label {
+                      text-align: center;
+                      text-transform: uppercase;
+                      padding: .5em;
+                      position: relative;
+                      top: -9px;
+                      font-size: 10px;
+                      letter-spacing: 1px;
+                      color: $white;
+                      background-color: $form_color;
+                    }
+                    .number {
+                      margin: 0 0 10px;
+                      line-height: 1;
+                      font-size: 1.4em;
+                      display: block;
+                      color: $brand-third;
+                      a {
+                        color: $white;
+                        text-decoration: none;
+                      }
+                    }
+                  }
+                  h2 {
+                    font-size: 1em;
+                    text-transform: uppercase;
+                    font-weight: 400;
+                    color: $white;
+                    padding: 15px 0 0;
+                    strong {
+                      font-weight: normal;
+                    }
+                  }
+                  article {
+                    padding: 15px 0 0;
+                    .fields {
+                      position: relative;
+                      margin-bottom: 15px;
+                      .form-group, .form-row {
+                        margin-bottom: 10px;
+                      }
+                      .honeypot {
+                        display: none;
+                      }
+                      input[type=text], input[type=email], input[type = number] {
+                        border: none;
+                        outline: none;
+                        background: #f7f7f7;
+                        padding: 7px 10px;
+                        border-radius: 3px;
+                        &:focus {
+                          outline: none;
+                          box-shadow: none;
+                        }
+                      }
+                      .alert {
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        right: 0;
+                        left: 0;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        max-height: 250px;
+                        border-radius: 0;
+                        margin: 15px;
+                        transition: ease all.4s;
+                        text-align: left;
+                        font-size: 14px;
+                        opacity: .98;
+                        &.error {
+                          background: red;
+                          border: solid 4px darken(red,25%);
+                          color: $white;
+                          .close {
+                            background: darken(red,25%);
+                          }
+                        }
+                        &.success {
+                          background: $brand-primary;
+                          border: solid 4px darken($brand-primary,25%);
+                          color: $white;
+                          .close {
+                            background: darken($brand-primary,25%);
+                          }
+                        }
+                        &.hidden {
+                          display: none;
+                        }
+                        .close {
+                          padding: 5px 10px;
+                          margin-top: 5px;
+                          color: $white;
+                          font-weight: normal;
+                          font-size: 16px;
+                          border-radius: 3px;
+                          opacity: 1;
+                        }
+                      }
+                    }
+                  }
+                  button {
+                    &.btn {
+                      background: $brand-third;
+                      border: solid 2px darken($brand-third,10%);
+                      width: 100%;
+                      padding: 15px;
+                      text-transform: uppercase;
+                    }
+                  }
+                  ul {
+                    display: flex;
+                    align-items: center;
+                    margin: 0;
+                    padding: 20px 0 0;
+                    li {
+                      @include columns(2,0);
+                      &:first-child {
+                        font-size: 10px;
+                        text-align: left;
+                        a {
+                          color: #aba9a9;
+                          text-decoration: none;
+                          line-height: 1.2;
+                          text-align: left;
+                          transition: color ease .4s;
+                          span {
+                            border-bottom: solid 1px #aba9a9;
+                          }
+                          &:hover {
+                            span {
+                              color: $brand-third;
+                              border-bottom-color: $brand-third;
+                            }
+                          }
+                        }
+                      }
+                      &:last-child {
+                        text-align: right;
+                        img {
+                          max-width: 100%;
+                          max-height: 50px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          &#features{
+            padding: 60px 0;
+          }
+        }
+      }
+      > footer {
+        .brand-info {
+          margin: 0;
+          padding: 60px 0;
+          .links {
+            list-style: none;
+            padding: 0;
+            li {
+              @include columns(1);
+              a {
+                border-bottom: solid 1px $white;
+                &:hover {
+                  border-bottom: solid 1px $brand-primary;
+                  color: $brand-primary;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
   &.es {
     #app {
       > nav {
@@ -4211,6 +4265,21 @@ body {
                 padding: 30px 5px;
                 .description {
                   padding: 30px 12px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &.section-lp {
+      #app {
+        > main {
+          section {
+            &#hero {
+              .description {
+                h1 {
+                  font-size: 2em;
                 }
               }
             }
@@ -4427,6 +4496,21 @@ body {
               }
               &.badgets {
                 display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+    &.section-lp {
+      #app {
+        > main {
+          section {
+            &#hero {
+              .description {
+                h1 {
+                  font-size: 1.5em;
+                }
               }
             }
           }
@@ -5957,6 +6041,110 @@ body {
         }
       }
     }
+    &.section-lp {
+      #app {
+        > nav {
+          &.apple {
+            .nav-wrapper {
+              .burger-container {
+                visibility: hidden;
+              }
+            }
+          }
+        }
+        > main {
+          section {
+            &#hero {
+              background-image: none;
+              height: auto;
+              padding: 0;
+              &.overlay {
+                &:before {
+                  background-color: #fff;
+                  opacity: 1;
+                }
+              }
+              .description {
+                display: none;
+              }
+              .lp-form-wrapper {
+                #form {
+                  max-width: 540px;
+                  margin: 0 auto;
+                  padding: 30px 0;
+                  &.lp-form {
+                    position: relative;
+                    top: auto;
+                    right: auto;
+                    border: none;
+                    background: #ffffff;
+                    .phone-header {
+                      border-color: $brand-secondary;
+                    }
+                    h2 {
+                      color: $brand-primary;
+                      font-weight: 900;
+                      strong {
+                        font-weight: 900;
+                      }
+                    }
+                    article {
+                      .fields {
+                        input[type=number], input[type=text],input[type=tel],input[type=email],select{
+                          background: #ffffff;
+                          border: solid 2px $brand-secondary;
+                        }
+                        select {
+                          margin-top: 10px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            &#partners {
+              padding: 60px 0 0;
+              ul {
+                flex-flow: wrap;
+                padding: 0 30px;
+                &.partners {
+                  li {
+                    @include columns(3);
+                    border: solid 1px #bbb;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0 15px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        > footer {
+          .brand-info {
+            margin: 0;
+            padding: 60px 0;
+            .links {
+              list-style: none;
+              padding-top: 15px;
+              li {
+                @include columns(1);
+                a {
+                  border-bottom: solid 1px $white;
+                  &:hover {
+                    border-bottom: solid 1px $brand-primary;
+                    color: $brand-primary;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
     &.es {
       #app {
         > main {
@@ -6113,6 +6301,148 @@ body {
                 .legal-notice {
                   p {
                     padding: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &.section-lp {
+      #app {
+        > nav {
+          &.apple {
+            .nav-wrapper {
+              .burger-container {
+                visibility: hidden;
+              }
+              .container {
+                .menus {
+                  .navbar-left {
+                    width: 100px;
+                    a {
+                      &.branding {
+                        &.logo {
+                          width: 100px;
+                          background-image: url(/assets/img/one-park-logo.png);
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              &.shown {
+                background-color: $white;
+                z-index: 9999 !important;
+                height: 100vh;
+                .burger-container {
+                  position: absolute;
+                }
+                .menu {
+                  padding: 45px;
+                  width: 100%;
+                  li {
+                    &:not(:last-child){
+                      border-bottom: 1px solid $border-color;
+                    }
+                    &:last-child {
+                      border-bottom: none;
+                    }
+                  }
+                }
+                .container {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+        > main {
+          section {
+            &#hero {
+              background-image: none;
+              height: auto;
+              padding: 0;
+              &.overlay {
+                &:before {
+                  background-color: #fff;
+                  opacity: 1;
+                }
+              }
+              .description {
+                display: none;
+              }
+              .lp-form-wrapper {
+                #form {
+                  max-width: 540px;
+                  margin: 0 auto;
+                  padding: 30px 0;
+                  &.lp-form {
+                    position: relative;
+                    top: auto;
+                    right: auto;
+                    border: none;
+                    background: #ffffff;
+                    .phone-header {
+                      border-color: $brand-secondary;
+                    }
+                    h2 {
+                      color: $brand-primary;
+                      font-weight: 900;
+                      strong {
+                        font-weight: 900;
+                      }
+                    }
+                    article {
+                      .fields {
+                        input[type=number], input[type=text],input[type=tel],input[type=email],select{
+                          background: #ffffff;
+                          border: solid 2px $brand-secondary;
+                        }
+                        select {
+                          margin-top: 10px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            &#partners {
+              padding: 60px 0 0;
+              ul {
+                flex-flow: wrap;
+                padding: 0 30px;
+                &.partners {
+                  li {
+                    @include columns(3);
+                    border: solid 1px #bbb;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0 15px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        > footer {
+          .brand-info {
+            margin: 0;
+            padding: 60px 0;
+            .links {
+              list-style: none;
+              padding-top: 15px;
+              li {
+                @include columns(1);
+                a {
+                  border-bottom: solid 1px $white;
+                  &:hover {
+                    border-bottom: solid 1px $brand-primary;
+                    color: $brand-primary;
                   }
                 }
               }
