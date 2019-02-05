@@ -27,9 +27,6 @@ sections:
         type: text
         display: Location
         width: 33
-      short_description:
-        type: textarea
-        display: 'Short Description'
       description:
         cheatsheet: false
         restrict_assets: false
