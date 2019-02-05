@@ -55,6 +55,7 @@ description: |
   - Ability to architect strategy along with leadership skills
   - Excellent active listening, negotiation and presentation skills
   - BS/MS degree in Human Resources, Business, or Organization Development
+compensation_type: 'Hourly + Bonus'
 starting_date: '2019-02-04'
 posting_date: '2019-02-04'
 id: f55d7a00-b415-4bd2-90ba-211076202fa2
