@@ -1,5 +1,5 @@
 title: 'Business Funding Manager'
-status: 2
+status: 1
 office: 1
 location: 'Miami, FL.'
 description: |
