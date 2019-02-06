@@ -1,4 +1,4 @@
-title: 'Business Funding Specialist - Chaser'
+title: 'Business Funding Specialist'
 status: 1
 office: 1
 location: 'Miami, FL.'
