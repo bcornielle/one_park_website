@@ -8,6 +8,7 @@
                 <li class="menu-item"><a href="/es/sobre-nosotros">Sobre nosotros</a></li>
                 <li class="menu-item"><a href="/es/contactenos">Contáctenos</a></li>
                 <li class="menu-item"><a href="/es/articulos">Blog</a></li>
+                <li class="menu-item"><a href="/es/medios">Prensa</a></li>
                 <li class="menu-item"><a href="/es/preguntas-comunes">FAQs</a></li>
             </ul>
             <div class="cta-menu">
@@ -60,6 +61,15 @@
                         {{ /if }}
                             <a href="/es/sobre-nosotros">
                                 Sobre Nosotros
+                            </a>
+                        </li>
+                        {{ if current_uri == "/medios" }}
+                        <li class="prensa active">
+                        {{ else }}
+                        <li class="prensa">
+                        {{ /if }}
+                            <a href="/es/medios">
+                                Prensa
                             </a>
                         </li>
                         {{ if current_uri == "/preguntas-comunes" }}
