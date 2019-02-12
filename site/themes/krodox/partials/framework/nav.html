@@ -8,6 +8,7 @@
                 <li class="menu-item"><a href="/about-us">About Us</a></li>
                 <li class="menu-item"><a href="/contact">Contact Us</a></li>
                 <li class="menu-item"><a href="/blog">Blog</a></li>
+                <li class="menu-item"><a href="/press">Press</a></li>
                 <li class="menu-item"><a href="/faq">FAQs</a></li>
             </ul>
             <div class="cta-menu">
@@ -62,6 +63,16 @@
                                 About Us
                             </a>
                         </li>
+
+                        {{ if current_uri == "/press" }}
+                        <li class="press active">
+                        {{ else }}
+                        <li class="press">
+                        {{ /if }}
+                            <a href="/press">
+                                Press
+                            </a>
+                        </li>
                         {{ if current_uri == "/faq" }}
                         <li class="faqs active">
                         {{ else }}
@@ -95,4 +106,3 @@
         </div>
     </div>
 </nav>
-
