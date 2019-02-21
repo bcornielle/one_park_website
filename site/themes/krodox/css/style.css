@@ -5459,22 +5459,6 @@ body.section-contactenos #app > main section#contact-us #form .form form .btn:ho
   transform: translateX(0px) scale(1.05);
 }
 
-body.section-contact #app > main section#contact-us #form .form form #error-alert,
-body.section-contactenos #app > main section#contact-us #form .form form #error-alert {
-  background: red;
-  padding: 5px;
-  color: #fff;
-  border-radius: 5px;
-}
-
-body.section-contact #app > main section#contact-us #form .form form #success-alert,
-body.section-contactenos #app > main section#contact-us #form .form form #success-alert {
-  background: #359c1c;
-  padding: 5px;
-  color: #fff;
-  border-radius: 5px;
-}
-
 body.section-contact #app > main section#contact-us #form .form form a,
 body.section-contactenos #app > main section#contact-us #form .form form a {
   color: #359c1c;
@@ -7064,22 +7048,6 @@ body.section-empleos #app > main section#career .form .btn {
   color: white;
 }
 
-body.section-careers #app > main section#career .form #error-alert,
-body.section-empleos #app > main section#career .form #error-alert {
-  background: red;
-  padding: 5px;
-  color: #fff;
-  border-radius: 5px;
-}
-
-body.section-careers #app > main section#career .form #success-alert,
-body.section-empleos #app > main section#career .form #success-alert {
-  background: #359c1c;
-  padding: 5px;
-  color: #fff;
-  border-radius: 5px;
-}
-
 body.section-privacy-policy #app > main section#intro,
 body.section-politica-de-privacidad #app > main section#intro {
   padding: 90px 0 0;
@@ -8305,23 +8273,15 @@ body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form article 
   align-items: center;
   -ms-flex-pack: center;
   justify-content: center;
-  max-height: 250px;
+  min-height: 250px;
   border-radius: 0;
   margin: 15px;
   transition: ease all 0.4s;
   text-align: left;
   font-size: 14px;
   opacity: .98;
-}
-
-body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form article .fields .alert.error {
-  background: red;
-  border: solid 4px maroon;
-  color: #fff;
-}
-
-body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form article .fields .alert.error .close {
-  background: maroon;
+  padding: 15px 0;
+  display: none;
 }
 
 body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form article .fields .alert.success {
@@ -8330,22 +8290,8 @@ body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form article 
   color: #fff;
 }
 
-body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form article .fields .alert.success .close {
-  background: #103009;
-}
-
 body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form article .fields .alert.hidden {
   display: none;
-}
-
-body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form article .fields .alert .close {
-  padding: 5px 10px;
-  margin-top: 5px;
-  color: #fff;
-  font-weight: normal;
-  font-size: 16px;
-  border-radius: 3px;
-  opacity: 1;
 }
 
 body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form button.btn {
@@ -8414,6 +8360,10 @@ body.section-lp #app > main section#features {
   padding: 60px 0;
 }
 
+body.section-lp #app > main section#features h2 {
+  margin-top: 30px;
+}
+
 body.section-lp #app > footer .brand-info {
   margin: 0;
   padding: 60px 0;
@@ -8479,6 +8429,68 @@ body #not-found {
 
 body #not-found h1 {
   font-weight: 900;
+}
+
+body #error-alert,
+body #success-alert {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: auto;
+  bottom: 0;
+  min-height: 100px;
+  background: #E91E63;
+  z-index: 12;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 2rem;
+  padding: 15px 0;
+  color: #fff;
+  transition: all .4s ease-in-out;
+}
+
+body #error-alert .close,
+body #success-alert .close {
+  background: #E91E63;
+  color: #fff;
+  font-weight: normal;
+  font-size: 16px;
+  border-radius: 3px;
+  opacity: 1;
+  text-transform: uppercase;
+  border: solid 1px #fff;
+  padding: 7px 15px;
+  margin-top: 15px;
+}
+
+body #error-alert:after,
+body #success-alert:after {
+  content: 'Please check your application';
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-top: 15px;
+  text-align: center;
+  padding: 0 30px;
+}
+
+body #success-alert {
+  background: #359c1c;
+}
+
+body #success-alert .close {
+  background: #359c1c;
+}
+
+body #success-alert:after {
+  content: 'Application Submitted';
 }
 
 @media (min-width: 1200px) {
@@ -10611,5 +10623,10 @@ body #not-found h1 {
   body.section-lp #app > footer .brand-info .links li a:hover {
     border-bottom: solid 1px #359c1c;
     color: #359c1c;
+  }
+
+  body #error-alert,
+  body #success-alert {
+    font-size: 1rem;
   }
 }

@@ -2052,18 +2052,6 @@ body {
                      transform: translateX(0px) scale(1.05);
                    }
                  }
-                 #error-alert {
-                   background: red;
-                   padding: 5px;
-                   color: $white;
-                   border-radius: 5px;
-                 }
-                 #success-alert {
-                   background: $brand-primary;
-                   padding: 5px;
-                   color: $white;
-                   border-radius: 5px;
-                 }
                  a {
                    color: $brand-primary;
                  }
@@ -3192,18 +3180,6 @@ body {
                 margin: 10px 0 15px;
                 color: white;
               }
-              #error-alert {
-                background: red;
-                padding: 5px;
-                color: $white;
-                border-radius: 5px;
-              }
-              #success-alert {
-                background: $brand-primary;
-                padding: 5px;
-                color: $white;
-                border-radius: 5px;
-              }
             }
           }
         }
@@ -4060,40 +4036,22 @@ body {
                         flex-direction: column;
                         align-items: center;
                         justify-content: center;
-                        max-height: 250px;
+                        min-height: 250px;
                         border-radius: 0;
                         margin: 15px;
                         transition: ease all.4s;
                         text-align: left;
                         font-size: 14px;
                         opacity: .98;
-                        &.error {
-                          background: red;
-                          border: solid 4px darken(red,25%);
-                          color: $white;
-                          .close {
-                            background: darken(red,25%);
-                          }
-                        }
+                        padding: 15px 0;
+                        display: none;
                         &.success {
                           background: $brand-primary;
                           border: solid 4px darken($brand-primary,25%);
                           color: $white;
-                          .close {
-                            background: darken($brand-primary,25%);
-                          }
                         }
                         &.hidden {
                           display: none;
-                        }
-                        .close {
-                          padding: 5px 10px;
-                          margin-top: 5px;
-                          color: $white;
-                          font-weight: normal;
-                          font-size: 16px;
-                          border-radius: 3px;
-                          opacity: 1;
                         }
                       }
                     }
@@ -4149,6 +4107,9 @@ body {
           }
           &#features{
             padding: 60px 0;
+            h2 {
+              margin-top: 30px;
+            }
           }
         }
       }
@@ -4226,6 +4187,55 @@ body {
     min-height: 600px;
     h1 {
       font-weight: 900;
+    }
+  }
+  #error-alert, #success-alert {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: auto;
+    bottom: 0;
+    min-height: 100px;
+    background: #E91E63;
+    z-index: 12;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 15px 0;
+    color: $white;
+    transition: all .4s ease-in-out;
+    .close {
+      background: #E91E63;
+      color: $white;
+      font-weight: normal;
+      font-size: 16px;
+      border-radius: 3px;
+      opacity: 1;
+      text-transform: uppercase;
+      border: solid 1px $white;
+      padding: 7px 15px;
+      margin-top: 15px;
+    }
+    &:after {
+      content: 'Please check your application';
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      margin-top: 15px;
+      text-align: center;
+      padding: 0 30px;
+    }
+  }
+  #success-alert {
+    background: $brand-primary;
+    .close {
+      background: $brand-primary;
+    }
+    &:after {
+      content: 'Application Submitted';
     }
   }
 
@@ -6456,6 +6466,9 @@ body {
           }
         }
       }
+    }
+    #error-alert, #success-alert {
+      font-size: 1rem;
     }
   }
 }
