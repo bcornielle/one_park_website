@@ -22,6 +22,19 @@ sections:
         type: text
         localizable: true
         display: canonical
+      template:
+        options:
+          lp/home-page: 'Home Page'
+          lp/business-funding: 'Business Funding'
+          lp/business-funding-with-partners: 'Business Funding With Partners'
+          lp/business-funding-fast: 'Business Funding Fast'
+          lp/business-funding-fast-with-partners: 'Business Funding Fast With Partners'
+          lp/restaurant-business-funding: 'Restaurant Business Funding'
+          lp/restaurant-business-funding-with-partners: 'Restaurant Business Funding With Partners'
+          lp/trucking-business-funding: 'Trucking Business Funding'
+          lp/trucking-business-funding-with-partners: 'Trucking Business Funding With Partners'
+        type: select
+        display: template
 taxonomies: true
 title: Landing
 create_title: 'New Landing Page'

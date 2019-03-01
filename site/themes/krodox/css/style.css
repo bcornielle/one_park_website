@@ -8076,8 +8076,8 @@ body.section-lp #app > main section#hero {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  min-height: 400px;
-  height: 400px;
+  min-height: 500px;
+  height: 500px;
 }
 
 body.section-lp #app > main section#hero.restaurant {
@@ -8171,7 +8171,7 @@ body.section-lp #app > main section#hero .lp-form-wrapper #form {
 body.section-lp #app > main section#hero .lp-form-wrapper #form.lp-form {
   min-height: 500px;
   position: absolute;
-  top: -75px;
+  top: -150px;
   right: -5px;
   background: #162c4e;
   border: solid 4px #fff;
