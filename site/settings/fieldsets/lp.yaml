@@ -35,6 +35,12 @@ sections:
           lp/trucking-business-funding-with-partners: 'Trucking Business Funding With Partners'
         type: select
         display: template
+      body_class:
+        type: text
+        display: 'Body Class'
+      navigation:
+        type: text
+        display: Navigation
 taxonomies: true
 title: Landing
 create_title: 'New Landing Page'
