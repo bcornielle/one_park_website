@@ -37,17 +37,18 @@ sections:
       department:
         type: text
         display: Department
+        width: 33
       salary:
         type: text
         display: Salary
-        width: 50
+        width: 33
       compensation_type:
         options:
           'Hourly + Bonus': 'Hourly + Bonus'
           'Salary + Bonus': 'Salary + Bonus'
         type: select
         display: 'Compensation Type'
-        width: 50
+        width: 33
       starting_date:
         allow_blank: false
         allow_time: true
@@ -55,6 +56,7 @@ sections:
         earliest_date: 'January 1, 1900'
         type: date
         display: 'Starting Date'
+        width: 33
       posting_date:
         allow_blank: false
         allow_time: false
@@ -62,6 +64,14 @@ sections:
         earliest_date: 'January 1, 1900'
         type: date
         display: 'Posting Date'
+        width: 33
+      shown:
+        options:
+          1: 'Yes'
+          0: 'No'
+        type: select
+        width: 33
+        display: Shown
 taxonomies: true
 title: Careers
 create_title: 'New Listing Job'

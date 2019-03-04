@@ -58,4 +58,5 @@ description: |
 compensation_type: 'Hourly + Bonus'
 starting_date: '2019-02-04'
 posting_date: '2019-02-04'
+shown: 1
 id: f55d7a00-b415-4bd2-90ba-211076202fa2
