@@ -18,3 +18,4 @@ Disallow: /wp-content/uploads/*
 Disallow: /wp-content/plugins/*
 
 Disallow: /lp/
+Disallow: /careers/
