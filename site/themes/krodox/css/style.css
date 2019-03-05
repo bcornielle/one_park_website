@@ -4143,11 +4143,13 @@ body #app > footer .badget ul.badgets li img {
   max-width: 100%;
 }
 
-body.section-home #app > main section#hero {
+body.section-home #app > main section#hero,
+body.section-television #app > main section#hero {
   background-image: url("/assets/img/home-hero.png");
 }
 
-body.section-home #app > main section#hero .hero-content .branding.logo {
+body.section-home #app > main section#hero .hero-content .branding.logo,
+body.section-television #app > main section#hero .hero-content .branding.logo {
   background-image: url(/assets/img/one-park-logo.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -4158,7 +4160,8 @@ body.section-home #app > main section#hero .hero-content .branding.logo {
   display: none;
 }
 
-body.section-home #app > main section#hero .hero-content ul.xs {
+body.section-home #app > main section#hero .hero-content ul.xs,
+body.section-television #app > main section#hero .hero-content ul.xs {
   -ms-flex-order: 4;
   order: 4;
   display: none;
@@ -4167,21 +4170,25 @@ body.section-home #app > main section#hero .hero-content ul.xs {
   line-height: 1;
 }
 
-body.section-home #app > main section#hero .hero-content ul.xs li {
+body.section-home #app > main section#hero .hero-content ul.xs li,
+body.section-television #app > main section#hero .hero-content ul.xs li {
   float: left;
   width: 100% !important;
   margin: 0 2% 2% 0;
 }
 
-body.section-home #app > main section#hero .hero-content ul.xs li:nth-child(1n) {
+body.section-home #app > main section#hero .hero-content ul.xs li:nth-child(1n),
+body.section-television #app > main section#hero .hero-content ul.xs li:nth-child(1n) {
   margin-right: 0;
 }
 
-body.section-home #app > main section#hero .hero-content ul.xs li:nth-child(1n + 2) {
+body.section-home #app > main section#hero .hero-content ul.xs li:nth-child(1n + 2),
+body.section-television #app > main section#hero .hero-content ul.xs li:nth-child(1n + 2) {
   clear: left;
 }
 
-body.section-home #app > main section#hero .hero-content .phone {
+body.section-home #app > main section#hero .hero-content .phone,
+body.section-television #app > main section#hero .hero-content .phone {
   display: none;
 }
 
@@ -7374,224 +7381,6 @@ body.section-forgot-password #app > footer,
 body.section-password-reset #app > footer,
 body.section-register #app > footer {
   display: none;
-}
-
-body.section-tv #app > main section#hero,
-body.section-television #app > main section#hero {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-height: calc(100vh - 160px);
-  background-image: url("/assets/img/bacground2_oneparkfinancial_v2-u33040-fr_2x3-1.jpg");
-  background-position: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-body.section-tv #app > main section#hero .description,
-body.section-television #app > main section#hero .description {
-  padding: 60px 0 60px 0;
-  text-align: center;
-}
-
-body.section-tv #app > main section#hero .description h1,
-body.section-television #app > main section#hero .description h1 {
-  font-family: inherit;
-  font-size: 3.5em;
-  font-weight: 300;
-  line-height: 1;
-}
-
-body.section-tv #app > main section#hero .description h4,
-body.section-television #app > main section#hero .description h4 {
-  font-size: 1em;
-  font-weight: 300;
-  line-height: 1.2;
-  margin: 30px 0;
-  text-transform: uppercase;
-  color: inherit;
-}
-
-body.section-tv #app > main section#hero .description h4 span,
-body.section-television #app > main section#hero .description h4 span {
-  display: block;
-}
-
-body.section-tv #app > main section#hero .description ul.xl,
-body.section-television #app > main section#hero .description ul.xl {
-  display: block;
-}
-
-body.section-tv #app > main section#hero .description ul.xs,
-body.section-television #app > main section#hero .description ul.xs {
-  display: none;
-}
-
-body.section-tv #app > main section#hero .description ul li,
-body.section-television #app > main section#hero .description ul li {
-  text-align: center;
-  font-size: .9em;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-bottom: 3px;
-}
-
-body.section-tv #app > main section#hero .description ul li img,
-body.section-television #app > main section#hero .description ul li img {
-  width: 16px;
-  height: 16px;
-  display: none;
-}
-
-body.section-tv #app > main section#hero .description ul li span,
-body.section-television #app > main section#hero .description ul li span {
-  padding-left: 5px;
-  font-size: 1em;
-}
-
-body.section-tv #app > main section#hero .button-wrapper,
-body.section-television #app > main section#hero .button-wrapper {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 100%;
-  text-align: center;
-}
-
-body.section-tv #app > main section#hero .button-wrapper a.btn,
-body.section-television #app > main section#hero .button-wrapper a.btn {
-  position: relative;
-  text-decoration: none;
-  width: 250px;
-  height: 50px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin: 0 auto;
-  -ms-flex-align: center;
-  align-items: center;
-  border: none;
-  border-radius: 3px;
-  transition: all ease .4s;
-  background-color: #359c1c;
-  border-color: #359c1c;
-}
-
-body.section-tv #app > main section#hero .button-wrapper a.btn span,
-body.section-television #app > main section#hero .button-wrapper a.btn span {
-  color: #fff;
-  font-size: 1.3em;
-  font-weight: 900;
-}
-
-body.section-tv #app > main section#hero .button-wrapper a.btn:hover,
-body.section-television #app > main section#hero .button-wrapper a.btn:hover {
-  background-color: #1f384b;
-  transform: translateX(0px) scale(1.05);
-}
-
-body.section-tv #app > main section#hero .button-wrapper .phone,
-body.section-television #app > main section#hero .button-wrapper .phone {
-  display: none;
-}
-
-body.section-tv #app > main section#hero .button-wrapper .slogan,
-body.section-television #app > main section#hero .button-wrapper .slogan {
-  padding-top: 45px;
-  font-size: 1.2em;
-  display: none;
-}
-
-body.section-tv #app > main section#hero .button-wrapper .badges,
-body.section-television #app > main section#hero .button-wrapper .badges {
-  margin: 30px 0 0;
-  display: block;
-}
-
-body.section-tv #app > main section#hero .button-wrapper .badges img,
-body.section-television #app > main section#hero .button-wrapper .badges img {
-  border: solid 1px #eeeeee;
-  width: 100px;
-}
-
-body.section-tv #app > main section#services,
-body.section-television #app > main section#services {
-  margin: 90px 0 0;
-  text-align: center;
-}
-
-body.section-tv #app > main section#services h2,
-body.section-television #app > main section#services h2 {
-  font-weight: 300;
-  font-size: 2.5em;
-  margin: 0 0 12px;
-}
-
-body.section-tv #app > main section#services h3,
-body.section-television #app > main section#services h3 {
-  font-weight: 300;
-  font-size: 1em;
-  margin: 0;
-  text-transform: uppercase;
-}
-
-body.section-tv #app > main section#services ul,
-body.section-television #app > main section#services ul {
-  margin: 30px 0;
-}
-
-body.section-tv #app > main section#services ul li,
-body.section-television #app > main section#services ul li {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 200px;
-  border: none;
-  float: left;
-  width: 19.2% !important;
-  margin: 0 1% 1% 0;
-  padding: 10px;
-}
-
-body.section-tv #app > main section#services ul li:nth-child(5n),
-body.section-television #app > main section#services ul li:nth-child(5n) {
-  margin-right: 0;
-}
-
-body.section-tv #app > main section#services ul li:nth-child(5n + 6),
-body.section-television #app > main section#services ul li:nth-child(5n + 6) {
-  clear: left;
-}
-
-body.section-tv #app > main section#services ul li img,
-body.section-television #app > main section#services ul li img {
-  margin-bottom: 20px;
-  width: 75px;
-  height: 75px;
-}
-
-body.section-tv #app > main section#services ul li .description,
-body.section-television #app > main section#services ul li .description {
-  min-height: 10px;
-  font-size: .9em;
 }
 
 body.section-business-insurance #app > main {
