@@ -10,10 +10,12 @@ sections:
         display: Slug
         type: text
         localizable: true
+        width: 50
       meta_title:
         type: text
         localizable: true
         display: 'Meta Title'
+        width: 50
       meta_description:
         type: textarea
         localizable: true
@@ -35,12 +37,23 @@ sections:
           lp/trucking-business-funding-with-partners: 'Trucking Business Funding With Partners'
         type: select
         display: template
+        width: 33
       body_class:
         type: text
         display: 'Body Class'
+        width: 33
       navigation:
         type: text
         display: Navigation
+        width: 33
+      hero:
+        options:
+          default: Default
+          dark: Dark
+          light: Light
+        type: select
+        width: 33
+        display: hero
 taxonomies: true
 title: Landing
 create_title: 'New Landing Page'

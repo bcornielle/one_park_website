@@ -7483,9 +7483,21 @@ body.section-gracias #app > main section#form h1 {
   padding: 0;
   text-align: center;
   font-weight: 900;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-transform: uppercase;
   margin: 0 auto;
+}
+
+body.section-pre-qualification #app > main section#form h2,
+body.section-congrats #app > main section#form h2,
+body.section-complete #app > main section#form h2,
+body.section-preaprob #app > main section#form h2,
+body.section-feliz #app > main section#form h2,
+body.section-gracias #app > main section#form h2 {
+  font-size: 1.2rem;
+  margin: 0 auto;
+  padding-top: 8px;
+  text-align: center;
 }
 
 body.section-pre-qualification #app > main section#form .form-wrapper .form,
@@ -8383,6 +8395,426 @@ body.section-lp.with-no-menu #app > footer .brand-info .links li a {
 body.section-lp.with-no-menu #app > footer .brand-info .links li a:hover {
   border-bottom: solid 1px #359c1c;
   color: #359c1c;
+}
+
+body.section-lp.dark #app > main section#hero {
+  background-image: url("/assets/img/article-11.jpg");
+  min-height: 600px;
+  height: 600px;
+}
+
+body.section-lp.dark #app > main section#hero .background {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: linear-gradient(rgba(53, 156, 28, 0.3), rgba(53, 156, 28, 0.3));
+}
+
+body.section-lp.dark #app > main section#hero .background:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: -850px;
+  z-index: 0;
+  background: linear-gradient(rgba(22, 44, 78, 0.6), rgba(22, 44, 78, 0.6));
+  transform: skewY(-55deg);
+  width: 3000px;
+  height: 2000px;
+}
+
+body.section-lp.dark #app > main section#hero .hero-content .branding.logo {
+  background-image: url(/assets/img/one-park-logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  float: left;
+  height: 65px;
+  width: 291px;
+  display: none;
+}
+
+body.section-lp.dark #app > main section#hero .hero-content h1 {
+  color: #fff;
+  font-size: 4rem;
+  width: 450px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+
+body.section-lp.dark #app > main section#hero .hero-content h2 {
+  color: #fff;
+  font-size: 2.5rem;
+  width: 450px;
+}
+
+body.section-lp.dark #app > main section#hero .hero-content h3 {
+  display: none;
+}
+
+body.section-lp.dark #app > main section#hero .hero-content ul.badgets {
+  padding: 30px 0 0 0;
+  max-width: 450px;
+}
+
+body.section-lp.dark #app > main section#hero .hero-content ul.badgets li img {
+  max-width: 130px;
+}
+
+body.section-lp.dark #app > main section#hero .hero-content ul.xs {
+  -ms-flex-order: 4;
+  order: 4;
+  display: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+body.section-lp.dark #app > main section#hero .hero-content ul.xs li {
+  float: left;
+  width: 100% !important;
+  margin: 0 2% 2% 0;
+}
+
+body.section-lp.dark #app > main section#hero .hero-content ul.xs li:nth-child(1n) {
+  margin-right: 0;
+}
+
+body.section-lp.dark #app > main section#hero .hero-content ul.xs li:nth-child(1n + 2) {
+  clear: left;
+}
+
+body.section-lp.dark #app > main section#hero .hero-content .phone {
+  display: none;
+}
+
+body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form {
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(rgba(22, 44, 78, 0.9), rgba(22, 44, 78, 0.9));
+  padding: 30px;
+  min-height: 350px;
+  position: relative;
+  top: auto;
+  bottom: -25px;
+  z-index: 1;
+}
+
+body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form h2 {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  padding: 0;
+}
+
+body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=text],
+body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=tel],
+body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=email],
+body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=number],
+body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields select {
+  border: none;
+  margin-bottom: 10px;
+  background: linear-gradient(rgba(134, 146, 165, 0.3), rgba(134, 146, 165, 0.3));
+  border-radius: 6px;
+  color: #fff;
+  outline: none;
+}
+
+body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=text]:focus,
+body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=tel]:focus,
+body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=email]:focus,
+body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=number]:focus,
+body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields select:focus {
+  box-shadow: none;
+}
+
+body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=text]:-ms-input-placeholder,
+body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=tel]:-ms-input-placeholder,
+body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=email]:-ms-input-placeholder,
+body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=number]:-ms-input-placeholder,
+body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields select:-ms-input-placeholder {
+  color: #fff;
+}
+
+body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=text]::placeholder,
+body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=tel]::placeholder,
+body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=email]::placeholder,
+body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=number]::placeholder,
+body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields select::placeholder {
+  color: #fff;
+}
+
+body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article button.btn {
+  position: absolute;
+  width: 300px;
+  left: 40%;
+  bottom: -70px;
+  border-radius: 6px;
+  background: #359c1c;
+  border: none;
+  font-weight: 900;
+}
+
+body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article button.btn:hover {
+  background: #359c1c;
+}
+
+body.section-lp.dark #app > main section#overview {
+  background: #f1f6ef;
+}
+
+body.section-lp.dark #app > main section#overview ul {
+  padding: 15px 0 0;
+}
+
+body.section-lp.dark #app > main section#overview ul li {
+  float: left;
+  width: 33.3333333333% !important;
+  margin: 0 0 0 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+}
+
+body.section-lp.dark #app > main section#overview ul li:nth-child(3n) {
+  margin-right: 0;
+}
+
+body.section-lp.dark #app > main section#overview ul li:nth-child(3n + 4) {
+  clear: left;
+}
+
+body.section-lp.dark #app > main section#overview ul li i {
+  display: block;
+  font-size: 3rem;
+  color: #359c1c;
+  margin-bottom: 15px;
+}
+
+body.section-lp.dark #app > main section#overview ul li span {
+  display: block;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+body.section-lp.light #app > main section#hero {
+  background-image: url("/assets/img/article-11.jpg");
+  min-height: 500px;
+  height: 500px;
+}
+
+body.section-lp.light #app > main section#hero .background {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));
+}
+
+body.section-lp.light #app > main section#hero .background:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: -850px;
+  z-index: 0;
+  background: linear-gradient(rgba(211, 215, 220, 0.6), rgba(211, 214, 218, 0.6));
+  transform: skewY(-55deg);
+  width: 3000px;
+  height: 2000px;
+  display: none;
+}
+
+body.section-lp.light #app > main section#hero .hero-content .branding.logo {
+  background-image: url(/assets/img/one-park-logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  float: left;
+  height: 65px;
+  width: 291px;
+  display: none;
+}
+
+body.section-lp.light #app > main section#hero .hero-content h1 {
+  color: #162c4e;
+  font-size: 4rem;
+  width: 100%;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  margin-top: 60px;
+}
+
+body.section-lp.light #app > main section#hero .hero-content h2 {
+  color: #162c4e;
+  font-size: 2.5rem;
+  width: 100%;
+}
+
+body.section-lp.light #app > main section#hero .hero-content h3 {
+  display: none;
+}
+
+body.section-lp.light #app > main section#hero .hero-content ul.badgets {
+  padding: 30px 0 0 0;
+  max-width: 450px;
+}
+
+body.section-lp.light #app > main section#hero .hero-content ul.badgets li img {
+  max-width: 130px;
+}
+
+body.section-lp.light #app > main section#hero .hero-content ul.xs {
+  -ms-flex-order: 4;
+  order: 4;
+  display: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+body.section-lp.light #app > main section#hero .hero-content ul.xs li {
+  float: left;
+  width: 100% !important;
+  margin: 0 2% 2% 0;
+}
+
+body.section-lp.light #app > main section#hero .hero-content ul.xs li:nth-child(1n) {
+  margin-right: 0;
+}
+
+body.section-lp.light #app > main section#hero .hero-content ul.xs li:nth-child(1n + 2) {
+  clear: left;
+}
+
+body.section-lp.light #app > main section#hero .hero-content .phone {
+  display: none;
+}
+
+body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form {
+  border: none;
+  border-radius: 10px;
+  background: #fff;
+  padding: 30px;
+  min-height: 350px;
+  position: relative;
+  top: 0;
+  bottom: auto;
+  z-index: 1;
+}
+
+body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form h2 {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  padding: 0;
+  color: #323831;
+}
+
+body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=text],
+body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=tel],
+body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=email],
+body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=number],
+body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields select {
+  border: none;
+  margin-bottom: 10px;
+  background: #fff;
+  border-radius: 6px;
+  color: #323831;
+  outline: none;
+  border: solid 2px #eee;
+}
+
+body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=text]:focus,
+body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=tel]:focus,
+body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=email]:focus,
+body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=number]:focus,
+body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields select:focus {
+  box-shadow: none;
+}
+
+body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=text]:-ms-input-placeholder,
+body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=tel]:-ms-input-placeholder,
+body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=email]:-ms-input-placeholder,
+body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=number]:-ms-input-placeholder,
+body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields select:-ms-input-placeholder {
+  color: #323831;
+}
+
+body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=text]::placeholder,
+body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=tel]::placeholder,
+body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=email]::placeholder,
+body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=number]::placeholder,
+body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields select::placeholder {
+  color: #323831;
+}
+
+body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article button.btn {
+  position: relative;
+  width: 100%;
+  left: 0;
+  bottom: auto;
+  border-radius: 6px;
+  background: #359c1c;
+  border: none;
+  font-weight: 900;
+}
+
+body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article button.btn:hover {
+  background: #359c1c;
+}
+
+body.section-lp.light #app > main section#overview {
+  background: #fff;
+}
+
+body.section-lp.light #app > main section#overview ul {
+  padding: 15px 0 0;
+}
+
+body.section-lp.light #app > main section#overview ul li {
+  float: left;
+  width: 33.3333333333% !important;
+  margin: 0 0 0 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+}
+
+body.section-lp.light #app > main section#overview ul li:nth-child(3n) {
+  margin-right: 0;
+}
+
+body.section-lp.light #app > main section#overview ul li:nth-child(3n + 4) {
+  clear: left;
+}
+
+body.section-lp.light #app > main section#overview ul li i {
+  display: block;
+  font-size: 3rem;
+  color: #359c1c;
+  margin-bottom: 15px;
+}
+
+body.section-lp.light #app > main section#overview ul li span {
+  display: block;
+  font-size: 1.1rem;
+  line-height: 1.5;
 }
 
 body.es #app > nav.apple .nav-wrapper .container .menus .navbar-right .join-now span {
@@ -10578,9 +11010,18 @@ body #success-alert:after {
   body.section-preaprob #app > main section#form h1,
   body.section-feliz #app > main section#form h1,
   body.section-gracias #app > main section#form h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin: 0 auto;
     padding: 0;
+  }
+
+  body.section-pre-qualification #app > main section#form h2,
+  body.section-congrats #app > main section#form h2,
+  body.section-complete #app > main section#form h2,
+  body.section-preaprob #app > main section#form h2,
+  body.section-feliz #app > main section#form h2,
+  body.section-gracias #app > main section#form h2 {
+    font-size: 1rem;
   }
 
   body.section-pre-qualification #app > main section#form .form-wrapper .legal-notice p,

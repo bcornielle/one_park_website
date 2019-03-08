@@ -1,0 +1,132 @@
+<section id="hero">
+    <div class="background"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-6">
+                <div class="hero-content">
+                    <a href="/" class="branding logo">One Park Financial</a>
+                    <h1>Need Funding Fast?</h1>
+                    <h2>Get $5,000 to $750,000</h2>
+                    <ul class="xs">
+                        <li>
+                            <span>Get Pre-Qualified in Minutes.</span>
+                        </li>
+                        <li>
+                            <span>Funding in Under 72 Hours.</span>
+                        </li>
+                        <li>
+                            <span>Poor Credit Accepted.</span>
+                        </li>
+                    </ul>
+                    <div class="phone">
+                        <div class="text">Speak to a funding expert</div>
+                        <a href="tel:+18883271044">
+                            <span class="number">1-888-327-1044</span>
+                        </a>
+                    </div>
+                    <ul class="badgets">
+                        <li>
+                            <img src="/assets/img/trust-pilot.png">
+                        </li>
+                        <li>
+                            <img src="/assets/img/comodo-white.png">
+                        </li>
+                        <li>
+                            <img src="/assets/img/bbb-white.png">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-1"></div>
+            <div class="col-md-12 col-lg-4">
+                <div class="lp-form-wrapper">
+                    <div id="form" class="lp-form">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2>Start Your Application</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <article class="content">
+                                    {{ form:set is="landing-page" }}
+                                    {{ form:create }}
+                                    <div class="fields">
+                                        <input type="text" name="honeypot" class="honeypot"/>
+                                        <input type="hidden" name="source" value="dark-hero"/>
+                                        <div class="form-group">
+                                            <input type="text" name="name" class="form-control" value="{{ old:name }}" placeholder="First & Last Name" required/>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" name="business_name" class="form-control" value="{{ old:business_name }}" placeholder="Business Name" required/>
+                                        </div>
+                                        <div class="form-group">
+                                            <select name="monthly_revenue" class="form-control" title="Monthly Revenue">
+                                                <option value="" disabled selected>Gross Monthly Sales</option>
+                                                <option value="1">Less than $2,500</option>
+                                                <option value="5000">$2,500 - $7,500</option>
+                                                <option value="8000">$7,500 - $ 10,000</option>
+                                                <option value="15000">$10,000 - $25,000</option>
+                                                <option value="35000">$25,000 - $50,000</option>
+                                                <option value="75000">$50,000 - $100,000</option>
+                                                <option value="125000">$100,000 - $750,000</option>
+                                                <option value="1000000">Over $750,000</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="tel" name="phone" id="phone-number" class="form-control" value="{{ old:phone }}" placeholder="Phone Number" required/>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" name="email" class="form-control" value="{{ old:email }}" placeholder="Email" required/>
+                                        </div>
+                                        {{ if errors }}
+                                        <div id="error-alert" class="alert error alert-danger">
+                                            {{ errors }}
+                                            {{ value }}<br>
+                                            {{ /errors }}
+                                            <div class="btn close" onclick="document.getElementById('error-alert').classList.toggle('hidden');">Ok</div>
+                                        </div>
+                                        {{ /if }}
+                                        {{ if {form:success} }}
+                                        {{ form_submission }}
+                                        {{ /if }}
+                                    </div>
+                                    <button class="btn btn-primary">Get Funded Now</button>
+                                    {{ /form:create }}
+                                    {{ /form:set }}
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-1"></div>
+        </div>
+    </div>
+</section>
+<section id="overview">
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li>
+                    <i class="fas fa-dollar-sign"></i>
+                    <span>
+                    Get $5,000 to $500,000 in business Funding.
+                </span>
+                </li>
+                <li>
+                    <i class="fas fa-users"></i>
+                    <span>
+                    Your own Team of Funding Experts find the offer that's best for you.
+                </span>
+                </li>
+                <li>
+                    <i class="far fa-calendar-alt"></i>
+                    <span>
+                    Most business get funds deposited in less than 3 business days.
+                </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>

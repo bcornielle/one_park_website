@@ -4,4 +4,5 @@ meta_description: 'Restaurant Business Loans, Funding & Working Capital Options'
 template: lp/restaurant-business-funding-with-partners
 body_class: restaurant_business_funding
 navigation: with-no-menu
+hero: defaut
 id: ae7f00ef-d044-4585-ba94-a4700d717efe

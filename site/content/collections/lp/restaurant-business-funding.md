@@ -5,4 +5,5 @@ canonical: business-funding
 template: lp/restaurant-business-funding
 body_class: restaurant_business_funding
 navigation: with-no-menu
+hero: defaut
 id: ed0d791b-f4e7-4f9f-b85e-c0a722341452

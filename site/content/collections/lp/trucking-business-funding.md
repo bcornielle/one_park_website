@@ -5,4 +5,5 @@ canonical: business-funding
 template: lp/trucking-business-funding
 body_class: trucking_business_funding
 navigation: with-no-menu
+hero: defaut
 id: 31452bbf-181e-4daa-9c0d-61e2da6024d5
