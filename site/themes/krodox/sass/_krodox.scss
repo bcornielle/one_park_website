@@ -3561,7 +3561,7 @@ body {
           }
           ul {
             &.items {
-              margin-top: 90px;
+              margin-top: 0p;
               padding: 0 30px;
               li {
                 @include columns(1);
@@ -3577,6 +3577,9 @@ body {
                 &:last-child {
                   border-top: solid 2px #e6dede;
                   border-bottom: solid 2px #e6dede;
+                }
+                &:first-child {
+                  border-top: none;
                 }
                 i {
                   font-size: 3.5rem;

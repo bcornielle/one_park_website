@@ -7617,7 +7617,7 @@ body.section-complete #app > main section ul.items,
 body.section-preaprob #app > main section ul.items,
 body.section-feliz #app > main section ul.items,
 body.section-gracias #app > main section ul.items {
-  margin-top: 90px;
+  margin-top: 0p;
   padding: 0 30px;
 }
 
@@ -7677,6 +7677,15 @@ body.section-feliz #app > main section ul.items li:last-child,
 body.section-gracias #app > main section ul.items li:last-child {
   border-top: solid 2px #e6dede;
   border-bottom: solid 2px #e6dede;
+}
+
+body.section-pre-qualification #app > main section ul.items li:first-child,
+body.section-congrats #app > main section ul.items li:first-child,
+body.section-complete #app > main section ul.items li:first-child,
+body.section-preaprob #app > main section ul.items li:first-child,
+body.section-feliz #app > main section ul.items li:first-child,
+body.section-gracias #app > main section ul.items li:first-child {
+  border-top: none;
 }
 
 body.section-pre-qualification #app > main section ul.items li i,
