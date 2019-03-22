@@ -2,11 +2,12 @@
     <div class="background"></div>
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 col-lg-6">
+            <div class="col-sm-12 col-lg-7">
                 <div class="hero-content">
                     <a href="/" class="branding logo">One Park Financial</a>
-                    <h1>Need Funding Fast?</h1>
-                    <h2>Get $5,000 to $750,000</h2>
+                    <h1>{{hero_title}}</h1>
+                    <h2>{{hero_subtitle}}</h2>
+                    <h3>{{hero_notice}}</h3>
                     <ul class="xs">
                         <li>
                             <span>Get Pre-Qualified in Minutes.</span>
@@ -37,13 +38,12 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-md-12 col-lg-1"></div>
             <div class="col-md-12 col-lg-4">
                 <div class="lp-form-wrapper">
                     <div id="form" class="lp-form">
                         <div class="row">
                             <div class="col-md-12">
-                                <h2>Start Your Application</h2>
+                                <h2>{{form_title}}</h2>
                             </div>
                         </div>
                         <div class="row">
@@ -91,7 +91,7 @@
                                         {{ form_submission }}
                                         {{ /if }}
                                     </div>
-                                    <button class="btn btn-primary">Get Funded Now</button>
+                                    <button class="btn btn-primary">{{form_button_text}}</button>
                                     {{ /form:create }}
                                     {{ /form:set }}
                                 </article>
@@ -109,22 +109,16 @@
         <div class="row">
             <ul>
                 <li>
-                    <i class="fas fa-dollar-sign"></i>
-                    <span>
-                    Get $5,000 to $500,000 in business Funding.
-                </span>
+                    <i class="{{overview_icon_1}}"></i>
+                    <span>{{overview_text_1}}</span>
                 </li>
                 <li>
-                    <i class="fas fa-users"></i>
-                    <span>
-                    Your own Team of Funding Experts find the offer that's best for you.
-                </span>
+                    <i class="{{overview_icon_2}}"></i>
+                    <span>{{overview_text_2}}</span>
                 </li>
                 <li>
-                    <i class="far fa-calendar-alt"></i>
-                    <span>
-                    Most business get funds deposited in less than 3 business days.
-                </span>
+                    <i class="{{overview_icon_3}}"></i>
+                    <span>{{overview_text_3}}</span>
                 </li>
             </ul>
         </div>
