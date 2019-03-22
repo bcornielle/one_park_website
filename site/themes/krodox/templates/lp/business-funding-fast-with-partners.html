@@ -1,26 +1,33 @@
 <main id="business-funding-fast">
+    {{ if hero === 'dark'}}
+    {{ partial:modules/hero-dark }}
+    {{ /if }}
+    {{ if hero === 'light'}}
+    {{ partial:modules/hero-light }}
+    {{ /if }}
+    {{ if hero === 'default'}}
     <section id="hero" class="overlay">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-6">
                     <div class="description">
                         <h1>
-                            <div class="what-we-do">Get <span><strong>$5,000</strong> to <strong>$750,000</strong></span></div>
-                            <div class="why-we-do-it">in Funding Fast</div>
+                            <div class="what-we-do">{{hero_title}}</div>
+                            <div class="why-we-do-it">{{hero_subtitle}}</div>
                         </h1>
-                        <h4>Your business needs <strong>working capital</strong> <span>and it needs it <strong>fast</strong>.</span></h4>
+                        <h4>{{hero_notice}}</h4>
                         <ul>
                             <li>
                                 <img src="/assets/img/leaf.png">
-                                <span>Hassle-Free Application Process. Get Pre-Qualified in Minutes.</span>
+                                <span>{{overview_text_1}}</span>
                             </li>
                             <li>
                                 <img src="/assets/img/leaf.png">
-                                <span>Your own Team of Funding Experts finds the offer that's best for you.</span>
+                                <span>{{overview_text_2}}</span>
                             </li>
                             <li>
                                 <img src="/assets/img/leaf.png">
-                                <span>Most businesses get funds deposited in less than 3 business days.</span>
+                                <span>{{overview_text_3}}</span>
                             </li>
                         </ul>
                     </div>
@@ -38,7 +45,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <h2>You could have <strong>funds in <br> 72 hours</strong></h2>
+                                    <h2>{{form_title}}</h2>
                                 </div>
                             </div>
                             <div class="row">
@@ -88,7 +95,7 @@
                                             {{ form_submission }}
                                             {{ /if }}
                                         </div>
-                                        <button class="btn btn-primary">Get Funded Now</button>
+                                        <button class="btn btn-primary">{{form_button_text}}</button>
                                         {{ /form:create }}
                                         {{ /form:set }}
                                         <ul>
@@ -111,6 +118,7 @@
             </div>
         </div>
     </section>
+    {{ /if }}
     {{ partial:modules/partners }}
     <section id="features">
         <div class="container">

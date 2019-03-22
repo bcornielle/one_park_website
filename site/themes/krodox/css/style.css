@@ -7947,7 +7947,7 @@ body.section-lp.business_funding #app > main section#hero .description h4,
 body.section-lp.fast_business_funding #app > main section#hero .description h4,
 body.section-lp.restaurant_business_funding #app > main section#hero .description h4,
 body.section-lp.trucking_business_funding #app > main section#hero .description h4 {
-  font-size: 1em;
+  font-size: 1.3em;
   font-weight: 300;
   line-height: 1.2;
   margin: 30px 0;
@@ -8024,13 +8024,14 @@ body.section-lp.trucking_business_funding #app > main section#hero .lp-form-wrap
   min-height: 500px;
   position: absolute;
   top: 0;
-  right: -5px;
+  right: 0;
   background: #162c4e;
   border: solid 4px #fff;
   width: 100%;
   opacity: 1;
   padding: 20px;
   text-align: center;
+  z-index: 1;
 }
 
 body.section-lp.business_funding #app > main section#hero .lp-form-wrapper #form.lp-form .phone-header,
@@ -8371,6 +8372,7 @@ body.section-lp.with-no-menu #app > nav.apple .nav-wrapper .container .menus .na
 
 body.section-lp.with-no-menu #app > main section#hero .lp-form-wrapper #form.lp-form {
   top: -150px;
+  z-index: 11;
 }
 
 body.section-lp.with-no-menu #app > footer .brand-info {
@@ -8447,8 +8449,7 @@ body.section-lp.dark #app > main section#hero .hero-content .branding.logo {
 
 body.section-lp.dark #app > main section#hero .hero-content h1 {
   color: #fff;
-  font-size: 4rem;
-  width: 450px;
+  font-size: 3.5rem;
   line-height: 1.2;
   letter-spacing: 1px;
 }
@@ -8456,11 +8457,13 @@ body.section-lp.dark #app > main section#hero .hero-content h1 {
 body.section-lp.dark #app > main section#hero .hero-content h2 {
   color: #fff;
   font-size: 2.5rem;
-  width: 450px;
 }
 
 body.section-lp.dark #app > main section#hero .hero-content h3 {
-  display: none;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
 }
 
 body.section-lp.dark #app > main section#hero .hero-content ul.badgets {
@@ -8506,15 +8509,21 @@ body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form {
   padding: 30px;
   min-height: 350px;
   position: relative;
-  top: auto;
-  bottom: -25px;
+  top: -30px;
   z-index: 1;
 }
 
 body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form h2 {
   text-transform: capitalize;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  line-height: 1.2;
   padding: 0;
+  color: white;
+  margin-bottom: 15px;
+}
+
+body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields .honeypot {
+  display: none !important;
 }
 
 body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=text],
@@ -8555,10 +8564,6 @@ body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form art
 }
 
 body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article button.btn {
-  position: absolute;
-  width: 300px;
-  left: 40%;
-  bottom: -70px;
   border-radius: 6px;
   background: #359c1c;
   border: none;
@@ -8570,11 +8575,12 @@ body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form art
 }
 
 body.section-lp.dark #app > main section#overview {
-  background: #f1f6ef;
+  background: #fff;
 }
 
 body.section-lp.dark #app > main section#overview ul {
   padding: 15px 0 0;
+  width: 100%;
 }
 
 body.section-lp.dark #app > main section#overview ul li {
@@ -8590,7 +8596,7 @@ body.section-lp.dark #app > main section#overview ul li {
   -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
-  padding: 30px;
+  padding: 45px;
 }
 
 body.section-lp.dark #app > main section#overview ul li:nth-child(3n) {
@@ -8602,10 +8608,19 @@ body.section-lp.dark #app > main section#overview ul li:nth-child(3n + 4) {
 }
 
 body.section-lp.dark #app > main section#overview ul li i {
-  display: block;
   font-size: 3rem;
-  color: #359c1c;
   margin-bottom: 15px;
+  color: #359c1c;
+  width: 64px;
+  height: 64px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 body.section-lp.dark #app > main section#overview ul li span {
@@ -8627,7 +8642,7 @@ body.section-lp.light #app > main section#hero .background {
   bottom: 0;
   right: 0;
   left: 0;
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9));
 }
 
 body.section-lp.light #app > main section#hero .background:before {
@@ -8656,10 +8671,9 @@ body.section-lp.light #app > main section#hero .hero-content .branding.logo {
 
 body.section-lp.light #app > main section#hero .hero-content h1 {
   color: #162c4e;
-  font-size: 4rem;
+  font-size: 3.5rem;
   width: 100%;
   line-height: 1.2;
-  letter-spacing: 1px;
   margin-top: 60px;
 }
 
@@ -8670,7 +8684,10 @@ body.section-lp.light #app > main section#hero .hero-content h2 {
 }
 
 body.section-lp.light #app > main section#hero .hero-content h3 {
-  display: none;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #162c4e;
+  letter-spacing: 1px;
 }
 
 body.section-lp.light #app > main section#hero .hero-content ul.badgets {
@@ -8726,6 +8743,10 @@ body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form h2
   font-size: 1.5rem;
   padding: 0;
   color: #323831;
+}
+
+body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields .honeypot {
+  display: none !important;
 }
 
 body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=text],
@@ -8787,6 +8808,7 @@ body.section-lp.light #app > main section#overview {
 
 body.section-lp.light #app > main section#overview ul {
   padding: 15px 0 0;
+  width: 100%;
 }
 
 body.section-lp.light #app > main section#overview ul li {
@@ -8802,7 +8824,7 @@ body.section-lp.light #app > main section#overview ul li {
   -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
-  padding: 30px;
+  padding: 45px;
 }
 
 body.section-lp.light #app > main section#overview ul li:nth-child(3n) {

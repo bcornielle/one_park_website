@@ -23,7 +23,7 @@ sections:
       canonical:
         type: text
         localizable: true
-        display: canonical
+        display: Canonical
       template:
         options:
           lp/home-page: 'Home Page'
@@ -36,16 +36,18 @@ sections:
           lp/trucking-business-funding: 'Trucking Business Funding'
           lp/trucking-business-funding-with-partners: 'Trucking Business Funding With Partners'
         type: select
-        display: template
-        width: 33
+        display: Template
       body_class:
         type: text
         display: 'Body Class'
         width: 33
       navigation:
-        type: text
-        display: Navigation
+        options:
+          with-menu: 'With Menu'
+          with-no-menu: 'Without Menu'
+        type: select
         width: 33
+        display: Navigation
       hero:
         options:
           default: Default
@@ -53,7 +55,51 @@ sections:
           light: Light
         type: select
         width: 33
-        display: hero
+        display: Hero
+      hero_title:
+        type: text
+        width: 33
+        display: 'Hero Title'
+      hero_subtitle:
+        type: text
+        width: 33
+        display: 'Hero Subtitle'
+      hero_notice:
+        type: text
+        width: 33
+        display: 'Hero Notice'
+      form_title:
+        type: text
+        display: 'Form Title'
+        width: 50
+      form_button_text:
+        type: text
+        width: 50
+        display: 'Form Button Text'
+      overview_icon_1:
+        type: text
+        width: 33
+        display: 'Overview Icon 1'
+      overview_icon_2:
+        type: text
+        width: 33
+        display: 'Overview Icon 2'
+      overview_icon_3:
+        type: text
+        width: 33
+        display: 'Overview Icon 3'
+      overview_text_1:
+        type: text
+        width: 33
+        display: 'Overview Text 1'
+      overview_text_2:
+        type: text
+        width: 33
+        display: 'Overview Text 2'
+      overview_text_3:
+        type: text
+        width: 33
+        display: 'Overview Text 3'
 taxonomies: true
 title: Landing
 create_title: 'New Landing Page'

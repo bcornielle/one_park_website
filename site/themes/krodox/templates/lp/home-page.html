@@ -1,6 +1,78 @@
 <main>
-    {{ partial:modules/hero-home }}
-    {{ partial:modules/highlights }}
+    {{ if hero === 'dark'}}
+    {{ partial:modules/hero-dark }}
+    {{ /if }}
+    {{ if hero === 'light'}}
+    {{ partial:modules/hero-light }}
+    {{ /if }}
+    {{ if hero === 'default'}}
+    <section id="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-5"></div>
+                <div class="col-sm-12 col-lg-7">
+                    <div class="hero-content">
+                        <a href="/" class="branding logo">One Park Financial</a>
+                        <h1>{{hero_title}}</h1>
+                        <h2>{{hero_subtitle}}</h2>
+                        <h3>{{hero_notice}}</h3>
+                        <ul class="xs">
+                            <li>
+                                <span>Get Pre-Qualified in Minutes.</span>
+                            </li>
+                            <li>
+                                <span>Funding in Under 72 Hours.</span>
+                            </li>
+                            <li>
+                                <span>Poor Credit Accepted.</span>
+                            </li>
+                        </ul>
+                        <a class="btn btn-primary" href="/pre-qualification">
+                            <span>{{form_button_text}}</span>
+                        </a>
+                        <div class="phone">
+                            <div class="text">Speak to a funding expert</div>
+                            <a href="tel:+18883271044">
+                                <span class="number">1-888-327-1044</span>
+                            </a>
+                        </div>
+                        <ul class="badgets">
+                            <li>
+                                <img src="/assets/img/google-rating.png">
+                            </li>
+                            <li>
+                                <img src="/assets/img/comodo.png">
+                            </li>
+                            <li>
+                                <img src="/assets/img/bbbb.png">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="highlights">
+        <div class="container">
+            <div class="row">
+                <ul class="highlights">
+                    <li>
+                        <i class="{{overview_icon_1}}"></i>
+                        <div>{{overview_text_1}}</div>
+                    </li>
+                    <li>
+                        <i class="{{overview_icon_2}}"></i>
+                        <div>{{overview_text_2}}</div>
+                    </li>
+                    <li>
+                        <i class="{{overview_icon_3}}"></i>
+                        <div>{{overview_text_3}}</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    {{ /if }}
     {{ partial:modules/services }}
     {{ partial:modules/features }}
     {{ partial:modules/testimonials }}
