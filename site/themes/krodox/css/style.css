@@ -8515,8 +8515,15 @@ body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form {
 
 body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form h2 {
   text-transform: capitalize;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  line-height: 1.2;
   padding: 0;
+  color: white;
+  margin-bottom: 15px;
+}
+
+body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields .honeypot {
+  display: none !important;
 }
 
 body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=text],
@@ -8573,6 +8580,7 @@ body.section-lp.dark #app > main section#overview {
 
 body.section-lp.dark #app > main section#overview ul {
   padding: 15px 0 0;
+  width: 100%;
 }
 
 body.section-lp.dark #app > main section#overview ul li {
@@ -8600,15 +8608,13 @@ body.section-lp.dark #app > main section#overview ul li:nth-child(3n + 4) {
 }
 
 body.section-lp.dark #app > main section#overview ul li i {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 15px;
-  background: #359c1c;
-  color: #fff;
+  color: #359c1c;
   width: 64px;
   height: 64px;
   display: -ms-flexbox;
   display: flex;
-  border-radius: 50%;
   -ms-flex-direction: column;
   flex-direction: column;
   -ms-flex-align: center;
@@ -8739,6 +8745,10 @@ body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form h2
   color: #323831;
 }
 
+body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields .honeypot {
+  display: none !important;
+}
+
 body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=text],
 body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=tel],
 body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=email],
@@ -8798,6 +8808,7 @@ body.section-lp.light #app > main section#overview {
 
 body.section-lp.light #app > main section#overview ul {
   padding: 15px 0 0;
+  width: 100%;
 }
 
 body.section-lp.light #app > main section#overview ul li {

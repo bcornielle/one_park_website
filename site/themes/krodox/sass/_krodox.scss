@@ -4148,11 +4148,17 @@ body {
                     z-index: 1;
                     h2 {
                       text-transform: capitalize;
-                      font-size: 1.5rem;
+                      font-size: 1.3rem;
+                      line-height: 1.2;
                       padding: 0;
+                      color: white;
+                      margin-bottom: 15px;
                     }
                     article {
                       .fields {
+                        .honeypot {
+                          display: none !important;
+                        }
                         input[type=text],input[type=tel],input[type=email],input[type=number],select {
                           border: none;
                           margin-bottom: 10px;
@@ -4188,6 +4194,7 @@ body {
               background: #fff;
               ul {
                 padding: 15px 0 0;
+                width: 100%;
                 li {
                   @include columns(3,0);
                   display: flex;
@@ -4197,14 +4204,12 @@ body {
                   text-align: center;
                   padding: 45px;
                   i {
-                    font-size: 2rem;
+                    font-size: 3rem;
                     margin-bottom: 15px;
-                    background: $brand-primary;
-                    color: #fff;
+                    color: $brand-primary;
                     width: 64px;
                     height: 64px;
                     display: flex;
-                    border-radius: 50%;
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
@@ -4326,6 +4331,9 @@ body {
                     }
                     article {
                       .fields {
+                        .honeypot {
+                          display: none !important;
+                        }
                         input[type=text],input[type=tel],input[type=email],input[type=number],select {
                           border: none;
                           margin-bottom: 10px;
@@ -4366,6 +4374,7 @@ body {
               background: #fff;
               ul {
                 padding: 15px 0 0;
+                width: 100%;
                 li {
                   @include columns(3,0);
                   display: flex;
