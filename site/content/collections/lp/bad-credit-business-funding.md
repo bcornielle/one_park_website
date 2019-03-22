@@ -4,7 +4,7 @@ meta_description: 'Bad Credit Business Funding'
 template: lp/home-page
 body_class: home-page
 navigation: with-menu
-hero: default
+hero: dark
 hero_title: 'Bad Credit Business Loan'
 hero_subtitle: 'Get $5,000 to $750,000'
 hero_notice: 'YOUR TIME IS MONEY </br>GET HASSLE FREE WORKING CAPITAL'
