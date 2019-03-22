@@ -3,7 +3,7 @@ meta_title: 'Bad Credit Business Funding'
 meta_description: 'Bad Credit Business Funding'
 template: lp/home-page
 body_class: home-page
-navigation: with-menu
+navigation: with-no-menu
 hero: dark
 hero_title: 'Bad Credit Business Loan'
 hero_subtitle: 'Get $5,000 to $750,000'
