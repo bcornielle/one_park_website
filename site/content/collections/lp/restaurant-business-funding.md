@@ -4,7 +4,7 @@ meta_description: 'Restaurant Business Loans, Funding & Working Capital Options'
 canonical: business-funding
 template: lp/restaurant-business-funding
 body_class: restaurant_business_funding
-navigation: with-menu
+navigation: with-no-menu
 hero: default
 hero_title: 'Get $5,000 to $750,000'
 hero_subtitle: 'in Funding Fast'
