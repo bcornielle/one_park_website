@@ -1,19 +1,23 @@
 title: 'Fast Business Loans, Funding & Working Capital Options'
-meta_title: 'Fast Business Loans, Funding & Working Capital Options'
-meta_description: 'Fast Business Loans, Funding & Working Capital Options'
-template: lp/business-funding-fast-with-partners
-body_class: fast_business_funding
-navigation: with-no-menu
+template: lp/fast-capital-360-partners
+body_class: fast_capital_360
+navigation: with-menu
 hero: default
+hero_image: /assets/img/business.jpg
 hero_title: 'Get $5,000 to $750,000'
 hero_subtitle: 'in Funding Fast'
 hero_notice: 'YOUR BUSINESS NEEDS WORKING CAPITAL AND IT NEEDS IT FAST.'
-form_title: 'YOU COULD HAVE FUNDS IN  72 HOURS'
+hero_item_1: 'Get Pre-Qualified in Minutes.'
+hero_item_2: 'Funding in Under 72 Hours.'
+hero_item_3: 'Poor Credit Accepted.'
+form_title: 'YOU COULD HAVE FUNDS</br>IN  72 HOURS'
 form_button_text: 'Get Funded Now'
 overview_icon_1: 'fas fa-dollar-sign'
-overview_icon_2: 'fas fa-users'
-overview_icon_3: 'far fa-calendar-alt'
 overview_text_1: 'Hassle-Free Application Process. Get Pre-Qualified in Minutes.'
+overview_icon_2: 'fas fa-users'
 overview_text_2: 'Your own Team of Funding Experts finds the offer that''s best for you.'
+overview_icon_3: 'far fa-calendar-alt'
 overview_text_3: 'Most businesses get funds deposited in less than 3 business days.'
+meta_title: 'Fast Business Loans, Funding & Working Capital Options'
+meta_description: 'Fast Business Loans, Funding & Working Capital Options'
 id: 63833712-acd9-43e5-9428-3c45f3aa65e8

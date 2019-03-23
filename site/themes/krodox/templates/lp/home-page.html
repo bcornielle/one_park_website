@@ -6,8 +6,12 @@
     {{ partial:modules/hero-light }}
     {{ /if }}
     {{ if hero === 'default'}}
+    {{if hero_image}}
+    <section id="hero" style="background-image:url('{{ glide:hero_image width="100%" height="500" fit="crop"}}');">
+    {{else}}
     <section id="hero">
-        <div class="container">
+    {{ /if }}
+    <div class="container">
             <div class="row">
                 <div class="col-md-12 col-lg-5"></div>
                 <div class="col-sm-12 col-lg-7">
@@ -17,15 +21,9 @@
                         <h2>{{hero_subtitle}}</h2>
                         <h3>{{hero_notice}}</h3>
                         <ul class="xs">
-                            <li>
-                                <span>Get Pre-Qualified in Minutes.</span>
-                            </li>
-                            <li>
-                                <span>Funding in Under 72 Hours.</span>
-                            </li>
-                            <li>
-                                <span>Poor Credit Accepted.</span>
-                            </li>
+                            <li><span>{{hero_item_1}}</span></li>
+                            <li><span>{{hero_item_2}}</span></li>
+                            <li><span>{{hero_item_3}}</span></li>
                         </ul>
                         <a class="btn btn-primary" href="/pre-qualification">
                             <span>{{form_button_text}}</span>
@@ -37,15 +35,9 @@
                             </a>
                         </div>
                         <ul class="badgets">
-                            <li>
-                                <img src="/assets/img/google-rating.png">
-                            </li>
-                            <li>
-                                <img src="/assets/img/comodo.png">
-                            </li>
-                            <li>
-                                <img src="/assets/img/bbbb.png">
-                            </li>
+                            <li><img src="/assets/img/google-rating.png"></li>
+                            <li><img src="/assets/img/comodo.png"></li>
+                            <li><img src="/assets/img/bbbb.png"></li>
                         </ul>
                     </div>
                 </div>

@@ -3716,7 +3716,444 @@ body {
     }
   }
   &.section-lp {
-    &.business_funding,&.fast_business_funding, &.restaurant_business_funding, &.trucking_business_funding {
+    &.with-no-menu {
+      #app {
+        > nav {
+          &.apple {
+            z-index: 0;
+            .nav-wrapper {
+              position: fixed;
+              .container {
+                .menus {
+                  .navbar-right {
+                    display: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+        > main {
+          section {
+            &#hero {
+              .lp-form-wrapper {
+                #form {
+                  &.lp-form {
+                    top: -150px;
+                    z-index: 11;
+                  }
+                }
+              }
+            }
+          }
+        }
+        > footer {
+          .brand-info {
+            margin: 0;
+            padding: 60px 0;
+            .links {
+              list-style: none;
+              padding: 0;
+              li {
+                @include columns(1);
+                a {
+                  border-bottom: solid 1px $white;
+                  &:hover {
+                    border-bottom: solid 1px $brand-primary;
+                    color: $brand-primary;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &.home-page {
+      #app {
+        > main {
+          section {
+            &#hero {
+              background-image: url("/assets/img/home-hero.png");
+              .hero-content {
+                .branding {
+                  &.logo {
+                    background-image: url(/assets/img/one-park-logo.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    text-indent: -9999px;
+                    float: left;
+                    height: 65px;
+                    width: 291px;
+                    display: none;
+                  }
+                }
+                ul {
+                  &.xs {
+                    order: 4;
+                    display: none;
+                    margin: 0;
+                    padding: 0;
+                    line-height: 1;
+                    li {
+                      @include columns(1);
+                    }
+                  }
+                }
+                .phone {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &.dark {
+      #app {
+        > main {
+          section {
+            &#hero {
+              background-image: url("/assets/img/article-11.jpg")!important;
+              min-height: 600px;
+              height: 600px;
+              .background {
+                 overflow: hidden;
+                 position: absolute;
+                 top: 0;
+                 bottom: 0;
+                 right: 0;
+                 left: 0;
+                 background: linear-gradient(rgba(53, 156, 28, 0.3), rgba(53, 156, 28, 0.3));
+                 &:before {
+                   position: absolute;
+                   content: '';
+                   top: 0;
+                   left: -850px;
+                   z-index: 0;
+                   background: linear-gradient(rgba(22, 44, 78, 0.6), rgba(22, 44, 78, 0.6));
+                   transform: skewY(-55deg);
+                   width: 3000px;
+                   height: 2000px;
+                 }
+               }
+              .hero-content {
+                .branding {
+                  &.logo {
+                    background-image: url(/assets/img/one-park-logo.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    text-indent: -9999px;
+                    float: left;
+                    height: 65px;
+                    width: 291px;
+                    display: none;
+                  }
+                }
+                h1 {
+                  color: #fff;
+                  font-size: 3.5rem;
+                  line-height: 1.2;
+                  letter-spacing: 1px;
+                }
+                h2 {
+                  color: #fff;
+                  font-size: 2.5rem;
+                }
+                h3 {
+                  font-size: 1.5rem;
+                  text-transform: uppercase;
+                  color: white;
+                  letter-spacing: 1px;
+                }
+                ul {
+                  &.badgets {
+                    padding: 30px 0 0 0;
+                    max-width: 450px;
+                    li {
+                      img {
+                        max-width: 130px;
+                      }
+                    }
+                  }
+                  &.xs {
+                    order: 4;
+                    display: none;
+                    margin: 0;
+                    padding: 0;
+                    line-height: 1;
+                    li {
+                      @include columns(1);
+                    }
+                  }
+                }
+                .phone {
+                  display: none;
+                }
+              }
+              .lp-form-wrapper {
+                #form {
+                  &.lp-form {
+                    border: none;
+                    border-radius: 10px;
+                    background: linear-gradient(rgba(22, 44, 78, 0.9), rgba(22, 44, 78, 0.9));
+                    padding: 30px;
+                    min-height: 350px;
+                    position: relative;
+                    top: -30px;
+                    z-index: 1;
+                    h2 {
+                      font-size: 1.3rem;
+                      line-height: 1.2;
+                      padding: 0;
+                      color: white;
+                      margin-bottom: 15px;
+                    }
+                    article {
+                      .fields {
+                        .honeypot {
+                          display: none !important;
+                        }
+                        input[type=text],input[type=tel],input[type=email],input[type=number],select {
+                          border: none;
+                          margin-bottom: 10px;
+                          background: linear-gradient(rgba(134, 146, 165, 0.3), rgba(134, 146, 165, 0.3));
+                          border-radius: 6px;
+                          color: #fff;
+                          outline: none;
+                          &:focus {
+                            box-shadow: none;
+                          }
+                          &::placeholder {
+                            color: #fff;
+                          }
+                        }
+                      }
+                      button {
+                        &.btn {
+                          border-radius: 6px;
+                          background: $brand-primary;
+                          border: none;
+                          &:hover {
+                            background:$brand-primary;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            &#overview{
+              background: #fff;
+              ul {
+                padding: 15px 0 0;
+                width: 100%;
+                li {
+                  @include columns(3,0);
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                  text-align: center;
+                  padding: 45px;
+                  i {
+                    font-size: 3rem;
+                    margin-bottom: 15px;
+                    color: $brand-primary;
+                    width: 64px;
+                    height: 64px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                  }
+                  span {
+                    display: block;
+                    font-size: 1.1rem;
+                    line-height: 1.5;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &.light {
+      #app {
+        > main {
+          section {
+            &#hero {
+              background-image: url("/assets/img/article-11.jpg");
+              min-height: 500px;
+              height: 500px;
+              .background {
+                overflow: hidden;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9));
+                &:before {
+                  position: absolute;
+                  content: '';
+                  top: 0;
+                  left: -850px;
+                  z-index: 0;
+                  background: linear-gradient(rgba(211, 215, 220, 0.6), rgba(211, 214, 218, 0.6));
+                  transform: skewY(-55deg);
+                  width: 3000px;
+                  height: 2000px;
+                  display: none;
+                }
+              }
+              .hero-content {
+                .branding {
+                  &.logo {
+                    background-image: url(/assets/img/one-park-logo.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    text-indent: -9999px;
+                    float: left;
+                    height: 65px;
+                    width: 291px;
+                    display: none;
+                  }
+                }
+                h1 {
+                  color: $text-color;
+                  font-size: 3.5rem;
+                  width: 100%;
+                  line-height: 1;
+                  margin-top: 60px;
+                }
+                h2 {
+                  color: $text-color;
+                  font-size: 2.5rem;
+                  width: 100%;
+                }
+                h3 {
+                  font-size: 1.5rem;
+                  text-transform: uppercase;
+                  color: $text-color;
+                  letter-spacing: 1px;
+                }
+                ul {
+                  &.badgets {
+                    padding: 30px 0 0 0;
+                    max-width: 450px;
+                    li {
+                      img {
+                        max-width: 130px;
+                      }
+                    }
+                  }
+                  &.xs {
+                    order: 4;
+                    display: none;
+                    margin: 0;
+                    padding: 0;
+                    line-height: 1;
+                    li {
+                      @include columns(1);
+                    }
+                  }
+                }
+                .phone {
+                  display: none;
+                }
+              }
+              .lp-form-wrapper {
+                #form {
+                  &.lp-form {
+                    border: none;
+                    border-radius: 10px;
+                    background: #fff;
+                    padding: 30px;
+                    min-height: 350px;
+                    position: relative;
+                    top: 0;
+                    bottom: auto;
+                    z-index: 1;
+                    h2 {
+                      font-size: 1.5rem;
+                      padding: 0;
+                      color: $text-color;
+                    }
+                    article {
+                      .fields {
+                        .honeypot {
+                          display: none !important;
+                        }
+                        input[type=text],input[type=tel],input[type=email],input[type=number],select {
+                          border: none;
+                          margin-bottom: 10px;
+                          background: #fff;
+                          border-radius: 6px;
+                          color: $text-color;
+                          outline: none;
+                          border: solid 2px #eee;
+                          &:focus {
+                            box-shadow: none;
+                          }
+                          &::placeholder {
+                            color: $text-color;
+                          }
+                        }
+                      }
+                      button {
+                        &.btn {
+                          position: relative;
+                          width: 100%;
+                          left: 0;
+                          bottom: auto;
+                          border-radius: 6px;
+                          background: $brand-primary;
+                          border: none;
+                          &:hover {
+                            background:$brand-primary;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            &#overview {
+              background: #fff;
+              ul {
+                padding: 15px 0 0;
+                width: 100%;
+                li {
+                  @include columns(3,0);
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                  text-align: center;
+                  padding: 45px;
+                  i {
+                    display: block;
+                    font-size: 3rem;
+                    color: #359c1c;
+                    margin-bottom: 15px;
+                  }
+                  span {
+                    display: block;
+                    font-size: 1.1rem;
+                    line-height: 1.5;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &.fast_capital_360 {
       #app {
         > main {
           section {
@@ -3725,19 +4162,13 @@ body {
               flex-direction: column;
               align-items: center;
               justify-content: center;
-              background-image: url("/assets/img/business.jpg");
+              background-image: url("/assets/img/article-11.jpg");
               background-position: 100%;
               background-repeat: no-repeat;
               background-size: cover;
               position: relative;
               min-height: 500px;
               height: 500px;
-              &.restaurant {
-                background-image: url("/assets/img/restaurant.jpeg");
-              }
-              &.trucking {
-                background-image: url("/assets/img/trucking.jpg");
-              }
               &.overlay {
                 h1,li {
                   color: $white;
@@ -3960,447 +4391,6 @@ body {
         }
       }
     }
-    &.home-page {
-      #app {
-        > main {
-          section {
-            &#hero {
-              background-image: url("/assets/img/home-hero.png");
-              .hero-content {
-                .branding {
-                  &.logo {
-                    background-image: url(/assets/img/one-park-logo.png);
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    text-indent: -9999px;
-                    float: left;
-                    height: 65px;
-                    width: 291px;
-                    display: none;
-                  }
-                }
-                ul {
-                  &.xs {
-                    order: 4;
-                    display: none;
-                    margin: 0;
-                    padding: 0;
-                    line-height: 1;
-                    li {
-                      @include columns(1);
-                    }
-                  }
-                }
-                .phone {
-                  display: none;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    &.with-no-menu {
-      #app {
-        > nav {
-          &.apple {
-            z-index: 0;
-            .nav-wrapper {
-              position: fixed;
-              .container {
-                .menus {
-                  .navbar-right {
-                    display: none;
-                  }
-                }
-              }
-            }
-          }
-        }
-        > main {
-          section {
-            &#hero {
-              .lp-form-wrapper {
-                #form {
-                  &.lp-form {
-                    top: -150px;
-                    z-index: 11;
-                  }
-                }
-              }
-            }
-          }
-        }
-        > footer {
-          .brand-info {
-            margin: 0;
-            padding: 60px 0;
-            .links {
-              list-style: none;
-              padding: 0;
-              li {
-                @include columns(1);
-                a {
-                  border-bottom: solid 1px $white;
-                  &:hover {
-                    border-bottom: solid 1px $brand-primary;
-                    color: $brand-primary;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    &.dark {
-      #app {
-        > main {
-          section {
-            &#hero {
-              background-image: url("/assets/img/article-11.jpg");
-              min-height: 600px;
-              height: 600px;
-              .background {
-                 overflow: hidden;
-                 position: absolute;
-                 top: 0;
-                 bottom: 0;
-                 right: 0;
-                 left: 0;
-                 background: linear-gradient(rgba(53, 156, 28, 0.3), rgba(53, 156, 28, 0.3));
-                 &:before {
-                   position: absolute;
-                   content: '';
-                   top: 0;
-                   left: -850px;
-                   z-index: 0;
-                   background: linear-gradient(rgba(22, 44, 78, 0.6), rgba(22, 44, 78, 0.6));
-                   transform: skewY(-55deg);
-                   width: 3000px;
-                   height: 2000px;
-                 }
-               }
-              .hero-content {
-                .branding {
-                  &.logo {
-                    background-image: url(/assets/img/one-park-logo.png);
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    text-indent: -9999px;
-                    float: left;
-                    height: 65px;
-                    width: 291px;
-                    display: none;
-                  }
-                }
-                h1 {
-                  color: #fff;
-                  font-size: 3.5rem;
-                  line-height: 1.2;
-                  letter-spacing: 1px;
-                }
-                h2 {
-                  color: #fff;
-                  font-size: 2.5rem;
-                }
-                h3 {
-                  font-size: 1.5rem;
-                  text-transform: uppercase;
-                  color: white;
-                  letter-spacing: 1px;
-                }
-                ul {
-                  &.badgets {
-                    padding: 30px 0 0 0;
-                    max-width: 450px;
-                    li {
-                      img {
-                        max-width: 130px;
-                      }
-                    }
-                  }
-                  &.xs {
-                    order: 4;
-                    display: none;
-                    margin: 0;
-                    padding: 0;
-                    line-height: 1;
-                    li {
-                      @include columns(1);
-                    }
-                  }
-                }
-                .phone {
-                  display: none;
-                }
-              }
-              .lp-form-wrapper {
-                #form {
-                  &.lp-form {
-                    border: none;
-                    border-radius: 10px;
-                    background: linear-gradient(rgba(22, 44, 78, 0.9), rgba(22, 44, 78, 0.9));
-                    padding: 30px;
-                    min-height: 350px;
-                    position: relative;
-                    top: -30px;
-                    z-index: 1;
-                    h2 {
-                      text-transform: capitalize;
-                      font-size: 1.3rem;
-                      line-height: 1.2;
-                      padding: 0;
-                      color: white;
-                      margin-bottom: 15px;
-                    }
-                    article {
-                      .fields {
-                        .honeypot {
-                          display: none !important;
-                        }
-                        input[type=text],input[type=tel],input[type=email],input[type=number],select {
-                          border: none;
-                          margin-bottom: 10px;
-                          background: linear-gradient(rgba(134, 146, 165, 0.3), rgba(134, 146, 165, 0.3));
-                          border-radius: 6px;
-                          color: #fff;
-                          outline: none;
-                          &:focus {
-                            box-shadow: none;
-                          }
-                          &::placeholder {
-                            color: #fff;
-                          }
-                        }
-                      }
-                      button {
-                        &.btn {
-                          border-radius: 6px;
-                          background: $brand-primary;
-                          border: none;
-                          font-weight: 900;
-                          &:hover {
-                            background:$brand-primary;
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-            &#overview{
-              background: #fff;
-              ul {
-                padding: 15px 0 0;
-                width: 100%;
-                li {
-                  @include columns(3,0);
-                  display: flex;
-                  flex-direction: column;
-                  align-items: center;
-                  justify-content: center;
-                  text-align: center;
-                  padding: 45px;
-                  i {
-                    font-size: 3rem;
-                    margin-bottom: 15px;
-                    color: $brand-primary;
-                    width: 64px;
-                    height: 64px;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                  }
-                  span {
-                    display: block;
-                    font-size: 1.1rem;
-                    line-height: 1.5;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    &.light {
-      #app {
-        > main {
-          section {
-            &#hero {
-              background-image: url("/assets/img/article-11.jpg");
-              min-height: 500px;
-              height: 500px;
-              .background {
-                overflow: hidden;
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                right: 0;
-                left: 0;
-                background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9));
-                &:before {
-                  position: absolute;
-                  content: '';
-                  top: 0;
-                  left: -850px;
-                  z-index: 0;
-                  background: linear-gradient(rgba(211, 215, 220, 0.6), rgba(211, 214, 218, 0.6));
-                  transform: skewY(-55deg);
-                  width: 3000px;
-                  height: 2000px;
-                  display: none;
-                }
-              }
-              .hero-content {
-                .branding {
-                  &.logo {
-                    background-image: url(/assets/img/one-park-logo.png);
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    text-indent: -9999px;
-                    float: left;
-                    height: 65px;
-                    width: 291px;
-                    display: none;
-                  }
-                }
-                h1 {
-                  color: $brand-secondary;
-                  font-size: 3.5rem;
-                  width: 100%;
-                  line-height: 1.2;
-                  margin-top: 60px;
-                }
-                h2 {
-                  color: $brand-secondary;
-                  font-size: 2.5rem;
-                  width: 100%;
-                }
-                h3 {
-                  font-size: 1.5rem;
-                  text-transform: uppercase;
-                  color: $brand-secondary;
-                  letter-spacing: 1px;
-                }
-                ul {
-                  &.badgets {
-                    padding: 30px 0 0 0;
-                    max-width: 450px;
-                    li {
-                      img {
-                        max-width: 130px;
-                      }
-                    }
-                  }
-                  &.xs {
-                    order: 4;
-                    display: none;
-                    margin: 0;
-                    padding: 0;
-                    line-height: 1;
-                    li {
-                      @include columns(1);
-                    }
-                  }
-                }
-                .phone {
-                  display: none;
-                }
-              }
-              .lp-form-wrapper {
-                #form {
-                  &.lp-form {
-                    border: none;
-                    border-radius: 10px;
-                    background: #fff;
-                    padding: 30px;
-                    min-height: 350px;
-                    position: relative;
-                    top: 0;
-                    bottom: auto;
-                    z-index: 1;
-                    h2 {
-                      text-transform: capitalize;
-                      font-size: 1.5rem;
-                      padding: 0;
-                      color: $text-color;
-                    }
-                    article {
-                      .fields {
-                        .honeypot {
-                          display: none !important;
-                        }
-                        input[type=text],input[type=tel],input[type=email],input[type=number],select {
-                          border: none;
-                          margin-bottom: 10px;
-                          background: #fff;
-                          border-radius: 6px;
-                          color: $text-color;
-                          outline: none;
-                          border: solid 2px #eee;
-                          &:focus {
-                            box-shadow: none;
-                          }
-                          &::placeholder {
-                            color: $text-color;
-                          }
-                        }
-                      }
-                      button {
-                        &.btn {
-                          position: relative;
-                          width: 100%;
-                          left: 0;
-                          bottom: auto;
-                          border-radius: 6px;
-                          background: $brand-primary;
-                          border: none;
-                          font-weight: 900;
-                          &:hover {
-                            background:$brand-primary;
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-            &#overview {
-              background: #fff;
-              ul {
-                padding: 15px 0 0;
-                width: 100%;
-                li {
-                  @include columns(3,0);
-                  display: flex;
-                  flex-direction: column;
-                  align-items: center;
-                  justify-content: center;
-                  text-align: center;
-                  padding: 45px;
-                  i {
-                    display: block;
-                    font-size: 3rem;
-                    color: #359c1c;
-                    margin-bottom: 15px;
-                  }
-                  span {
-                    display: block;
-                    font-size: 1.1rem;
-                    line-height: 1.5;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
   }
   &.es {
     #app {
@@ -4556,7 +4546,7 @@ body {
       }
     }
     &.section-lp {
-      &.business_funding,&.fast_business_funding, &.restaurant_business_funding, &.trucking_business_funding {
+      &.fast_capital_360 {
         #app {
           > main {
             section {
@@ -4788,7 +4778,99 @@ body {
       }
     }
     &.section-lp {
-      &.business_funding,&.fast_business_funding, &.restaurant_business_funding, &.trucking_business_funding {
+      &.home-page {
+        #app {
+          > main {
+            section {
+              &#hero {
+                background-image: none !important;
+              }
+            }
+          }
+        }
+      }
+      &.dark {
+        #app {
+          > main {
+            section {
+              &#hero {
+                height: auto;
+                background-image: url("/assets/img/article-11.jpg")!important;
+                .hero-content {
+                  h1 {
+                    line-height: 1;
+                    font-size: 3rem;
+                    font-weight: 900;
+                    letter-spacing: -2px;
+                    margin-top: 45px;
+                  }
+                }
+                .lp-form-wrapper {
+                  #form {
+                    &.lp-form {
+                      top: 0;
+                      margin: 30px 0 45px;
+                    }
+                  }
+                }
+              }
+              &#overview {
+                ul {
+                  padding-top: 45px;
+                  li {
+                    padding:0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      &.light {
+        #app {
+          > main {
+            section {
+              &#hero {
+                height: auto;
+                background-image: url("/assets/img/article-11.jpg")!important;
+                .hero-content {
+                  h1 {
+                    line-height: 1;
+                    font-size: 3rem;
+                    font-weight: 900;
+                    letter-spacing: -2px;
+                    margin-top: 45px;
+                  }
+                }
+                .lp-form-wrapper {
+                  #form {
+                    &.lp-form {
+                      top: 0;
+                      margin: 30px 0 45px;
+                      article {
+                        button {
+                          &.btn {
+                            max-width: 300px;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              &#overview {
+                ul {
+                  padding-top: 45px;
+                  li {
+                    padding:0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      &.fast_capital_360 {
         #app {
           > main {
             section {
@@ -4798,17 +4880,6 @@ body {
                     font-size: 1.5em;
                   }
                 }
-              }
-            }
-          }
-        }
-      }
-      &.home-page {
-        #app {
-          > main {
-            section {
-              &#hero {
-                background-image: none;
               }
             }
           }
@@ -5436,7 +5507,7 @@ body {
           > main {
             section {
               &#hero {
-                background-image: none;
+                background-image: none !important;
                 text-align: center;
                 .hero-content {
                   a {
@@ -5448,6 +5519,80 @@ body {
                     &.badgets {
                       margin: 0 auto;
                     }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      &.dark {
+        #app {
+          > main {
+            section {
+              &#hero {
+                height: auto;
+                background-image: url("/assets/img/article-11.jpg")!important;
+                .hero-content {
+                  h1 {
+                    line-height: 1;
+                    font-size: 3rem;
+                    font-weight: 900;
+                    letter-spacing: -2px;
+                    margin-top: 45px;
+                  }
+                }
+                .lp-form-wrapper {
+                  #form {
+                    &.lp-form {
+                      top: 0;
+                      margin: 30px 0 45px;
+                    }
+                  }
+                }
+              }
+              &#overview {
+                ul {
+                  padding-top: 45px;
+                  li {
+                    padding:0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      &.light {
+        #app {
+          > main {
+            section {
+              &#hero {
+                height: auto;
+                background-image: url("/assets/img/article-11.jpg")!important;
+                .hero-content {
+                  h1 {
+                    line-height: 1;
+                    font-size: 3rem;
+                    font-weight: 900;
+                    letter-spacing: -2px;
+                    margin-top: 45px;
+                  }
+                }
+                .lp-form-wrapper {
+                  #form {
+                    &.lp-form {
+                      top: 0;
+                      margin: 30px 0 45px;
+                    }
+                  }
+                }
+              }
+              &#overview {
+                ul {
+                  padding-top: 45px;
+                  li {
+                    padding:0;
                   }
                 }
               }
@@ -6366,7 +6511,260 @@ body {
       }
     }
     &.section-lp {
-      &.business_funding,&.fast_business_funding, &.restaurant_business_funding, &.trucking_business_funding {
+      &.with-no-menu {
+        #app {
+          > nav {
+            &.apple {
+              .nav-wrapper {
+                .burger-container {
+                  visibility: hidden;
+                }
+              }
+            }
+          }
+          > footer {
+            .brand-info {
+              margin: 0;
+              padding: 60px 0;
+              .links {
+                list-style: none;
+                padding-top: 15px;
+                li {
+                  @include columns(1);
+                  a {
+                    border-bottom: solid 1px $white;
+                    &:hover {
+                      border-bottom: solid 1px $brand-primary;
+                      color: $brand-primary;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      &.home-page {
+        #app {
+          > main {
+            section {
+              &#hero {
+                background-image: none !important;
+                min-height: 0;
+                .hero-content{
+                  padding-top: 0;
+                  h1 {
+                    font-size: 2em;
+                    margin-top: 15px;
+                  }
+                  h2 {
+                    font-size: 1.5rem;
+                  }
+                  h3 {
+                    font-size: 1rem;
+                    color: $brand-primary;
+                  }
+                  ul {
+                    &.xs {
+                      display: block;
+                      margin: 0 auto;
+                    }
+                    &.badgets {
+                      padding: 30px;
+                      li {
+                        img {
+                          max-width: 100%;
+                        }
+                      }
+                    }
+                  }
+                  a {
+                    &.btn {
+                      margin-top: 15px;
+                    }
+                    &.branding {
+                      &.logo {
+                        height: 65px;
+                        width: 200px;
+                        display: block;
+                        background-size: 100%;
+                        margin: 0 auto;
+                      }
+                    }
+                  }
+                  .phone {
+                    order: 5;
+                    display: block;
+                    margin-top: 30px;
+                    a {
+                      span {
+                        font-weight: 900;
+                        color: $brand-secondary;
+                        font-size: 1.5rem;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      &.dark {
+        #app {
+          > nav {
+            &.apple {
+              .nav-wrapper {
+                .container {
+                  .menus {
+                    .navbar-left {
+                      display: block;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          > main {
+            section {
+              &#hero {
+                height: auto;
+                background-image: url("/assets/img/article-11.jpg")!important;
+                .hero-content {
+                  a {
+                    &.branding {
+                      &.logo {
+                        display: none;
+                      }
+                    }
+                  }
+                  h1 {
+                    line-height: 1;
+                    font-size: 2.5rem;
+                    font-weight: 900;
+                    letter-spacing: -2px;
+                    margin-top: 45px;
+                  }
+                  h2 {
+                    color: white;
+                    margin-bottom: 15px;
+                  }
+                  h3 {
+                    color: white;
+                    display: none;
+                  }
+                  ul {
+                    &.xs {
+                      display: none;
+                    }
+                    &.badgets {
+                      padding: 0 30px;
+                    }
+                  }
+                  .phone {
+                    display: none;
+                  }
+                }
+                .lp-form-wrapper {
+                  #form {
+                    &.lp-form {
+                      top: 0;
+                      margin: 0 0 30px;
+                    }
+                  }
+                }
+              }
+              &#overview {
+                ul {
+                  padding-top: 45px;
+                  li {
+                    padding:0;
+                    @include columns(1);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      &.light {
+        #app {
+          > nav {
+            &.apple {
+              .nav-wrapper {
+                .container {
+                  .menus {
+                    .navbar-left {
+                      display: block;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          > main {
+            section {
+              &#hero {
+                height: auto;
+                background-image: url("/assets/img/article-11.jpg")!important;
+                .hero-content {
+                  a {
+                    &.branding {
+                      &.logo {
+                        display: none;
+                      }
+                    }
+                  }
+                  h1 {
+                    line-height: 1;
+                    font-size: 2.5rem;
+                    font-weight: 900;
+                    letter-spacing: -2px;
+                    margin-top: 45px;
+                  }
+                  h2 {
+                    color: white;
+                    margin-bottom: 15px;
+                  }
+                  h3 {
+                    color: white;
+                    display: none;
+                  }
+                  ul {
+                    &.xs {
+                      display: none;
+                    }
+                    &.badgets {
+                      padding: 0 30px;
+                    }
+                  }
+                  .phone {
+                    display: none;
+                  }
+                }
+                .lp-form-wrapper {
+                  #form {
+                    &.lp-form {
+                      top: 0;
+                      margin: 0 0 30px;
+                    }
+                  }
+                }
+              }
+              &#overview {
+                ul {
+                  padding-top: 45px;
+                  li {
+                    padding:0;
+                    @include columns(1);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      &.fast_capital_360 {
         #app {
           > main {
             section {
@@ -6433,104 +6831,6 @@ body {
                       align-items: center;
                       justify-content: center;
                       padding: 0 15px;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-      &.with-no-menu {
-        #app {
-          > nav {
-            &.apple {
-              .nav-wrapper {
-                .burger-container {
-                  visibility: hidden;
-                }
-              }
-            }
-          }
-          > footer {
-            .brand-info {
-              margin: 0;
-              padding: 60px 0;
-              .links {
-                list-style: none;
-                padding-top: 15px;
-                li {
-                  @include columns(1);
-                  a {
-                    border-bottom: solid 1px $white;
-                    &:hover {
-                      border-bottom: solid 1px $brand-primary;
-                      color: $brand-primary;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-      &.home-page {
-        #app {
-          > main {
-            section {
-              &#hero {
-                min-height: 0;
-                .hero-content{
-                  padding-top: 0;
-                  h1 {
-                    font-size: 2em;
-                    margin-top: 15px;
-                  }
-                  h2 {
-                    font-size: 1.5rem;
-                  }
-                  h3 {
-                    font-size: 1rem;
-                    color: $brand-primary;
-                  }
-                  ul {
-                    &.xs {
-                      display: block;
-                      margin: 0 auto;
-                    }
-                    &.badgets {
-                      padding: 30px;
-                      li {
-                        img {
-                          max-width: 100%;
-                        }
-                      }
-                    }
-                  }
-                  a {
-                    &.btn {
-                      margin-top: 15px;
-                    }
-                    &.branding {
-                      &.logo {
-                        height: 65px;
-                        width: 200px;
-                        display: block;
-                        background-size: 100%;
-                        margin: 0 auto;
-                      }
-                    }
-                  }
-                  .phone {
-                    order: 5;
-                    display: block;
-                    margin-top: 30px;
-                    a {
-                      span {
-                        font-weight: 900;
-                        color: $brand-secondary;
-                        font-size: 1.5rem;
-                      }
                     }
                   }
                 }
@@ -6708,81 +7008,6 @@ body {
       }
     }
     &.section-lp {
-      &.business_funding,&.fast_business_funding, &.restaurant_business_funding, &.trucking_business_funding {
-        #app {
-          > main {
-            section {
-              &#hero {
-                background-image: none;
-                height: auto;
-                padding: 0;
-                &.overlay {
-                  &:before {
-                    background-color: #fff;
-                    opacity: 1;
-                  }
-                }
-                .description {
-                  display: none;
-                }
-                .lp-form-wrapper {
-                  #form {
-                    max-width: 540px;
-                    margin: 0 auto;
-                    padding: 30px 0;
-                    &.lp-form {
-                      position: relative;
-                      top: auto;
-                      right: auto;
-                      border: none;
-                      background: #ffffff;
-                      .phone-header {
-                        border-color: $brand-secondary;
-                      }
-                      h2 {
-                        color: $brand-primary;
-                        font-weight: 900;
-                        strong {
-                          font-weight: 900;
-                        }
-                      }
-                      article {
-                        .fields {
-                          input[type=number], input[type=text],input[type=tel],input[type=email],select{
-                            background: #ffffff;
-                            border: solid 2px $brand-secondary;
-                          }
-                          select {
-                            margin-top: 10px;
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-              &#partners {
-                padding: 60px 0 0;
-                ul {
-                  flex-flow: wrap;
-                  padding: 0 30px;
-                  &.partners {
-                    li {
-                      @include columns(3);
-                      border: solid 1px #bbb;
-                      height: 50px;
-                      display: flex;
-                      align-items: center;
-                      justify-content: center;
-                      padding: 0 15px;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
       &.with-no-menu {
         #app {
           > nav {
@@ -6868,6 +7093,239 @@ body {
                       .join-now {
                         width: 150px;
                       }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          > main {
+            section {
+              &#hero {
+                background-image: none !important;
+              }
+            }
+          }
+        }
+      }
+      &.dark {
+        #app {
+          > nav {
+            &.apple {
+              .nav-wrapper {
+                .container {
+                  .menus {
+                    .navbar-left {
+                      display: block;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          > main {
+            section {
+              &#hero {
+                height: auto;
+                background-image: url("/assets/img/article-11.jpg")!important;
+                .hero-content {
+                  a {
+                    &.branding {
+                      &.logo {
+                        display: none;
+                      }
+                    }
+                  }
+                  h1 {
+                    line-height: 1;
+                    font-size: 2.5rem;
+                    font-weight: 900;
+                    letter-spacing: -2px;
+                    margin-top: 45px;
+                  }
+                  h2 {
+                    margin-bottom: 15px;
+                  }
+                  h3 {
+                    display: none;
+                  }
+                  ul {
+                    &.xs {
+                      display: none;
+                    }
+                    &.badgets {
+                      padding: 0 30px;
+                    }
+                  }
+                  .phone {
+                    display: none;
+                  }
+                }
+                .lp-form-wrapper {
+                  #form {
+                    &.lp-form {
+                      top: 0;
+                      margin: 0 0 30px;
+                    }
+                  }
+                }
+              }
+              &#overview {
+                ul {
+                  padding-top: 45px;
+                  li {
+                    padding:0;
+                    @include columns(1);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      &.light {
+        #app {
+          > nav {
+            &.apple {
+              .nav-wrapper {
+                .container {
+                  .menus {
+                    .navbar-left {
+                      display: block;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          > main {
+            section {
+              &#hero {
+                height: auto;
+                background-image: url("/assets/img/article-11.jpg")!important;
+                .hero-content {
+                  a {
+                    &.branding {
+                      &.logo {
+                        display: none;
+                      }
+                    }
+                  }
+                  h1 {
+                    line-height: 1;
+                    font-size: 2.5rem;
+                    font-weight: 900;
+                    letter-spacing: -2px;
+                    margin-top: 45px;
+                  }
+                  h2 {
+                    margin-bottom: 15px;
+                    color: $text-color;
+                  }
+                  h3 {
+                    display: none;
+                  }
+                  ul {
+                    &.xs {
+                      display: none;
+                    }
+                    &.badgets {
+                      padding: 0 30px;
+                    }
+                  }
+                  .phone {
+                    display: none;
+                  }
+                }
+                .lp-form-wrapper {
+                  #form {
+                    &.lp-form {
+                      top: 0;
+                      margin: 0 0 30px;
+                    }
+                  }
+                }
+              }
+              &#overview {
+                ul {
+                  padding-top: 45px;
+                  li {
+                    padding:0;
+                    @include columns(1);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      &.fast_capital_360 {
+        #app {
+          > main {
+            section {
+              &#hero {
+                background-image: none;
+                height: auto;
+                padding: 0;
+                &.overlay {
+                  &:before {
+                    background-color: #fff;
+                    opacity: 1;
+                  }
+                }
+                .description {
+                  display: none;
+                }
+                .lp-form-wrapper {
+                  #form {
+                    max-width: 540px;
+                    margin: 0 auto;
+                    padding: 30px 0;
+                    &.lp-form {
+                      position: relative;
+                      top: auto;
+                      right: auto;
+                      border: none;
+                      background: #ffffff;
+                      .phone-header {
+                        border-color: $brand-secondary;
+                      }
+                      h2 {
+                        color: $brand-primary;
+                        font-weight: 900;
+                        strong {
+                          font-weight: 900;
+                        }
+                      }
+                      article {
+                        .fields {
+                          input[type=number], input[type=text],input[type=tel],input[type=email],select{
+                            background: #ffffff;
+                            border: solid 2px $brand-secondary;
+                          }
+                          select {
+                            margin-top: 10px;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              &#partners {
+                padding: 60px 0 0;
+                ul {
+                  flex-flow: wrap;
+                  padding: 0 30px;
+                  &.partners {
+                    li {
+                      @include columns(3);
+                      border: solid 1px #bbb;
+                      height: 50px;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      padding: 0 15px;
                     }
                   }
                 }

@@ -10,43 +10,24 @@ sections:
         display: Slug
         type: text
         localizable: true
-        width: 50
-      meta_title:
-        type: text
-        localizable: true
-        display: 'Meta Title'
-        width: 50
-      meta_description:
-        type: textarea
-        localizable: true
-        display: 'Meta Description'
-      canonical:
-        type: text
-        localizable: true
-        display: Canonical
       template:
         options:
           lp/home-page: 'Home Page'
-          lp/business-funding: 'Business Funding'
-          lp/business-funding-with-partners: 'Business Funding With Partners'
-          lp/business-funding-fast: 'Business Funding Fast'
-          lp/business-funding-fast-with-partners: 'Business Funding Fast With Partners'
-          lp/restaurant-business-funding: 'Restaurant Business Funding'
-          lp/restaurant-business-funding-with-partners: 'Restaurant Business Funding With Partners'
-          lp/trucking-business-funding: 'Trucking Business Funding'
-          lp/trucking-business-funding-with-partners: 'Trucking Business Funding With Partners'
+          lp/fast-capital-360: 'Fast Capital 360'
+          lp/fast-capital-360-partners: 'Fast Capital 360 With Partners'
         type: select
         display: Template
+        width: 50
       body_class:
         type: text
         display: 'Body Class'
-        width: 33
+        width: 50
       navigation:
         options:
           with-menu: 'With Menu'
           with-no-menu: 'Without Menu'
         type: select
-        width: 33
+        width: 50
         display: Navigation
       hero:
         options:
@@ -54,20 +35,35 @@ sections:
           dark: Dark
           light: Light
         type: select
-        width: 33
+        width: 50
         display: Hero
+      hero_image:
+        container: main
+        folder: /
+        restrict: false
+        type: assets
+        display: 'Hero Image'
+        max_files: 1
       hero_title:
         type: text
-        width: 33
+        width: 50
         display: 'Hero Title'
       hero_subtitle:
         type: text
-        width: 33
+        width: 50
         display: 'Hero Subtitle'
       hero_notice:
         type: text
-        width: 33
         display: 'Hero Notice'
+      hero_item_1:
+        type: text
+        display: 'Hero Item 1'
+      hero_item_2:
+        type: text
+        display: 'Hero Item 2'
+      hero_item_3:
+        type: text
+        display: 'Hero Item 3'
       form_title:
         type: text
         display: 'Form Title'
@@ -80,26 +76,38 @@ sections:
         type: text
         width: 33
         display: 'Overview Icon 1'
+      overview_text_1:
+        type: text
+        width: 66
+        display: 'Overview Text 1'
       overview_icon_2:
         type: text
         width: 33
         display: 'Overview Icon 2'
+      overview_text_2:
+        type: text
+        width: 66
+        display: 'Overview Text 2'
       overview_icon_3:
         type: text
         width: 33
         display: 'Overview Icon 3'
-      overview_text_1:
-        type: text
-        width: 33
-        display: 'Overview Text 1'
-      overview_text_2:
-        type: text
-        width: 33
-        display: 'Overview Text 2'
       overview_text_3:
         type: text
-        width: 33
+        width: 66
         display: 'Overview Text 3'
+      meta_title:
+        type: text
+        localizable: true
+        display: 'Meta Title'
+      meta_description:
+        type: textarea
+        localizable: true
+        display: 'Meta Description'
+      canonical:
+        type: text
+        localizable: true
+        display: Canonical
 taxonomies: true
 title: Landing
 create_title: 'New Landing Page'
