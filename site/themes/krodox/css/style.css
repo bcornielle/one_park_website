@@ -2548,7 +2548,7 @@ body #app > nav {
   -ms-flex-pack: start;
   justify-content: flex-start;
   border: none;
-  background: #fff;
+  background: white;
   z-index: 10;
 }
 
@@ -2580,7 +2580,7 @@ body #app > nav.apple .nav-wrapper {
 
 body #app > nav.apple .nav-wrapper.shown {
   height: 100%;
-  background-color: #fff;
+  background-color: white;
 }
 
 body #app > nav.apple .nav-wrapper.shown .burger-container {
@@ -3013,8 +3013,57 @@ body #app > nav.apple .nav-wrapper .container .menus .navbar-right .join-now a.l
   color: #359c1c;
 }
 
+body #app > nav.apple .nav-wrapper .container .menus .navbar-no-menu {
+  -ms-flex-order: 3;
+  order: 3;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  height: 120px;
+  text-align: right;
+  padding: 15px 0 15px 15px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: none;
+}
+
+body #app > nav.apple .nav-wrapper .container .menus .navbar-no-menu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body #app > nav.apple .nav-wrapper .container .menus .navbar-no-menu .call-us-now {
+  height: 120px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+body #app > nav.apple .nav-wrapper .container .menus .navbar-no-menu .call-us-now span {
+  display: block;
+  color: #162c4e;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+body #app > nav.apple .nav-wrapper .container .menus .navbar-no-menu .call-us-now a {
+  display: block;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #359c1c;
+}
+
+body #app > nav.apple .nav-wrapper .container .menus .navbar-no-menu .call-us-now a span {
+  color: #359c1c;
+}
+
 body #app > main {
-  background: #fff;
+  background: white;
   border: none;
 }
 
@@ -3232,7 +3281,7 @@ body #app > main section#services ul li div span {
   left: 25%;
   transform: translateX(-75%);
   background: #162c4e;
-  color: #fff;
+  color: white;
   width: 48px;
   height: 48px;
   display: -ms-flexbox;
@@ -3505,7 +3554,7 @@ body #app > main section#features .table-wrapper.classic table {
 
 body #app > main section#features .table-wrapper.classic table thead tr th {
   background: #162c4e;
-  color: #fff;
+  color: white;
   font-size: .8rem;
   text-transform: capitalize;
   font-weight: 100;
@@ -3533,7 +3582,7 @@ body #app > main section#features .table-wrapper.classic table thead tr th:nth-c
 }
 
 body #app > main section#features .table-wrapper.classic table tbody tr td {
-  background: #fff;
+  background: white;
   border-bottom: #eeeeee;
 }
 
@@ -3571,7 +3620,7 @@ body #app > main section#features .tab-content .tab-pane p {
 body #app > main section#testimonials {
   margin: 0;
   padding: 90px 0 120px;
-  background: #fff;
+  background: white;
 }
 
 body #app > main section#testimonials h2 {
@@ -3601,7 +3650,7 @@ body #app > main section#call-to-action-3 {
   background-color: #162c4e;
   margin: 0;
   padding: 90px 0;
-  color: #fff;
+  color: white;
   text-align: center;
 }
 
@@ -3696,7 +3745,7 @@ body #app > main section#products .products-wrapper .product:nth-child(2n + 3) {
 body #app > main section#products .products-wrapper .product i {
   font-size: 44px;
   color: #359c1c;
-  background: #fff;
+  background: white;
 }
 
 body #app > main section#products .products-wrapper .product .description {
@@ -3769,7 +3818,7 @@ body #app > main section#products .products-wrapper .product:hover {
 
 body #app > main section#lp-form {
   background: #323831;
-  color: #fff;
+  color: white;
   padding: 90px 0;
   border-bottom: solid 1px #359c1c;
 }
@@ -3966,7 +4015,7 @@ body #app > footer {
   background: #162c4e;
   font-size: 1em;
   line-height: 1.5;
-  color: #fff;
+  color: white;
 }
 
 body #app > footer hr {
@@ -4017,7 +4066,7 @@ body #app > footer ul.links li a {
   padding: 0 0 2px;
   display: inline-block;
   text-decoration: none;
-  color: #fff;
+  color: white;
   font-weight: normal;
   transition: ease color .4s;
 }
@@ -4067,7 +4116,7 @@ body #app > footer ul.social-media li a {
 }
 
 body #app > footer ul.social-media li a i {
-  color: #fff;
+  color: white;
 }
 
 body #app > footer ul.social-media li a:hover {
@@ -4272,7 +4321,7 @@ body.section-como-trabaja #app > main section#how-it-works .advantages ul.items 
   -ms-flex-align: center;
   align-items: center;
   margin-bottom: 15px;
-  background: #fff;
+  background: white;
   transition: all ease .4s;
 }
 
@@ -4367,7 +4416,7 @@ body.section-como-trabaja #app > main section#how-it-works .advantages ul.items 
   -ms-flex-positive: 1;
   flex-grow: 1;
   padding: 0 30px;
-  background: #fff;
+  background: white;
 }
 
 body.section-how-it-works #app > main section#how-it-works .requirements ul.items li div.right p,
@@ -4478,7 +4527,7 @@ body.section-how-it-works #app > main section#how-it-works .process .item,
 body.section-como-trabaja #app > main section#how-it-works .process .item {
   margin: 0 auto;
   background: #162c4e;
-  color: #fff;
+  color: white;
   border-radius: 50%;
   display: -ms-flexbox;
   display: flex;
@@ -4640,7 +4689,7 @@ body.section-como-trabaja #app > main section#how-it-works .advantages ol li {
   margin: 0 2% 2% 0;
   position: relative;
   margin: .5em 0;
-  background: #fff;
+  background: white;
   color: #444;
   text-decoration: none;
   border-radius: .3em;
@@ -4691,7 +4740,7 @@ body.section-como-trabaja #app > main section#how-it-works .advantages ol li:bef
   height: 4em;
   width: 4em;
   line-height: 2em;
-  border: 0.3em solid #fff;
+  border: .3em solid white;
   text-align: center;
   font-weight: bold;
   border-radius: 2em;
@@ -4798,7 +4847,7 @@ body.section-sobre-nosotros #app > main section#about-us .why ul.items li {
   -ms-flex-align: center;
   align-items: center;
   margin-bottom: 15px;
-  background: #fff;
+  background: white;
   transition: all ease .4s;
 }
 
@@ -4878,7 +4927,7 @@ body.section-sobre-nosotros #app > main section#about-us .why ul.items li div.ri
   -ms-flex-positive: 1;
   flex-grow: 1;
   padding: 0 30px;
-  background: #fff;
+  background: white;
 }
 
 body.section-about-us #app > main section#about-us .brand ul.items li div.right p,
@@ -4989,7 +5038,7 @@ body.section-sobre-nosotros #app > main section#about-us .why .item-wrapper {
 body.section-about-us #app > main section#about-us .why .item-wrapper .item,
 body.section-sobre-nosotros #app > main section#about-us .why .item-wrapper .item {
   box-shadow: 0 16px 48px rgba(83, 167, 61, 0.3);
-  background: #fff;
+  background: white;
   display: -ms-flexbox;
   display: flex;
   transition: all ease .4s;
@@ -5006,7 +5055,7 @@ body.section-sobre-nosotros #app > main section#about-us .why .item-wrapper .ite
   width: 75px;
   transition: ease all .4s;
   background: #359c1c;
-  color: #fff;
+  color: white;
 }
 
 body.section-about-us #app > main section#about-us .why .item-wrapper .item .description,
@@ -5023,7 +5072,7 @@ body.section-sobre-nosotros #app > main section#about-us .why .item-wrapper .ite
   -ms-flex-pack: start;
   justify-content: flex-start;
   padding: 0 0 0 15px;
-  border-left-color: #fff;
+  border-left-color: white;
   color: #359c1c;
 }
 
@@ -5032,14 +5081,14 @@ body.section-about-us #app > main section#about-us .why .item-wrapper .item.acti
 body.section-sobre-nosotros #app > main section#about-us .why .item-wrapper .item:hover .number,
 body.section-sobre-nosotros #app > main section#about-us .why .item-wrapper .item.active .number {
   background: #359c1c;
-  color: #fff;
+  color: white;
 }
 
 body.section-about-us #app > main section#about-us .why .item-wrapper .item:hover .description,
 body.section-about-us #app > main section#about-us .why .item-wrapper .item.active .description,
 body.section-sobre-nosotros #app > main section#about-us .why .item-wrapper .item:hover .description,
 body.section-sobre-nosotros #app > main section#about-us .why .item-wrapper .item.active .description {
-  border-left-color: #fff;
+  border-left-color: white;
   color: #359c1c;
 }
 
@@ -5054,7 +5103,7 @@ body.section-sobre-nosotros #app > main section#about-us .why .item-wrapper .ite
   display: none;
   position: absolute;
   top: -220px;
-  background: #fff;
+  background: white;
   padding: 30px;
   line-height: 1.5;
   border-left: solid 10px #359c1c;
@@ -5074,7 +5123,7 @@ body.section-sobre-nosotros #app > main section#about-us .why .item-wrapper .ite
   position: absolute;
   left: 7px;
   bottom: -20px;
-  border-top: 10px solid #fff;
+  border-top: 10px solid white;
 }
 
 body.section-about-us #app > main section#about-us .why .item-wrapper.a .item-tooltip,
@@ -5201,7 +5250,7 @@ body.section-preguntas-comunes #app > main section#faqs .faqs #accordion-1 .card
 body.section-preguntas-comunes #app > main section#faqs .faqs #accordion-2 .card .card-header,
 body.section-preguntas-comunes #app > main section#faqs .faqs #accordion-3 .card .card-header,
 body.section-preguntas-comunes #app > main section#faqs .faqs #accordion-4 .card .card-header {
-  background: #fff;
+  background: white;
   border-bottom: none;
   padding: 0;
 }
@@ -5272,7 +5321,7 @@ body.section-preguntas-comunes #app > main section#faqs .faqs #accordion-1 .card
 body.section-preguntas-comunes #app > main section#faqs .faqs #accordion-2 .card .card-header button div.left i,
 body.section-preguntas-comunes #app > main section#faqs .faqs #accordion-3 .card .card-header button div.left i,
 body.section-preguntas-comunes #app > main section#faqs .faqs #accordion-4 .card .card-header button div.left i {
-  color: #fff;
+  color: white;
   font-size: 2rem;
 }
 
@@ -5511,7 +5560,7 @@ body.section-contactenos #app > main section#contact-us #map .map ul.locations l
   margin: 0 2% 2% 0;
   text-align: center;
   padding: 30px;
-  background: #fff;
+  background: white;
   color: #323831;
   box-shadow: 0 16px 48px rgba(83, 167, 61, 0.3);
   transition: ease all .4s;
@@ -5535,7 +5584,7 @@ body.section-contactenos #app > main section#contact-us #map .map ul.locations l
 body.section-contact #app > main section#contact-us #map .map ul.locations li.active,
 body.section-contactenos #app > main section#contact-us #map .map ul.locations li.active {
   background: #359c1c;
-  color: #fff;
+  color: white;
   transform: translateY(-2px);
   box-shadow: 0 8px 16px -4px rgba(83, 167, 61, 0.3);
 }
@@ -5593,7 +5642,7 @@ body.section-articulos #app > main section#blog .posts {
 body.section-blog #app > main section#blog .posts .items .item,
 body.section-articulos #app > main section#blog .posts .items .item {
   border: none;
-  background: #fff;
+  background: white;
   float: left;
   width: 32% !important;
   margin: 0 2% 2% 0;
@@ -5721,13 +5770,13 @@ body.section-articulos #app > main section#blog .pagination li {
 
 body.section-blog #app > main section#blog .pagination li a,
 body.section-articulos #app > main section#blog .pagination li a {
-  color: #fff;
+  color: white;
 }
 
 body.section-blog #app > main section#blog .pagination li.active,
 body.section-articulos #app > main section#blog .pagination li.active {
   background: #359c1c;
-  color: #fff;
+  color: white;
   border-color: #359c1c;
 }
 
@@ -5840,7 +5889,7 @@ body.section-articulos #app > main section#article .intro .meta ul.social-media 
 
 body.section-blog #app > main section#article .intro .meta ul.social-media li a i,
 body.section-articulos #app > main section#article .intro .meta ul.social-media li a i {
-  color: #fff;
+  color: white;
 }
 
 body.section-blog #app > main section#article .intro .meta ul.social-media li a:hover,
@@ -6001,7 +6050,7 @@ body.section-articulos #app > main section#article .related-articles h4 {
 body.section-blog #app > main section#article .related-articles ul .item,
 body.section-articulos #app > main section#article .related-articles ul .item {
   border: none;
-  background: #fff;
+  background: white;
   float: left;
   width: 32% !important;
   margin: 0 2% 2% 0;
@@ -6139,7 +6188,7 @@ body.section-medios #app > main section#press-releases .posts {
 body.section-press #app > main section#press-releases .posts .items .item,
 body.section-medios #app > main section#press-releases .posts .items .item {
   border: none;
-  background: #fff;
+  background: white;
   float: left;
   width: 32% !important;
   margin: 0 2% 2% 0;
@@ -6268,13 +6317,13 @@ body.section-medios #app > main section#press-releases .pagination li {
 
 body.section-press #app > main section#press-releases .pagination li a,
 body.section-medios #app > main section#press-releases .pagination li a {
-  color: #fff;
+  color: white;
 }
 
 body.section-press #app > main section#press-releases .pagination li.active,
 body.section-medios #app > main section#press-releases .pagination li.active {
   background: #359c1c;
-  color: #fff;
+  color: white;
   border-color: #359c1c;
 }
 
@@ -6387,7 +6436,7 @@ body.section-medios #app > main section#article .intro .meta ul.social-media li 
 
 body.section-press #app > main section#article .intro .meta ul.social-media li a i,
 body.section-medios #app > main section#article .intro .meta ul.social-media li a i {
-  color: #fff;
+  color: white;
 }
 
 body.section-press #app > main section#article .intro .meta ul.social-media li a:hover,
@@ -6537,7 +6586,7 @@ body.section-medios #app > main section#article .related-articles h4 {
 body.section-press #app > main section#article .related-articles ul .item,
 body.section-medios #app > main section#article .related-articles ul .item {
   border: none;
-  background: #fff;
+  background: white;
   float: left;
   width: 32% !important;
   margin: 0 2% 2% 0;
@@ -6801,13 +6850,13 @@ body.section-empleos #app > main section#careers .careers ul .pagination li {
 
 body.section-careers #app > main section#careers .careers ul .pagination li a,
 body.section-empleos #app > main section#careers .careers ul .pagination li a {
-  color: #fff;
+  color: white;
 }
 
 body.section-careers #app > main section#careers .careers ul .pagination li.active,
 body.section-empleos #app > main section#careers .careers ul .pagination li.active {
   background: #359c1c;
-  color: #fff;
+  color: white;
   border-color: #359c1c;
 }
 
@@ -6846,13 +6895,13 @@ body.section-empleos #app > main section#careers .pagination li {
 
 body.section-careers #app > main section#careers .pagination li a,
 body.section-empleos #app > main section#careers .pagination li a {
-  color: #fff;
+  color: white;
 }
 
 body.section-careers #app > main section#careers .pagination li.active,
 body.section-empleos #app > main section#careers .pagination li.active {
   background: #359c1c;
-  color: #fff;
+  color: white;
   border-color: #359c1c;
 }
 
@@ -7200,14 +7249,14 @@ body.section-register #app > main section.hero .column.right {
   float: right;
   width: 30%;
   background: #162c4e;
-  color: #fff;
+  color: white;
 }
 
 body.section-login #app > main section.hero .column .content-wrapper a,
 body.section-forgot-password #app > main section.hero .column .content-wrapper a,
 body.section-password-reset #app > main section.hero .column .content-wrapper a,
 body.section-register #app > main section.hero .column .content-wrapper a {
-  color: #fff;
+  color: white;
   box-shadow: none !important;
   text-transform: none !important;
 }
@@ -7365,7 +7414,7 @@ body.section-register #app > main section.hero .column .content-wrapper .content
   text-decoration: none;
   padding: 0;
   display: inline-block;
-  color: #fff;
+  color: white;
 }
 
 body.section-login #app > main section.hero .column .content-wrapper .content fieldset article form .form-group .button-group a.inline,
@@ -7749,7 +7798,7 @@ body.section-gracias #app > main section p {
 
 body.section-congrats #app > main section#form .form #prequalifed-content,
 body.section-feliz #app > main section#form .form #prequalifed-content {
-  background: #fff;
+  background: white;
   padding: 30px 60px;
   font-size: 1.5em;
   text-align: center;
@@ -7805,7 +7854,7 @@ body.section-feliz #app > main section#form .form #prequalifed-content button {
   border-color: #359c1c;
   margin-top: 30px;
   font-weight: 900;
-  color: #fff;
+  color: white;
   text-transform: uppercase;
   padding: 10px 15px;
   width: 100px;
@@ -7813,7 +7862,7 @@ body.section-feliz #app > main section#form .form #prequalifed-content button {
 
 body.section-congrats #app > main section#form .form #prequalifed-content button span,
 body.section-feliz #app > main section#form .form #prequalifed-content button span {
-  color: #fff;
+  color: white;
   font-size: 1.3em;
   font-weight: 900;
 }
@@ -7835,7 +7884,7 @@ body.section-gracias #app > main section#form .form {
 
 body.section-complete #app > main section#form .form #prequalifed-content,
 body.section-gracias #app > main section#form .form #prequalifed-content {
-  background: #fff;
+  background: white;
   padding: 30px 60px;
   font-size: 1.5em;
   margin-bottom: 60px;
@@ -7872,6 +7921,11 @@ body.section-lp.with-no-menu #app > nav.apple .nav-wrapper .container .menus .na
   display: none;
 }
 
+body.section-lp.with-no-menu #app > nav.apple .nav-wrapper .container .menus .navbar-no-menu {
+  display: -ms-flexbox;
+  display: flex;
+}
+
 body.section-lp.with-no-menu #app > main section#hero .lp-form-wrapper #form.lp-form {
   top: -150px;
   z-index: 11;
@@ -7902,7 +7956,7 @@ body.section-lp.with-no-menu #app > footer .brand-info .links li:nth-child(1n + 
 }
 
 body.section-lp.with-no-menu #app > footer .brand-info .links li a {
-  border-bottom: solid 1px #fff;
+  border-bottom: solid 1px white;
 }
 
 body.section-lp.with-no-menu #app > footer .brand-info .links li a:hover {
@@ -7992,14 +8046,15 @@ body.section-lp.dark #app > main section#hero .hero-content .branding.logo {
 }
 
 body.section-lp.dark #app > main section#hero .hero-content h1 {
-  color: #fff;
+  color: white;
   font-size: 3.5rem;
   line-height: 1.2;
   letter-spacing: 1px;
+  margin-top: 45px;
 }
 
 body.section-lp.dark #app > main section#hero .hero-content h2 {
-  color: #fff;
+  color: white;
   font-size: 2.5rem;
 }
 
@@ -8046,18 +8101,18 @@ body.section-lp.dark #app > main section#hero .hero-content .phone {
   display: none;
 }
 
-body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form {
+body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form {
   border: none;
   border-radius: 10px;
   background: linear-gradient(rgba(22, 44, 78, 0.9), rgba(22, 44, 78, 0.9));
   padding: 30px;
   min-height: 350px;
   position: relative;
-  top: -30px;
+  top: 0;
   z-index: 1;
 }
 
-body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form h2 {
+body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form h2 {
   font-size: 1.3rem;
   line-height: 1.2;
   padding: 0;
@@ -8065,59 +8120,74 @@ body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form h2 
   margin-bottom: 15px;
 }
 
-body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields .honeypot {
+body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article .fields .honeypot {
   display: none !important;
 }
 
-body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=text],
-body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=tel],
-body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=email],
-body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=number],
-body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields select {
+body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article .fields input[type=text],
+body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article .fields input[type=tel],
+body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article .fields input[type=email],
+body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article .fields input[type=number],
+body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article .fields select {
   border: none;
   margin-bottom: 10px;
   background: linear-gradient(rgba(134, 146, 165, 0.3), rgba(134, 146, 165, 0.3));
   border-radius: 6px;
-  color: #fff;
+  color: white;
   outline: none;
 }
 
-body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=text]:focus,
-body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=tel]:focus,
-body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=email]:focus,
-body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=number]:focus,
-body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields select:focus {
+body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article .fields input[type=text]:focus,
+body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article .fields input[type=tel]:focus,
+body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article .fields input[type=email]:focus,
+body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article .fields input[type=number]:focus,
+body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article .fields select:focus {
   box-shadow: none;
 }
 
-body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=text]:-ms-input-placeholder,
-body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=tel]:-ms-input-placeholder,
-body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=email]:-ms-input-placeholder,
-body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=number]:-ms-input-placeholder,
-body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields select:-ms-input-placeholder {
-  color: #fff;
+body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article .fields input[type=text]:-ms-input-placeholder,
+body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article .fields input[type=tel]:-ms-input-placeholder,
+body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article .fields input[type=email]:-ms-input-placeholder,
+body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article .fields input[type=number]:-ms-input-placeholder,
+body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article .fields select:-ms-input-placeholder {
+  color: white;
 }
 
-body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=text]::placeholder,
-body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=tel]::placeholder,
-body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=email]::placeholder,
-body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=number]::placeholder,
-body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article .fields select::placeholder {
-  color: #fff;
+body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article .fields input[type=text]::placeholder,
+body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article .fields input[type=tel]::placeholder,
+body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article .fields input[type=email]::placeholder,
+body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article .fields input[type=number]::placeholder,
+body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article .fields select::placeholder {
+  color: white;
 }
 
-body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article button.btn {
+body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article button.btn {
   border-radius: 6px;
   background: #359c1c;
   border: none;
 }
 
-body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article button.btn:hover {
+body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article button.btn:hover {
   background: #359c1c;
 }
 
+body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article .disclaimer {
+  padding: 15px 0 0;
+}
+
+body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article .disclaimer a {
+  color: white;
+  text-decoration: none;
+  font-size: .9rem;
+}
+
+body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article .disclaimer a span {
+  font-weight: 900;
+  border-bottom: solid 1px white;
+}
+
 body.section-lp.dark #app > main section#overview {
-  background: #fff;
+  background: white;
 }
 
 body.section-lp.dark #app > main section#overview ul {
@@ -8173,8 +8243,8 @@ body.section-lp.dark #app > main section#overview ul li span {
 
 body.section-lp.light #app > main section#hero {
   background-image: url("/assets/img/article-11.jpg");
-  min-height: 500px;
-  height: 500px;
+  min-height: 600px;
+  height: 600px;
 }
 
 body.section-lp.light #app > main section#hero .background {
@@ -8268,10 +8338,10 @@ body.section-lp.light #app > main section#hero .hero-content .phone {
   display: none;
 }
 
-body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form {
+body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form {
   border: none;
   border-radius: 10px;
-  background: #fff;
+  background: white;
   padding: 30px;
   min-height: 350px;
   position: relative;
@@ -8280,55 +8350,56 @@ body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form {
   z-index: 1;
 }
 
-body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form h2 {
-  font-size: 1.5rem;
+body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form h2 {
+  font-size: 1.3rem;
   padding: 0;
   color: #323831;
+  margin-bottom: 15px;
 }
 
-body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields .honeypot {
+body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields .honeypot {
   display: none !important;
 }
 
-body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=text],
-body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=tel],
-body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=email],
-body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=number],
-body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields select {
+body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=text],
+body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=tel],
+body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=email],
+body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=number],
+body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields select {
   border: none;
   margin-bottom: 10px;
-  background: #fff;
+  background: white;
   border-radius: 6px;
   color: #323831;
   outline: none;
   border: solid 2px #eee;
 }
 
-body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=text]:focus,
-body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=tel]:focus,
-body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=email]:focus,
-body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=number]:focus,
-body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields select:focus {
+body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=text]:focus,
+body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=tel]:focus,
+body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=email]:focus,
+body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=number]:focus,
+body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields select:focus {
   box-shadow: none;
 }
 
-body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=text]:-ms-input-placeholder,
-body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=tel]:-ms-input-placeholder,
-body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=email]:-ms-input-placeholder,
-body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=number]:-ms-input-placeholder,
-body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields select:-ms-input-placeholder {
+body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=text]:-ms-input-placeholder,
+body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=tel]:-ms-input-placeholder,
+body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=email]:-ms-input-placeholder,
+body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=number]:-ms-input-placeholder,
+body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields select:-ms-input-placeholder {
   color: #323831;
 }
 
-body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=text]::placeholder,
-body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=tel]::placeholder,
-body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=email]::placeholder,
-body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=number]::placeholder,
-body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article .fields select::placeholder {
+body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=text]::placeholder,
+body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=tel]::placeholder,
+body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=email]::placeholder,
+body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=number]::placeholder,
+body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields select::placeholder {
   color: #323831;
 }
 
-body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article button.btn {
+body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article button.btn {
   position: relative;
   width: 100%;
   left: 0;
@@ -8338,12 +8409,28 @@ body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form ar
   border: none;
 }
 
-body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article button.btn:hover {
+body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article button.btn:hover {
   background: #359c1c;
 }
 
+body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article .disclaimer {
+  padding: 15px 0 0;
+}
+
+body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article .disclaimer a {
+  color: #323831;
+  font-size: .9rem;
+  text-decoration: none;
+}
+
+body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article .disclaimer a span {
+  font-weight: 900;
+  color: #359c1c;
+  border-bottom: solid 1px #359c1c;
+}
+
 body.section-lp.light #app > main section#overview {
-  background: #fff;
+  background: white;
 }
 
 body.section-lp.light #app > main section#overview ul {
@@ -8402,13 +8489,13 @@ body.section-lp.fast_capital_360 #app > main section#hero {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  min-height: 500px;
-  height: 500px;
+  min-height: 600px;
+  height: 600px;
 }
 
 body.section-lp.fast_capital_360 #app > main section#hero.overlay h1,
 body.section-lp.fast_capital_360 #app > main section#hero.overlay li {
-  color: #fff;
+  color: white;
 }
 
 body.section-lp.fast_capital_360 #app > main section#hero.overlay:before {
@@ -8482,17 +8569,17 @@ body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper {
   position: relative;
 }
 
-body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form {
+body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form {
   z-index: 11;
 }
 
-body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form {
-  min-height: 500px;
+body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form {
+  min-height: 550px;
   position: absolute;
-  top: 0;
+  top: -15px;
   right: 0;
   background: #162c4e;
-  border: solid 4px #fff;
+  border: solid 4px white;
   width: 100%;
   opacity: 1;
   padding: 20px;
@@ -8500,13 +8587,13 @@ body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form
   z-index: 1;
 }
 
-body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form .phone-header {
+body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form .phone-header {
   border: 2px solid #a2a2a2;
   border-radius: 3px;
   text-align: center;
 }
 
-body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form .phone-header .label {
+body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form .phone-header .label {
   text-align: center;
   text-transform: uppercase;
   padding: .5em;
@@ -8514,11 +8601,11 @@ body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form
   top: -9px;
   font-size: 10px;
   letter-spacing: 1px;
-  color: #fff;
+  color: white;
   background-color: #162c4e;
 }
 
-body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form .phone-header .number {
+body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form .phone-header .number {
   margin: 0 0 10px;
   line-height: 1;
   font-size: 1.4em;
@@ -8526,44 +8613,44 @@ body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form
   color: #e88f0b;
 }
 
-body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form .phone-header .number a {
-  color: #fff;
+body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form .phone-header .number a {
+  color: white;
   text-decoration: none;
 }
 
-body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form h2 {
-  font-size: 1em;
+body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form h2 {
+  font-size: 1.2em;
   text-transform: uppercase;
   font-weight: 400;
-  color: #fff;
-  padding: 15px 0 0;
+  color: white;
+  padding: 30px 0 15px;
 }
 
-body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form h2 strong {
+body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form h2 strong {
   font-weight: normal;
 }
 
-body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form article {
+body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form article {
   padding: 15px 0 0;
 }
 
-body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form article .fields {
+body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form article .fields {
   position: relative;
   margin-bottom: 15px;
 }
 
-body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form article .fields .form-group,
-body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form article .fields .form-row {
+body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form article .fields .form-group,
+body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form article .fields .form-row {
   margin-bottom: 10px;
 }
 
-body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form article .fields .honeypot {
+body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form article .fields .honeypot {
   display: none;
 }
 
-body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=text],
-body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=email],
-body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=number] {
+body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form article .fields input[type=text],
+body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form article .fields input[type=email],
+body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form article .fields input[type=number] {
   border: none;
   outline: none;
   background: #f7f7f7;
@@ -8571,14 +8658,14 @@ body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form
   border-radius: 3px;
 }
 
-body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=text]:focus,
-body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=email]:focus,
-body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=number]:focus {
+body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form article .fields input[type=text]:focus,
+body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form article .fields input[type=email]:focus,
+body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form article .fields input[type=number]:focus {
   outline: none;
   box-shadow: none;
 }
 
-body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form article .fields .alert {
+body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form article .fields .alert {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -8603,53 +8690,54 @@ body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form
   display: none;
 }
 
-body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form article .fields .alert.success {
+body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form article .fields .alert.success {
   background: #359c1c;
   border: solid 4px #103009;
-  color: #fff;
+  color: white;
 }
 
-body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form article .fields .alert.hidden {
+body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form article .fields .alert.hidden {
   display: none;
 }
 
-body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form button.btn {
+body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form button.btn {
   background: #e88f0b;
   border: solid 2px #b77109;
   width: 100%;
   padding: 15px;
+  margin: 15px 0;
   text-transform: uppercase;
 }
 
-body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form ul {
+body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form ul {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
   align-items: center;
   margin: 0;
-  padding: 20px 0 0;
+  padding: 10px 0 0;
 }
 
-body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form ul li {
+body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form ul li {
   float: left;
   width: 50% !important;
   margin: 0 0 0 0;
 }
 
-body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form ul li:nth-child(2n) {
+body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form ul li:nth-child(2n) {
   margin-right: 0;
 }
 
-body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form ul li:nth-child(2n + 3) {
+body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form ul li:nth-child(2n + 3) {
   clear: left;
 }
 
-body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form ul li:first-child {
+body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form ul li:first-child {
   font-size: 10px;
   text-align: left;
 }
 
-body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form ul li:first-child a {
+body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form ul li:first-child a {
   color: #aba9a9;
   text-decoration: none;
   line-height: 1.2;
@@ -8657,20 +8745,20 @@ body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form
   transition: color ease .4s;
 }
 
-body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form ul li:first-child a span {
+body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form ul li:first-child a span {
   border-bottom: solid 1px #aba9a9;
 }
 
-body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form ul li:first-child a:hover span {
+body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form ul li:first-child a:hover span {
   color: #e88f0b;
   border-bottom-color: #e88f0b;
 }
 
-body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form ul li:last-child {
+body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form ul li:last-child {
   text-align: right;
 }
 
-body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form ul li:last-child img {
+body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form ul li:last-child img {
   max-width: 100%;
   max-height: 50px;
 }
@@ -8737,20 +8825,20 @@ body #success-alert {
   justify-content: center;
   font-size: 2rem;
   padding: 15px 0;
-  color: #fff;
+  color: white;
   transition: all .4s ease-in-out;
 }
 
 body #error-alert .close,
 body #success-alert .close {
   background: #E91E63;
-  color: #fff;
+  color: white;
   font-weight: normal;
   font-size: 16px;
   border-radius: 3px;
   opacity: 1;
   text-transform: uppercase;
-  border: solid 1px #fff;
+  border: solid 1px white;
   padding: 7px 15px;
   margin-top: 15px;
 }
@@ -9593,12 +9681,20 @@ body #success-alert:after {
     background-image: url("/assets/img/article-11.jpg") !important;
   }
 
+  body.section-lp.dark #app > main section#hero .hero-content {
+    text-align: center;
+  }
+
   body.section-lp.dark #app > main section#hero .hero-content h1 {
     line-height: 1;
     font-size: 3rem;
     font-weight: 900;
     letter-spacing: -2px;
     margin-top: 45px;
+  }
+
+  body.section-lp.dark #app > main section#hero .hero-content ul.badgets {
+    margin: 0 auto;
   }
 
   body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form {
@@ -9619,12 +9715,20 @@ body #success-alert:after {
     background-image: url("/assets/img/article-11.jpg") !important;
   }
 
+  body.section-lp.light #app > main section#hero .hero-content {
+    text-align: center;
+  }
+
   body.section-lp.light #app > main section#hero .hero-content h1 {
     line-height: 1;
     font-size: 3rem;
     font-weight: 900;
     letter-spacing: -2px;
     margin-top: 45px;
+  }
+
+  body.section-lp.light #app > main section#hero .hero-content ul.badgets {
+    margin: 0 auto;
   }
 
   body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form {
@@ -9799,7 +9903,7 @@ body #success-alert:after {
   }
 
   body #app > nav.apple .nav-wrapper.shown {
-    background-color: #fff;
+    background-color: white;
   }
 
   body #app > nav.apple .nav-wrapper.shown .burger-container {
@@ -10075,7 +10179,7 @@ body #success-alert:after {
     padding: 0 0 2px;
     display: inline-block;
     text-decoration: none;
-    color: #fff;
+    color: white;
     font-weight: normal;
     transition: ease color .4s;
   }
@@ -10404,7 +10508,7 @@ body #success-alert:after {
 
   body.section-blog #app > main section#blog .posts .items .item a .content-wrapper h3,
   body.section-articulos #app > main section#blog .posts .items .item a .content-wrapper h3 {
-    color: #fff;
+    color: white;
   }
 
   body.section-blog #app > main section#blog .posts .items .item a .meta-wrapper,
@@ -10459,7 +10563,7 @@ body #success-alert:after {
 
   body.section-blog #app > main section#article .related-articles ul .item a .content-wrapper h3,
   body.section-articulos #app > main section#article .related-articles ul .item a .content-wrapper h3 {
-    color: #fff;
+    color: white;
   }
 
   body.section-blog #app > main section#article .related-articles ul .item a .meta-wrapper,
@@ -10620,6 +10724,10 @@ body #success-alert:after {
     visibility: hidden;
   }
 
+  body.section-lp.with-no-menu #app > nav.apple .nav-wrapper .container .menus .navbar-no-menu {
+    display: none;
+  }
+
   body.section-lp.with-no-menu #app > footer .brand-info {
     margin: 0;
     padding: 60px 0;
@@ -10645,7 +10753,7 @@ body #success-alert:after {
   }
 
   body.section-lp.with-no-menu #app > footer .brand-info .links li a {
-    border-bottom: solid 1px #fff;
+    border-bottom: solid 1px white;
   }
 
   body.section-lp.with-no-menu #app > footer .brand-info .links li a:hover {
@@ -10723,6 +10831,10 @@ body #success-alert:after {
     background-image: url("/assets/img/article-11.jpg") !important;
   }
 
+  body.section-lp.dark #app > main section#hero .hero-content {
+    text-align: center;
+  }
+
   body.section-lp.dark #app > main section#hero .hero-content a.branding.logo {
     display: none;
   }
@@ -10790,6 +10902,10 @@ body #success-alert:after {
     background-image: url("/assets/img/article-11.jpg") !important;
   }
 
+  body.section-lp.light #app > main section#hero .hero-content {
+    text-align: center;
+  }
+
   body.section-lp.light #app > main section#hero .hero-content a.branding.logo {
     display: none;
   }
@@ -10855,7 +10971,7 @@ body #success-alert:after {
   }
 
   body.section-lp.fast_capital_360 #app > main section#hero.overlay:before {
-    background-color: #fff;
+    background-color: white;
     opacity: 1;
   }
 
@@ -10863,43 +10979,43 @@ body #success-alert:after {
     display: none;
   }
 
-  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form {
+  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form {
     max-width: 540px;
     margin: 0 auto;
     padding: 30px 0;
   }
 
-  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form {
+  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form {
     position: relative;
     top: auto;
     right: auto;
     border: none;
-    background: #ffffff;
+    background: white;
   }
 
-  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form .phone-header {
+  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form .phone-header {
     border-color: #162c4e;
   }
 
-  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form h2 {
+  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form h2 {
     color: #359c1c;
     font-weight: 900;
   }
 
-  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form h2 strong {
+  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form h2 strong {
     font-weight: 900;
   }
 
-  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=number],
-  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=text],
-  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=tel],
-  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=email],
-  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form article .fields select {
-    background: #ffffff;
+  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form article .fields input[type=number],
+  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form article .fields input[type=text],
+  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form article .fields input[type=tel],
+  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form article .fields input[type=email],
+  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form article .fields select {
+    background: white;
     border: solid 2px #162c4e;
   }
 
-  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form article .fields select {
+  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form article .fields select {
     margin-top: 10px;
   }
 
@@ -10997,7 +11113,7 @@ body #success-alert:after {
   }
 
   body #app > nav.apple .nav-wrapper.shown {
-    background-color: #fff;
+    background-color: white;
     z-index: 9999 !important;
     height: 100vh;
   }
@@ -11047,7 +11163,7 @@ body #success-alert:after {
   body.section-feliz #app > main section#form,
   body.section-gracias #app > main section#form {
     padding: 30px 0;
-    background: #fff;
+    background: white;
   }
 
   body.section-pre-qualification #app > main section#form h1,
@@ -11093,7 +11209,7 @@ body #success-alert:after {
   }
 
   body.section-lp.with-no-menu #app > nav.apple .nav-wrapper.shown {
-    background-color: #fff;
+    background-color: white;
     z-index: 9999 !important;
     height: 100vh;
   }
@@ -11144,7 +11260,7 @@ body #success-alert:after {
   }
 
   body.section-lp.with-no-menu #app > footer .brand-info .links li a {
-    border-bottom: solid 1px #fff;
+    border-bottom: solid 1px white;
   }
 
   body.section-lp.with-no-menu #app > footer .brand-info .links li a:hover {
@@ -11179,7 +11295,7 @@ body #success-alert:after {
 
   body.section-lp.dark #app > main section#hero .hero-content h1 {
     line-height: 1;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 900;
     letter-spacing: -2px;
     margin-top: 45px;
@@ -11201,6 +11317,10 @@ body #success-alert:after {
     padding: 0 30px;
   }
 
+  body.section-lp.dark #app > main section#hero .hero-content ul.badgets li img {
+    max-width: 90px;
+  }
+
   body.section-lp.dark #app > main section#hero .hero-content .phone {
     display: none;
   }
@@ -11208,6 +11328,10 @@ body #success-alert:after {
   body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form {
     top: 0;
     margin: 0 0 30px;
+  }
+
+  body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form h2 {
+    text-align: center;
   }
 
   body.section-lp.dark #app > main section#overview ul {
@@ -11244,7 +11368,7 @@ body #success-alert:after {
 
   body.section-lp.light #app > main section#hero .hero-content h1 {
     line-height: 1;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 900;
     letter-spacing: -2px;
     margin-top: 45px;
@@ -11267,6 +11391,10 @@ body #success-alert:after {
     padding: 0 30px;
   }
 
+  body.section-lp.light #app > main section#hero .hero-content ul.badgets li img {
+    max-width: 90px;
+  }
+
   body.section-lp.light #app > main section#hero .hero-content .phone {
     display: none;
   }
@@ -11274,6 +11402,10 @@ body #success-alert:after {
   body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form {
     top: 0;
     margin: 0 0 30px;
+  }
+
+  body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form h2 {
+    text-align: center;
   }
 
   body.section-lp.light #app > main section#overview ul {
@@ -11302,7 +11434,7 @@ body #success-alert:after {
   }
 
   body.section-lp.fast_capital_360 #app > main section#hero.overlay:before {
-    background-color: #fff;
+    background-color: white;
     opacity: 1;
   }
 
@@ -11310,43 +11442,43 @@ body #success-alert:after {
     display: none;
   }
 
-  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form {
+  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form {
     max-width: 540px;
     margin: 0 auto;
     padding: 30px 0;
   }
 
-  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form {
+  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form {
     position: relative;
     top: auto;
     right: auto;
     border: none;
-    background: #ffffff;
+    background: white;
   }
 
-  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form .phone-header {
+  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form .phone-header {
     border-color: #162c4e;
   }
 
-  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form h2 {
+  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form h2 {
     color: #359c1c;
     font-weight: 900;
   }
 
-  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form h2 strong {
+  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form h2 strong {
     font-weight: 900;
   }
 
-  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=number],
-  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=text],
-  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=tel],
-  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form article .fields input[type=email],
-  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form article .fields select {
-    background: #ffffff;
+  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form article .fields input[type=number],
+  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form article .fields input[type=text],
+  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form article .fields input[type=tel],
+  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form article .fields input[type=email],
+  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form article .fields select {
+    background: white;
     border: solid 2px #162c4e;
   }
 
-  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper #form.lp-form article .fields select {
+  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form article .fields select {
     margin-top: 10px;
   }
 

@@ -72,6 +72,9 @@ sections:
         type: text
         width: 50
         display: 'Form Button Text'
+      form_disclaimer:
+        type: textarea
+        display: 'Form Disclaimer'
       overview_icon_1:
         type: text
         width: 33

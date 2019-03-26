@@ -1,7 +1,7 @@
 title: 'Restaurant Business Loans, Funding & Working Capital Options'
 template: lp/fast-capital-360-partners
 body_class: fast_capital_360
-navigation: with-menu
+navigation: with-no-menu
 hero: default
 hero_image: /assets/img/restaurant.jpeg
 hero_title: 'Get $5,000 to $750,000'
@@ -12,6 +12,7 @@ hero_item_2: 'Funding in Under 72 Hours.'
 hero_item_3: 'Poor Credit Accepted.'
 form_title: 'YOU COULD HAVE FUNDS</br>IN 72 HOURS'
 form_button_text: 'Get Funded Now'
+form_disclaimer: '<a href="/terms-of-use" target="_blank">By clicking "Get Funded Now" I agree to all <span>terms and conditions</span></a>'
 overview_icon_1: 'fas fa-dollar-sign'
 overview_text_1: 'Hassle-Free Application Process. Get Pre-Qualified in Minutes.'
 overview_icon_2: 'fas fa-users'
