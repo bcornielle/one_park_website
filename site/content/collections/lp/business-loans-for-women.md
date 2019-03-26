@@ -2,7 +2,7 @@ title: 'Business Loans for Women'
 template: lp/fast-capital-360
 body_class: home-page
 navigation: with-menu
-hero: dark
+hero: light
 hero_image: /assets/untitled-design-(1)-min.png
 hero_title: 'Women-Owned Business Loans and Funding Options'
 hero_subtitle: '</br>Get $5,000 - $750,000 in Business Funding'
