@@ -3,6 +3,7 @@ template: lp/fast-capital-360
 body_class: home-page
 navigation: with-menu
 hero: light
+hero_image: /assets/untitled-design-min.png
 hero_title: 'Small Business Loans'
 hero_subtitle: 'Get $5,000 - $750,000 Today'
 hero_notice: 'YOUR TIME IS MONEY GET HASSLE FREE WORKING CAPITAL'
