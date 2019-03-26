@@ -5,7 +5,7 @@ navigation: with-menu
 hero: light
 hero_image: /assets/untitled-design-min.png
 hero_title: 'Business Loans & </br>Other Funding Options'
-hero_subtitle: 'Get $5,000 - $750,000 Today'
+hero_subtitle: '</br>Get $5,000 - $750,000 Today'
 hero_notice: 'YOUR TIME IS MONEY </br>GET HASSLE-FREE WORKING CAPITAL'
 hero_item_1: 'Get Pre-Qualified in Minutes.'
 hero_item_2: 'Funding in Under 72 Hours.'
