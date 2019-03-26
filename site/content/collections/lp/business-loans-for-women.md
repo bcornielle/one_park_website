@@ -5,6 +5,7 @@ navigation: with-menu
 hero: dark
 hero_title: 'Women-Owned Business Loans and Funding Options'
 hero_subtitle: 'Get $5,000 - $750,000 in Business Funding'
+form_button_text: 'Get Funded Now'
 overview_text_1: 'Credit Scores 500 and Above Accepted'
 overview_text_2: 'Pre-Qualified in Minutes'
 overview_text_3: 'Get Funded in 24 hours*'
