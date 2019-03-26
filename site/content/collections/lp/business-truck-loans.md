@@ -6,7 +6,7 @@ hero: light
 hero_image: /assets/b0ddb14a1f5b4753ab4901f07928be33_940x385.jpg
 hero_title: 'Business Truck Loans'
 hero_subtitle: 'Get $5,000 - $750,000 Today'
-hero_notice: 'DON''T LET THE LACK OF CAPITAL STOP YOU FROM GETTING THE TRUCK YOUR BUSINESS NEEDS'
+hero_notice: 'DON''T LET THE LACK OF FUNDS STOP YOU FROM GETTING THE TRUCK YOUR BUSINESS NEEDS'
 hero_item_1: 'Get Pre-Qualified in Minutes.'
 hero_item_2: 'Funding in Under 72 Hours.'
 hero_item_3: 'Poor Credit Accepted.'
