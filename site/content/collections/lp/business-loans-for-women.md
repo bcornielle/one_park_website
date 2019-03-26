@@ -5,7 +5,6 @@ navigation: with-menu
 hero: dark
 hero_title: 'Women-Owned Business Loans and Funding Options'
 hero_subtitle: 'Get $5,000 - $750,000 in Business Funding'
-form_title: 'You Got This Far </br> Let''s Take You to The Next Level'
 form_button_text: 'Get Funded Now'
 form_disclaimer: '<a href="/terms-of-use" target="_blank">By clicking "Get Funded Now" I agree to all <span>terms and conditions</span></a>'
 overview_icon_1: 'far fa-check-circle'
