@@ -1,10 +1,10 @@
-title: 'Small Business Loans'
+title: 'Business Loans'
 template: lp/fast-capital-360
 body_class: home-page
 navigation: with-menu
 hero: light
 hero_image: /assets/untitled-design-min.png
-hero_title: 'Small Business Loans'
+hero_title: 'Business Loans & </br>Other Funding Options'
 hero_subtitle: 'Get $5,000 - $750,000 Today'
 hero_notice: 'YOUR TIME IS MONEY </br>GET HASSLE-FREE WORKING CAPITAL'
 hero_item_1: 'Get Pre-Qualified in Minutes.'
@@ -19,6 +19,6 @@ overview_icon_2: 'far fa-clock'
 overview_text_2: 'PRE-QUALIFIED</br>IN MINUTES'
 overview_icon_3: 'fas fa-dollar-sign'
 overview_text_3: 'MONEY IN THE BANK</br>IN AS LITTLE AS 3 DAYS'
-meta_title: 'Small Business Loans'
-meta_description: 'Small Business Funding'
+meta_title: 'Business Loans'
+meta_description: 'Business Loans & Other Funding Options'
 id: 0174e3d1-ed39-4de7-ac64-3f4b547ce9c8
