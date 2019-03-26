@@ -1,4 +1,4 @@
-title: 'Business Loans'
+title: 'Business Loans & Other Funding Options'
 template: lp/fast-capital-360
 body_class: home-page
 navigation: with-menu
@@ -19,6 +19,6 @@ overview_icon_2: 'far fa-clock'
 overview_text_2: 'PRE-QUALIFIED</br>IN MINUTES'
 overview_icon_3: 'fas fa-dollar-sign'
 overview_text_3: 'MONEY IN THE BANK</br>IN AS LITTLE AS 3 DAYS'
-meta_title: 'Business Loans'
+meta_title: 'Business Loans & Other Funding Options'
 meta_description: 'Business Loans & Other Funding Options'
 id: 0174e3d1-ed39-4de7-ac64-3f4b547ce9c8
