@@ -17,7 +17,7 @@ overview_text_1: 'CREDIT SCORES 500+ </br>ABOVE ACCEPTED'
 overview_icon_2: 'far fa-clock'
 overview_text_2: 'PRE-QUALIFIED</br>IN MINUTES'
 overview_icon_3: 'fas fa-dollar-sign'
-overview_text_3: 'GET FUNDED IN 24 HOURS*'
+overview_text_3: 'GET FUNDED IN AS </br>LITTLE AS 24 HOURS*'
 meta_title: 'Bad Credit Business Funding'
 meta_description: 'Bad Credit Business Funding'
 id: 1b853945-9d2b-4e6e-838a-8d17f570568d
