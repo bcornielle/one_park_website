@@ -1,5 +1,5 @@
 title: 'Business Loans, Funding & Working Capital Options'
-template: lp/fast-capital-360
+template: lp/fast-capital-360-partners
 body_class: fast_capital_360
 navigation: with-no-menu
 hero: dark
