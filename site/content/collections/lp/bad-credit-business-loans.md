@@ -1,4 +1,4 @@
-title: 'Bad Credit Business Funding'
+title: 'Bad Credit Business Loans'
 template: lp/home-page
 body_class: home-page
 navigation: with-menu
