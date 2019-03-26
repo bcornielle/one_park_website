@@ -1,8 +1,8 @@
-title: 'Small Business Funding'
-template: lp/home-page
+title: 'Small Business Loans'
+template: lp/fast-capital-360
 body_class: home-page
 navigation: with-menu
-hero: default
+hero: light
 hero_title: 'Need Funding Fast?'
 hero_subtitle: 'Get $5,000 to $750,000'
 hero_notice: 'YOUR TIME IS MONEY GET HASSLE FREE WORKING CAPITAL'
