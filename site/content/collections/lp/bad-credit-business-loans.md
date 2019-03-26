@@ -1,7 +1,7 @@
 title: 'Bad Credit Business Loans'
 template: lp/fast-capital-360
 body_class: home-page
-navigation: with-no-menu
+navigation: with-menu
 hero: light
 hero_image: /assets/untitled-design-min.png
 hero_title: 'Bad Credit Business Loan Options'
