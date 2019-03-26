@@ -4,7 +4,7 @@ body_class: home-page
 navigation: with-menu
 hero: light
 hero_image: /assets/untitled-design-(1)-min.png
-hero_title: 'Women-Owned Business Loans and Funding Options'
+hero_title: 'Funding Options for Women-Owned Business'
 hero_subtitle: '</br>Get $5,000 - $750,000 in Business Funding'
 form_title: '<center>The Time for Women Entrepreneurs is NOW'
 form_button_text: 'Get Funded Now'
