@@ -5,7 +5,7 @@ navigation: with-no-menu
 hero: light
 hero_title: 'Bad Credit Business Loan Options'
 hero_subtitle: '</br>Get $5,000 - $750,000 Today'
-hero_notice: 'YOUR TIME IS MONEY</br>GET HASSLE FREE WORKING CAPITAL'
+hero_notice: 'WE CARE ABOUT MORE </br>THAN YOUR BAD CREDIT SCORE'
 hero_item_1: 'Get Pre-Qualified in Minutes.'
 hero_item_2: 'Funding in Under 72 Hours.'
 hero_item_3: 'Poor Credit Accepted.'
