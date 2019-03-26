@@ -3,7 +3,7 @@ template: lp/fast-capital-360
 body_class: home-page
 navigation: with-no-menu
 hero: light
-hero_image: /assets/untitled-design.png
+hero_image: /assets/untitled-design-min.png
 hero_title: 'Bad Credit Business Loan Options'
 hero_subtitle: '</br>Get $5,000 - $750,000 Today'
 hero_notice: 'WE CARE ABOUT MORE </br>THAN YOUR BAD CREDIT SCORE'
