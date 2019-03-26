@@ -3,7 +3,7 @@ template: lp/fast-capital-360
 body_class: home-page
 navigation: with-no-menu
 hero: light
-hero_title: 'Bad Credit</br>Business Loan Options'
+hero_title: 'Bad Credit Business Loan Options'
 hero_subtitle: 'Get $5,000 to $750,000'
 hero_notice: 'YOUR TIME IS MONEY</br>GET HASSLE FREE WORKING CAPITAL'
 hero_item_1: 'Get Pre-Qualified in Minutes.'
