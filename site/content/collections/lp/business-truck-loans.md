@@ -3,6 +3,7 @@ template: lp/fast-capital-360
 body_class: home-page
 navigation: with-menu
 hero: light
+hero_image: /assets/b0ddb14a1f5b4753ab4901f07928be33_940x385.jpg
 hero_title: 'Business Truck Loans'
 hero_subtitle: 'Get $5,000 - $750,000 Today'
 hero_notice: 'YOUR TIME IS MONEY GET HASSLE FREE WORKING CAPITAL'
