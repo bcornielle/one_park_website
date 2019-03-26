@@ -10,7 +10,7 @@ hero_notice: 'DON''T LET THE LACK OF FUNDS STOP YOU FROM GETTING THE TRUCK YOUR 
 hero_item_1: 'Get Pre-Qualified in Minutes.'
 hero_item_2: 'Funding in Under 72 Hours.'
 hero_item_3: 'Poor Credit Accepted.'
-form_title: '<center>BUSINESS TRUCK FINANCING</br>IN  72 HOURS</center>'
+form_title: '<center>BUSINESS TRUCK LOANS IN  72 HOURS</center>'
 form_button_text: 'Get Funded Now'
 form_disclaimer: '<a href="/terms-of-use" target="_blank">By clicking "Get Funded Now" I agree to all <span>terms and conditions</span></a>'
 overview_icon_1: 'far fa-check-circle'
