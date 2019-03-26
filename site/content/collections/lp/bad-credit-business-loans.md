@@ -4,7 +4,7 @@ body_class: home-page
 navigation: with-menu
 hero: light
 hero_image: /assets/untitled-design-min.png
-hero_title: 'Bad Credit Business Loans'
+hero_title: 'Bad Credit </br>Business Loans'
 hero_subtitle: '</br>Get $5,000 - $750,000 Today'
 hero_notice: 'WE CARE ABOUT MORE </br>THAN YOUR BAD CREDIT SCORE'
 hero_item_1: 'Get Pre-Qualified in Minutes.'
