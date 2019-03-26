@@ -19,6 +19,6 @@ overview_icon_2: 'far fa-clock'
 overview_text_2: 'PRE-QUALIFIED</br>IN MINUTES'
 overview_icon_3: 'fas fa-dollar-sign'
 overview_text_3: 'MONEY IN THE BANK</br>IN AS LITTLE AS 3 DAYS'
-meta_title: 'Small Business Funding'
+meta_title: 'Small Business Loans'
 meta_description: 'Small Business Funding'
 id: 44c0bda2-f5b4-449b-9d55-eff574f1cbd7
