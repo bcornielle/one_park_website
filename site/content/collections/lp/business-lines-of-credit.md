@@ -3,8 +3,8 @@ template: lp/fast-capital-360
 body_class: home-page
 navigation: with-menu
 hero: light
-hero_title: 'Business Lines of Credit Made for You'
-hero_subtitle: 'Get $5,000 - $750,000 Today'
+hero_title: 'Fast and Flexible Business Line of Credit Made for You'
+hero_subtitle: '</br>Get $5,000 - $750,000 Today'
 form_title: '<center>Money in Your Hands</br>in 72 Hours</center>'
 form_button_text: 'Get Funded Now'
 form_disclaimer: '<a href="/terms-of-use" target="_blank">By clicking "Get Funded Now" I agree to all <span>terms and conditions</span></a>'
