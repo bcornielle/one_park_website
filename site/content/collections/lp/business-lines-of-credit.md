@@ -3,6 +3,7 @@ template: lp/fast-capital-360
 body_class: home-page
 navigation: with-menu
 hero: light
+hero_image: /assets/untitled-design-(1)-min.png
 hero_title: 'Business Lines of Credit Made for You'
 hero_subtitle: '</br>Draw as you need and pay only for what you use.'
 form_title: '<center>Revolving Line of Credit</br>in 72 Hours</center>'
