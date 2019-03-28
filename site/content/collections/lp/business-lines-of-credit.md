@@ -4,7 +4,7 @@ body_class: home-page
 navigation: with-menu
 hero: light
 hero_title: 'Business Lines of Credit Made for You'
-hero_subtitle: '</br>Get $5,000 - $750,000 in Business Credit Lines'
+hero_subtitle: '</br>Get $5,000 - $750,000 Today'
 form_button_text: 'Get Funded Now'
 form_disclaimer: '<a href="/terms-of-use" target="_blank">By clicking "Get Funded Now" I agree to all <span>terms and conditions</span></a>'
 overview_icon_1: 'far fa-check-circle'
