@@ -4,7 +4,7 @@ body_class: home-page
 navigation: with-menu
 hero: light
 hero_title: 'Fast and Flexible Business Lines of Credit Made for You'
-hero_subtitle: '</br> Enjoy the flexibility of a revolving line of credit.  Draw as you need and pay only for what you use.'
+hero_subtitle: '</br>Draw as you need and pay only for what you use.'
 form_title: '<center>Money in Your Hands</br>in 72 Hours</center>'
 form_button_text: 'Get Funded Now'
 form_disclaimer: '<a href="/terms-of-use" target="_blank">By clicking "Get Funded Now" I agree to all <span>terms and conditions</span></a>'
