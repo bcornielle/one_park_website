@@ -5,7 +5,7 @@ navigation: with-menu
 hero: light
 hero_image: /assets/untitled-design-min.png
 hero_title: 'Working Capital </br>Business Loans'
-hero_subtitle: '</br>Get $5,000 - $750,000 Today'
+hero_subtitle: 'Get $5,000 - $750,000 Today'
 hero_notice: 'WORKING CAPITAL THAT WORKS FOR YOU'
 hero_item_1: 'Get Pre-Qualified in Minutes.'
 hero_item_2: 'Funding in Under 72 Hours.'
