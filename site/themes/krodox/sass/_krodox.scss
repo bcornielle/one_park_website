@@ -3965,6 +3965,12 @@ body {
                               color: white;
                             }
                           }
+                          select {
+                            option {
+                              background: linear-gradient(rgba(134, 146, 165, 0.3), rgba(134, 146, 165, 0.3)) !important;
+                              color: white !important;
+                            }
+                          }
                         }
                         button {
                           &.btn {

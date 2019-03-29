@@ -8161,6 +8161,11 @@ body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-for
   color: white;
 }
 
+body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article .fields select option {
+  background: linear-gradient(rgba(134, 146, 165, 0.3), rgba(134, 146, 165, 0.3)) !important;
+  color: white !important;
+}
+
 body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article button.btn {
   border-radius: 6px;
   background: #359c1c;
