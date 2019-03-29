@@ -4,7 +4,7 @@ body_class: home-page
 navigation: with-menu
 hero: light
 hero_image: /assets/untitled-design-min.png
-hero_title: 'Working Capital </br>Business Loans'
+hero_title: 'Working Capital Business Loans & Other Funding Options'
 hero_subtitle: 'Get $5,000 - $750,000 Today'
 hero_notice: 'WORKING CAPITAL THAT WORKS FOR YOU'
 hero_item_1: 'Get Pre-Qualified in Minutes.'
