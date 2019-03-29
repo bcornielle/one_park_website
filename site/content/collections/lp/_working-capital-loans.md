@@ -1,12 +1,12 @@
-title: 'Bad Credit Business Loans'
+title: 'Working Capital Loans'
 template: lp/fast-capital-360
 body_class: home-page
 navigation: with-menu
 hero: light
 hero_image: /assets/untitled-design-min.png
-hero_title: 'Bad Credit </br>Business Loans'
+hero_title: 'Working Capital </br>Business Loans'
 hero_subtitle: 'Get $5,000 - $750,000 Today'
-hero_notice: 'YOUR PAST SHOULDN’T </br>DETERMINE YOUR FUTURE'
+hero_notice: 'WORKING CAPITAL </br>THAT WORKS FOR YOU'
 hero_item_1: 'Get Pre-Qualified in Minutes.'
 hero_item_2: 'Funding in Under 72 Hours.'
 hero_item_3: 'Poor Credit Accepted.'
@@ -19,6 +19,6 @@ overview_icon_2: 'far fa-clock'
 overview_text_2: 'PRE-QUALIFIED</br>IN MINUTES'
 overview_icon_3: 'fas fa-dollar-sign'
 overview_text_3: 'FUNDED IN AS </br>LITTLE AS 72 HOURS'
-meta_title: 'Bad Credit Business Loan Options'
-meta_description: 'Bad Credit Business Funding'
+meta_title: 'Working Capital Loans'
+meta_description: 'Working Capital Loans'
 id: 51188337-def9-4f2b-bd43-72c9ec9c5ff4
