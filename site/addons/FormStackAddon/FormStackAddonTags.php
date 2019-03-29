@@ -101,7 +101,7 @@ class FormStackAddonTags extends Tags {
 								}
 							}
 						}
-						$job = (new FormStackJob($form_id,$this->oauth_token,$params['email'],$idleRequest . $idleString))->delay(720);
+						$job = (new FormStackJob($form_id,$this->oauth_token,$params['email'],$idleRequest . $idleString))->delay(360);
 						dispatch($job);
 					}
 					$response = [
@@ -234,7 +234,7 @@ class FormStackAddonTags extends Tags {
 							}
 						}
 					}
-					$job = (new FormStackJob($form_id,$this->oauth_token,$params['correo_electrónico'],$idleRequest . $idleString))->delay(720);
+					$job = (new FormStackJob($form_id,$this->oauth_token,$params['correo_electrónico'],$idleRequest . $idleString))->delay(360);
 					dispatch($job);
 					$response = [
 						'status'=> true,
