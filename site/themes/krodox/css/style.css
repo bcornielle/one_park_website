@@ -8162,7 +8162,7 @@ body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-for
 }
 
 body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article .fields select option {
-  background: linear-gradient(rgba(134, 146, 165, 0.3), rgba(134, 146, 165, 0.3)) !important;
+  background-color: #4a7dcc !important;
   color: white !important;
 }
 
@@ -8259,20 +8259,8 @@ body.section-lp.light #app > main section#hero .background {
   bottom: 0;
   right: 0;
   left: 0;
-  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9));
-}
-
-body.section-lp.light #app > main section#hero .background:before {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: -850px;
-  z-index: 0;
-  background: linear-gradient(rgba(211, 215, 220, 0.6), rgba(211, 214, 218, 0.6));
-  transform: skewY(-55deg);
-  width: 3000px;
-  height: 2000px;
-  display: none;
+  background: #fff;
+  opacity: .8;
 }
 
 body.section-lp.light #app > main section#hero .hero-content .branding.logo {
@@ -8353,6 +8341,7 @@ body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-f
   top: 0;
   bottom: auto;
   z-index: 1;
+  box-shadow: 0 8px 16px -4px rgba(30, 31, 30, 0.3);
 }
 
 body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form h2 {
@@ -8371,13 +8360,12 @@ body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-f
 body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=email],
 body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=number],
 body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields select {
-  border: none;
   margin-bottom: 10px;
-  background: white;
-  border-radius: 6px;
+  border-radius: 0;
   color: #323831;
   outline: none;
   border: solid 2px #eee;
+  background: #eee;
 }
 
 body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=text]:focus,
@@ -8386,6 +8374,7 @@ body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-f
 body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=number]:focus,
 body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields select:focus {
   box-shadow: none;
+  border-bottom: solid 4px #359c1c;
 }
 
 body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=text]:-ms-input-placeholder,

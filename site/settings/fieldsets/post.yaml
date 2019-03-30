@@ -31,5 +31,13 @@ sections:
         max_files: 1
         type: assets
         display: Image
+      es_url:
+        type: text
+        display: 'Spanish Url'
+        localizable: true
+      en_url:
+        type: text
+        display: 'English Url'
+        localizable: true
 taxonomies: true
 create_title: 'New Post'
