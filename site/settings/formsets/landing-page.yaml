@@ -17,13 +17,17 @@ fields:
     validate: required|integer
   source:
     display: Source
+  time_in_business_month:
+    display: Month
+  time_in_business_year:
+    display: Year
 columns:
   - name
-  - phone
   - email
-  - business_name
   - monthly_revenue
   - source
+  - time_in_business_month
+  - time_in_business_year
 metrics:
   -
     type: total
