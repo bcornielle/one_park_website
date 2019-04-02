@@ -3,10 +3,11 @@ template: lp/fast-capital-360
 body_class: home-page
 navigation: with-menu
 hero: light
+hero_image: /assets/untitled-design-min.png
 hero_title: 'Business Lines of Credit Made for You'
 hero_subtitle: '</br>Draw as you need and pay only for what you use.'
 form_title: '<center>Revolving Line of Credit</br>in 72 Hours</center>'
-form_time_in_business: 'true'
+form_time_in_business: 'false'
 form_button_text: 'Get Funded Now'
 form_disclaimer: '<a href="/terms-of-use" target="_blank">By clicking "Get Funded Now" I agree to all <span>terms and conditions</span></a>'
 overview_icon_1: 'far fa-check-circle'
