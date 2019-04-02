@@ -6,6 +6,7 @@ hero: light
 hero_image: /assets/untitled-design-min.png
 hero_title: 'Business Lines of Credit Made for You'
 hero_subtitle: '</br>Draw as you need and pay only for what you use.'
+hero_notice: 'BUSINESS LINE OF CREDIT YOU NEED FOR YOUR BUSINESS'
 form_title: '<center>Revolving Line of Credit</br>in 72 Hours</center>'
 form_time_in_business: 'false'
 form_button_text: 'Get Funded Now'
