@@ -68,6 +68,13 @@ sections:
         type: text
         display: 'Form Title'
         width: 50
+      form_time_in_business:
+        options:
+          'false': 'Do not show'
+          'true': 'Show in Business Since'
+        type: select
+        width: 50
+        display: 'Form In Business Since'
       form_button_text:
         type: text
         width: 50
@@ -75,6 +82,7 @@ sections:
       form_disclaimer:
         type: textarea
         display: 'Form Disclaimer'
+        width: 50
       overview_icon_1:
         type: text
         width: 33
