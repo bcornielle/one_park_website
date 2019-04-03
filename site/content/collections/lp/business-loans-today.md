@@ -1,7 +1,7 @@
 title: 'Business Loans Today'
 template: lp/home-page
 body_class: home-page
-navigation: with-menu
+navigation: with-no-menu
 hero: light
 hero_image: /assets/img/home-hero.png
 hero_title: 'Business Loans Today'
