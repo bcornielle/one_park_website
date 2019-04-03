@@ -37,6 +37,9 @@ class FormSubmissionListener extends Listener {
 		$params['last_name'] = (isset($names[1])) ? $names[1] : 'lastname';
 		$params['contact_phone'] = $submission->get('phone');
 		$params['company_phone_number'] = $submission->get('phone');
+		$month = $submission->get('time_in_business_month');
+		$year = $submission->get('time_in_business_year');
+		$params['when_was_your_business_started'] = $month.'/1/'.$year;
 		$params['email'] = $submission->get('email');
 		$params['business'] = $submission->get('business_name');
 		$params['how_much_are_your_estimated_gross_monthly_sales'] = $submission->get('monthly_revenue');
