@@ -15,19 +15,23 @@ fields:
   monthly_revenue:
     display: 'Monthly Revenue'
     validate: required|integer
-  source:
-    display: Source
   time_in_business_month:
     display: Month
   time_in_business_year:
     display: Year
+  has_business_bank_account:
+    display: 'Has Business Bank Account'
+  active_bankruptcy:
+    display: 'Active Bankruptcy'
+  source:
+    display: Source
 columns:
   - name
   - email
   - monthly_revenue
-  - source
   - time_in_business_month
   - time_in_business_year
+  - source
 metrics:
   -
     type: total

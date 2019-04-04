@@ -42,6 +42,8 @@ class FormSubmissionListener extends Listener {
 		$params['when_was_your_business_started'] = $month.'/1/'.$year;
 		$params['email'] = $submission->get('email');
 		$params['business'] = $submission->get('business_name');
+		$params['has_business_bank_account'] = $submission->get('has_business_bank_account');
+		$params['active_bankruptcy'] = $submission->get('active_bankruptcy');
 		$params['how_much_are_your_estimated_gross_monthly_sales'] = $submission->get('monthly_revenue');
 		$params['campaign_source'] = (isset($_COOKIE['Visitor_Source__c'])) ? $_COOKIE['Visitor_Source__c'] : null;
 		$params['campaign_medium'] = (isset($_COOKIE['Visitor_Medium__c'])) ? $_COOKIE['Visitor_Medium__c'] : null;

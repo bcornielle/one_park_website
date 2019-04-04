@@ -7964,6 +7964,60 @@ body.section-lp.with-no-menu #app > footer .brand-info .links li a:hover {
   color: #359c1c;
 }
 
+body.section-lp.with-empty-menu #app > nav.apple {
+  z-index: 0;
+}
+
+body.section-lp.with-empty-menu #app > nav.apple .nav-wrapper {
+  position: fixed;
+}
+
+body.section-lp.with-empty-menu #app > nav.apple .nav-wrapper .container .menus .navbar-right {
+  display: none;
+}
+
+body.section-lp.with-empty-menu #app > nav.apple .nav-wrapper .container .menus .navbar-no-menu {
+  display: none;
+}
+
+body.section-lp.with-empty-menu #app > main section#hero .lp-form-wrapper #form.lp-form {
+  top: -150px;
+  z-index: 11;
+}
+
+body.section-lp.with-empty-menu #app > footer .brand-info {
+  margin: 0;
+  padding: 60px 0;
+}
+
+body.section-lp.with-empty-menu #app > footer .brand-info .links {
+  list-style: none;
+  padding: 0;
+}
+
+body.section-lp.with-empty-menu #app > footer .brand-info .links li {
+  float: left;
+  width: 100% !important;
+  margin: 0 2% 2% 0;
+}
+
+body.section-lp.with-empty-menu #app > footer .brand-info .links li:nth-child(1n) {
+  margin-right: 0;
+}
+
+body.section-lp.with-empty-menu #app > footer .brand-info .links li:nth-child(1n + 2) {
+  clear: left;
+}
+
+body.section-lp.with-empty-menu #app > footer .brand-info .links li a {
+  border-bottom: solid 1px white;
+}
+
+body.section-lp.with-empty-menu #app > footer .brand-info .links li a:hover {
+  border-bottom: solid 1px #359c1c;
+  color: #359c1c;
+}
+
 body.section-lp.home-page #app > main section#hero {
   background-image: url("/assets/img/home-hero.png");
 }
@@ -8172,14 +8226,22 @@ body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-for
   font-size: .8rem;
   letter-spacing: 1px;
   margin-bottom: 5px;
+  text-align: left;
 }
 
 body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article .fields label {
   margin-bottom: 0;
+  width: 100%;
+  text-align: left;
+}
+
+body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article .fields label.lefty-25 {
+  margin-left: -25px;
 }
 
 body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article .fields label select {
-  margin-bottom: 0;
+  margin-bottom: 5px;
+  margin-top: 3px;
 }
 
 body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article button.btn {
@@ -8190,6 +8252,16 @@ body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-for
 
 body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article button.btn:hover {
   background: #359c1c;
+}
+
+body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article ul.badgets {
+  padding: 30px 0 0 0;
+  max-width: 450px;
+  display: none;
+}
+
+body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article ul.badgets li img {
+  max-width: 130px;
 }
 
 body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article .disclaimer {
@@ -8374,6 +8446,22 @@ body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-f
 body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields .form-group div.label {
   text-transform: uppercase;
   font-size: .8rem;
+  text-align: left;
+}
+
+body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields .form-group label {
+  margin-bottom: 0;
+  width: 100%;
+  text-align: left;
+}
+
+body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields .form-group label.lefty-25 {
+  margin-left: -25px;
+}
+
+body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields .form-group label select {
+  margin-bottom: 5px;
+  margin-top: 3px;
 }
 
 body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields .honeypot {
@@ -8430,6 +8518,16 @@ body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-f
 
 body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article button.btn:hover {
   background: #359c1c;
+}
+
+body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article ul.badgets {
+  padding: 30px 0 0 0;
+  max-width: 450px;
+  display: none;
+}
+
+body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article ul.badgets li img {
+  max-width: 130px;
 }
 
 body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article .disclaimer {
@@ -9733,9 +9831,13 @@ body #success-alert:after {
     margin: 0 auto;
   }
 
-  body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form {
+  body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form {
     top: 0;
     margin: 30px 0 45px;
+  }
+
+  body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article .fields label.lefty-25 {
+    margin-left: 0;
   }
 
   body.section-lp.dark #app > main section#overview ul {
@@ -9767,9 +9869,13 @@ body #success-alert:after {
     margin: 0 auto;
   }
 
-  body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form {
+  body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form {
     top: 0;
     margin: 30px 0 45px;
+  }
+
+  body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields .form-group label.lefty-25 {
+    margin-left: 0;
   }
 
   body.section-lp.light #app > main section#overview ul {
@@ -11325,6 +11431,10 @@ body #success-alert:after {
     background-image: url("/assets/img/article-11.jpg") !important;
   }
 
+  body.section-lp.dark #app > main section#hero .background {
+    background: linear-gradient(rgba(53, 156, 28, 0.7), rgba(53, 156, 28, 0.3));
+  }
+
   body.section-lp.dark #app > main section#hero .hero-content a.branding.logo {
     display: none;
   }
@@ -11334,7 +11444,7 @@ body #success-alert:after {
     font-size: 2rem;
     font-weight: 900;
     letter-spacing: -2px;
-    margin-top: 45px;
+    margin-top: 20px;
   }
 
   body.section-lp.dark #app > main section#hero .hero-content h2 {
@@ -11351,6 +11461,7 @@ body #success-alert:after {
 
   body.section-lp.dark #app > main section#hero .hero-content ul.badgets {
     padding: 0 30px;
+    display: none;
   }
 
   body.section-lp.dark #app > main section#hero .hero-content ul.badgets li img {
@@ -11361,6 +11472,10 @@ body #success-alert:after {
     display: none;
   }
 
+  body.section-lp.dark #app > main section#hero .lp-form-wrapper {
+    margin-top: 15px !important;
+  }
+
   body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form {
     top: 0;
     margin: 0 0 30px;
@@ -11368,6 +11483,30 @@ body #success-alert:after {
 
   body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form h2 {
     text-align: center;
+  }
+
+  body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article ul.badgets {
+    padding: 15px 30px 0;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+
+  body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article ul.badgets li {
+    float: left;
+    width: 32% !important;
+    margin: 0 2% 2% 0;
+  }
+
+  body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article ul.badgets li:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article ul.badgets li:nth-child(3n + 4) {
+    clear: left;
+  }
+
+  body.section-lp.dark #app > main section#hero .lp-form-wrapper #form.lp-form article ul.badgets li img {
+    max-width: 90px !important;
   }
 
   body.section-lp.dark #app > main section#overview ul {
@@ -11407,7 +11546,7 @@ body #success-alert:after {
     font-size: 2rem;
     font-weight: 900;
     letter-spacing: -2px;
-    margin-top: 45px;
+    margin-top: 15px;
   }
 
   body.section-lp.light #app > main section#hero .hero-content h2 {
@@ -11425,6 +11564,7 @@ body #success-alert:after {
 
   body.section-lp.light #app > main section#hero .hero-content ul.badgets {
     padding: 0 30px;
+    display: none;
   }
 
   body.section-lp.light #app > main section#hero .hero-content ul.badgets li img {
@@ -11435,6 +11575,10 @@ body #success-alert:after {
     display: none;
   }
 
+  body.section-lp.light #app > main section#hero .lp-form-wrapper {
+    margin-top: 15px;
+  }
+
   body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form {
     top: 0;
     margin: 0 0 30px;
@@ -11442,6 +11586,30 @@ body #success-alert:after {
 
   body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form h2 {
     text-align: center;
+  }
+
+  body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article ul.badgets {
+    padding: 0 30px;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+
+  body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article ul.badgets li {
+    float: left;
+    width: 32% !important;
+    margin: 0 2% 2% 0;
+  }
+
+  body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article ul.badgets li:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article ul.badgets li:nth-child(3n + 4) {
+    clear: left;
+  }
+
+  body.section-lp.light #app > main section#hero .lp-form-wrapper #form.lp-form article ul.badgets li img {
+    max-width: 90px !important;
   }
 
   body.section-lp.light #app > main section#overview ul {

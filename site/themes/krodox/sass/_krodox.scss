@@ -3804,6 +3804,62 @@ body {
         }
       }
     }
+    &.with-empty-menu {
+      #app {
+        > nav {
+          &.apple {
+            z-index: 0;
+            .nav-wrapper {
+              position: fixed;
+              .container {
+                .menus {
+                  .navbar-right {
+                    display: none;
+                  }
+                  .navbar-no-menu {
+                    display: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+        > main {
+          section {
+            &#hero {
+              .lp-form-wrapper {
+                #form {
+                  &.lp-form {
+                    top: -150px;
+                    z-index: 11;
+                  }
+                }
+              }
+            }
+          }
+        }
+        > footer {
+          .brand-info {
+            margin: 0;
+            padding: 60px 0;
+            .links {
+              list-style: none;
+              padding: 0;
+              li {
+                @include columns(1);
+                a {
+                  border-bottom: solid 1px white;
+                  &:hover {
+                    border-bottom: solid 1px $brand-primary;
+                    color: $brand-primary;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
     &.home-page {
       #app {
         > main {
@@ -3978,12 +4034,19 @@ body {
                               font-size: .8rem;
                               letter-spacing: 1px;
                               margin-bottom: 5px;
+                              text-align: left;
                             }
                           }
                           label {
                             margin-bottom: 0;
+                            width: 100%;
+                            text-align: left;
+                            &.lefty-25 {
+                              margin-left: -25px;
+                            }
                             select {
-                              margin-bottom: 0;
+                              margin-bottom: 5px;
+                              margin-top: 3px;
                             }
                           }
                         }
@@ -3994,6 +4057,18 @@ body {
                             border: none;
                             &:hover {
                               background:$brand-primary;
+                            }
+                          }
+                        }
+                        ul {
+                          &.badgets {
+                            padding: 30px 0 0 0;
+                            max-width: 450px;
+                            display: none;
+                            li {
+                              img {
+                                max-width: 130px;
+                              }
                             }
                           }
                         }
@@ -4153,6 +4228,19 @@ body {
                               &.label {
                                 text-transform: uppercase;
                                 font-size: .8rem;
+                                text-align: left;
+                              }
+                            }
+                            label {
+                              margin-bottom: 0;
+                              width: 100%;
+                              text-align: left;
+                              &.lefty-25 {
+                                margin-left: -25px;
+                              }
+                              select {
+                                margin-bottom: 5px;
+                                margin-top: 3px;
                               }
                             }
                           }
@@ -4186,6 +4274,18 @@ body {
                             border: none;
                             &:hover {
                               background:$brand-primary;
+                            }
+                          }
+                        }
+                        ul {
+                          &.badgets {
+                            padding: 30px 0 0 0;
+                            max-width: 450px;
+                            display: none;
+                            li {
+                              img {
+                                max-width: 130px;
+                              }
                             }
                           }
                         }
@@ -5656,10 +5756,21 @@ body {
                   }
                 }
                 .lp-form-wrapper {
-                  #form {
-                    &.lp-form {
-                      top: 0;
-                      margin: 30px 0 45px;
+                  &.dark {
+                    #form {
+                      &.lp-form {
+                        top: 0;
+                        margin: 30px 0 45px;
+                        article {
+                          .fields {
+                            label {
+                              &.lefty-25 {
+                                margin-left: 0;
+                              }
+                            }
+                          }
+                        }
+                      }
                     }
                   }
                 }
@@ -5699,10 +5810,23 @@ body {
                   }
                 }
                 .lp-form-wrapper {
-                  #form {
-                    &.lp-form {
-                      top: 0;
-                      margin: 30px 0 45px;
+                  &.light {
+                    #form {
+                      &.lp-form {
+                        top: 0;
+                        margin: 30px 0 45px;
+                        article {
+                          .fields {
+                            .form-group {
+                              label {
+                                &.lefty-25 {
+                                  margin-left: 0;
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
                     }
                   }
                 }
@@ -7258,6 +7382,9 @@ body {
               &#hero {
                 height: auto;
                 background-image: url("/assets/img/article-11.jpg")!important;
+                .background {
+                  background: linear-gradient(rgba(53, 156, 28, 0.7), rgba(53, 156, 28, 0.3));
+                }
                 .hero-content {
                   a {
                     &.branding {
@@ -7271,7 +7398,7 @@ body {
                     font-size: 2rem;
                     font-weight: 900;
                     letter-spacing: -2px;
-                    margin-top: 45px;
+                    margin-top: 20px;
                   }
                   h2 {
                     margin-bottom: 15px;
@@ -7285,6 +7412,7 @@ body {
                     }
                     &.badgets {
                       padding: 0 30px;
+                      display: none;
                       li {
                         img {
                           max-width: 90px;
@@ -7297,12 +7425,27 @@ body {
                   }
                 }
                 .lp-form-wrapper {
+                  margin-top: 15px !important;
                   #form {
                     &.lp-form {
                       top: 0;
                       margin: 0 0 30px;
                       h2 {
                         text-align: center;
+                      }
+                      article{
+                        ul {
+                          &.badgets {
+                            padding: 15px 30px 0;
+                            display: flex !important;
+                            li {
+                              @include columns(3);
+                              img {
+                                max-width: 90px !important;
+                              }
+                            }
+                          }
+                        }
                       }
                     }
                   }
@@ -7354,7 +7497,7 @@ body {
                     font-size: 2rem;
                     font-weight: 900;
                     letter-spacing: -2px;
-                    margin-top: 45px;
+                    margin-top: 15px;
                   }
                   h2 {
                     margin-bottom: 15px;
@@ -7369,6 +7512,7 @@ body {
                     }
                     &.badgets {
                       padding: 0 30px;
+                      display: none;
                       li {
                         img {
                           max-width: 90px;
@@ -7381,12 +7525,27 @@ body {
                   }
                 }
                 .lp-form-wrapper {
+                  margin-top: 15px;
                   #form {
                     &.lp-form {
                       top: 0;
                       margin: 0 0 30px;
                       h2 {
                         text-align: center;
+                      }
+                      article{
+                        ul {
+                          &.badgets {
+                            padding: 0 30px;
+                            display: flex !important;
+                            li {
+                              @include columns(3);
+                              img {
+                                max-width: 90px !important;
+                              }
+                            }
+                          }
+                        }
                       }
                     }
                   }

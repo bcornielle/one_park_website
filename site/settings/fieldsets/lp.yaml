@@ -26,6 +26,7 @@ sections:
         options:
           with-menu: 'With Menu'
           with-no-menu: 'Without Menu'
+          with-empty-menu: 'Empty Menu'
         type: select
         width: 50
         display: Navigation
@@ -70,11 +71,25 @@ sections:
         width: 50
       form_time_in_business:
         options:
-          'false': 'Do not show'
-          'true': 'Show in Business Since'
+          'false': Hide
+          'true': Show
         type: select
         width: 50
         display: 'Form In Business Since'
+      form_has_business_bank_account:
+        options:
+          'false': Hide
+          'true': Show
+        type: select
+        width: 50
+        display: 'Form Has Business Bank Account'
+      form_active_bankruptcy:
+        options:
+          'false': Hide
+          'true': Show
+        type: select
+        width: 50
+        display: 'Form Active Bankruptcy'
       form_button_text:
         type: text
         width: 50
