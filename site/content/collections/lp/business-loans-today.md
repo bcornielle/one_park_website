@@ -1,7 +1,7 @@
 title: 'Business Loans Today'
 template: lp/fast-capital-360
 body_class: home-page
-navigation: with-empty-menu
+navigation: with-no-menu
 hero: light
 hero_image: /assets/img/home-hero.png
 hero_title: 'Business Loans Today'
