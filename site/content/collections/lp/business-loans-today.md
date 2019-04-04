@@ -3,7 +3,7 @@ template: lp/fast-capital-360
 body_class: home-page
 navigation: with-empty-menu
 hero: light
-hero_image: /assets/img/home-hero.png
+hero_image: /assets/untitled-design-min.png
 hero_title: 'Business Loans Today'
 hero_subtitle: 'Business Funding Fast'
 hero_notice: 'WE HELP BUSINESSES GROW WITH EASY, HASSLE-FREE BUSINESS FUNDING OPTIONS.'
