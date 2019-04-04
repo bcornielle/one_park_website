@@ -1,5 +1,5 @@
 title: 'Bad Credit Business Loans'
-template: lp/fast-capital-360
+template: lp/home-page
 body_class: home-page
 navigation: with-menu
 hero: light
