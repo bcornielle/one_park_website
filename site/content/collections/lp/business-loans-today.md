@@ -10,7 +10,7 @@ hero_notice: 'WE HELP BUSINESSES GROW WITH EASY, HASSLE-FREE BUSINESS FUNDING OP
 hero_item_1: 'Get $5,000 to $750,000 in business funding.'
 hero_item_2: 'Your own Team of Funding Experts finds the offer that''s best for you.'
 hero_item_3: 'Most businesses get funds deposited in less than 3 business days.'
-form_title: '<strong>YOU COULD HAVE FUNDS IN 72 HOURS</strong>'
+form_title: '<center><strong>YOU COULD HAVE FUNDS IN 72 HOURS</strong></center>'
 form_time_in_business: 'true'
 form_has_business_bank_account: 'true'
 form_active_bankruptcy: 'true'
