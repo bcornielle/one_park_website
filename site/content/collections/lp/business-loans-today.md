@@ -1,5 +1,5 @@
 title: 'Business Loans Today'
-template: lp/home-page
+template: lp/fast-capital-360
 body_class: home-page
 navigation: with-empty-menu
 hero: light
