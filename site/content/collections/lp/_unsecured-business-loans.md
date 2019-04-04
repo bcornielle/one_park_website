@@ -1,10 +1,10 @@
-title: 'Bad Credit Business Loans'
+title: 'Unsecured Business Loans'
 template: lp/fast-capital-360
 body_class: home-page
 navigation: with-menu
 hero: light
 hero_image: /assets/untitled-design-min.png
-hero_title: 'Bad Credit </br>Business Loans'
+hero_title: 'Unsecured </br>Business Loans'
 hero_subtitle: 'Get $5,000 - $750,000 Today'
 hero_notice: 'YOUR PAST SHOULDN’T </br>DETERMINE YOUR FUTURE'
 hero_item_1: 'Get Pre-Qualified in Minutes.'
@@ -20,6 +20,7 @@ overview_icon_2: 'far fa-clock'
 overview_text_2: 'PRE-QUALIFIED</br>IN MINUTES'
 overview_icon_3: 'fas fa-dollar-sign'
 overview_text_3: 'FUNDED IN AS </br>LITTLE AS 72 HOURS'
-meta_title: 'Bad Credit Business Loan Options'
-meta_description: 'Bad Credit Business Funding'
+meta_title: 'Unsecured Business Loans'
+meta_description: 'Unsecured Business Loans'
+canonical: ljoseph@oneparkfinancial.com
 id: 69aaab19-6ebb-4e5a-a806-cef38cb21d27
