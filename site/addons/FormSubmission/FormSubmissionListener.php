@@ -32,9 +32,15 @@ class FormSubmissionListener extends Listener {
 		$form_id = '2925351';
 		$params = array();
 		$name = $submission->get('name');
-		$names = explode(' ', $name);
-		$params['first_name'] = (isset($names[0])) ? $names[0] : null;
-		$params['last_name'] = (isset($names[1])) ? $names[1] : 'lastname';
+		$names = preg_split('/\s+/',$name);
+		$firtname = (isset($names[0])) ? $names[0] : 'First Name';
+		unset($names[0]);
+		$lastnames = implode('',$names);
+		if (strlen($lastnames)===0){
+			$lastnames = 'Lastname';
+		}
+		$params['first_name'] = $firtname;
+		$params['last_name'] = $lastnames;
 		$params['contact_phone'] = $submission->get('phone');
 		$params['company_phone_number'] = $submission->get('phone');
 		$month = $submission->get('time_in_business_month');
