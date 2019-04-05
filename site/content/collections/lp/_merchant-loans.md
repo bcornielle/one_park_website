@@ -1,10 +1,10 @@
-title: 'Business Loans & Other Funding Options'
+title: 'Merchant Loans & Other Funding Options'
 template: lp/fast-capital-360
 body_class: home-page
 navigation: with-menu
 hero: light
 hero_image: /assets/untitled-design-min.png
-hero_title: 'Business Loans & </br>Other Funding Options'
+hero_title: 'Merchant Loans & </br>Other Funding Options'
 hero_subtitle: '</br>Get $5,000 - $750,000 Today'
 hero_notice: 'YOUR TIME IS MONEY </br>GET HASSLE-FREE WORKING CAPITAL'
 hero_item_1: 'Get Pre-Qualified in Minutes.'
@@ -20,6 +20,6 @@ overview_icon_2: 'far fa-clock'
 overview_text_2: 'PRE-QUALIFIED</br>IN MINUTES'
 overview_icon_3: 'fas fa-dollar-sign'
 overview_text_3: 'MONEY IN THE BANK</br>IN AS LITTLE AS 3 DAYS'
-meta_title: 'Business Loans & Other Funding Options'
-meta_description: 'Business Loans & Other Funding Options'
+meta_title: 'Merchant Loans & Other Funding Options'
+meta_description: 'Merchant Loans & Other Funding Options'
 id: 46dc2d6c-4e77-410f-8591-992c1d453af8
