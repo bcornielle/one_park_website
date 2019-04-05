@@ -3824,20 +3824,6 @@ body {
             }
           }
         }
-        > main {
-          section {
-            &#hero {
-              .lp-form-wrapper {
-                #form {
-                  &.lp-form {
-                    top: -150px;
-                    z-index: 11;
-                  }
-                }
-              }
-            }
-          }
-        }
         > footer {
           .brand-info {
             margin: 0;
@@ -3852,6 +3838,34 @@ body {
                   &:hover {
                     border-bottom: solid 1px $brand-primary;
                     color: $brand-primary;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      &.light, &.dark {
+        #app {
+          > main {
+            section {
+              &#hero {
+                .lp-form-wrapper {
+                  &.light {
+                    #form {
+                      &.lp-form {
+                        top: -60px;
+                        z-index: 11;
+                      }
+                    }
+                  }
+                  &.dark {
+                    #form {
+                      &.lp-form {
+                        top: -30px;
+                        z-index: 11;
+                      }
+                    }
                   }
                 }
               }
@@ -4031,10 +4045,13 @@ body {
                             &.label {
                               color: white;
                               text-transform: uppercase;
-                              font-size: .8rem;
+                              font-size: .6rem;
                               letter-spacing: 1px;
                               margin-bottom: 5px;
                               text-align: left;
+                              &.mt-5 {
+                                margin-top: 5px !important;
+                              }
                             }
                           }
                           label {
@@ -4047,6 +4064,18 @@ body {
                             select {
                               margin-bottom: 5px;
                               margin-top: 3px;
+                            }
+                          }
+                        }
+                        .disclaimer {
+                          padding: 15px 0 0;
+                          a, font {
+                            color: white;
+                            text-decoration: none;
+                            font-size: .9rem;
+                            span {
+                              font-weight: 900;
+                              border-bottom: solid 1px white;
                             }
                           }
                         }
@@ -4069,18 +4098,6 @@ body {
                               img {
                                 max-width: 130px;
                               }
-                            }
-                          }
-                        }
-                        .disclaimer {
-                          padding: 15px 0 0;
-                          a {
-                            color: white;
-                            text-decoration: none;
-                            font-size: .9rem;
-                            span {
-                              font-weight: 900;
-                              border-bottom: solid 1px white;
                             }
                           }
                         }
@@ -4227,8 +4244,11 @@ body {
                             div {
                               &.label {
                                 text-transform: uppercase;
-                                font-size: .8rem;
+                                font-size: .6rem;
                                 text-align: left;
+                                &.mt-5 {
+                                  margin-top: 5px !important;
+                                }
                               }
                             }
                             label {
@@ -4521,10 +4541,13 @@ body {
                             &.label {
                               font-weight: 900;
                               color: white;
-                              font-size: .9rem;
+                              font-size: .6rem;
                               text-align: left;
                               padding-left: 5px;
                               text-transform: uppercase;
+                              &.mt-5 {
+                                margin-top: 5px;
+                              }
                             }
                           }
                           label {
@@ -5836,6 +5859,28 @@ body {
                   padding-top: 45px;
                   li {
                     padding:0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      &.with-empty-menu {
+        &.light {
+          #app {
+            > main {
+              section {
+                &#hero {
+                  .lp-form-wrapper {
+                    &.light {
+                      #form {
+                        &.lp-form {
+                          top: 15px;
+                          z-index: 1;
+                        }
+                      }
+                    }
                   }
                 }
               }

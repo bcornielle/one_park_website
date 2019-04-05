@@ -7980,11 +7980,6 @@ body.section-lp.with-empty-menu #app > nav.apple .nav-wrapper .container .menus 
   display: none;
 }
 
-body.section-lp.with-empty-menu #app > main section#hero .lp-form-wrapper #form.lp-form {
-  top: -150px;
-  z-index: 11;
-}
-
 body.section-lp.with-empty-menu #app > footer .brand-info {
   margin: 0;
   padding: 60px 0;
@@ -8016,6 +8011,18 @@ body.section-lp.with-empty-menu #app > footer .brand-info .links li a {
 body.section-lp.with-empty-menu #app > footer .brand-info .links li a:hover {
   border-bottom: solid 1px #359c1c;
   color: #359c1c;
+}
+
+body.section-lp.with-empty-menu.light #app > main section#hero .lp-form-wrapper.light #form.lp-form,
+body.section-lp.with-empty-menu.dark #app > main section#hero .lp-form-wrapper.light #form.lp-form {
+  top: -60px;
+  z-index: 11;
+}
+
+body.section-lp.with-empty-menu.light #app > main section#hero .lp-form-wrapper.dark #form.lp-form,
+body.section-lp.with-empty-menu.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form {
+  top: -30px;
+  z-index: 11;
 }
 
 body.section-lp.home-page #app > main section#hero {
@@ -8223,10 +8230,14 @@ body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-for
 body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article .fields div.label {
   color: white;
   text-transform: uppercase;
-  font-size: .8rem;
+  font-size: .6rem;
   letter-spacing: 1px;
   margin-bottom: 5px;
   text-align: left;
+}
+
+body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article .fields div.label.mt-5 {
+  margin-top: 5px !important;
 }
 
 body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article .fields label {
@@ -8242,6 +8253,23 @@ body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-for
 body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article .fields label select {
   margin-bottom: 5px;
   margin-top: 3px;
+}
+
+body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article .disclaimer {
+  padding: 15px 0 0;
+}
+
+body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article .disclaimer a,
+body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article .disclaimer font {
+  color: white;
+  text-decoration: none;
+  font-size: .9rem;
+}
+
+body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article .disclaimer a span,
+body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article .disclaimer font span {
+  font-weight: 900;
+  border-bottom: solid 1px white;
 }
 
 body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article button.btn {
@@ -8262,21 +8290,6 @@ body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-for
 
 body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article ul.badgets li img {
   max-width: 130px;
-}
-
-body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article .disclaimer {
-  padding: 15px 0 0;
-}
-
-body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article .disclaimer a {
-  color: white;
-  text-decoration: none;
-  font-size: .9rem;
-}
-
-body.section-lp.dark #app > main section#hero .lp-form-wrapper.dark #form.lp-form article .disclaimer a span {
-  font-weight: 900;
-  border-bottom: solid 1px white;
 }
 
 body.section-lp.dark #app > main section#overview {
@@ -8445,8 +8458,12 @@ body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-f
 
 body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields .form-group div.label {
   text-transform: uppercase;
-  font-size: .8rem;
+  font-size: .6rem;
   text-align: left;
+}
+
+body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields .form-group div.label.mt-5 {
+  margin-top: 5px !important;
 }
 
 body.section-lp.light #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields .form-group label {
@@ -8820,10 +8837,14 @@ body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_
 body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form article .fields div.label {
   font-weight: 900;
   color: white;
-  font-size: .9rem;
+  font-size: .6rem;
   text-align: left;
   padding-left: 5px;
   text-transform: uppercase;
+}
+
+body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form article .fields div.label.mt-5 {
+  margin-top: 5px;
 }
 
 body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form article .fields label {
@@ -9884,6 +9905,11 @@ body #success-alert:after {
 
   body.section-lp.light #app > main section#overview ul li {
     padding: 0;
+  }
+
+  body.section-lp.with-empty-menu.light #app > main section#hero .lp-form-wrapper.light #form.lp-form {
+    top: 15px;
+    z-index: 1;
   }
 
   body.es #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li:not(:last-child) {
