@@ -45,7 +45,9 @@ class FormSubmissionListener extends Listener {
 		$params['company_phone_number'] = $submission->get('phone');
 		$month = $submission->get('time_in_business_month');
 		$year = $submission->get('time_in_business_year');
-		$params['when_was_your_business_started'] = $month.'/1/'.$year;
+		if ($month && $year) {
+			$params['when_was_your_business_started'] = $month.'/01/'.$year;
+		}
 		$params['email'] = $submission->get('email');
 		$params['business'] = $submission->get('business_name');
 		$params['has_business_bank_account'] = $submission->get('has_business_bank_account');
