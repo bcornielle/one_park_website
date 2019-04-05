@@ -3,7 +3,7 @@ template: lp/fast-capital-360
 body_class: home-page
 navigation: with-menu
 hero: light
-hero_image: /assets/untitled-design-min.png
+hero_image: /assets/greyson-joralemon-482880-unsplash-min.jpg
 hero_title: 'Construction Business Loans'
 hero_subtitle: '</br>Get $5,000 - $750,000 Today'
 hero_notice: 'YOUR TIME IS MONEY </br>GET HASSLE-FREE WORKING CAPITAL'
