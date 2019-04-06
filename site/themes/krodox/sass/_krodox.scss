@@ -4552,6 +4552,15 @@ body {
                           }
                           label {
                             margin-bottom: 0;
+                            width: 100%;
+                            text-align: left;
+                            &.lefty-25 {
+                              margin-left: -25px;
+                            }
+                            select {
+                              margin-bottom: 5px;
+                              margin-top: 3px;
+                            }
                           }
                           .form-group {
                             &:last-child {
@@ -7306,6 +7315,23 @@ body {
         }
       }
     }
+    &.section-congrats, &.section-feliz {
+      #app {
+        > main {
+          section {
+            &#form {
+              .form {
+                #prequalifed-content {
+                  h1 {
+                    font-size: 1em;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
     &.section-lp {
       &.with-no-menu {
         #app {
@@ -7656,6 +7682,16 @@ body {
                             }
                             select {
                               margin-top: 10px;
+                            }
+                            div {
+                              &.label {
+                                color: $text-color;
+                              }
+                            }
+                            label {
+                              &.lefty-25 {
+                                margin-left: 0;
+                              }
                             }
                           }
                         }

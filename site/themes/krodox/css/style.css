@@ -8849,6 +8849,17 @@ body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_
 
 body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form article .fields label {
   margin-bottom: 0;
+  width: 100%;
+  text-align: left;
+}
+
+body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form article .fields label.lefty-25 {
+  margin-left: -25px;
+}
+
+body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form article .fields label select {
+  margin-bottom: 5px;
+  margin-top: 3px;
 }
 
 body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form article .fields .form-group:last-child {
@@ -11363,6 +11374,11 @@ body #success-alert:after {
     padding: 0;
   }
 
+  body.section-congrats #app > main section#form .form #prequalifed-content h1,
+  body.section-feliz #app > main section#form .form #prequalifed-content h1 {
+    font-size: 1em;
+  }
+
   body.section-lp.with-no-menu #app > nav.apple .nav-wrapper .burger-container {
     visibility: hidden;
   }
@@ -11710,6 +11726,14 @@ body #success-alert:after {
 
   body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form article .fields select {
     margin-top: 10px;
+  }
+
+  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form article .fields div.label {
+    color: #323831;
+  }
+
+  body.section-lp.fast_capital_360 #app > main section#hero .lp-form-wrapper.fast_capital_360 #form.lp-form article .fields label.lefty-25 {
+    margin-left: 0;
   }
 
   body.section-lp.fast_capital_360 #app > main section#partners {
