@@ -15,7 +15,7 @@
                         {{ form:set is="landing-page" }}
                         {{ form:create }}
                         <input type="text" name="honeypot" class="honeypot"/>
-                        <input type="hidden" name="source" value="home-form"/>
+                        <input type="hidden" name="source" value="{{ current_uri }}"/>
                         <ul class="fields">
                             <li>
                                 <input type="text" name="name" class="form-control" value="{{ old:name }}" placeholder="First & Last Name" required/>

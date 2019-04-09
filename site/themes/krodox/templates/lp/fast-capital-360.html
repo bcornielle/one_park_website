@@ -59,7 +59,7 @@
                                         {{ form:create }}
                                         <div class="fields">
                                             <input type="text" name="honeypot" class="honeypot"/>
-                                            <input type="hidden" name="source" value="lp-business-funding"/>
+                                            <input type="hidden" name="source" value="{{ current_uri }}"/>
                                             <div class="form-group">
                                                 <input type="text" name="name" class="form-control" value="{{ old:name }}" placeholder="First & Last Name" required/>
                                             </div>
