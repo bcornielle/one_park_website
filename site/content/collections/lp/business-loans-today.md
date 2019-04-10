@@ -21,7 +21,7 @@ overview_text_1: 'CREDIT SCORES 500+  ABOVE ACCEPTED'
 overview_icon_2: 'far fa-clock'
 overview_text_2: 'PRE-QUALIFIED IN MINUTES'
 overview_icon_3: 'fas fa-dollar-sign'
-overview_text_3: 'FUNDED IN AS  LITTLE AS 72 HOURS'
+overview_text_3: 'FUNDED IN AS  LITTLE AS 72 HOURS</br>'
 meta_title: 'Business Loans Today'
 meta_description: 'Business Loans Today'
 id: b5c7a697-daf7-4f89-ad63-9b9552c12192
