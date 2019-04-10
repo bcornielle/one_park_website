@@ -31,7 +31,6 @@ columns:
   - monthly_revenue
   - time_in_business_month
   - time_in_business_year
-  - source
 metrics:
   -
     type: total

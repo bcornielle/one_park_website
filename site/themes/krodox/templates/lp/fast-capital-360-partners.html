@@ -93,9 +93,10 @@
                                                                 {{ if form_has_business_bank_account === 'true' }}
                                                                 <div class="label mt-5">Business Bank Account</div>
                                                                 <label for="has_business_bank_account">
-                                                                    <select id="has_business_bank_account" name="has_business_bank_account" class="form-control" title="Has Business Bank Account">
-                                                                        <option value="0" selected>No</option>
-                                                                        <option value="1">Yes</option>
+                                                                    <select id="has_business_bank_account" name="has_business_bank_account" class="form-control" title="Has Business Bank Account" required>
+                                                                        <option value="" selected disabled>Select</option>
+                                                                        <option value="No">No</option>
+                                                                        <option value="Yes">Yes</option>
                                                                     </select>
                                                                 </label>
                                                                 {{ /if }}
@@ -104,9 +105,10 @@
                                                                 {{ if form_active_bankruptcy === 'true' }}
                                                                 <div class="label mt-5">Active Bankruptcy</div>
                                                                 <label for="active_bankruptcy">
-                                                                    <select id="active_bankruptcy" name="active_bankruptcy" class="form-control" title="Bankruptcy">
-                                                                        <option value="0" selected>No</option>
-                                                                        <option value="1">Yes</option>
+                                                                    <select id="active_bankruptcy" name="active_bankruptcy" class="form-control" title="Bankruptcy" required>
+                                                                        <option value="" selected disabled>Select</option>
+                                                                        <option value="No" selected>No</option>
+                                                                        <option value="Yes">Yes</option>
                                                                     </select>
                                                                 </label>
                                                                 {{ /if }}
@@ -154,6 +156,13 @@
                                                     {{ /if }}
                                                 </div>
                                                 <button class="btn btn-primary">{{form_button_text}}</button>
+                                                {{ if errors }}
+                                                <div id="error-alert">
+                                                    {{ errors }}
+                                                    {{ value }}<br>
+                                                    {{ /errors }}
+                                                </div>
+                                                {{ /if }}
                                             {{ /form:create }}
                                         {{ /form:set }}
                                         <ul>
@@ -338,5 +347,4 @@
         </div>
     </section>
     {{ partial:modules/testimonials }}
-    {{ partial:modules/lp-form }}
 </main>
