@@ -1,0 +1,10 @@
+source: /lp/business-loans-today
+name: 'Jose Vera'
+business_name: 'JMV INC TEST'
+monthly_revenue: '15000'
+phone: '3052254545'
+email: joseveratestinc@blablba.com
+has_business_bank_account: 'Yes'
+active_bankruptcy: 'No'
+time_in_business_month: '7'
+time_in_business_year: '1977'
