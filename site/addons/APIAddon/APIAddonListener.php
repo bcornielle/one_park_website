@@ -46,6 +46,12 @@ class APIAddonListener extends Listener {
 			$params['source'] = $submission->get('source');
 			$params['company_name'] = $submission->get('business_name');
 			$params['company_revenue'] = $revenue;
+			$month = $submission->get('time_in_business_month');
+			$year = $submission->get('time_in_business_year');
+			if ($month && $year) {
+				$params['company_started'] = $month.'/01/'.$year;
+			}
+			$params['company_started'] = $submission->get('business_name');
 			$this->api_lead_created($params);
 		}
 		if ($form_name === 'contact'){
