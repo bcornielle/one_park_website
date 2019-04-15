@@ -52,7 +52,7 @@ class APIAddonListener extends Listener {
 				$params['company_started'] = $month.'/01/'.$year;
 			}
 			$api_response = $this->api_lead_created($params);
-			$json_lead_from_api = json_decode(json_encode($api_response));
+			$json_lead_from_api = json_encode($api_response);
 			$submission->set('lead_id',1);
 			$submission->save();
 			Log::info($json_lead_from_api);
@@ -66,7 +66,7 @@ class APIAddonListener extends Listener {
 			$params['company_name'] = $submission->get('business_name');
 			$params['source'] = 'contact-form';
 			$api_response = $this->api_lead_created($params);
-			$json_lead_from_api = json_decode(json_encode($api_response));
+			$json_lead_from_api = json_encode($api_response);
 			$submission->set('lead_id',2);
 			$submission->save();
 			Log::info($json_lead_from_api);
