@@ -1,13 +1,12 @@
 title: 'Contact Me'
 fields:
+  lead_id:
+    display: ID
   firstname:
     display: 'First Name'
     validate: 'required|min:2'
   lastname:
     display: 'Last Name'
-    validate: 'required|min:2'
-  business_name:
-    display: 'Business Name'
     validate: 'required|min:2'
   phone:
     display: 'Contact Phone'
@@ -15,10 +14,13 @@ fields:
   email:
     display: 'Email Address'
     validate: required|email
+  business_name:
+    display: 'Business Name'
+    validate: 'required|min:2'
 columns:
+  - lead_id
   - firstname
   - lastname
-  - business_name
   - phone
   - email
 metrics:

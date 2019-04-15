@@ -4633,6 +4633,75 @@ body {
       }
     }
   }
+  &.section-quote {
+    #app {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      > nav {
+        &.apple {
+          z-index: 0;
+          order: 1;
+          .nav-wrapper {
+            position: fixed;
+            .container {
+              .menus {
+                .navbar-right {
+                  display: none;
+                }
+                .navbar-no-menu {
+                  display: flex;
+                }
+              }
+            }
+          }
+        }
+      }
+      > main {
+        order: 2;
+        flex-grow: 1;
+        section {
+          &#services {
+            padding: 0;
+            margin: 0;
+          }
+        }
+      }
+      > footer {
+        order: 3;
+        background: white;
+        .brand-links {
+          display: none;
+        }
+        hr {
+          background: #eeeeee;
+        }
+        .brand-info {
+          padding: 0;
+          margin: 0;
+          a {
+            &.logo {
+              img {
+                background-image: url("/assets/img/one-park-logo.png");
+                background-position: center;
+                background-repeat: no-repeat;
+              }
+            }
+          }
+          h3 {
+            color: $text-color;
+            margin-top: 15px;
+          }
+          .notice {
+            color: $text-color;
+          }
+          .copyright {
+            color: $text-color;
+          }
+        }
+      }
+    }
+  }
   &.es {
     #app {
       > nav {

@@ -1,5 +1,7 @@
 title: 'Landing Page'
 fields:
+  lead_id:
+    display: ID
   name:
     display: Name
     validate: 'required|min:2'
@@ -26,11 +28,10 @@ fields:
   source:
     display: Source
 columns:
+  - lead_id
   - name
   - email
   - monthly_revenue
-  - time_in_business_month
-  - time_in_business_year
 metrics:
   -
     type: total

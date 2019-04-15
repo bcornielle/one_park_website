@@ -51,7 +51,9 @@ class APIAddonListener extends Listener {
 			if ($month && $year) {
 				$params['company_started'] = $month.'/01/'.$year;
 			}
-			$this->api_lead_created($params);
+			$api_response = $this->api_lead_created($params);
+			$json_lead_from_api = json_decode($api_response);
+			$submission->set('lead_id',$json_lead_from_api->id);
 		}
 		if ($form_name === 'contact'){
 			$params = array();
@@ -61,7 +63,9 @@ class APIAddonListener extends Listener {
 			$params['email'] = $submission->get('email');
 			$params['company_name'] = $submission->get('business_name');
 			$params['source'] = 'contact-form';
-			$this->api_lead_created($params);
+			$api_response = $this->api_lead_created($params);
+			$json_lead_from_api = json_decode($api_response);
+			$submission->set('lead_id',$json_lead_from_api->id);
 		}
 		return $submission;
 	}
@@ -97,6 +101,8 @@ class APIAddonListener extends Listener {
 			'Content-Type: application/json'
 		));
 		curl_setopt($ch, CURLOPT_POSTFIELDS,$post_fields);
-		return curl_exec($ch);
+		$data = curl_exec($ch);
+		curl_close($ch);
+		return $data;
 	}
 }

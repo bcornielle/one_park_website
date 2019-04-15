@@ -8939,6 +8939,83 @@ body.section-lp.fast_capital_360 #app > main section#features h2 {
   margin-top: 30px;
 }
 
+body.section-quote #app {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body.section-quote #app > nav.apple {
+  z-index: 0;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+body.section-quote #app > nav.apple .nav-wrapper {
+  position: fixed;
+}
+
+body.section-quote #app > nav.apple .nav-wrapper .container .menus .navbar-right {
+  display: none;
+}
+
+body.section-quote #app > nav.apple .nav-wrapper .container .menus .navbar-no-menu {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body.section-quote #app > main {
+  -ms-flex-order: 2;
+  order: 2;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+body.section-quote #app > main section#services {
+  padding: 0;
+  margin: 0;
+}
+
+body.section-quote #app > footer {
+  -ms-flex-order: 3;
+  order: 3;
+  background: white;
+}
+
+body.section-quote #app > footer .brand-links {
+  display: none;
+}
+
+body.section-quote #app > footer hr {
+  background: #eeeeee;
+}
+
+body.section-quote #app > footer .brand-info {
+  padding: 0;
+  margin: 0;
+}
+
+body.section-quote #app > footer .brand-info a.logo img {
+  background-image: url("/assets/img/one-park-logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body.section-quote #app > footer .brand-info h3 {
+  color: #323831;
+  margin-top: 15px;
+}
+
+body.section-quote #app > footer .brand-info .notice {
+  color: #323831;
+}
+
+body.section-quote #app > footer .brand-info .copyright {
+  color: #323831;
+}
+
 body.es #app > nav.apple .nav-wrapper .container .menus .navbar-right .join-now span {
   width: 140px;
 }
