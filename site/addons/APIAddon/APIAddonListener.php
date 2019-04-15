@@ -53,7 +53,7 @@ class APIAddonListener extends Listener {
 			}
 			$api_response = $this->api_lead_created($params);
 			$json_lead_from_api = json_decode($api_response);
-			$submission->set('lead_id',$json_lead_from_api->id);
+			$submission->set('lead_id',$json_lead_from_api['id']);
 		}
 		if ($form_name === 'contact'){
 			$params = array();
@@ -65,7 +65,7 @@ class APIAddonListener extends Listener {
 			$params['source'] = 'contact-form';
 			$api_response = $this->api_lead_created($params);
 			$json_lead_from_api = json_decode($api_response);
-			$submission->set('lead_id',$json_lead_from_api->id);
+			$submission->set('lead_id',$json_lead_from_api['id']);
 		}
 		return $submission;
 	}
