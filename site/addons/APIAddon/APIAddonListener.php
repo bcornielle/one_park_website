@@ -56,6 +56,7 @@ class APIAddonListener extends Listener {
 				$submission->set('lead_id',$api_response->id);
 				$submission->save();
 			}
+			Log::info($api_response);
 		}
 		if ($form_name === 'contact'){
 			$params = array();
