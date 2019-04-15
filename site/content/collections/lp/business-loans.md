@@ -6,7 +6,7 @@ hero: light
 hero_image: /assets/untitled-design-min.png
 hero_title: 'Business Loans & </br>Other Funding Options'
 hero_subtitle: '</br>Get $5,000 - $750,000 FAST'
-hero_notice: 'YOUR TIME IS MONEY </br>GET HASSLE-FREE WORKING CAPITAL'
+hero_notice: 'ONE <strong>SIMPLE</strong> APPLICATION — </br>INSTANT <strong>ACCESS</strong> TO <strong>20+ TOP FUNDERS</strong>'
 hero_item_1: 'Get Pre-Qualified in Minutes.'
 hero_item_2: 'Funding in Under 72 Hours.'
 hero_item_3: 'Poor Credit Accepted.'
