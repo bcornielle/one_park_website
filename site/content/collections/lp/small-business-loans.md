@@ -5,12 +5,12 @@ navigation: with-menu
 hero: light
 hero_image: /assets/untitled-design-min.png
 hero_title: 'Small Business Loans'
-hero_subtitle: 'Get $5,000 - $750,000 Today'
-hero_notice: 'YOUR TIME IS MONEY </br>GET HASSLE-FREE WORKING CAPITAL'
+hero_subtitle: 'Get $5,000 - $750,000 FAST'
+hero_notice: 'ONE <strong>SIMPLE</strong> APPLICATION — </br>INSTANT <strong>ACCESS</strong> TO <strong>20+ TOP FUNDERS</strong>'
 hero_item_1: 'Get Pre-Qualified in Minutes.'
 hero_item_2: 'Funding in Under 72 Hours.'
 hero_item_3: 'Poor Credit Accepted.'
-form_title: '<center>YOU COULD HAVE FUNDS</br>IN 72 HOURS</center>'
+form_title: '<center>Get a FREE, No Obligation Pre-Qualification Offer</center>'
 form_time_in_business: 'true'
 form_button_text: 'Get Funded Now'
 form_disclaimer: '<a href="/terms-of-use" target="_blank">By clicking "Get Funded Now" I agree to all <span>terms and conditions</span></a>'
