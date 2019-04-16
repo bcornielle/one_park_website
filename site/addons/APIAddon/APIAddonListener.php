@@ -52,8 +52,9 @@ class APIAddonListener extends Listener {
 				$params['company_started'] = $month.'/01/'.$year;
 			}
 			$api_response = $this->api_lead_created($params);
-			if (isset($api_response->id)){
-				$submission->set('lead_id',$api_response->id);
+			$api_response = (array) $api_response;
+			if (isset($api_response['id'])){
+				$submission->set('lead_id',$api_response['id']);
 				$submission->save();
 			}
 			Log::info($api_response);
