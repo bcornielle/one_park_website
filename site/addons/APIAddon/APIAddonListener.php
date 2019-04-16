@@ -57,7 +57,6 @@ class APIAddonListener extends Listener {
 				$submission->set('lead_id',$api_response['id']);
 				$submission->save();
 			}
-			Log::info($api_response);
 		}
 		if ($form_name === 'contact'){
 			$params = array();
@@ -68,8 +67,9 @@ class APIAddonListener extends Listener {
 			$params['company_name'] = $submission->get('business_name');
 			$params['source'] = 'contact-form';
 			$api_response = $this->api_lead_created($params);
-			if (isset($api_response->id)){
-				$submission->set('lead_id',$api_response->id);
+			$api_response = json_decode($api_response,true);
+			if (isset($api_response['id'])){
+				$submission->set('lead_id',$api_response['id']);
 				$submission->save();
 			}
 		}
