@@ -1,0 +1,10 @@
+source: /lp/business-loans-today
+name: 'John Doe'
+business_name: OPF
+monthly_revenue: '15000'
+phone: '2392010232'
+email: john.doe@gmail.com
+has_business_bank_account: 'Yes'
+active_bankruptcy: 'No'
+time_in_business_month: '5'
+time_in_business_year: '2014'
