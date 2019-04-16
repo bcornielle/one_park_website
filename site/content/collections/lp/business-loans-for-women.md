@@ -5,7 +5,8 @@ navigation: with-menu
 hero: light
 hero_image: /assets/untitled-design-(1)-min.png
 hero_title: 'Business Loans </br>for Women'
-hero_subtitle: '</br>Get $5,000 - $750,000 in Business Funding'
+hero_subtitle: '</br>Get $5,000 - $750,000 FAST'
+hero_notice: 'ONE <strong>SIMPLE</strong> APPLICATION — </br>INSTANT <strong>ACCESS</strong> TO <strong>20+ TOP FUNDERS</strong>'
 form_title: '<center>The Time for Women Entrepreneurs is NOW'
 form_time_in_business: 'true'
 form_button_text: 'Get Funded Now'
