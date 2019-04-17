@@ -20,6 +20,6 @@ overview_icon_2: 'far fa-clock'
 overview_text_2: 'PRE-QUALIFIED</br>IN MINUTES'
 overview_icon_3: 'fas fa-dollar-sign'
 overview_text_3: 'MONEY IN THE BANK</br>IN AS LITTLE AS 3 DAYS'
-meta_title: 'Business Loans & Other Funding Options'
-meta_description: 'Business Loans & Other Funding Options'
+meta_title: 'Business Financing & Other Funding Options'
+meta_description: 'Business Financing & Other Funding Options'
 id: 6518f8e3-36fa-4e90-9d30-eaf0dd9e0a26
