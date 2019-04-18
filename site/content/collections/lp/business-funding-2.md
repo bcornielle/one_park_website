@@ -20,6 +20,6 @@ overview_icon_2: 'far fa-clock'
 overview_text_2: 'PRE-QUALIFIED</br>IN MINUTES'
 overview_icon_3: 'fas fa-dollar-sign'
 overview_text_3: 'MONEY IN THE BANK</br>IN AS LITTLE AS 3 DAYS'
-meta_title: 'Business Loans, Funding & Working Capital Options'
-meta_description: 'Business Loans, Funding & Working Capital Options'
+meta_title: 'Business Funding & Working Capital Options'
+meta_description: 'Business Funding & Working Capital Options'
 id: 73e748a6-739c-49d6-af29-bbf864d04e45
