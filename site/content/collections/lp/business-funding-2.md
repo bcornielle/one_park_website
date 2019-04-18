@@ -1,12 +1,12 @@
-title: 'Business Loans, Funding & Working Capital Options'
+title: 'Business Funding & Working Capital Options'
 template: lp/fast-capital-360
 body_class: home-page
 navigation: with-menu
 hero: light
 hero_image: /assets/untitled-design-min.png
-hero_title: 'Get Hassle-Free'
-hero_subtitle: 'Business Funding Fast'
-hero_notice: 'WE HELP BUSINESSES GROW WITH EASY, HASSLE-FREE BUSINESS FUNDING OPTIONS.'
+hero_title: 'Business Funding </br>& Working Capital Options'
+hero_subtitle: '</br>Get $5,000 - $750,000 FAST'
+hero_notice: 'ONE <strong>SIMPLE</strong> APPLICATION — </br>INSTANT <strong>ACCESS</strong> TO <strong>20+ TOP FUNDERS</strong>'
 hero_item_1: 'Get Pre-Qualified in Minutes.'
 hero_item_2: 'Funding in Under 72 Hours.'
 hero_item_3: 'Poor Credit Accepted.'
