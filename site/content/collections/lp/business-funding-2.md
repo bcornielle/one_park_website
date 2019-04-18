@@ -3,7 +3,6 @@ template: lp/fast-capital-360
 body_class: home-page
 navigation: with-menu
 hero: light
-hero_image: /assets/img/business.jpg
 hero_title: 'Get Hassle-Free'
 hero_subtitle: 'Business Funding Fast'
 hero_notice: 'WE HELP BUSINESSES GROW WITH EASY, HASSLE-FREE BUSINESS FUNDING OPTIONS.'
