@@ -10,7 +10,7 @@ hero_notice: 'ONE <strong>SIMPLE</strong> APPLICATION — </br>INSTANT <strong>A
 hero_item_1: 'Get Pre-Qualified in Minutes.'
 hero_item_2: 'Funding in Under 72 Hours.'
 hero_item_3: 'Poor Credit Accepted.'
-form_title: 'YOU COULD HAVE FUNDS</br>IN 72 HOURS'
+form_title: '<center>YOU COULD HAVE FUNDS</br>IN 72 HOURS</center>'
 form_time_in_business: 'true'
 form_button_text: 'Get Funded Now'
 form_disclaimer: '<a href="/terms-of-use" target="_blank">By clicking "Get Funded Now" I agree to all <span>terms and conditions</span></a>'
