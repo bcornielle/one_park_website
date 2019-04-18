@@ -1,8 +1,8 @@
 title: 'Business Loans, Funding & Working Capital Options'
-template: lp/fast-capital-360-partners
-body_class: fast_capital_360
-navigation: with-no-menu
-hero: dark
+template: lp/fast-capital-360
+body_class: home-page
+navigation: with-menu
+hero: light
 hero_image: /assets/img/business.jpg
 hero_title: 'Get Hassle-Free'
 hero_subtitle: 'Business Funding Fast'
