@@ -1,0 +1,8 @@
+source: /lp/business-loans
+name: 'Joe smith'
+business_name: 'Smiths water shop'
+monthly_revenue: '15000'
+phone: '5556667777'
+email: smith@smiths.com
+time_in_business_month: '4'
+time_in_business_year: '2012'
