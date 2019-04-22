@@ -124,7 +124,7 @@
                                                     <div class="col-sm-8">
                                                         <label for="time_in_business_month">
                                                             <select id="time_in_business_month" name="time_in_business_month" class="form-control" title="Time in Business Month" required>
-                                                                <option value="" selected disabled>Select</option>
+                                                                <option value="" selected disabled>Month</option>
                                                                 <option value="1">January</option>
                                                                 <option value="2">February</option>
                                                                 <option value="3">March</option>
@@ -143,7 +143,7 @@
                                                     <div class="col-sm-4">
                                                         <label class="lefty-25" for="time_in_business_year">
                                                             <select id="time_in_business_year" name="time_in_business_year" class="form-control" title="Time in Business Year" required>
-                                                                <option value="" selected disabled>Select</option>
+                                                                <option value="" selected disabled>Year</option>
                                                                 {{ loop from="2019" to="1970" }}
                                                                 <option value="{{ value }}">{{ value }}</option>
                                                                 {{ /loop }}
