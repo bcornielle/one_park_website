@@ -59,13 +59,6 @@
                                         {{ form:create }}
                                         <div class="fields">
                                             <input type="text" name="honeypot" class="honeypot"/>
-                                            <input type="hidden" name="source" value="{{ current_uri }}"/>
-                                            <input type="hidden" name="utm_campaign" value="{{ get:utm_campaign | sanitize }}"/>
-                                            <input type="hidden" name="utm_source" value="{{ get:utm_source | sanitize }}"/>
-                                            <input type="hidden" name="utm_medium" value="{{ get:utm_medium | sanitize }}"/>
-                                            <input type="hidden" name="aff_sub" value="{{ get:aff_sub | sanitize }}"/>
-                                            <input type="hidden" name="aff_sub2" value="{{ get:aff_sub2 | sanitize }}"/>
-                                            <input type="hidden" name="transaction_id" value="{{ get:transaction_id | sanitize }}"/>
                                             <div class="form-group">
                                                 <input type="text" name="name" class="form-control" value="{{ old:name }}" placeholder="First & Last Name" required/>
                                             </div>
