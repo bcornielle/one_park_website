@@ -27,10 +27,18 @@ fields:
     display: 'Active Bankruptcy'
   source:
     display: Source
+  utm_campaign:
+    display: utm_campaign
+  utm_source:
+    display: utm_source
+  utm_medium:
+    display: utm_medium
+  aff_sub:
+    display: aff_sub
+  aff_sub2:
+    display: aff_sub2
   transaction_id:
     display: 'Transaction ID'
-  affiliate_id:
-    display: 'Affiliate ID'
 columns:
   - lead_id
   - name

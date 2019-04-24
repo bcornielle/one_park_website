@@ -50,9 +50,16 @@ class APIAddonListener extends Listener {
 			if ($month && $year) {
 				$params['company_started'] = $month.'/01/'.$year;
 			}
+			$params['company_has_banking'] = $submission->get('has_business_bank_account');
+			$params['company_active_bankruptcy'] = $submission->get('active_bankruptcy');
+			//Tracking fields
 			$params['source'] = $submission->get('source');
+			$params['utm_campaign'] = $submission->get('utm_campaign');
+			$params['utm_source'] = $submission->get('utm_source');
+			$params['utm_medium'] = $submission->get('utm_medium');
+			$params['aff_sub'] = $submission->get('aff_sub');
+			$params['aff_sub2'] = $submission->get('aff_sub2');
 			$params['transaction_id'] = $submission->get('transaction_id');
-			$params['affiliate_id'] = $submission->get('affiliate_id');
 			$api_response = $this->api_lead_created($params);
 			$api_response = json_decode($api_response,true);
 			if (isset($api_response['id'])){
@@ -67,9 +74,14 @@ class APIAddonListener extends Listener {
 			$params['phone'] = $submission->get('phone');
 			$params['email'] = $submission->get('email');
 			$params['company_name'] = $submission->get('business_name');
+			//Tracking fields
 			$params['source'] = $submission->get('source');
+			$params['utm_campaign'] = $submission->get('utm_campaign');
+			$params['utm_source'] = $submission->get('utm_source');
+			$params['utm_medium'] = $submission->get('utm_medium');
+			$params['aff_sub'] = $submission->get('aff_sub');
+			$params['aff_sub2'] = $submission->get('aff_sub2');
 			$params['transaction_id'] = $submission->get('transaction_id');
-			$params['affiliate_id'] = $submission->get('affiliate_id');
 			$api_response = $this->api_lead_created($params);
 			$api_response = json_decode($api_response,true);
 			if (isset($api_response['id'])){
