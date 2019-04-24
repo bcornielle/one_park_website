@@ -57,8 +57,6 @@ class APIAddonListener extends Listener {
 			$params['utm_campaign'] = $submission->get('utm_campaign');
 			$params['utm_source'] = $submission->get('utm_source');
 			$params['utm_medium'] = $submission->get('utm_medium');
-			$params['aff_sub'] = $submission->get('aff_sub');
-			$params['aff_sub2'] = $submission->get('aff_sub2');
 			$params['transaction_id'] = $submission->get('transaction_id');
 			$api_response = $this->api_lead_created($params);
 			$api_response = json_decode($api_response,true);
@@ -79,8 +77,6 @@ class APIAddonListener extends Listener {
 			$params['utm_campaign'] = $submission->get('utm_campaign');
 			$params['utm_source'] = $submission->get('utm_source');
 			$params['utm_medium'] = $submission->get('utm_medium');
-			$params['aff_sub'] = $submission->get('aff_sub');
-			$params['aff_sub2'] = $submission->get('aff_sub2');
 			$params['transaction_id'] = $submission->get('transaction_id');
 			$api_response = $this->api_lead_created($params);
 			$api_response = json_decode($api_response,true);
