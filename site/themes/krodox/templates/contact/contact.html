@@ -44,6 +44,9 @@
                                 Form was submitted successfully.
                             </div>
                             {{ /if }}
+                            <input type="hidden" name="source" value="{{ current_uri }}"/>
+                            <input type="hidden" name="affiliate_id" value="{{ get:aff_id | sanitize }}"/>
+                            <input type="hidden" name="transaction_id" value="{{ get:source | sanitize }}"/>
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <input type="text" name="firstname" value="{{ old:firstname }}" class="form-control" placeholder="First name" />

@@ -16,6 +16,8 @@
                         {{ form:create }}
                         <input type="text" name="honeypot" class="honeypot"/>
                         <input type="hidden" name="source" value="{{ current_uri }}"/>
+                        <input type="hidden" name="affiliate_id" value="{{ get:aff_id | sanitize }}"/>
+                        <input type="hidden" name="transaction_id" value="{{ get:source | sanitize }}"/>
                         <ul class="fields">
                             <li>
                                 <input type="text" name="name" class="form-control" value="{{ old:name }}" placeholder="Nombre y Apellido" required/>
