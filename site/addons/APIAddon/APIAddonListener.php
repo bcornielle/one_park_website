@@ -45,18 +45,14 @@ class APIAddonListener extends Listener {
 			$params['email'] = $submission->get('email');
 			$params['company_name'] = $submission->get('business_name');
 			$params['company_revenue'] = $revenue;
-			$params['campaign_source'] = (isset($_COOKIE['Visitor_Source__c'])) ? $_COOKIE['Visitor_Source__c'] : null;
-			$params['campaign_medium'] = (isset($_COOKIE['Visitor_Medium__c'])) ? $_COOKIE['Visitor_Medium__c'] : null;
-			$params['campaign_term'] = (isset($_COOKIE['Visitor_Term__c'])) ? $_COOKIE['Visitor_Term__c'] : null;
-			$params['campaign_content'] = (isset($_COOKIE['Visitor_Content__c'])) ? $_COOKIE['Visitor_Content__c'] : null;
-			$params['campaign_name'] = (isset($_COOKIE['Visitor_Campaign__c'])) ? $_COOKIE['Visitor_Campaign__c'] : null;
-			$params['campaign_gclid'] = (isset($_COOKIE['GA_Client_ID'])) ? $_COOKIE['GA_Client_ID'] : null;
-			$params['source'] = $submission->get('source');
 			$month = $submission->get('time_in_business_month');
 			$year = $submission->get('time_in_business_year');
 			if ($month && $year) {
 				$params['company_started'] = $month.'/01/'.$year;
 			}
+			$params['source'] = $submission->get('source');
+			$params['transaction_id'] = $submission->get('transaction_id');
+			$params['affiliate_id'] = $submission->get('affiliate_id');
 			$api_response = $this->api_lead_created($params);
 			$api_response = json_decode($api_response,true);
 			if (isset($api_response['id'])){
@@ -71,13 +67,9 @@ class APIAddonListener extends Listener {
 			$params['phone'] = $submission->get('phone');
 			$params['email'] = $submission->get('email');
 			$params['company_name'] = $submission->get('business_name');
-			$params['campaign_source'] = (isset($_COOKIE['Visitor_Source__c'])) ? $_COOKIE['Visitor_Source__c'] : null;
-			$params['campaign_medium'] = (isset($_COOKIE['Visitor_Medium__c'])) ? $_COOKIE['Visitor_Medium__c'] : null;
-			$params['campaign_term'] = (isset($_COOKIE['Visitor_Term__c'])) ? $_COOKIE['Visitor_Term__c'] : null;
-			$params['campaign_content'] = (isset($_COOKIE['Visitor_Content__c'])) ? $_COOKIE['Visitor_Content__c'] : null;
-			$params['campaign_name'] = (isset($_COOKIE['Visitor_Campaign__c'])) ? $_COOKIE['Visitor_Campaign__c'] : null;
-			$params['campaign_gclid'] = (isset($_COOKIE['GA_Client_ID'])) ? $_COOKIE['GA_Client_ID'] : null;
 			$params['source'] = 'contact-form';
+			$params['transaction_id'] = $submission->get('transaction_id');
+			$params['affiliate_id'] = $submission->get('affiliate_id');
 			$api_response = $this->api_lead_created($params);
 			$api_response = json_decode($api_response,true);
 			if (isset($api_response['id'])){
