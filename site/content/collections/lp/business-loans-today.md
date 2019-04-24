@@ -10,7 +10,7 @@ hero_notice: 'ONE <strong>SIMPLE</strong> APPLICATION — </br>INSTANT <strong>A
 hero_item_1: 'Get $5,000 to $750,000 in business funding.'
 hero_item_2: 'Your own Team of Funding Experts finds the offer that''s best for you.'
 hero_item_3: 'Most businesses get funds deposited in less than 3 business days.'
-form_title: '<center><strong>Money in the Bank </br>in 72 Hours</strong></center>'
+form_title: '<!-- TrustBox widget - Micro Star --> <div class="trustpilot-widget" data-locale="en-US" data-template-id="5419b732fbfb950b10de65e5" data-businessunit-id="555cd8dd0000ff00057f8e1e" data-style-height="24px" data-style-width="100%" data-theme="light"> <a href="https://www.trustpilot.com/review/oneparkfinancial.com" target="_blank" rel="noopener">Trustpilot</a> </div> <!-- End TrustBox widget --></br><center>Get Qualified in SECONDS:</center>'
 form_time_in_business: 'true'
 form_has_business_bank_account: 'true'
 form_active_bankruptcy: 'true'
