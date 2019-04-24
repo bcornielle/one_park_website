@@ -27,6 +27,10 @@ fields:
     display: 'Active Bankruptcy'
   source:
     display: Source
+  transaction_id:
+    display: 'Transaction ID'
+  affiliate_id:
+    display: 'Affiliate ID'
 columns:
   - lead_id
   - name
