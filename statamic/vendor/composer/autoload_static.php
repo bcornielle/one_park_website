@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit3e3ff943617c52ef1b04c2aed2c0ac67
+class ComposerStaticInitad60bb98c0b7716ded284e3befad3991
 {
     public static $files = array (
         '95a22d2145ae40de20dc7ea7be07a610' => __DIR__ . '/../..' . '/bootstrap/helpers.php',
@@ -2572,8 +2572,7 @@ class ComposerStaticInit3e3ff943617c52ef1b04c2aed2c0ac67
         'Statamic\\Addons\\Fieldset\\FieldsetFieldtype' => __DIR__ . '/../..' . '/bundles/Fieldset/FieldsetFieldtype.php',
         'Statamic\\Addons\\FormStackAddon\\FormStackAddonTags' => __DIR__ . '/../..' . '/../site/addons/FormStackAddon/FormStackAddonTags.php',
         'Statamic\\Addons\\FormStackAddon\\FormStackJob' => __DIR__ . '/../..' . '/../site/addons/FormStackAddon/FormStackJob.php',
-        'Statamic\\Addons\\FormSubmission\\FormSubmissionListener' => __DIR__ . '/../..' . '/../site/addons/FormSubmission/FormSubmissionListener.php',
-        'Statamic\\Addons\\FormSubmission\\FormSubmissionTags' => __DIR__ . '/../..' . '/../site/addons/FormSubmission/FormSubmissionTags.php',
+        'Statamic\\Addons\\FormSubmission\\FormSubmissionTags' => __DIR__ . '/../..' . '/../site/addons/APIAddon/FormSubmissionTags.php',
         'Statamic\\Addons\\Form\\FormFieldtype' => __DIR__ . '/../..' . '/bundles/Form/FormFieldtype.php',
         'Statamic\\Addons\\Form\\FormListener' => __DIR__ . '/../..' . '/bundles/Form/FormListener.php',
         'Statamic\\Addons\\Form\\FormTags' => __DIR__ . '/../..' . '/bundles/Form/FormTags.php',
@@ -2598,6 +2597,7 @@ class ComposerStaticInit3e3ff943617c52ef1b04c2aed2c0ac67
         'Statamic\\Addons\\Locales\\NoDataException' => __DIR__ . '/../..' . '/bundles/Locales/NoDataException.php',
         'Statamic\\Addons\\Logbook\\LogbookController' => __DIR__ . '/../..' . '/../site/addons/Logbook/LogbookController.php',
         'Statamic\\Addons\\Logbook\\LogbookListener' => __DIR__ . '/../..' . '/../site/addons/Logbook/LogbookListener.php',
+        'Statamic\\Addons\\Loop\\LoopTags' => __DIR__ . '/../..' . '/../site/addons/Loop/LoopTags.php',
         'Statamic\\Addons\\Markdown\\MarkdownFieldtype' => __DIR__ . '/../..' . '/bundles/Markdown/MarkdownFieldtype.php',
         'Statamic\\Addons\\Markdown\\MarkdownTags' => __DIR__ . '/../..' . '/bundles/Markdown/MarkdownTags.php',
         'Statamic\\Addons\\Member\\MemberTags' => __DIR__ . '/../..' . '/bundles/Member/MemberTags.php',
@@ -3821,11 +3821,11 @@ class ComposerStaticInit3e3ff943617c52ef1b04c2aed2c0ac67
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit3e3ff943617c52ef1b04c2aed2c0ac67::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit3e3ff943617c52ef1b04c2aed2c0ac67::$prefixDirsPsr4;
-            $loader->fallbackDirsPsr4 = ComposerStaticInit3e3ff943617c52ef1b04c2aed2c0ac67::$fallbackDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit3e3ff943617c52ef1b04c2aed2c0ac67::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit3e3ff943617c52ef1b04c2aed2c0ac67::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitad60bb98c0b7716ded284e3befad3991::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitad60bb98c0b7716ded284e3befad3991::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInitad60bb98c0b7716ded284e3befad3991::$fallbackDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitad60bb98c0b7716ded284e3befad3991::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitad60bb98c0b7716ded284e3befad3991::$classMap;
 
         }, null, ClassLoader::class);
     }
