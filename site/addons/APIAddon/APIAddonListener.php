@@ -1,17 +1,121 @@
 <?php
 namespace Statamic\Addons\APIAddon;
-use Illuminate\Support\Facades\Log;
 use Statamic\Events\Data\EntryDeleted;
 use Statamic\Events\Data\EntrySaved;
 use Statamic\Extend\Listener;
 use Statamic\Forms\Submission;
 class APIAddonListener extends Listener {
     public $events = [
-	    EntrySaved::class => 'saved',
-	    EntryDeleted::class => 'deleted',
-	    'Form.submission.created' => 'submissionCreated'
+	    EntrySaved::class => 'EntrySaved',
+	    EntryDeleted::class => 'EntryDeleted',
+	    'Form.submission.creating' => 'creating',
+	    'Form.submission.created' => 'submissionCreated',
     ];
-	public function saved(EntrySaved $event) {
+	//FormStack API
+	public function creating(Submission $submission) {
+		$errors = array();
+		$form_name = $submission->formset()->name();
+		if ($form_name === 'landing-page'){
+			$response = $this->api_formstack_form1($submission);
+			if ($response) {
+				session()->flash('form_stack_redirect', $response);
+			}else{
+				return array('errors' => array('Submission Error'));
+			}
+		}
+		if ($form_name === 'contact'){
+			$response = $this->api_forstack_contact_form($submission);
+			if (!$response) {
+				return array('errors' => array('Submission Error'));
+			}
+		}
+		return [
+			'submission' => $submission,
+			'errors' => $errors
+		];
+	}
+	private function api_formstack_form1($submission) {
+		$form_id = '2925351';
+		$params = array();
+		$name = $submission->get('name');
+		$names = preg_split('/\s+/',$name);
+		$firtname = (isset($names[0])) ? $names[0] : 'First Name';
+		unset($names[0]);
+		$lastnames = implode('',$names);
+		if (strlen($lastnames)===0){
+			$lastnames = 'Lastname';
+		}
+		$params['first_name'] = $firtname;
+		$params['last_name'] = $lastnames;
+		$params['contact_phone'] = $submission->get('phone');
+		$params['company_phone_number'] = $submission->get('phone');
+		$params['email'] = $submission->get('email');
+		$params['business'] = $submission->get('business_name');
+		$params['has_business_bank_account'] = $submission->get('has_business_bank_account');
+		$params['active_bankruptcy'] = $submission->get('active_bankruptcy');
+		$params['how_much_are_your_estimated_gross_monthly_sales'] = $submission->get('monthly_revenue');
+		$params['campaign_name'] = $submission->get('utm_campaign');
+		$params['campaign_source'] = $submission->get('utm_source');
+		$params['campaign_medium'] =  $submission->get('utm_medium');
+		$params['campaign_term'] =  $submission->get('utm_term');
+		$params['campaign_content'] = $submission->get('utm_content');
+		$params['gclid_google_click_identifier'] = $submission->get('transaction_id');
+		$month = $submission->get('time_in_business_month');
+		$year = $submission->get('time_in_business_year');
+		if ($month && $year) {
+			$params['when_was_your_business_started'] = $month.'/01/'.$year;
+		}
+		$response = $this->api_formstack_push($form_id,$params);
+		if (isset($response['id']) && isset($response['redirect_url'])){
+			return $response['redirect_url'];
+		}else{
+			return false;
+		}
+	}
+	private function api_forstack_contact_form($submission) {
+		$form_id = '2446707';
+		$params = array();
+		$params['first_name'] = $submission->get('firstname');
+		$params['last_name'] = $submission->get('lastname');
+		$params['contact_phone'] = $submission->get('phone');
+		$params['business_name'] = $submission->get('business_name');
+		$params['email'] = $submission->get('email');
+		$params['campaign_name'] = $submission->get('utm_campaign');
+		$params['campaign_source'] = $submission->get('utm_source');
+		$params['campaign_medium'] =  $submission->get('utm_medium');
+		$params['campaign_term'] =  $submission->get('utm_term');
+		$params['campaign_content'] = $submission->get('utm_content');
+		$params['gclid_google_click_identifier'] = $submission->get('transaction_id');
+		$response = $this->api_formstack_push($form_id,$params);
+		if (isset($response['id'])){
+			return $response['id'];
+		}else{
+			return false;
+		}
+	}
+	private function api_formstack_push($form_id,$params){
+		$idleRequest = null;
+		$oauth_token = env('FORM_STACK_API_TOKEN');
+		$get_api_url = 'https://www.formstack.com/api/v2/form/'.$form_id.'/field.json';
+		$json_url = $get_api_url .'?oauth_token='.$oauth_token;
+		$json = file_get_contents($json_url);
+		$data = json_decode($json, true);
+		foreach($data as $key=>$val){
+			if(isset($params[$val['name']]) && $params[$val['name']]){
+				$idleRequest .= "&field_".$val['id']."=".$params[$val['name']];
+			}
+		}
+		$ch = curl_init();
+		curl_setopt($ch, CURLOPT_URL, "https://www.formstack.com/api/v2/form/".$form_id."/submission.json?oauth_token=".$oauth_token);
+		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+		curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
+		curl_setopt($ch, CURLOPT_POSTFIELDS, $idleRequest);
+		$result = curl_exec($ch);
+		return $result = json_decode($result, true);
+	}
+	//OPF API
+	public function EntrySaved(EntrySaved $event) {
 		$context = $event->contextualData();
 		if ($context['collection'] === 'careers'){
 			$context['entry_id'] = $context['id'];
@@ -21,7 +125,7 @@ class APIAddonListener extends Listener {
 		}
 		return $event;
 	}
-	public function deleted(EntryDeleted $event) {
+	public function EntryDeleted(EntryDeleted $event) {
 		$context = $event->contextualData();
 		$this->api_career_delete($context['id']);
 		return $event;
@@ -42,22 +146,24 @@ class APIAddonListener extends Listener {
 			$params['fname'] = (isset($names[0])) ? $names[0] : null;
 			$params['lname'] = (isset($names[1])) ? $names[1] : 'lastname';
 			$params['phone'] = $submission->get('phone');
+			$params['company_phone'] = $submission->get('phone');
 			$params['email'] = $submission->get('email');
 			$params['company_name'] = $submission->get('business_name');
-			$params['company_revenue'] = $revenue;
-			$month = $submission->get('time_in_business_month');
-			$year = $submission->get('time_in_business_year');
-			if ($month && $year) {
-				$params['company_started'] = $month.'/01/'.$year;
-			}
 			$params['company_has_banking'] = $submission->get('has_business_bank_account');
 			$params['company_active_bankruptcy'] = $submission->get('active_bankruptcy');
-			//Tracking fields
+			$params['company_revenue'] = $revenue;
 			$params['source'] = $submission->get('source');
 			$params['utm_campaign'] = $submission->get('utm_campaign');
 			$params['utm_source'] = $submission->get('utm_source');
 			$params['utm_medium'] = $submission->get('utm_medium');
 			$params['transaction_id'] = $submission->get('transaction_id');
+			$params['utm_term'] = $submission->get('utm_term');
+			$params['utm_content'] = $submission->get('utm_content');
+			$month = $submission->get('time_in_business_month');
+			$year = $submission->get('time_in_business_year');
+			if ($month && $year) {
+				$params['company_started'] = $month.'/01/'.$year;
+			}
 			$api_response = $this->api_lead_created($params);
 			$api_response = json_decode($api_response,true);
 			if (isset($api_response['id'])){
@@ -87,7 +193,6 @@ class APIAddonListener extends Listener {
 		}
 		return $submission;
 	}
-
 	private function api_career_save($career){
 		$url = env('API_URL') . env('API_VERSION') . '/careers?api_token='.env('API_TOKEN');
 		$method = "PUT";
@@ -108,7 +213,6 @@ class APIAddonListener extends Listener {
 		$method = "PUT";
 		return $this->sync($url,$method,json_encode($data));
 	}
-
 	private function sync($url,$method,$post_fields){
 		$ch = curl_init();
 		curl_setopt($ch, CURLOPT_URL,$url);
