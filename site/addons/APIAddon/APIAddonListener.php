@@ -54,12 +54,67 @@ class APIAddonListener extends Listener {
 		$params['has_business_bank_account'] = $submission->get('has_business_bank_account');
 		$params['active_bankruptcy'] = $submission->get('active_bankruptcy');
 		$params['how_much_are_your_estimated_gross_monthly_sales'] = $submission->get('monthly_revenue');
-		$params['campaign_name'] = $submission->get('utm_campaign');
-		$params['campaign_source'] = $submission->get('utm_source');
-		$params['campaign_medium'] =  $submission->get('utm_medium');
-		$params['campaign_term'] =  $submission->get('utm_term');
-		$params['campaign_content'] = $submission->get('utm_content');
-		$params['gclid_google_click_identifier'] = $submission->get('transaction_id');
+		//campaign
+		$campaign = null;
+		if (isset($_COOKIE['Visitor_Campaign__c'])) {
+		   $campaign = $_COOKIE['Visitor_Campaign__c'] ;
+		} else {
+		   if ($submission->get('utm_campaign')){
+			   $campaign = $submission->get('utm_campaign');
+		   }
+		}
+		$params['campaign_name'] = $campaign;
+		//source
+		$source = null;
+		if (isset($_COOKIE['Source__c'])) {
+			$source = $_COOKIE['Source__c'] ;
+		}else{
+			if ($submission->get('utm_source')){
+				$source = $submission->get('utm_source');
+			}
+		}
+		$params['campaign_source'] = $source;
+		//medium
+		$medium = null;
+		if (isset($_COOKIE['Visitor_Medium__c'])) {
+			$medium = $_COOKIE['Visitor_Medium__c'] ;
+		}else{
+			if ($submission->get('utm_medium')){
+				$medium = $submission->get('utm_medium');
+			}
+		}
+		$params['campaign_medium'] = $medium;
+		//Aff ID
+		$aff_id = null;
+		if (isset($_COOKIE['Visitor_ID__c'])) {
+			$aff_id = $_COOKIE['Visitor_ID__c'] ;
+		}else{
+			if ($submission->get('transaction_id')){
+				$aff_id = $submission->get('transaction_id');
+			}
+		}
+		$params['gclid_google_click_identifier'] = $aff_id;
+		//term
+		$term = null;
+		if (isset($_COOKIE['Visitor_Term__c'])) {
+			$term = $_COOKIE['Visitor_Term__c'] ;
+		}else{
+			if ($submission->get('utm_term')){
+				$term = $submission->get('utm_term');
+			}
+		}
+		$params['campaign_term'] = $term;
+		//content
+		$content = null;
+		if (isset($_COOKIE['Visitor_Content__c'])) {
+			$content = $_COOKIE['Visitor_Content__c'] ;
+		}else{
+			if ($submission->get('utm_content')){
+				$content = $submission->get('utm_content');
+			}
+		}
+		$params['campaign_content'] = $content;
+		//month & Year
 		$month = $submission->get('time_in_business_month');
 		$year = $submission->get('time_in_business_year');
 		if ($month && $year) {
@@ -80,12 +135,66 @@ class APIAddonListener extends Listener {
 		$params['contact_phone'] = $submission->get('phone');
 		$params['business_name'] = $submission->get('business_name');
 		$params['email'] = $submission->get('email');
-		$params['campaign_name'] = $submission->get('utm_campaign');
-		$params['campaign_source'] = $submission->get('utm_source');
-		$params['campaign_medium'] =  $submission->get('utm_medium');
-		$params['campaign_term'] =  $submission->get('utm_term');
-		$params['campaign_content'] = $submission->get('utm_content');
-		$params['gclid_google_click_identifier'] = $submission->get('transaction_id');
+		//campaign
+		$campaign = null;
+		if (isset($_COOKIE['Visitor_Campaign__c'])) {
+			$campaign = $_COOKIE['Visitor_Campaign__c'] ;
+		} else {
+			if ($submission->get('utm_campaign')){
+				$campaign = $submission->get('utm_campaign');
+			}
+		}
+		$params['campaign_name'] = $campaign;
+		//source
+		$source = null;
+		if (isset($_COOKIE['Source__c'])) {
+			$source = $_COOKIE['Source__c'] ;
+		}else{
+			if ($submission->get('utm_source')){
+				$source = $submission->get('utm_source');
+			}
+		}
+		$params['campaign_source'] = $source;
+		//medium
+		$medium = null;
+		if (isset($_COOKIE['Visitor_Medium__c'])) {
+			$medium = $_COOKIE['Visitor_Medium__c'] ;
+		}else{
+			if ($submission->get('utm_medium')){
+				$medium = $submission->get('utm_medium');
+			}
+		}
+		$params['campaign_medium'] = $medium;
+		//Aff ID
+		$aff_id = null;
+		if (isset($_COOKIE['Visitor_ID__c'])) {
+			$aff_id = $_COOKIE['Visitor_ID__c'] ;
+		}else{
+			if ($submission->get('transaction_id')){
+				$aff_id = $submission->get('transaction_id');
+			}
+		}
+		$params['gclid_google_click_identifier'] = $aff_id;
+		//term
+		$term = null;
+		if (isset($_COOKIE['Visitor_Term__c'])) {
+			$term = $_COOKIE['Visitor_Term__c'] ;
+		}else{
+			if ($submission->get('utm_term')){
+				$term = $submission->get('utm_term');
+			}
+		}
+		$params['campaign_term'] = $term;
+		//content
+		$content = null;
+		if (isset($_COOKIE['Visitor_Content__c'])) {
+			$content = $_COOKIE['Visitor_Content__c'] ;
+		}else{
+			if ($submission->get('utm_content')){
+				$content = $submission->get('utm_content');
+			}
+		}
+		$params['campaign_content'] = $content;
 		$response = $this->api_formstack_push($form_id,$params);
 		if (isset($response['id'])){
 			return $response['id'];
@@ -153,12 +262,67 @@ class APIAddonListener extends Listener {
 			$params['company_active_bankruptcy'] = $submission->get('active_bankruptcy');
 			$params['company_revenue'] = $revenue;
 			$params['source'] = $submission->get('source');
-			$params['utm_campaign'] = $submission->get('utm_campaign');
-			$params['utm_source'] = $submission->get('utm_source');
-			$params['utm_medium'] = $submission->get('utm_medium');
-			$params['utm_term'] = $submission->get('utm_term');
-			$params['utm_content'] = $submission->get('utm_content');
-			$params['transaction_id'] = $submission->get('transaction_id');
+			//campaign
+			$campaign = null;
+			if (isset($_COOKIE['Visitor_Campaign__c'])) {
+				$campaign = $_COOKIE['Visitor_Campaign__c'] ;
+			} else {
+				if ($submission->get('utm_campaign')){
+					$campaign = $submission->get('utm_campaign');
+				}
+			}
+			$params['utm_campaign'] = $campaign;
+			//source
+			$source = null;
+			if (isset($_COOKIE['Source__c'])) {
+				$source = $_COOKIE['Source__c'] ;
+			}else{
+				if ($submission->get('utm_source')){
+					$source = $submission->get('utm_source');
+				}
+			}
+			$params['utm_source'] = $source;
+			//medium
+			$medium = null;
+			if (isset($_COOKIE['Visitor_Medium__c'])) {
+				$medium = $_COOKIE['Visitor_Medium__c'] ;
+			}else{
+				if ($submission->get('utm_medium')){
+					$medium = $submission->get('utm_medium');
+				}
+			}
+			$params['utm_medium'] = $medium;
+			//Aff ID
+			$aff_id = null;
+			if (isset($_COOKIE['Visitor_ID__c'])) {
+				$aff_id = $_COOKIE['Visitor_ID__c'] ;
+			}else{
+				if ($submission->get('transaction_id')){
+					$aff_id = $submission->get('transaction_id');
+				}
+			}
+			$params['transaction_id'] = $aff_id;
+			//term
+			$term = null;
+			if (isset($_COOKIE['Visitor_Term__c'])) {
+				$term = $_COOKIE['Visitor_Term__c'] ;
+			}else{
+				if ($submission->get('utm_term')){
+					$term = $submission->get('utm_term');
+				}
+			}
+			$params['utm_term'] = $term;
+			//content
+			$content = null;
+			if (isset($_COOKIE['Visitor_Content__c'])) {
+				$content = $_COOKIE['Visitor_Content__c'] ;
+			}else{
+				if ($submission->get('utm_content')){
+					$content = $submission->get('utm_content');
+				}
+			}
+			$params['utm_content'] = $content;
+			//month & Year
 			$month = $submission->get('time_in_business_month');
 			$year = $submission->get('time_in_business_year');
 			if ($month && $year) {
@@ -178,12 +342,68 @@ class APIAddonListener extends Listener {
 			$params['phone'] = $submission->get('phone');
 			$params['email'] = $submission->get('email');
 			$params['company_name'] = $submission->get('business_name');
-			//Tracking fields
 			$params['source'] = $submission->get('source');
-			$params['utm_campaign'] = $submission->get('utm_campaign');
-			$params['utm_source'] = $submission->get('utm_source');
-			$params['utm_medium'] = $submission->get('utm_medium');
-			$params['transaction_id'] = $submission->get('transaction_id');
+			//campaign
+			$campaign = null;
+			if (isset($_COOKIE['Visitor_Campaign__c'])) {
+				$campaign = $_COOKIE['Visitor_Campaign__c'] ;
+			} else {
+				if ($submission->get('utm_campaign')){
+					$campaign = $submission->get('utm_campaign');
+				}
+			}
+			$params['utm_campaign'] = $campaign;
+			//source
+			$source = null;
+			if (isset($_COOKIE['Source__c'])) {
+				$source = $_COOKIE['Source__c'] ;
+			}else{
+				if ($submission->get('utm_source')){
+					$source = $submission->get('utm_source');
+				}
+			}
+			$params['utm_source'] = $source;
+			//medium
+			$medium = null;
+			if (isset($_COOKIE['Visitor_Medium__c'])) {
+				$medium = $_COOKIE['Visitor_Medium__c'] ;
+			}else{
+				if ($submission->get('utm_medium')){
+					$medium = $submission->get('utm_medium');
+				}
+			}
+			$params['utm_medium'] = $medium;
+			//Aff ID
+			$aff_id = null;
+			if (isset($_COOKIE['Visitor_ID__c'])) {
+				$aff_id = $_COOKIE['Visitor_ID__c'] ;
+			}else{
+				if ($submission->get('transaction_id')){
+					$aff_id = $submission->get('transaction_id');
+				}
+			}
+			$params['transaction_id'] = $aff_id;
+			//term
+			$term = null;
+			if (isset($_COOKIE['Visitor_Term__c'])) {
+				$term = $_COOKIE['Visitor_Term__c'] ;
+			}else{
+				if ($submission->get('utm_term')){
+					$term = $submission->get('utm_term');
+				}
+			}
+			$params['utm_term'] = $term;
+			//content
+			$content = null;
+			if (isset($_COOKIE['Visitor_Content__c'])) {
+				$content = $_COOKIE['Visitor_Content__c'] ;
+			}else{
+				if ($submission->get('utm_content')){
+					$content = $submission->get('utm_content');
+				}
+			}
+			$params['utm_content'] = $content;
+			//month & Year
 			$api_response = $this->api_lead_created($params);
 			$api_response = json_decode($api_response,true);
 			if (isset($api_response['id'])){
