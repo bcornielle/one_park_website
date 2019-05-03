@@ -156,9 +156,9 @@ class APIAddonListener extends Listener {
 			$params['utm_campaign'] = $submission->get('utm_campaign');
 			$params['utm_source'] = $submission->get('utm_source');
 			$params['utm_medium'] = $submission->get('utm_medium');
-			$params['transaction_id'] = $submission->get('transaction_id');
 			$params['utm_term'] = $submission->get('utm_term');
 			$params['utm_content'] = $submission->get('utm_content');
+			$params['transaction_id'] = $submission->get('transaction_id');
 			$month = $submission->get('time_in_business_month');
 			$year = $submission->get('time_in_business_year');
 			if ($month && $year) {
