@@ -73,7 +73,7 @@ class APIAddonListener extends Listener {
 				$source = $submission->get('utm_source');
 			}
 		}
-		$params['utm_campaign'] = $source;
+		$params['campaign_source'] = $source;
 		//medium
 		$medium = null;
 		if (isset($_COOKIE['Visitor_Medium__c'])) {
