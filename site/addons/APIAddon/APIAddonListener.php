@@ -73,7 +73,7 @@ class APIAddonListener extends Listener {
 				$source = $submission->get('utm_source');
 			}
 		}
-		$params['campaign_source'] = $source;
+		$params['utm_campaign'] = $source;
 		//medium
 		$medium = null;
 		if (isset($_COOKIE['Visitor_Medium__c'])) {
@@ -85,15 +85,13 @@ class APIAddonListener extends Listener {
 		}
 		$params['campaign_medium'] = $medium;
 		//Aff ID
-		$aff_id = null;
 		if (isset($_COOKIE['Visitor_ID__c'])) {
-			$aff_id = $_COOKIE['Visitor_ID__c'] ;
+			$params['gclid_google_click_identifier'] = $_COOKIE['Visitor_ID__c'];
 		}else{
 			if ($submission->get('transaction_id')){
-				$aff_id = $submission->get('transaction_id');
+				$params['Has_offer_transaction_id__c'] = $submission->get('transaction_id');
 			}
 		}
-		$params['gclid_google_click_identifier'] = $aff_id;
 		//term
 		$term = null;
 		if (isset($_COOKIE['Visitor_Term__c'])) {
@@ -166,15 +164,13 @@ class APIAddonListener extends Listener {
 		}
 		$params['campaign_medium'] = $medium;
 		//Aff ID
-		$aff_id = null;
 		if (isset($_COOKIE['Visitor_ID__c'])) {
-			$aff_id = $_COOKIE['Visitor_ID__c'] ;
+			$params['gclid_google_click_identifier'] = $_COOKIE['Visitor_ID__c'];
 		}else{
 			if ($submission->get('transaction_id')){
-				$aff_id = $submission->get('transaction_id');
+				$params['Has_offer_transaction_id__c'] = $submission->get('transaction_id');
 			}
 		}
-		$params['gclid_google_click_identifier'] = $aff_id;
 		//term
 		$term = null;
 		if (isset($_COOKIE['Visitor_Term__c'])) {
