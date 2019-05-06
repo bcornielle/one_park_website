@@ -201,23 +201,48 @@ class APIAddonListener extends Listener {
 	private function api_formstack_push($form_id,$params){
 		$idleRequest = null;
 		$oauth_token = env('FORM_STACK_API_TOKEN');
-		$get_api_url = 'https://www.formstack.com/api/v2/form/'.$form_id.'/field.json';
-		$json_url = $get_api_url .'?oauth_token='.$oauth_token;
-		$json = file_get_contents($json_url);
-		$data = json_decode($json, true);
-		foreach($data as $key=>$val){
-			if(isset($params[$val['name']]) && $params[$val['name']]){
-				$idleRequest .= "&field_".$val['id']."=".$params[$val['name']];
+		$result = null;
+		if (!$this->api_formstack_if_exists($form_id,$oauth_token,$params['email'])) {
+			$get_api_url = 'https://www.formstack.com/api/v2/form/'.$form_id.'/field.json';
+			$json_url = $get_api_url .'?oauth_token='.$oauth_token;
+			$json = file_get_contents($json_url);
+			$data = json_decode($json, true);
+			foreach($data as $key=>$val){
+				if(isset($params[$val['name']]) && $params[$val['name']]){
+					$idleRequest .= "&field_".$val['id']."=".$params[$val['name']];
+				}
 			}
+			$ch = curl_init();
+			curl_setopt($ch, CURLOPT_URL, "https://www.formstack.com/api/v2/form/".$form_id."/submission.json?oauth_token=".$oauth_token);
+			curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+			curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+			curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
+			curl_setopt($ch, CURLOPT_POSTFIELDS, $idleRequest);
+			$result = curl_exec($ch);
 		}
+		return json_decode($result,true);
+	}
+	private function api_formstack_if_exists($form_id,$oauth_token,$email){
 		$ch = curl_init();
 		curl_setopt($ch, CURLOPT_URL, "https://www.formstack.com/api/v2/form/".$form_id."/submission.json?oauth_token=".$oauth_token);
-		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 		curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
-		curl_setopt($ch, CURLOPT_POSTFIELDS, $idleRequest);
+		curl_setopt($ch, CURLOPT_POSTFIELDS, '&page=1&per_page=50&sort=DESC&data=false');
 		$result = curl_exec($ch);
-		return $result = json_decode($result, true);
+		$result = json_decode($result, true);
+		if (isset($result['submissions'])){
+			foreach ($result['submissions'] as $index=>$submission ) {
+				foreach ($submission['data'] as $key=>$field ) {
+					if ($key == "59894897") {
+						if ($field['value'] == trim($email)){
+							return true;
+						}
+					}
+				}
+			}
+		}
+		return false;
 	}
 	//OPF API
 	public function EntrySaved(EntrySaved $event) {
