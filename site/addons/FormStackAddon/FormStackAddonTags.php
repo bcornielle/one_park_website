@@ -36,7 +36,7 @@ class FormStackAddonTags extends Tags {
 		$cookie_name = 'krodox';
 		$cookie_time = time() + 15;
 		$form_id = $this->forms_en[1]['id'];
-		if(isset($_REQUEST['campaign_source'])){
+		if(isset($_REQUEST['how_much_are_your_estimated_gross_monthly_sales'])){
 			$params = array();
 			foreach($_REQUEST as $key=>$value){
 				if ($key == "how_much_are_your_estimated_gross_monthly_sales"){
