@@ -311,7 +311,7 @@ class APIAddonListener extends Listener {
 		}
 		$params['campaign_content'] = $content;
 		//aff_id
-		$aff_id = 'Direct';
+		$aff_id = null;
 		if (isset($_COOKIE['Visitor_ID__c'])) {
 			$aff_id = $_COOKIE['Visitor_ID__c'];
 		}else{
@@ -393,7 +393,7 @@ class APIAddonListener extends Listener {
 		}
 		$params['campaign_content'] = $content;
 		//aff_id
-		$aff_id = 'Direct';
+		$aff_id = null;
 		if (isset($_COOKIE['Visitor_ID__c'])) {
 			$aff_id = $_COOKIE['Visitor_ID__c'];
 		}else{

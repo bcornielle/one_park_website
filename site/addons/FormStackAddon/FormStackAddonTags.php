@@ -36,7 +36,7 @@ class FormStackAddonTags extends Tags {
 		$cookie_name = 'krodox';
 		$cookie_time = time() + 15;
 		$form_id = $this->forms_en[1]['id'];
-		if(isset($_REQUEST['gclid_google_click_identifier']) || !isset($_COOKIE[$cookie_name])){
+		if(isset($_REQUEST['campaign_source'])){
 			$params = array();
 			foreach($_REQUEST as $key=>$value){
 				if ($key == "how_much_are_your_estimated_gross_monthly_sales"){
@@ -170,7 +170,7 @@ class FormStackAddonTags extends Tags {
 		$cookie_name = 'krodox';
 		$cookie_time = time() + 15;
 		$form_id = $this->forms_es[1]['id'];
-		if(isset($_REQUEST['gclid_google_click_identifier']) || !isset($_COOKIE[$cookie_name])){
+		if(isset($_REQUEST['campaign_source'])){
 			$params = array();
 			foreach($_REQUEST as $key=>$value){
 				if ($key == "a_cuánto_ascienden_sus_ventas_mensuales_brutas"){
