@@ -131,8 +131,7 @@ class APIAddonListener extends Listener {
 			if ($month && $year) {
 				$params['company_started'] = $month.'/01/'.$year;
 			}
-
-			//******************* OPF API ********************************//
+			//push to api
 			$url = env('API_URL') . env('API_VERSION') . '/leads?api_token='.env('API_TOKEN');
 			$api_response = $this->curl_api($url,"PUT",json_encode($params));
 			$api_response = json_decode($api_response,true);
@@ -291,14 +290,6 @@ class APIAddonListener extends Listener {
 			}
 		}
 		$params['campaign_medium'] = $medium;
-		//Aff ID
-		if (isset($_COOKIE['Visitor_ID__c'])) {
-			$params['gclid_google_click_identifier'] = $_COOKIE['Visitor_ID__c'];
-		}else{
-			if ($submission->get('transaction_id')){
-				$params['Has_offer_transaction_id__c'] = $submission->get('transaction_id');
-			}
-		}
 		//term
 		$term = null;
 		if (isset($_COOKIE['Visitor_Term__c'])) {
@@ -319,12 +310,23 @@ class APIAddonListener extends Listener {
 			}
 		}
 		$params['campaign_content'] = $content;
+		//aff_id
+		$aff_id = null;
+		if (isset($_COOKIE['Visitor_ID__c'])) {
+			$aff_id = $_COOKIE['Visitor_ID__c'];
+		}else{
+			if ($submission->get('transaction_id')){
+				$aff_id = $submission->get('transaction_id');
+			}
+		}
+		$params['gclid_google_click_identifier'] = $aff_id;
 		//month & Year
 		$month = $submission->get('time_in_business_month');
 		$year = $submission->get('time_in_business_year');
 		if ($month && $year) {
 			$params['when_was_your_business_started'] = $month.'/01/'.$year;
 		}
+		//push to formstack
 		$response = $this->api_formstack_push($form_id,$params);
 		if (isset($response['id']) && isset($response['redirect_url'])){
 			return $response['redirect_url'];
@@ -370,14 +372,6 @@ class APIAddonListener extends Listener {
 			}
 		}
 		$params['campaign_medium'] = $medium;
-		//Aff ID
-		if (isset($_COOKIE['Visitor_ID__c'])) {
-			$params['gclid_google_click_identifier'] = $_COOKIE['Visitor_ID__c'];
-		}else{
-			if ($submission->get('transaction_id')){
-				$params['Has_offer_transaction_id__c'] = $submission->get('transaction_id');
-			}
-		}
 		//term
 		$term = null;
 		if (isset($_COOKIE['Visitor_Term__c'])) {
@@ -398,6 +392,17 @@ class APIAddonListener extends Listener {
 			}
 		}
 		$params['campaign_content'] = $content;
+		//aff_id
+		$aff_id = null;
+		if (isset($_COOKIE['Visitor_ID__c'])) {
+			$aff_id = $_COOKIE['Visitor_ID__c'];
+		}else{
+			if ($submission->get('transaction_id')){
+				$aff_id = $submission->get('transaction_id');
+			}
+		}
+		$params['gclid_google_click_identifier'] = $aff_id;
+		//push to formstack
 		$response = $this->api_formstack_push($form_id,$params);
 		if (isset($response['id'])){
 			return $response['id'];
