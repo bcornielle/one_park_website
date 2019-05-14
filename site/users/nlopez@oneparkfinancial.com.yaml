@@ -3,3 +3,4 @@ roles:
 first_name: Nikia
 last_name: Lopez
 id: 738eb2d8-a281-4a04-8ab8-c9a5334e7626
+password_hash: $2y$10$FU.wzjUvjOBC1qo2IiShJe5hwu/28WojnOnyKd6vM88LTpgI0qLC2
