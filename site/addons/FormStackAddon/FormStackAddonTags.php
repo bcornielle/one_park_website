@@ -312,8 +312,8 @@ class FormStackAddonTags extends Tags {
 		];
 		$cookie_name = 'krodox';
 		if(isset($_COOKIE[$cookie_name])) {
-			$params = unserialize($_COOKIE[$cookie_name]);
-			$params['status']=true;
+			$response = unserialize($_COOKIE[$cookie_name]);
+			$response['status'] = true;
 		}
 		return $response;
 	}
