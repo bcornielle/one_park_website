@@ -317,4 +317,17 @@ class FormStackAddonTags extends Tags {
 		}
 		return $response;
 	}
+	public function thanks() {
+		$response = [
+			'status'=>false,
+			'redirect_to'=> 'https://'.$_SERVER['SERVER_NAME'] . '/quote',
+		];
+		if (isset($_REQUEST['status']) && $_REQUEST['status']){
+			$response = [
+				'status'=>true,
+				'redirect_to'=> null,
+			];
+		}
+		return $response;
+	}
 }

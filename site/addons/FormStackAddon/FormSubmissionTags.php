@@ -13,5 +13,10 @@ class FormSubmissionTags extends Tags {
 			$e->setUrl(session('lead_redirect'));
 			throw $e;
 		}
+		if (session('self_service_redirect')) {
+			$e = new \Statamic\Exceptions\RedirectException;
+			$e->setUrl(session('self_service_redirect'));
+			throw $e;
+		}
 	}
 }

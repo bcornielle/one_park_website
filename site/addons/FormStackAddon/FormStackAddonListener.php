@@ -142,6 +142,34 @@ class FormStackAddonListener extends Listener {
 				session()->flash('lead_redirect', '/router?lead_id='. $api_response['id'] . '&' .$query_string);
 			}
 		}
+		if ($form_name === 'self-service'){
+			$params = array();
+			$params['lead_id'] = $submission->get('lead_id');
+			$params['fname'] = $submission->get('fname');
+			$params['lname'] = $submission->get('lname');
+			$params['phone'] = $submission->get('phone');
+			$params['email'] = $submission->get('email');
+			$params['company_name'] = $submission->get('company_name');
+			$params['company_phone'] = $submission->get('company_phone');
+			$params['company_has_banking'] = $submission->get('company_has_banking');
+			$params['company_active_bankruptcy'] = $submission->get('company_active_bankruptcy');
+			$params['company_revenue'] = $submission->get('company_revenue');
+			$params['company_started'] = $submission->get('company_started');
+			$params['source'] = $submission->get('source');
+			$params['utm_campaign'] = $submission->get('utm_campaign');
+			$params['utm_source'] = $submission->get('utm_source');
+			$params['utm_medium'] = $submission->get('utm_medium');
+			$params['utm_term'] = $submission->get('utm_term');
+			$params['utm_content'] = $submission->get('utm_content');
+			$params['transaction_id'] = $submission->get('transaction_id');
+			//push to api
+			$url = env('API_URL') . env('API_VERSION') . '/leads/'.$params['lead_id'].'?api_token='.env('API_TOKEN');
+			$api_response = $this->curl_api($url,"POST",json_encode($params));
+			$api_response = json_decode($api_response,true);
+			if (isset($api_response['id'])){
+				session()->flash('self_service_redirect', '/thanks?status='. $api_response['id']);
+			}
+		}
 		if ($form_name === 'landing-page'){
 			$params = array();
 			$name = $submission->get('name');
