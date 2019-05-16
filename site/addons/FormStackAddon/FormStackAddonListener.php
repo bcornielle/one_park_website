@@ -139,7 +139,7 @@ class FormStackAddonListener extends Listener {
 				$submission->set('lead_id',$api_response['id']);
 				$submission->save();
 				$query_string = http_build_query($params);
-				session()->flash('lead_redirect', '/router?lead_id='. $api_response['id'] . $query_string);
+				session()->flash('lead_redirect', '/router?lead_id='. $api_response['id'] . '&' .$query_string);
 			}
 		}
 		if ($form_name === 'landing-page'){
