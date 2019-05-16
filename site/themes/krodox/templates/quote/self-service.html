@@ -1,7 +1,7 @@
-<main id="step-2">
-    {{ FormStackAddon:processing}}
-        {{ if !status }}
-        {{ redirect to="{ redirect_to }" }}
+<main id="self-service">
+    {{ FormStackAddon:self_service}}
+        {{ if ! status }}
+            {{ redirect to="{ redirect_to }" }}
         {{ /if }}
         <section id="form">
             <div class="container">
@@ -40,5 +40,5 @@
                 </div>
             </div>
         </section>
-    {{ /FormStackAddon:processing }}
+    {{ /FormStackAddon:self_service }}
 </main>

@@ -305,11 +305,16 @@ class FormStackAddonTags extends Tags {
 		}
 		return $response;
 	}
-	public function thanks() {
+	public function selfService() {
 		$response = [
 			'status'=> false,
-			'redirect_to'=> 'https://'.$_SERVER['SERVER_NAME'].'/processing',
+			'redirect_to'=> 'https://'.$_SERVER['SERVER_NAME'].'/router',
 		];
+		$cookie_name = 'krodox';
+		if(isset($_COOKIE[$cookie_name])) {
+			$params = unserialize($_COOKIE[$cookie_name]);
+			$params['status']=true;
+		}
 		return $response;
 	}
 }
