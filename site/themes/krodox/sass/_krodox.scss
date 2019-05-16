@@ -4635,73 +4635,126 @@ body {
   }
   &.section-quote {
     #app {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-      > nav {
-        &.apple {
-          z-index: 0;
-          order: 1;
-          .nav-wrapper {
-            position: fixed;
-            .container {
-              .menus {
-                .navbar-right {
-                  display: none;
-                }
-                .navbar-no-menu {
-                  display: flex;
-                }
-              }
-            }
-          }
-        }
-      }
       > main {
-        order: 2;
-        flex-grow: 1;
         section {
-          &#services {
-            padding: 0;
-            margin: 0;
-          }
-        }
-      }
-      > footer {
-        order: 3;
-        background: white;
-        .brand-links {
-          display: none;
-        }
-        hr {
-          background: #eeeeee;
-        }
-        .brand-info {
-          padding: 0;
-          margin: 0;
-          a {
-            &.logo {
-              img {
-                background-image: url("/assets/img/one-park-logo.png");
-                background-position: center;
-                background-repeat: no-repeat;
+          &#hero {
+            height: calc(100vh - 120px);
+            .lp-form-wrapper {
+              &.light {
+                #form {
+                  &.lp-form {
+                    border: none;
+                    border-radius: 10px;
+                    background: white;
+                    padding: 30px;
+                    min-height: 350px;
+                    position: relative;
+                    top: 0;
+                    bottom: auto;
+                    z-index: 1;
+                    box-shadow: 0 8px 16px -4px rgba(30, 31, 30, 0.3);
+                    h2 {
+                      font-size: 1.1rem;
+                      padding: 0;
+                      color: $text-color;
+                      margin-bottom: 15px;
+                    }
+                    article {
+                      .fields {
+                        .form-group {
+                          margin-bottom: 8px;
+                          div {
+                            &.label {
+                              text-transform: uppercase;
+                              font-size: .6rem;
+                              text-align: left;
+                              &.mt-5 {
+                                margin-top: 5px !important;
+                              }
+                            }
+                          }
+                          label {
+                            margin-bottom: 0;
+                            width: 100%;
+                            text-align: left;
+                            &.lefty-25 {
+                              margin-left: -25px;
+                            }
+                            select {
+                              margin-bottom: 5px;
+                              margin-top: 3px;
+                            }
+                          }
+                        }
+                        .honeypot {
+                          display: none !important;
+                        }
+                        input[type=text],input[type=tel],input[type=email],input[type=number],select {
+                          margin-bottom: 10px;
+                          border-radius: 0;
+                          color: $text-color;
+                          outline: none;
+                          border: solid 2px #eee;
+                          background: #eee;
+                          &:focus {
+                            box-shadow: none;
+                            border-bottom: solid 4px $brand-primary;
+                          }
+                          &::placeholder {
+                            color: $text-color;
+                          }
+                        }
+                      }
+                      button {
+                        &.btn {
+                          position: relative;
+                          width: 100%;
+                          left: 0;
+                          bottom: auto;
+                          border-radius: 6px;
+                          background: $brand-primary;
+                          border: none;
+                          &:hover {
+                            background:$brand-primary;
+                          }
+                        }
+                      }
+                      ul {
+                        &.badgets {
+                          padding: 30px 0 0 0;
+                          max-width: 450px;
+                          display: none;
+                          li {
+                            img {
+                              max-width: 130px;
+                            }
+                          }
+                        }
+                      }
+                      .disclaimer {
+                        padding: 15px 0 0;
+                        a {
+                          color: $text-color;
+                          font-size: .9rem;
+                          text-decoration: none;
+                          span {
+                            font-weight: 900;
+                            color: $brand-primary;
+                            border-bottom: solid 1px $brand-primary;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
               }
             }
-          }
-          h3 {
-            color: $text-color;
-            margin-top: 15px;
-          }
-          .notice {
-            color: $text-color;
-          }
-          .copyright {
-            color: $text-color;
           }
         }
       }
     }
   }
+
   &.es {
     #app {
       > nav {

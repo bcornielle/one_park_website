@@ -1,17 +1,17 @@
 <?php
-namespace Statamic\Addons\APIAddon;
+namespace Statamic\Addons\FormStackAddon;
 use Statamic\Events\Data\EntryDeleted;
 use Statamic\Events\Data\EntrySaved;
 use Statamic\Extend\Listener;
 use Statamic\Forms\Submission;
-class APIAddonListener extends Listener {
-    public $events = [
-	    EntrySaved::class => 'EntrySaved',
-	    EntryDeleted::class => 'EntryDeleted',
-	    'Form.submission.creating' => 'submissionCreating',
-	    'Form.submission.created' => 'submissionCreated',
-    ];
-    //CP Entries
+class FormStackAddonListener extends Listener {
+	public $events = [
+		EntrySaved::class => 'EntrySaved',
+		EntryDeleted::class => 'EntryDeleted',
+		'Form.submission.creating' => 'submissionCreating',
+		'Form.submission.created' => 'submissionCreated',
+	];
+	//CP Entries
 	public function EntrySaved(EntrySaved $event) {
 		$context = $event->contextualData();
 		if ($context['collection'] === 'careers'){
@@ -54,6 +54,93 @@ class APIAddonListener extends Listener {
 	}
 	public function submissionCreated(Submission $submission) {
 		$form_name = $submission->formset()->name();
+		if ($form_name === 'leads'){
+			$params = array();
+			$name = $submission->get('name');
+			$names = explode(' ', $name);
+			$params['fname'] = (isset($names[0])) ? $names[0] : null;
+			$params['lname'] = (isset($names[1])) ? $names[1] : 'lastname';
+			$params['phone'] = $submission->get('phone');
+			$params['company_phone'] = $submission->get('phone');
+			$params['email'] = $submission->get('email');
+			$params['company_name'] = $submission->get('business_name');
+			$params['company_has_banking'] = $submission->get('has_business_bank_account');
+			$params['company_active_bankruptcy'] = $submission->get('active_bankruptcy');
+			$revenue = $submission->get('monthly_revenue');
+			if ($revenue == 1) $revenue = 2500;
+			$params['company_revenue'] = $revenue;
+			//tracking
+			$params['source'] = $submission->get('source');
+			$campaign = null;
+			if (isset($_COOKIE['Visitor_Campaign__c'])) {
+				$campaign = $_COOKIE['Visitor_Campaign__c'] ;
+			} else {
+				if ($submission->get('utm_campaign')){
+					$campaign = $submission->get('utm_campaign');
+				}
+			}
+			$params['utm_campaign'] = $campaign;
+			$source = null;
+			if (isset($_COOKIE['Source__c'])) {
+				$source = $_COOKIE['Source__c'] ;
+			}else{
+				if ($submission->get('utm_source')){
+					$source = $submission->get('utm_source');
+				}
+			}
+			$params['utm_source'] = $source;
+			$medium = null;
+			if (isset($_COOKIE['Visitor_Medium__c'])) {
+				$medium = $_COOKIE['Visitor_Medium__c'] ;
+			}else{
+				if ($submission->get('utm_medium')){
+					$medium = $submission->get('utm_medium');
+				}
+			}
+			$params['utm_medium'] = $medium;
+			$term = null;
+			if (isset($_COOKIE['Visitor_Term__c'])) {
+				$term = $_COOKIE['Visitor_Term__c'] ;
+			}else{
+				if ($submission->get('utm_term')){
+					$term = $submission->get('utm_term');
+				}
+			}
+			$params['utm_term'] = $term;
+			$content = null;
+			if (isset($_COOKIE['Visitor_Content__c'])) {
+				$content = $_COOKIE['Visitor_Content__c'] ;
+			}else{
+				if ($submission->get('utm_content')){
+					$content = $submission->get('utm_content');
+				}
+			}
+			$params['utm_content'] = $content;
+			$aff_id = null;
+			if (isset($_COOKIE['Visitor_ID__c'])) {
+				$aff_id = $_COOKIE['Visitor_ID__c'] ;
+			}else{
+				if ($submission->get('transaction_id')){
+					$aff_id = $submission->get('transaction_id');
+				}
+			}
+			$params['transaction_id'] = $aff_id;
+			//month & Year
+			$month = $submission->get('time_in_business_month');
+			$year = $submission->get('time_in_business_year');
+			if ($month && $year) {
+				$params['company_started'] = $month.'/01/'.$year;
+			}
+			//push to api
+			$url = env('API_URL') . env('API_VERSION') . '/leads?api_token='.env('API_TOKEN');
+			$api_response = $this->curl_api($url,"PUT",json_encode($params));
+			$api_response = json_decode($api_response,true);
+			if (isset($api_response['id'])){
+				$submission->set('lead_id',$api_response['id']);
+				$submission->save();
+				session()->flash('lead_redirect', '/processing?id=3');
+			}
+		}
 		if ($form_name === 'landing-page'){
 			$params = array();
 			$name = $submission->get('name');
@@ -238,7 +325,6 @@ class APIAddonListener extends Listener {
 		curl_close($ch);
 		return $data;
 	}
-
 	//FormStack API to be removed
 	private function api_formstack_form1($submission) {
 		$form_id = '2925351';
@@ -263,11 +349,11 @@ class APIAddonListener extends Listener {
 		//campaign
 		$campaign = null;
 		if (isset($_COOKIE['Visitor_Campaign__c'])) {
-		   $campaign = $_COOKIE['Visitor_Campaign__c'] ;
+			$campaign = $_COOKIE['Visitor_Campaign__c'] ;
 		} else {
-		   if ($submission->get('utm_campaign')){
-			   $campaign = $submission->get('utm_campaign');
-		   }
+			if ($submission->get('utm_campaign')){
+				$campaign = $submission->get('utm_campaign');
+			}
 		}
 		$params['campaign_name'] = $campaign;
 		//source

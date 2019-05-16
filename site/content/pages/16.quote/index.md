@@ -1,5 +1,4 @@
 title: Quote
+id: 74d6d263-407c-400f-a192-0b5cebfdc8eb
 fieldset: default
-id: 796da717-4a3b-445e-9449-b4489d17538b
-template: quote/fi
-es_url: cotizacion
+template: quote/step1

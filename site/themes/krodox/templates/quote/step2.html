@@ -1,0 +1,44 @@
+<main id="step-2">
+    {{ FormStackAddon:processing}}
+        {{ if !status }}
+        {{ redirect to="{ redirect_to }" }}
+        {{ /if }}
+        <section id="form">
+            <div class="container">
+                <div class="row">
+                    <div class="form">
+                        <div id="prequalifed-content">
+                            <h1>You've been pre-qualified</h1>
+                            <img src="/assets/img/checkmark.png">
+                            <div>
+                                <p>{{ first_name }}, you have been pre-qualified for </p>
+                            </div>
+                            <div>
+                                <p class="amount">
+                                    <span>${{ qualified }}</span>
+                                </p>
+                            </div>
+                            <div>
+                                <p>in working capital for {{ business.name }}</p>
+                            </div>
+                            <br>
+                            <p>Not enough? Don’t sweat it. The pre-qualification amount can change, based on your unique business situation</p>
+                            <p><strong>Let’s complete your application below</strong></p>
+                            <p style="display: none;">One of our expert funding specialists will be giving you a call to go over the unique details of your business. Want to move faster? You can give us a call:</p>
+                            <p style="display: none;">
+                                <strong>
+                                    <a href="tel:+18883271044">
+                                        <span class="number">1-888-327-1044</span>
+                                    </a>
+                                </strong>
+                            </p>
+                        </div>
+                        <div>
+                            Form2 goes here.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    {{ /FormStackAddon:processing }}
+</main>

@@ -24,6 +24,18 @@ class FormStackAddonTags extends Tags {
 		]
 	];
 	private $oauth_token = '5a07bf17f343ddbfc5c3a6f6e005d6c0';
+	public function index(){
+		if (session('form_stack_redirect')) {
+			$e = new \Statamic\Exceptions\RedirectException;
+			$e->setUrl(session('form_stack_redirect'));
+			throw $e;
+		}
+		if (session('lead_redirect')) {
+			$e = new \Statamic\Exceptions\RedirectException;
+			$e->setUrl(session('lead_redirect'));
+			throw $e;
+		}
+	}
 	//English Forms
 	public function qualification() {
 		return array(
@@ -278,5 +290,53 @@ class FormStackAddonTags extends Tags {
 				'url' => 'https://'.$_SERVER['SERVER_NAME'] . '/es/feliz',
 			);
 		}
+	}
+	//steps
+	public function quote() {
+		$response = [
+			'status'=> true,
+			'redirect_to'=> 'https://'.$_SERVER['SERVER_NAME'],
+		];
+		return $response;
+	}
+	public function processing() {
+		$response = [
+			'status'=> false,
+			'redirect_to'=> 'https://'.$_SERVER['SERVER_NAME'].'/quote',
+		];
+		if(isset($_REQUEST['id']) && $_REQUEST['id']){
+			$response = [
+				'status'=> true,
+				'redirect_to' => null,
+				'first_name' => null,
+				'last_name' => null,
+				'email' => null,
+				'phone' => null,
+				'credit' => null,
+				'business' => [
+					'name'=> null,
+					'started' => null,
+					'funding_needed' => null,
+					'revenue' => null,
+					'industry' => null,
+					'phone' => null,
+					'address'=> [
+						'line1'=> null,
+						'city'=> null,
+						'state'=> null,
+						'zip'=> null,
+					]
+				],
+				'qualified' => 2500,
+			];
+		}
+		return $response;
+	}
+	public function thanks() {
+		$response = [
+			'status'=> false,
+			'redirect_to'=> 'https://'.$_SERVER['SERVER_NAME'].'/processing',
+		];
+		return $response;
 	}
 }

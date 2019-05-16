@@ -8939,81 +8939,139 @@ body.section-lp.fast_capital_360 #app > main section#features h2 {
   margin-top: 30px;
 }
 
-body.section-quote #app {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-height: 100vh;
+body.section-quote #app > main section#hero {
+  height: calc(100vh - 120px);
 }
 
-body.section-quote #app > nav.apple {
-  z-index: 0;
-  -ms-flex-order: 1;
-  order: 1;
-}
-
-body.section-quote #app > nav.apple .nav-wrapper {
-  position: fixed;
-}
-
-body.section-quote #app > nav.apple .nav-wrapper .container .menus .navbar-right {
-  display: none;
-}
-
-body.section-quote #app > nav.apple .nav-wrapper .container .menus .navbar-no-menu {
-  display: -ms-flexbox;
-  display: flex;
-}
-
-body.section-quote #app > main {
-  -ms-flex-order: 2;
-  order: 2;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-body.section-quote #app > main section#services {
-  padding: 0;
-  margin: 0;
-}
-
-body.section-quote #app > footer {
-  -ms-flex-order: 3;
-  order: 3;
+body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form {
+  border: none;
+  border-radius: 10px;
   background: white;
+  padding: 30px;
+  min-height: 350px;
+  position: relative;
+  top: 0;
+  bottom: auto;
+  z-index: 1;
+  box-shadow: 0 8px 16px -4px rgba(30, 31, 30, 0.3);
 }
 
-body.section-quote #app > footer .brand-links {
+body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form h2 {
+  font-size: 1.1rem;
+  padding: 0;
+  color: #323831;
+  margin-bottom: 15px;
+}
+
+body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields .form-group {
+  margin-bottom: 8px;
+}
+
+body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields .form-group div.label {
+  text-transform: uppercase;
+  font-size: .6rem;
+  text-align: left;
+}
+
+body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields .form-group div.label.mt-5 {
+  margin-top: 5px !important;
+}
+
+body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields .form-group label {
+  margin-bottom: 0;
+  width: 100%;
+  text-align: left;
+}
+
+body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields .form-group label.lefty-25 {
+  margin-left: -25px;
+}
+
+body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields .form-group label select {
+  margin-bottom: 5px;
+  margin-top: 3px;
+}
+
+body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields .honeypot {
+  display: none !important;
+}
+
+body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=text],
+body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=tel],
+body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=email],
+body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=number],
+body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields select {
+  margin-bottom: 10px;
+  border-radius: 0;
+  color: #323831;
+  outline: none;
+  border: solid 2px #eee;
+  background: #eee;
+}
+
+body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=text]:focus,
+body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=tel]:focus,
+body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=email]:focus,
+body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=number]:focus,
+body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields select:focus {
+  box-shadow: none;
+  border-bottom: solid 4px #359c1c;
+}
+
+body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=text]:-ms-input-placeholder,
+body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=tel]:-ms-input-placeholder,
+body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=email]:-ms-input-placeholder,
+body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=number]:-ms-input-placeholder,
+body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields select:-ms-input-placeholder {
+  color: #323831;
+}
+
+body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=text]::placeholder,
+body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=tel]::placeholder,
+body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=email]::placeholder,
+body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=number]::placeholder,
+body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields select::placeholder {
+  color: #323831;
+}
+
+body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article button.btn {
+  position: relative;
+  width: 100%;
+  left: 0;
+  bottom: auto;
+  border-radius: 6px;
+  background: #359c1c;
+  border: none;
+}
+
+body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article button.btn:hover {
+  background: #359c1c;
+}
+
+body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article ul.badgets {
+  padding: 30px 0 0 0;
+  max-width: 450px;
   display: none;
 }
 
-body.section-quote #app > footer hr {
-  background: #eeeeee;
+body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article ul.badgets li img {
+  max-width: 130px;
 }
 
-body.section-quote #app > footer .brand-info {
-  padding: 0;
-  margin: 0;
+body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .disclaimer {
+  padding: 15px 0 0;
 }
 
-body.section-quote #app > footer .brand-info a.logo img {
-  background-image: url("/assets/img/one-park-logo.png");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-body.section-quote #app > footer .brand-info h3 {
+body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .disclaimer a {
   color: #323831;
-  margin-top: 15px;
+  font-size: .9rem;
+  text-decoration: none;
 }
 
-body.section-quote #app > footer .brand-info .notice {
-  color: #323831;
-}
-
-body.section-quote #app > footer .brand-info .copyright {
-  color: #323831;
+body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .disclaimer a span {
+  font-weight: 900;
+  color: #359c1c;
+  border-bottom: solid 1px #359c1c;
 }
 
 body.es #app > nav.apple .nav-wrapper .container .menus .navbar-right .join-now span {
