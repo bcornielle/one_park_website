@@ -287,35 +287,20 @@ class FormStackAddonTags extends Tags {
 		];
 		return $response;
 	}
-	public function processing() {
+	public function router() {
 		$response = [
-			'status'=> false,
 			'redirect_to'=> 'https://'.$_SERVER['SERVER_NAME'].'/quote',
 		];
-		if(isset($_REQUEST['id']) && $_REQUEST['id']){
+		if(isset($_REQUEST['lead_id']) && $_REQUEST['lead_id']){
+			$cookie_name = 'krodox';
+			$cookie_time = time() + 15;
+			$params = [];
+			foreach($_REQUEST as $key=>$value){
+				$params[$key] = $value;
+			}
+			setcookie($cookie_name,serialize($params),$cookie_time,"/");
 			$response = [
-				'status'=> true,
-				'redirect_to' => null,
-				'first_name' => null,
-				'last_name' => null,
-				'email' => null,
-				'phone' => null,
-				'credit' => null,
-				'business' => [
-					'name'=> null,
-					'started' => null,
-					'funding_needed' => null,
-					'revenue' => null,
-					'industry' => null,
-					'phone' => null,
-					'address'=> [
-						'line1'=> null,
-						'city'=> null,
-						'state'=> null,
-						'zip'=> null,
-					]
-				],
-				'qualified' => 2500,
+				'redirect_to' => 'https://'.$_SERVER['SERVER_NAME'].'/self-service',
 			];
 		}
 		return $response;
