@@ -298,7 +298,8 @@ class FormStackAddonTags extends Tags {
 			foreach($_REQUEST as $key=>$value){
 				$params[$key] = $value;
 			}
-			setcookie($cookie_name,serialize($params),$cookie_time,"/");
+			//setcookie($cookie_name,serialize($params),$cookie_time,"/");
+			setcookie($cookie_name,$params,$cookie_time,"/");
 			$response = [
 				'redirect_to' => 'https://'.$_SERVER['SERVER_NAME'].'/self-service',
 			];
@@ -312,7 +313,9 @@ class FormStackAddonTags extends Tags {
 		];
 		$cookie_name = 'krodox';
 		if(isset($_COOKIE[$cookie_name])) {
-			$response = unserialize($_COOKIE[$cookie_name]);
+			//$response = unserialize($_COOKIE[$cookie_name]);
+			$response = $_COOKIE[$cookie_name];
+			Log::info(print_r($response,true));
 			$response['status'] = true;
 		}
 		return $response;
