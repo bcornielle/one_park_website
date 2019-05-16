@@ -3530,7 +3530,7 @@ body {
       }
     }
   }
-  &.section-pre-qualification, &.section-congrats, &.section-complete, &.section-preaprob, &.section-feliz, &.section-gracias {
+  &.section-pre-qualification, &.section-congrats, &.section-complete, &.section-preaprob, &.section-feliz, &.section-gracias, &.section-self-service {
     #app {
       > main {
         section {
@@ -3637,7 +3637,7 @@ body {
       }
     }
   }
-  &.section-congrats, &.section-feliz {
+  &.section-congrats, &.section-feliz, &.section-self-service {
     #app {
       > main {
         section {
@@ -5111,7 +5111,7 @@ body {
         }
       }
     }
-    &.section-pre-qualification, &.section-congrats, &.section-complete, &.section-preaprob, &.section-feliz, &.section-gracias {
+    &.section-pre-qualification, &.section-congrats, &.section-complete, &.section-preaprob, &.section-feliz, &.section-gracias, &.section-self-service {
       #app {
         > main {
           section {
@@ -5835,7 +5835,7 @@ body {
         }
       }
     }
-    &.section-pre-qualification, &.section-congrats, &.section-complete, &.section-preaprob, &.section-feliz, &.section-gracias {
+    &.section-pre-qualification, &.section-congrats, &.section-complete, &.section-preaprob, &.section-feliz, &.section-gracias, &.section-self-service {
       #app {
         > main {
           section {
@@ -6902,7 +6902,7 @@ body {
         }
       }
     }
-    &.section-pre-qualification, &.section-congrats, &.section-complete, &.section-preaprob, &.section-feliz, &.section-gracias {
+    &.section-pre-qualification, &.section-congrats, &.section-complete, &.section-preaprob, &.section-feliz, &.section-gracias, &.section-self-service {
       #app {
         > main {
           section {
@@ -7412,7 +7412,7 @@ body {
         }
       }
     }
-    &.section-pre-qualification, &.section-congrats, &.section-complete, &.section-preaprob, &.section-feliz, &.section-gracias {
+    &.section-pre-qualification, &.section-congrats, &.section-complete, &.section-preaprob, &.section-feliz, &.section-gracias, &.section-self-service {
       #app {
         > main {
           section {
@@ -7439,7 +7439,7 @@ body {
         }
       }
     }
-    &.section-congrats, &.section-feliz {
+    &.section-congrats, &.section-feliz, &.section-self-service {
       #app {
         > main {
           section {
