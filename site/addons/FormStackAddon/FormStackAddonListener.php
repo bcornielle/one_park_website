@@ -166,9 +166,7 @@ class FormStackAddonListener extends Listener {
 			$url = env('API_URL') . env('API_VERSION') . '/leads/'.$params['lead_id'].'?api_token='.env('API_TOKEN');
 			$api_response = $this->curl_api($url,"POST",json_encode($params));
 			$api_response = json_decode($api_response,true);
-			if (isset($api_response['id'])){
-				session()->flash('self_service_redirect', '/thanks?status='. $api_response['id']);
-			}
+			session()->flash('self_service_redirect', '/thanks?status=ok');
 		}
 		if ($form_name === 'landing-page'){
 			$params = array();

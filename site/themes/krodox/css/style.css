@@ -7518,7 +7518,8 @@ body.section-complete #app > main section#form,
 body.section-preaprob #app > main section#form,
 body.section-feliz #app > main section#form,
 body.section-gracias #app > main section#form,
-body.section-self-service #app > main section#form {
+body.section-self-service #app > main section#form,
+body.section-thanks #app > main section#form {
   background: #f1f6ef;
   margin: 0;
   padding: 90px 0;
@@ -7530,7 +7531,8 @@ body.section-complete #app > main section#form h1,
 body.section-preaprob #app > main section#form h1,
 body.section-feliz #app > main section#form h1,
 body.section-gracias #app > main section#form h1,
-body.section-self-service #app > main section#form h1 {
+body.section-self-service #app > main section#form h1,
+body.section-thanks #app > main section#form h1 {
   padding: 0;
   text-align: center;
   font-weight: 900;
@@ -7545,7 +7547,8 @@ body.section-complete #app > main section#form h2,
 body.section-preaprob #app > main section#form h2,
 body.section-feliz #app > main section#form h2,
 body.section-gracias #app > main section#form h2,
-body.section-self-service #app > main section#form h2 {
+body.section-self-service #app > main section#form h2,
+body.section-thanks #app > main section#form h2 {
   font-size: 1.2rem;
   margin: 0 auto;
   padding-top: 8px;
@@ -7558,7 +7561,8 @@ body.section-complete #app > main section#form .form-wrapper .form,
 body.section-preaprob #app > main section#form .form-wrapper .form,
 body.section-feliz #app > main section#form .form-wrapper .form,
 body.section-gracias #app > main section#form .form-wrapper .form,
-body.section-self-service #app > main section#form .form-wrapper .form {
+body.section-self-service #app > main section#form .form-wrapper .form,
+body.section-thanks #app > main section#form .form-wrapper .form {
   width: 100%;
   min-height: 400px;
   z-index: 1;
@@ -7571,7 +7575,8 @@ body.section-complete #app > main section#form .form-wrapper .form form,
 body.section-preaprob #app > main section#form .form-wrapper .form form,
 body.section-feliz #app > main section#form .form-wrapper .form form,
 body.section-gracias #app > main section#form .form-wrapper .form form,
-body.section-self-service #app > main section#form .form-wrapper .form form {
+body.section-self-service #app > main section#form .form-wrapper .form form,
+body.section-thanks #app > main section#form .form-wrapper .form form {
   background-color: transparent !important;
 }
 
@@ -7581,7 +7586,8 @@ body.section-complete #app > main section#form .form-wrapper .badgets,
 body.section-preaprob #app > main section#form .form-wrapper .badgets,
 body.section-feliz #app > main section#form .form-wrapper .badgets,
 body.section-gracias #app > main section#form .form-wrapper .badgets,
-body.section-self-service #app > main section#form .form-wrapper .badgets {
+body.section-self-service #app > main section#form .form-wrapper .badgets,
+body.section-thanks #app > main section#form .form-wrapper .badgets {
   display: none;
   width: 300px;
   margin: 0 auto;
@@ -7593,7 +7599,8 @@ body.section-complete #app > main section#form .form-wrapper .legal-notice,
 body.section-preaprob #app > main section#form .form-wrapper .legal-notice,
 body.section-feliz #app > main section#form .form-wrapper .legal-notice,
 body.section-gracias #app > main section#form .form-wrapper .legal-notice,
-body.section-self-service #app > main section#form .form-wrapper .legal-notice {
+body.section-self-service #app > main section#form .form-wrapper .legal-notice,
+body.section-thanks #app > main section#form .form-wrapper .legal-notice {
   margin: 0;
   display: -ms-flexbox;
   display: flex;
@@ -7610,7 +7617,8 @@ body.section-complete #app > main section#form .form-wrapper .legal-notice p,
 body.section-preaprob #app > main section#form .form-wrapper .legal-notice p,
 body.section-feliz #app > main section#form .form-wrapper .legal-notice p,
 body.section-gracias #app > main section#form .form-wrapper .legal-notice p,
-body.section-self-service #app > main section#form .form-wrapper .legal-notice p {
+body.section-self-service #app > main section#form .form-wrapper .legal-notice p,
+body.section-thanks #app > main section#form .form-wrapper .legal-notice p {
   color: #5f5e5e;
   line-height: 1.5;
   text-align: left;
@@ -7623,7 +7631,8 @@ body.section-complete #app > main section#form .form-wrapper .legal-notice p a,
 body.section-preaprob #app > main section#form .form-wrapper .legal-notice p a,
 body.section-feliz #app > main section#form .form-wrapper .legal-notice p a,
 body.section-gracias #app > main section#form .form-wrapper .legal-notice p a,
-body.section-self-service #app > main section#form .form-wrapper .legal-notice p a {
+body.section-self-service #app > main section#form .form-wrapper .legal-notice p a,
+body.section-thanks #app > main section#form .form-wrapper .legal-notice p a {
   color: #359c1c;
 }
 
@@ -7661,7 +7670,12 @@ body.section-self-service #app > main section#form input[type=text],
 body.section-self-service #app > main section#form input[type=tel],
 body.section-self-service #app > main section#form input[type=email],
 body.section-self-service #app > main section#form input[type=number],
-body.section-self-service #app > main section#form select {
+body.section-self-service #app > main section#form select,
+body.section-thanks #app > main section#form input[type=text],
+body.section-thanks #app > main section#form input[type=tel],
+body.section-thanks #app > main section#form input[type=email],
+body.section-thanks #app > main section#form input[type=number],
+body.section-thanks #app > main section#form select {
   box-shadow: 0 0 48px rgba(83, 167, 61, 0.3);
 }
 
@@ -7671,7 +7685,8 @@ body.section-complete #app > main section#form #fsSubmitButton2925351,
 body.section-preaprob #app > main section#form #fsSubmitButton2925351,
 body.section-feliz #app > main section#form #fsSubmitButton2925351,
 body.section-gracias #app > main section#form #fsSubmitButton2925351,
-body.section-self-service #app > main section#form #fsSubmitButton2925351 {
+body.section-self-service #app > main section#form #fsSubmitButton2925351,
+body.section-thanks #app > main section#form #fsSubmitButton2925351 {
   width: 300px;
 }
 
@@ -7681,7 +7696,8 @@ body.section-complete #app > main section ul.items,
 body.section-preaprob #app > main section ul.items,
 body.section-feliz #app > main section ul.items,
 body.section-gracias #app > main section ul.items,
-body.section-self-service #app > main section ul.items {
+body.section-self-service #app > main section ul.items,
+body.section-thanks #app > main section ul.items {
   margin-top: 0p;
   padding: 0 30px;
 }
@@ -7692,7 +7708,8 @@ body.section-complete #app > main section ul.items li,
 body.section-preaprob #app > main section ul.items li,
 body.section-feliz #app > main section ul.items li,
 body.section-gracias #app > main section ul.items li,
-body.section-self-service #app > main section ul.items li {
+body.section-self-service #app > main section ul.items li,
+body.section-thanks #app > main section ul.items li {
   float: left;
   width: 100% !important;
   margin: 0 2% 2% 0;
@@ -7714,7 +7731,8 @@ body.section-complete #app > main section ul.items li:nth-child(1n),
 body.section-preaprob #app > main section ul.items li:nth-child(1n),
 body.section-feliz #app > main section ul.items li:nth-child(1n),
 body.section-gracias #app > main section ul.items li:nth-child(1n),
-body.section-self-service #app > main section ul.items li:nth-child(1n) {
+body.section-self-service #app > main section ul.items li:nth-child(1n),
+body.section-thanks #app > main section ul.items li:nth-child(1n) {
   margin-right: 0;
 }
 
@@ -7724,7 +7742,8 @@ body.section-complete #app > main section ul.items li:nth-child(1n + 2),
 body.section-preaprob #app > main section ul.items li:nth-child(1n + 2),
 body.section-feliz #app > main section ul.items li:nth-child(1n + 2),
 body.section-gracias #app > main section ul.items li:nth-child(1n + 2),
-body.section-self-service #app > main section ul.items li:nth-child(1n + 2) {
+body.section-self-service #app > main section ul.items li:nth-child(1n + 2),
+body.section-thanks #app > main section ul.items li:nth-child(1n + 2) {
   clear: left;
 }
 
@@ -7734,7 +7753,8 @@ body.section-complete #app > main section ul.items li:not(:last-child),
 body.section-preaprob #app > main section ul.items li:not(:last-child),
 body.section-feliz #app > main section ul.items li:not(:last-child),
 body.section-gracias #app > main section ul.items li:not(:last-child),
-body.section-self-service #app > main section ul.items li:not(:last-child) {
+body.section-self-service #app > main section ul.items li:not(:last-child),
+body.section-thanks #app > main section ul.items li:not(:last-child) {
   border-top: solid 2px #e6dede;
 }
 
@@ -7744,7 +7764,8 @@ body.section-complete #app > main section ul.items li:last-child,
 body.section-preaprob #app > main section ul.items li:last-child,
 body.section-feliz #app > main section ul.items li:last-child,
 body.section-gracias #app > main section ul.items li:last-child,
-body.section-self-service #app > main section ul.items li:last-child {
+body.section-self-service #app > main section ul.items li:last-child,
+body.section-thanks #app > main section ul.items li:last-child {
   border-top: solid 2px #e6dede;
   border-bottom: solid 2px #e6dede;
 }
@@ -7755,7 +7776,8 @@ body.section-complete #app > main section ul.items li:first-child,
 body.section-preaprob #app > main section ul.items li:first-child,
 body.section-feliz #app > main section ul.items li:first-child,
 body.section-gracias #app > main section ul.items li:first-child,
-body.section-self-service #app > main section ul.items li:first-child {
+body.section-self-service #app > main section ul.items li:first-child,
+body.section-thanks #app > main section ul.items li:first-child {
   border-top: none;
 }
 
@@ -7765,7 +7787,8 @@ body.section-complete #app > main section ul.items li i,
 body.section-preaprob #app > main section ul.items li i,
 body.section-feliz #app > main section ul.items li i,
 body.section-gracias #app > main section ul.items li i,
-body.section-self-service #app > main section ul.items li i {
+body.section-self-service #app > main section ul.items li i,
+body.section-thanks #app > main section ul.items li i {
   font-size: 3.5rem;
   color: #359c1c;
   margin-bottom: 15px;
@@ -7777,7 +7800,8 @@ body.section-complete #app > main section ul.badgets li,
 body.section-preaprob #app > main section ul.badgets li,
 body.section-feliz #app > main section ul.badgets li,
 body.section-gracias #app > main section ul.badgets li,
-body.section-self-service #app > main section ul.badgets li {
+body.section-self-service #app > main section ul.badgets li,
+body.section-thanks #app > main section ul.badgets li {
   float: left;
   width: 49% !important;
   margin: 0 2% 2% 0;
@@ -7790,7 +7814,8 @@ body.section-complete #app > main section ul.badgets li:nth-child(2n),
 body.section-preaprob #app > main section ul.badgets li:nth-child(2n),
 body.section-feliz #app > main section ul.badgets li:nth-child(2n),
 body.section-gracias #app > main section ul.badgets li:nth-child(2n),
-body.section-self-service #app > main section ul.badgets li:nth-child(2n) {
+body.section-self-service #app > main section ul.badgets li:nth-child(2n),
+body.section-thanks #app > main section ul.badgets li:nth-child(2n) {
   margin-right: 0;
 }
 
@@ -7800,7 +7825,8 @@ body.section-complete #app > main section ul.badgets li:nth-child(2n + 3),
 body.section-preaprob #app > main section ul.badgets li:nth-child(2n + 3),
 body.section-feliz #app > main section ul.badgets li:nth-child(2n + 3),
 body.section-gracias #app > main section ul.badgets li:nth-child(2n + 3),
-body.section-self-service #app > main section ul.badgets li:nth-child(2n + 3) {
+body.section-self-service #app > main section ul.badgets li:nth-child(2n + 3),
+body.section-thanks #app > main section ul.badgets li:nth-child(2n + 3) {
   clear: left;
 }
 
@@ -7810,7 +7836,8 @@ body.section-complete #app > main section ul.badgets li img,
 body.section-preaprob #app > main section ul.badgets li img,
 body.section-feliz #app > main section ul.badgets li img,
 body.section-gracias #app > main section ul.badgets li img,
-body.section-self-service #app > main section ul.badgets li img {
+body.section-self-service #app > main section ul.badgets li img,
+body.section-thanks #app > main section ul.badgets li img {
   max-width: 100%;
 }
 
@@ -7820,7 +7847,8 @@ body.section-complete #app > main section p,
 body.section-preaprob #app > main section p,
 body.section-feliz #app > main section p,
 body.section-gracias #app > main section p,
-body.section-self-service #app > main section p {
+body.section-self-service #app > main section p,
+body.section-thanks #app > main section p {
   line-height: 1.5 !important;
 }
 
@@ -7916,12 +7944,14 @@ body.section-self-service #app > main section#form .form a.btn {
 }
 
 body.section-complete #app > main section#form .form,
-body.section-gracias #app > main section#form .form {
+body.section-gracias #app > main section#form .form,
+body.section-thanks #app > main section#form .form {
   text-align: center;
 }
 
 body.section-complete #app > main section#form .form #prequalifed-content,
-body.section-gracias #app > main section#form .form #prequalifed-content {
+body.section-gracias #app > main section#form .form #prequalifed-content,
+body.section-thanks #app > main section#form .form #prequalifed-content {
   background: white;
   padding: 30px 60px;
   font-size: 1.5em;
@@ -7930,12 +7960,14 @@ body.section-gracias #app > main section#form .form #prequalifed-content {
 }
 
 body.section-complete #app > main section#form .form #prequalifed-content h1,
-body.section-gracias #app > main section#form .form #prequalifed-content h1 {
+body.section-gracias #app > main section#form .form #prequalifed-content h1,
+body.section-thanks #app > main section#form .form #prequalifed-content h1 {
   text-align: center;
 }
 
 body.section-complete #app > main section#form .form #prequalifed-content img,
-body.section-gracias #app > main section#form .form #prequalifed-content img {
+body.section-gracias #app > main section#form .form #prequalifed-content img,
+body.section-thanks #app > main section#form .form #prequalifed-content img {
   background: #359c1c;
   padding: 20px;
   border-radius: 50%;
@@ -7943,7 +7975,8 @@ body.section-gracias #app > main section#form .form #prequalifed-content img {
 }
 
 body.section-complete #app > main section#form .form a.btn,
-body.section-gracias #app > main section#form .form a.btn {
+body.section-gracias #app > main section#form .form a.btn,
+body.section-thanks #app > main section#form .form a.btn {
   display: inline-block;
 }
 
@@ -9378,7 +9411,8 @@ body #success-alert:after {
   body.section-preaprob #app > main section#form .form-wrapper .badgets,
   body.section-feliz #app > main section#form .form-wrapper .badgets,
   body.section-gracias #app > main section#form .form-wrapper .badgets,
-  body.section-self-service #app > main section#form .form-wrapper .badgets {
+  body.section-self-service #app > main section#form .form-wrapper .badgets,
+  body.section-thanks #app > main section#form .form-wrapper .badgets {
     display: block;
   }
 
@@ -9388,7 +9422,8 @@ body #success-alert:after {
   body.section-preaprob #app > main section#form .form-wrapper .legal-notice,
   body.section-feliz #app > main section#form .form-wrapper .legal-notice,
   body.section-gracias #app > main section#form .form-wrapper .legal-notice,
-  body.section-self-service #app > main section#form .form-wrapper .legal-notice {
+  body.section-self-service #app > main section#form .form-wrapper .legal-notice,
+  body.section-thanks #app > main section#form .form-wrapper .legal-notice {
     margin-top: 0;
   }
 
@@ -9398,7 +9433,8 @@ body #success-alert:after {
   body.section-preaprob #app > main section#form .form-wrapper .legal-notice p,
   body.section-feliz #app > main section#form .form-wrapper .legal-notice p,
   body.section-gracias #app > main section#form .form-wrapper .legal-notice p,
-  body.section-self-service #app > main section#form .form-wrapper .legal-notice p {
+  body.section-self-service #app > main section#form .form-wrapper .legal-notice p,
+  body.section-thanks #app > main section#form .form-wrapper .legal-notice p {
     text-align: center;
   }
 
@@ -9408,7 +9444,8 @@ body #success-alert:after {
   body.section-preaprob #app > main section ul.items,
   body.section-feliz #app > main section ul.items,
   body.section-gracias #app > main section ul.items,
-  body.section-self-service #app > main section ul.items {
+  body.section-self-service #app > main section ul.items,
+  body.section-thanks #app > main section ul.items {
     display: none;
   }
 
@@ -9418,7 +9455,8 @@ body #success-alert:after {
   body.section-preaprob #app > main section ul.badgets,
   body.section-feliz #app > main section ul.badgets,
   body.section-gracias #app > main section ul.badgets,
-  body.section-self-service #app > main section ul.badgets {
+  body.section-self-service #app > main section ul.badgets,
+  body.section-thanks #app > main section ul.badgets {
     display: none;
   }
 
@@ -9970,7 +10008,8 @@ body #success-alert:after {
   body.section-preaprob #app > main section#form .form-wrapper .badgets,
   body.section-feliz #app > main section#form .form-wrapper .badgets,
   body.section-gracias #app > main section#form .form-wrapper .badgets,
-  body.section-self-service #app > main section#form .form-wrapper .badgets {
+  body.section-self-service #app > main section#form .form-wrapper .badgets,
+  body.section-thanks #app > main section#form .form-wrapper .badgets {
     display: block;
   }
 
@@ -9980,7 +10019,8 @@ body #success-alert:after {
   body.section-preaprob #app > main section#form .form-wrapper .legal-notice,
   body.section-feliz #app > main section#form .form-wrapper .legal-notice,
   body.section-gracias #app > main section#form .form-wrapper .legal-notice,
-  body.section-self-service #app > main section#form .form-wrapper .legal-notice {
+  body.section-self-service #app > main section#form .form-wrapper .legal-notice,
+  body.section-thanks #app > main section#form .form-wrapper .legal-notice {
     margin-top: 0;
   }
 
@@ -9990,7 +10030,8 @@ body #success-alert:after {
   body.section-preaprob #app > main section#form .form-wrapper .legal-notice p,
   body.section-feliz #app > main section#form .form-wrapper .legal-notice p,
   body.section-gracias #app > main section#form .form-wrapper .legal-notice p,
-  body.section-self-service #app > main section#form .form-wrapper .legal-notice p {
+  body.section-self-service #app > main section#form .form-wrapper .legal-notice p,
+  body.section-thanks #app > main section#form .form-wrapper .legal-notice p {
     text-align: center;
   }
 
@@ -10000,7 +10041,8 @@ body #success-alert:after {
   body.section-preaprob #app > main section ul.items,
   body.section-feliz #app > main section ul.items,
   body.section-gracias #app > main section ul.items,
-  body.section-self-service #app > main section ul.items {
+  body.section-self-service #app > main section ul.items,
+  body.section-thanks #app > main section ul.items {
     display: none;
   }
 
@@ -10010,7 +10052,8 @@ body #success-alert:after {
   body.section-preaprob #app > main section ul.badgets,
   body.section-feliz #app > main section ul.badgets,
   body.section-gracias #app > main section ul.badgets,
-  body.section-self-service #app > main section ul.badgets {
+  body.section-self-service #app > main section ul.badgets,
+  body.section-thanks #app > main section ul.badgets {
     display: none;
   }
 
@@ -11045,7 +11088,8 @@ body #success-alert:after {
   body.section-preaprob #app > main section#form .form-wrapper .badgets,
   body.section-feliz #app > main section#form .form-wrapper .badgets,
   body.section-gracias #app > main section#form .form-wrapper .badgets,
-  body.section-self-service #app > main section#form .form-wrapper .badgets {
+  body.section-self-service #app > main section#form .form-wrapper .badgets,
+  body.section-thanks #app > main section#form .form-wrapper .badgets {
     display: block;
   }
 
@@ -11055,7 +11099,8 @@ body #success-alert:after {
   body.section-preaprob #app > main section#form .form-wrapper .legal-notice,
   body.section-feliz #app > main section#form .form-wrapper .legal-notice,
   body.section-gracias #app > main section#form .form-wrapper .legal-notice,
-  body.section-self-service #app > main section#form .form-wrapper .legal-notice {
+  body.section-self-service #app > main section#form .form-wrapper .legal-notice,
+  body.section-thanks #app > main section#form .form-wrapper .legal-notice {
     margin-top: 0;
   }
 
@@ -11065,7 +11110,8 @@ body #success-alert:after {
   body.section-preaprob #app > main section#form .form-wrapper .legal-notice p,
   body.section-feliz #app > main section#form .form-wrapper .legal-notice p,
   body.section-gracias #app > main section#form .form-wrapper .legal-notice p,
-  body.section-self-service #app > main section#form .form-wrapper .legal-notice p {
+  body.section-self-service #app > main section#form .form-wrapper .legal-notice p,
+  body.section-thanks #app > main section#form .form-wrapper .legal-notice p {
     text-align: center;
   }
 
@@ -11075,7 +11121,8 @@ body #success-alert:after {
   body.section-preaprob #app > main section ul.items,
   body.section-feliz #app > main section ul.items,
   body.section-gracias #app > main section ul.items,
-  body.section-self-service #app > main section ul.items {
+  body.section-self-service #app > main section ul.items,
+  body.section-thanks #app > main section ul.items {
     display: none;
   }
 
@@ -11085,7 +11132,8 @@ body #success-alert:after {
   body.section-preaprob #app > main section ul.badgets,
   body.section-feliz #app > main section ul.badgets,
   body.section-gracias #app > main section ul.badgets,
-  body.section-self-service #app > main section ul.badgets {
+  body.section-self-service #app > main section ul.badgets,
+  body.section-thanks #app > main section ul.badgets {
     display: none;
   }
 
@@ -11531,7 +11579,8 @@ body #success-alert:after {
   body.section-preaprob #app > main section#form,
   body.section-feliz #app > main section#form,
   body.section-gracias #app > main section#form,
-  body.section-self-service #app > main section#form {
+  body.section-self-service #app > main section#form,
+  body.section-thanks #app > main section#form {
     padding: 30px 0;
     background: white;
   }
@@ -11542,7 +11591,8 @@ body #success-alert:after {
   body.section-preaprob #app > main section#form h1,
   body.section-feliz #app > main section#form h1,
   body.section-gracias #app > main section#form h1,
-  body.section-self-service #app > main section#form h1 {
+  body.section-self-service #app > main section#form h1,
+  body.section-thanks #app > main section#form h1 {
     font-size: 1.2rem;
     margin: 0 auto;
     padding: 0;
@@ -11554,7 +11604,8 @@ body #success-alert:after {
   body.section-preaprob #app > main section#form h2,
   body.section-feliz #app > main section#form h2,
   body.section-gracias #app > main section#form h2,
-  body.section-self-service #app > main section#form h2 {
+  body.section-self-service #app > main section#form h2,
+  body.section-thanks #app > main section#form h2 {
     font-size: 1rem;
   }
 
@@ -11564,7 +11615,8 @@ body #success-alert:after {
   body.section-preaprob #app > main section#form .form-wrapper .legal-notice p,
   body.section-feliz #app > main section#form .form-wrapper .legal-notice p,
   body.section-gracias #app > main section#form .form-wrapper .legal-notice p,
-  body.section-self-service #app > main section#form .form-wrapper .legal-notice p {
+  body.section-self-service #app > main section#form .form-wrapper .legal-notice p,
+  body.section-thanks #app > main section#form .form-wrapper .legal-notice p {
     padding: 0;
   }
 
