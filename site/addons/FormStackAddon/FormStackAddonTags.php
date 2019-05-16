@@ -24,18 +24,6 @@ class FormStackAddonTags extends Tags {
 		]
 	];
 	private $oauth_token = '5a07bf17f343ddbfc5c3a6f6e005d6c0';
-	public function index(){
-		if (session('form_stack_redirect')) {
-			$e = new \Statamic\Exceptions\RedirectException;
-			$e->setUrl(session('form_stack_redirect'));
-			throw $e;
-		}
-		if (session('lead_redirect')) {
-			$e = new \Statamic\Exceptions\RedirectException;
-			$e->setUrl(session('lead_redirect'));
-			throw $e;
-		}
-	}
 	//English Forms
 	public function qualification() {
 		return array(
