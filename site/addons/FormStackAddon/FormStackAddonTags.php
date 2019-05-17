@@ -23,6 +23,7 @@ class FormStackAddonTags extends Tags {
 			'name'=>'prequal_es_2',
 		]
 	];
+	private $cookie_name = 'krodox';
 	private $oauth_token = '5a07bf17f343ddbfc5c3a6f6e005d6c0';
 	//English Forms
 	public function qualification() {
@@ -33,10 +34,9 @@ class FormStackAddonTags extends Tags {
 		);
 	}
 	public function congrats() {
-		$cookie_name = 'krodox';
 		$cookie_time = time() + 15;
 		$form_id = $this->forms_en[1]['id'];
-		if(isset($_REQUEST['how_much_are_your_estimated_gross_monthly_sales']) && !isset($_COOKIE[$cookie_name])){
+		if(isset($_REQUEST['how_much_are_your_estimated_gross_monthly_sales']) && !isset($_COOKIE[$this->cookie_name])){
 			$params = array();
 			foreach($_REQUEST as $key=>$value){
 				if ($key == "how_much_are_your_estimated_gross_monthly_sales"){
@@ -53,15 +53,15 @@ class FormStackAddonTags extends Tags {
 				}
 				$params[$key] = $value;
 			}
-			setcookie($cookie_name,serialize($params),$cookie_time, "/");
+			setcookie($this->cookie_name,serialize($params),$cookie_time, "/");
 			$response = [
 				'status' => false,
 				'url' => 'https://'.$_SERVER['SERVER_NAME'] . '/congrats',
 				'form' => $this->forms_en[1]['name'],
 			];
 		}else{
-			if(isset($_COOKIE[$cookie_name])) {
-				$params = unserialize($_COOKIE[$cookie_name]);
+			if(isset($_COOKIE[$this->cookie_name])) {
+				$params = unserialize($_COOKIE[$this->cookie_name]);
 				$get_api_url = 'https://www.formstack.com/api/v2/form/'.$form_id.'/field.json';
 				$json_url = $get_api_url .'?oauth_token='.$this->oauth_token;
 				if (isset($params['amount'])) {
@@ -167,10 +167,9 @@ class FormStackAddonTags extends Tags {
 		);
 	}
 	public function feliz() {
-		$cookie_name = 'krodox';
 		$cookie_time = time() + 15;
 		$form_id = $this->forms_es[1]['id'];
-		if(isset($_REQUEST['a_cuánto_ascienden_sus_ventas_mensuales_brutas']) && !isset($_COOKIE[$cookie_name])){
+		if(isset($_REQUEST['a_cuánto_ascienden_sus_ventas_mensuales_brutas']) && !isset($_COOKIE[$this->cookie_name])){
 			$params = array();
 			foreach($_REQUEST as $key=>$value){
 				if ($key == "a_cuánto_ascienden_sus_ventas_mensuales_brutas"){
@@ -187,15 +186,15 @@ class FormStackAddonTags extends Tags {
 				}
 				$params[$key] = $value;
 			}
-			setcookie($cookie_name,serialize($params),$cookie_time, "/");
+			setcookie($this->cookie_name,serialize($params),$cookie_time, "/");
 			$response = [
 				'status' => false,
 				'url' => 'https://'.$_SERVER['SERVER_NAME'] . '/es/feliz',
 				'form' => $this->forms_es[1]['name'],
 			];
 		}else{
-			if(isset($_COOKIE[$cookie_name])) {
-				$params = unserialize($_COOKIE[$cookie_name]);
+			if(isset($_COOKIE[$this->cookie_name])) {
+				$params = unserialize($_COOKIE[$this->cookie_name]);
 				$get_api_url = 'https://www.formstack.com/api/v2/form/'.$form_id.'/field.json';
 				$json_url = $get_api_url .'?oauth_token='.$this->oauth_token;
 				if (isset($params['amount'])) {
@@ -292,13 +291,12 @@ class FormStackAddonTags extends Tags {
 			'redirect_to'=> 'https://'.$_SERVER['SERVER_NAME'].'/quote',
 		];
 		if(isset($_REQUEST['lead_id']) && $_REQUEST['lead_id']){
-			$cookie_name = 'krodox';
-			$cookie_time = time() + 15;
+			$cookie_time = time() + (60*60*24*365);
 			$params = [];
 			foreach($_REQUEST as $key=>$value){
 				$params[$key] = $value;
 			}
-			setcookie($cookie_name,serialize($params),$cookie_time,"/");
+			setcookie($this->cookie_name,serialize($params),$cookie_time,"/");
 			$response = [
 				'redirect_to' => 'https://'.$_SERVER['SERVER_NAME'].'/self-service',
 			];
@@ -310,9 +308,8 @@ class FormStackAddonTags extends Tags {
 			'status'=> false,
 			'redirect_to'=> 'https://'.$_SERVER['SERVER_NAME'].'/router',
 		];
-		$cookie_name = 'krodox';
-		if(isset($_COOKIE[$cookie_name])) {
-			$response = unserialize($_COOKIE[$cookie_name]);
+		if(isset($_COOKIE[$this->cookie_name])) {
+			$response = unserialize($_COOKIE[$this->cookie_name]);
 			$response['status'] = true;
 		}
 		return $response;
@@ -323,6 +320,10 @@ class FormStackAddonTags extends Tags {
 			'redirect_to'=> 'https://'.$_SERVER['SERVER_NAME'] . '/quote',
 		];
 		if (isset($_REQUEST['status']) && $_REQUEST['status']){
+			if (isset($_COOKIE[$this->cookie_name])) {
+				unset($_COOKIE[$this->cookie_name]);
+				setcookie($this->cookie_name, '', time() - 3600, '/');
+			}
 			$response = [
 				'status'=>true,
 				'redirect_to'=> null,
