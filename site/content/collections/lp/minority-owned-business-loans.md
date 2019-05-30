@@ -1,12 +1,12 @@
-title: 'Bad Credit Business Loans'
+title: 'Minority-Owned Business Loans'
 template: lp/fast-capital-360
 body_class: home-page
 navigation: with-menu
 hero: light
 hero_image: /assets/untitled-design-min.png
-hero_title: 'Bad Credit </br>Business Loans'
+hero_title: 'Minority-Owned </br>Business Loans'
 hero_subtitle: 'Get $5,000 - $750,000 Today'
-hero_notice: 'WE VALUE YOUR BUSINESS </br>NOT JUST YOUR CREDIT SCORE'
+hero_notice: 'ONE <strong>SIMPLE</strong> APPLICATION — </br>INSTANT <strong>ACCESS</strong> TO <strong>20+ TOP FUNDERS</strong>'
 hero_item_1: 'Get Pre-Qualified in FAST.'
 hero_item_2: 'Funding in Under 72 Hours.'
 hero_item_3: 'Poor Credit Accepted.'
@@ -15,11 +15,11 @@ form_time_in_business: 'true'
 form_button_text: 'Get Funded Now'
 form_disclaimer: '<a href="/terms-of-use" target="_blank">By clicking "Get Funded Now" I agree to all <span>terms and conditions</span></a>'
 overview_icon_1: 'far fa-check-circle'
-overview_text_1: 'CREDIT SCORES 500+ </br>ABOVE ACCEPTED'
+overview_text_1: 'BAD CREDIT?</br>NO PROBLEM'
 overview_icon_2: 'far fa-clock'
 overview_text_2: 'PRE-QUALIFICATION</br>IS FAST & EASY'
 overview_icon_3: 'fas fa-dollar-sign'
 overview_text_3: 'FUNDED IN AS </br>LITTLE AS 72 HOURS'
-meta_title: 'Bad Credit Business Loan Options'
-meta_description: 'Bad Credit Business Funding'
+meta_title: 'Minority-Owned Business Loan Options'
+meta_description: 'Minority-Owned Business Loans'
 id: 7a90742b-a966-4384-9eb2-c55abcb3320b
