@@ -5,9 +5,9 @@ utm_term: ''
 utm_content: ''
 transaction_id: ''
 source: /steps/step1
-api_id: 8593
+api_id: '8593'
 submission_id: '1559625058.1692'
-step: 1
+step: 2
 company_name: 'Game Of Thrones'
 company_started_month: '3'
 company_started_year: '2016'
@@ -20,3 +20,18 @@ fullname: 'John Snow'
 fname: John
 lname: Snow
 company_started: 3/01/2016
+rent_or_own: 'Yes'
+company_name_legal: 'Game Of Thrones'
+company_name_fake: HBO
+company_state: FL
+company_tax_id: '123456789'
+company_employees: '3'
+company_structure: Franchise
+company_started_with_you: '2019-06-04'
+company_industry: Software
+company_type: 'Limited Liability Company'
+company_has_loan: 'Yes'
+company_work_with_credit_card: 'Yes'
+company_cc_processor: AMEX
+company_rent_or_own: Rent
+company_mortgage: '1200'
