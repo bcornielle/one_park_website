@@ -5,9 +5,9 @@ utm_term: ''
 utm_content: ''
 transaction_id: ''
 source: /steps/step1
-api_id: 8716
-submission_id: 1559682224.8427
-step: '1'
+api_id: '8716'
+submission_id: '1559682224.8427'
+step: 2
 company_name: 'TEST LUKE'
 company_started_month: '5'
 company_started_year: '2006'
@@ -20,3 +20,13 @@ fullname: 'Yherr Joness'
 fname: Yherr
 lname: Joness
 company_started: 5/01/2006
+rent_or_own: 'Yes'
+company_name_legal: 'MIAMI OPF TEST'
+company_name_fake: 'MIAMI OPF TEST'
+company_state: FL
+company_tax_id: '0123456789'
+company_structure: Home-Based
+company_type: Corporation
+company_has_loan: 'No'
+company_work_with_credit_card: 'Yes'
+company_rent_or_own: Rent
