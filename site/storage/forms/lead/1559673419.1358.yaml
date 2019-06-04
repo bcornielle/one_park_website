@@ -5,9 +5,9 @@ utm_term: ''
 utm_content: ''
 transaction_id: ''
 source: /steps/step1
-api_id: 8685
+api_id: '8685'
 submission_id: '1559673419.1358'
-step: 3
+step: 4
 company_name: HaitianPikliz
 company_started_month: '1'
 company_started_year: '2017'
@@ -39,3 +39,16 @@ company_address_line1: '2649 Riviera Dr'
 company_address_city: Miramar
 company_address_state: Florida
 company_address_zip: '33023'
+company_owners_total: 'Single Owner'
+company_owner1_fname: Alexander
+company_owner1_lname: Rodriguez
+company_owner1_phone: '7863447605'
+company_owner1_email: haitianpikliz@gmail.com
+company_owner1_dob: '1985-09-19'
+company_owner1_ssn: '555508989'
+company_owner1_title: Owner
+company_owner1_address_line1: '2649 Riviera Dr'
+company_owner1_address_city: Miramar
+company_owner1_address_state: Florida
+company_owner1_address_zip: '33023'
+company_owner2_address_state: Alabama
