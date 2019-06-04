@@ -2572,6 +2572,7 @@ class ComposerStaticInitad60bb98c0b7716ded284e3befad3991
         'Statamic\\Addons\\FormStackAddon\\FormStackAddonListener' => __DIR__ . '/../..' . '/../site/addons/FormStackAddon/FormStackAddonListener.php',
         'Statamic\\Addons\\FormStackAddon\\FormStackAddonTags' => __DIR__ . '/../..' . '/../site/addons/FormStackAddon/FormStackAddonTags.php',
         'Statamic\\Addons\\FormStackAddon\\FormStackJob' => __DIR__ . '/../..' . '/../site/addons/FormStackAddon/FormStackJob.php',
+        'Statamic\\Addons\\FormSubmission\\FormSubmissionTags' => __DIR__ . '/../..' . '/../site/addons/FormStackAddon/FormSubmissionTags.php',
         'Statamic\\Addons\\Form\\FormFieldtype' => __DIR__ . '/../..' . '/bundles/Form/FormFieldtype.php',
         'Statamic\\Addons\\Form\\FormListener' => __DIR__ . '/../..' . '/bundles/Form/FormListener.php',
         'Statamic\\Addons\\Form\\FormTags' => __DIR__ . '/../..' . '/bundles/Form/FormTags.php',

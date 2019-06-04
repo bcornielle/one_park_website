@@ -1,0 +1,92 @@
+<main id="self-service">
+    {{ FormStackAddon:self_service}}
+        {{ if ! status }}
+            {{ redirect to="{ redirect_to }" }}
+        {{ /if }}
+        <section id="form" class="lp-form">
+            <div class="container">
+                <div class="row">
+                    <div class="form">
+                        <div id="prequalifed-content">
+                            <h1>You've been pre-qualified</h1>
+                            <img src="/assets/img/checkmark.png">
+                            <div>
+                                <p>{{ fname }}, you have been pre-qualified for </p>
+                            </div>
+                            <div>
+                                <p class="amount">
+                                    <span>${{ company_revenue }}</span>
+                                </p>
+                            </div>
+                            <div>
+                                <p>in working capital for {{ company_name }}</p>
+                            </div>
+                            <br>
+                            <p>
+                                Not enough? Don’t sweat it.<br>
+                                The pre-qualification amount can change, based on your unique business situation
+                            </p>
+                            <p><strong>Let’s complete your application below</strong></p>
+                            <br>
+                            <br>
+                            <div>
+                                <div class="row justify-content-md-center">
+                                    <div class="col-sm-12 col-md-6 col-lg-4">
+                                        <div class="lp-form-wrapper light">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <article class="content">
+                                                        {{ form:set is="lead" }}
+                                                        {{ form:create }}
+                                                        <div class="fields">
+                                                            <input type="text" name="honeypot" class="honeypot" style="display: none"/>
+                                                            <input type="hidden" name="fullname" value="{{ fullname }}"/>
+                                                            <input type="hidden" name="fname" value="{{ fname }}"/>
+                                                            <input type="hidden" name="lname" value="{{ lname }}"/>
+                                                            <input type="hidden" name="phone" value="{{ phone }}"/>
+                                                            <input type="hidden" name="email" value="{{ email }}"/>
+                                                            <input type="hidden" name="company_name" value="{{ company_name }}"/>
+                                                            <input type="hidden" name="company_phone" value="{{ company_phone }}"/>
+                                                            <input type="hidden" name="company_revenue" value="{{ company_revenue }}"/>
+                                                            <input type="hidden" name="company_has_banking" value="{{ company_has_banking }}"/>
+                                                            <input type="hidden" name="company_active_bankruptcy" value="{{ company_active_bankruptcy }}"/>
+                                                            <input type="hidden" name="company_started" value="{{ company_started }}"/>
+                                                            <input type="hidden" name="company_owner" value="Julian Beaujardin"/>
+                                                            <input type="hidden" name="utm_source" value="{{ utm_source }}"/>
+                                                            <input type="hidden" name="utm_campaign" value="{{ utm_campaign }}"/>
+                                                            <input type="hidden" name="utm_medium" value="{{ utm_medium }}"/>
+                                                            <input type="hidden" name="utm_term" value="{{ utm_term }}"/>
+                                                            <input type="hidden" name="utm_content" value="{{ utm_content }}"/>
+                                                            <input type="hidden" name="transaction_id" value="{{ transaction_id }}"/>
+                                                            <input type="hidden" name="source" value="{{ source }}"/>
+                                                            <input type="hidden" name="api_id" value="{{ api_id }}"/>
+                                                            <input type="hidden" name="submission_id" value="{{ submission_id }}"/>
+                                                            {{ if {form:success} }}
+                                                                {{ form_submission }}
+                                                            {{ /if }}
+                                                        </div>
+                                                        <br>
+                                                        <button class="btn btn-primary">SUBMIT</button>
+                                                        {{ if errors }}
+                                                            <div id="error-alert">
+                                                                {{ errors }}
+                                                                {{ value }}<br>
+                                                                {{ /errors }}
+                                                            </div>
+                                                        {{ /if }}
+                                                        {{ /form:create }}
+                                                        {{ /form:set }}
+                                                    </article>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    {{ /FormStackAddon:self_service }}
+</main>

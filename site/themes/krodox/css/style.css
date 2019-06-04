@@ -7518,8 +7518,11 @@ body.section-complete #app > main section#form,
 body.section-preaprob #app > main section#form,
 body.section-feliz #app > main section#form,
 body.section-gracias #app > main section#form,
-body.section-self-service #app > main section#form,
-body.section-thanks #app > main section#form {
+body.section-steps #app > main section#form,
+body.section-step1 #app > main section#form,
+body.section-step2 #app > main section#form,
+body.section-step3 #app > main section#form,
+body.section-step4 #app > main section#form {
   background: #f1f6ef;
   margin: 0;
   padding: 90px 0;
@@ -7531,8 +7534,11 @@ body.section-complete #app > main section#form h1,
 body.section-preaprob #app > main section#form h1,
 body.section-feliz #app > main section#form h1,
 body.section-gracias #app > main section#form h1,
-body.section-self-service #app > main section#form h1,
-body.section-thanks #app > main section#form h1 {
+body.section-steps #app > main section#form h1,
+body.section-step1 #app > main section#form h1,
+body.section-step2 #app > main section#form h1,
+body.section-step3 #app > main section#form h1,
+body.section-step4 #app > main section#form h1 {
   padding: 0;
   text-align: center;
   font-weight: 900;
@@ -7547,8 +7553,11 @@ body.section-complete #app > main section#form h2,
 body.section-preaprob #app > main section#form h2,
 body.section-feliz #app > main section#form h2,
 body.section-gracias #app > main section#form h2,
-body.section-self-service #app > main section#form h2,
-body.section-thanks #app > main section#form h2 {
+body.section-steps #app > main section#form h2,
+body.section-step1 #app > main section#form h2,
+body.section-step2 #app > main section#form h2,
+body.section-step3 #app > main section#form h2,
+body.section-step4 #app > main section#form h2 {
   font-size: 1.2rem;
   margin: 0 auto;
   padding-top: 8px;
@@ -7561,8 +7570,11 @@ body.section-complete #app > main section#form .form-wrapper .form,
 body.section-preaprob #app > main section#form .form-wrapper .form,
 body.section-feliz #app > main section#form .form-wrapper .form,
 body.section-gracias #app > main section#form .form-wrapper .form,
-body.section-self-service #app > main section#form .form-wrapper .form,
-body.section-thanks #app > main section#form .form-wrapper .form {
+body.section-steps #app > main section#form .form-wrapper .form,
+body.section-step1 #app > main section#form .form-wrapper .form,
+body.section-step2 #app > main section#form .form-wrapper .form,
+body.section-step3 #app > main section#form .form-wrapper .form,
+body.section-step4 #app > main section#form .form-wrapper .form {
   width: 100%;
   min-height: 400px;
   z-index: 1;
@@ -7575,8 +7587,11 @@ body.section-complete #app > main section#form .form-wrapper .form form,
 body.section-preaprob #app > main section#form .form-wrapper .form form,
 body.section-feliz #app > main section#form .form-wrapper .form form,
 body.section-gracias #app > main section#form .form-wrapper .form form,
-body.section-self-service #app > main section#form .form-wrapper .form form,
-body.section-thanks #app > main section#form .form-wrapper .form form {
+body.section-steps #app > main section#form .form-wrapper .form form,
+body.section-step1 #app > main section#form .form-wrapper .form form,
+body.section-step2 #app > main section#form .form-wrapper .form form,
+body.section-step3 #app > main section#form .form-wrapper .form form,
+body.section-step4 #app > main section#form .form-wrapper .form form {
   background-color: transparent !important;
 }
 
@@ -7586,8 +7601,11 @@ body.section-complete #app > main section#form .form-wrapper .badgets,
 body.section-preaprob #app > main section#form .form-wrapper .badgets,
 body.section-feliz #app > main section#form .form-wrapper .badgets,
 body.section-gracias #app > main section#form .form-wrapper .badgets,
-body.section-self-service #app > main section#form .form-wrapper .badgets,
-body.section-thanks #app > main section#form .form-wrapper .badgets {
+body.section-steps #app > main section#form .form-wrapper .badgets,
+body.section-step1 #app > main section#form .form-wrapper .badgets,
+body.section-step2 #app > main section#form .form-wrapper .badgets,
+body.section-step3 #app > main section#form .form-wrapper .badgets,
+body.section-step4 #app > main section#form .form-wrapper .badgets {
   display: none;
   width: 300px;
   margin: 0 auto;
@@ -7599,8 +7617,11 @@ body.section-complete #app > main section#form .form-wrapper .legal-notice,
 body.section-preaprob #app > main section#form .form-wrapper .legal-notice,
 body.section-feliz #app > main section#form .form-wrapper .legal-notice,
 body.section-gracias #app > main section#form .form-wrapper .legal-notice,
-body.section-self-service #app > main section#form .form-wrapper .legal-notice,
-body.section-thanks #app > main section#form .form-wrapper .legal-notice {
+body.section-steps #app > main section#form .form-wrapper .legal-notice,
+body.section-step1 #app > main section#form .form-wrapper .legal-notice,
+body.section-step2 #app > main section#form .form-wrapper .legal-notice,
+body.section-step3 #app > main section#form .form-wrapper .legal-notice,
+body.section-step4 #app > main section#form .form-wrapper .legal-notice {
   margin: 0;
   display: -ms-flexbox;
   display: flex;
@@ -7617,12 +7638,16 @@ body.section-complete #app > main section#form .form-wrapper .legal-notice p,
 body.section-preaprob #app > main section#form .form-wrapper .legal-notice p,
 body.section-feliz #app > main section#form .form-wrapper .legal-notice p,
 body.section-gracias #app > main section#form .form-wrapper .legal-notice p,
-body.section-self-service #app > main section#form .form-wrapper .legal-notice p,
-body.section-thanks #app > main section#form .form-wrapper .legal-notice p {
+body.section-steps #app > main section#form .form-wrapper .legal-notice p,
+body.section-step1 #app > main section#form .form-wrapper .legal-notice p,
+body.section-step2 #app > main section#form .form-wrapper .legal-notice p,
+body.section-step3 #app > main section#form .form-wrapper .legal-notice p,
+body.section-step4 #app > main section#form .form-wrapper .legal-notice p {
   color: #5f5e5e;
   line-height: 1.5;
   text-align: left;
-  padding: 0 0 0 30px;
+  padding: 0;
+  font-size: .8rem;
 }
 
 body.section-pre-qualification #app > main section#form .form-wrapper .legal-notice p a,
@@ -7631,8 +7656,11 @@ body.section-complete #app > main section#form .form-wrapper .legal-notice p a,
 body.section-preaprob #app > main section#form .form-wrapper .legal-notice p a,
 body.section-feliz #app > main section#form .form-wrapper .legal-notice p a,
 body.section-gracias #app > main section#form .form-wrapper .legal-notice p a,
-body.section-self-service #app > main section#form .form-wrapper .legal-notice p a,
-body.section-thanks #app > main section#form .form-wrapper .legal-notice p a {
+body.section-steps #app > main section#form .form-wrapper .legal-notice p a,
+body.section-step1 #app > main section#form .form-wrapper .legal-notice p a,
+body.section-step2 #app > main section#form .form-wrapper .legal-notice p a,
+body.section-step3 #app > main section#form .form-wrapper .legal-notice p a,
+body.section-step4 #app > main section#form .form-wrapper .legal-notice p a {
   color: #359c1c;
 }
 
@@ -7666,16 +7694,31 @@ body.section-gracias #app > main section#form input[type=tel],
 body.section-gracias #app > main section#form input[type=email],
 body.section-gracias #app > main section#form input[type=number],
 body.section-gracias #app > main section#form select,
-body.section-self-service #app > main section#form input[type=text],
-body.section-self-service #app > main section#form input[type=tel],
-body.section-self-service #app > main section#form input[type=email],
-body.section-self-service #app > main section#form input[type=number],
-body.section-self-service #app > main section#form select,
-body.section-thanks #app > main section#form input[type=text],
-body.section-thanks #app > main section#form input[type=tel],
-body.section-thanks #app > main section#form input[type=email],
-body.section-thanks #app > main section#form input[type=number],
-body.section-thanks #app > main section#form select {
+body.section-steps #app > main section#form input[type=text],
+body.section-steps #app > main section#form input[type=tel],
+body.section-steps #app > main section#form input[type=email],
+body.section-steps #app > main section#form input[type=number],
+body.section-steps #app > main section#form select,
+body.section-step1 #app > main section#form input[type=text],
+body.section-step1 #app > main section#form input[type=tel],
+body.section-step1 #app > main section#form input[type=email],
+body.section-step1 #app > main section#form input[type=number],
+body.section-step1 #app > main section#form select,
+body.section-step2 #app > main section#form input[type=text],
+body.section-step2 #app > main section#form input[type=tel],
+body.section-step2 #app > main section#form input[type=email],
+body.section-step2 #app > main section#form input[type=number],
+body.section-step2 #app > main section#form select,
+body.section-step3 #app > main section#form input[type=text],
+body.section-step3 #app > main section#form input[type=tel],
+body.section-step3 #app > main section#form input[type=email],
+body.section-step3 #app > main section#form input[type=number],
+body.section-step3 #app > main section#form select,
+body.section-step4 #app > main section#form input[type=text],
+body.section-step4 #app > main section#form input[type=tel],
+body.section-step4 #app > main section#form input[type=email],
+body.section-step4 #app > main section#form input[type=number],
+body.section-step4 #app > main section#form select {
   box-shadow: 0 0 48px rgba(83, 167, 61, 0.3);
 }
 
@@ -7685,9 +7728,472 @@ body.section-complete #app > main section#form #fsSubmitButton2925351,
 body.section-preaprob #app > main section#form #fsSubmitButton2925351,
 body.section-feliz #app > main section#form #fsSubmitButton2925351,
 body.section-gracias #app > main section#form #fsSubmitButton2925351,
-body.section-self-service #app > main section#form #fsSubmitButton2925351,
-body.section-thanks #app > main section#form #fsSubmitButton2925351 {
+body.section-steps #app > main section#form #fsSubmitButton2925351,
+body.section-step1 #app > main section#form #fsSubmitButton2925351,
+body.section-step2 #app > main section#form #fsSubmitButton2925351,
+body.section-step3 #app > main section#form #fsSubmitButton2925351,
+body.section-step4 #app > main section#form #fsSubmitButton2925351 {
   width: 300px;
+}
+
+body.section-pre-qualification #app > main section#form article,
+body.section-congrats #app > main section#form article,
+body.section-complete #app > main section#form article,
+body.section-preaprob #app > main section#form article,
+body.section-feliz #app > main section#form article,
+body.section-gracias #app > main section#form article,
+body.section-steps #app > main section#form article,
+body.section-step1 #app > main section#form article,
+body.section-step2 #app > main section#form article,
+body.section-step3 #app > main section#form article,
+body.section-step4 #app > main section#form article {
+  font-size: 1rem;
+  text-align: left;
+}
+
+body.section-pre-qualification #app > main section#form article.steps form,
+body.section-congrats #app > main section#form article.steps form,
+body.section-complete #app > main section#form article.steps form,
+body.section-preaprob #app > main section#form article.steps form,
+body.section-feliz #app > main section#form article.steps form,
+body.section-gracias #app > main section#form article.steps form,
+body.section-steps #app > main section#form article.steps form,
+body.section-step1 #app > main section#form article.steps form,
+body.section-step2 #app > main section#form article.steps form,
+body.section-step3 #app > main section#form article.steps form,
+body.section-step4 #app > main section#form article.steps form {
+  padding: 45px 0 30px;
+}
+
+body.section-pre-qualification #app > main section#form article.steps form .fields .honeypot,
+body.section-congrats #app > main section#form article.steps form .fields .honeypot,
+body.section-complete #app > main section#form article.steps form .fields .honeypot,
+body.section-preaprob #app > main section#form article.steps form .fields .honeypot,
+body.section-feliz #app > main section#form article.steps form .fields .honeypot,
+body.section-gracias #app > main section#form article.steps form .fields .honeypot,
+body.section-steps #app > main section#form article.steps form .fields .honeypot,
+body.section-step1 #app > main section#form article.steps form .fields .honeypot,
+body.section-step2 #app > main section#form article.steps form .fields .honeypot,
+body.section-step3 #app > main section#form article.steps form .fields .honeypot,
+body.section-step4 #app > main section#form article.steps form .fields .honeypot {
+  display: none;
+}
+
+body.section-pre-qualification #app > main section#form article.steps form .fields .form-row,
+body.section-pre-qualification #app > main section#form article.steps form .fields .form-group,
+body.section-congrats #app > main section#form article.steps form .fields .form-row,
+body.section-congrats #app > main section#form article.steps form .fields .form-group,
+body.section-complete #app > main section#form article.steps form .fields .form-row,
+body.section-complete #app > main section#form article.steps form .fields .form-group,
+body.section-preaprob #app > main section#form article.steps form .fields .form-row,
+body.section-preaprob #app > main section#form article.steps form .fields .form-group,
+body.section-feliz #app > main section#form article.steps form .fields .form-row,
+body.section-feliz #app > main section#form article.steps form .fields .form-group,
+body.section-gracias #app > main section#form article.steps form .fields .form-row,
+body.section-gracias #app > main section#form article.steps form .fields .form-group,
+body.section-steps #app > main section#form article.steps form .fields .form-row,
+body.section-steps #app > main section#form article.steps form .fields .form-group,
+body.section-step1 #app > main section#form article.steps form .fields .form-row,
+body.section-step1 #app > main section#form article.steps form .fields .form-group,
+body.section-step2 #app > main section#form article.steps form .fields .form-row,
+body.section-step2 #app > main section#form article.steps form .fields .form-group,
+body.section-step3 #app > main section#form article.steps form .fields .form-row,
+body.section-step3 #app > main section#form article.steps form .fields .form-group,
+body.section-step4 #app > main section#form article.steps form .fields .form-row,
+body.section-step4 #app > main section#form article.steps form .fields .form-group {
+  margin-top: 10px;
+}
+
+body.section-pre-qualification #app > main section#form article.steps form .fields .form-row label,
+body.section-pre-qualification #app > main section#form article.steps form .fields .form-group label,
+body.section-congrats #app > main section#form article.steps form .fields .form-row label,
+body.section-congrats #app > main section#form article.steps form .fields .form-group label,
+body.section-complete #app > main section#form article.steps form .fields .form-row label,
+body.section-complete #app > main section#form article.steps form .fields .form-group label,
+body.section-preaprob #app > main section#form article.steps form .fields .form-row label,
+body.section-preaprob #app > main section#form article.steps form .fields .form-group label,
+body.section-feliz #app > main section#form article.steps form .fields .form-row label,
+body.section-feliz #app > main section#form article.steps form .fields .form-group label,
+body.section-gracias #app > main section#form article.steps form .fields .form-row label,
+body.section-gracias #app > main section#form article.steps form .fields .form-group label,
+body.section-steps #app > main section#form article.steps form .fields .form-row label,
+body.section-steps #app > main section#form article.steps form .fields .form-group label,
+body.section-step1 #app > main section#form article.steps form .fields .form-row label,
+body.section-step1 #app > main section#form article.steps form .fields .form-group label,
+body.section-step2 #app > main section#form article.steps form .fields .form-row label,
+body.section-step2 #app > main section#form article.steps form .fields .form-group label,
+body.section-step3 #app > main section#form article.steps form .fields .form-row label,
+body.section-step3 #app > main section#form article.steps form .fields .form-group label,
+body.section-step4 #app > main section#form article.steps form .fields .form-row label,
+body.section-step4 #app > main section#form article.steps form .fields .form-group label {
+  width: 100%;
+}
+
+body.section-pre-qualification #app > main section#form article.steps form .fields .form-row label div,
+body.section-pre-qualification #app > main section#form article.steps form .fields .form-group label div,
+body.section-congrats #app > main section#form article.steps form .fields .form-row label div,
+body.section-congrats #app > main section#form article.steps form .fields .form-group label div,
+body.section-complete #app > main section#form article.steps form .fields .form-row label div,
+body.section-complete #app > main section#form article.steps form .fields .form-group label div,
+body.section-preaprob #app > main section#form article.steps form .fields .form-row label div,
+body.section-preaprob #app > main section#form article.steps form .fields .form-group label div,
+body.section-feliz #app > main section#form article.steps form .fields .form-row label div,
+body.section-feliz #app > main section#form article.steps form .fields .form-group label div,
+body.section-gracias #app > main section#form article.steps form .fields .form-row label div,
+body.section-gracias #app > main section#form article.steps form .fields .form-group label div,
+body.section-steps #app > main section#form article.steps form .fields .form-row label div,
+body.section-steps #app > main section#form article.steps form .fields .form-group label div,
+body.section-step1 #app > main section#form article.steps form .fields .form-row label div,
+body.section-step1 #app > main section#form article.steps form .fields .form-group label div,
+body.section-step2 #app > main section#form article.steps form .fields .form-row label div,
+body.section-step2 #app > main section#form article.steps form .fields .form-group label div,
+body.section-step3 #app > main section#form article.steps form .fields .form-row label div,
+body.section-step3 #app > main section#form article.steps form .fields .form-group label div,
+body.section-step4 #app > main section#form article.steps form .fields .form-row label div,
+body.section-step4 #app > main section#form article.steps form .fields .form-group label div {
+  font-size: .8rem;
+}
+
+body.section-pre-qualification #app > main section#form article.steps form .fields .form-row label input[type=text],
+body.section-pre-qualification #app > main section#form article.steps form .fields .form-row label input[type=email],
+body.section-pre-qualification #app > main section#form article.steps form .fields .form-row label input[type=tel],
+body.section-pre-qualification #app > main section#form article.steps form .fields .form-row label input[type=date],
+body.section-pre-qualification #app > main section#form article.steps form .fields .form-row label input[type=number],
+body.section-pre-qualification #app > main section#form article.steps form .fields .form-row label select,
+body.section-pre-qualification #app > main section#form article.steps form .fields .form-group label input[type=text],
+body.section-pre-qualification #app > main section#form article.steps form .fields .form-group label input[type=email],
+body.section-pre-qualification #app > main section#form article.steps form .fields .form-group label input[type=tel],
+body.section-pre-qualification #app > main section#form article.steps form .fields .form-group label input[type=date],
+body.section-pre-qualification #app > main section#form article.steps form .fields .form-group label input[type=number],
+body.section-pre-qualification #app > main section#form article.steps form .fields .form-group label select,
+body.section-congrats #app > main section#form article.steps form .fields .form-row label input[type=text],
+body.section-congrats #app > main section#form article.steps form .fields .form-row label input[type=email],
+body.section-congrats #app > main section#form article.steps form .fields .form-row label input[type=tel],
+body.section-congrats #app > main section#form article.steps form .fields .form-row label input[type=date],
+body.section-congrats #app > main section#form article.steps form .fields .form-row label input[type=number],
+body.section-congrats #app > main section#form article.steps form .fields .form-row label select,
+body.section-congrats #app > main section#form article.steps form .fields .form-group label input[type=text],
+body.section-congrats #app > main section#form article.steps form .fields .form-group label input[type=email],
+body.section-congrats #app > main section#form article.steps form .fields .form-group label input[type=tel],
+body.section-congrats #app > main section#form article.steps form .fields .form-group label input[type=date],
+body.section-congrats #app > main section#form article.steps form .fields .form-group label input[type=number],
+body.section-congrats #app > main section#form article.steps form .fields .form-group label select,
+body.section-complete #app > main section#form article.steps form .fields .form-row label input[type=text],
+body.section-complete #app > main section#form article.steps form .fields .form-row label input[type=email],
+body.section-complete #app > main section#form article.steps form .fields .form-row label input[type=tel],
+body.section-complete #app > main section#form article.steps form .fields .form-row label input[type=date],
+body.section-complete #app > main section#form article.steps form .fields .form-row label input[type=number],
+body.section-complete #app > main section#form article.steps form .fields .form-row label select,
+body.section-complete #app > main section#form article.steps form .fields .form-group label input[type=text],
+body.section-complete #app > main section#form article.steps form .fields .form-group label input[type=email],
+body.section-complete #app > main section#form article.steps form .fields .form-group label input[type=tel],
+body.section-complete #app > main section#form article.steps form .fields .form-group label input[type=date],
+body.section-complete #app > main section#form article.steps form .fields .form-group label input[type=number],
+body.section-complete #app > main section#form article.steps form .fields .form-group label select,
+body.section-preaprob #app > main section#form article.steps form .fields .form-row label input[type=text],
+body.section-preaprob #app > main section#form article.steps form .fields .form-row label input[type=email],
+body.section-preaprob #app > main section#form article.steps form .fields .form-row label input[type=tel],
+body.section-preaprob #app > main section#form article.steps form .fields .form-row label input[type=date],
+body.section-preaprob #app > main section#form article.steps form .fields .form-row label input[type=number],
+body.section-preaprob #app > main section#form article.steps form .fields .form-row label select,
+body.section-preaprob #app > main section#form article.steps form .fields .form-group label input[type=text],
+body.section-preaprob #app > main section#form article.steps form .fields .form-group label input[type=email],
+body.section-preaprob #app > main section#form article.steps form .fields .form-group label input[type=tel],
+body.section-preaprob #app > main section#form article.steps form .fields .form-group label input[type=date],
+body.section-preaprob #app > main section#form article.steps form .fields .form-group label input[type=number],
+body.section-preaprob #app > main section#form article.steps form .fields .form-group label select,
+body.section-feliz #app > main section#form article.steps form .fields .form-row label input[type=text],
+body.section-feliz #app > main section#form article.steps form .fields .form-row label input[type=email],
+body.section-feliz #app > main section#form article.steps form .fields .form-row label input[type=tel],
+body.section-feliz #app > main section#form article.steps form .fields .form-row label input[type=date],
+body.section-feliz #app > main section#form article.steps form .fields .form-row label input[type=number],
+body.section-feliz #app > main section#form article.steps form .fields .form-row label select,
+body.section-feliz #app > main section#form article.steps form .fields .form-group label input[type=text],
+body.section-feliz #app > main section#form article.steps form .fields .form-group label input[type=email],
+body.section-feliz #app > main section#form article.steps form .fields .form-group label input[type=tel],
+body.section-feliz #app > main section#form article.steps form .fields .form-group label input[type=date],
+body.section-feliz #app > main section#form article.steps form .fields .form-group label input[type=number],
+body.section-feliz #app > main section#form article.steps form .fields .form-group label select,
+body.section-gracias #app > main section#form article.steps form .fields .form-row label input[type=text],
+body.section-gracias #app > main section#form article.steps form .fields .form-row label input[type=email],
+body.section-gracias #app > main section#form article.steps form .fields .form-row label input[type=tel],
+body.section-gracias #app > main section#form article.steps form .fields .form-row label input[type=date],
+body.section-gracias #app > main section#form article.steps form .fields .form-row label input[type=number],
+body.section-gracias #app > main section#form article.steps form .fields .form-row label select,
+body.section-gracias #app > main section#form article.steps form .fields .form-group label input[type=text],
+body.section-gracias #app > main section#form article.steps form .fields .form-group label input[type=email],
+body.section-gracias #app > main section#form article.steps form .fields .form-group label input[type=tel],
+body.section-gracias #app > main section#form article.steps form .fields .form-group label input[type=date],
+body.section-gracias #app > main section#form article.steps form .fields .form-group label input[type=number],
+body.section-gracias #app > main section#form article.steps form .fields .form-group label select,
+body.section-steps #app > main section#form article.steps form .fields .form-row label input[type=text],
+body.section-steps #app > main section#form article.steps form .fields .form-row label input[type=email],
+body.section-steps #app > main section#form article.steps form .fields .form-row label input[type=tel],
+body.section-steps #app > main section#form article.steps form .fields .form-row label input[type=date],
+body.section-steps #app > main section#form article.steps form .fields .form-row label input[type=number],
+body.section-steps #app > main section#form article.steps form .fields .form-row label select,
+body.section-steps #app > main section#form article.steps form .fields .form-group label input[type=text],
+body.section-steps #app > main section#form article.steps form .fields .form-group label input[type=email],
+body.section-steps #app > main section#form article.steps form .fields .form-group label input[type=tel],
+body.section-steps #app > main section#form article.steps form .fields .form-group label input[type=date],
+body.section-steps #app > main section#form article.steps form .fields .form-group label input[type=number],
+body.section-steps #app > main section#form article.steps form .fields .form-group label select,
+body.section-step1 #app > main section#form article.steps form .fields .form-row label input[type=text],
+body.section-step1 #app > main section#form article.steps form .fields .form-row label input[type=email],
+body.section-step1 #app > main section#form article.steps form .fields .form-row label input[type=tel],
+body.section-step1 #app > main section#form article.steps form .fields .form-row label input[type=date],
+body.section-step1 #app > main section#form article.steps form .fields .form-row label input[type=number],
+body.section-step1 #app > main section#form article.steps form .fields .form-row label select,
+body.section-step1 #app > main section#form article.steps form .fields .form-group label input[type=text],
+body.section-step1 #app > main section#form article.steps form .fields .form-group label input[type=email],
+body.section-step1 #app > main section#form article.steps form .fields .form-group label input[type=tel],
+body.section-step1 #app > main section#form article.steps form .fields .form-group label input[type=date],
+body.section-step1 #app > main section#form article.steps form .fields .form-group label input[type=number],
+body.section-step1 #app > main section#form article.steps form .fields .form-group label select,
+body.section-step2 #app > main section#form article.steps form .fields .form-row label input[type=text],
+body.section-step2 #app > main section#form article.steps form .fields .form-row label input[type=email],
+body.section-step2 #app > main section#form article.steps form .fields .form-row label input[type=tel],
+body.section-step2 #app > main section#form article.steps form .fields .form-row label input[type=date],
+body.section-step2 #app > main section#form article.steps form .fields .form-row label input[type=number],
+body.section-step2 #app > main section#form article.steps form .fields .form-row label select,
+body.section-step2 #app > main section#form article.steps form .fields .form-group label input[type=text],
+body.section-step2 #app > main section#form article.steps form .fields .form-group label input[type=email],
+body.section-step2 #app > main section#form article.steps form .fields .form-group label input[type=tel],
+body.section-step2 #app > main section#form article.steps form .fields .form-group label input[type=date],
+body.section-step2 #app > main section#form article.steps form .fields .form-group label input[type=number],
+body.section-step2 #app > main section#form article.steps form .fields .form-group label select,
+body.section-step3 #app > main section#form article.steps form .fields .form-row label input[type=text],
+body.section-step3 #app > main section#form article.steps form .fields .form-row label input[type=email],
+body.section-step3 #app > main section#form article.steps form .fields .form-row label input[type=tel],
+body.section-step3 #app > main section#form article.steps form .fields .form-row label input[type=date],
+body.section-step3 #app > main section#form article.steps form .fields .form-row label input[type=number],
+body.section-step3 #app > main section#form article.steps form .fields .form-row label select,
+body.section-step3 #app > main section#form article.steps form .fields .form-group label input[type=text],
+body.section-step3 #app > main section#form article.steps form .fields .form-group label input[type=email],
+body.section-step3 #app > main section#form article.steps form .fields .form-group label input[type=tel],
+body.section-step3 #app > main section#form article.steps form .fields .form-group label input[type=date],
+body.section-step3 #app > main section#form article.steps form .fields .form-group label input[type=number],
+body.section-step3 #app > main section#form article.steps form .fields .form-group label select,
+body.section-step4 #app > main section#form article.steps form .fields .form-row label input[type=text],
+body.section-step4 #app > main section#form article.steps form .fields .form-row label input[type=email],
+body.section-step4 #app > main section#form article.steps form .fields .form-row label input[type=tel],
+body.section-step4 #app > main section#form article.steps form .fields .form-row label input[type=date],
+body.section-step4 #app > main section#form article.steps form .fields .form-row label input[type=number],
+body.section-step4 #app > main section#form article.steps form .fields .form-row label select,
+body.section-step4 #app > main section#form article.steps form .fields .form-group label input[type=text],
+body.section-step4 #app > main section#form article.steps form .fields .form-group label input[type=email],
+body.section-step4 #app > main section#form article.steps form .fields .form-group label input[type=tel],
+body.section-step4 #app > main section#form article.steps form .fields .form-group label input[type=date],
+body.section-step4 #app > main section#form article.steps form .fields .form-group label input[type=number],
+body.section-step4 #app > main section#form article.steps form .fields .form-group label select {
+  margin-top: 5px;
+  box-shadow: 0 0 48px rgba(83, 167, 61, 0.3);
+  border: solid 2px #ccc;
+}
+
+body.section-pre-qualification #app > main section#form article.steps form .fields .form-row label input[type=text]:focus,
+body.section-pre-qualification #app > main section#form article.steps form .fields .form-row label input[type=email]:focus,
+body.section-pre-qualification #app > main section#form article.steps form .fields .form-row label input[type=tel]:focus,
+body.section-pre-qualification #app > main section#form article.steps form .fields .form-row label input[type=date]:focus,
+body.section-pre-qualification #app > main section#form article.steps form .fields .form-row label input[type=number]:focus,
+body.section-pre-qualification #app > main section#form article.steps form .fields .form-row label select:focus,
+body.section-pre-qualification #app > main section#form article.steps form .fields .form-group label input[type=text]:focus,
+body.section-pre-qualification #app > main section#form article.steps form .fields .form-group label input[type=email]:focus,
+body.section-pre-qualification #app > main section#form article.steps form .fields .form-group label input[type=tel]:focus,
+body.section-pre-qualification #app > main section#form article.steps form .fields .form-group label input[type=date]:focus,
+body.section-pre-qualification #app > main section#form article.steps form .fields .form-group label input[type=number]:focus,
+body.section-pre-qualification #app > main section#form article.steps form .fields .form-group label select:focus,
+body.section-congrats #app > main section#form article.steps form .fields .form-row label input[type=text]:focus,
+body.section-congrats #app > main section#form article.steps form .fields .form-row label input[type=email]:focus,
+body.section-congrats #app > main section#form article.steps form .fields .form-row label input[type=tel]:focus,
+body.section-congrats #app > main section#form article.steps form .fields .form-row label input[type=date]:focus,
+body.section-congrats #app > main section#form article.steps form .fields .form-row label input[type=number]:focus,
+body.section-congrats #app > main section#form article.steps form .fields .form-row label select:focus,
+body.section-congrats #app > main section#form article.steps form .fields .form-group label input[type=text]:focus,
+body.section-congrats #app > main section#form article.steps form .fields .form-group label input[type=email]:focus,
+body.section-congrats #app > main section#form article.steps form .fields .form-group label input[type=tel]:focus,
+body.section-congrats #app > main section#form article.steps form .fields .form-group label input[type=date]:focus,
+body.section-congrats #app > main section#form article.steps form .fields .form-group label input[type=number]:focus,
+body.section-congrats #app > main section#form article.steps form .fields .form-group label select:focus,
+body.section-complete #app > main section#form article.steps form .fields .form-row label input[type=text]:focus,
+body.section-complete #app > main section#form article.steps form .fields .form-row label input[type=email]:focus,
+body.section-complete #app > main section#form article.steps form .fields .form-row label input[type=tel]:focus,
+body.section-complete #app > main section#form article.steps form .fields .form-row label input[type=date]:focus,
+body.section-complete #app > main section#form article.steps form .fields .form-row label input[type=number]:focus,
+body.section-complete #app > main section#form article.steps form .fields .form-row label select:focus,
+body.section-complete #app > main section#form article.steps form .fields .form-group label input[type=text]:focus,
+body.section-complete #app > main section#form article.steps form .fields .form-group label input[type=email]:focus,
+body.section-complete #app > main section#form article.steps form .fields .form-group label input[type=tel]:focus,
+body.section-complete #app > main section#form article.steps form .fields .form-group label input[type=date]:focus,
+body.section-complete #app > main section#form article.steps form .fields .form-group label input[type=number]:focus,
+body.section-complete #app > main section#form article.steps form .fields .form-group label select:focus,
+body.section-preaprob #app > main section#form article.steps form .fields .form-row label input[type=text]:focus,
+body.section-preaprob #app > main section#form article.steps form .fields .form-row label input[type=email]:focus,
+body.section-preaprob #app > main section#form article.steps form .fields .form-row label input[type=tel]:focus,
+body.section-preaprob #app > main section#form article.steps form .fields .form-row label input[type=date]:focus,
+body.section-preaprob #app > main section#form article.steps form .fields .form-row label input[type=number]:focus,
+body.section-preaprob #app > main section#form article.steps form .fields .form-row label select:focus,
+body.section-preaprob #app > main section#form article.steps form .fields .form-group label input[type=text]:focus,
+body.section-preaprob #app > main section#form article.steps form .fields .form-group label input[type=email]:focus,
+body.section-preaprob #app > main section#form article.steps form .fields .form-group label input[type=tel]:focus,
+body.section-preaprob #app > main section#form article.steps form .fields .form-group label input[type=date]:focus,
+body.section-preaprob #app > main section#form article.steps form .fields .form-group label input[type=number]:focus,
+body.section-preaprob #app > main section#form article.steps form .fields .form-group label select:focus,
+body.section-feliz #app > main section#form article.steps form .fields .form-row label input[type=text]:focus,
+body.section-feliz #app > main section#form article.steps form .fields .form-row label input[type=email]:focus,
+body.section-feliz #app > main section#form article.steps form .fields .form-row label input[type=tel]:focus,
+body.section-feliz #app > main section#form article.steps form .fields .form-row label input[type=date]:focus,
+body.section-feliz #app > main section#form article.steps form .fields .form-row label input[type=number]:focus,
+body.section-feliz #app > main section#form article.steps form .fields .form-row label select:focus,
+body.section-feliz #app > main section#form article.steps form .fields .form-group label input[type=text]:focus,
+body.section-feliz #app > main section#form article.steps form .fields .form-group label input[type=email]:focus,
+body.section-feliz #app > main section#form article.steps form .fields .form-group label input[type=tel]:focus,
+body.section-feliz #app > main section#form article.steps form .fields .form-group label input[type=date]:focus,
+body.section-feliz #app > main section#form article.steps form .fields .form-group label input[type=number]:focus,
+body.section-feliz #app > main section#form article.steps form .fields .form-group label select:focus,
+body.section-gracias #app > main section#form article.steps form .fields .form-row label input[type=text]:focus,
+body.section-gracias #app > main section#form article.steps form .fields .form-row label input[type=email]:focus,
+body.section-gracias #app > main section#form article.steps form .fields .form-row label input[type=tel]:focus,
+body.section-gracias #app > main section#form article.steps form .fields .form-row label input[type=date]:focus,
+body.section-gracias #app > main section#form article.steps form .fields .form-row label input[type=number]:focus,
+body.section-gracias #app > main section#form article.steps form .fields .form-row label select:focus,
+body.section-gracias #app > main section#form article.steps form .fields .form-group label input[type=text]:focus,
+body.section-gracias #app > main section#form article.steps form .fields .form-group label input[type=email]:focus,
+body.section-gracias #app > main section#form article.steps form .fields .form-group label input[type=tel]:focus,
+body.section-gracias #app > main section#form article.steps form .fields .form-group label input[type=date]:focus,
+body.section-gracias #app > main section#form article.steps form .fields .form-group label input[type=number]:focus,
+body.section-gracias #app > main section#form article.steps form .fields .form-group label select:focus,
+body.section-steps #app > main section#form article.steps form .fields .form-row label input[type=text]:focus,
+body.section-steps #app > main section#form article.steps form .fields .form-row label input[type=email]:focus,
+body.section-steps #app > main section#form article.steps form .fields .form-row label input[type=tel]:focus,
+body.section-steps #app > main section#form article.steps form .fields .form-row label input[type=date]:focus,
+body.section-steps #app > main section#form article.steps form .fields .form-row label input[type=number]:focus,
+body.section-steps #app > main section#form article.steps form .fields .form-row label select:focus,
+body.section-steps #app > main section#form article.steps form .fields .form-group label input[type=text]:focus,
+body.section-steps #app > main section#form article.steps form .fields .form-group label input[type=email]:focus,
+body.section-steps #app > main section#form article.steps form .fields .form-group label input[type=tel]:focus,
+body.section-steps #app > main section#form article.steps form .fields .form-group label input[type=date]:focus,
+body.section-steps #app > main section#form article.steps form .fields .form-group label input[type=number]:focus,
+body.section-steps #app > main section#form article.steps form .fields .form-group label select:focus,
+body.section-step1 #app > main section#form article.steps form .fields .form-row label input[type=text]:focus,
+body.section-step1 #app > main section#form article.steps form .fields .form-row label input[type=email]:focus,
+body.section-step1 #app > main section#form article.steps form .fields .form-row label input[type=tel]:focus,
+body.section-step1 #app > main section#form article.steps form .fields .form-row label input[type=date]:focus,
+body.section-step1 #app > main section#form article.steps form .fields .form-row label input[type=number]:focus,
+body.section-step1 #app > main section#form article.steps form .fields .form-row label select:focus,
+body.section-step1 #app > main section#form article.steps form .fields .form-group label input[type=text]:focus,
+body.section-step1 #app > main section#form article.steps form .fields .form-group label input[type=email]:focus,
+body.section-step1 #app > main section#form article.steps form .fields .form-group label input[type=tel]:focus,
+body.section-step1 #app > main section#form article.steps form .fields .form-group label input[type=date]:focus,
+body.section-step1 #app > main section#form article.steps form .fields .form-group label input[type=number]:focus,
+body.section-step1 #app > main section#form article.steps form .fields .form-group label select:focus,
+body.section-step2 #app > main section#form article.steps form .fields .form-row label input[type=text]:focus,
+body.section-step2 #app > main section#form article.steps form .fields .form-row label input[type=email]:focus,
+body.section-step2 #app > main section#form article.steps form .fields .form-row label input[type=tel]:focus,
+body.section-step2 #app > main section#form article.steps form .fields .form-row label input[type=date]:focus,
+body.section-step2 #app > main section#form article.steps form .fields .form-row label input[type=number]:focus,
+body.section-step2 #app > main section#form article.steps form .fields .form-row label select:focus,
+body.section-step2 #app > main section#form article.steps form .fields .form-group label input[type=text]:focus,
+body.section-step2 #app > main section#form article.steps form .fields .form-group label input[type=email]:focus,
+body.section-step2 #app > main section#form article.steps form .fields .form-group label input[type=tel]:focus,
+body.section-step2 #app > main section#form article.steps form .fields .form-group label input[type=date]:focus,
+body.section-step2 #app > main section#form article.steps form .fields .form-group label input[type=number]:focus,
+body.section-step2 #app > main section#form article.steps form .fields .form-group label select:focus,
+body.section-step3 #app > main section#form article.steps form .fields .form-row label input[type=text]:focus,
+body.section-step3 #app > main section#form article.steps form .fields .form-row label input[type=email]:focus,
+body.section-step3 #app > main section#form article.steps form .fields .form-row label input[type=tel]:focus,
+body.section-step3 #app > main section#form article.steps form .fields .form-row label input[type=date]:focus,
+body.section-step3 #app > main section#form article.steps form .fields .form-row label input[type=number]:focus,
+body.section-step3 #app > main section#form article.steps form .fields .form-row label select:focus,
+body.section-step3 #app > main section#form article.steps form .fields .form-group label input[type=text]:focus,
+body.section-step3 #app > main section#form article.steps form .fields .form-group label input[type=email]:focus,
+body.section-step3 #app > main section#form article.steps form .fields .form-group label input[type=tel]:focus,
+body.section-step3 #app > main section#form article.steps form .fields .form-group label input[type=date]:focus,
+body.section-step3 #app > main section#form article.steps form .fields .form-group label input[type=number]:focus,
+body.section-step3 #app > main section#form article.steps form .fields .form-group label select:focus,
+body.section-step4 #app > main section#form article.steps form .fields .form-row label input[type=text]:focus,
+body.section-step4 #app > main section#form article.steps form .fields .form-row label input[type=email]:focus,
+body.section-step4 #app > main section#form article.steps form .fields .form-row label input[type=tel]:focus,
+body.section-step4 #app > main section#form article.steps form .fields .form-row label input[type=date]:focus,
+body.section-step4 #app > main section#form article.steps form .fields .form-row label input[type=number]:focus,
+body.section-step4 #app > main section#form article.steps form .fields .form-row label select:focus,
+body.section-step4 #app > main section#form article.steps form .fields .form-group label input[type=text]:focus,
+body.section-step4 #app > main section#form article.steps form .fields .form-group label input[type=email]:focus,
+body.section-step4 #app > main section#form article.steps form .fields .form-group label input[type=tel]:focus,
+body.section-step4 #app > main section#form article.steps form .fields .form-group label input[type=date]:focus,
+body.section-step4 #app > main section#form article.steps form .fields .form-group label input[type=number]:focus,
+body.section-step4 #app > main section#form article.steps form .fields .form-group label select:focus {
+  border: solid 2px #359c1c;
+}
+
+body.section-pre-qualification #app > main section#form article.steps form .fields .form-row label select.w50,
+body.section-pre-qualification #app > main section#form article.steps form .fields .form-group label select.w50,
+body.section-congrats #app > main section#form article.steps form .fields .form-row label select.w50,
+body.section-congrats #app > main section#form article.steps form .fields .form-group label select.w50,
+body.section-complete #app > main section#form article.steps form .fields .form-row label select.w50,
+body.section-complete #app > main section#form article.steps form .fields .form-group label select.w50,
+body.section-preaprob #app > main section#form article.steps form .fields .form-row label select.w50,
+body.section-preaprob #app > main section#form article.steps form .fields .form-group label select.w50,
+body.section-feliz #app > main section#form article.steps form .fields .form-row label select.w50,
+body.section-feliz #app > main section#form article.steps form .fields .form-group label select.w50,
+body.section-gracias #app > main section#form article.steps form .fields .form-row label select.w50,
+body.section-gracias #app > main section#form article.steps form .fields .form-group label select.w50,
+body.section-steps #app > main section#form article.steps form .fields .form-row label select.w50,
+body.section-steps #app > main section#form article.steps form .fields .form-group label select.w50,
+body.section-step1 #app > main section#form article.steps form .fields .form-row label select.w50,
+body.section-step1 #app > main section#form article.steps form .fields .form-group label select.w50,
+body.section-step2 #app > main section#form article.steps form .fields .form-row label select.w50,
+body.section-step2 #app > main section#form article.steps form .fields .form-group label select.w50,
+body.section-step3 #app > main section#form article.steps form .fields .form-row label select.w50,
+body.section-step3 #app > main section#form article.steps form .fields .form-group label select.w50,
+body.section-step4 #app > main section#form article.steps form .fields .form-row label select.w50,
+body.section-step4 #app > main section#form article.steps form .fields .form-group label select.w50 {
+  width: 50%;
+  float: left;
+  margin-right: 1%;
+}
+
+body.section-pre-qualification #app > main section#form article.steps form .fields .form-row label select.w49,
+body.section-pre-qualification #app > main section#form article.steps form .fields .form-group label select.w49,
+body.section-congrats #app > main section#form article.steps form .fields .form-row label select.w49,
+body.section-congrats #app > main section#form article.steps form .fields .form-group label select.w49,
+body.section-complete #app > main section#form article.steps form .fields .form-row label select.w49,
+body.section-complete #app > main section#form article.steps form .fields .form-group label select.w49,
+body.section-preaprob #app > main section#form article.steps form .fields .form-row label select.w49,
+body.section-preaprob #app > main section#form article.steps form .fields .form-group label select.w49,
+body.section-feliz #app > main section#form article.steps form .fields .form-row label select.w49,
+body.section-feliz #app > main section#form article.steps form .fields .form-group label select.w49,
+body.section-gracias #app > main section#form article.steps form .fields .form-row label select.w49,
+body.section-gracias #app > main section#form article.steps form .fields .form-group label select.w49,
+body.section-steps #app > main section#form article.steps form .fields .form-row label select.w49,
+body.section-steps #app > main section#form article.steps form .fields .form-group label select.w49,
+body.section-step1 #app > main section#form article.steps form .fields .form-row label select.w49,
+body.section-step1 #app > main section#form article.steps form .fields .form-group label select.w49,
+body.section-step2 #app > main section#form article.steps form .fields .form-row label select.w49,
+body.section-step2 #app > main section#form article.steps form .fields .form-group label select.w49,
+body.section-step3 #app > main section#form article.steps form .fields .form-row label select.w49,
+body.section-step3 #app > main section#form article.steps form .fields .form-group label select.w49,
+body.section-step4 #app > main section#form article.steps form .fields .form-row label select.w49,
+body.section-step4 #app > main section#form article.steps form .fields .form-group label select.w49 {
+  width: 49%;
+  float: left;
+}
+
+body.section-pre-qualification #app > main section#form article.steps form #submit,
+body.section-congrats #app > main section#form article.steps form #submit,
+body.section-complete #app > main section#form article.steps form #submit,
+body.section-preaprob #app > main section#form article.steps form #submit,
+body.section-feliz #app > main section#form article.steps form #submit,
+body.section-gracias #app > main section#form article.steps form #submit,
+body.section-steps #app > main section#form article.steps form #submit,
+body.section-step1 #app > main section#form article.steps form #submit,
+body.section-step2 #app > main section#form article.steps form #submit,
+body.section-step3 #app > main section#form article.steps form #submit,
+body.section-step4 #app > main section#form article.steps form #submit {
+  width: 300px;
+  background-color: #359c1c;
+  border: #359c1c;
+  margin: 30px auto 0;
 }
 
 body.section-pre-qualification #app > main section ul.items,
@@ -7696,8 +8202,11 @@ body.section-complete #app > main section ul.items,
 body.section-preaprob #app > main section ul.items,
 body.section-feliz #app > main section ul.items,
 body.section-gracias #app > main section ul.items,
-body.section-self-service #app > main section ul.items,
-body.section-thanks #app > main section ul.items {
+body.section-steps #app > main section ul.items,
+body.section-step1 #app > main section ul.items,
+body.section-step2 #app > main section ul.items,
+body.section-step3 #app > main section ul.items,
+body.section-step4 #app > main section ul.items {
   margin-top: 0p;
   padding: 0 30px;
 }
@@ -7708,8 +8217,11 @@ body.section-complete #app > main section ul.items li,
 body.section-preaprob #app > main section ul.items li,
 body.section-feliz #app > main section ul.items li,
 body.section-gracias #app > main section ul.items li,
-body.section-self-service #app > main section ul.items li,
-body.section-thanks #app > main section ul.items li {
+body.section-steps #app > main section ul.items li,
+body.section-step1 #app > main section ul.items li,
+body.section-step2 #app > main section ul.items li,
+body.section-step3 #app > main section ul.items li,
+body.section-step4 #app > main section ul.items li {
   float: left;
   width: 100% !important;
   margin: 0 2% 2% 0;
@@ -7731,8 +8243,11 @@ body.section-complete #app > main section ul.items li:nth-child(1n),
 body.section-preaprob #app > main section ul.items li:nth-child(1n),
 body.section-feliz #app > main section ul.items li:nth-child(1n),
 body.section-gracias #app > main section ul.items li:nth-child(1n),
-body.section-self-service #app > main section ul.items li:nth-child(1n),
-body.section-thanks #app > main section ul.items li:nth-child(1n) {
+body.section-steps #app > main section ul.items li:nth-child(1n),
+body.section-step1 #app > main section ul.items li:nth-child(1n),
+body.section-step2 #app > main section ul.items li:nth-child(1n),
+body.section-step3 #app > main section ul.items li:nth-child(1n),
+body.section-step4 #app > main section ul.items li:nth-child(1n) {
   margin-right: 0;
 }
 
@@ -7742,8 +8257,11 @@ body.section-complete #app > main section ul.items li:nth-child(1n + 2),
 body.section-preaprob #app > main section ul.items li:nth-child(1n + 2),
 body.section-feliz #app > main section ul.items li:nth-child(1n + 2),
 body.section-gracias #app > main section ul.items li:nth-child(1n + 2),
-body.section-self-service #app > main section ul.items li:nth-child(1n + 2),
-body.section-thanks #app > main section ul.items li:nth-child(1n + 2) {
+body.section-steps #app > main section ul.items li:nth-child(1n + 2),
+body.section-step1 #app > main section ul.items li:nth-child(1n + 2),
+body.section-step2 #app > main section ul.items li:nth-child(1n + 2),
+body.section-step3 #app > main section ul.items li:nth-child(1n + 2),
+body.section-step4 #app > main section ul.items li:nth-child(1n + 2) {
   clear: left;
 }
 
@@ -7753,8 +8271,11 @@ body.section-complete #app > main section ul.items li:not(:last-child),
 body.section-preaprob #app > main section ul.items li:not(:last-child),
 body.section-feliz #app > main section ul.items li:not(:last-child),
 body.section-gracias #app > main section ul.items li:not(:last-child),
-body.section-self-service #app > main section ul.items li:not(:last-child),
-body.section-thanks #app > main section ul.items li:not(:last-child) {
+body.section-steps #app > main section ul.items li:not(:last-child),
+body.section-step1 #app > main section ul.items li:not(:last-child),
+body.section-step2 #app > main section ul.items li:not(:last-child),
+body.section-step3 #app > main section ul.items li:not(:last-child),
+body.section-step4 #app > main section ul.items li:not(:last-child) {
   border-top: solid 2px #e6dede;
 }
 
@@ -7764,8 +8285,11 @@ body.section-complete #app > main section ul.items li:last-child,
 body.section-preaprob #app > main section ul.items li:last-child,
 body.section-feliz #app > main section ul.items li:last-child,
 body.section-gracias #app > main section ul.items li:last-child,
-body.section-self-service #app > main section ul.items li:last-child,
-body.section-thanks #app > main section ul.items li:last-child {
+body.section-steps #app > main section ul.items li:last-child,
+body.section-step1 #app > main section ul.items li:last-child,
+body.section-step2 #app > main section ul.items li:last-child,
+body.section-step3 #app > main section ul.items li:last-child,
+body.section-step4 #app > main section ul.items li:last-child {
   border-top: solid 2px #e6dede;
   border-bottom: solid 2px #e6dede;
 }
@@ -7776,8 +8300,11 @@ body.section-complete #app > main section ul.items li:first-child,
 body.section-preaprob #app > main section ul.items li:first-child,
 body.section-feliz #app > main section ul.items li:first-child,
 body.section-gracias #app > main section ul.items li:first-child,
-body.section-self-service #app > main section ul.items li:first-child,
-body.section-thanks #app > main section ul.items li:first-child {
+body.section-steps #app > main section ul.items li:first-child,
+body.section-step1 #app > main section ul.items li:first-child,
+body.section-step2 #app > main section ul.items li:first-child,
+body.section-step3 #app > main section ul.items li:first-child,
+body.section-step4 #app > main section ul.items li:first-child {
   border-top: none;
 }
 
@@ -7787,8 +8314,11 @@ body.section-complete #app > main section ul.items li i,
 body.section-preaprob #app > main section ul.items li i,
 body.section-feliz #app > main section ul.items li i,
 body.section-gracias #app > main section ul.items li i,
-body.section-self-service #app > main section ul.items li i,
-body.section-thanks #app > main section ul.items li i {
+body.section-steps #app > main section ul.items li i,
+body.section-step1 #app > main section ul.items li i,
+body.section-step2 #app > main section ul.items li i,
+body.section-step3 #app > main section ul.items li i,
+body.section-step4 #app > main section ul.items li i {
   font-size: 3.5rem;
   color: #359c1c;
   margin-bottom: 15px;
@@ -7800,8 +8330,11 @@ body.section-complete #app > main section ul.badgets li,
 body.section-preaprob #app > main section ul.badgets li,
 body.section-feliz #app > main section ul.badgets li,
 body.section-gracias #app > main section ul.badgets li,
-body.section-self-service #app > main section ul.badgets li,
-body.section-thanks #app > main section ul.badgets li {
+body.section-steps #app > main section ul.badgets li,
+body.section-step1 #app > main section ul.badgets li,
+body.section-step2 #app > main section ul.badgets li,
+body.section-step3 #app > main section ul.badgets li,
+body.section-step4 #app > main section ul.badgets li {
   float: left;
   width: 49% !important;
   margin: 0 2% 2% 0;
@@ -7814,8 +8347,11 @@ body.section-complete #app > main section ul.badgets li:nth-child(2n),
 body.section-preaprob #app > main section ul.badgets li:nth-child(2n),
 body.section-feliz #app > main section ul.badgets li:nth-child(2n),
 body.section-gracias #app > main section ul.badgets li:nth-child(2n),
-body.section-self-service #app > main section ul.badgets li:nth-child(2n),
-body.section-thanks #app > main section ul.badgets li:nth-child(2n) {
+body.section-steps #app > main section ul.badgets li:nth-child(2n),
+body.section-step1 #app > main section ul.badgets li:nth-child(2n),
+body.section-step2 #app > main section ul.badgets li:nth-child(2n),
+body.section-step3 #app > main section ul.badgets li:nth-child(2n),
+body.section-step4 #app > main section ul.badgets li:nth-child(2n) {
   margin-right: 0;
 }
 
@@ -7825,8 +8361,11 @@ body.section-complete #app > main section ul.badgets li:nth-child(2n + 3),
 body.section-preaprob #app > main section ul.badgets li:nth-child(2n + 3),
 body.section-feliz #app > main section ul.badgets li:nth-child(2n + 3),
 body.section-gracias #app > main section ul.badgets li:nth-child(2n + 3),
-body.section-self-service #app > main section ul.badgets li:nth-child(2n + 3),
-body.section-thanks #app > main section ul.badgets li:nth-child(2n + 3) {
+body.section-steps #app > main section ul.badgets li:nth-child(2n + 3),
+body.section-step1 #app > main section ul.badgets li:nth-child(2n + 3),
+body.section-step2 #app > main section ul.badgets li:nth-child(2n + 3),
+body.section-step3 #app > main section ul.badgets li:nth-child(2n + 3),
+body.section-step4 #app > main section ul.badgets li:nth-child(2n + 3) {
   clear: left;
 }
 
@@ -7836,8 +8375,11 @@ body.section-complete #app > main section ul.badgets li img,
 body.section-preaprob #app > main section ul.badgets li img,
 body.section-feliz #app > main section ul.badgets li img,
 body.section-gracias #app > main section ul.badgets li img,
-body.section-self-service #app > main section ul.badgets li img,
-body.section-thanks #app > main section ul.badgets li img {
+body.section-steps #app > main section ul.badgets li img,
+body.section-step1 #app > main section ul.badgets li img,
+body.section-step2 #app > main section ul.badgets li img,
+body.section-step3 #app > main section ul.badgets li img,
+body.section-step4 #app > main section ul.badgets li img {
   max-width: 100%;
 }
 
@@ -7847,14 +8389,18 @@ body.section-complete #app > main section p,
 body.section-preaprob #app > main section p,
 body.section-feliz #app > main section p,
 body.section-gracias #app > main section p,
-body.section-self-service #app > main section p,
-body.section-thanks #app > main section p {
+body.section-steps #app > main section p,
+body.section-step1 #app > main section p,
+body.section-step2 #app > main section p,
+body.section-step3 #app > main section p,
+body.section-step4 #app > main section p {
   line-height: 1.5 !important;
 }
 
 body.section-congrats #app > main section#form .form #prequalifed-content,
 body.section-feliz #app > main section#form .form #prequalifed-content,
-body.section-self-service #app > main section#form .form #prequalifed-content {
+body.section-steps #app > main section#form .form #prequalifed-content,
+body.section-step2 #app > main section#form .form #prequalifed-content {
   background: white;
   padding: 30px 60px;
   font-size: 1.5em;
@@ -7864,7 +8410,8 @@ body.section-self-service #app > main section#form .form #prequalifed-content {
 
 body.section-congrats #app > main section#form .form #prequalifed-content h1,
 body.section-feliz #app > main section#form .form #prequalifed-content h1,
-body.section-self-service #app > main section#form .form #prequalifed-content h1 {
+body.section-steps #app > main section#form .form #prequalifed-content h1,
+body.section-step2 #app > main section#form .form #prequalifed-content h1 {
   font-size: 3rem;
   margin: 30px 0;
   text-align: center;
@@ -7872,14 +8419,16 @@ body.section-self-service #app > main section#form .form #prequalifed-content h1
 
 body.section-congrats #app > main section#form .form #prequalifed-content h2,
 body.section-feliz #app > main section#form .form #prequalifed-content h2,
-body.section-self-service #app > main section#form .form #prequalifed-content h2 {
+body.section-steps #app > main section#form .form #prequalifed-content h2,
+body.section-step2 #app > main section#form .form #prequalifed-content h2 {
   text-align: center;
   margin-bottom: 30px;
 }
 
 body.section-congrats #app > main section#form .form #prequalifed-content img,
 body.section-feliz #app > main section#form .form #prequalifed-content img,
-body.section-self-service #app > main section#form .form #prequalifed-content img {
+body.section-steps #app > main section#form .form #prequalifed-content img,
+body.section-step2 #app > main section#form .form #prequalifed-content img {
   background: #359c1c;
   padding: 20px;
   border-radius: 50%;
@@ -7888,7 +8437,8 @@ body.section-self-service #app > main section#form .form #prequalifed-content im
 
 body.section-congrats #app > main section#form .form #prequalifed-content div p.amount,
 body.section-feliz #app > main section#form .form #prequalifed-content div p.amount,
-body.section-self-service #app > main section#form .form #prequalifed-content div p.amount {
+body.section-steps #app > main section#form .form #prequalifed-content div p.amount,
+body.section-step2 #app > main section#form .form #prequalifed-content div p.amount {
   font-weight: 900;
   font-size: 3em;
   line-height: 1.2;
@@ -7896,13 +8446,15 @@ body.section-self-service #app > main section#form .form #prequalifed-content di
 
 body.section-congrats #app > main section#form .form #prequalifed-content p,
 body.section-feliz #app > main section#form .form #prequalifed-content p,
-body.section-self-service #app > main section#form .form #prequalifed-content p {
+body.section-steps #app > main section#form .form #prequalifed-content p,
+body.section-step2 #app > main section#form .form #prequalifed-content p {
   line-height: 1.5 !important;
 }
 
 body.section-congrats #app > main section#form .form #prequalifed-content button,
 body.section-feliz #app > main section#form .form #prequalifed-content button,
-body.section-self-service #app > main section#form .form #prequalifed-content button {
+body.section-steps #app > main section#form .form #prequalifed-content button,
+body.section-step2 #app > main section#form .form #prequalifed-content button {
   position: relative;
   text-decoration: none;
   display: -ms-flexbox;
@@ -7925,7 +8477,8 @@ body.section-self-service #app > main section#form .form #prequalifed-content bu
 
 body.section-congrats #app > main section#form .form #prequalifed-content button span,
 body.section-feliz #app > main section#form .form #prequalifed-content button span,
-body.section-self-service #app > main section#form .form #prequalifed-content button span {
+body.section-steps #app > main section#form .form #prequalifed-content button span,
+body.section-step2 #app > main section#form .form #prequalifed-content button span {
   color: white;
   font-size: 1.3em;
   font-weight: 900;
@@ -7933,25 +8486,27 @@ body.section-self-service #app > main section#form .form #prequalifed-content bu
 
 body.section-congrats #app > main section#form .form #prequalifed-content button:hover,
 body.section-feliz #app > main section#form .form #prequalifed-content button:hover,
-body.section-self-service #app > main section#form .form #prequalifed-content button:hover {
+body.section-steps #app > main section#form .form #prequalifed-content button:hover,
+body.section-step2 #app > main section#form .form #prequalifed-content button:hover {
   background-color: #1f384b;
 }
 
 body.section-congrats #app > main section#form .form a.btn,
 body.section-feliz #app > main section#form .form a.btn,
-body.section-self-service #app > main section#form .form a.btn {
+body.section-steps #app > main section#form .form a.btn,
+body.section-step2 #app > main section#form .form a.btn {
   display: inline-block;
 }
 
 body.section-complete #app > main section#form .form,
 body.section-gracias #app > main section#form .form,
-body.section-thanks #app > main section#form .form {
+body.section-step4 #app > main section#form .form {
   text-align: center;
 }
 
 body.section-complete #app > main section#form .form #prequalifed-content,
 body.section-gracias #app > main section#form .form #prequalifed-content,
-body.section-thanks #app > main section#form .form #prequalifed-content {
+body.section-step4 #app > main section#form .form #prequalifed-content {
   background: white;
   padding: 30px 60px;
   font-size: 1.5em;
@@ -7961,13 +8516,13 @@ body.section-thanks #app > main section#form .form #prequalifed-content {
 
 body.section-complete #app > main section#form .form #prequalifed-content h1,
 body.section-gracias #app > main section#form .form #prequalifed-content h1,
-body.section-thanks #app > main section#form .form #prequalifed-content h1 {
+body.section-step4 #app > main section#form .form #prequalifed-content h1 {
   text-align: center;
 }
 
 body.section-complete #app > main section#form .form #prequalifed-content img,
 body.section-gracias #app > main section#form .form #prequalifed-content img,
-body.section-thanks #app > main section#form .form #prequalifed-content img {
+body.section-step4 #app > main section#form .form #prequalifed-content img {
   background: #359c1c;
   padding: 20px;
   border-radius: 50%;
@@ -7976,7 +8531,7 @@ body.section-thanks #app > main section#form .form #prequalifed-content img {
 
 body.section-complete #app > main section#form .form a.btn,
 body.section-gracias #app > main section#form .form a.btn,
-body.section-thanks #app > main section#form .form a.btn {
+body.section-step4 #app > main section#form .form a.btn {
   display: inline-block;
 }
 
@@ -9010,11 +9565,11 @@ body.section-lp.fast_capital_360 #app > main section#features h2 {
   margin-top: 30px;
 }
 
-body.section-quote #app > main section#hero {
+body.section-step1 #app > main section#hero {
   height: calc(100vh - 120px);
 }
 
-body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form {
+body.section-step1 #app > main section#hero .lp-form-wrapper.light #form.lp-form {
   border: none;
   border-radius: 10px;
   background: white;
@@ -9027,51 +9582,51 @@ body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form
   box-shadow: 0 8px 16px -4px rgba(30, 31, 30, 0.3);
 }
 
-body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form h2 {
+body.section-step1 #app > main section#hero .lp-form-wrapper.light #form.lp-form h2 {
   font-size: 1.1rem;
   padding: 0;
   color: #323831;
   margin-bottom: 15px;
 }
 
-body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields .form-group {
+body.section-step1 #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields .form-group {
   margin-bottom: 8px;
 }
 
-body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields .form-group div.label {
+body.section-step1 #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields .form-group div.label {
   text-transform: uppercase;
   font-size: .6rem;
   text-align: left;
 }
 
-body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields .form-group div.label.mt-5 {
+body.section-step1 #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields .form-group div.label.mt-5 {
   margin-top: 5px !important;
 }
 
-body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields .form-group label {
+body.section-step1 #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields .form-group label {
   margin-bottom: 0;
   width: 100%;
   text-align: left;
 }
 
-body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields .form-group label.lefty-25 {
+body.section-step1 #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields .form-group label.lefty-25 {
   margin-left: -25px;
 }
 
-body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields .form-group label select {
+body.section-step1 #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields .form-group label select {
   margin-bottom: 5px;
   margin-top: 3px;
 }
 
-body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields .honeypot {
+body.section-step1 #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields .honeypot {
   display: none !important;
 }
 
-body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=text],
-body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=tel],
-body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=email],
-body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=number],
-body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields select {
+body.section-step1 #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=text],
+body.section-step1 #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=tel],
+body.section-step1 #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=email],
+body.section-step1 #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=number],
+body.section-step1 #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields select {
   margin-bottom: 10px;
   border-radius: 0;
   color: #323831;
@@ -9080,32 +9635,32 @@ body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form
   background: #eee;
 }
 
-body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=text]:focus,
-body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=tel]:focus,
-body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=email]:focus,
-body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=number]:focus,
-body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields select:focus {
+body.section-step1 #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=text]:focus,
+body.section-step1 #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=tel]:focus,
+body.section-step1 #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=email]:focus,
+body.section-step1 #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=number]:focus,
+body.section-step1 #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields select:focus {
   box-shadow: none;
   border-bottom: solid 4px #359c1c;
 }
 
-body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=text]:-ms-input-placeholder,
-body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=tel]:-ms-input-placeholder,
-body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=email]:-ms-input-placeholder,
-body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=number]:-ms-input-placeholder,
-body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields select:-ms-input-placeholder {
+body.section-step1 #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=text]:-ms-input-placeholder,
+body.section-step1 #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=tel]:-ms-input-placeholder,
+body.section-step1 #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=email]:-ms-input-placeholder,
+body.section-step1 #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=number]:-ms-input-placeholder,
+body.section-step1 #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields select:-ms-input-placeholder {
   color: #323831;
 }
 
-body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=text]::placeholder,
-body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=tel]::placeholder,
-body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=email]::placeholder,
-body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=number]::placeholder,
-body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields select::placeholder {
+body.section-step1 #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=text]::placeholder,
+body.section-step1 #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=tel]::placeholder,
+body.section-step1 #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=email]::placeholder,
+body.section-step1 #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields input[type=number]::placeholder,
+body.section-step1 #app > main section#hero .lp-form-wrapper.light #form.lp-form article .fields select::placeholder {
   color: #323831;
 }
 
-body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article button.btn {
+body.section-step1 #app > main section#hero .lp-form-wrapper.light #form.lp-form article button.btn {
   position: relative;
   width: 100%;
   left: 0;
@@ -9115,31 +9670,31 @@ body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form
   border: none;
 }
 
-body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article button.btn:hover {
+body.section-step1 #app > main section#hero .lp-form-wrapper.light #form.lp-form article button.btn:hover {
   background: #359c1c;
 }
 
-body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article ul.badgets {
+body.section-step1 #app > main section#hero .lp-form-wrapper.light #form.lp-form article ul.badgets {
   padding: 30px 0 0 0;
   max-width: 450px;
   display: none;
 }
 
-body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article ul.badgets li img {
+body.section-step1 #app > main section#hero .lp-form-wrapper.light #form.lp-form article ul.badgets li img {
   max-width: 130px;
 }
 
-body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .disclaimer {
+body.section-step1 #app > main section#hero .lp-form-wrapper.light #form.lp-form article .disclaimer {
   padding: 15px 0 0;
 }
 
-body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .disclaimer a {
+body.section-step1 #app > main section#hero .lp-form-wrapper.light #form.lp-form article .disclaimer a {
   color: #323831;
   font-size: .9rem;
   text-decoration: none;
 }
 
-body.section-quote #app > main section#hero .lp-form-wrapper.light #form.lp-form article .disclaimer a span {
+body.section-step1 #app > main section#hero .lp-form-wrapper.light #form.lp-form article .disclaimer a span {
   font-weight: 900;
   color: #359c1c;
   border-bottom: solid 1px #359c1c;
@@ -9411,8 +9966,11 @@ body #success-alert:after {
   body.section-preaprob #app > main section#form .form-wrapper .badgets,
   body.section-feliz #app > main section#form .form-wrapper .badgets,
   body.section-gracias #app > main section#form .form-wrapper .badgets,
-  body.section-self-service #app > main section#form .form-wrapper .badgets,
-  body.section-thanks #app > main section#form .form-wrapper .badgets {
+  body.section-steps #app > main section#form .form-wrapper .badgets,
+  body.section-step1 #app > main section#form .form-wrapper .badgets,
+  body.section-step2 #app > main section#form .form-wrapper .badgets,
+  body.section-step3 #app > main section#form .form-wrapper .badgets,
+  body.section-step4 #app > main section#form .form-wrapper .badgets {
     display: block;
   }
 
@@ -9422,8 +9980,11 @@ body #success-alert:after {
   body.section-preaprob #app > main section#form .form-wrapper .legal-notice,
   body.section-feliz #app > main section#form .form-wrapper .legal-notice,
   body.section-gracias #app > main section#form .form-wrapper .legal-notice,
-  body.section-self-service #app > main section#form .form-wrapper .legal-notice,
-  body.section-thanks #app > main section#form .form-wrapper .legal-notice {
+  body.section-steps #app > main section#form .form-wrapper .legal-notice,
+  body.section-step1 #app > main section#form .form-wrapper .legal-notice,
+  body.section-step2 #app > main section#form .form-wrapper .legal-notice,
+  body.section-step3 #app > main section#form .form-wrapper .legal-notice,
+  body.section-step4 #app > main section#form .form-wrapper .legal-notice {
     margin-top: 0;
   }
 
@@ -9433,8 +9994,11 @@ body #success-alert:after {
   body.section-preaprob #app > main section#form .form-wrapper .legal-notice p,
   body.section-feliz #app > main section#form .form-wrapper .legal-notice p,
   body.section-gracias #app > main section#form .form-wrapper .legal-notice p,
-  body.section-self-service #app > main section#form .form-wrapper .legal-notice p,
-  body.section-thanks #app > main section#form .form-wrapper .legal-notice p {
+  body.section-steps #app > main section#form .form-wrapper .legal-notice p,
+  body.section-step1 #app > main section#form .form-wrapper .legal-notice p,
+  body.section-step2 #app > main section#form .form-wrapper .legal-notice p,
+  body.section-step3 #app > main section#form .form-wrapper .legal-notice p,
+  body.section-step4 #app > main section#form .form-wrapper .legal-notice p {
     text-align: center;
   }
 
@@ -9444,8 +10008,11 @@ body #success-alert:after {
   body.section-preaprob #app > main section ul.items,
   body.section-feliz #app > main section ul.items,
   body.section-gracias #app > main section ul.items,
-  body.section-self-service #app > main section ul.items,
-  body.section-thanks #app > main section ul.items {
+  body.section-steps #app > main section ul.items,
+  body.section-step1 #app > main section ul.items,
+  body.section-step2 #app > main section ul.items,
+  body.section-step3 #app > main section ul.items,
+  body.section-step4 #app > main section ul.items {
     display: none;
   }
 
@@ -9455,8 +10022,11 @@ body #success-alert:after {
   body.section-preaprob #app > main section ul.badgets,
   body.section-feliz #app > main section ul.badgets,
   body.section-gracias #app > main section ul.badgets,
-  body.section-self-service #app > main section ul.badgets,
-  body.section-thanks #app > main section ul.badgets {
+  body.section-steps #app > main section ul.badgets,
+  body.section-step1 #app > main section ul.badgets,
+  body.section-step2 #app > main section ul.badgets,
+  body.section-step3 #app > main section ul.badgets,
+  body.section-step4 #app > main section ul.badgets {
     display: none;
   }
 
@@ -10008,8 +10578,11 @@ body #success-alert:after {
   body.section-preaprob #app > main section#form .form-wrapper .badgets,
   body.section-feliz #app > main section#form .form-wrapper .badgets,
   body.section-gracias #app > main section#form .form-wrapper .badgets,
-  body.section-self-service #app > main section#form .form-wrapper .badgets,
-  body.section-thanks #app > main section#form .form-wrapper .badgets {
+  body.section-steps #app > main section#form .form-wrapper .badgets,
+  body.section-step1 #app > main section#form .form-wrapper .badgets,
+  body.section-step2 #app > main section#form .form-wrapper .badgets,
+  body.section-step3 #app > main section#form .form-wrapper .badgets,
+  body.section-step4 #app > main section#form .form-wrapper .badgets {
     display: block;
   }
 
@@ -10019,8 +10592,11 @@ body #success-alert:after {
   body.section-preaprob #app > main section#form .form-wrapper .legal-notice,
   body.section-feliz #app > main section#form .form-wrapper .legal-notice,
   body.section-gracias #app > main section#form .form-wrapper .legal-notice,
-  body.section-self-service #app > main section#form .form-wrapper .legal-notice,
-  body.section-thanks #app > main section#form .form-wrapper .legal-notice {
+  body.section-steps #app > main section#form .form-wrapper .legal-notice,
+  body.section-step1 #app > main section#form .form-wrapper .legal-notice,
+  body.section-step2 #app > main section#form .form-wrapper .legal-notice,
+  body.section-step3 #app > main section#form .form-wrapper .legal-notice,
+  body.section-step4 #app > main section#form .form-wrapper .legal-notice {
     margin-top: 0;
   }
 
@@ -10030,8 +10606,11 @@ body #success-alert:after {
   body.section-preaprob #app > main section#form .form-wrapper .legal-notice p,
   body.section-feliz #app > main section#form .form-wrapper .legal-notice p,
   body.section-gracias #app > main section#form .form-wrapper .legal-notice p,
-  body.section-self-service #app > main section#form .form-wrapper .legal-notice p,
-  body.section-thanks #app > main section#form .form-wrapper .legal-notice p {
+  body.section-steps #app > main section#form .form-wrapper .legal-notice p,
+  body.section-step1 #app > main section#form .form-wrapper .legal-notice p,
+  body.section-step2 #app > main section#form .form-wrapper .legal-notice p,
+  body.section-step3 #app > main section#form .form-wrapper .legal-notice p,
+  body.section-step4 #app > main section#form .form-wrapper .legal-notice p {
     text-align: center;
   }
 
@@ -10041,8 +10620,11 @@ body #success-alert:after {
   body.section-preaprob #app > main section ul.items,
   body.section-feliz #app > main section ul.items,
   body.section-gracias #app > main section ul.items,
-  body.section-self-service #app > main section ul.items,
-  body.section-thanks #app > main section ul.items {
+  body.section-steps #app > main section ul.items,
+  body.section-step1 #app > main section ul.items,
+  body.section-step2 #app > main section ul.items,
+  body.section-step3 #app > main section ul.items,
+  body.section-step4 #app > main section ul.items {
     display: none;
   }
 
@@ -10052,8 +10634,11 @@ body #success-alert:after {
   body.section-preaprob #app > main section ul.badgets,
   body.section-feliz #app > main section ul.badgets,
   body.section-gracias #app > main section ul.badgets,
-  body.section-self-service #app > main section ul.badgets,
-  body.section-thanks #app > main section ul.badgets {
+  body.section-steps #app > main section ul.badgets,
+  body.section-step1 #app > main section ul.badgets,
+  body.section-step2 #app > main section ul.badgets,
+  body.section-step3 #app > main section ul.badgets,
+  body.section-step4 #app > main section ul.badgets {
     display: none;
   }
 
@@ -11088,8 +11673,11 @@ body #success-alert:after {
   body.section-preaprob #app > main section#form .form-wrapper .badgets,
   body.section-feliz #app > main section#form .form-wrapper .badgets,
   body.section-gracias #app > main section#form .form-wrapper .badgets,
-  body.section-self-service #app > main section#form .form-wrapper .badgets,
-  body.section-thanks #app > main section#form .form-wrapper .badgets {
+  body.section-steps #app > main section#form .form-wrapper .badgets,
+  body.section-step1 #app > main section#form .form-wrapper .badgets,
+  body.section-step2 #app > main section#form .form-wrapper .badgets,
+  body.section-step3 #app > main section#form .form-wrapper .badgets,
+  body.section-step4 #app > main section#form .form-wrapper .badgets {
     display: block;
   }
 
@@ -11099,8 +11687,11 @@ body #success-alert:after {
   body.section-preaprob #app > main section#form .form-wrapper .legal-notice,
   body.section-feliz #app > main section#form .form-wrapper .legal-notice,
   body.section-gracias #app > main section#form .form-wrapper .legal-notice,
-  body.section-self-service #app > main section#form .form-wrapper .legal-notice,
-  body.section-thanks #app > main section#form .form-wrapper .legal-notice {
+  body.section-steps #app > main section#form .form-wrapper .legal-notice,
+  body.section-step1 #app > main section#form .form-wrapper .legal-notice,
+  body.section-step2 #app > main section#form .form-wrapper .legal-notice,
+  body.section-step3 #app > main section#form .form-wrapper .legal-notice,
+  body.section-step4 #app > main section#form .form-wrapper .legal-notice {
     margin-top: 0;
   }
 
@@ -11110,8 +11701,11 @@ body #success-alert:after {
   body.section-preaprob #app > main section#form .form-wrapper .legal-notice p,
   body.section-feliz #app > main section#form .form-wrapper .legal-notice p,
   body.section-gracias #app > main section#form .form-wrapper .legal-notice p,
-  body.section-self-service #app > main section#form .form-wrapper .legal-notice p,
-  body.section-thanks #app > main section#form .form-wrapper .legal-notice p {
+  body.section-steps #app > main section#form .form-wrapper .legal-notice p,
+  body.section-step1 #app > main section#form .form-wrapper .legal-notice p,
+  body.section-step2 #app > main section#form .form-wrapper .legal-notice p,
+  body.section-step3 #app > main section#form .form-wrapper .legal-notice p,
+  body.section-step4 #app > main section#form .form-wrapper .legal-notice p {
     text-align: center;
   }
 
@@ -11121,8 +11715,11 @@ body #success-alert:after {
   body.section-preaprob #app > main section ul.items,
   body.section-feliz #app > main section ul.items,
   body.section-gracias #app > main section ul.items,
-  body.section-self-service #app > main section ul.items,
-  body.section-thanks #app > main section ul.items {
+  body.section-steps #app > main section ul.items,
+  body.section-step1 #app > main section ul.items,
+  body.section-step2 #app > main section ul.items,
+  body.section-step3 #app > main section ul.items,
+  body.section-step4 #app > main section ul.items {
     display: none;
   }
 
@@ -11132,8 +11729,11 @@ body #success-alert:after {
   body.section-preaprob #app > main section ul.badgets,
   body.section-feliz #app > main section ul.badgets,
   body.section-gracias #app > main section ul.badgets,
-  body.section-self-service #app > main section ul.badgets,
-  body.section-thanks #app > main section ul.badgets {
+  body.section-steps #app > main section ul.badgets,
+  body.section-step1 #app > main section ul.badgets,
+  body.section-step2 #app > main section ul.badgets,
+  body.section-step3 #app > main section ul.badgets,
+  body.section-step4 #app > main section ul.badgets {
     display: none;
   }
 
@@ -11579,8 +12179,11 @@ body #success-alert:after {
   body.section-preaprob #app > main section#form,
   body.section-feliz #app > main section#form,
   body.section-gracias #app > main section#form,
-  body.section-self-service #app > main section#form,
-  body.section-thanks #app > main section#form {
+  body.section-steps #app > main section#form,
+  body.section-step1 #app > main section#form,
+  body.section-step2 #app > main section#form,
+  body.section-step3 #app > main section#form,
+  body.section-step4 #app > main section#form {
     padding: 30px 0;
     background: white;
   }
@@ -11591,8 +12194,11 @@ body #success-alert:after {
   body.section-preaprob #app > main section#form h1,
   body.section-feliz #app > main section#form h1,
   body.section-gracias #app > main section#form h1,
-  body.section-self-service #app > main section#form h1,
-  body.section-thanks #app > main section#form h1 {
+  body.section-steps #app > main section#form h1,
+  body.section-step1 #app > main section#form h1,
+  body.section-step2 #app > main section#form h1,
+  body.section-step3 #app > main section#form h1,
+  body.section-step4 #app > main section#form h1 {
     font-size: 1.2rem;
     margin: 0 auto;
     padding: 0;
@@ -11604,8 +12210,11 @@ body #success-alert:after {
   body.section-preaprob #app > main section#form h2,
   body.section-feliz #app > main section#form h2,
   body.section-gracias #app > main section#form h2,
-  body.section-self-service #app > main section#form h2,
-  body.section-thanks #app > main section#form h2 {
+  body.section-steps #app > main section#form h2,
+  body.section-step1 #app > main section#form h2,
+  body.section-step2 #app > main section#form h2,
+  body.section-step3 #app > main section#form h2,
+  body.section-step4 #app > main section#form h2 {
     font-size: 1rem;
   }
 
@@ -11615,14 +12224,18 @@ body #success-alert:after {
   body.section-preaprob #app > main section#form .form-wrapper .legal-notice p,
   body.section-feliz #app > main section#form .form-wrapper .legal-notice p,
   body.section-gracias #app > main section#form .form-wrapper .legal-notice p,
-  body.section-self-service #app > main section#form .form-wrapper .legal-notice p,
-  body.section-thanks #app > main section#form .form-wrapper .legal-notice p {
+  body.section-steps #app > main section#form .form-wrapper .legal-notice p,
+  body.section-step1 #app > main section#form .form-wrapper .legal-notice p,
+  body.section-step2 #app > main section#form .form-wrapper .legal-notice p,
+  body.section-step3 #app > main section#form .form-wrapper .legal-notice p,
+  body.section-step4 #app > main section#form .form-wrapper .legal-notice p {
     padding: 0;
   }
 
   body.section-congrats #app > main section#form .form #prequalifed-content h1,
   body.section-feliz #app > main section#form .form #prequalifed-content h1,
-  body.section-self-service #app > main section#form .form #prequalifed-content h1 {
+  body.section-steps #app > main section#form .form #prequalifed-content h1,
+  body.section-step2 #app > main section#form .form #prequalifed-content h1 {
     font-size: 1em;
   }
 

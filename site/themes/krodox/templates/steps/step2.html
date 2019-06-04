@@ -1,0 +1,231 @@
+<main id="step2">
+    {{ FormStackAddon:steps}}
+        {{ if step < 1 }}
+            {{ redirect to="{ redirect_to }" }}
+        {{ /if }}
+        {{ response }}
+        <section id="form">
+            <div class="container">
+                <div class="form">
+                    <div id="prequalifed-content">
+                        <h1>You've been pre-qualified</h1>
+                        <img src="/assets/img/checkmark.png">
+                        <div>
+                            <p>{{ fname }}, you have been pre-qualified for </p>
+                        </div>
+                        <div>
+                            <p class="amount">
+                                <span>${{ company_revenue }}</span>
+                            </p>
+                        </div>
+                        <div>
+                            <p>in working capital for {{ company_name }}</p>
+                        </div>
+                        <br>
+                        <p>
+                            Not enough? Don’t sweat it.<br>
+                            The pre-qualification amount can change, based on your unique business situation
+                        </p>
+                        <p><strong>Let’s complete your application below</strong></p>
+                        <div class="form-wrapper">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <article class="steps">
+                                        {{ form:set is="lead" }}
+                                        {{ form:create }}
+                                        <div class="fields">
+                                            <input type="text" name="honeypot" class="honeypot"/>
+                                            <input type="hidden" name="utm_source" value="{{ utm_source }}"/>
+                                            <input type="hidden" name="utm_campaign" value="{{ utm_campaign }}"/>
+                                            <input type="hidden" name="utm_medium" value="{{ utm_medium }}"/>
+                                            <input type="hidden" name="utm_term" value="{{ utm_term }}"/>
+                                            <input type="hidden" name="utm_content" value="{{ utm_content }}"/>
+                                            <input type="hidden" name="transaction_id" value="{{ transaction_id }}"/>
+                                            <input type="hidden" name="source" value="{{ source }}"/>
+                                            <input type="hidden" name="api_id" value="{{ api_id }}"/>
+                                            <input type="hidden" name="submission_id" value="{{ submission_id }}"/>
+                                            <input type="hidden" name="step" value="2"/>
+                                            <input type="hidden" name="phone" value="{{ phone }}"/>
+                                            <input type="hidden" name="email" value="{{ email }}"/>
+                                            <input type="hidden" name="company_name" value="{{ company_name }}"/>
+                                            <div class="form-row">
+                                                <div class="col-md-6">
+                                                    <label for="company_name_legal">
+                                                        <div>What is your company's Legal Name?</div>
+                                                        <input type="text" id="company_name_legal" name="company_name_legal" class="form-control" value="{{ old:company_name_legal or company_name_legal }}"  maxlength="50"/>
+                                                    </label>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="company_name_fake">
+                                                        <div>Under what name does your company do business?</div>
+                                                        <input type="text" id="company_name_fake" name="company_name_fake" class="form-control" value="{{ old:company_name_fake or company_name_fake }}"  maxlength="50"/>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="col-md-6">
+                                                    <label for="company_state">
+                                                        <div>What State was your company Incorporated in?</div>
+                                                        <select id="company_state" name="company_state" class="form-control">
+                                                            {{ company_state_options:options }}
+                                                            {{ if old:company_state == value || company_state == value }}
+                                                            <option value="{{ value }}" selected>{{ value }}</option>
+                                                            {{ else }}
+                                                            <option value="{{ value }}">{{ value }}</option>
+                                                            {{ /if }}
+                                                            {{ /company_state_options:options }}
+                                                        </select>
+                                                    </label>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="company_tax_id">
+                                                        <div>What is the Tax ID (FEIN) number for your company?</div>
+                                                        <input type="number" id="company_tax_id" name="company_tax_id" class="form-control" value="{{ old:company_tax_id or company_tax_id }}"  maxlength="9"/>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="col-md-6">
+                                                    <label for="company_employees">
+                                                        <div>How many employees do you have?</div>
+                                                        <input type="number" id="company_employees" name="company_employees" class="form-control" value="{{ old:company_employees or company_employees }}"  maxlength="4"/>
+                                                    </label>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="company_structure">
+                                                        <div>What is the business structure?</div>
+                                                        <select id="company_structure" name="company_structure" class="form-control">
+                                                            {{ company_structure_options:options }}
+                                                            {{ if old:company_structure == value || company_structure == value }}
+                                                            <option value="{{ value }}" selected>{{ value }}</option>
+                                                            {{ else }}
+                                                            <option value="{{ value }}">{{ value }}</option>
+                                                            {{ /if }}
+                                                            {{ /company_structure_options:options }}
+                                                        </select>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="col-md-6">
+                                                    <label for="company_started_with_you">
+                                                        <div>What date did the business start operating with you as the owner?</div>
+                                                        <input type="date" id="company_started_with_you" name="company_started_with_you" class="form-control" value="{{ old:company_started_with_you or company_started_with_you }}"/>
+                                                    </label>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="company_industry">
+                                                        <div>What industry is your company in?</div>
+                                                        <input type="text" id="company_industry" name="company_industry" class="form-control" value="{{ old:company_industry or company_industry }}"/>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="col-md-6">
+                                                    <label for="company_type">
+                                                        <div>What type of company is your business?</div>
+                                                        <select id="company_type" name="company_type" class="form-control">
+                                                            {{ company_type_options:options }}
+                                                            {{ if old:company_type == value || company_type == value }}
+                                                            <option value="{{ value }}" selected>{{ value }}</option>
+                                                            {{ else }}
+                                                            <option value="{{ value }}">{{ value }}</option>
+                                                            {{ /if }}
+                                                            {{ /company_type_options:options }}
+                                                        </select>
+                                                    </label>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="company_has_loan">
+                                                        <div>Do you have any Merchant Cash Advance or Business Loans?</div>
+                                                        <select id="company_has_loan" name="company_has_loan" class="form-control">
+                                                            {{ company_has_loan_options:options }}
+                                                            {{ if old:company_has_loan == value || company_has_loan == value }}
+                                                            <option value="{{ value }}" selected>{{ value }}</option>
+                                                            {{ else }}
+                                                            <option value="{{ value }}">{{ value }}</option>
+                                                            {{ /if }}
+                                                            {{ /company_has_loan_options:options }}
+                                                        </select>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="col-md-6">
+                                                    <label for="company_work_with_credit_card">
+                                                        <div>Do you take Credit cards for your business?</div>
+                                                        <select id="company_work_with_credit_card" name="company_work_with_credit_card" class="form-control">
+                                                            {{ company_work_with_credit_card_options:options }}
+                                                            {{ if old:company_work_with_credit_card == value || company_work_with_credit_card == value }}
+                                                            <option value="{{ value }}" selected>{{ value }}</option>
+                                                            {{ else }}
+                                                            <option value="{{ value }}">{{ value }}</option>
+                                                            {{ /if }}
+                                                            {{ /company_work_with_credit_card_options:options }}
+                                                        </select>
+                                                    </label>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="company_cc_processor">
+                                                        <div>What processor do you use for credit cards?</div>
+                                                        <input type="text" id="company_cc_processor" name="company_cc_processor" class="form-control" value="{{ old:company_cc_processor or company_cc_processor }}"  maxlength="50"/>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="col-md-6">
+                                                    <label for="company_rent_or_own">
+                                                        <div>Do you rent or own your business location?</div>
+                                                        <select id="company_rent_or_own" name="company_rent_or_own" class="form-control">
+                                                            {{ company_rent_or_own_options:options }}
+                                                            {{ if old:company_rent_or_own == value || company_rent_or_own == value }}
+                                                            <option value="{{ value }}" selected>{{ value }}</option>
+                                                            {{ else }}
+                                                            <option value="{{ value }}">{{ value }}</option>
+                                                            {{ /if }}
+                                                            {{ /company_rent_or_own_options:options }}
+                                                        </select>
+                                                    </label>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="company_mortgage">
+                                                        <div>How much do you pay for your rent or mortgage for your business location?</div>
+                                                        <input type="number" id="company_mortgage" name="company_mortgage" class="form-control" value="{{ old:company_mortgage or company_mortgage }}"  maxlength="12"/>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="col-md-6">
+                                                    <label for="rent_or_own">
+                                                        <div>Are you current on Rent/Mortgage?</div>
+                                                        <select id="rent_or_own" name="rent_or_own" class="form-control">
+                                                            {{ rent_or_own_options:options }}
+                                                            {{ if old:rent_or_own == value || rent_or_own == value }}
+                                                            <option value="{{ value }}" selected>{{ value }}</option>
+                                                            {{ else }}
+                                                            <option value="{{ value }}">{{ value }}</option>
+                                                            {{ /if }}
+                                                            {{ /rent_or_own_options:options }}
+                                                        </select>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-center">
+                                            <button id="submit" class="btn btn-primary">NEXT</button>
+                                        </div>
+                                        {{ if {form:success} }}
+                                        {{ form_submission }}
+                                        {{ /if }}
+                                        {{ /form:create }}
+                                        {{ /form:set }}
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    {{ /FormStackAddon:steps }}
+</main>

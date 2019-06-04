@@ -1,0 +1,148 @@
+title: Leads
+fields:
+  fullname:
+    display: Name
+  fname:
+    display: fname
+  lname:
+    display: lname
+  phone:
+    display: Phone
+    validate: 'required|min:10'
+  email:
+    display: Email
+    validate: required|email
+  rent_or_own:
+    display: 'rent_or_own'
+  company_name:
+    display: 'Business Name'
+    validate: string|required
+  company_phone:
+    display: 'Business Phone'
+  company_has_banking:
+    display: 'Does Business have Bank Account'
+  company_active_bankruptcy:
+    display: 'Does Business have Active Bankruptcy'
+  company_started_month:
+    display: 'company_started_month'
+  company_started_year:
+    dispaly: 'company_started_year'
+  company_started:
+    display: 'Business Started'
+  company_revenue:
+    display: 'Business Revenue'
+  company_name_legal:
+    display: 'company_name_legal'
+  company_name_fake:
+    display: 'company_name_fake'
+  company_state:
+    display: 'company_state'
+  company_tax_id:
+    display: 'company_tax_id'
+  company_employees:
+    display: 'company_employees'
+  company_structure:
+    display: 'company_structure'
+  company_started_with_you:
+    display: 'company_started_with_you'
+  company_industry:
+    display: 'company_industry'
+  company_type:
+    display: 'company_type'
+  company_has_loan:
+    display: 'company_has_loan'
+  company_work_with_credit_card:
+    display: 'company_work_with_credit_card'
+  company_cc_processor:
+    display: 'company_cc_processor'
+  company_rent_or_own:
+    display: 'company_rent_or_own'
+  company_mortgage:
+    display: 'company_mortgage'
+  company_address_line1:
+    display: 'company_address_line1'
+  company_address_line2:
+    display: 'company_address_line2'
+  company_address_city:
+    display: 'company_address_city'
+  company_address_state:
+    display: 'company_address_state'
+  company_address_zip:
+    display: 'company_address_zip'
+  company_owners_total:
+    display: 'company_owners_total'
+  company_owner1_fname:
+    display: 'company_owner1_fname'
+  company_owner1_lname:
+    display: 'company_owner1_lname'
+  company_owner1_phone:
+    display: 'company_owner1_phone'
+  company_owner1_email:
+    display: 'company_owner1_email'
+  company_owner1_dob:
+    display: 'company_owner1_dob'
+  company_owner1_ssn:
+    display: 'company_owner1_ssn'
+  company_owner1_title:
+    display: 'company_owner1_title'
+  company_owner1_address_line1:
+    display: 'company_owner1_address_line1'
+  company_owner1_address_city:
+    display: 'company_owner1_address_city'
+  company_owner1_address_state:
+    display: 'company_owner1_address_state'
+  company_owner1_address_zip:
+    display: 'company_owner1_address_zip'
+  company_owner2_fname:
+      display: 'company_owner2_fname'
+  company_owner2_lname:
+      display: 'company_owner2_lname'
+  company_owner2_phone:
+      display: 'company_owner2_phone'
+  company_owner2_email:
+      display: 'company_owner2_email'
+  company_owner2_dob:
+      display: 'company_owner2_dob'
+  company_owner2_ssn:
+      display: 'company_owner2_ssn'
+  company_owner2_title:
+      display: 'company_owner2_title'
+  company_owner2_address_line1:
+      display: 'company_owner2_address_line1'
+  company_owner2_address_city:
+      display: 'company_owner2_address_city'
+  company_owner2_address_state:
+      display: 'company_owner2_address_state'
+  company_owner2_address_zip:
+      display: 'company_owner2_address_zip'
+  utm_source:
+    display: 'utm_source'
+  utm_campaign:
+    display: 'utm_campaign'
+  utm_medium:
+    display: 'utm_medium'
+  utm_term:
+    display: 'utm_term'
+  utm_content:
+    display: 'utm_content'
+  transaction_id:
+    display: 'Transaction ID'
+  source:
+    display: 'source'
+  api_id:
+    display: 'API ID'
+  submission_id:
+    display: 'submission_id'
+  step:
+    display: step
+    validate: required|integer
+columns:
+  - api_id
+  - fullname
+  - email
+  - company_revenue
+  - step
+metrics:
+  -
+    type: total
+    label: Total

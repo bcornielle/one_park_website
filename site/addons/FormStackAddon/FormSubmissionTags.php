@@ -8,14 +8,9 @@ class FormSubmissionTags extends Tags {
 			$e->setUrl(session('form_stack_redirect'));
 			throw $e;
 		}
-		if (session('lead_redirect')) {
+		if (session('redirect')) {
 			$e = new \Statamic\Exceptions\RedirectException;
-			$e->setUrl(session('lead_redirect'));
-			throw $e;
-		}
-		if (session('self_service_redirect')) {
-			$e = new \Statamic\Exceptions\RedirectException;
-			$e->setUrl(session('self_service_redirect'));
+			$e->setUrl(session('redirect'));
 			throw $e;
 		}
 	}

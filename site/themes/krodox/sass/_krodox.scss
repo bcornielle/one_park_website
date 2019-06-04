@@ -3530,7 +3530,7 @@ body {
       }
     }
   }
-  &.section-pre-qualification, &.section-congrats, &.section-complete, &.section-preaprob, &.section-feliz, &.section-gracias, &.section-self-service, &.section-thanks {
+  &.section-pre-qualification, &.section-congrats, &.section-complete, &.section-preaprob, &.section-feliz, &.section-gracias,  &.section-steps, &.section-step1, &.section-step2,  &.section-step3, &.section-step4 {
     #app {
       > main {
         section {
@@ -3577,7 +3577,8 @@ body {
                   color: #5f5e5e;
                   line-height: 1.5;
                   text-align: left;
-                  padding: 0 0 0 30px;
+                  padding: 0;
+                  font-size: .8rem;
                   a {
                     color: $brand-primary;
                   }
@@ -3589,6 +3590,54 @@ body {
             }
             #fsSubmitButton2925351 {
               width: 300px;
+            }
+            article {
+              font-size: 1rem;
+              text-align: left;
+              &.steps {
+                form {
+                  padding: 45px 0 30px;
+                  .fields {
+                    .honeypot {
+                      display: none;
+                    }
+                    .form-row, .form-group {
+                      margin-top: 10px;
+                      label {
+                        width: 100%;
+                        div {
+                          font-size: .8rem;
+                        }
+                        input[type=text], input[type=email], input[type=tel], input[type=date], input[type=number], select {
+                          margin-top: 5px;
+                          box-shadow: 0 0 48px rgba(83, 167, 61, 0.3);
+                          border: solid 2px #ccc;
+                          &:focus {
+                            border: solid 2px $brand-primary;
+                          }
+                        }
+                        select {
+                          &.w50 {
+                            width: 50%;
+                            float: left;
+                            margin-right: 1%;
+                          }
+                          &.w49 {
+                            width: 49%;
+                            float: left;
+                          }
+                        }
+                      }
+                    }
+                  }
+                  #submit {
+                    width: 300px;
+                    background-color: $brand-primary;
+                    border: $brand-primary;
+                    margin: 30px auto 0;
+                  }
+                }
+              }
             }
           }
           ul {
@@ -3637,7 +3686,7 @@ body {
       }
     }
   }
-  &.section-congrats, &.section-feliz, &.section-self-service {
+  &.section-congrats, &.section-feliz,  &.section-steps, &.section-step2 {
     #app {
       > main {
         section {
@@ -3713,7 +3762,7 @@ body {
       }
     }
   }
-  &.section-complete, &.section-gracias, &.section-thanks {
+  &.section-complete, &.section-gracias, &.section-step4 {
     #app {
       > main {
         section {
@@ -4633,7 +4682,7 @@ body {
       }
     }
   }
-  &.section-quote {
+  &.section-step1 {
     #app {
       > main {
         section {
@@ -5111,7 +5160,7 @@ body {
         }
       }
     }
-    &.section-pre-qualification, &.section-congrats, &.section-complete, &.section-preaprob, &.section-feliz, &.section-gracias, &.section-self-service, &.section-thanks {
+    &.section-pre-qualification, &.section-congrats, &.section-complete, &.section-preaprob, &.section-feliz, &.section-gracias, &.section-steps, &.section-step1, &.section-step2, &.section-step3, &.section-step4 {
       #app {
         > main {
           section {
@@ -5835,7 +5884,7 @@ body {
         }
       }
     }
-    &.section-pre-qualification, &.section-congrats, &.section-complete, &.section-preaprob, &.section-feliz, &.section-gracias, &.section-self-service, &.section-thanks {
+    &.section-pre-qualification, &.section-congrats, &.section-complete, &.section-preaprob, &.section-feliz, &.section-gracias, &.section-steps, &.section-step1, &.section-step2, &.section-step3, &.section-step4 {
       #app {
         > main {
           section {
@@ -6902,7 +6951,7 @@ body {
         }
       }
     }
-    &.section-pre-qualification, &.section-congrats, &.section-complete, &.section-preaprob, &.section-feliz, &.section-gracias, &.section-self-service, &.section-thanks {
+    &.section-pre-qualification, &.section-congrats, &.section-complete, &.section-preaprob, &.section-feliz, &.section-gracias, &.section-steps, &.section-step1, &.section-step2, &.section-step3, &.section-step4 {
       #app {
         > main {
           section {
@@ -7412,7 +7461,7 @@ body {
         }
       }
     }
-    &.section-pre-qualification, &.section-congrats, &.section-complete, &.section-preaprob, &.section-feliz, &.section-gracias, &.section-self-service, &.section-thanks {
+    &.section-pre-qualification, &.section-congrats, &.section-complete, &.section-preaprob, &.section-feliz, &.section-gracias, &.section-steps, &.section-step1, &.section-step2, &.section-step3, &.section-step4 {
       #app {
         > main {
           section {
@@ -7439,7 +7488,7 @@ body {
         }
       }
     }
-    &.section-congrats, &.section-feliz, &.section-self-service {
+    &.section-congrats, &.section-feliz,  &.section-steps, &.section-step2 {
       #app {
         > main {
           section {
