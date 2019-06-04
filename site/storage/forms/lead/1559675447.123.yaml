@@ -5,9 +5,9 @@ utm_term: ''
 utm_content: ''
 transaction_id: ''
 source: /steps/step1
-api_id: 8697
+api_id: '8697'
 submission_id: '1559675447.123'
-step: 2
+step: 3
 company_name: 'MIAMI OPF TEST'
 company_started_month: '6'
 company_started_year: '2010'
@@ -29,3 +29,5 @@ company_type: Corporation
 company_has_loan: 'No'
 company_work_with_credit_card: 'Yes'
 company_rent_or_own: Rent
+company_address_line1: 43tqhrwstgdnb
+company_address_state: Georgia
