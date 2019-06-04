@@ -5,9 +5,9 @@ utm_term: ''
 utm_content: ''
 transaction_id: ''
 source: /steps/step1
-api_id: 8713
+api_id: '8713'
 submission_id: '1559681640.8116'
-step: 2
+step: 3
 company_name: YMCAAA
 company_started_month: '1'
 company_started_year: '2010'
@@ -35,3 +35,8 @@ company_work_with_credit_card: 'Yes'
 company_cc_processor: Stripe
 company_rent_or_own: Own
 company_mortgage: '2000'
+company_address_line1: '200 TEST ST'
+company_address_line2: 'APT 5566'
+company_address_city: MIAMI
+company_address_state: Florida
+company_address_zip: '33313'
