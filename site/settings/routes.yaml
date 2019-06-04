@@ -26,5 +26,8 @@ collections:
   careers:
     en: '/careers/{slug}'
     es: '/empleos/{slug}'
+  steps:
+    en: '/steps/{slug}'
+    es: '/steps/es/{slug}'
 taxonomies:
   tags: '/blog/tags/{slug}'

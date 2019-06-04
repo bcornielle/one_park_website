@@ -1,0 +1,25 @@
+<main id="step5">
+    {{ FormStackAddon:steps }}
+    {{ if step < 4 }}
+        {{ redirect to="{ redirect_to }" }}
+    {{ /if }}
+    <section id="form">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="form">
+                        <div id="prequalifed-content" style="margin-bottom: 60px">
+                            <img src="/assets/img/checkmark.png">
+                            <h1>Thank You</h1>
+                            <p>The application was submitted successfully.</p>
+                            <br>
+                            <p>Please check your email for a Docusign Document to complete your application. You can upload your voided check, bank statements and Drivers license there as well</p>
+                        </div>
+                        <a href="/" class="btn btn-primary">Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{ /FormStackAddon:steps }}
+</main>

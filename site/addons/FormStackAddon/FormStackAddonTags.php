@@ -3,6 +3,7 @@ namespace Statamic\Addons\FormStackAddon;
 use Statamic\Extend\Tags;
 use Log;
 class FormStackAddonTags extends Tags {
+	private $cookie_name = 'krodox';
 	public $forms_en = [
 		[
 			'id'=>'2925351',
@@ -23,9 +24,7 @@ class FormStackAddonTags extends Tags {
 			'name'=>'prequal_es_2',
 		]
 	];
-	private $cookie_name = 'krodox';
 	private $oauth_token = '5a07bf17f343ddbfc5c3a6f6e005d6c0';
-	//English Forms
 	public function qualification() {
 		return array(
 			'status'=>true,
@@ -158,7 +157,6 @@ class FormStackAddonTags extends Tags {
 			);
 		}
 	}
-	//Spanish Forms
 	public function preaprob() {
 		return array(
 			'status'=>true,
@@ -278,57 +276,43 @@ class FormStackAddonTags extends Tags {
 			);
 		}
 	}
-	//steps
-	public function quote() {
-		$response = [
-			'status'=> true,
-			'redirect_to'=> 'https://'.$_SERVER['SERVER_NAME'],
-		];
-		return $response;
-	}
 	public function router() {
-		$response = [
-			'redirect_to'=> 'https://'.$_SERVER['SERVER_NAME'].'/quote',
-		];
-		if(isset($_REQUEST['lead_id']) && $_REQUEST['lead_id']){
-			$cookie_time = time() + (60*60*24*365);
+		$next_step = 1;
+		if (isset($_REQUEST['clear'])){
+			unset($_COOKIE[$this->cookie_name]);
+			setcookie($this->cookie_name, '', time() - 3600, '/');
+		}
+		if (isset($_REQUEST['api_id'])){
 			$params = [];
-			foreach($_REQUEST as $key=>$value){
+			foreach ($_REQUEST as $key=>$value ) {
 				$params[$key] = $value;
+				if ($key == 'step'){
+					$next_step = intval($value) + 1;
+				}
 			}
-			setcookie($this->cookie_name,serialize($params),$cookie_time,"/");
-			$response = [
-				'redirect_to' => 'https://'.$_SERVER['SERVER_NAME'].'/self-service',
-			];
+			$cookie_time = time() + (60*60*24*365);
+			setcookie($this->cookie_name,serialize($params),$cookie_time, "/");
+			$response = $params;
+		}else{
+			if(isset($_COOKIE[$this->cookie_name])){
+				$cookie = unserialize($_COOKIE[$this->cookie_name]);
+				$next_step = intval($cookie['step']) + 1;
+				$response = $cookie;
+			}
 		}
+		$response['redirect_to'] = 'https://'.$_SERVER['SERVER_NAME'].'/steps/step' . $next_step;
 		return $response;
 	}
-	public function selfService() {
-		$response = [
-			'status'=> false,
-			'redirect_to'=> 'https://'.$_SERVER['SERVER_NAME'].'/router',
-		];
+	public function steps() {
 		if(isset($_COOKIE[$this->cookie_name])) {
-			$response = unserialize($_COOKIE[$this->cookie_name]);
-			$response['status'] = true;
-		}
-		return $response;
-	}
-	public function thanks() {
-		$response = [
-			'status'=>false,
-			'redirect_to'=> 'https://'.$_SERVER['SERVER_NAME'] . '/quote',
-		];
-		if (isset($_REQUEST['status']) && $_REQUEST['status']){
-			if (isset($_COOKIE[$this->cookie_name])) {
+			$cookie = unserialize($_COOKIE[$this->cookie_name]);
+			if (intval($cookie['step']) === 4){
 				unset($_COOKIE[$this->cookie_name]);
 				setcookie($this->cookie_name, '', time() - 3600, '/');
 			}
-			$response = [
-				'status'=>true,
-				'redirect_to'=> null,
-			];
+			$response = $cookie;
 		}
+		$response['redirect_to'] = 'https://'.$_SERVER['SERVER_NAME'].'/router';
 		return $response;
 	}
 }
