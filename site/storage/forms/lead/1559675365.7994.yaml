@@ -5,9 +5,9 @@ utm_term: ''
 utm_content: ''
 transaction_id: ''
 source: /steps/step1
-api_id: 8696
+api_id: '8696'
 submission_id: '1559675365.7994'
-step: 1
+step: 2
 company_name: 'MIAMI OPF TEST'
 company_started_month: '7'
 company_started_year: '2007'
@@ -20,3 +20,10 @@ fullname: 'TEST TESTINF'
 fname: TEST
 lname: TESTINF
 company_started: 7/01/2007
+rent_or_own: 'No'
+company_state: AK
+company_structure: Franchise
+company_type: Corporation
+company_has_loan: 'No'
+company_work_with_credit_card: 'Yes'
+company_rent_or_own: Own
