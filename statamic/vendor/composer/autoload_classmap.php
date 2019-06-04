@@ -2147,6 +2147,7 @@ return array(
     'Statamic\\Addons\\FormStackAddon\\FormStackAddonListener' => $baseDir . '/../site/addons/FormStackAddon/FormStackAddonListener.php',
     'Statamic\\Addons\\FormStackAddon\\FormStackAddonTags' => $baseDir . '/../site/addons/FormStackAddon/FormStackAddonTags.php',
     'Statamic\\Addons\\FormStackAddon\\FormStackJob' => $baseDir . '/../site/addons/FormStackAddon/FormStackJob.php',
+    'Statamic\\Addons\\FormSubmission\\FormSubmissionTags' => $baseDir . '/../site/addons/FormStackAddon/FormSubmissionTags.php',
     'Statamic\\Addons\\Form\\FormFieldtype' => $baseDir . '/bundles/Form/FormFieldtype.php',
     'Statamic\\Addons\\Form\\FormListener' => $baseDir . '/bundles/Form/FormListener.php',
     'Statamic\\Addons\\Form\\FormTags' => $baseDir . '/bundles/Form/FormTags.php',
