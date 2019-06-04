@@ -6,8 +6,8 @@ utm_content: ''
 transaction_id: ''
 source: /steps/step1
 api_id: ''
-submission_id: 1559684463.9515
-step: '1'
+submission_id: '1559684463.9515'
+step: 2
 company_name: 'One Park Financial'
 company_started_month: '7'
 company_started_year: '2013'
@@ -20,3 +20,10 @@ fullname: 'Luther Joseph'
 fname: Luther
 lname: Joseph
 company_started: 7/01/2013
+rent_or_own: 'Yes'
+company_state: AK
+company_structure: Home-Based
+company_type: Corporation
+company_has_loan: 'No'
+company_work_with_credit_card: 'Yes'
+company_rent_or_own: Rent
