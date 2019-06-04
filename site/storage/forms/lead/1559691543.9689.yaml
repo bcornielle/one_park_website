@@ -6,8 +6,8 @@ utm_content: ''
 transaction_id: ''
 source: /steps/step1
 api_id: ''
-submission_id: 1559691543.9689
-step: '1'
+submission_id: '1559691543.9689'
+step: 2
 company_name: MD
 company_started_month: '2'
 company_started_year: '2000'
@@ -20,3 +20,18 @@ fullname: 'M Delio'
 fname: M
 lname: Delio
 company_started: 2/01/2000
+rent_or_own: 'Yes'
+company_name_legal: 'My company'
+company_name_fake: 'My company'
+company_state: NY
+company_tax_id: '3333'
+company_employees: '336'
+company_structure: E-Commerce
+company_started_with_you: '2002-06-04'
+company_industry: Art
+company_type: 'Sole Proprietorship'
+company_has_loan: 'No'
+company_work_with_credit_card: 'Yes'
+company_cc_processor: Sample
+company_rent_or_own: Own
+company_mortgage: '3939'
