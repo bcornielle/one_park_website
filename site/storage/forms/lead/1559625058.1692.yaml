@@ -5,9 +5,9 @@ utm_term: ''
 utm_content: ''
 transaction_id: ''
 source: /steps/step1
-api_id: 8593
+api_id: '8593'
 submission_id: '1559625058.1692'
-step: 2
+step: 3
 company_name: 'Game Of Thrones'
 company_started_month: '3'
 company_started_year: '2016'
@@ -35,3 +35,7 @@ company_work_with_credit_card: 'Yes'
 company_cc_processor: AMEX
 company_rent_or_own: Rent
 company_mortgage: '1200'
+company_address_line1: 'PO BOX 226762'
+company_address_city: Miami
+company_address_state: Florida
+company_address_zip: '33222'
