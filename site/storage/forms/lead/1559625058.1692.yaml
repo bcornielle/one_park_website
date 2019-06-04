@@ -5,9 +5,9 @@ utm_term: ''
 utm_content: ''
 transaction_id: ''
 source: /steps/step1
-api_id: 8593
+api_id: '8593'
 submission_id: '1559625058.1692'
-step: 3
+step: 4
 company_name: 'Game Of Thrones'
 company_started_month: '3'
 company_started_year: '2016'
@@ -39,3 +39,16 @@ company_address_line1: 'PO BOX 226762'
 company_address_city: Miami
 company_address_state: Florida
 company_address_zip: '33222'
+company_owners_total: 'Single Owner'
+company_owner1_fname: John
+company_owner1_lname: Doe
+company_owner1_phone: '2392010231'
+company_owner1_email: john.doe@gmail.com
+company_owner1_dob: '2019-06-13'
+company_owner1_ssn: '12345678899'
+company_owner1_title: 'CEO &amp; President'
+company_owner1_address_line1: '141 Grand AVE'
+company_owner1_address_city: Miami
+company_owner1_address_state: Florida
+company_owner1_address_zip: '33133'
+company_owner2_address_state: Alabama
