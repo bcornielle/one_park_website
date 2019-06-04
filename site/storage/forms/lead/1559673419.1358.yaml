@@ -5,9 +5,9 @@ utm_term: ''
 utm_content: ''
 transaction_id: ''
 source: /steps/step1
-api_id: 8685
-submission_id: 1559673419.1358
-step: '1'
+api_id: '8685'
+submission_id: '1559673419.1358'
+step: 2
 company_name: HaitianPikliz
 company_started_month: '1'
 company_started_year: '2017'
@@ -20,3 +20,18 @@ fullname: 'Alexander Rodriguez'
 fname: Alexander
 lname: Rodriguez
 company_started: 1/01/2017
+rent_or_own: 'Yes'
+company_name_legal: 'HaitianPikliz LLC'
+company_name_fake: 'Haitian Pikliz'
+company_state: FL
+company_tax_id: '6964518'
+company_employees: '1'
+company_structure: Home-Based
+company_started_with_you: '2017-02-02'
+company_industry: 'Food and Beverage'
+company_type: Corporation
+company_has_loan: 'Yes'
+company_work_with_credit_card: 'Yes'
+company_cc_processor: Square
+company_rent_or_own: Rent
+company_mortgage: '1600'
