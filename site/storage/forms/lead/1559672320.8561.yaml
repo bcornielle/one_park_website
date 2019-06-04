@@ -21,9 +21,14 @@ fname: Luther
 lname: Joseph
 company_started: 5/01/2010
 rent_or_own: 'Yes'
-company_state: AK
+company_state: FL
 company_structure: Home-Based
 company_type: Corporation
 company_has_loan: 'No'
 company_work_with_credit_card: 'Yes'
 company_rent_or_own: Rent
+company_name_legal: 'MIAMI OPF TEST'
+company_name_fake: 'MIAMI OPF TEST'
+company_tax_id: '9876543210'
+company_employees: '5'
+company_industry: f
