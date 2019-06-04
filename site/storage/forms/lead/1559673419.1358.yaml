@@ -5,9 +5,9 @@ utm_term: ''
 utm_content: ''
 transaction_id: ''
 source: /steps/step1
-api_id: 8685
+api_id: '8685'
 submission_id: '1559673419.1358'
-step: 2
+step: 3
 company_name: HaitianPikliz
 company_started_month: '1'
 company_started_year: '2017'
@@ -35,3 +35,7 @@ company_work_with_credit_card: 'Yes'
 company_cc_processor: Square
 company_rent_or_own: Rent
 company_mortgage: '1600'
+company_address_line1: '2649 Riviera Dr'
+company_address_city: Miramar
+company_address_state: Florida
+company_address_zip: '33023'
