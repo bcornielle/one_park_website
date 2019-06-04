@@ -7,7 +7,7 @@ transaction_id: ''
 source: /steps/step1
 api_id: ''
 submission_id: '1559691543.9689'
-step: 3
+step: 4
 company_name: MD
 company_started_month: '2'
 company_started_year: '2000'
@@ -39,3 +39,16 @@ company_address_line1: '5 reno avenue'
 company_address_city: 'Staten Island'
 company_address_state: 'New York'
 company_address_zip: '10306'
+company_owners_total: 'Single Owner'
+company_owner1_fname: M
+company_owner1_lname: Dee
+company_owner1_phone: '9999999999'
+company_owner1_email: mdeliom@yahoo.com
+company_owner1_dob: '1881-06-04'
+company_owner1_ssn: '111111111'
+company_owner1_title: Boss
+company_owner1_address_line1: '5 reno avenue'
+company_owner1_address_city: 'Staten Island'
+company_owner1_address_state: 'New York'
+company_owner1_address_zip: '10306'
+company_owner2_address_state: Alabama
