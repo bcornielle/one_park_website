@@ -7,7 +7,7 @@ transaction_id: ''
 source: /steps/step1
 api_id: ''
 submission_id: '1559691543.9689'
-step: 2
+step: 3
 company_name: MD
 company_started_month: '2'
 company_started_year: '2000'
@@ -35,3 +35,7 @@ company_work_with_credit_card: 'Yes'
 company_cc_processor: Sample
 company_rent_or_own: Own
 company_mortgage: '3939'
+company_address_line1: '5 reno avenue'
+company_address_city: 'Staten Island'
+company_address_state: 'New York'
+company_address_zip: '10306'
