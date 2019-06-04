@@ -5,9 +5,9 @@ utm_term: ''
 utm_content: ''
 transaction_id: ''
 source: /steps/step1
-api_id: 8676
-submission_id: 1559671935.0873
-step: '1'
+api_id: '8676'
+submission_id: '1559671935.0873'
+step: 1
 company_name: 'Luther''s Business'
 company_started_month: '3'
 company_started_year: '2011'
