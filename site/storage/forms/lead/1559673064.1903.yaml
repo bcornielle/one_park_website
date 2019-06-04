@@ -5,9 +5,9 @@ utm_term: ''
 utm_content: ''
 transaction_id: ''
 source: /steps/step1
-api_id: 8682
+api_id: '8682'
 submission_id: '1559673064.1903'
-step: 1
+step: 2
 company_name: 'One Park Financial'
 company_started_month: '3'
 company_started_year: '2011'
@@ -27,3 +27,5 @@ company_type: Corporation
 company_has_loan: 'No'
 company_work_with_credit_card: 'Yes'
 company_rent_or_own: Rent
+company_name_legal: '2'
+company_industry: f
