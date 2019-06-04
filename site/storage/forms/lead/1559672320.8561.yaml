@@ -1,7 +1,7 @@
 phone: '9544058057'
 email: ljoseph@oneparkfinancial.com
 rent_or_own: 'Yes'
-step: 2
+step: 3
 company_name: 'One Park Financial'
 company_name_legal: 'MIAMI OPF TEST'
 company_name_fake: 'MIAMI OPF TEST'
@@ -15,3 +15,7 @@ company_has_loan: 'No'
 company_work_with_credit_card: 'Yes'
 company_rent_or_own: Rent
 submission_id: '1559672320.8561'
+company_address_line1: '200 TEST ST'
+company_address_city: MIAMI
+company_address_state: Florida
+company_address_zip: '33313'
