@@ -5,9 +5,9 @@ utm_term: ''
 utm_content: ''
 transaction_id: ''
 source: /steps/step1
-api_id: 8696
-submission_id: 1559675365.7994
-step: '1'
+api_id: '8696'
+submission_id: '1559675365.7994'
+step: 1
 company_name: 'MIAMI OPF TEST'
 company_started_month: '7'
 company_started_year: '2007'
