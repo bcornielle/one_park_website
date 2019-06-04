@@ -5,9 +5,9 @@ utm_term: ''
 utm_content: ''
 transaction_id: ''
 source: /steps/step1
-api_id: 8713
-submission_id: 1559681640.8116
-step: '1'
+api_id: '8713'
+submission_id: '1559681640.8116'
+step: 2
 company_name: YMCAAA
 company_started_month: '1'
 company_started_year: '2010'
@@ -20,3 +20,18 @@ fullname: 'Luke Jones'
 fname: Luke
 lname: Jones
 company_started: 1/01/2010
+rent_or_own: 'Yes'
+company_name_legal: YMCAAA
+company_name_fake: YMCAAA
+company_state: FL
+company_tax_id: '0123456789'
+company_employees: '5'
+company_structure: Home-Based
+company_started_with_you: '2015-01-22'
+company_industry: '20'
+company_type: 'Limited Liability Company'
+company_has_loan: 'Yes'
+company_work_with_credit_card: 'Yes'
+company_cc_processor: Stripe
+company_rent_or_own: Own
+company_mortgage: '2000'
