@@ -5,9 +5,9 @@ utm_term: ''
 utm_content: ''
 transaction_id: ''
 source: /steps/step1
-api_id: 8676
+api_id: '8676'
 submission_id: '1559671935.0873'
-step: 1
+step: 2
 company_name: 'Luther''s Business'
 company_started_month: '3'
 company_started_year: '2011'
@@ -20,3 +20,16 @@ fullname: 'Luther Joseph'
 fname: Luther
 lname: Joseph
 company_started: 3/01/2011
+rent_or_own: 'No'
+company_name_legal: 'One Park Financial'
+company_name_fake: 'One Park Financial'
+company_state: FL
+company_tax_id: '0123456789'
+company_employees: '2'
+company_structure: Home-Based
+company_started_with_you: '2015-06-20'
+company_industry: advertising
+company_type: Corporation
+company_has_loan: 'Yes'
+company_work_with_credit_card: 'No'
+company_rent_or_own: Own
