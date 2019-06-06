@@ -1,7 +1,7 @@
 <main id="step5">
-    {{ FormStackAddon:steps }}
+    {{ FormStackAddon:steps}}
     {{ if step < 4 }}
-        {{ redirect to="{ redirect_to }" }}
+    {{ redirect to="{ redirect_to }" }}
     {{ /if }}
     <section id="form">
         <div class="container">
@@ -13,9 +13,18 @@
                             <h1>Thank You</h1>
                             <p>The application was submitted successfully.</p>
                             <br>
-                            <p>Please check your email for a Docusign Document to complete your application. You can upload your voided check, bank statements and Drivers license there as well</p>
+                            <p style="font-size: 1rem;">Please <span style="border-bottom: solid 1px #444;">check your email</span> for a Docusign Document to complete your application.
+                                <br/>
+                                You can upload your voided check, bank statements and Drivers license there as well</p>
+                            <div style="max-width: 300px;margin: 0 auto; margin-bottom: 30px;">
+                                <div class="text-center" style="text-transform: uppercase; margin-bottom: 5px;">
+                                    Complete
+                                </div>
+                                <div class="progress" style="height: 25px;">
+                                    <div class="progress-bar bg-success progress-bar-striped" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+                                </div>
+                            </div>
                         </div>
-                        <a href="/" class="btn btn-primary">Close</a>
                     </div>
                 </div>
             </div>

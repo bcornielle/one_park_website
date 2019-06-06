@@ -3545,6 +3545,9 @@ body {
               font-size: 2rem;
               text-transform: uppercase;
               margin: 0 auto;
+              &.primary {
+                color: $brand-primary;
+              }
             }
             h2 {
               font-size: 1.2rem;
