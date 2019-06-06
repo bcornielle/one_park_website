@@ -51,3 +51,10 @@ a {
 p {
   line-height: 2;
 }
+input[required]{
+  background-image: url(/assets/img/asterisk.png);
+  background-repeat: no-repeat;
+  background-position-x: 99%;
+  background-position-y: center;
+  background-size: 16px;
+}

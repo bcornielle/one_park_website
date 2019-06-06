@@ -2538,6 +2538,14 @@ p {
   line-height: 2;
 }
 
+input[required] {
+  background-image: url(/assets/img/asterisk.png);
+  background-repeat: no-repeat;
+  background-position-x: 99%;
+  background-position-y: center;
+  background-size: 16px;
+}
+
 body #app > nav {
   -ms-flex-order: 1;
   order: 1;
@@ -7545,6 +7553,20 @@ body.section-step4 #app > main section#form h1 {
   font-size: 2rem;
   text-transform: uppercase;
   margin: 0 auto;
+}
+
+body.section-pre-qualification #app > main section#form h1.primary,
+body.section-congrats #app > main section#form h1.primary,
+body.section-complete #app > main section#form h1.primary,
+body.section-preaprob #app > main section#form h1.primary,
+body.section-feliz #app > main section#form h1.primary,
+body.section-gracias #app > main section#form h1.primary,
+body.section-steps #app > main section#form h1.primary,
+body.section-step1 #app > main section#form h1.primary,
+body.section-step2 #app > main section#form h1.primary,
+body.section-step3 #app > main section#form h1.primary,
+body.section-step4 #app > main section#form h1.primary {
+  color: #359c1c;
 }
 
 body.section-pre-qualification #app > main section#form h2,
