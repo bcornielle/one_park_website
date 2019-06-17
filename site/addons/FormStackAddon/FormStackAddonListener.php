@@ -544,6 +544,7 @@ class FormStackAddonListener extends Listener {
 			$revenue = $submission->get('monthly_revenue');
 			if ($revenue == 1) $revenue = 2500;
 			$params['company_revenue'] = $revenue;
+			$params['ip'] = $submission->get('ip');
 			//tracking
 			$params['source'] = $submission->get('source');
 			$campaign = null;
@@ -623,6 +624,7 @@ class FormStackAddonListener extends Listener {
 			$params['email'] = $submission->get('email');
 			$params['company_name'] = $submission->get('business_name');
 			$params['source'] = $submission->get('source');
+			$params['ip'] = $submission->get('ip');
 			//campaign
 			$campaign = null;
 			if (isset($_COOKIE['Visitor_Campaign__c'])) {
