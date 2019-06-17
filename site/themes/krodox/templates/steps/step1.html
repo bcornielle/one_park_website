@@ -15,7 +15,7 @@
                                             {{ form:create }}
                                             <div class="fields">
                                                 <input type="text" name="honeypot" class="honeypot"/>
-                                                <input type="hidden" name="ip" value="{{ ip }}"/>
+                                                <input type="hidden" name="ip" value="{{ FormStackAddon:ip }}"/>
                                                 <input type="hidden" name="utm_source" value="{{ get:utm_source | sanitize }}"/>
                                                 <input type="hidden" name="utm_campaign" value="{{ get:utm_campaign | sanitize }}"/>
                                                 <input type="hidden" name="utm_medium" value="{{ get:utm_medium | sanitize }}"/>
