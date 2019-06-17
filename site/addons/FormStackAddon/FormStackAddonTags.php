@@ -278,6 +278,16 @@ class FormStackAddonTags extends Tags {
 	}
 	public function router() {
 		$next_step = 1;
+		$ip = null;
+		if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+			$ip=$_SERVER['HTTP_CLIENT_IP'];
+		}
+		elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+			$ip=$_SERVER['HTTP_X_FORWARDED_FOR'];
+		}
+		else {
+			$ip=$_SERVER['REMOTE_ADDR'];
+		}
 		if (isset($_REQUEST['clear'])){
 			unset($_COOKIE[$this->cookie_name]);
 			setcookie($this->cookie_name, '', time() - 3600, '/');
@@ -301,9 +311,20 @@ class FormStackAddonTags extends Tags {
 			}
 		}
 		$response['redirect_to'] = 'https://'.$_SERVER['SERVER_NAME'].'/steps/step' . $next_step;
+		$response['ip'] = $ip;
 		return $response;
 	}
 	public function steps() {
+		$ip = null;
+		if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+			$ip=$_SERVER['HTTP_CLIENT_IP'];
+		}
+		elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+			$ip=$_SERVER['HTTP_X_FORWARDED_FOR'];
+		}
+		else {
+			$ip=$_SERVER['REMOTE_ADDR'];
+		}
 		if(isset($_COOKIE[$this->cookie_name])) {
 			$cookie = unserialize($_COOKIE[$this->cookie_name]);
 			if (intval($cookie['step']) === 4){
@@ -313,6 +334,7 @@ class FormStackAddonTags extends Tags {
 			$response = $cookie;
 		}
 		$response['redirect_to'] = 'https://'.$_SERVER['SERVER_NAME'].'/router';
+		$response['ip'] = $ip;
 		return $response;
 	}
 }

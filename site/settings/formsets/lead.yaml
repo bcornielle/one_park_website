@@ -133,6 +133,8 @@ fields:
     display: 'API ID'
   submission_id:
     display: 'submission_id'
+  ip:
+    display: 'IP'
   step:
     display: step
     validate: required|integer

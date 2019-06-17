@@ -39,6 +39,8 @@ fields:
     display: aff_sub2
   transaction_id:
     display: 'Transaction ID'
+  ip:
+    display: 'IP'
 columns:
   - lead_id
   - name

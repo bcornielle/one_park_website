@@ -17,6 +17,8 @@ fields:
   business_name:
     display: 'Business Name'
     validate: 'required|min:2'
+  ip:
+    display: 'IP'
 columns:
   - lead_id
   - firstname

@@ -91,6 +91,9 @@ class FormStackAddonListener extends Listener {
 				if ($submission->get('step')){
 					$previous->set('step', intval($submission->get('step')));
 				}
+				if ($submission->get('ip')){
+					$previous->set('ip', $submission->get('ip'));
+				}
 				if ($submission->get('company_name')){
 					$previous->set('company_name',$submission->get('company_name'));
 				}
@@ -459,6 +462,9 @@ class FormStackAddonListener extends Listener {
 					}
 				}
 				$params['utm_campaign'] = $campaign;
+			}
+			if ($submission->get('ip')){
+				$params['ip'] = $submission->get('ip');
 			}
 			$source = null;
 			if (isset($_COOKIE['Source__c'])) {
