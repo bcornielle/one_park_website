@@ -249,6 +249,14 @@ class FormStackAddonListener extends Listener {
 			}
 		}
 		if ($form_name === 'landing-page'){
+			$ip = $submission->get('ip');
+			$ips = explode('.',$ip);
+			if (count($ips)>2){
+				$mask = $ips[0] . $ips[1] . $ips[2];
+				if ($mask == '193.37.252' || $mask == '76.217.95'){
+					return array('errors' => array('Submission Blocked'));
+				}
+			}
 			$response = $this->api_formstack_form1($submission);
 			if ($response) {
 				session()->flash('form_stack_redirect', $response);
