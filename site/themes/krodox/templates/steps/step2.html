@@ -61,13 +61,13 @@
                                                     <label for="company_state">
                                                         <div>What State was your company Incorporated in?</div>
                                                         <select id="company_state" name="company_state" class="form-control">
-                                                            {{ company_state_options:options }}
-                                                            {{ if old:company_state == value || company_state == value }}
-                                                            <option value="{{ value }}" selected>{{ value }}</option>
+                                                            {{ foreach:company_state_options }}
+                                                            {{ if old:company_state == key || company_state == key }}
+                                                            <option value="{{ key }}" selected>{{ value }}</option>
                                                             {{ else }}
-                                                            <option value="{{ value }}">{{ value }}</option>
+                                                            <option value="{{ key }}">{{ value }}</option>
                                                             {{ /if }}
-                                                            {{ /company_state_options:options }}
+                                                            {{ /foreach:company_state_options }}
                                                         </select>
                                                     </label>
                                                 </div>
@@ -89,13 +89,13 @@
                                                     <label for="company_structure">
                                                         <div>What is the business structure?</div>
                                                         <select id="company_structure" name="company_structure" class="form-control">
-                                                            {{ company_structure_options:options }}
-                                                            {{ if old:company_structure == value || company_structure == value }}
-                                                            <option value="{{ value }}" selected>{{ value }}</option>
+                                                            {{ foreach:company_structure_options }}
+                                                            {{ if old:company_structure == key || company_structure == key }}
+                                                            <option value="{{ key }}" selected>{{ value }}</option>
                                                             {{ else }}
-                                                            <option value="{{ value }}">{{ value }}</option>
+                                                            <option value="{{ key }}">{{ value }}</option>
                                                             {{ /if }}
-                                                            {{ /company_structure_options:options }}
+                                                            {{ /foreach:company_structure_options }}
                                                         </select>
                                                     </label>
                                                 </div>
@@ -119,13 +119,13 @@
                                                     <label for="company_type">
                                                         <div>What type of company is your business?</div>
                                                         <select id="company_type" name="company_type" class="form-control">
-                                                            {{ company_type_options:options }}
-                                                            {{ if old:company_type == value || company_type == value }}
-                                                            <option value="{{ value }}" selected>{{ value }}</option>
+                                                            {{ foreach:company_type_options }}
+                                                            {{ if old:company_type == key || company_type == key }}
+                                                            <option value="{{ key }}" selected>{{ value }}</option>
                                                             {{ else }}
-                                                            <option value="{{ value }}">{{ value }}</option>
+                                                            <option value="{{ key }}">{{ value }}</option>
                                                             {{ /if }}
-                                                            {{ /company_type_options:options }}
+                                                            {{ /foreach:company_type_options }}
                                                         </select>
                                                     </label>
                                                 </div>
@@ -133,13 +133,13 @@
                                                     <label for="company_has_loan">
                                                         <div>Do you have any Merchant Cash Advance or Business Loans?</div>
                                                         <select id="company_has_loan" name="company_has_loan" class="form-control">
-                                                            {{ company_has_loan_options:options }}
-                                                            {{ if old:company_has_loan == value || company_has_loan == value }}
-                                                            <option value="{{ value }}" selected>{{ value }}</option>
+                                                            {{ foreach:company_has_loan_options }}
+                                                            {{ if old:company_has_loan == key || company_has_loan == key }}
+                                                            <option value="{{ key }}" selected>{{ value }}</option>
                                                             {{ else }}
-                                                            <option value="{{ value }}">{{ value }}</option>
+                                                            <option value="{{ key }}">{{ value }}</option>
                                                             {{ /if }}
-                                                            {{ /company_has_loan_options:options }}
+                                                            {{ /foreach:company_has_loan_options }}
                                                         </select>
                                                     </label>
                                                 </div>
@@ -149,13 +149,13 @@
                                                     <label for="company_work_with_credit_card">
                                                         <div>Do you take Credit cards for your business?</div>
                                                         <select id="company_work_with_credit_card" name="company_work_with_credit_card" class="form-control">
-                                                            {{ company_work_with_credit_card_options:options }}
-                                                            {{ if old:company_work_with_credit_card == value || company_work_with_credit_card == value }}
-                                                            <option value="{{ value }}" selected>{{ value }}</option>
+                                                            {{ foreach:company_work_with_credit_card_options }}
+                                                            {{ if old:company_work_with_credit_card == key || company_work_with_credit_card == key }}
+                                                            <option value="{{ key }}" selected>{{ value }}</option>
                                                             {{ else }}
-                                                            <option value="{{ value }}">{{ value }}</option>
+                                                            <option value="{{ key }}">{{ value }}</option>
                                                             {{ /if }}
-                                                            {{ /company_work_with_credit_card_options:options }}
+                                                            {{ /foreach:company_work_with_credit_card_options }}
                                                         </select>
                                                     </label>
                                                 </div>
@@ -171,13 +171,13 @@
                                                     <label for="company_rent_or_own">
                                                         <div>Do you rent or own your business location?</div>
                                                         <select id="company_rent_or_own" name="company_rent_or_own" class="form-control">
-                                                            {{ company_rent_or_own_options:options }}
-                                                            {{ if old:company_rent_or_own == value || company_rent_or_own == value }}
-                                                            <option value="{{ value }}" selected>{{ value }}</option>
+                                                            {{ foreach:company_rent_or_own_options }}
+                                                            {{ if old:company_rent_or_own == key || company_rent_or_own == key }}
+                                                            <option value="{{ key }}" selected>{{ value }}</option>
                                                             {{ else }}
-                                                            <option value="{{ value }}">{{ value }}</option>
+                                                            <option value="{{ key }}">{{ value }}</option>
                                                             {{ /if }}
-                                                            {{ /company_rent_or_own_options:options }}
+                                                            {{ /foreach:company_rent_or_own_options }}
                                                         </select>
                                                     </label>
                                                 </div>
@@ -193,13 +193,13 @@
                                                     <label for="rent_or_own">
                                                         <div>Are you current on Rent/Mortgage?</div>
                                                         <select id="rent_or_own" name="rent_or_own" class="form-control">
-                                                            {{ rent_or_own_options:options }}
-                                                            {{ if old:rent_or_own == value || rent_or_own == value }}
-                                                            <option value="{{ value }}" selected>{{ value }}</option>
+                                                            {{ foreach:rent_or_own_options }}
+                                                            {{ if old:rent_or_own == key || rent_or_own == key }}
+                                                            <option value="{{ key }}" selected>{{ value }}</option>
                                                             {{ else }}
-                                                            <option value="{{ value }}">{{ value }}</option>
+                                                            <option value="{{ key }}">{{ value }}</option>
                                                             {{ /if }}
-                                                            {{ /rent_or_own_options:options }}
+                                                            {{ /foreach:rent_or_own_options }}
                                                         </select>
                                                     </label>
                                                 </div>

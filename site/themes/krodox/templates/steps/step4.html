@@ -34,13 +34,13 @@
                                                     <label for="company_owners_total">
                                                         <div class="text-center">How many Owners does your company have?</div>
                                                         <select id="company_owners_total" name="company_owners_total" class="form-control text-center" required onchange="toggle_visibility('second-owner');">
-                                                            {{ company_owners_total_options:options }}
-                                                            {{ if old:company_owners_total == value || company_owners_total == value }}
-                                                            <option value="{{ value }}" selected>{{ value }}</option>
+                                                            {{ foreach:company_owners_total_options }}
+                                                            {{ if old:company_owners_total == key || company_owners_total == key }}
+                                                            <option value="{{ key }}" selected>{{ value }}</option>
                                                             {{ else }}
-                                                            <option value="{{ value }}">{{ value }}</option>
+                                                            <option value="{{ key }}">{{ value }}</option>
                                                             {{ /if }}
-                                                            {{ /company_owners_total_options:options }}
+                                                            {{ /foreach:company_owners_total_options }}
                                                         </select>
                                                         <br>
                                                         <br>
@@ -118,13 +118,13 @@
                                                         <label for="company_owner1_address_state">
                                                             <div>State</div>
                                                             <select id="company_owner1_address_state" aria-label="State" name="company_owner1_address_state" class="form-control">
-                                                                {{ company_owner_address_state_options:options }}
-                                                                {{ if old:company_owner1_address_state == value || company_owner1_address_state == value }}
-                                                                <option value="{{ value }}" selected>{{ value }}</option>
+                                                                {{ foreach:company_owner_address_state_options }}
+                                                                {{ if old:company_owner1_address_state == key || company_owner1_address_state == key }}
+                                                                <option value="{{ key }}" selected>{{ value }}</option>
                                                                 {{ else }}
-                                                                <option value="{{ value }}">{{ value }}</option>
+                                                                <option value="{{ key }}">{{ value }}</option>
                                                                 {{ /if }}
-                                                                {{ /company_owner_address_state_options:options }}
+                                                                {{ /foreach:company_owner_address_state_options }}
                                                             </select>
                                                         </label>
                                                     </div>
@@ -208,13 +208,13 @@
                                                         <label for="company_owner2_address_state">
                                                             <div>State</div>
                                                             <select id="company_owner2_address_state" aria-label="State" name="company_owner2_address_state" class="form-control">
-                                                                {{ company_owner_address_state_options:options }}
-                                                                {{ if old:company_owner2_address_state == value || company_owner2_address_state == value }}
-                                                                <option value="{{ value }}" selected>{{ value }}</option>
+                                                                {{ foreach:company_owner_address_state_options }}
+                                                                {{ if old:company_owner2_address_state == key || company_owner2_address_state == key }}
+                                                                <option value="{{ key }}" selected>{{ value }}</option>
                                                                 {{ else }}
-                                                                <option value="{{ value }}">{{ value }}</option>
+                                                                <option value="{{ key }}">{{ value }}</option>
                                                                 {{ /if }}
-                                                                {{ /company_owner_address_state_options:options }}
+                                                                {{ /foreach:company_owner_address_state_options }}
                                                             </select>
                                                         </label>
                                                     </div>

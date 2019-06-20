@@ -39,13 +39,13 @@
                                                             <label for="company_started_month">
                                                                 <select id="company_started_month" name="company_started_month" class="form-control w50" required>
                                                                     <option value="" selected disabled>Month</option>
-                                                                    {{ company_started_month_options:options }}
+                                                                    {{ foreach:company_started_month_options }}
                                                                         {{ if old:company_started_month == key || company_started_month == key }}
                                                                             <option value="{{ key }}" selected>{{ value }}</option>
                                                                         {{ else }}
                                                                             <option value="{{ key }}">{{ value }}</option>
                                                                         {{ /if }}
-                                                                    {{ /company_started_month_options:options }}
+                                                                    {{ /foreach:company_started_month_options }}
                                                                 </select>
                                                                 <select id="company_started_year" name="company_started_year" class="form-control w49" required>
                                                                     <option value="" selected disabled>Year</option>
@@ -65,13 +65,13 @@
                                                     <label for="company_revenue">
                                                         How much are your estimated gross monthly sales?
                                                         <select id="company_revenue" name="company_revenue" class="form-control">
-                                                            {{ company_revenue_options:options }}
+                                                            {{ foreach:company_revenue_options }}
                                                             {{ if old:company_revenue == key || company_revenue == key }}
                                                                 <option value="{{ key }}" selected>{{ value }}</option>
                                                             {{ else }}
                                                                 <option value="{{ key }}">{{ value }}</option>
                                                             {{ /if }}
-                                                            {{ /company_revenue_options:options }}
+                                                            {{ /foreach:company_revenue_options }}
                                                         </select>
                                                     </label>
                                                 </div>
@@ -96,13 +96,13 @@
                                                                 Business Bank Account
                                                                 <select id="company_has_banking" name="company_has_banking" class="form-control" required>
                                                                     <option value="" selected disabled>Select</option>
-                                                                    {{ company_has_banking_options:options }}
-                                                                        {{ if old:company_has_banking == value || company_has_banking == value }}
-                                                                        <option value="{{ value }}" selected>{{ value }}</option>
+                                                                    {{ foreach:company_has_banking_options }}
+                                                                        {{ if old:company_has_banking == key || company_has_banking == key }}
+                                                                        <option value="{{ key }}" selected>{{ value }}</option>
                                                                         {{ else }}
-                                                                        <option value="{{ value }}">{{ value }}</option>
+                                                                        <option value="{{ key }}">{{ value }}</option>
                                                                         {{ /if }}
-                                                                    {{ /company_has_banking_options:options }}
+                                                                    {{ /foreach:company_has_banking_options }}
                                                                 </select>
                                                             </label>
                                                         </div>
@@ -111,13 +111,13 @@
                                                                 Active Bankruptcy
                                                                 <select id="company_active_bankruptcy" name="company_active_bankruptcy" class="form-control" required>
                                                                     <option value="" selected disabled>Select</option>
-                                                                    {{ company_active_bankruptcy_options:options }}
-                                                                    {{ if old:company_active_bankruptcy == value || company_active_bankruptcy == value }}
-                                                                    <option value="{{ value }}" selected>{{ value }}</option>
-                                                                    {{ else }}
-                                                                    <option value="{{ value }}">{{ value }}</option>
-                                                                    {{ /if }}
-                                                                    {{ /company_active_bankruptcy_options:options }}
+                                                                    {{ foreach:company_active_bankruptcy_options }}
+                                                                        {{ if old:company_active_bankruptcy == key || company_active_bankruptcy == key }}
+                                                                        <option value="{{ key }}" selected>{{ value }}</option>
+                                                                        {{ else }}
+                                                                        <option value="{{ key }}">{{ value }}</option>
+                                                                        {{ /if }}
+                                                                    {{ /foreach:company_active_bankruptcy_options }}
                                                                 </select>
                                                             </label>
                                                         </div>
