@@ -59,6 +59,14 @@ fields:
     display: 'company_rent_or_own'
   company_mortgage:
     display: 'company_mortgage'
+  company_years_in_business:
+    display: company_years_in_business
+  company_land_lord_name:
+      display: company_land_lord_name
+  company_land_lord_phone:
+      display: company_land_lord_phone
+  company_land_lord_expiration:
+      display: company_land_lord_expiration
   company_address_line1:
     display: 'company_address_line1'
   company_address_line2:
@@ -135,6 +143,8 @@ fields:
     display: 'submission_id'
   ip:
     display: 'IP'
+  language:
+    display: 'Language'
   step:
     display: step
     validate: required|integer
