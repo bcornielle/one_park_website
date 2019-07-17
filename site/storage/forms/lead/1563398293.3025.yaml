@@ -9,7 +9,7 @@ transaction_id: ''
 source: /pre-qualification-2
 api_id: ''
 submission_id: '1563398293.3025'
-step: 3
+step: 4
 company_name: 'Haitian Pikliz LLC'
 company_years_in_business: '1'
 company_revenue: 2500
@@ -37,3 +37,12 @@ company_address_line1: '7000 SW 10th Street, Suite 2000'
 company_address_city: Miramar
 company_address_state: FL
 company_address_zip: '33324'
+company_owners_total: 'Single Owner'
+company_owner1_phone: '7864415825'
+company_owner1_email: haitianpikliz@gmail.com
+company_owner1_dob: '09191985'
+company_owner1_ssn: '595507979'
+company_owner1_title: 'Da Boss'
+company_owner1_address_line1: '8100 SW 10th Street, Suite 2000'
+company_owner1_address_city: Miramar
+company_owner1_address_zip: '33324'
