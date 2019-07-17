@@ -9,7 +9,7 @@ transaction_id: ''
 source: /pre-qualification-2
 api_id: ''
 submission_id: '1563398293.3025'
-step: 2
+step: 3
 company_name: 'Haitian Pikliz LLC'
 company_years_in_business: '1'
 company_revenue: 2500
@@ -33,3 +33,7 @@ company_mortgage: '1500'
 company_land_lord_name: 'Juan Pablo'
 company_land_lord_phone: '7865526969'
 company_land_lord_expiration: '2020-05-02'
+company_address_line1: '7000 SW 10th Street, Suite 2000'
+company_address_city: Miramar
+company_address_state: FL
+company_address_zip: '33324'
