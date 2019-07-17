@@ -1,265 +1,349 @@
 <main id="step4">
     {{ FormStackAddon:steps}}
         {{ if step < 3 }}
-        {{ redirect to="{ redirect_to }" }}
+            {{ redirect to="{ redirect_to }" }}
         {{ /if }}
-        <section id="form">
-            <div class="container">
-                <div class="form">
-                    <div id="prequalifed-content">
-                        <h1>Owner Info</h1>
-                        <div class="form-wrapper">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <article class="steps">
-                                        {{ form:set is="lead" }}
-                                        {{ form:create }}
-                                        <div class="fields">
-                                            <input type="text" name="honeypot" class="honeypot" style="display: none"/>
-                                            <input type="hidden" name="source" value="{{ source }}"/>
-                                            <input type="hidden" name="utm_source" value="{{ utm_source }}"/>
-                                            <input type="hidden" name="utm_campaign" value="{{ utm_campaign }}"/>
-                                            <input type="hidden" name="utm_medium" value="{{ utm_medium }}"/>
-                                            <input type="hidden" name="utm_term" value="{{ utm_term }}"/>
-                                            <input type="hidden" name="utm_content" value="{{ utm_content }}"/>
-                                            <input type="hidden" name="transaction_id" value="{{ transaction_id }}"/>
-                                            <input type="hidden" name="api_id" value="{{ api_id }}"/>
-                                            <input type="hidden" name="submission_id" value="{{ submission_id }}"/>
-                                            <input type="hidden" name="step" value="4"/>
-                                            <input type="hidden" name="phone" value="{{ phone }}"/>
-                                            <input type="hidden" name="email" value="{{ email }}"/>
-                                            <input type="hidden" name="company_name" value="{{ company_name }}"/>
-                                            <div class="form-row justify-content-md-center">
-                                                <div class="col-md-4">
-                                                    <label for="company_owners_total">
-                                                        <div class="text-center">How many Owners does your company have?</div>
-                                                        <select id="company_owners_total" name="company_owners_total" class="form-control text-center" required onchange="toggle_visibility('second-owner');">
-                                                            {{ foreach:company_owners_total_options }}
-                                                            {{ if old:company_owners_total == key || company_owners_total == key }}
-                                                            <option value="{{ key }}" selected>{{ value }}</option>
-                                                            {{ else }}
-                                                            <option value="{{ key }}">{{ value }}</option>
-                                                            {{ /if }}
-                                                            {{ /foreach:company_owners_total_options }}
-                                                        </select>
-                                                        <br>
-                                                        <br>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <fieldset>
-                                                <legend><span style="text-transform: uppercase; font-weight: bold; border-bottom: solid 1px #444;">First Owner</span></legend>
-                                                <div class="form-row">
-                                                    <div class="col-md-6">
-                                                        <label for="company_owner1_fname">
-                                                            <div>Name</div>
-                                                            <input type="text" id="company_owner1_fname" name="company_owner1_fname" class="form-control" value="{{ old:company_owner1_fname or company_owner1_fname }}" maxlength="50" required/>
-                                                        </label>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <label for="company_owner1_lname">
-                                                            <div>Lastname</div>
-                                                            <input type="text" id="company_owner1_lname" name="company_owner1_lname" class="form-control" value="{{ old:company_owner1_lname or company_owner1_lname }}" maxlength="50" required/>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="form-row">
-                                                    <div class="col-md-6">
-                                                        <label for="company_owner1_phone">
-                                                            <div>Phone</div>
-                                                            <input type="tel" id="company_owner1_phone" name="company_owner1_phone" class="form-control" value="{{ old:company_owner1_phone or company_owner1_phone }}" maxlength="50" required/>
-                                                        </label>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <label for="company_owner1_email">
-                                                            <div>Email</div>
-                                                            <input type="email" id="company_owner1_email" name="company_owner1_email" class="form-control" value="{{ old:company_owner1_email or company_owner1_email }}" maxlength="100" required/>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="form-row">
-                                                    <div class="col-md-6">
-                                                        <label for="company_owner1_dob">
-                                                            <div>Date Of Birth</div>
-                                                            <input type="date" id="company_owner1_dob" name="company_owner1_dob" class="form-control" value="{{ old:company_owner1_dob or company_owner1_dob }}"/>
-                                                        </label>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <label for="company_owner1_ssn">
-                                                            <div>Social Security Number</div>
-                                                            <input type="text" id="company_owner1_ssn" name="company_owner1_ssn" class="form-control" value="{{ old:company_owner1_ssn or company_owner1_ssn }}" maxlength="11"/>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="form-row">
-                                                    <div class="col-md-12">
-                                                        <label for="company_owner1_title">
-                                                            <div>Title</div>
-                                                            <input type="text" id="company_owner1_title" name="company_owner1_title" class="form-control" value="{{ old:company_owner1_title or company_owner1_title }}" maxlength="50" required/>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="form-row">
-                                                    <div class="col-md-12">
-                                                        <label for="company_owner1_address_line1">
-                                                            <div>Address</div>
-                                                            <input type="text" id="company_owner1_address_line1" name="company_owner1_address_line1" class="form-control" value="{{ old:company_owner1_address_line1 or company_owner1_address_line1 }}" maxlength="100" required/>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="form-row">
-                                                    <div class="col-md-6">
-                                                        <label for="company_owner1_address_city">
-                                                            <div>City</div>
-                                                            <input type="text" id="company_owner1_address_city" name="company_owner1_address_city" class="form-control" value="{{ old:company_owner1_address_city or company_owner1_address_city }}" maxlength="50" required/>
-                                                        </label>
-                                                    </div>
-                                                    <div class="col-md-3">
-                                                        <label for="company_owner1_address_state">
-                                                            <div>State</div>
-                                                            <select id="company_owner1_address_state" aria-label="State" name="company_owner1_address_state" class="form-control">
-                                                                {{ foreach:company_owner_address_state_options }}
-                                                                {{ if old:company_owner1_address_state == key || company_owner1_address_state == key }}
-                                                                <option value="{{ key }}" selected>{{ value }}</option>
-                                                                {{ else }}
-                                                                <option value="{{ key }}">{{ value }}</option>
-                                                                {{ /if }}
-                                                                {{ /foreach:company_owner_address_state_options }}
-                                                            </select>
-                                                        </label>
-                                                    </div>
-                                                    <div class="col-md-3">
-                                                        <label for="company_owner1_address_zip">
-                                                            <div>Zip Code</div>
-                                                            <input type="number" id="company_owner1_address_zip" name="company_owner1_address_zip" class="form-control" value="{{ old:company_owner1_address_zip or company_owner1_address_zip }}" maxlength="20" required/>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </fieldset>
-                                            <br><br>
-                                            <fieldset id="second-owner" style="display: none;">
-                                                <legend><span style="text-transform: uppercase; font-weight: bold; border-bottom: solid 1px #444;">Second Owner</span></legend>
-                                                <div class="form-row">
-                                                    <div class="col-md-6">
-                                                        <label for="company_owner2_fname">
-                                                            <div>Name</div>
-                                                            <input type="text" id="company_owner2_fname" name="company_owner2_fname" class="form-control" value="{{ old:company_owner2_fname or company_owner2_fname }}" maxlength="50"/>
-                                                        </label>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <label for="company_owner2_lname">
-                                                            <div>Lastname</div>
-                                                            <input type="text" id="company_owner2_lname" name="company_owner2_lname" class="form-control" value="{{ old:company_owner2_lname or company_owner2_lname }}" maxlength="50"/>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="form-row">
-                                                    <div class="col-md-6">
-                                                        <label for="company_owner2_phone">
-                                                            <div>Phone</div>
-                                                            <input type="tel" id="company_owner2_phone" name="company_owner2_phone" class="form-control" value="{{ old:company_owner2_phone or company_owner2_phone }}" maxlength="20"/>
-                                                        </label>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <label for="company_owner2_email">
-                                                            <div>Email</div>
-                                                            <input type="email" id="company_owner2_email" name="company_owner2_email" class="form-control" value="{{ old:company_owner2_email or company_owner2_email }}" maxlength="100"/>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="form-row">
-                                                    <div class="col-md-6">
-                                                        <label for="company_owner2_dob">
-                                                            <div>Date Of Birth</div>
-                                                            <input type="date" id="company_owner2_dob" name="company_owner2_dob" class="form-control" value="{{ old:company_owner2_dob or company_owner2_dob }}"/>
-                                                        </label>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <label for="company_owner2_ssn">
-                                                            <div>Social Security Number</div>
-                                                            <input type="text" id="company_owner2_ssn" name="company_owner2_ssn" class="form-control" value="{{ old:company_owner2_ssn or company_owner2_ssn }}" maxlength="11"/>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="form-row">
-                                                    <div class="col-md-12">
-                                                        <label for="company_owner2_title">
-                                                            <div>Title</div>
-                                                            <input type="text" id="company_owner2_title" name="company_owner2_title" class="form-control" value="{{ old:company_owner2_title or company_owner2_title }}" maxlength="50"/>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="form-row">
-                                                    <div class="col-md-12">
-                                                        <label for="company_owner2_address_line1">
-                                                            <div>Address</div>
-                                                            <input type="text" id="company_owner2_address_line1" name="company_owner2_address_line1" class="form-control" value="{{ old:company_owner2_address_line1 or company_owner2_address_line1 }}" maxlength="100"/>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="form-row">
-                                                    <div class="col-md-6">
-                                                        <label for="company_owner2_address_city">
-                                                            <div>City</div>
-                                                            <input type="text" id="company_owner2_address_city" name="company_owner2_address_city" class="form-control" value="{{ old:company_owner2_address_city or company_owner2_address_city }}" maxlength="50"/>
-                                                        </label>
-                                                    </div>
-                                                    <div class="col-md-3">
-                                                        <label for="company_owner2_address_state">
-                                                            <div>State</div>
-                                                            <select id="company_owner2_address_state" aria-label="State" name="company_owner2_address_state" class="form-control">
-                                                                {{ foreach:company_owner_address_state_options }}
-                                                                {{ if old:company_owner2_address_state == key || company_owner2_address_state == key }}
-                                                                <option value="{{ key }}" selected>{{ value }}</option>
-                                                                {{ else }}
-                                                                <option value="{{ key }}">{{ value }}</option>
-                                                                {{ /if }}
-                                                                {{ /foreach:company_owner_address_state_options }}
-                                                            </select>
-                                                        </label>
-                                                    </div>
-                                                    <div class="col-md-3">
-                                                        <label for="company_owner2_address_zip">
-                                                            <div>Zip Code</div>
-                                                            <input type="number" id="company_owner2_address_zip" name="company_owner2_address_zip" class="form-control" value="{{ old:company_owner2_address_zip or company_owner2_address_zip }}" maxlength="20"/>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </fieldset>
-                                        </div>
-                                        <div class="text-center">
-                                            <button id="submit" class="btn btn-primary">Submit</button>
-                                        </div>
-                                        <br><br>
-                                        <div>
-                                            <div class="text-center" style="text-transform: uppercase; margin-bottom: 5px;">
-                                                Step 4 of 4
-                                            </div>
-                                            <div class="progress" style="height: 25px;">
-                                                <div class="progress-bar bg-success progress-bar-striped" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
-                                            </div>
-                                        </div>
-                                        {{ if {form:success} }}
-                                        {{ form_submission }}
-                                        {{ /if }}
-                                        {{ /form:create }}
-                                        {{ /form:set }}
-                                    </article>
+    <section id="formNew">
+        <div class="form-focus">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 background-focus">
+                            <div class="form-progress-bar d-lg-none">
+                                <div class="stage text-center">
+                                    <div class="row">
+                                        <div class="col">Start</div>
+                                        <div class="col">Company</div>
+                                        <div class="col active">Owner(s)</div>
+                                        <div class="col">Done</div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="progression-bar"></div>
+                                    </div>
+                                </div>
+                                <div class="percentage text-center">
+                                    <div class="row">
+                                        <div class="col start">100%</div>
+                                        <div class="col company d-none"></div>
+                                        <div class="col address d-none"></div>
+                                        <div class="col owners d-none"></div>
+                                        <div class="col done d-none"></div>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="prequalification-header reduce-h1-size">
+                                <h1>Enter Owner Information.</h1>
+                                <h2>Complete remaining fields to finish the application.</h2>
+                            </div>
+                            <div id="prequalifed-content">
+                            <article class="steps step-4">
+                                {{ form:set is="lead" }}
+                                {{ form:create }}
+                                <div class="fields">
+                                    <input type="text" name="honeypot" class="honeypot" />
+                                    <input type="hidden" name="source" value="{{ source }}" />
+                                    <input type="hidden" name="api_id" value="{{ api_id }}" />
+                                    <input type="hidden" name="submission_id" value="{{ submission_id }}" />
+                                    <input type="hidden" name="step" value="4" />
+                                    <input type="hidden" name="phone" value="{{ phone }}" />
+                                    <input type="hidden" name="email" value="{{ email }}" />
+                                    <input type="hidden" name="company_name" value="{{ company_name }}" />
+                                    <div class="form-category-title">
+                                        <h3>How many Owners does your company have?</h3>
+                                    </div>
+                                    <div class="form-group float-label">
+                                        <div class="form-select-container">
+                                            <span class="down-arrow fa fa-chevron-down"></span>
+                                            <select id="company_owners_total" name="company_owners_total"
+                                                class="form-control" required onchange="toggle_visibility('second-owner');">
+                                                {{ foreach:company_owners_total_options }}
+                                                {{ if old:company_owners_total == key || company_owners_total == key }}
+                                                <option value="{{ key }}" selected>{{ value }}</option>
+                                                {{ else }}
+                                                <option value="{{ key }}">{{ value }}</option>
+                                                {{ /if }}
+                                                {{ /foreach:company_owners_total_options }}
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <fieldset>
+                                        <div class="form-category-title">
+                                            <h3 class="uppercase">First Owner</h3>
+                                        </div>
+                                        <div class="form-group float-label input-tooltip">
+                                            <input type="text" id="company_owner1_fullname" name="company_owner1_fullname"
+                                                class="form-control" placeholder="Full Name (First and Last)"
+                                                value="{{ old:company_owner1_fullname or company_owner1_fullname }}"
+                                                maxlength="50" required />
+                                            <label for="company_owner1_fullname">Full Name (First and Last)</label>
+                                        </div>
+                                        <div class="form-group float-label input-tooltip">
+                                            <input type="text" id="company_owner1_title" name="company_owner1_title"
+                                                class="form-control" placeholder="Title"
+                                                value="{{ old:company_owner1_title or company_owner1_title }}"
+                                                maxlength="50" />
+                                            <label for="company_owner1_title">Title</label>
+                                        </div>
+                                        <div class="form-category-title">
+                                            <h3>Address:</h3>
+                                        </div>
+                                        <div class="form-group float-label">
+                                            <input type="text" id="company_owner1_address_line1"
+                                                name="company_owner1_address_line1" class="form-control"
+                                                value="{{ old:company_owner1_address_line1 or company_owner1_address_line1 }}"
+                                                maxlength="50" required placeholder="Street Address" />
+                                            <label for="company_owner1_address_line1">Street Address:</label>
+                                        </div>
+                                        <div class="form-group float-label">
+                                            <input type="text" id="company_owner1_address_line2"
+                                                name="company_owner1_address_line2" class="form-control"
+                                                value="{{ old:company_owner1_address_line2 or company_owner1_address_line2 }}"
+                                                maxlength="50" placeholder="Address Line 2 (optional)" />
+                                            <label for="company_owner1_address_line2">Address Line 2
+                                                <em>(optional)</em>:</label>
+                                        </div>
+                                        <div class="form-group float-label">
+                                            <input type="text" id="company_owner1_address_city"
+                                                name="company_owner1_address_city" class="form-control"
+                                                value="{{ old:company_owner1_address_city or company_owner1_address_city }}"
+                                                placeholder="City" />
+                                            <label for="company_owner1_address_city">City:</label>
+                                        </div>
+                                        <div class="form-group float-label select-state">
+                                            <div class="form-select-container select-float-label">
+                                                <span class="down-arrow fa fa-chevron-down"></span>
+                                                <label for="company_owner_address_state1" class="on">State</label>
+                                                <select id="company_owner_address_state" name="company_owner_address_state1"
+                                                    class="form-control" placeholder="State">
+                                                    <option value="" selected disabled>State</option>
+                                                    {{ foreach:company_owner_address_state_options }}
+                                                    {{ if old:company_owner1_address_state == key || company_owner_address1_state == key }}
+                                                    <option value="{{ key }}" selected>{{ value }}</option>
+                                                    {{ else }}
+                                                    <option value="{{ key }}">{{ value }}</option>
+                                                    {{ /if }}
+                                                    {{ /foreach:company_owner_address_state_options }}
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group float-label input-zip">
+                                            <input type="number" id="company_owner1_address_zip"
+                                                name="company_owner1_address_zip" class="form-control"
+                                                value="{{ old:company_owner1_address_zip or company_owner1_address_zip }}"
+                                                maxlength="20" required placeholder="Zip Code" />
+                                            <label for="company_owner1_address_zip">Zip Code:</label>
+                                        </div>
+                                        <div class="form-category-title">
+                                            <h3>Contact:</h3>
+                                        </div>
+                                        <div class="form-group input-tooltip float-label">
+                                            <input type="tel" id="company_owner1_phone" name="company_owner1_phone"
+                                                class="form-control" placeholder="Phone Number"
+                                                value="{{ old:company_owner1_phone or company_owner1_phone }}"
+                                                maxlength="10" required />
+                                            <label for="company_owner1_phone">Phone Number</label>
+                                        </div>
+                                        <div class="form-group input-tooltip float-label">
+                                            <input type="company_owner1_email" id="company_owner1_email"
+                                                name="company_owner1_email" class="form-control" placeholder="Email Address"
+                                                value="{{ old:company_owner1_email or company_owner1_email }}"
+                                                maxlength="100" required />
+                                            <label for="company_owner1_email">Email Address</label>
+                                            <div class="tooltip-dot" data-toggle="tooltip" data-placement="top"
+                                                title="We won't misuse or resell your contact information.">?</div>
+                                        </div>
+                                        <div class="form-category-title">
+                                            <h3>Verification Details:</h3>
+                                        </div>
+                                        <div class="form-group float-label input-tooltip">
+                                            <input type="text" id="company_owner1_dob" name="company_owner1_dob"
+                                                class="form-control" placeholder="Date of Birth"
+                                                value="{{ old:company_owner1_dob or company_owner1_dob }}" maxlength="11" />
+                                            <label for="company_owner1_dob">Date of Birth</label>
+                                        </div>
+                                        <div class="form-group float-label input-tooltip">
+                                            <input type="text" id="company_owner1_ownership_percentage"
+                                                name="company_owner1_ownership_percentage" class="form-control"
+                                                placeholder="Ownership Percentage"
+                                                value="{{ old:company_owner1_ownership_percentage or company_owner1_ownership_percentage }}"
+                                                maxlength="50" required />
+                                            <label for="company_owner1_ownership_percentage">Ownership Percentage</label>
+                                        </div>
+                                        <div class="form-group float-label input-tooltip float-label">
+                                            <input type="text" id="company_owner1_ssn" name="company_owner1_ssn"
+                                                class="form-control" placeholder="Social Security Number"
+                                                value="{{ old:company_owner1_ssn or company_owner1_ssn }}" maxlength="11" />
+                                            <label for="company_owner1_ssn">Social Security Number</label>
+                                            <div class="tooltip-dot" data-toggle="tooltip" data-placement="top"
+                                                title="We secure and protect your information with strong encryption technology.">
+                                                ?</div>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset id="second-owner" style="display: none;">
+                                        <div class="form-category-title">
+                                            <h3 class="uppercase">Second Owner</h3>
+                                        </div>
+                                        <div class="form-group float-label input-tooltip">
+                                            <input type="text" id="company_owner2_fullname" name="company_owner2_fullname"
+                                                class="form-control" placeholder="Full Name (First and Last)"
+                                                value="{{ old:company_owner2_fullname or company_owner2_fullname }}"
+                                                maxlength="50" required />
+                                            <label for="company_owner2_fullname">Full Name (First and Last)</label>
+                                        </div>
+                                        <div class="form-group float-label input-tooltip">
+                                            <input type="text" id="company_owner2_title" name="company_owner2_title"
+                                                class="form-control" placeholder="Title"
+                                                value="{{ old:company_owner2_title or company_owner2_title }}"
+                                                maxlength="50" />
+                                            <label for="company_owner2_title">Title</label>
+                                        </div>
+                                        <div class="form-category-title">
+                                            <h3>Address:</h3>
+                                        </div>
+                                        <div class="form-group float-label">
+                                            <input type="text" id="company_owner2_address_line1"
+                                                name="company_owner2_address_line1" class="form-control"
+                                                value="{{ old:company_owner2_address_line1 or company_owner2_address_line1 }}"
+                                                maxlength="50" required placeholder="Street Address" />
+                                            <label for="company_owner2_address_line1">Street Address:</label>
+                                        </div>
+                                        <div class="form-group float-label">
+                                            <input type="text" id="company_owner2_address_line2"
+                                                name="company_owner2_address_line2" class="form-control"
+                                                value="{{ old:company_owner2_address_line2 or company_owner2_address_line2 }}"
+                                                maxlength="50" placeholder="Address Line 2 (optional)" />
+                                            <label for="company_owner2_address_line2">Address Line 2
+                                                <em>(optional)</em>:</label>
+                                        </div>
+                                        <div class="form-group float-label">
+                                            <input type="text" id="company_owner2_address_city"
+                                                name="company_owner2_address_city" class="form-control"
+                                                value="{{ old:company_owner2_address_city or company_owner2_address_city }}"
+                                                placeholder="City" />
+                                            <label for="company_owner2_address_city">City:</label>
+                                        </div>
+                                        <div class="form-group float-label select-state">
+                                            <div class="form-select-container select-float-label">
+                                                <span class="down-arrow fa fa-chevron-down"></span>
+                                                <label for="company_owner_address_state1" class="on">State</label>
+                                                <select id="company_owner_address_state" name="company_owner_address_state1"
+                                                    class="form-control" placeholder="State">
+                                                    <option value="" selected disabled>State</option>
+                                                    {{ foreach:company_owner_address_state_options }}
+                                                    {{ if old:company_owner2_address_state == key || company_owner_address1_state == key }}
+                                                    <option value="{{ key }}" selected>{{ value }}</option>
+                                                    {{ else }}
+                                                    <option value="{{ key }}">{{ value }}</option>
+                                                    {{ /if }}
+                                                    {{ /foreach:company_owner_address_state_options }}
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group float-label input-zip">
+                                            <input type="number" id="company_owner2_address_zip"
+                                                name="company_owner2_address_zip" class="form-control"
+                                                value="{{ old:company_owner2_address_zip or company_owner2_address_zip }}"
+                                                maxlength="20" required placeholder="Zip Code" />
+                                            <label for="company_owner2_address_zip">Zip Code:</label>
+                                        </div>
+                                        <div class="form-category-title">
+                                            <h3>Contact:</h3>
+                                        </div>
+                                        <div class="form-group input-tooltip float-label">
+                                            <input type="tel" id="company_owner2_phone" name="company_owner2_phone"
+                                                class="form-control" placeholder="Phone Number"
+                                                value="{{ old:company_owner2_phone or company_owner2_phone }}"
+                                                maxlength="10" required />
+                                            <label for="company_owner2_phone">Phone Number</label>
+                                        </div>
+                                        <div class="form-group input-tooltip float-label">
+                                            <input type="company_owner2_email" id="company_owner2_email"
+                                                name="company_owner2_email" class="form-control" placeholder="Email Address"
+                                                value="{{ old:company_owner2_email or company_owner2_email }}"
+                                                maxlength="100" required />
+                                            <label for="company_owner2_email">Email Address</label>
+                                            <div class="tooltip-dot" data-toggle="tooltip" data-placement="top"
+                                                title="We won't misuse or resell your contact information.">?</div>
+                                        </div>
+                                        <div class="form-category-title">
+                                            <h3>Verification Details:</h3>
+                                        </div>
+                                        <div class="form-group float-label input-tooltip">
+                                            <input type="text" id="company_owner2_dob" name="company_owner2_dob"
+                                                class="form-control" placeholder="Date of Birth"
+                                                value="{{ old:company_owner2_dob or company_owner2_dob }}" maxlength="11" />
+                                            <label for="company_owner2_dob">Date of Birth</label>
+                                        </div>
+                                        <div class="form-group float-label input-tooltip">
+                                            <input type="text" id="company_owner2_ownership_percentage"
+                                                name="company_owner2_ownership_percentage" class="form-control"
+                                                placeholder="Ownership Percentage"
+                                                value="{{ old:company_owner2_ownership_percentage or company_owner2_ownership_percentage }}"
+                                                maxlength="50" required />
+                                            <label for="company_owner2_ownership_percentage">Ownership Percentage</label>
+                                        </div>
+                                        <div class="form-group float-label input-tooltip float-label">
+                                            <input type="text" id="company_owner2_ssn" name="company_owner2_ssn"
+                                                class="form-control" placeholder="Social Security Number"
+                                                value="{{ old:company_owner2_ssn or company_owner2_ssn }}" maxlength="11" />
+                                            <label for="company_owner2_ssn">Social Security Number</label>
+                                            <div class="tooltip-dot" data-toggle="tooltip" data-placement="top"
+                                                title="We secure and protect your information with strong encryption technology.">
+                                                ?</div>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <hr>
+                                <div class="text-center">
+                                    <button id="submit" class="btn btn-primary btn-block">Submit</button>
+                                </div>
+                                {{ if {form:success} }}
+                                {{ form_submission }}
+                                {{ /if }}
+                                {{ /form:create }}
+                                {{ /form:set }}
+                            </article>
+                        </div>
+                    </div>
+                <div class="col-lg-4 form-right-col progress-right d-none d-lg-block">
+                    <div class="qualification-amount">
+                        <div class="intro">Based on what you provided</div>
+                        <div class="ribbon"></div>
+                        <div class="title">You're Pre-qualified!</div>
+                        <div class="capital">${{ company_revenue }}</div>
+                    </div>
+                    <h3 class="text-left">Your progress:</h3>
+                    <div class="progress-list text-center">
+                        <div class="row stage passed">
+                            <p>Start Now</p>
+                        </div>
+                        <div class="row stage passed">
+                            <p>Your Company</p>
+                        </div>
+                        <div class="row stage active">
+                            <p>Owner Info</p>
+                        </div>
+                        <div class="row stage inactive">
+                            <p>All Set!</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+                </div>
+            </div>
+        </div>
+    </section>
     {{ /FormStackAddon:steps }}
 </main>
-<script type="text/javascript">
+<script>
     function toggle_visibility(id) {
         var e = document.getElementById(id);
-        if(e.style.display == 'block')
+        if (e.style.display === 'block'){
             e.style.display = 'none';
-        else
+        }else{
             e.style.display = 'block';
+        }
     }
 </script>

@@ -1,92 +1,180 @@
-<main id="self-service">
-    {{ FormStackAddon:self_service}}
-        {{ if ! status }}
-            {{ redirect to="{ redirect_to }" }}
-        {{ /if }}
-        <section id="form" class="lp-form">
-            <div class="container">
-                <div class="row">
-                    <div class="form">
-                        <div id="prequalifed-content">
-                            <h1>You've been pre-qualified</h1>
-                            <img src="/assets/img/checkmark.png">
-                            <div>
-                                <p>{{ fname }}, you have been pre-qualified for </p>
-                            </div>
-                            <div>
-                                <p class="amount">
-                                    <span>${{ company_revenue }}</span>
-                                </p>
-                            </div>
-                            <div>
-                                <p>in working capital for {{ company_name }}</p>
-                            </div>
-                            <br>
-                            <p>
-                                Not enough? Don’t sweat it.<br>
-                                The pre-qualification amount can change, based on your unique business situation
-                            </p>
-                            <p><strong>Let’s complete your application below</strong></p>
-                            <br>
-                            <br>
-                            <div>
-                                <div class="row justify-content-md-center">
-                                    <div class="col-sm-12 col-md-6 col-lg-4">
-                                        <div class="lp-form-wrapper light">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <article class="content">
-                                                        {{ form:set is="lead" }}
-                                                        {{ form:create }}
-                                                        <div class="fields">
-                                                            <input type="text" name="honeypot" class="honeypot" style="display: none"/>
-                                                            <input type="hidden" name="fullname" value="{{ fullname }}"/>
-                                                            <input type="hidden" name="fname" value="{{ fname }}"/>
-                                                            <input type="hidden" name="lname" value="{{ lname }}"/>
-                                                            <input type="hidden" name="phone" value="{{ phone }}"/>
-                                                            <input type="hidden" name="email" value="{{ email }}"/>
-                                                            <input type="hidden" name="company_name" value="{{ company_name }}"/>
-                                                            <input type="hidden" name="company_phone" value="{{ company_phone }}"/>
-                                                            <input type="hidden" name="company_revenue" value="{{ company_revenue }}"/>
-                                                            <input type="hidden" name="company_has_banking" value="{{ company_has_banking }}"/>
-                                                            <input type="hidden" name="company_active_bankruptcy" value="{{ company_active_bankruptcy }}"/>
-                                                            <input type="hidden" name="company_started" value="{{ company_started }}"/>
-                                                            <input type="hidden" name="company_owner" value="Julian Beaujardin"/>
-                                                            <input type="hidden" name="utm_source" value="{{ utm_source }}"/>
-                                                            <input type="hidden" name="utm_campaign" value="{{ utm_campaign }}"/>
-                                                            <input type="hidden" name="utm_medium" value="{{ utm_medium }}"/>
-                                                            <input type="hidden" name="utm_term" value="{{ utm_term }}"/>
-                                                            <input type="hidden" name="utm_content" value="{{ utm_content }}"/>
-                                                            <input type="hidden" name="transaction_id" value="{{ transaction_id }}"/>
-                                                            <input type="hidden" name="source" value="{{ source }}"/>
-                                                            <input type="hidden" name="api_id" value="{{ api_id }}"/>
-                                                            <input type="hidden" name="submission_id" value="{{ submission_id }}"/>
-                                                            {{ if {form:success} }}
-                                                                {{ form_submission }}
-                                                            {{ /if }}
-                                                        </div>
-                                                        <br>
-                                                        <button class="btn btn-primary">SUBMIT</button>
-                                                        {{ if errors }}
-                                                            <div id="error-alert">
-                                                                {{ errors }}
-                                                                {{ value }}<br>
-                                                                {{ /errors }}
-                                                            </div>
-                                                        {{ /if }}
-                                                        {{ /form:create }}
-                                                        {{ /form:set }}
-                                                    </article>
-                                                </div>
-                                            </div>
+<main id="step3">
+    {{ FormStackAddon:steps}}
+    {{ if step < 2 }}
+        {{ redirect to="{ redirect_to }" }}
+    {{ /if }}
+    <section id="formNew">
+        <div class="form-focus">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 background-focus">
+                            <div class="form-progress-bar d-lg-none">
+                                <div class="stage text-center">
+                                    <div class="row">
+                                        <div class="col">Start</div>
+                                        <div class="col active">Company</div>
+                                        <div class="col">Owner(s)</div>
+                                        <div class="col">Done</div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="progression-bar">
+        
                                         </div>
                                     </div>
+                                </div>
+                                <div class="percentage text-center">
+                                    <div class="row">
+                                        <div class="col start">50%</div>
+                                        <div class="col company d-none"></div>
+                                        <div class="col address d-none"></div>
+                                        <div class="col owners d-none"></div>
+                                        <div class="col done inactive"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form">
+                                <div id="prequalifed-content">
+                                    <article class="steps">
+                                        {{ form:set is="lead" }}
+                                        {{ form:create }}
+                                        <div class="fields">
+                                            <input type="text" name="honeypot" class="honeypot" style="display: none" />
+                                            <input type="hidden" name="source" value="{{ source }}" />
+                                            <input type="hidden" name="utm_source" value="{{ utm_source }}" />
+                                            <input type="hidden" name="utm_campaign" value="{{ utm_campaign }}" />
+                                            <input type="hidden" name="utm_medium" value="{{ utm_medium }}" />
+                                            <input type="hidden" name="utm_term" value="{{ utm_term }}" />
+                                            <input type="hidden" name="utm_content" value="{{ utm_content }}" />
+                                            <input type="hidden" name="transaction_id" value="{{ transaction_id }}" />
+                                            <input type="hidden" name="api_id" value="{{ api_id }}" />
+                                            <input type="hidden" name="submission_id" value="{{ submission_id }}" />
+                                            <input type="hidden" name="step" value="3" />
+                                            <input type="hidden" name="phone" value="{{ phone }}" />
+                                            <input type="hidden" name="email" value="{{ email }}" />
+                                            <input type="hidden" name="company_name" value="{{ company_name }}" />
+                                            <div class="form-category-title">
+                                                <h3>Enter Business Address:</h3>
+                                            </div>
+                                            <div class="form-group float-label">
+                                                <input type="text" id="company_address_line1"
+                                                    name="company_address_line1" class="form-control"
+                                                    value="{{ old:company_address_line1 or company_address_line1 }}"
+                                                    maxlength="50" required placeholder="Street Address" />
+                                                <label for="company_address_line1">Street Address:</label>
+                                            </div>
+                                            <div class="form-group float-label">
+                                                <input type="text" id="company_address_line2"
+                                                    name="company_address_line2" class="form-control"
+                                                    value="{{ old:company_address_line2 or company_address_line2 }}"
+                                                    maxlength="50" placeholder="Address Line 2 (optional)" />
+                                                <label for="company_address_line2">Address Line 2
+                                                    <em>(optional)</em>:</label>
+                                            </div>
+                                            <div class="form-group float-label">
+                                                <input type="text" id="company_address_city" name="company_address_city"
+                                                    class="form-control"
+                                                    value="{{ old:company_address_city or company_address_city }}"
+                                                    placeholder="City" />
+                                                <label for="company_address_city">City:</label>
+                                            </div>
+                                            <div class="form-group float-label select-state">
+                                                <div class="form-select-container select-float-label">
+                                                    <span class="down-arrow fa fa-chevron-down"></span>
+                                                    <label for="company_address_state" class="on">State</label>
+                                                    <select id="company_address_state" name="company_address_state"
+                                                        class="form-control position-label" placeholder="State">
+                                                        <option value="" selected disabled>State</option>
+                                                        {{ foreach:company_address_state_options }}
+                                                        {{ if old:company_address_state == key || company_address_state == key }}
+                                                        <option value="{{ key }}" selected>{{ value }}</option>
+                                                        {{ else }}
+                                                        <option value="{{ key }}">{{ value }}</option>
+                                                        {{ /if }}
+                                                        {{ /foreach:company_address_state_options }}
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group float-label input-zip">
+                                                <input type="number" id="company_address_zip" name="company_address_zip"
+                                                    class="form-control"
+                                                    value="{{ old:company_address_zip or company_address_zip }}"
+                                                    maxlength="20" required placeholder="Zip Code" />
+                                                <label for="company_address_zip">Zip Code:</label>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="text-center">
+                                            <button id="submit" class="btn btn-primary btn-block">Continue</button>
+                                        </div>
+                                        {{ if {form:success} }}
+                                        {{ form_submission }}
+                                        {{ /if }}
+                                        {{ /form:create }}
+                                        {{ /form:set }}
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 form-right-col progress-right d-none d-lg-block">
+                            <div class="qualification-amount">
+                                <div class="intro">Based on what you provided</div>
+                                <div class="ribbon"></div>
+                                <div class="title">You're Pre-qualified!</div>
+                                <div class="capital">${{ company_revenue }}</div>
+                            </div>
+                            <h3 class="text-left">Your progress:</h3>
+                            <div class="progress-list text-center">
+                                <div class="row stage passed">
+                                    <p>Start Now</p>
+                                </div>
+                                <div class="row stage active">
+                                    <p>Your Company</p>
+                                </div>
+                                <div class="row stage inactive">
+                                    <p>Owner Info</p>
+                                </div>
+                                <div class="row stage inactive">
+                                    <p>All Set!</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-    {{ /FormStackAddon:self_service }}
+        </div>
+    </section>
+    {{ /FormStackAddon:steps }}
 </main>
+<script>
+    $(function () {
+        var onClass = "on";
+        var showClass = "show";
+        $("input, select").bind("checkval", function () {
+                var label = $(this).prev("label");
+
+                if (this.value !== "") label.addClass(showClass);
+                else label.removeClass(showClass);
+            }).on("keyup", function () {
+                $(this).trigger("checkval");
+            }).on("focus", function () {
+                $(this)
+                    .prev("label")
+                    .addClass(onClass);
+            }).on("blur", function () {
+                $(this)
+                    .prev("label")
+                    .removeClass(onClass);
+            }).trigger("checkval");
+        $("select").on("change", function () {
+                var $this = $(this);
+
+                if ($this.val() == "") $this.addClass("watermark");
+                else $this.removeClass("watermark");
+
+                $this.trigger("checkval");
+            }).change();
+    });
+</script>

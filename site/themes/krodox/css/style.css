@@ -7520,6 +7520,2239 @@ body.section-users section#users article {
   margin-top: 30px;
 }
 
+body.section-pre-qualification #app nav.apple .nav-wrapper,
+body.section-congrats #app nav.apple .nav-wrapper,
+body.section-complete #app nav.apple .nav-wrapper,
+body.section-preaprob #app nav.apple .nav-wrapper,
+body.section-feliz #app nav.apple .nav-wrapper,
+body.section-gracias #app nav.apple .nav-wrapper,
+body.section-steps #app nav.apple .nav-wrapper,
+body.section-step1 #app nav.apple .nav-wrapper,
+body.section-step2 #app nav.apple .nav-wrapper,
+body.section-step3 #app nav.apple .nav-wrapper,
+body.section-step4 #app nav.apple .nav-wrapper {
+  border-bottom: 1px solid #c5e2bd;
+}
+
+@media (max-width: 767.98px) {
+  body.section-pre-qualification #app nav.apple .nav-wrapper .burger-container,
+  body.section-congrats #app nav.apple .nav-wrapper .burger-container,
+  body.section-complete #app nav.apple .nav-wrapper .burger-container,
+  body.section-preaprob #app nav.apple .nav-wrapper .burger-container,
+  body.section-feliz #app nav.apple .nav-wrapper .burger-container,
+  body.section-gracias #app nav.apple .nav-wrapper .burger-container,
+  body.section-steps #app nav.apple .nav-wrapper .burger-container,
+  body.section-step1 #app nav.apple .nav-wrapper .burger-container,
+  body.section-step2 #app nav.apple .nav-wrapper .burger-container,
+  body.section-step3 #app nav.apple .nav-wrapper .burger-container,
+  body.section-step4 #app nav.apple .nav-wrapper .burger-container {
+    display: none;
+  }
+}
+
+body.section-pre-qualification #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top,
+body.section-congrats #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top,
+body.section-complete #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top,
+body.section-preaprob #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top,
+body.section-feliz #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top,
+body.section-gracias #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top,
+body.section-steps #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top,
+body.section-step1 #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top,
+body.section-step2 #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top,
+body.section-step3 #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top,
+body.section-step4 #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top {
+  font-size: 28px;
+}
+
+body.section-pre-qualification #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top li.language,
+body.section-congrats #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top li.language,
+body.section-complete #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top li.language,
+body.section-preaprob #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top li.language,
+body.section-feliz #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top li.language,
+body.section-gracias #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top li.language,
+body.section-steps #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top li.language,
+body.section-step1 #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top li.language,
+body.section-step2 #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top li.language,
+body.section-step3 #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top li.language,
+body.section-step4 #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top li.language {
+  display: none;
+}
+
+body.section-pre-qualification #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top .phone,
+body.section-congrats #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top .phone,
+body.section-complete #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top .phone,
+body.section-preaprob #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top .phone,
+body.section-feliz #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top .phone,
+body.section-gracias #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top .phone,
+body.section-steps #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top .phone,
+body.section-step1 #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top .phone,
+body.section-step2 #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top .phone,
+body.section-step3 #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top .phone,
+body.section-step4 #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top .phone {
+  padding-top: 30px;
+  margin-right: 0;
+}
+
+@media (max-width: 767.98px) {
+  body.section-pre-qualification #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top .phone,
+  body.section-congrats #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top .phone,
+  body.section-complete #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top .phone,
+  body.section-preaprob #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top .phone,
+  body.section-feliz #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top .phone,
+  body.section-gracias #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top .phone,
+  body.section-steps #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top .phone,
+  body.section-step1 #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top .phone,
+  body.section-step2 #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top .phone,
+  body.section-step3 #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top .phone,
+  body.section-step4 #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top .phone {
+    display: block;
+    font-size: 20px;
+    padding-top: 5px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body.section-pre-qualification #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top,
+  body.section-congrats #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top,
+  body.section-complete #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top,
+  body.section-preaprob #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top,
+  body.section-feliz #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top,
+  body.section-gracias #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top,
+  body.section-steps #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top,
+  body.section-step1 #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top,
+  body.section-step2 #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top,
+  body.section-step3 #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top,
+  body.section-step4 #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top {
+    font-size: 20px;
+  }
+
+  body.section-pre-qualification #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top .phone,
+  body.section-congrats #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top .phone,
+  body.section-complete #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top .phone,
+  body.section-preaprob #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top .phone,
+  body.section-feliz #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top .phone,
+  body.section-gracias #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top .phone,
+  body.section-steps #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top .phone,
+  body.section-step1 #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top .phone,
+  body.section-step2 #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top .phone,
+  body.section-step3 #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top .phone,
+  body.section-step4 #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top .phone {
+    padding-top: 40px;
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  body.section-pre-qualification #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top,
+  body.section-congrats #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top,
+  body.section-complete #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top,
+  body.section-preaprob #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top,
+  body.section-feliz #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top,
+  body.section-gracias #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top,
+  body.section-steps #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top,
+  body.section-step1 #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top,
+  body.section-step2 #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top,
+  body.section-step3 #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top,
+  body.section-step4 #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-top {
+    padding-top: 30px;
+  }
+}
+
+body.section-pre-qualification #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom,
+body.section-congrats #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom,
+body.section-complete #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom,
+body.section-preaprob #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom,
+body.section-feliz #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom,
+body.section-gracias #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom,
+body.section-steps #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom,
+body.section-step1 #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom,
+body.section-step2 #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom,
+body.section-step3 #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom,
+body.section-step4 #app nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom {
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  body.section-pre-qualification #app nav.apple .nav-wrapper .container .menus .navbar-right .join-now,
+  body.section-congrats #app nav.apple .nav-wrapper .container .menus .navbar-right .join-now,
+  body.section-complete #app nav.apple .nav-wrapper .container .menus .navbar-right .join-now,
+  body.section-preaprob #app nav.apple .nav-wrapper .container .menus .navbar-right .join-now,
+  body.section-feliz #app nav.apple .nav-wrapper .container .menus .navbar-right .join-now,
+  body.section-gracias #app nav.apple .nav-wrapper .container .menus .navbar-right .join-now,
+  body.section-steps #app nav.apple .nav-wrapper .container .menus .navbar-right .join-now,
+  body.section-step1 #app nav.apple .nav-wrapper .container .menus .navbar-right .join-now,
+  body.section-step2 #app nav.apple .nav-wrapper .container .menus .navbar-right .join-now,
+  body.section-step3 #app nav.apple .nav-wrapper .container .menus .navbar-right .join-now,
+  body.section-step4 #app nav.apple .nav-wrapper .container .menus .navbar-right .join-now {
+    display: none;
+  }
+}
+
+@media (max-width: 767.98px) {
+  body.section-pre-qualification #app nav.apple .nav-wrapper .container .menus .navbar-left,
+  body.section-congrats #app nav.apple .nav-wrapper .container .menus .navbar-left,
+  body.section-complete #app nav.apple .nav-wrapper .container .menus .navbar-left,
+  body.section-preaprob #app nav.apple .nav-wrapper .container .menus .navbar-left,
+  body.section-feliz #app nav.apple .nav-wrapper .container .menus .navbar-left,
+  body.section-gracias #app nav.apple .nav-wrapper .container .menus .navbar-left,
+  body.section-steps #app nav.apple .nav-wrapper .container .menus .navbar-left,
+  body.section-step1 #app nav.apple .nav-wrapper .container .menus .navbar-left,
+  body.section-step2 #app nav.apple .nav-wrapper .container .menus .navbar-left,
+  body.section-step3 #app nav.apple .nav-wrapper .container .menus .navbar-left,
+  body.section-step4 #app nav.apple .nav-wrapper .container .menus .navbar-left {
+    padding-left: 15px;
+  }
+}
+
+body.section-pre-qualification #app > main #preQual .modal-dialog .modal-content,
+body.section-congrats #app > main #preQual .modal-dialog .modal-content,
+body.section-complete #app > main #preQual .modal-dialog .modal-content,
+body.section-preaprob #app > main #preQual .modal-dialog .modal-content,
+body.section-feliz #app > main #preQual .modal-dialog .modal-content,
+body.section-gracias #app > main #preQual .modal-dialog .modal-content,
+body.section-steps #app > main #preQual .modal-dialog .modal-content,
+body.section-step1 #app > main #preQual .modal-dialog .modal-content,
+body.section-step2 #app > main #preQual .modal-dialog .modal-content,
+body.section-step3 #app > main #preQual .modal-dialog .modal-content,
+body.section-step4 #app > main #preQual .modal-dialog .modal-content {
+  width: 90%;
+  border: none;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+body.section-pre-qualification #app > main #preQual .modal-dialog .modal-content .modal-body,
+body.section-congrats #app > main #preQual .modal-dialog .modal-content .modal-body,
+body.section-complete #app > main #preQual .modal-dialog .modal-content .modal-body,
+body.section-preaprob #app > main #preQual .modal-dialog .modal-content .modal-body,
+body.section-feliz #app > main #preQual .modal-dialog .modal-content .modal-body,
+body.section-gracias #app > main #preQual .modal-dialog .modal-content .modal-body,
+body.section-steps #app > main #preQual .modal-dialog .modal-content .modal-body,
+body.section-step1 #app > main #preQual .modal-dialog .modal-content .modal-body,
+body.section-step2 #app > main #preQual .modal-dialog .modal-content .modal-body,
+body.section-step3 #app > main #preQual .modal-dialog .modal-content .modal-body,
+body.section-step4 #app > main #preQual .modal-dialog .modal-content .modal-body {
+  padding: 1.5rem;
+}
+
+body.section-pre-qualification #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .intro,
+body.section-pre-qualification #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .title,
+body.section-congrats #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .intro,
+body.section-congrats #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .title,
+body.section-complete #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .intro,
+body.section-complete #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .title,
+body.section-preaprob #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .intro,
+body.section-preaprob #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .title,
+body.section-feliz #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .intro,
+body.section-feliz #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .title,
+body.section-gracias #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .intro,
+body.section-gracias #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .title,
+body.section-steps #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .intro,
+body.section-steps #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .title,
+body.section-step1 #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .intro,
+body.section-step1 #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .title,
+body.section-step2 #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .intro,
+body.section-step2 #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .title,
+body.section-step3 #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .intro,
+body.section-step3 #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .title,
+body.section-step4 #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .intro,
+body.section-step4 #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .title {
+  text-align: center;
+}
+
+body.section-pre-qualification #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m p,
+body.section-congrats #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m p,
+body.section-complete #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m p,
+body.section-preaprob #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m p,
+body.section-feliz #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m p,
+body.section-gracias #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m p,
+body.section-steps #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m p,
+body.section-step1 #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m p,
+body.section-step2 #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m p,
+body.section-step3 #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m p,
+body.section-step4 #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m p {
+  line-height: 1.5;
+  margin: 1.5rem 1rem 0;
+}
+
+body.section-pre-qualification #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m p span,
+body.section-congrats #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m p span,
+body.section-complete #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m p span,
+body.section-preaprob #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m p span,
+body.section-feliz #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m p span,
+body.section-gracias #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m p span,
+body.section-steps #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m p span,
+body.section-step1 #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m p span,
+body.section-step2 #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m p span,
+body.section-step3 #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m p span,
+body.section-step4 #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m p span {
+  font-weight: 600;
+  color: #162c4e;
+}
+
+body.section-pre-qualification #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .intro,
+body.section-congrats #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .intro,
+body.section-complete #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .intro,
+body.section-preaprob #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .intro,
+body.section-feliz #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .intro,
+body.section-gracias #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .intro,
+body.section-steps #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .intro,
+body.section-step1 #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .intro,
+body.section-step2 #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .intro,
+body.section-step3 #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .intro,
+body.section-step4 #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .intro {
+  padding-bottom: 1rem;
+}
+
+body.section-pre-qualification #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .title,
+body.section-congrats #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .title,
+body.section-complete #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .title,
+body.section-preaprob #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .title,
+body.section-feliz #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .title,
+body.section-gracias #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .title,
+body.section-steps #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .title,
+body.section-step1 #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .title,
+body.section-step2 #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .title,
+body.section-step3 #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .title,
+body.section-step4 #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .title {
+  background: #162c4e;
+  border: 4px dashed #fff;
+  padding: 35px 0;
+  color: #fff;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+@media (max-width: 767.98px) {
+  body.section-pre-qualification #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .title,
+  body.section-congrats #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .title,
+  body.section-complete #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .title,
+  body.section-preaprob #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .title,
+  body.section-feliz #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .title,
+  body.section-gracias #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .title,
+  body.section-steps #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .title,
+  body.section-step1 #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .title,
+  body.section-step2 #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .title,
+  body.section-step3 #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .title,
+  body.section-step4 #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .title {
+    font-size: 29px;
+  }
+}
+
+body.section-pre-qualification #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .capital,
+body.section-congrats #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .capital,
+body.section-complete #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .capital,
+body.section-preaprob #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .capital,
+body.section-feliz #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .capital,
+body.section-gracias #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .capital,
+body.section-steps #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .capital,
+body.section-step1 #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .capital,
+body.section-step2 #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .capital,
+body.section-step3 #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .capital,
+body.section-step4 #app > main #preQual .modal-dialog .modal-content .prequalification-amount-m .capital {
+  border: 4px dashed #ccc;
+  border-top: none;
+  padding: 25px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+  color: #359c1c;
+}
+
+body.section-pre-qualification #app > main #preQual .modal-dialog .modal-content .btn-primary,
+body.section-congrats #app > main #preQual .modal-dialog .modal-content .btn-primary,
+body.section-complete #app > main #preQual .modal-dialog .modal-content .btn-primary,
+body.section-preaprob #app > main #preQual .modal-dialog .modal-content .btn-primary,
+body.section-feliz #app > main #preQual .modal-dialog .modal-content .btn-primary,
+body.section-gracias #app > main #preQual .modal-dialog .modal-content .btn-primary,
+body.section-steps #app > main #preQual .modal-dialog .modal-content .btn-primary,
+body.section-step1 #app > main #preQual .modal-dialog .modal-content .btn-primary,
+body.section-step2 #app > main #preQual .modal-dialog .modal-content .btn-primary,
+body.section-step3 #app > main #preQual .modal-dialog .modal-content .btn-primary,
+body.section-step4 #app > main #preQual .modal-dialog .modal-content .btn-primary {
+  background: #359c1c;
+  border-color: #359c1c;
+  height: 55px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+@media (max-width: 767.98px) {
+  body.section-pre-qualification #app > main #preQual .modal-dialog .modal-content .btn-primary,
+  body.section-congrats #app > main #preQual .modal-dialog .modal-content .btn-primary,
+  body.section-complete #app > main #preQual .modal-dialog .modal-content .btn-primary,
+  body.section-preaprob #app > main #preQual .modal-dialog .modal-content .btn-primary,
+  body.section-feliz #app > main #preQual .modal-dialog .modal-content .btn-primary,
+  body.section-gracias #app > main #preQual .modal-dialog .modal-content .btn-primary,
+  body.section-steps #app > main #preQual .modal-dialog .modal-content .btn-primary,
+  body.section-step1 #app > main #preQual .modal-dialog .modal-content .btn-primary,
+  body.section-step2 #app > main #preQual .modal-dialog .modal-content .btn-primary,
+  body.section-step3 #app > main #preQual .modal-dialog .modal-content .btn-primary,
+  body.section-step4 #app > main #preQual .modal-dialog .modal-content .btn-primary {
+    font-size: 16px;
+  }
+}
+
+body.section-pre-qualification #app > main #preQual .modal-dialog .modal-content .close,
+body.section-congrats #app > main #preQual .modal-dialog .modal-content .close,
+body.section-complete #app > main #preQual .modal-dialog .modal-content .close,
+body.section-preaprob #app > main #preQual .modal-dialog .modal-content .close,
+body.section-feliz #app > main #preQual .modal-dialog .modal-content .close,
+body.section-gracias #app > main #preQual .modal-dialog .modal-content .close,
+body.section-steps #app > main #preQual .modal-dialog .modal-content .close,
+body.section-step1 #app > main #preQual .modal-dialog .modal-content .close,
+body.section-step2 #app > main #preQual .modal-dialog .modal-content .close,
+body.section-step3 #app > main #preQual .modal-dialog .modal-content .close,
+body.section-step4 #app > main #preQual .modal-dialog .modal-content .close {
+  opacity: 1;
+  color: #fff;
+  text-shadow: none;
+  margin-top: 1.5rem;
+}
+
+body.section-pre-qualification #app > main section#formNew,
+body.section-congrats #app > main section#formNew,
+body.section-complete #app > main section#formNew,
+body.section-preaprob #app > main section#formNew,
+body.section-feliz #app > main section#formNew,
+body.section-gracias #app > main section#formNew,
+body.section-steps #app > main section#formNew,
+body.section-step1 #app > main section#formNew,
+body.section-step2 #app > main section#formNew,
+body.section-step3 #app > main section#formNew,
+body.section-step4 #app > main section#formNew {
+  margin: 0;
+}
+
+@media (max-width: 991.98px) {
+  body.section-pre-qualification #app > main section#formNew .container-fluid,
+  body.section-congrats #app > main section#formNew .container-fluid,
+  body.section-complete #app > main section#formNew .container-fluid,
+  body.section-preaprob #app > main section#formNew .container-fluid,
+  body.section-feliz #app > main section#formNew .container-fluid,
+  body.section-gracias #app > main section#formNew .container-fluid,
+  body.section-steps #app > main section#formNew .container-fluid,
+  body.section-step1 #app > main section#formNew .container-fluid,
+  body.section-step2 #app > main section#formNew .container-fluid,
+  body.section-step3 #app > main section#formNew .container-fluid,
+  body.section-step4 #app > main section#formNew .container-fluid {
+    background: #f1f1f1;
+  }
+
+  body.section-pre-qualification #app > main section#formNew .form-progress-bar .progression-bar,
+  body.section-congrats #app > main section#formNew .form-progress-bar .progression-bar,
+  body.section-complete #app > main section#formNew .form-progress-bar .progression-bar,
+  body.section-preaprob #app > main section#formNew .form-progress-bar .progression-bar,
+  body.section-feliz #app > main section#formNew .form-progress-bar .progression-bar,
+  body.section-gracias #app > main section#formNew .form-progress-bar .progression-bar,
+  body.section-steps #app > main section#formNew .form-progress-bar .progression-bar,
+  body.section-step1 #app > main section#formNew .form-progress-bar .progression-bar,
+  body.section-step2 #app > main section#formNew .form-progress-bar .progression-bar,
+  body.section-step3 #app > main section#formNew .form-progress-bar .progression-bar,
+  body.section-step4 #app > main section#formNew .form-progress-bar .progression-bar {
+    height: 30px;
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid #d6d6d6;
+    margin: 30px 0;
+    background-image: url(/assets/img/progress-bg.png);
+  }
+
+  body.section-pre-qualification #app > main section#formNew .form-progress-bar .stage .active,
+  body.section-congrats #app > main section#formNew .form-progress-bar .stage .active,
+  body.section-complete #app > main section#formNew .form-progress-bar .stage .active,
+  body.section-preaprob #app > main section#formNew .form-progress-bar .stage .active,
+  body.section-feliz #app > main section#formNew .form-progress-bar .stage .active,
+  body.section-gracias #app > main section#formNew .form-progress-bar .stage .active,
+  body.section-steps #app > main section#formNew .form-progress-bar .stage .active,
+  body.section-step1 #app > main section#formNew .form-progress-bar .stage .active,
+  body.section-step2 #app > main section#formNew .form-progress-bar .stage .active,
+  body.section-step3 #app > main section#formNew .form-progress-bar .stage .active,
+  body.section-step4 #app > main section#formNew .form-progress-bar .stage .active {
+    color: #162c4e;
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 991.98px) and (max-width: 370px) {
+  body.section-pre-qualification #app > main section#formNew .form-progress-bar .stage .row > .col:last-child,
+  body.section-congrats #app > main section#formNew .form-progress-bar .stage .row > .col:last-child,
+  body.section-complete #app > main section#formNew .form-progress-bar .stage .row > .col:last-child,
+  body.section-preaprob #app > main section#formNew .form-progress-bar .stage .row > .col:last-child,
+  body.section-feliz #app > main section#formNew .form-progress-bar .stage .row > .col:last-child,
+  body.section-gracias #app > main section#formNew .form-progress-bar .stage .row > .col:last-child,
+  body.section-steps #app > main section#formNew .form-progress-bar .stage .row > .col:last-child,
+  body.section-step1 #app > main section#formNew .form-progress-bar .stage .row > .col:last-child,
+  body.section-step2 #app > main section#formNew .form-progress-bar .stage .row > .col:last-child,
+  body.section-step3 #app > main section#formNew .form-progress-bar .stage .row > .col:last-child,
+  body.section-step4 #app > main section#formNew .form-progress-bar .stage .row > .col:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 991.98px) {
+  body.section-pre-qualification #app > main section#formNew .form-progress-bar .percentage,
+  body.section-congrats #app > main section#formNew .form-progress-bar .percentage,
+  body.section-complete #app > main section#formNew .form-progress-bar .percentage,
+  body.section-preaprob #app > main section#formNew .form-progress-bar .percentage,
+  body.section-feliz #app > main section#formNew .form-progress-bar .percentage,
+  body.section-gracias #app > main section#formNew .form-progress-bar .percentage,
+  body.section-steps #app > main section#formNew .form-progress-bar .percentage,
+  body.section-step1 #app > main section#formNew .form-progress-bar .percentage,
+  body.section-step2 #app > main section#formNew .form-progress-bar .percentage,
+  body.section-step3 #app > main section#formNew .form-progress-bar .percentage,
+  body.section-step4 #app > main section#formNew .form-progress-bar .percentage {
+    margin-top: -54px;
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 991.98px) and (max-width: 767.98px) {
+  body.section-pre-qualification #app > main section#formNew .form-progress-bar .percentage,
+  body.section-congrats #app > main section#formNew .form-progress-bar .percentage,
+  body.section-complete #app > main section#formNew .form-progress-bar .percentage,
+  body.section-preaprob #app > main section#formNew .form-progress-bar .percentage,
+  body.section-feliz #app > main section#formNew .form-progress-bar .percentage,
+  body.section-gracias #app > main section#formNew .form-progress-bar .percentage,
+  body.section-steps #app > main section#formNew .form-progress-bar .percentage,
+  body.section-step1 #app > main section#formNew .form-progress-bar .percentage,
+  body.section-step2 #app > main section#formNew .form-progress-bar .percentage,
+  body.section-step3 #app > main section#formNew .form-progress-bar .percentage,
+  body.section-step4 #app > main section#formNew .form-progress-bar .percentage {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  body.section-pre-qualification #app > main section#formNew .form-progress-bar .percentage .start,
+  body.section-pre-qualification #app > main section#formNew .form-progress-bar .percentage .company,
+  body.section-pre-qualification #app > main section#formNew .form-progress-bar .percentage .owners,
+  body.section-pre-qualification #app > main section#formNew .form-progress-bar .percentage .done,
+  body.section-congrats #app > main section#formNew .form-progress-bar .percentage .start,
+  body.section-congrats #app > main section#formNew .form-progress-bar .percentage .company,
+  body.section-congrats #app > main section#formNew .form-progress-bar .percentage .owners,
+  body.section-congrats #app > main section#formNew .form-progress-bar .percentage .done,
+  body.section-complete #app > main section#formNew .form-progress-bar .percentage .start,
+  body.section-complete #app > main section#formNew .form-progress-bar .percentage .company,
+  body.section-complete #app > main section#formNew .form-progress-bar .percentage .owners,
+  body.section-complete #app > main section#formNew .form-progress-bar .percentage .done,
+  body.section-preaprob #app > main section#formNew .form-progress-bar .percentage .start,
+  body.section-preaprob #app > main section#formNew .form-progress-bar .percentage .company,
+  body.section-preaprob #app > main section#formNew .form-progress-bar .percentage .owners,
+  body.section-preaprob #app > main section#formNew .form-progress-bar .percentage .done,
+  body.section-feliz #app > main section#formNew .form-progress-bar .percentage .start,
+  body.section-feliz #app > main section#formNew .form-progress-bar .percentage .company,
+  body.section-feliz #app > main section#formNew .form-progress-bar .percentage .owners,
+  body.section-feliz #app > main section#formNew .form-progress-bar .percentage .done,
+  body.section-gracias #app > main section#formNew .form-progress-bar .percentage .start,
+  body.section-gracias #app > main section#formNew .form-progress-bar .percentage .company,
+  body.section-gracias #app > main section#formNew .form-progress-bar .percentage .owners,
+  body.section-gracias #app > main section#formNew .form-progress-bar .percentage .done,
+  body.section-steps #app > main section#formNew .form-progress-bar .percentage .start,
+  body.section-steps #app > main section#formNew .form-progress-bar .percentage .company,
+  body.section-steps #app > main section#formNew .form-progress-bar .percentage .owners,
+  body.section-steps #app > main section#formNew .form-progress-bar .percentage .done,
+  body.section-step1 #app > main section#formNew .form-progress-bar .percentage .start,
+  body.section-step1 #app > main section#formNew .form-progress-bar .percentage .company,
+  body.section-step1 #app > main section#formNew .form-progress-bar .percentage .owners,
+  body.section-step1 #app > main section#formNew .form-progress-bar .percentage .done,
+  body.section-step2 #app > main section#formNew .form-progress-bar .percentage .start,
+  body.section-step2 #app > main section#formNew .form-progress-bar .percentage .company,
+  body.section-step2 #app > main section#formNew .form-progress-bar .percentage .owners,
+  body.section-step2 #app > main section#formNew .form-progress-bar .percentage .done,
+  body.section-step3 #app > main section#formNew .form-progress-bar .percentage .start,
+  body.section-step3 #app > main section#formNew .form-progress-bar .percentage .company,
+  body.section-step3 #app > main section#formNew .form-progress-bar .percentage .owners,
+  body.section-step3 #app > main section#formNew .form-progress-bar .percentage .done,
+  body.section-step4 #app > main section#formNew .form-progress-bar .percentage .start,
+  body.section-step4 #app > main section#formNew .form-progress-bar .percentage .company,
+  body.section-step4 #app > main section#formNew .form-progress-bar .percentage .owners,
+  body.section-step4 #app > main section#formNew .form-progress-bar .percentage .done {
+    color: #fff;
+    font-size: 15px;
+  }
+
+  body.section-pre-qualification #app > main section#formNew .form-progress-bar .percentage .start,
+  body.section-pre-qualification #app > main section#formNew .form-progress-bar .percentage .company,
+  body.section-pre-qualification #app > main section#formNew .form-progress-bar .percentage .owners,
+  body.section-pre-qualification #app > main section#formNew .form-progress-bar .percentage .done,
+  body.section-congrats #app > main section#formNew .form-progress-bar .percentage .start,
+  body.section-congrats #app > main section#formNew .form-progress-bar .percentage .company,
+  body.section-congrats #app > main section#formNew .form-progress-bar .percentage .owners,
+  body.section-congrats #app > main section#formNew .form-progress-bar .percentage .done,
+  body.section-complete #app > main section#formNew .form-progress-bar .percentage .start,
+  body.section-complete #app > main section#formNew .form-progress-bar .percentage .company,
+  body.section-complete #app > main section#formNew .form-progress-bar .percentage .owners,
+  body.section-complete #app > main section#formNew .form-progress-bar .percentage .done,
+  body.section-preaprob #app > main section#formNew .form-progress-bar .percentage .start,
+  body.section-preaprob #app > main section#formNew .form-progress-bar .percentage .company,
+  body.section-preaprob #app > main section#formNew .form-progress-bar .percentage .owners,
+  body.section-preaprob #app > main section#formNew .form-progress-bar .percentage .done,
+  body.section-feliz #app > main section#formNew .form-progress-bar .percentage .start,
+  body.section-feliz #app > main section#formNew .form-progress-bar .percentage .company,
+  body.section-feliz #app > main section#formNew .form-progress-bar .percentage .owners,
+  body.section-feliz #app > main section#formNew .form-progress-bar .percentage .done,
+  body.section-gracias #app > main section#formNew .form-progress-bar .percentage .start,
+  body.section-gracias #app > main section#formNew .form-progress-bar .percentage .company,
+  body.section-gracias #app > main section#formNew .form-progress-bar .percentage .owners,
+  body.section-gracias #app > main section#formNew .form-progress-bar .percentage .done,
+  body.section-steps #app > main section#formNew .form-progress-bar .percentage .start,
+  body.section-steps #app > main section#formNew .form-progress-bar .percentage .company,
+  body.section-steps #app > main section#formNew .form-progress-bar .percentage .owners,
+  body.section-steps #app > main section#formNew .form-progress-bar .percentage .done,
+  body.section-step1 #app > main section#formNew .form-progress-bar .percentage .start,
+  body.section-step1 #app > main section#formNew .form-progress-bar .percentage .company,
+  body.section-step1 #app > main section#formNew .form-progress-bar .percentage .owners,
+  body.section-step1 #app > main section#formNew .form-progress-bar .percentage .done,
+  body.section-step2 #app > main section#formNew .form-progress-bar .percentage .start,
+  body.section-step2 #app > main section#formNew .form-progress-bar .percentage .company,
+  body.section-step2 #app > main section#formNew .form-progress-bar .percentage .owners,
+  body.section-step2 #app > main section#formNew .form-progress-bar .percentage .done,
+  body.section-step3 #app > main section#formNew .form-progress-bar .percentage .start,
+  body.section-step3 #app > main section#formNew .form-progress-bar .percentage .company,
+  body.section-step3 #app > main section#formNew .form-progress-bar .percentage .owners,
+  body.section-step3 #app > main section#formNew .form-progress-bar .percentage .done,
+  body.section-step4 #app > main section#formNew .form-progress-bar .percentage .start,
+  body.section-step4 #app > main section#formNew .form-progress-bar .percentage .company,
+  body.section-step4 #app > main section#formNew .form-progress-bar .percentage .owners,
+  body.section-step4 #app > main section#formNew .form-progress-bar .percentage .done {
+    background: #03c2b3;
+    /* Old browsers */
+    /* FF3.6-15 */
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #03c2b3 0%, #0cc48d 32%, #24c84a 68%, #31c80b 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03c2b3', endColorstr='#31c80b',GradientType=1 );
+    /* IE6-9 */
+    height: 40px;
+    margin-top: -11px;
+    padding-top: 10px;
+    border-radius: 12px;
+  }
+
+  body.section-pre-qualification #app > main section#formNew .form-progress-bar .percentage .inactive,
+  body.section-congrats #app > main section#formNew .form-progress-bar .percentage .inactive,
+  body.section-complete #app > main section#formNew .form-progress-bar .percentage .inactive,
+  body.section-preaprob #app > main section#formNew .form-progress-bar .percentage .inactive,
+  body.section-feliz #app > main section#formNew .form-progress-bar .percentage .inactive,
+  body.section-gracias #app > main section#formNew .form-progress-bar .percentage .inactive,
+  body.section-steps #app > main section#formNew .form-progress-bar .percentage .inactive,
+  body.section-step1 #app > main section#formNew .form-progress-bar .percentage .inactive,
+  body.section-step2 #app > main section#formNew .form-progress-bar .percentage .inactive,
+  body.section-step3 #app > main section#formNew .form-progress-bar .percentage .inactive,
+  body.section-step4 #app > main section#formNew .form-progress-bar .percentage .inactive {
+    opacity: 0;
+  }
+
+  body.section-pre-qualification #app > main section#formNew .form-progress-bar .percentage .inactivep,
+  body.section-congrats #app > main section#formNew .form-progress-bar .percentage .inactivep,
+  body.section-complete #app > main section#formNew .form-progress-bar .percentage .inactivep,
+  body.section-preaprob #app > main section#formNew .form-progress-bar .percentage .inactivep,
+  body.section-feliz #app > main section#formNew .form-progress-bar .percentage .inactivep,
+  body.section-gracias #app > main section#formNew .form-progress-bar .percentage .inactivep,
+  body.section-steps #app > main section#formNew .form-progress-bar .percentage .inactivep,
+  body.section-step1 #app > main section#formNew .form-progress-bar .percentage .inactivep,
+  body.section-step2 #app > main section#formNew .form-progress-bar .percentage .inactivep,
+  body.section-step3 #app > main section#formNew .form-progress-bar .percentage .inactivep,
+  body.section-step4 #app > main section#formNew .form-progress-bar .percentage .inactivep {
+    opacity: 1;
+  }
+}
+
+body.section-pre-qualification #app > main section#formNew .form-focus,
+body.section-congrats #app > main section#formNew .form-focus,
+body.section-complete #app > main section#formNew .form-focus,
+body.section-preaprob #app > main section#formNew .form-focus,
+body.section-feliz #app > main section#formNew .form-focus,
+body.section-gracias #app > main section#formNew .form-focus,
+body.section-steps #app > main section#formNew .form-focus,
+body.section-step1 #app > main section#formNew .form-focus,
+body.section-step2 #app > main section#formNew .form-focus,
+body.section-step3 #app > main section#formNew .form-focus,
+body.section-step4 #app > main section#formNew .form-focus {
+  background-image: url(/assets/img/thin-bg.png);
+  background-repeat: repeat-y;
+  background-position: center;
+}
+
+body.section-pre-qualification #app > main section#formNew .background-focus,
+body.section-congrats #app > main section#formNew .background-focus,
+body.section-complete #app > main section#formNew .background-focus,
+body.section-preaprob #app > main section#formNew .background-focus,
+body.section-feliz #app > main section#formNew .background-focus,
+body.section-gracias #app > main section#formNew .background-focus,
+body.section-steps #app > main section#formNew .background-focus,
+body.section-step1 #app > main section#formNew .background-focus,
+body.section-step2 #app > main section#formNew .background-focus,
+body.section-step3 #app > main section#formNew .background-focus,
+body.section-step4 #app > main section#formNew .background-focus {
+  background: #f1f1f1;
+  padding: 40px 30px 60px 30px;
+}
+
+@media (max-width: 767.98px) {
+  body.section-pre-qualification #app > main section#formNew .background-focus,
+  body.section-congrats #app > main section#formNew .background-focus,
+  body.section-complete #app > main section#formNew .background-focus,
+  body.section-preaprob #app > main section#formNew .background-focus,
+  body.section-feliz #app > main section#formNew .background-focus,
+  body.section-gracias #app > main section#formNew .background-focus,
+  body.section-steps #app > main section#formNew .background-focus,
+  body.section-step1 #app > main section#formNew .background-focus,
+  body.section-step2 #app > main section#formNew .background-focus,
+  body.section-step3 #app > main section#formNew .background-focus,
+  body.section-step4 #app > main section#formNew .background-focus {
+    padding: 30px 10px 40px 10px !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  body.section-pre-qualification #app > main section#formNew .background-focus,
+  body.section-congrats #app > main section#formNew .background-focus,
+  body.section-complete #app > main section#formNew .background-focus,
+  body.section-preaprob #app > main section#formNew .background-focus,
+  body.section-feliz #app > main section#formNew .background-focus,
+  body.section-gracias #app > main section#formNew .background-focus,
+  body.section-steps #app > main section#formNew .background-focus,
+  body.section-step1 #app > main section#formNew .background-focus,
+  body.section-step2 #app > main section#formNew .background-focus,
+  body.section-step3 #app > main section#formNew .background-focus,
+  body.section-step4 #app > main section#formNew .background-focus {
+    padding: 40px 50px 40px 60px;
+  }
+}
+
+body.section-pre-qualification #app > main section#formNew .background-focus.done,
+body.section-congrats #app > main section#formNew .background-focus.done,
+body.section-complete #app > main section#formNew .background-focus.done,
+body.section-preaprob #app > main section#formNew .background-focus.done,
+body.section-feliz #app > main section#formNew .background-focus.done,
+body.section-gracias #app > main section#formNew .background-focus.done,
+body.section-steps #app > main section#formNew .background-focus.done,
+body.section-step1 #app > main section#formNew .background-focus.done,
+body.section-step2 #app > main section#formNew .background-focus.done,
+body.section-step3 #app > main section#formNew .background-focus.done,
+body.section-step4 #app > main section#formNew .background-focus.done {
+  text-align: center;
+  padding: 40px 120px;
+}
+
+body.section-pre-qualification #app > main section#formNew .background-focus.done h1,
+body.section-congrats #app > main section#formNew .background-focus.done h1,
+body.section-complete #app > main section#formNew .background-focus.done h1,
+body.section-preaprob #app > main section#formNew .background-focus.done h1,
+body.section-feliz #app > main section#formNew .background-focus.done h1,
+body.section-gracias #app > main section#formNew .background-focus.done h1,
+body.section-steps #app > main section#formNew .background-focus.done h1,
+body.section-step1 #app > main section#formNew .background-focus.done h1,
+body.section-step2 #app > main section#formNew .background-focus.done h1,
+body.section-step3 #app > main section#formNew .background-focus.done h1,
+body.section-step4 #app > main section#formNew .background-focus.done h1 {
+  font-size: 3rem;
+  margin: 30px 0;
+  text-align: center;
+  font-weight: 600;
+}
+
+body.section-pre-qualification #app > main section#formNew .background-focus.done h2,
+body.section-congrats #app > main section#formNew .background-focus.done h2,
+body.section-complete #app > main section#formNew .background-focus.done h2,
+body.section-preaprob #app > main section#formNew .background-focus.done h2,
+body.section-feliz #app > main section#formNew .background-focus.done h2,
+body.section-gracias #app > main section#formNew .background-focus.done h2,
+body.section-steps #app > main section#formNew .background-focus.done h2,
+body.section-step1 #app > main section#formNew .background-focus.done h2,
+body.section-step2 #app > main section#formNew .background-focus.done h2,
+body.section-step3 #app > main section#formNew .background-focus.done h2,
+body.section-step4 #app > main section#formNew .background-focus.done h2 {
+  padding-top: 30px;
+  text-transform: uppercase;
+}
+
+body.section-pre-qualification #app > main section#formNew .background-focus.done p,
+body.section-congrats #app > main section#formNew .background-focus.done p,
+body.section-complete #app > main section#formNew .background-focus.done p,
+body.section-preaprob #app > main section#formNew .background-focus.done p,
+body.section-feliz #app > main section#formNew .background-focus.done p,
+body.section-gracias #app > main section#formNew .background-focus.done p,
+body.section-steps #app > main section#formNew .background-focus.done p,
+body.section-step1 #app > main section#formNew .background-focus.done p,
+body.section-step2 #app > main section#formNew .background-focus.done p,
+body.section-step3 #app > main section#formNew .background-focus.done p,
+body.section-step4 #app > main section#formNew .background-focus.done p {
+  line-height: 1.5 !important;
+  margin-bottom: 1rem;
+}
+
+body.section-pre-qualification #app > main section#formNew .background-focus.done blockquote,
+body.section-congrats #app > main section#formNew .background-focus.done blockquote,
+body.section-complete #app > main section#formNew .background-focus.done blockquote,
+body.section-preaprob #app > main section#formNew .background-focus.done blockquote,
+body.section-feliz #app > main section#formNew .background-focus.done blockquote,
+body.section-gracias #app > main section#formNew .background-focus.done blockquote,
+body.section-steps #app > main section#formNew .background-focus.done blockquote,
+body.section-step1 #app > main section#formNew .background-focus.done blockquote,
+body.section-step2 #app > main section#formNew .background-focus.done blockquote,
+body.section-step3 #app > main section#formNew .background-focus.done blockquote,
+body.section-step4 #app > main section#formNew .background-focus.done blockquote {
+  text-decoration: underline;
+}
+
+body.section-pre-qualification #app > main section#formNew .uppercase,
+body.section-congrats #app > main section#formNew .uppercase,
+body.section-complete #app > main section#formNew .uppercase,
+body.section-preaprob #app > main section#formNew .uppercase,
+body.section-feliz #app > main section#formNew .uppercase,
+body.section-gracias #app > main section#formNew .uppercase,
+body.section-steps #app > main section#formNew .uppercase,
+body.section-step1 #app > main section#formNew .uppercase,
+body.section-step2 #app > main section#formNew .uppercase,
+body.section-step3 #app > main section#formNew .uppercase,
+body.section-step4 #app > main section#formNew .uppercase {
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+body.section-pre-qualification #app > main section#formNew article.steps.step-4 #company_owners_total,
+body.section-congrats #app > main section#formNew article.steps.step-4 #company_owners_total,
+body.section-complete #app > main section#formNew article.steps.step-4 #company_owners_total,
+body.section-preaprob #app > main section#formNew article.steps.step-4 #company_owners_total,
+body.section-feliz #app > main section#formNew article.steps.step-4 #company_owners_total,
+body.section-gracias #app > main section#formNew article.steps.step-4 #company_owners_total,
+body.section-steps #app > main section#formNew article.steps.step-4 #company_owners_total,
+body.section-step1 #app > main section#formNew article.steps.step-4 #company_owners_total,
+body.section-step2 #app > main section#formNew article.steps.step-4 #company_owners_total,
+body.section-step3 #app > main section#formNew article.steps.step-4 #company_owners_total,
+body.section-step4 #app > main section#formNew article.steps.step-4 #company_owners_total {
+  margin-bottom: 30px;
+}
+
+body.section-pre-qualification #app > main section#formNew article.steps.step-4 #second-owner,
+body.section-congrats #app > main section#formNew article.steps.step-4 #second-owner,
+body.section-complete #app > main section#formNew article.steps.step-4 #second-owner,
+body.section-preaprob #app > main section#formNew article.steps.step-4 #second-owner,
+body.section-feliz #app > main section#formNew article.steps.step-4 #second-owner,
+body.section-gracias #app > main section#formNew article.steps.step-4 #second-owner,
+body.section-steps #app > main section#formNew article.steps.step-4 #second-owner,
+body.section-step1 #app > main section#formNew article.steps.step-4 #second-owner,
+body.section-step2 #app > main section#formNew article.steps.step-4 #second-owner,
+body.section-step3 #app > main section#formNew article.steps.step-4 #second-owner,
+body.section-step4 #app > main section#formNew article.steps.step-4 #second-owner {
+  border-top: 1px solid #fff;
+  padding-top: 15px;
+  margin-top: 30px;
+}
+
+body.section-pre-qualification #app > main section#formNew article.steps form .btn,
+body.section-pre-qualification #app > main section#formNew article.steps form hr,
+body.section-congrats #app > main section#formNew article.steps form .btn,
+body.section-congrats #app > main section#formNew article.steps form hr,
+body.section-complete #app > main section#formNew article.steps form .btn,
+body.section-complete #app > main section#formNew article.steps form hr,
+body.section-preaprob #app > main section#formNew article.steps form .btn,
+body.section-preaprob #app > main section#formNew article.steps form hr,
+body.section-feliz #app > main section#formNew article.steps form .btn,
+body.section-feliz #app > main section#formNew article.steps form hr,
+body.section-gracias #app > main section#formNew article.steps form .btn,
+body.section-gracias #app > main section#formNew article.steps form hr,
+body.section-steps #app > main section#formNew article.steps form .btn,
+body.section-steps #app > main section#formNew article.steps form hr,
+body.section-step1 #app > main section#formNew article.steps form .btn,
+body.section-step1 #app > main section#formNew article.steps form hr,
+body.section-step2 #app > main section#formNew article.steps form .btn,
+body.section-step2 #app > main section#formNew article.steps form hr,
+body.section-step3 #app > main section#formNew article.steps form .btn,
+body.section-step3 #app > main section#formNew article.steps form hr,
+body.section-step4 #app > main section#formNew article.steps form .btn,
+body.section-step4 #app > main section#formNew article.steps form hr {
+  width: 92%;
+}
+
+@media (max-width: 767.98px) {
+  body.section-pre-qualification #app > main section#formNew article.steps form .btn,
+  body.section-pre-qualification #app > main section#formNew article.steps form hr,
+  body.section-congrats #app > main section#formNew article.steps form .btn,
+  body.section-congrats #app > main section#formNew article.steps form hr,
+  body.section-complete #app > main section#formNew article.steps form .btn,
+  body.section-complete #app > main section#formNew article.steps form hr,
+  body.section-preaprob #app > main section#formNew article.steps form .btn,
+  body.section-preaprob #app > main section#formNew article.steps form hr,
+  body.section-feliz #app > main section#formNew article.steps form .btn,
+  body.section-feliz #app > main section#formNew article.steps form hr,
+  body.section-gracias #app > main section#formNew article.steps form .btn,
+  body.section-gracias #app > main section#formNew article.steps form hr,
+  body.section-steps #app > main section#formNew article.steps form .btn,
+  body.section-steps #app > main section#formNew article.steps form hr,
+  body.section-step1 #app > main section#formNew article.steps form .btn,
+  body.section-step1 #app > main section#formNew article.steps form hr,
+  body.section-step2 #app > main section#formNew article.steps form .btn,
+  body.section-step2 #app > main section#formNew article.steps form hr,
+  body.section-step3 #app > main section#formNew article.steps form .btn,
+  body.section-step3 #app > main section#formNew article.steps form hr,
+  body.section-step4 #app > main section#formNew article.steps form .btn,
+  body.section-step4 #app > main section#formNew article.steps form hr {
+    width: 100%;
+  }
+}
+
+body.section-pre-qualification #app > main section#formNew article.steps form .fields .form-group:last-child,
+body.section-congrats #app > main section#formNew article.steps form .fields .form-group:last-child,
+body.section-complete #app > main section#formNew article.steps form .fields .form-group:last-child,
+body.section-preaprob #app > main section#formNew article.steps form .fields .form-group:last-child,
+body.section-feliz #app > main section#formNew article.steps form .fields .form-group:last-child,
+body.section-gracias #app > main section#formNew article.steps form .fields .form-group:last-child,
+body.section-steps #app > main section#formNew article.steps form .fields .form-group:last-child,
+body.section-step1 #app > main section#formNew article.steps form .fields .form-group:last-child,
+body.section-step2 #app > main section#formNew article.steps form .fields .form-group:last-child,
+body.section-step3 #app > main section#formNew article.steps form .fields .form-group:last-child,
+body.section-step4 #app > main section#formNew article.steps form .fields .form-group:last-child {
+  margin-bottom: 0;
+}
+
+body.section-pre-qualification #app > main section#formNew article.steps form .fields input[required],
+body.section-congrats #app > main section#formNew article.steps form .fields input[required],
+body.section-complete #app > main section#formNew article.steps form .fields input[required],
+body.section-preaprob #app > main section#formNew article.steps form .fields input[required],
+body.section-feliz #app > main section#formNew article.steps form .fields input[required],
+body.section-gracias #app > main section#formNew article.steps form .fields input[required],
+body.section-steps #app > main section#formNew article.steps form .fields input[required],
+body.section-step1 #app > main section#formNew article.steps form .fields input[required],
+body.section-step2 #app > main section#formNew article.steps form .fields input[required],
+body.section-step3 #app > main section#formNew article.steps form .fields input[required],
+body.section-step4 #app > main section#formNew article.steps form .fields input[required] {
+  background-image: none;
+}
+
+body.section-pre-qualification #app > main section#formNew article.steps form .fields .honeypot,
+body.section-congrats #app > main section#formNew article.steps form .fields .honeypot,
+body.section-complete #app > main section#formNew article.steps form .fields .honeypot,
+body.section-preaprob #app > main section#formNew article.steps form .fields .honeypot,
+body.section-feliz #app > main section#formNew article.steps form .fields .honeypot,
+body.section-gracias #app > main section#formNew article.steps form .fields .honeypot,
+body.section-steps #app > main section#formNew article.steps form .fields .honeypot,
+body.section-step1 #app > main section#formNew article.steps form .fields .honeypot,
+body.section-step2 #app > main section#formNew article.steps form .fields .honeypot,
+body.section-step3 #app > main section#formNew article.steps form .fields .honeypot,
+body.section-step4 #app > main section#formNew article.steps form .fields .honeypot {
+  display: none;
+}
+
+body.section-pre-qualification #app > main section#formNew article.steps form .fields input,
+body.section-pre-qualification #app > main section#formNew article.steps form .fields select,
+body.section-congrats #app > main section#formNew article.steps form .fields input,
+body.section-congrats #app > main section#formNew article.steps form .fields select,
+body.section-complete #app > main section#formNew article.steps form .fields input,
+body.section-complete #app > main section#formNew article.steps form .fields select,
+body.section-preaprob #app > main section#formNew article.steps form .fields input,
+body.section-preaprob #app > main section#formNew article.steps form .fields select,
+body.section-feliz #app > main section#formNew article.steps form .fields input,
+body.section-feliz #app > main section#formNew article.steps form .fields select,
+body.section-gracias #app > main section#formNew article.steps form .fields input,
+body.section-gracias #app > main section#formNew article.steps form .fields select,
+body.section-steps #app > main section#formNew article.steps form .fields input,
+body.section-steps #app > main section#formNew article.steps form .fields select,
+body.section-step1 #app > main section#formNew article.steps form .fields input,
+body.section-step1 #app > main section#formNew article.steps form .fields select,
+body.section-step2 #app > main section#formNew article.steps form .fields input,
+body.section-step2 #app > main section#formNew article.steps form .fields select,
+body.section-step3 #app > main section#formNew article.steps form .fields input,
+body.section-step3 #app > main section#formNew article.steps form .fields select,
+body.section-step4 #app > main section#formNew article.steps form .fields input,
+body.section-step4 #app > main section#formNew article.steps form .fields select {
+  width: 92%;
+}
+
+@media (max-width: 767.98px) {
+  body.section-pre-qualification #app > main section#formNew article.steps form .fields input,
+  body.section-pre-qualification #app > main section#formNew article.steps form .fields select,
+  body.section-congrats #app > main section#formNew article.steps form .fields input,
+  body.section-congrats #app > main section#formNew article.steps form .fields select,
+  body.section-complete #app > main section#formNew article.steps form .fields input,
+  body.section-complete #app > main section#formNew article.steps form .fields select,
+  body.section-preaprob #app > main section#formNew article.steps form .fields input,
+  body.section-preaprob #app > main section#formNew article.steps form .fields select,
+  body.section-feliz #app > main section#formNew article.steps form .fields input,
+  body.section-feliz #app > main section#formNew article.steps form .fields select,
+  body.section-gracias #app > main section#formNew article.steps form .fields input,
+  body.section-gracias #app > main section#formNew article.steps form .fields select,
+  body.section-steps #app > main section#formNew article.steps form .fields input,
+  body.section-steps #app > main section#formNew article.steps form .fields select,
+  body.section-step1 #app > main section#formNew article.steps form .fields input,
+  body.section-step1 #app > main section#formNew article.steps form .fields select,
+  body.section-step2 #app > main section#formNew article.steps form .fields input,
+  body.section-step2 #app > main section#formNew article.steps form .fields select,
+  body.section-step3 #app > main section#formNew article.steps form .fields input,
+  body.section-step3 #app > main section#formNew article.steps form .fields select,
+  body.section-step4 #app > main section#formNew article.steps form .fields input,
+  body.section-step4 #app > main section#formNew article.steps form .fields select {
+    width: 100%;
+    font-size: 15px;
+  }
+}
+
+body.section-pre-qualification #app > main section#formNew article.steps form .fields .input-zip input,
+body.section-pre-qualification #app > main section#formNew article.steps form .fields .input-zip select,
+body.section-pre-qualification #app > main section#formNew article.steps form .fields .select-state input,
+body.section-pre-qualification #app > main section#formNew article.steps form .fields .select-state select,
+body.section-congrats #app > main section#formNew article.steps form .fields .input-zip input,
+body.section-congrats #app > main section#formNew article.steps form .fields .input-zip select,
+body.section-congrats #app > main section#formNew article.steps form .fields .select-state input,
+body.section-congrats #app > main section#formNew article.steps form .fields .select-state select,
+body.section-complete #app > main section#formNew article.steps form .fields .input-zip input,
+body.section-complete #app > main section#formNew article.steps form .fields .input-zip select,
+body.section-complete #app > main section#formNew article.steps form .fields .select-state input,
+body.section-complete #app > main section#formNew article.steps form .fields .select-state select,
+body.section-preaprob #app > main section#formNew article.steps form .fields .input-zip input,
+body.section-preaprob #app > main section#formNew article.steps form .fields .input-zip select,
+body.section-preaprob #app > main section#formNew article.steps form .fields .select-state input,
+body.section-preaprob #app > main section#formNew article.steps form .fields .select-state select,
+body.section-feliz #app > main section#formNew article.steps form .fields .input-zip input,
+body.section-feliz #app > main section#formNew article.steps form .fields .input-zip select,
+body.section-feliz #app > main section#formNew article.steps form .fields .select-state input,
+body.section-feliz #app > main section#formNew article.steps form .fields .select-state select,
+body.section-gracias #app > main section#formNew article.steps form .fields .input-zip input,
+body.section-gracias #app > main section#formNew article.steps form .fields .input-zip select,
+body.section-gracias #app > main section#formNew article.steps form .fields .select-state input,
+body.section-gracias #app > main section#formNew article.steps form .fields .select-state select,
+body.section-steps #app > main section#formNew article.steps form .fields .input-zip input,
+body.section-steps #app > main section#formNew article.steps form .fields .input-zip select,
+body.section-steps #app > main section#formNew article.steps form .fields .select-state input,
+body.section-steps #app > main section#formNew article.steps form .fields .select-state select,
+body.section-step1 #app > main section#formNew article.steps form .fields .input-zip input,
+body.section-step1 #app > main section#formNew article.steps form .fields .input-zip select,
+body.section-step1 #app > main section#formNew article.steps form .fields .select-state input,
+body.section-step1 #app > main section#formNew article.steps form .fields .select-state select,
+body.section-step2 #app > main section#formNew article.steps form .fields .input-zip input,
+body.section-step2 #app > main section#formNew article.steps form .fields .input-zip select,
+body.section-step2 #app > main section#formNew article.steps form .fields .select-state input,
+body.section-step2 #app > main section#formNew article.steps form .fields .select-state select,
+body.section-step3 #app > main section#formNew article.steps form .fields .input-zip input,
+body.section-step3 #app > main section#formNew article.steps form .fields .input-zip select,
+body.section-step3 #app > main section#formNew article.steps form .fields .select-state input,
+body.section-step3 #app > main section#formNew article.steps form .fields .select-state select,
+body.section-step4 #app > main section#formNew article.steps form .fields .input-zip input,
+body.section-step4 #app > main section#formNew article.steps form .fields .input-zip select,
+body.section-step4 #app > main section#formNew article.steps form .fields .select-state input,
+body.section-step4 #app > main section#formNew article.steps form .fields .select-state select {
+  width: 40%;
+}
+
+@media (max-width: 767.98px) {
+  body.section-pre-qualification #app > main section#formNew article.steps form .fields .input-zip input,
+  body.section-pre-qualification #app > main section#formNew article.steps form .fields .input-zip select,
+  body.section-pre-qualification #app > main section#formNew article.steps form .fields .select-state input,
+  body.section-pre-qualification #app > main section#formNew article.steps form .fields .select-state select,
+  body.section-congrats #app > main section#formNew article.steps form .fields .input-zip input,
+  body.section-congrats #app > main section#formNew article.steps form .fields .input-zip select,
+  body.section-congrats #app > main section#formNew article.steps form .fields .select-state input,
+  body.section-congrats #app > main section#formNew article.steps form .fields .select-state select,
+  body.section-complete #app > main section#formNew article.steps form .fields .input-zip input,
+  body.section-complete #app > main section#formNew article.steps form .fields .input-zip select,
+  body.section-complete #app > main section#formNew article.steps form .fields .select-state input,
+  body.section-complete #app > main section#formNew article.steps form .fields .select-state select,
+  body.section-preaprob #app > main section#formNew article.steps form .fields .input-zip input,
+  body.section-preaprob #app > main section#formNew article.steps form .fields .input-zip select,
+  body.section-preaprob #app > main section#formNew article.steps form .fields .select-state input,
+  body.section-preaprob #app > main section#formNew article.steps form .fields .select-state select,
+  body.section-feliz #app > main section#formNew article.steps form .fields .input-zip input,
+  body.section-feliz #app > main section#formNew article.steps form .fields .input-zip select,
+  body.section-feliz #app > main section#formNew article.steps form .fields .select-state input,
+  body.section-feliz #app > main section#formNew article.steps form .fields .select-state select,
+  body.section-gracias #app > main section#formNew article.steps form .fields .input-zip input,
+  body.section-gracias #app > main section#formNew article.steps form .fields .input-zip select,
+  body.section-gracias #app > main section#formNew article.steps form .fields .select-state input,
+  body.section-gracias #app > main section#formNew article.steps form .fields .select-state select,
+  body.section-steps #app > main section#formNew article.steps form .fields .input-zip input,
+  body.section-steps #app > main section#formNew article.steps form .fields .input-zip select,
+  body.section-steps #app > main section#formNew article.steps form .fields .select-state input,
+  body.section-steps #app > main section#formNew article.steps form .fields .select-state select,
+  body.section-step1 #app > main section#formNew article.steps form .fields .input-zip input,
+  body.section-step1 #app > main section#formNew article.steps form .fields .input-zip select,
+  body.section-step1 #app > main section#formNew article.steps form .fields .select-state input,
+  body.section-step1 #app > main section#formNew article.steps form .fields .select-state select,
+  body.section-step2 #app > main section#formNew article.steps form .fields .input-zip input,
+  body.section-step2 #app > main section#formNew article.steps form .fields .input-zip select,
+  body.section-step2 #app > main section#formNew article.steps form .fields .select-state input,
+  body.section-step2 #app > main section#formNew article.steps form .fields .select-state select,
+  body.section-step3 #app > main section#formNew article.steps form .fields .input-zip input,
+  body.section-step3 #app > main section#formNew article.steps form .fields .input-zip select,
+  body.section-step3 #app > main section#formNew article.steps form .fields .select-state input,
+  body.section-step3 #app > main section#formNew article.steps form .fields .select-state select,
+  body.section-step4 #app > main section#formNew article.steps form .fields .input-zip input,
+  body.section-step4 #app > main section#formNew article.steps form .fields .input-zip select,
+  body.section-step4 #app > main section#formNew article.steps form .fields .select-state input,
+  body.section-step4 #app > main section#formNew article.steps form .fields .select-state select {
+    width: 55%;
+  }
+}
+
+body.section-pre-qualification #app > main section#formNew article.steps form .fields .input-zip .down-arrow,
+body.section-pre-qualification #app > main section#formNew article.steps form .fields .select-state .down-arrow,
+body.section-congrats #app > main section#formNew article.steps form .fields .input-zip .down-arrow,
+body.section-congrats #app > main section#formNew article.steps form .fields .select-state .down-arrow,
+body.section-complete #app > main section#formNew article.steps form .fields .input-zip .down-arrow,
+body.section-complete #app > main section#formNew article.steps form .fields .select-state .down-arrow,
+body.section-preaprob #app > main section#formNew article.steps form .fields .input-zip .down-arrow,
+body.section-preaprob #app > main section#formNew article.steps form .fields .select-state .down-arrow,
+body.section-feliz #app > main section#formNew article.steps form .fields .input-zip .down-arrow,
+body.section-feliz #app > main section#formNew article.steps form .fields .select-state .down-arrow,
+body.section-gracias #app > main section#formNew article.steps form .fields .input-zip .down-arrow,
+body.section-gracias #app > main section#formNew article.steps form .fields .select-state .down-arrow,
+body.section-steps #app > main section#formNew article.steps form .fields .input-zip .down-arrow,
+body.section-steps #app > main section#formNew article.steps form .fields .select-state .down-arrow,
+body.section-step1 #app > main section#formNew article.steps form .fields .input-zip .down-arrow,
+body.section-step1 #app > main section#formNew article.steps form .fields .select-state .down-arrow,
+body.section-step2 #app > main section#formNew article.steps form .fields .input-zip .down-arrow,
+body.section-step2 #app > main section#formNew article.steps form .fields .select-state .down-arrow,
+body.section-step3 #app > main section#formNew article.steps form .fields .input-zip .down-arrow,
+body.section-step3 #app > main section#formNew article.steps form .fields .select-state .down-arrow,
+body.section-step4 #app > main section#formNew article.steps form .fields .input-zip .down-arrow,
+body.section-step4 #app > main section#formNew article.steps form .fields .select-state .down-arrow {
+  left: 0;
+  right: 0;
+  margin: 0 0 0 34%;
+}
+
+@media (max-width: 767.98px) {
+  body.section-pre-qualification #app > main section#formNew article.steps form .fields .input-zip .down-arrow,
+  body.section-pre-qualification #app > main section#formNew article.steps form .fields .select-state .down-arrow,
+  body.section-congrats #app > main section#formNew article.steps form .fields .input-zip .down-arrow,
+  body.section-congrats #app > main section#formNew article.steps form .fields .select-state .down-arrow,
+  body.section-complete #app > main section#formNew article.steps form .fields .input-zip .down-arrow,
+  body.section-complete #app > main section#formNew article.steps form .fields .select-state .down-arrow,
+  body.section-preaprob #app > main section#formNew article.steps form .fields .input-zip .down-arrow,
+  body.section-preaprob #app > main section#formNew article.steps form .fields .select-state .down-arrow,
+  body.section-feliz #app > main section#formNew article.steps form .fields .input-zip .down-arrow,
+  body.section-feliz #app > main section#formNew article.steps form .fields .select-state .down-arrow,
+  body.section-gracias #app > main section#formNew article.steps form .fields .input-zip .down-arrow,
+  body.section-gracias #app > main section#formNew article.steps form .fields .select-state .down-arrow,
+  body.section-steps #app > main section#formNew article.steps form .fields .input-zip .down-arrow,
+  body.section-steps #app > main section#formNew article.steps form .fields .select-state .down-arrow,
+  body.section-step1 #app > main section#formNew article.steps form .fields .input-zip .down-arrow,
+  body.section-step1 #app > main section#formNew article.steps form .fields .select-state .down-arrow,
+  body.section-step2 #app > main section#formNew article.steps form .fields .input-zip .down-arrow,
+  body.section-step2 #app > main section#formNew article.steps form .fields .select-state .down-arrow,
+  body.section-step3 #app > main section#formNew article.steps form .fields .input-zip .down-arrow,
+  body.section-step3 #app > main section#formNew article.steps form .fields .select-state .down-arrow,
+  body.section-step4 #app > main section#formNew article.steps form .fields .input-zip .down-arrow,
+  body.section-step4 #app > main section#formNew article.steps form .fields .select-state .down-arrow {
+    margin: 0 0 0 44%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  body.section-pre-qualification #app > main section#formNew article.steps form .fields .input-tooltip.tooltip-outside-m,
+  body.section-congrats #app > main section#formNew article.steps form .fields .input-tooltip.tooltip-outside-m,
+  body.section-complete #app > main section#formNew article.steps form .fields .input-tooltip.tooltip-outside-m,
+  body.section-preaprob #app > main section#formNew article.steps form .fields .input-tooltip.tooltip-outside-m,
+  body.section-feliz #app > main section#formNew article.steps form .fields .input-tooltip.tooltip-outside-m,
+  body.section-gracias #app > main section#formNew article.steps form .fields .input-tooltip.tooltip-outside-m,
+  body.section-steps #app > main section#formNew article.steps form .fields .input-tooltip.tooltip-outside-m,
+  body.section-step1 #app > main section#formNew article.steps form .fields .input-tooltip.tooltip-outside-m,
+  body.section-step2 #app > main section#formNew article.steps form .fields .input-tooltip.tooltip-outside-m,
+  body.section-step3 #app > main section#formNew article.steps form .fields .input-tooltip.tooltip-outside-m,
+  body.section-step4 #app > main section#formNew article.steps form .fields .input-tooltip.tooltip-outside-m {
+    margin-right: 35px;
+  }
+
+  body.section-pre-qualification #app > main section#formNew article.steps form .fields .input-tooltip.tooltip-outside-m .tooltip-dot,
+  body.section-congrats #app > main section#formNew article.steps form .fields .input-tooltip.tooltip-outside-m .tooltip-dot,
+  body.section-complete #app > main section#formNew article.steps form .fields .input-tooltip.tooltip-outside-m .tooltip-dot,
+  body.section-preaprob #app > main section#formNew article.steps form .fields .input-tooltip.tooltip-outside-m .tooltip-dot,
+  body.section-feliz #app > main section#formNew article.steps form .fields .input-tooltip.tooltip-outside-m .tooltip-dot,
+  body.section-gracias #app > main section#formNew article.steps form .fields .input-tooltip.tooltip-outside-m .tooltip-dot,
+  body.section-steps #app > main section#formNew article.steps form .fields .input-tooltip.tooltip-outside-m .tooltip-dot,
+  body.section-step1 #app > main section#formNew article.steps form .fields .input-tooltip.tooltip-outside-m .tooltip-dot,
+  body.section-step2 #app > main section#formNew article.steps form .fields .input-tooltip.tooltip-outside-m .tooltip-dot,
+  body.section-step3 #app > main section#formNew article.steps form .fields .input-tooltip.tooltip-outside-m .tooltip-dot,
+  body.section-step4 #app > main section#formNew article.steps form .fields .input-tooltip.tooltip-outside-m .tooltip-dot {
+    margin-right: -21px;
+  }
+
+  body.section-pre-qualification #app > main section#formNew article.steps form .fields .input-tooltip.tooltip-outside-m select,
+  body.section-congrats #app > main section#formNew article.steps form .fields .input-tooltip.tooltip-outside-m select,
+  body.section-complete #app > main section#formNew article.steps form .fields .input-tooltip.tooltip-outside-m select,
+  body.section-preaprob #app > main section#formNew article.steps form .fields .input-tooltip.tooltip-outside-m select,
+  body.section-feliz #app > main section#formNew article.steps form .fields .input-tooltip.tooltip-outside-m select,
+  body.section-gracias #app > main section#formNew article.steps form .fields .input-tooltip.tooltip-outside-m select,
+  body.section-steps #app > main section#formNew article.steps form .fields .input-tooltip.tooltip-outside-m select,
+  body.section-step1 #app > main section#formNew article.steps form .fields .input-tooltip.tooltip-outside-m select,
+  body.section-step2 #app > main section#formNew article.steps form .fields .input-tooltip.tooltip-outside-m select,
+  body.section-step3 #app > main section#formNew article.steps form .fields .input-tooltip.tooltip-outside-m select,
+  body.section-step4 #app > main section#formNew article.steps form .fields .input-tooltip.tooltip-outside-m select {
+    width: 92%;
+  }
+
+  body.section-pre-qualification #app > main section#formNew article.steps form .fields .input-tooltip.tooltip-outside-m .down-arrow,
+  body.section-congrats #app > main section#formNew article.steps form .fields .input-tooltip.tooltip-outside-m .down-arrow,
+  body.section-complete #app > main section#formNew article.steps form .fields .input-tooltip.tooltip-outside-m .down-arrow,
+  body.section-preaprob #app > main section#formNew article.steps form .fields .input-tooltip.tooltip-outside-m .down-arrow,
+  body.section-feliz #app > main section#formNew article.steps form .fields .input-tooltip.tooltip-outside-m .down-arrow,
+  body.section-gracias #app > main section#formNew article.steps form .fields .input-tooltip.tooltip-outside-m .down-arrow,
+  body.section-steps #app > main section#formNew article.steps form .fields .input-tooltip.tooltip-outside-m .down-arrow,
+  body.section-step1 #app > main section#formNew article.steps form .fields .input-tooltip.tooltip-outside-m .down-arrow,
+  body.section-step2 #app > main section#formNew article.steps form .fields .input-tooltip.tooltip-outside-m .down-arrow,
+  body.section-step3 #app > main section#formNew article.steps form .fields .input-tooltip.tooltip-outside-m .down-arrow,
+  body.section-step4 #app > main section#formNew article.steps form .fields .input-tooltip.tooltip-outside-m .down-arrow {
+    margin-right: 21px;
+  }
+}
+
+body.section-pre-qualification #app > main section#formNew article.steps form .fields .input-tooltip .tooltip-dot,
+body.section-congrats #app > main section#formNew article.steps form .fields .input-tooltip .tooltip-dot,
+body.section-complete #app > main section#formNew article.steps form .fields .input-tooltip .tooltip-dot,
+body.section-preaprob #app > main section#formNew article.steps form .fields .input-tooltip .tooltip-dot,
+body.section-feliz #app > main section#formNew article.steps form .fields .input-tooltip .tooltip-dot,
+body.section-gracias #app > main section#formNew article.steps form .fields .input-tooltip .tooltip-dot,
+body.section-steps #app > main section#formNew article.steps form .fields .input-tooltip .tooltip-dot,
+body.section-step1 #app > main section#formNew article.steps form .fields .input-tooltip .tooltip-dot,
+body.section-step2 #app > main section#formNew article.steps form .fields .input-tooltip .tooltip-dot,
+body.section-step3 #app > main section#formNew article.steps form .fields .input-tooltip .tooltip-dot,
+body.section-step4 #app > main section#formNew article.steps form .fields .input-tooltip .tooltip-dot {
+  height: 30px;
+  width: 30px;
+  background: #add7a4;
+  color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  float: right;
+  margin-top: -47px;
+  font-size: 18px;
+  padding-top: 5px;
+  text-shadow: 1px 1px 2px #999;
+}
+
+@media (max-width: 767.98px) {
+  body.section-pre-qualification #app > main section#formNew article.steps form .fields .input-tooltip .tooltip-dot,
+  body.section-congrats #app > main section#formNew article.steps form .fields .input-tooltip .tooltip-dot,
+  body.section-complete #app > main section#formNew article.steps form .fields .input-tooltip .tooltip-dot,
+  body.section-preaprob #app > main section#formNew article.steps form .fields .input-tooltip .tooltip-dot,
+  body.section-feliz #app > main section#formNew article.steps form .fields .input-tooltip .tooltip-dot,
+  body.section-gracias #app > main section#formNew article.steps form .fields .input-tooltip .tooltip-dot,
+  body.section-steps #app > main section#formNew article.steps form .fields .input-tooltip .tooltip-dot,
+  body.section-step1 #app > main section#formNew article.steps form .fields .input-tooltip .tooltip-dot,
+  body.section-step2 #app > main section#formNew article.steps form .fields .input-tooltip .tooltip-dot,
+  body.section-step3 #app > main section#formNew article.steps form .fields .input-tooltip .tooltip-dot,
+  body.section-step4 #app > main section#formNew article.steps form .fields .input-tooltip .tooltip-dot {
+    margin-right: 14px;
+  }
+}
+
+body.section-pre-qualification #app > main section#formNew article.steps form input[type="date"]:before,
+body.section-congrats #app > main section#formNew article.steps form input[type="date"]:before,
+body.section-complete #app > main section#formNew article.steps form input[type="date"]:before,
+body.section-preaprob #app > main section#formNew article.steps form input[type="date"]:before,
+body.section-feliz #app > main section#formNew article.steps form input[type="date"]:before,
+body.section-gracias #app > main section#formNew article.steps form input[type="date"]:before,
+body.section-steps #app > main section#formNew article.steps form input[type="date"]:before,
+body.section-step1 #app > main section#formNew article.steps form input[type="date"]:before,
+body.section-step2 #app > main section#formNew article.steps form input[type="date"]:before,
+body.section-step3 #app > main section#formNew article.steps form input[type="date"]:before,
+body.section-step4 #app > main section#formNew article.steps form input[type="date"]:before {
+  content: attr(placeholder) !important;
+  margin-right: 0.2em;
+}
+
+body.section-pre-qualification #app > main section#formNew article.steps form input[type="date"]:focus:before,
+body.section-pre-qualification #app > main section#formNew article.steps form input[type="date"]:valid:before,
+body.section-congrats #app > main section#formNew article.steps form input[type="date"]:focus:before,
+body.section-congrats #app > main section#formNew article.steps form input[type="date"]:valid:before,
+body.section-complete #app > main section#formNew article.steps form input[type="date"]:focus:before,
+body.section-complete #app > main section#formNew article.steps form input[type="date"]:valid:before,
+body.section-preaprob #app > main section#formNew article.steps form input[type="date"]:focus:before,
+body.section-preaprob #app > main section#formNew article.steps form input[type="date"]:valid:before,
+body.section-feliz #app > main section#formNew article.steps form input[type="date"]:focus:before,
+body.section-feliz #app > main section#formNew article.steps form input[type="date"]:valid:before,
+body.section-gracias #app > main section#formNew article.steps form input[type="date"]:focus:before,
+body.section-gracias #app > main section#formNew article.steps form input[type="date"]:valid:before,
+body.section-steps #app > main section#formNew article.steps form input[type="date"]:focus:before,
+body.section-steps #app > main section#formNew article.steps form input[type="date"]:valid:before,
+body.section-step1 #app > main section#formNew article.steps form input[type="date"]:focus:before,
+body.section-step1 #app > main section#formNew article.steps form input[type="date"]:valid:before,
+body.section-step2 #app > main section#formNew article.steps form input[type="date"]:focus:before,
+body.section-step2 #app > main section#formNew article.steps form input[type="date"]:valid:before,
+body.section-step3 #app > main section#formNew article.steps form input[type="date"]:focus:before,
+body.section-step3 #app > main section#formNew article.steps form input[type="date"]:valid:before,
+body.section-step4 #app > main section#formNew article.steps form input[type="date"]:focus:before,
+body.section-step4 #app > main section#formNew article.steps form input[type="date"]:valid:before {
+  content: "";
+}
+
+body.section-pre-qualification #app > main section#formNew .prequalification-header,
+body.section-congrats #app > main section#formNew .prequalification-header,
+body.section-complete #app > main section#formNew .prequalification-header,
+body.section-preaprob #app > main section#formNew .prequalification-header,
+body.section-feliz #app > main section#formNew .prequalification-header,
+body.section-gracias #app > main section#formNew .prequalification-header,
+body.section-steps #app > main section#formNew .prequalification-header,
+body.section-step1 #app > main section#formNew .prequalification-header,
+body.section-step2 #app > main section#formNew .prequalification-header,
+body.section-step3 #app > main section#formNew .prequalification-header,
+body.section-step4 #app > main section#formNew .prequalification-header {
+  padding-bottom: 16px;
+}
+
+body.section-pre-qualification #app > main section#formNew .prequalification-header h1,
+body.section-congrats #app > main section#formNew .prequalification-header h1,
+body.section-complete #app > main section#formNew .prequalification-header h1,
+body.section-preaprob #app > main section#formNew .prequalification-header h1,
+body.section-feliz #app > main section#formNew .prequalification-header h1,
+body.section-gracias #app > main section#formNew .prequalification-header h1,
+body.section-steps #app > main section#formNew .prequalification-header h1,
+body.section-step1 #app > main section#formNew .prequalification-header h1,
+body.section-step2 #app > main section#formNew .prequalification-header h1,
+body.section-step3 #app > main section#formNew .prequalification-header h1,
+body.section-step4 #app > main section#formNew .prequalification-header h1 {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 2.8rem;
+}
+
+@media (max-width: 767.98px) {
+  body.section-pre-qualification #app > main section#formNew .prequalification-header h1,
+  body.section-congrats #app > main section#formNew .prequalification-header h1,
+  body.section-complete #app > main section#formNew .prequalification-header h1,
+  body.section-preaprob #app > main section#formNew .prequalification-header h1,
+  body.section-feliz #app > main section#formNew .prequalification-header h1,
+  body.section-gracias #app > main section#formNew .prequalification-header h1,
+  body.section-steps #app > main section#formNew .prequalification-header h1,
+  body.section-step1 #app > main section#formNew .prequalification-header h1,
+  body.section-step2 #app > main section#formNew .prequalification-header h1,
+  body.section-step3 #app > main section#formNew .prequalification-header h1,
+  body.section-step4 #app > main section#formNew .prequalification-header h1 {
+    font-size: 2.3rem;
+  }
+}
+
+body.section-pre-qualification #app > main section#formNew .prequalification-header h2,
+body.section-congrats #app > main section#formNew .prequalification-header h2,
+body.section-complete #app > main section#formNew .prequalification-header h2,
+body.section-preaprob #app > main section#formNew .prequalification-header h2,
+body.section-feliz #app > main section#formNew .prequalification-header h2,
+body.section-gracias #app > main section#formNew .prequalification-header h2,
+body.section-steps #app > main section#formNew .prequalification-header h2,
+body.section-step1 #app > main section#formNew .prequalification-header h2,
+body.section-step2 #app > main section#formNew .prequalification-header h2,
+body.section-step3 #app > main section#formNew .prequalification-header h2,
+body.section-step4 #app > main section#formNew .prequalification-header h2 {
+  font-size: 0.9375rem;
+}
+
+@media (max-width: 767.98px) {
+  body.section-pre-qualification #app > main section#formNew .prequalification-header h2,
+  body.section-congrats #app > main section#formNew .prequalification-header h2,
+  body.section-complete #app > main section#formNew .prequalification-header h2,
+  body.section-preaprob #app > main section#formNew .prequalification-header h2,
+  body.section-feliz #app > main section#formNew .prequalification-header h2,
+  body.section-gracias #app > main section#formNew .prequalification-header h2,
+  body.section-steps #app > main section#formNew .prequalification-header h2,
+  body.section-step1 #app > main section#formNew .prequalification-header h2,
+  body.section-step2 #app > main section#formNew .prequalification-header h2,
+  body.section-step3 #app > main section#formNew .prequalification-header h2,
+  body.section-step4 #app > main section#formNew .prequalification-header h2 {
+    line-height: 1.5;
+  }
+}
+
+body.section-pre-qualification #app > main section#formNew .prequalification-header.reduce-h1-size h1,
+body.section-congrats #app > main section#formNew .prequalification-header.reduce-h1-size h1,
+body.section-complete #app > main section#formNew .prequalification-header.reduce-h1-size h1,
+body.section-preaprob #app > main section#formNew .prequalification-header.reduce-h1-size h1,
+body.section-feliz #app > main section#formNew .prequalification-header.reduce-h1-size h1,
+body.section-gracias #app > main section#formNew .prequalification-header.reduce-h1-size h1,
+body.section-steps #app > main section#formNew .prequalification-header.reduce-h1-size h1,
+body.section-step1 #app > main section#formNew .prequalification-header.reduce-h1-size h1,
+body.section-step2 #app > main section#formNew .prequalification-header.reduce-h1-size h1,
+body.section-step3 #app > main section#formNew .prequalification-header.reduce-h1-size h1,
+body.section-step4 #app > main section#formNew .prequalification-header.reduce-h1-size h1 {
+  font-size: 2rem;
+}
+
+body.section-pre-qualification #app > main section#formNew .form-category-title,
+body.section-congrats #app > main section#formNew .form-category-title,
+body.section-complete #app > main section#formNew .form-category-title,
+body.section-preaprob #app > main section#formNew .form-category-title,
+body.section-feliz #app > main section#formNew .form-category-title,
+body.section-gracias #app > main section#formNew .form-category-title,
+body.section-steps #app > main section#formNew .form-category-title,
+body.section-step1 #app > main section#formNew .form-category-title,
+body.section-step2 #app > main section#formNew .form-category-title,
+body.section-step3 #app > main section#formNew .form-category-title,
+body.section-step4 #app > main section#formNew .form-category-title {
+  padding: 9px 0 25px 0;
+}
+
+body.section-pre-qualification #app > main section#formNew .form-category-title h3,
+body.section-congrats #app > main section#formNew .form-category-title h3,
+body.section-complete #app > main section#formNew .form-category-title h3,
+body.section-preaprob #app > main section#formNew .form-category-title h3,
+body.section-feliz #app > main section#formNew .form-category-title h3,
+body.section-gracias #app > main section#formNew .form-category-title h3,
+body.section-steps #app > main section#formNew .form-category-title h3,
+body.section-step1 #app > main section#formNew .form-category-title h3,
+body.section-step2 #app > main section#formNew .form-category-title h3,
+body.section-step3 #app > main section#formNew .form-category-title h3,
+body.section-step4 #app > main section#formNew .form-category-title h3 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+@media (max-width: 767.98px) {
+  body.section-pre-qualification #app > main section#formNew .form-category-title h3,
+  body.section-congrats #app > main section#formNew .form-category-title h3,
+  body.section-complete #app > main section#formNew .form-category-title h3,
+  body.section-preaprob #app > main section#formNew .form-category-title h3,
+  body.section-feliz #app > main section#formNew .form-category-title h3,
+  body.section-gracias #app > main section#formNew .form-category-title h3,
+  body.section-steps #app > main section#formNew .form-category-title h3,
+  body.section-step1 #app > main section#formNew .form-category-title h3,
+  body.section-step2 #app > main section#formNew .form-category-title h3,
+  body.section-step3 #app > main section#formNew .form-category-title h3,
+  body.section-step4 #app > main section#formNew .form-category-title h3 {
+    font-size: 18px;
+  }
+}
+
+body.section-pre-qualification #app > main section#formNew ::-webkit-input-placeholder,
+body.section-congrats #app > main section#formNew ::-webkit-input-placeholder,
+body.section-complete #app > main section#formNew ::-webkit-input-placeholder,
+body.section-preaprob #app > main section#formNew ::-webkit-input-placeholder,
+body.section-feliz #app > main section#formNew ::-webkit-input-placeholder,
+body.section-gracias #app > main section#formNew ::-webkit-input-placeholder,
+body.section-steps #app > main section#formNew ::-webkit-input-placeholder,
+body.section-step1 #app > main section#formNew ::-webkit-input-placeholder,
+body.section-step2 #app > main section#formNew ::-webkit-input-placeholder,
+body.section-step3 #app > main section#formNew ::-webkit-input-placeholder,
+body.section-step4 #app > main section#formNew ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #889586;
+}
+
+body.section-pre-qualification #app > main section#formNew ::-moz-placeholder,
+body.section-congrats #app > main section#formNew ::-moz-placeholder,
+body.section-complete #app > main section#formNew ::-moz-placeholder,
+body.section-preaprob #app > main section#formNew ::-moz-placeholder,
+body.section-feliz #app > main section#formNew ::-moz-placeholder,
+body.section-gracias #app > main section#formNew ::-moz-placeholder,
+body.section-steps #app > main section#formNew ::-moz-placeholder,
+body.section-step1 #app > main section#formNew ::-moz-placeholder,
+body.section-step2 #app > main section#formNew ::-moz-placeholder,
+body.section-step3 #app > main section#formNew ::-moz-placeholder,
+body.section-step4 #app > main section#formNew ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #889586;
+}
+
+body.section-pre-qualification #app > main section#formNew :-ms-input-placeholder,
+body.section-congrats #app > main section#formNew :-ms-input-placeholder,
+body.section-complete #app > main section#formNew :-ms-input-placeholder,
+body.section-preaprob #app > main section#formNew :-ms-input-placeholder,
+body.section-feliz #app > main section#formNew :-ms-input-placeholder,
+body.section-gracias #app > main section#formNew :-ms-input-placeholder,
+body.section-steps #app > main section#formNew :-ms-input-placeholder,
+body.section-step1 #app > main section#formNew :-ms-input-placeholder,
+body.section-step2 #app > main section#formNew :-ms-input-placeholder,
+body.section-step3 #app > main section#formNew :-ms-input-placeholder,
+body.section-step4 #app > main section#formNew :-ms-input-placeholder {
+  /* IE 10+ */
+  color: #889586;
+}
+
+body.section-pre-qualification #app > main section#formNew :-moz-placeholder,
+body.section-congrats #app > main section#formNew :-moz-placeholder,
+body.section-complete #app > main section#formNew :-moz-placeholder,
+body.section-preaprob #app > main section#formNew :-moz-placeholder,
+body.section-feliz #app > main section#formNew :-moz-placeholder,
+body.section-gracias #app > main section#formNew :-moz-placeholder,
+body.section-steps #app > main section#formNew :-moz-placeholder,
+body.section-step1 #app > main section#formNew :-moz-placeholder,
+body.section-step2 #app > main section#formNew :-moz-placeholder,
+body.section-step3 #app > main section#formNew :-moz-placeholder,
+body.section-step4 #app > main section#formNew :-moz-placeholder {
+  /* Firefox 18- */
+  color: #889586;
+}
+
+body.section-pre-qualification #app > main section#formNew .form-select-container,
+body.section-congrats #app > main section#formNew .form-select-container,
+body.section-complete #app > main section#formNew .form-select-container,
+body.section-preaprob #app > main section#formNew .form-select-container,
+body.section-feliz #app > main section#formNew .form-select-container,
+body.section-gracias #app > main section#formNew .form-select-container,
+body.section-steps #app > main section#formNew .form-select-container,
+body.section-step1 #app > main section#formNew .form-select-container,
+body.section-step2 #app > main section#formNew .form-select-container,
+body.section-step3 #app > main section#formNew .form-select-container,
+body.section-step4 #app > main section#formNew .form-select-container {
+  position: relative;
+}
+
+body.section-pre-qualification #app > main section#formNew .form-select-container select,
+body.section-congrats #app > main section#formNew .form-select-container select,
+body.section-complete #app > main section#formNew .form-select-container select,
+body.section-preaprob #app > main section#formNew .form-select-container select,
+body.section-feliz #app > main section#formNew .form-select-container select,
+body.section-gracias #app > main section#formNew .form-select-container select,
+body.section-steps #app > main section#formNew .form-select-container select,
+body.section-step1 #app > main section#formNew .form-select-container select,
+body.section-step2 #app > main section#formNew .form-select-container select,
+body.section-step3 #app > main section#formNew .form-select-container select,
+body.section-step4 #app > main section#formNew .form-select-container select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+body.section-pre-qualification #app > main section#formNew .form-select-container select::-ms-expand,
+body.section-congrats #app > main section#formNew .form-select-container select::-ms-expand,
+body.section-complete #app > main section#formNew .form-select-container select::-ms-expand,
+body.section-preaprob #app > main section#formNew .form-select-container select::-ms-expand,
+body.section-feliz #app > main section#formNew .form-select-container select::-ms-expand,
+body.section-gracias #app > main section#formNew .form-select-container select::-ms-expand,
+body.section-steps #app > main section#formNew .form-select-container select::-ms-expand,
+body.section-step1 #app > main section#formNew .form-select-container select::-ms-expand,
+body.section-step2 #app > main section#formNew .form-select-container select::-ms-expand,
+body.section-step3 #app > main section#formNew .form-select-container select::-ms-expand,
+body.section-step4 #app > main section#formNew .form-select-container select::-ms-expand {
+  display: none;
+}
+
+body.section-pre-qualification #app > main section#formNew .form-select-container .down-arrow,
+body.section-congrats #app > main section#formNew .form-select-container .down-arrow,
+body.section-complete #app > main section#formNew .form-select-container .down-arrow,
+body.section-preaprob #app > main section#formNew .form-select-container .down-arrow,
+body.section-feliz #app > main section#formNew .form-select-container .down-arrow,
+body.section-gracias #app > main section#formNew .form-select-container .down-arrow,
+body.section-steps #app > main section#formNew .form-select-container .down-arrow,
+body.section-step1 #app > main section#formNew .form-select-container .down-arrow,
+body.section-step2 #app > main section#formNew .form-select-container .down-arrow,
+body.section-step3 #app > main section#formNew .form-select-container .down-arrow,
+body.section-step4 #app > main section#formNew .form-select-container .down-arrow {
+  color: #359c1c;
+  right: 5px;
+  top: 25px;
+  width: 30px;
+  position: absolute;
+  display: block;
+  z-index: 10;
+  margin: 0 65px 0 0;
+  pointer-events: none;
+}
+
+body.section-pre-qualification #app > main section#formNew .form-select-container .down-arrow.tooltip-outside,
+body.section-congrats #app > main section#formNew .form-select-container .down-arrow.tooltip-outside,
+body.section-complete #app > main section#formNew .form-select-container .down-arrow.tooltip-outside,
+body.section-preaprob #app > main section#formNew .form-select-container .down-arrow.tooltip-outside,
+body.section-feliz #app > main section#formNew .form-select-container .down-arrow.tooltip-outside,
+body.section-gracias #app > main section#formNew .form-select-container .down-arrow.tooltip-outside,
+body.section-steps #app > main section#formNew .form-select-container .down-arrow.tooltip-outside,
+body.section-step1 #app > main section#formNew .form-select-container .down-arrow.tooltip-outside,
+body.section-step2 #app > main section#formNew .form-select-container .down-arrow.tooltip-outside,
+body.section-step3 #app > main section#formNew .form-select-container .down-arrow.tooltip-outside,
+body.section-step4 #app > main section#formNew .form-select-container .down-arrow.tooltip-outside {
+  margin-right: 75px;
+}
+
+@media (max-width: 767.98px) {
+  body.section-pre-qualification #app > main section#formNew .form-select-container .down-arrow,
+  body.section-congrats #app > main section#formNew .form-select-container .down-arrow,
+  body.section-complete #app > main section#formNew .form-select-container .down-arrow,
+  body.section-preaprob #app > main section#formNew .form-select-container .down-arrow,
+  body.section-feliz #app > main section#formNew .form-select-container .down-arrow,
+  body.section-gracias #app > main section#formNew .form-select-container .down-arrow,
+  body.section-steps #app > main section#formNew .form-select-container .down-arrow,
+  body.section-step1 #app > main section#formNew .form-select-container .down-arrow,
+  body.section-step2 #app > main section#formNew .form-select-container .down-arrow,
+  body.section-step3 #app > main section#formNew .form-select-container .down-arrow,
+  body.section-step4 #app > main section#formNew .form-select-container .down-arrow {
+    margin: 0;
+  }
+}
+
+body.section-pre-qualification #app > main section#formNew textarea,
+body.section-congrats #app > main section#formNew textarea,
+body.section-complete #app > main section#formNew textarea,
+body.section-preaprob #app > main section#formNew textarea,
+body.section-feliz #app > main section#formNew textarea,
+body.section-gracias #app > main section#formNew textarea,
+body.section-steps #app > main section#formNew textarea,
+body.section-step1 #app > main section#formNew textarea,
+body.section-step2 #app > main section#formNew textarea,
+body.section-step3 #app > main section#formNew textarea,
+body.section-step4 #app > main section#formNew textarea {
+  height: auto !important;
+}
+
+body.section-pre-qualification #app > main section#formNew .form-control,
+body.section-congrats #app > main section#formNew .form-control,
+body.section-complete #app > main section#formNew .form-control,
+body.section-preaprob #app > main section#formNew .form-control,
+body.section-feliz #app > main section#formNew .form-control,
+body.section-gracias #app > main section#formNew .form-control,
+body.section-steps #app > main section#formNew .form-control,
+body.section-step1 #app > main section#formNew .form-control,
+body.section-step2 #app > main section#formNew .form-control,
+body.section-step3 #app > main section#formNew .form-control,
+body.section-step4 #app > main section#formNew .form-control {
+  height: 65px;
+}
+
+body.section-pre-qualification #app > main section#formNew input,
+body.section-congrats #app > main section#formNew input,
+body.section-complete #app > main section#formNew input,
+body.section-preaprob #app > main section#formNew input,
+body.section-feliz #app > main section#formNew input,
+body.section-gracias #app > main section#formNew input,
+body.section-steps #app > main section#formNew input,
+body.section-step1 #app > main section#formNew input,
+body.section-step2 #app > main section#formNew input,
+body.section-step3 #app > main section#formNew input,
+body.section-step4 #app > main section#formNew input {
+  font-size: 16px;
+  padding: 20px 0px 20px 12px;
+  box-sizing: border-box;
+  transition: all .3s linear;
+  -webkit-appearance: none;
+}
+
+body.section-pre-qualification #app > main section#formNew .float-label,
+body.section-congrats #app > main section#formNew .float-label,
+body.section-complete #app > main section#formNew .float-label,
+body.section-preaprob #app > main section#formNew .float-label,
+body.section-feliz #app > main section#formNew .float-label,
+body.section-gracias #app > main section#formNew .float-label,
+body.section-steps #app > main section#formNew .float-label,
+body.section-step1 #app > main section#formNew .float-label,
+body.section-step2 #app > main section#formNew .float-label,
+body.section-step3 #app > main section#formNew .float-label,
+body.section-step4 #app > main section#formNew .float-label {
+  position: relative;
+}
+
+body.section-pre-qualification #app > main section#formNew .float-label label,
+body.section-congrats #app > main section#formNew .float-label label,
+body.section-complete #app > main section#formNew .float-label label,
+body.section-preaprob #app > main section#formNew .float-label label,
+body.section-feliz #app > main section#formNew .float-label label,
+body.section-gracias #app > main section#formNew .float-label label,
+body.section-steps #app > main section#formNew .float-label label,
+body.section-step1 #app > main section#formNew .float-label label,
+body.section-step2 #app > main section#formNew .float-label label,
+body.section-step3 #app > main section#formNew .float-label label,
+body.section-step4 #app > main section#formNew .float-label label {
+  position: absolute;
+  top: calc(50% - 7px);
+  left: 12px;
+  opacity: 0;
+  transition: all .3s ease;
+}
+
+body.section-pre-qualification #app > main section#formNew .float-label input:not(:placeholder-shown),
+body.section-congrats #app > main section#formNew .float-label input:not(:placeholder-shown),
+body.section-complete #app > main section#formNew .float-label input:not(:placeholder-shown),
+body.section-preaprob #app > main section#formNew .float-label input:not(:placeholder-shown),
+body.section-feliz #app > main section#formNew .float-label input:not(:placeholder-shown),
+body.section-gracias #app > main section#formNew .float-label input:not(:placeholder-shown),
+body.section-steps #app > main section#formNew .float-label input:not(:placeholder-shown),
+body.section-step1 #app > main section#formNew .float-label input:not(:placeholder-shown),
+body.section-step2 #app > main section#formNew .float-label input:not(:placeholder-shown),
+body.section-step3 #app > main section#formNew .float-label input:not(:placeholder-shown),
+body.section-step4 #app > main section#formNew .float-label input:not(:placeholder-shown) {
+  padding: 36px 0px 12px 12px;
+}
+
+body.section-pre-qualification #app > main section#formNew .float-label input:not(:placeholder-shown) + label,
+body.section-congrats #app > main section#formNew .float-label input:not(:placeholder-shown) + label,
+body.section-complete #app > main section#formNew .float-label input:not(:placeholder-shown) + label,
+body.section-preaprob #app > main section#formNew .float-label input:not(:placeholder-shown) + label,
+body.section-feliz #app > main section#formNew .float-label input:not(:placeholder-shown) + label,
+body.section-gracias #app > main section#formNew .float-label input:not(:placeholder-shown) + label,
+body.section-steps #app > main section#formNew .float-label input:not(:placeholder-shown) + label,
+body.section-step1 #app > main section#formNew .float-label input:not(:placeholder-shown) + label,
+body.section-step2 #app > main section#formNew .float-label input:not(:placeholder-shown) + label,
+body.section-step3 #app > main section#formNew .float-label input:not(:placeholder-shown) + label,
+body.section-step4 #app > main section#formNew .float-label input:not(:placeholder-shown) + label {
+  transform: translateY(-14px);
+  opacity: 1;
+  font-size: 14px;
+  color: #888;
+}
+
+body.section-pre-qualification #app > main section#formNew .select-float-label,
+body.section-congrats #app > main section#formNew .select-float-label,
+body.section-complete #app > main section#formNew .select-float-label,
+body.section-preaprob #app > main section#formNew .select-float-label,
+body.section-feliz #app > main section#formNew .select-float-label,
+body.section-gracias #app > main section#formNew .select-float-label,
+body.section-steps #app > main section#formNew .select-float-label,
+body.section-step1 #app > main section#formNew .select-float-label,
+body.section-step2 #app > main section#formNew .select-float-label,
+body.section-step3 #app > main section#formNew .select-float-label,
+body.section-step4 #app > main section#formNew .select-float-label {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+body.section-pre-qualification #app > main section#formNew .select-float-label .form-control,
+body.section-congrats #app > main section#formNew .select-float-label .form-control,
+body.section-complete #app > main section#formNew .select-float-label .form-control,
+body.section-preaprob #app > main section#formNew .select-float-label .form-control,
+body.section-feliz #app > main section#formNew .select-float-label .form-control,
+body.section-gracias #app > main section#formNew .select-float-label .form-control,
+body.section-steps #app > main section#formNew .select-float-label .form-control,
+body.section-step1 #app > main section#formNew .select-float-label .form-control,
+body.section-step2 #app > main section#formNew .select-float-label .form-control,
+body.section-step3 #app > main section#formNew .select-float-label .form-control,
+body.section-step4 #app > main section#formNew .select-float-label .form-control {
+  color: #888;
+}
+
+body.section-pre-qualification #app > main section#formNew .select-float-label .position-label,
+body.section-congrats #app > main section#formNew .select-float-label .position-label,
+body.section-complete #app > main section#formNew .select-float-label .position-label,
+body.section-preaprob #app > main section#formNew .select-float-label .position-label,
+body.section-feliz #app > main section#formNew .select-float-label .position-label,
+body.section-gracias #app > main section#formNew .select-float-label .position-label,
+body.section-steps #app > main section#formNew .select-float-label .position-label,
+body.section-step1 #app > main section#formNew .select-float-label .position-label,
+body.section-step2 #app > main section#formNew .select-float-label .position-label,
+body.section-step3 #app > main section#formNew .select-float-label .position-label,
+body.section-step4 #app > main section#formNew .select-float-label .position-label {
+  padding-top: 30px;
+}
+
+body.section-pre-qualification #app > main section#formNew .select-float-label .position-label.position-label,
+body.section-congrats #app > main section#formNew .select-float-label .position-label.position-label,
+body.section-complete #app > main section#formNew .select-float-label .position-label.position-label,
+body.section-preaprob #app > main section#formNew .select-float-label .position-label.position-label,
+body.section-feliz #app > main section#formNew .select-float-label .position-label.position-label,
+body.section-gracias #app > main section#formNew .select-float-label .position-label.position-label,
+body.section-steps #app > main section#formNew .select-float-label .position-label.position-label,
+body.section-step1 #app > main section#formNew .select-float-label .position-label.position-label,
+body.section-step2 #app > main section#formNew .select-float-label .position-label.position-label,
+body.section-step3 #app > main section#formNew .select-float-label .position-label.position-label,
+body.section-step4 #app > main section#formNew .select-float-label .position-label.position-label {
+  color: #323831;
+}
+
+body.section-pre-qualification #app > main section#formNew .select-float-label .hidden,
+body.section-congrats #app > main section#formNew .select-float-label .hidden,
+body.section-complete #app > main section#formNew .select-float-label .hidden,
+body.section-preaprob #app > main section#formNew .select-float-label .hidden,
+body.section-feliz #app > main section#formNew .select-float-label .hidden,
+body.section-gracias #app > main section#formNew .select-float-label .hidden,
+body.section-steps #app > main section#formNew .select-float-label .hidden,
+body.section-step1 #app > main section#formNew .select-float-label .hidden,
+body.section-step2 #app > main section#formNew .select-float-label .hidden,
+body.section-step3 #app > main section#formNew .select-float-label .hidden,
+body.section-step4 #app > main section#formNew .select-float-label .hidden {
+  display: none;
+}
+
+body.section-pre-qualification #app > main section#formNew .select-float-label label,
+body.section-congrats #app > main section#formNew .select-float-label label,
+body.section-complete #app > main section#formNew .select-float-label label,
+body.section-preaprob #app > main section#formNew .select-float-label label,
+body.section-feliz #app > main section#formNew .select-float-label label,
+body.section-gracias #app > main section#formNew .select-float-label label,
+body.section-steps #app > main section#formNew .select-float-label label,
+body.section-step1 #app > main section#formNew .select-float-label label,
+body.section-step2 #app > main section#formNew .select-float-label label,
+body.section-step3 #app > main section#formNew .select-float-label label,
+body.section-step4 #app > main section#formNew .select-float-label label {
+  position: absolute;
+  top: calc(50% - 7px);
+  left: 12px;
+  color: #888;
+  transition: all 0.1s linear;
+  opacity: 0;
+}
+
+body.section-pre-qualification #app > main section#formNew .select-float-label label.show,
+body.section-congrats #app > main section#formNew .select-float-label label.show,
+body.section-complete #app > main section#formNew .select-float-label label.show,
+body.section-preaprob #app > main section#formNew .select-float-label label.show,
+body.section-feliz #app > main section#formNew .select-float-label label.show,
+body.section-gracias #app > main section#formNew .select-float-label label.show,
+body.section-steps #app > main section#formNew .select-float-label label.show,
+body.section-step1 #app > main section#formNew .select-float-label label.show,
+body.section-step2 #app > main section#formNew .select-float-label label.show,
+body.section-step3 #app > main section#formNew .select-float-label label.show,
+body.section-step4 #app > main section#formNew .select-float-label label.show {
+  top: 12px;
+  opacity: 1;
+  font-size: 14px;
+  transition: all .3s ease;
+}
+
+body.section-pre-qualification #app > main section#formNew .select-float-label option,
+body.section-congrats #app > main section#formNew .select-float-label option,
+body.section-complete #app > main section#formNew .select-float-label option,
+body.section-preaprob #app > main section#formNew .select-float-label option,
+body.section-feliz #app > main section#formNew .select-float-label option,
+body.section-gracias #app > main section#formNew .select-float-label option,
+body.section-steps #app > main section#formNew .select-float-label option,
+body.section-step1 #app > main section#formNew .select-float-label option,
+body.section-step2 #app > main section#formNew .select-float-label option,
+body.section-step3 #app > main section#formNew .select-float-label option,
+body.section-step4 #app > main section#formNew .select-float-label option {
+  color: black;
+}
+
+body.section-pre-qualification #app > main section#formNew .select-float-label .watermark,
+body.section-congrats #app > main section#formNew .select-float-label .watermark,
+body.section-complete #app > main section#formNew .select-float-label .watermark,
+body.section-preaprob #app > main section#formNew .select-float-label .watermark,
+body.section-feliz #app > main section#formNew .select-float-label .watermark,
+body.section-gracias #app > main section#formNew .select-float-label .watermark,
+body.section-steps #app > main section#formNew .select-float-label .watermark,
+body.section-step1 #app > main section#formNew .select-float-label .watermark,
+body.section-step2 #app > main section#formNew .select-float-label .watermark,
+body.section-step3 #app > main section#formNew .select-float-label .watermark,
+body.section-step4 #app > main section#formNew .select-float-label .watermark {
+  color: #888;
+}
+
+body.section-pre-qualification #app > main section#formNew hr,
+body.section-congrats #app > main section#formNew hr,
+body.section-complete #app > main section#formNew hr,
+body.section-preaprob #app > main section#formNew hr,
+body.section-feliz #app > main section#formNew hr,
+body.section-gracias #app > main section#formNew hr,
+body.section-steps #app > main section#formNew hr,
+body.section-step1 #app > main section#formNew hr,
+body.section-step2 #app > main section#formNew hr,
+body.section-step3 #app > main section#formNew hr,
+body.section-step4 #app > main section#formNew hr {
+  margin: 40px 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #fff;
+  padding: 0;
+}
+
+@media (max-width: 767.98px) {
+  body.section-pre-qualification #app > main section#formNew hr,
+  body.section-congrats #app > main section#formNew hr,
+  body.section-complete #app > main section#formNew hr,
+  body.section-preaprob #app > main section#formNew hr,
+  body.section-feliz #app > main section#formNew hr,
+  body.section-gracias #app > main section#formNew hr,
+  body.section-steps #app > main section#formNew hr,
+  body.section-step1 #app > main section#formNew hr,
+  body.section-step2 #app > main section#formNew hr,
+  body.section-step3 #app > main section#formNew hr,
+  body.section-step4 #app > main section#formNew hr {
+    margin: 30px 0;
+  }
+}
+
+body.section-pre-qualification #app > main section#formNew .btn-primary,
+body.section-congrats #app > main section#formNew .btn-primary,
+body.section-complete #app > main section#formNew .btn-primary,
+body.section-preaprob #app > main section#formNew .btn-primary,
+body.section-feliz #app > main section#formNew .btn-primary,
+body.section-gracias #app > main section#formNew .btn-primary,
+body.section-steps #app > main section#formNew .btn-primary,
+body.section-step1 #app > main section#formNew .btn-primary,
+body.section-step2 #app > main section#formNew .btn-primary,
+body.section-step3 #app > main section#formNew .btn-primary,
+body.section-step4 #app > main section#formNew .btn-primary {
+  background: #359c1c;
+  border-color: #359c1c;
+  height: 55px;
+  font-size: 23px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+body.section-pre-qualification #app > main section#formNew .step1-badges li,
+body.section-congrats #app > main section#formNew .step1-badges li,
+body.section-complete #app > main section#formNew .step1-badges li,
+body.section-preaprob #app > main section#formNew .step1-badges li,
+body.section-feliz #app > main section#formNew .step1-badges li,
+body.section-gracias #app > main section#formNew .step1-badges li,
+body.section-steps #app > main section#formNew .step1-badges li,
+body.section-step1 #app > main section#formNew .step1-badges li,
+body.section-step2 #app > main section#formNew .step1-badges li,
+body.section-step3 #app > main section#formNew .step1-badges li,
+body.section-step4 #app > main section#formNew .step1-badges li {
+  padding: 50px;
+}
+
+body.section-pre-qualification #app > main section#formNew .form-right-col,
+body.section-congrats #app > main section#formNew .form-right-col,
+body.section-complete #app > main section#formNew .form-right-col,
+body.section-preaprob #app > main section#formNew .form-right-col,
+body.section-feliz #app > main section#formNew .form-right-col,
+body.section-gracias #app > main section#formNew .form-right-col,
+body.section-steps #app > main section#formNew .form-right-col,
+body.section-step1 #app > main section#formNew .form-right-col,
+body.section-step2 #app > main section#formNew .form-right-col,
+body.section-step3 #app > main section#formNew .form-right-col,
+body.section-step4 #app > main section#formNew .form-right-col {
+  text-align: center;
+  margin-top: 80px;
+  padding: 40px;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  body.section-pre-qualification #app > main section#formNew .form-right-col,
+  body.section-congrats #app > main section#formNew .form-right-col,
+  body.section-complete #app > main section#formNew .form-right-col,
+  body.section-preaprob #app > main section#formNew .form-right-col,
+  body.section-feliz #app > main section#formNew .form-right-col,
+  body.section-gracias #app > main section#formNew .form-right-col,
+  body.section-steps #app > main section#formNew .form-right-col,
+  body.section-step1 #app > main section#formNew .form-right-col,
+  body.section-step2 #app > main section#formNew .form-right-col,
+  body.section-step3 #app > main section#formNew .form-right-col,
+  body.section-step4 #app > main section#formNew .form-right-col {
+    padding-right: 0;
+  }
+}
+
+body.section-pre-qualification #app > main section#formNew .form-right-col h3,
+body.section-congrats #app > main section#formNew .form-right-col h3,
+body.section-complete #app > main section#formNew .form-right-col h3,
+body.section-preaprob #app > main section#formNew .form-right-col h3,
+body.section-feliz #app > main section#formNew .form-right-col h3,
+body.section-gracias #app > main section#formNew .form-right-col h3,
+body.section-steps #app > main section#formNew .form-right-col h3,
+body.section-step1 #app > main section#formNew .form-right-col h3,
+body.section-step2 #app > main section#formNew .form-right-col h3,
+body.section-step3 #app > main section#formNew .form-right-col h3,
+body.section-step4 #app > main section#formNew .form-right-col h3 {
+  font-weight: 600;
+  color: #162c4e;
+  font-size: 26px;
+  line-height: 1.5;
+}
+
+body.section-pre-qualification #app > main section#formNew .form-right-col ul li,
+body.section-congrats #app > main section#formNew .form-right-col ul li,
+body.section-complete #app > main section#formNew .form-right-col ul li,
+body.section-preaprob #app > main section#formNew .form-right-col ul li,
+body.section-feliz #app > main section#formNew .form-right-col ul li,
+body.section-gracias #app > main section#formNew .form-right-col ul li,
+body.section-steps #app > main section#formNew .form-right-col ul li,
+body.section-step1 #app > main section#formNew .form-right-col ul li,
+body.section-step2 #app > main section#formNew .form-right-col ul li,
+body.section-step3 #app > main section#formNew .form-right-col ul li,
+body.section-step4 #app > main section#formNew .form-right-col ul li {
+  line-height: 1.5;
+  padding: 40px 0;
+  font-size: 19px;
+}
+
+body.section-pre-qualification #app > main section#formNew .form-right-col ul li span,
+body.section-congrats #app > main section#formNew .form-right-col ul li span,
+body.section-complete #app > main section#formNew .form-right-col ul li span,
+body.section-preaprob #app > main section#formNew .form-right-col ul li span,
+body.section-feliz #app > main section#formNew .form-right-col ul li span,
+body.section-gracias #app > main section#formNew .form-right-col ul li span,
+body.section-steps #app > main section#formNew .form-right-col ul li span,
+body.section-step1 #app > main section#formNew .form-right-col ul li span,
+body.section-step2 #app > main section#formNew .form-right-col ul li span,
+body.section-step3 #app > main section#formNew .form-right-col ul li span,
+body.section-step4 #app > main section#formNew .form-right-col ul li span {
+  color: #162c4e;
+  display: block;
+  font-weight: 600;
+}
+
+body.section-pre-qualification #app > main section#formNew .form-right-col ul .divider,
+body.section-congrats #app > main section#formNew .form-right-col ul .divider,
+body.section-complete #app > main section#formNew .form-right-col ul .divider,
+body.section-preaprob #app > main section#formNew .form-right-col ul .divider,
+body.section-feliz #app > main section#formNew .form-right-col ul .divider,
+body.section-gracias #app > main section#formNew .form-right-col ul .divider,
+body.section-steps #app > main section#formNew .form-right-col ul .divider,
+body.section-step1 #app > main section#formNew .form-right-col ul .divider,
+body.section-step2 #app > main section#formNew .form-right-col ul .divider,
+body.section-step3 #app > main section#formNew .form-right-col ul .divider,
+body.section-step4 #app > main section#formNew .form-right-col ul .divider {
+  height: 1px;
+  border-top: 1px solid #ccc;
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+body.section-pre-qualification #app > main section#formNew .form-right-col.progress-right,
+body.section-congrats #app > main section#formNew .form-right-col.progress-right,
+body.section-complete #app > main section#formNew .form-right-col.progress-right,
+body.section-preaprob #app > main section#formNew .form-right-col.progress-right,
+body.section-feliz #app > main section#formNew .form-right-col.progress-right,
+body.section-gracias #app > main section#formNew .form-right-col.progress-right,
+body.section-steps #app > main section#formNew .form-right-col.progress-right,
+body.section-step1 #app > main section#formNew .form-right-col.progress-right,
+body.section-step2 #app > main section#formNew .form-right-col.progress-right,
+body.section-step3 #app > main section#formNew .form-right-col.progress-right,
+body.section-step4 #app > main section#formNew .form-right-col.progress-right {
+  margin-top: 0;
+}
+
+body.section-pre-qualification #app > main section#formNew .form-right-col.progress-right .qualification-amount .intro,
+body.section-congrats #app > main section#formNew .form-right-col.progress-right .qualification-amount .intro,
+body.section-complete #app > main section#formNew .form-right-col.progress-right .qualification-amount .intro,
+body.section-preaprob #app > main section#formNew .form-right-col.progress-right .qualification-amount .intro,
+body.section-feliz #app > main section#formNew .form-right-col.progress-right .qualification-amount .intro,
+body.section-gracias #app > main section#formNew .form-right-col.progress-right .qualification-amount .intro,
+body.section-steps #app > main section#formNew .form-right-col.progress-right .qualification-amount .intro,
+body.section-step1 #app > main section#formNew .form-right-col.progress-right .qualification-amount .intro,
+body.section-step2 #app > main section#formNew .form-right-col.progress-right .qualification-amount .intro,
+body.section-step3 #app > main section#formNew .form-right-col.progress-right .qualification-amount .intro,
+body.section-step4 #app > main section#formNew .form-right-col.progress-right .qualification-amount .intro {
+  font-size: 20px;
+  margin-bottom: 14px;
+  color: #888;
+}
+
+body.section-pre-qualification #app > main section#formNew .form-right-col.progress-right .qualification-amount .ribbon,
+body.section-congrats #app > main section#formNew .form-right-col.progress-right .qualification-amount .ribbon,
+body.section-complete #app > main section#formNew .form-right-col.progress-right .qualification-amount .ribbon,
+body.section-preaprob #app > main section#formNew .form-right-col.progress-right .qualification-amount .ribbon,
+body.section-feliz #app > main section#formNew .form-right-col.progress-right .qualification-amount .ribbon,
+body.section-gracias #app > main section#formNew .form-right-col.progress-right .qualification-amount .ribbon,
+body.section-steps #app > main section#formNew .form-right-col.progress-right .qualification-amount .ribbon,
+body.section-step1 #app > main section#formNew .form-right-col.progress-right .qualification-amount .ribbon,
+body.section-step2 #app > main section#formNew .form-right-col.progress-right .qualification-amount .ribbon,
+body.section-step3 #app > main section#formNew .form-right-col.progress-right .qualification-amount .ribbon,
+body.section-step4 #app > main section#formNew .form-right-col.progress-right .qualification-amount .ribbon {
+  border: 25px solid #162c4e;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  width: 100%;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  body.section-pre-qualification #app > main section#formNew .form-right-col.progress-right .qualification-amount .ribbon,
+  body.section-congrats #app > main section#formNew .form-right-col.progress-right .qualification-amount .ribbon,
+  body.section-complete #app > main section#formNew .form-right-col.progress-right .qualification-amount .ribbon,
+  body.section-preaprob #app > main section#formNew .form-right-col.progress-right .qualification-amount .ribbon,
+  body.section-feliz #app > main section#formNew .form-right-col.progress-right .qualification-amount .ribbon,
+  body.section-gracias #app > main section#formNew .form-right-col.progress-right .qualification-amount .ribbon,
+  body.section-steps #app > main section#formNew .form-right-col.progress-right .qualification-amount .ribbon,
+  body.section-step1 #app > main section#formNew .form-right-col.progress-right .qualification-amount .ribbon,
+  body.section-step2 #app > main section#formNew .form-right-col.progress-right .qualification-amount .ribbon,
+  body.section-step3 #app > main section#formNew .form-right-col.progress-right .qualification-amount .ribbon,
+  body.section-step4 #app > main section#formNew .form-right-col.progress-right .qualification-amount .ribbon {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+  }
+}
+
+body.section-pre-qualification #app > main section#formNew .form-right-col.progress-right .qualification-amount .title,
+body.section-congrats #app > main section#formNew .form-right-col.progress-right .qualification-amount .title,
+body.section-complete #app > main section#formNew .form-right-col.progress-right .qualification-amount .title,
+body.section-preaprob #app > main section#formNew .form-right-col.progress-right .qualification-amount .title,
+body.section-feliz #app > main section#formNew .form-right-col.progress-right .qualification-amount .title,
+body.section-gracias #app > main section#formNew .form-right-col.progress-right .qualification-amount .title,
+body.section-steps #app > main section#formNew .form-right-col.progress-right .qualification-amount .title,
+body.section-step1 #app > main section#formNew .form-right-col.progress-right .qualification-amount .title,
+body.section-step2 #app > main section#formNew .form-right-col.progress-right .qualification-amount .title,
+body.section-step3 #app > main section#formNew .form-right-col.progress-right .qualification-amount .title,
+body.section-step4 #app > main section#formNew .form-right-col.progress-right .qualification-amount .title {
+  margin: -37px 0 0 31px;
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  body.section-pre-qualification #app > main section#formNew .form-right-col.progress-right .qualification-amount .title,
+  body.section-congrats #app > main section#formNew .form-right-col.progress-right .qualification-amount .title,
+  body.section-complete #app > main section#formNew .form-right-col.progress-right .qualification-amount .title,
+  body.section-preaprob #app > main section#formNew .form-right-col.progress-right .qualification-amount .title,
+  body.section-feliz #app > main section#formNew .form-right-col.progress-right .qualification-amount .title,
+  body.section-gracias #app > main section#formNew .form-right-col.progress-right .qualification-amount .title,
+  body.section-steps #app > main section#formNew .form-right-col.progress-right .qualification-amount .title,
+  body.section-step1 #app > main section#formNew .form-right-col.progress-right .qualification-amount .title,
+  body.section-step2 #app > main section#formNew .form-right-col.progress-right .qualification-amount .title,
+  body.section-step3 #app > main section#formNew .form-right-col.progress-right .qualification-amount .title,
+  body.section-step4 #app > main section#formNew .form-right-col.progress-right .qualification-amount .title {
+    margin: -37px 0 0 21px;
+  }
+}
+
+body.section-pre-qualification #app > main section#formNew .form-right-col.progress-right .qualification-amount .capital,
+body.section-congrats #app > main section#formNew .form-right-col.progress-right .qualification-amount .capital,
+body.section-complete #app > main section#formNew .form-right-col.progress-right .qualification-amount .capital,
+body.section-preaprob #app > main section#formNew .form-right-col.progress-right .qualification-amount .capital,
+body.section-feliz #app > main section#formNew .form-right-col.progress-right .qualification-amount .capital,
+body.section-gracias #app > main section#formNew .form-right-col.progress-right .qualification-amount .capital,
+body.section-steps #app > main section#formNew .form-right-col.progress-right .qualification-amount .capital,
+body.section-step1 #app > main section#formNew .form-right-col.progress-right .qualification-amount .capital,
+body.section-step2 #app > main section#formNew .form-right-col.progress-right .qualification-amount .capital,
+body.section-step3 #app > main section#formNew .form-right-col.progress-right .qualification-amount .capital,
+body.section-step4 #app > main section#formNew .form-right-col.progress-right .qualification-amount .capital {
+  border: 1px dashed #ccc;
+  padding: 25px 0;
+  font-weight: bold;
+  font-size: 55px;
+  color: #359c1c;
+}
+
+body.section-pre-qualification #app > main section#formNew .form-right-col.progress-right h3,
+body.section-congrats #app > main section#formNew .form-right-col.progress-right h3,
+body.section-complete #app > main section#formNew .form-right-col.progress-right h3,
+body.section-preaprob #app > main section#formNew .form-right-col.progress-right h3,
+body.section-feliz #app > main section#formNew .form-right-col.progress-right h3,
+body.section-gracias #app > main section#formNew .form-right-col.progress-right h3,
+body.section-steps #app > main section#formNew .form-right-col.progress-right h3,
+body.section-step1 #app > main section#formNew .form-right-col.progress-right h3,
+body.section-step2 #app > main section#formNew .form-right-col.progress-right h3,
+body.section-step3 #app > main section#formNew .form-right-col.progress-right h3,
+body.section-step4 #app > main section#formNew .form-right-col.progress-right h3 {
+  color: #888;
+  padding: 35px 0 10px;
+  font-size: 20px;
+}
+
+body.section-pre-qualification #app > main section#formNew .form-right-col.progress-right.done h3,
+body.section-congrats #app > main section#formNew .form-right-col.progress-right.done h3,
+body.section-complete #app > main section#formNew .form-right-col.progress-right.done h3,
+body.section-preaprob #app > main section#formNew .form-right-col.progress-right.done h3,
+body.section-feliz #app > main section#formNew .form-right-col.progress-right.done h3,
+body.section-gracias #app > main section#formNew .form-right-col.progress-right.done h3,
+body.section-steps #app > main section#formNew .form-right-col.progress-right.done h3,
+body.section-step1 #app > main section#formNew .form-right-col.progress-right.done h3,
+body.section-step2 #app > main section#formNew .form-right-col.progress-right.done h3,
+body.section-step3 #app > main section#formNew .form-right-col.progress-right.done h3,
+body.section-step4 #app > main section#formNew .form-right-col.progress-right.done h3 {
+  padding-top: 0;
+}
+
+body.section-pre-qualification #app > main section#formNew .form-right-col.progress-right .progress-list .stage,
+body.section-congrats #app > main section#formNew .form-right-col.progress-right .progress-list .stage,
+body.section-complete #app > main section#formNew .form-right-col.progress-right .progress-list .stage,
+body.section-preaprob #app > main section#formNew .form-right-col.progress-right .progress-list .stage,
+body.section-feliz #app > main section#formNew .form-right-col.progress-right .progress-list .stage,
+body.section-gracias #app > main section#formNew .form-right-col.progress-right .progress-list .stage,
+body.section-steps #app > main section#formNew .form-right-col.progress-right .progress-list .stage,
+body.section-step1 #app > main section#formNew .form-right-col.progress-right .progress-list .stage,
+body.section-step2 #app > main section#formNew .form-right-col.progress-right .progress-list .stage,
+body.section-step3 #app > main section#formNew .form-right-col.progress-right .progress-list .stage,
+body.section-step4 #app > main section#formNew .form-right-col.progress-right .progress-list .stage {
+  border-bottom: 1px solid #ccc;
+  padding: 30px 0 0 65px;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  body.section-pre-qualification #app > main section#formNew .form-right-col.progress-right .progress-list .stage,
+  body.section-congrats #app > main section#formNew .form-right-col.progress-right .progress-list .stage,
+  body.section-complete #app > main section#formNew .form-right-col.progress-right .progress-list .stage,
+  body.section-preaprob #app > main section#formNew .form-right-col.progress-right .progress-list .stage,
+  body.section-feliz #app > main section#formNew .form-right-col.progress-right .progress-list .stage,
+  body.section-gracias #app > main section#formNew .form-right-col.progress-right .progress-list .stage,
+  body.section-steps #app > main section#formNew .form-right-col.progress-right .progress-list .stage,
+  body.section-step1 #app > main section#formNew .form-right-col.progress-right .progress-list .stage,
+  body.section-step2 #app > main section#formNew .form-right-col.progress-right .progress-list .stage,
+  body.section-step3 #app > main section#formNew .form-right-col.progress-right .progress-list .stage,
+  body.section-step4 #app > main section#formNew .form-right-col.progress-right .progress-list .stage {
+    padding: 30px 0 0 53px;
+  }
+}
+
+body.section-pre-qualification #app > main section#formNew .form-right-col.progress-right .progress-list .stage:first-child,
+body.section-congrats #app > main section#formNew .form-right-col.progress-right .progress-list .stage:first-child,
+body.section-complete #app > main section#formNew .form-right-col.progress-right .progress-list .stage:first-child,
+body.section-preaprob #app > main section#formNew .form-right-col.progress-right .progress-list .stage:first-child,
+body.section-feliz #app > main section#formNew .form-right-col.progress-right .progress-list .stage:first-child,
+body.section-gracias #app > main section#formNew .form-right-col.progress-right .progress-list .stage:first-child,
+body.section-steps #app > main section#formNew .form-right-col.progress-right .progress-list .stage:first-child,
+body.section-step1 #app > main section#formNew .form-right-col.progress-right .progress-list .stage:first-child,
+body.section-step2 #app > main section#formNew .form-right-col.progress-right .progress-list .stage:first-child,
+body.section-step3 #app > main section#formNew .form-right-col.progress-right .progress-list .stage:first-child,
+body.section-step4 #app > main section#formNew .form-right-col.progress-right .progress-list .stage:first-child {
+  border-top: 1px solid #ccc;
+}
+
+body.section-pre-qualification #app > main section#formNew .form-right-col.progress-right .progress-list p,
+body.section-congrats #app > main section#formNew .form-right-col.progress-right .progress-list p,
+body.section-complete #app > main section#formNew .form-right-col.progress-right .progress-list p,
+body.section-preaprob #app > main section#formNew .form-right-col.progress-right .progress-list p,
+body.section-feliz #app > main section#formNew .form-right-col.progress-right .progress-list p,
+body.section-gracias #app > main section#formNew .form-right-col.progress-right .progress-list p,
+body.section-steps #app > main section#formNew .form-right-col.progress-right .progress-list p,
+body.section-step1 #app > main section#formNew .form-right-col.progress-right .progress-list p,
+body.section-step2 #app > main section#formNew .form-right-col.progress-right .progress-list p,
+body.section-step3 #app > main section#formNew .form-right-col.progress-right .progress-list p,
+body.section-step4 #app > main section#formNew .form-right-col.progress-right .progress-list p {
+  font-size: 18px;
+}
+
+body.section-pre-qualification #app > main section#formNew .form-right-col.progress-right .progress-list p::before,
+body.section-congrats #app > main section#formNew .form-right-col.progress-right .progress-list p::before,
+body.section-complete #app > main section#formNew .form-right-col.progress-right .progress-list p::before,
+body.section-preaprob #app > main section#formNew .form-right-col.progress-right .progress-list p::before,
+body.section-feliz #app > main section#formNew .form-right-col.progress-right .progress-list p::before,
+body.section-gracias #app > main section#formNew .form-right-col.progress-right .progress-list p::before,
+body.section-steps #app > main section#formNew .form-right-col.progress-right .progress-list p::before,
+body.section-step1 #app > main section#formNew .form-right-col.progress-right .progress-list p::before,
+body.section-step2 #app > main section#formNew .form-right-col.progress-right .progress-list p::before,
+body.section-step3 #app > main section#formNew .form-right-col.progress-right .progress-list p::before,
+body.section-step4 #app > main section#formNew .form-right-col.progress-right .progress-list p::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f058";
+  font-size: 35px;
+  float: left;
+  margin-top: -8px;
+  margin-right: 35px;
+}
+
+body.section-pre-qualification #app > main section#formNew .form-right-col.progress-right .progress-list .passed,
+body.section-congrats #app > main section#formNew .form-right-col.progress-right .progress-list .passed,
+body.section-complete #app > main section#formNew .form-right-col.progress-right .progress-list .passed,
+body.section-preaprob #app > main section#formNew .form-right-col.progress-right .progress-list .passed,
+body.section-feliz #app > main section#formNew .form-right-col.progress-right .progress-list .passed,
+body.section-gracias #app > main section#formNew .form-right-col.progress-right .progress-list .passed,
+body.section-steps #app > main section#formNew .form-right-col.progress-right .progress-list .passed,
+body.section-step1 #app > main section#formNew .form-right-col.progress-right .progress-list .passed,
+body.section-step2 #app > main section#formNew .form-right-col.progress-right .progress-list .passed,
+body.section-step3 #app > main section#formNew .form-right-col.progress-right .progress-list .passed,
+body.section-step4 #app > main section#formNew .form-right-col.progress-right .progress-list .passed {
+  color: #359c1c;
+}
+
+body.section-pre-qualification #app > main section#formNew .form-right-col.progress-right .progress-list .active,
+body.section-congrats #app > main section#formNew .form-right-col.progress-right .progress-list .active,
+body.section-complete #app > main section#formNew .form-right-col.progress-right .progress-list .active,
+body.section-preaprob #app > main section#formNew .form-right-col.progress-right .progress-list .active,
+body.section-feliz #app > main section#formNew .form-right-col.progress-right .progress-list .active,
+body.section-gracias #app > main section#formNew .form-right-col.progress-right .progress-list .active,
+body.section-steps #app > main section#formNew .form-right-col.progress-right .progress-list .active,
+body.section-step1 #app > main section#formNew .form-right-col.progress-right .progress-list .active,
+body.section-step2 #app > main section#formNew .form-right-col.progress-right .progress-list .active,
+body.section-step3 #app > main section#formNew .form-right-col.progress-right .progress-list .active,
+body.section-step4 #app > main section#formNew .form-right-col.progress-right .progress-list .active {
+  color: #888;
+  text-decoration: underline;
+}
+
+body.section-pre-qualification #app > main section#formNew .form-right-col.progress-right .progress-list .inactive,
+body.section-congrats #app > main section#formNew .form-right-col.progress-right .progress-list .inactive,
+body.section-complete #app > main section#formNew .form-right-col.progress-right .progress-list .inactive,
+body.section-preaprob #app > main section#formNew .form-right-col.progress-right .progress-list .inactive,
+body.section-feliz #app > main section#formNew .form-right-col.progress-right .progress-list .inactive,
+body.section-gracias #app > main section#formNew .form-right-col.progress-right .progress-list .inactive,
+body.section-steps #app > main section#formNew .form-right-col.progress-right .progress-list .inactive,
+body.section-step1 #app > main section#formNew .form-right-col.progress-right .progress-list .inactive,
+body.section-step2 #app > main section#formNew .form-right-col.progress-right .progress-list .inactive,
+body.section-step3 #app > main section#formNew .form-right-col.progress-right .progress-list .inactive,
+body.section-step4 #app > main section#formNew .form-right-col.progress-right .progress-list .inactive {
+  color: #888;
+}
+
 body.section-pre-qualification #app > main section#form,
 body.section-congrats #app > main section#form,
 body.section-complete #app > main section#form,
@@ -8229,7 +10462,7 @@ body.section-step1 #app > main section ul.items,
 body.section-step2 #app > main section ul.items,
 body.section-step3 #app > main section ul.items,
 body.section-step4 #app > main section ul.items {
-  margin-top: 0p;
+  margin-top: 0;
   padding: 0 30px;
 }
 
@@ -8416,7 +10649,7 @@ body.section-step1 #app > main section p,
 body.section-step2 #app > main section p,
 body.section-step3 #app > main section p,
 body.section-step4 #app > main section p {
-  line-height: 1.5 !important;
+  line-height: 1.2 !important;
 }
 
 body.section-congrats #app > main section#form .form #prequalifed-content,

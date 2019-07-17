@@ -94,6 +94,9 @@ class FormStackAddonListener extends Listener {
 				if ($submission->get('ip')){
 					$previous->set('ip', $submission->get('ip'));
 				}
+				if ($submission->get('language')){
+					$previous->set('language', $submission->get('language'));
+				}
 				if ($submission->get('company_name')){
 					$previous->set('company_name',$submission->get('company_name'));
 				}
@@ -159,6 +162,18 @@ class FormStackAddonListener extends Listener {
 				}
 				if ($submission->get('company_mortgage')){
 					$previous->set('company_mortgage',$submission->get('company_mortgage'));
+				}
+				if ($submission->get('company_years_in_business')){
+					$previous->set('company_years_in_business',$submission->get('company_years_in_business'));
+				}
+				if ($submission->get('company_land_lord_name')){
+					$previous->set('company_land_lord_name',$submission->get('company_land_lord_name'));
+				}
+				if ($submission->get('company_land_lord_phone')){
+					$previous->set('company_land_lord_phone',$submission->get('company_land_lord_phone'));
+				}
+				if ($submission->get('company_land_lord_expiration')){
+					$previous->set('company_land_lord_expiration',$submission->get('company_land_lord_expiration'));
 				}
 				if ($submission->get('company_address_line1')){
 					$previous->set('company_address_line1',$submission->get('company_address_line1'));
@@ -369,6 +384,18 @@ class FormStackAddonListener extends Listener {
 			if ($submission->get('company_mortgage')){
 				$params['company_mortgage'] = $submission->get('company_mortgage');
 			}
+			if ($submission->get('company_years_in_business')){
+				$params['company_years_in_business'] = $submission->get('company_years_in_business');
+			}
+			if ($submission->get('company_land_lord_name')){
+				$params['company_land_lord_name'] = $submission->get('company_land_lord_name');
+			}
+			if ($submission->get('company_land_lord_phone')){
+				$params['company_land_lord_phone'] = $submission->get('company_land_lord_phone');
+			}
+			if ($submission->get('company_land_lord_expiration')){
+				$params['company_land_lord_expiration'] = $submission->get('company_land_lord_expiration');
+			}
 			if ($submission->get('company_address_line1')){
 				$params['company_address_line1'] = $submission->get('company_address_line1');
 			}
@@ -473,6 +500,9 @@ class FormStackAddonListener extends Listener {
 			}
 			if ($submission->get('ip')){
 				$params['ip'] = $submission->get('ip');
+			}
+			if ($submission->get('language')){
+				$params['language'] = $submission->get('language');
 			}
 			$source = null;
 			if (isset($_COOKIE['Source__c'])) {

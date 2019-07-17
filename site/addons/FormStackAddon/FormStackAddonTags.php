@@ -300,7 +300,25 @@ class FormStackAddonTags extends Tags {
 				$response = $cookie;
 			}
 		}
-		$response['redirect_to'] = 'https://'.$_SERVER['SERVER_NAME'].'/steps/step' . $next_step;
+		$endpoint = null;
+		switch ($next_step) {
+			case 2:
+				$endpoint = "congrats-2";
+				break;
+			case 3:
+				$endpoint = "congrats-3";
+				break;
+			case 4:
+				$endpoint = "congrats-4";
+				break;
+			case 5:
+				$endpoint = "thanks-2";
+				break;
+			default:
+				$endpoint = "pre-qualification-2";
+				break;
+		}
+		$response['redirect_to'] = 'https://'.$_SERVER['SERVER_NAME'].'/'.$endpoint;
 		return $response;
 	}
 	public function steps() {
