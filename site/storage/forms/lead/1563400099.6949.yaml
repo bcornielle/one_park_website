@@ -9,7 +9,7 @@ transaction_id: ''
 source: /pre-qualification-2
 api_id: ''
 submission_id: '1563400099.6949'
-step: 1
+step: 2
 company_name: 'Haitian Pikliz'
 company_years_in_business: '3'
 company_revenue: '35000'
@@ -18,3 +18,9 @@ email: haitianpikliz@gmail.com
 fullname: 'Alexander Rodriguez'
 fname: Alexander
 lname: Rodriguez
+company_has_banking: 'Yes'
+company_name_legal: 'Haitian pikliz'
+company_started_with_you: '2021-05-15'
+company_industry: 'Haitian Pikliz'
+company_type: 'General Partnership'
+company_land_lord_expiration: '2008-07-17'
