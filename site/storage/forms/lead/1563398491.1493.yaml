@@ -8,8 +8,8 @@ utm_content: ''
 transaction_id: ''
 source: /pre-qualification-2
 api_id: ''
-submission_id: 1563398491.1493
-step: '1'
+submission_id: '1563398491.1493'
+step: 2
 company_name: test
 company_years_in_business: '2'
 company_revenue: '15000'
@@ -18,3 +18,7 @@ email: kjhefdkjn@kjhdfnlk.com
 fullname: 'Luther Joseph'
 fname: Luther
 lname: Joseph
+company_has_banking: 'Yes'
+company_name_legal: 'One Park Financial'
+company_name_fake: 'One Park Financial'
+company_state: FL
