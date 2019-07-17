@@ -7,9 +7,9 @@ utm_term: ''
 utm_content: ''
 transaction_id: ''
 source: /pre-qualification-2
-api_id: 15511
+api_id: '15511'
 submission_id: '1563399552.3334'
-step: 3
+step: 4
 company_name: 'Haitian Pikliz'
 company_years_in_business: '1'
 company_revenue: '35000'
@@ -37,3 +37,12 @@ company_address_line1: '7000 sw 63 st'
 company_address_city: Miami
 company_address_state: FL
 company_address_zip: '33324'
+company_owners_total: 'Single Owner'
+company_owner1_phone: '7863557605'
+company_owner1_email: haitianpikliz@gmail.com
+company_owner1_dob: '09191985'
+company_owner1_ssn: 'Haitian Pikliz'
+company_owner1_title: 'Haitian Pikliz'
+company_owner1_address_line1: '7000 sw 63 st'
+company_owner1_address_city: Miami
+company_owner1_address_zip: '33324'
