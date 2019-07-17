@@ -7,9 +7,9 @@ utm_term: ''
 utm_content: ''
 transaction_id: ''
 source: /pre-qualification-2
-api_id: 15511
+api_id: '15511'
 submission_id: '1563399552.3334'
-step: 2
+step: 3
 company_name: 'Haitian Pikliz'
 company_years_in_business: '1'
 company_revenue: '35000'
@@ -33,3 +33,7 @@ company_mortgage: '12555'
 company_land_lord_name: Pepe
 company_land_lord_phone: '5553629863'
 company_land_lord_expiration: '2007-09-19'
+company_address_line1: '7000 sw 63 st'
+company_address_city: Miami
+company_address_state: FL
+company_address_zip: '33324'
