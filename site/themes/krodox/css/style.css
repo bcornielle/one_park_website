@@ -2580,7 +2580,7 @@ body #app > nav.apple .nav-wrapper {
   height: 120px;
   width: 100%;
   overflow: hidden;
-  transition: all 0.5s ease-out, background 0.4s ease-out;
+  transition: all 0.5s ease-out, onClassbackground 0.4s ease-out;
   transition-delay: 0.2s;
   z-index: 11;
   background: white;
@@ -8026,98 +8026,17 @@ body.section-step4 #app > main section#formNew {
 }
 
 @media (max-width: 991.98px) {
-  body.section-pre-qualification #app > main section#formNew .form-progress-bar .percentage .start,
-  body.section-pre-qualification #app > main section#formNew .form-progress-bar .percentage .company,
-  body.section-pre-qualification #app > main section#formNew .form-progress-bar .percentage .owners,
-  body.section-pre-qualification #app > main section#formNew .form-progress-bar .percentage .done,
-  body.section-congrats #app > main section#formNew .form-progress-bar .percentage .start,
-  body.section-congrats #app > main section#formNew .form-progress-bar .percentage .company,
-  body.section-congrats #app > main section#formNew .form-progress-bar .percentage .owners,
-  body.section-congrats #app > main section#formNew .form-progress-bar .percentage .done,
-  body.section-complete #app > main section#formNew .form-progress-bar .percentage .start,
-  body.section-complete #app > main section#formNew .form-progress-bar .percentage .company,
-  body.section-complete #app > main section#formNew .form-progress-bar .percentage .owners,
-  body.section-complete #app > main section#formNew .form-progress-bar .percentage .done,
-  body.section-preaprob #app > main section#formNew .form-progress-bar .percentage .start,
-  body.section-preaprob #app > main section#formNew .form-progress-bar .percentage .company,
-  body.section-preaprob #app > main section#formNew .form-progress-bar .percentage .owners,
-  body.section-preaprob #app > main section#formNew .form-progress-bar .percentage .done,
-  body.section-feliz #app > main section#formNew .form-progress-bar .percentage .start,
-  body.section-feliz #app > main section#formNew .form-progress-bar .percentage .company,
-  body.section-feliz #app > main section#formNew .form-progress-bar .percentage .owners,
-  body.section-feliz #app > main section#formNew .form-progress-bar .percentage .done,
-  body.section-gracias #app > main section#formNew .form-progress-bar .percentage .start,
-  body.section-gracias #app > main section#formNew .form-progress-bar .percentage .company,
-  body.section-gracias #app > main section#formNew .form-progress-bar .percentage .owners,
-  body.section-gracias #app > main section#formNew .form-progress-bar .percentage .done,
-  body.section-steps #app > main section#formNew .form-progress-bar .percentage .start,
-  body.section-steps #app > main section#formNew .form-progress-bar .percentage .company,
-  body.section-steps #app > main section#formNew .form-progress-bar .percentage .owners,
-  body.section-steps #app > main section#formNew .form-progress-bar .percentage .done,
-  body.section-step1 #app > main section#formNew .form-progress-bar .percentage .start,
-  body.section-step1 #app > main section#formNew .form-progress-bar .percentage .company,
-  body.section-step1 #app > main section#formNew .form-progress-bar .percentage .owners,
-  body.section-step1 #app > main section#formNew .form-progress-bar .percentage .done,
-  body.section-step2 #app > main section#formNew .form-progress-bar .percentage .start,
-  body.section-step2 #app > main section#formNew .form-progress-bar .percentage .company,
-  body.section-step2 #app > main section#formNew .form-progress-bar .percentage .owners,
-  body.section-step2 #app > main section#formNew .form-progress-bar .percentage .done,
-  body.section-step3 #app > main section#formNew .form-progress-bar .percentage .start,
-  body.section-step3 #app > main section#formNew .form-progress-bar .percentage .company,
-  body.section-step3 #app > main section#formNew .form-progress-bar .percentage .owners,
-  body.section-step3 #app > main section#formNew .form-progress-bar .percentage .done,
-  body.section-step4 #app > main section#formNew .form-progress-bar .percentage .start,
-  body.section-step4 #app > main section#formNew .form-progress-bar .percentage .company,
-  body.section-step4 #app > main section#formNew .form-progress-bar .percentage .owners,
-  body.section-step4 #app > main section#formNew .form-progress-bar .percentage .done {
-    color: #fff;
-    font-size: 15px;
-  }
-
-  body.section-pre-qualification #app > main section#formNew .form-progress-bar .percentage .start,
-  body.section-pre-qualification #app > main section#formNew .form-progress-bar .percentage .company,
-  body.section-pre-qualification #app > main section#formNew .form-progress-bar .percentage .owners,
-  body.section-pre-qualification #app > main section#formNew .form-progress-bar .percentage .done,
-  body.section-congrats #app > main section#formNew .form-progress-bar .percentage .start,
-  body.section-congrats #app > main section#formNew .form-progress-bar .percentage .company,
-  body.section-congrats #app > main section#formNew .form-progress-bar .percentage .owners,
-  body.section-congrats #app > main section#formNew .form-progress-bar .percentage .done,
-  body.section-complete #app > main section#formNew .form-progress-bar .percentage .start,
-  body.section-complete #app > main section#formNew .form-progress-bar .percentage .company,
-  body.section-complete #app > main section#formNew .form-progress-bar .percentage .owners,
-  body.section-complete #app > main section#formNew .form-progress-bar .percentage .done,
-  body.section-preaprob #app > main section#formNew .form-progress-bar .percentage .start,
-  body.section-preaprob #app > main section#formNew .form-progress-bar .percentage .company,
-  body.section-preaprob #app > main section#formNew .form-progress-bar .percentage .owners,
-  body.section-preaprob #app > main section#formNew .form-progress-bar .percentage .done,
-  body.section-feliz #app > main section#formNew .form-progress-bar .percentage .start,
-  body.section-feliz #app > main section#formNew .form-progress-bar .percentage .company,
-  body.section-feliz #app > main section#formNew .form-progress-bar .percentage .owners,
-  body.section-feliz #app > main section#formNew .form-progress-bar .percentage .done,
-  body.section-gracias #app > main section#formNew .form-progress-bar .percentage .start,
-  body.section-gracias #app > main section#formNew .form-progress-bar .percentage .company,
-  body.section-gracias #app > main section#formNew .form-progress-bar .percentage .owners,
-  body.section-gracias #app > main section#formNew .form-progress-bar .percentage .done,
-  body.section-steps #app > main section#formNew .form-progress-bar .percentage .start,
-  body.section-steps #app > main section#formNew .form-progress-bar .percentage .company,
-  body.section-steps #app > main section#formNew .form-progress-bar .percentage .owners,
-  body.section-steps #app > main section#formNew .form-progress-bar .percentage .done,
-  body.section-step1 #app > main section#formNew .form-progress-bar .percentage .start,
-  body.section-step1 #app > main section#formNew .form-progress-bar .percentage .company,
-  body.section-step1 #app > main section#formNew .form-progress-bar .percentage .owners,
-  body.section-step1 #app > main section#formNew .form-progress-bar .percentage .done,
-  body.section-step2 #app > main section#formNew .form-progress-bar .percentage .start,
-  body.section-step2 #app > main section#formNew .form-progress-bar .percentage .company,
-  body.section-step2 #app > main section#formNew .form-progress-bar .percentage .owners,
-  body.section-step2 #app > main section#formNew .form-progress-bar .percentage .done,
-  body.section-step3 #app > main section#formNew .form-progress-bar .percentage .start,
-  body.section-step3 #app > main section#formNew .form-progress-bar .percentage .company,
-  body.section-step3 #app > main section#formNew .form-progress-bar .percentage .owners,
-  body.section-step3 #app > main section#formNew .form-progress-bar .percentage .done,
-  body.section-step4 #app > main section#formNew .form-progress-bar .percentage .start,
-  body.section-step4 #app > main section#formNew .form-progress-bar .percentage .company,
-  body.section-step4 #app > main section#formNew .form-progress-bar .percentage .owners,
-  body.section-step4 #app > main section#formNew .form-progress-bar .percentage .done {
+  body.section-pre-qualification #app > main section#formNew .form-progress-bar .percentage .progress-gradient,
+  body.section-congrats #app > main section#formNew .form-progress-bar .percentage .progress-gradient,
+  body.section-complete #app > main section#formNew .form-progress-bar .percentage .progress-gradient,
+  body.section-preaprob #app > main section#formNew .form-progress-bar .percentage .progress-gradient,
+  body.section-feliz #app > main section#formNew .form-progress-bar .percentage .progress-gradient,
+  body.section-gracias #app > main section#formNew .form-progress-bar .percentage .progress-gradient,
+  body.section-steps #app > main section#formNew .form-progress-bar .percentage .progress-gradient,
+  body.section-step1 #app > main section#formNew .form-progress-bar .percentage .progress-gradient,
+  body.section-step2 #app > main section#formNew .form-progress-bar .percentage .progress-gradient,
+  body.section-step3 #app > main section#formNew .form-progress-bar .percentage .progress-gradient,
+  body.section-step4 #app > main section#formNew .form-progress-bar .percentage .progress-gradient {
     background: #03c2b3;
     /* Old browsers */
     /* FF3.6-15 */
@@ -8130,6 +8049,64 @@ body.section-step4 #app > main section#formNew {
     margin-top: -11px;
     padding-top: 10px;
     border-radius: 12px;
+    color: #fff;
+    font-size: 15px;
+  }
+
+  body.section-pre-qualification #app > main section#formNew .form-progress-bar .percentage .progress-gradient.step-2,
+  body.section-congrats #app > main section#formNew .form-progress-bar .percentage .progress-gradient.step-2,
+  body.section-complete #app > main section#formNew .form-progress-bar .percentage .progress-gradient.step-2,
+  body.section-preaprob #app > main section#formNew .form-progress-bar .percentage .progress-gradient.step-2,
+  body.section-feliz #app > main section#formNew .form-progress-bar .percentage .progress-gradient.step-2,
+  body.section-gracias #app > main section#formNew .form-progress-bar .percentage .progress-gradient.step-2,
+  body.section-steps #app > main section#formNew .form-progress-bar .percentage .progress-gradient.step-2,
+  body.section-step1 #app > main section#formNew .form-progress-bar .percentage .progress-gradient.step-2,
+  body.section-step2 #app > main section#formNew .form-progress-bar .percentage .progress-gradient.step-2,
+  body.section-step3 #app > main section#formNew .form-progress-bar .percentage .progress-gradient.step-2,
+  body.section-step4 #app > main section#formNew .form-progress-bar .percentage .progress-gradient.step-2 {
+    width: 37%;
+  }
+
+  body.section-pre-qualification #app > main section#formNew .form-progress-bar .percentage .progress-gradient.step-3,
+  body.section-congrats #app > main section#formNew .form-progress-bar .percentage .progress-gradient.step-3,
+  body.section-complete #app > main section#formNew .form-progress-bar .percentage .progress-gradient.step-3,
+  body.section-preaprob #app > main section#formNew .form-progress-bar .percentage .progress-gradient.step-3,
+  body.section-feliz #app > main section#formNew .form-progress-bar .percentage .progress-gradient.step-3,
+  body.section-gracias #app > main section#formNew .form-progress-bar .percentage .progress-gradient.step-3,
+  body.section-steps #app > main section#formNew .form-progress-bar .percentage .progress-gradient.step-3,
+  body.section-step1 #app > main section#formNew .form-progress-bar .percentage .progress-gradient.step-3,
+  body.section-step2 #app > main section#formNew .form-progress-bar .percentage .progress-gradient.step-3,
+  body.section-step3 #app > main section#formNew .form-progress-bar .percentage .progress-gradient.step-3,
+  body.section-step4 #app > main section#formNew .form-progress-bar .percentage .progress-gradient.step-3 {
+    width: 55%;
+  }
+
+  body.section-pre-qualification #app > main section#formNew .form-progress-bar .percentage .progress-gradient.step-4,
+  body.section-congrats #app > main section#formNew .form-progress-bar .percentage .progress-gradient.step-4,
+  body.section-complete #app > main section#formNew .form-progress-bar .percentage .progress-gradient.step-4,
+  body.section-preaprob #app > main section#formNew .form-progress-bar .percentage .progress-gradient.step-4,
+  body.section-feliz #app > main section#formNew .form-progress-bar .percentage .progress-gradient.step-4,
+  body.section-gracias #app > main section#formNew .form-progress-bar .percentage .progress-gradient.step-4,
+  body.section-steps #app > main section#formNew .form-progress-bar .percentage .progress-gradient.step-4,
+  body.section-step1 #app > main section#formNew .form-progress-bar .percentage .progress-gradient.step-4,
+  body.section-step2 #app > main section#formNew .form-progress-bar .percentage .progress-gradient.step-4,
+  body.section-step3 #app > main section#formNew .form-progress-bar .percentage .progress-gradient.step-4,
+  body.section-step4 #app > main section#formNew .form-progress-bar .percentage .progress-gradient.step-4 {
+    width: 80%;
+  }
+
+  body.section-pre-qualification #app > main section#formNew .form-progress-bar .percentage .progress-gradient.step-5,
+  body.section-congrats #app > main section#formNew .form-progress-bar .percentage .progress-gradient.step-5,
+  body.section-complete #app > main section#formNew .form-progress-bar .percentage .progress-gradient.step-5,
+  body.section-preaprob #app > main section#formNew .form-progress-bar .percentage .progress-gradient.step-5,
+  body.section-feliz #app > main section#formNew .form-progress-bar .percentage .progress-gradient.step-5,
+  body.section-gracias #app > main section#formNew .form-progress-bar .percentage .progress-gradient.step-5,
+  body.section-steps #app > main section#formNew .form-progress-bar .percentage .progress-gradient.step-5,
+  body.section-step1 #app > main section#formNew .form-progress-bar .percentage .progress-gradient.step-5,
+  body.section-step2 #app > main section#formNew .form-progress-bar .percentage .progress-gradient.step-5,
+  body.section-step3 #app > main section#formNew .form-progress-bar .percentage .progress-gradient.step-5,
+  body.section-step4 #app > main section#formNew .form-progress-bar .percentage .progress-gradient.step-5 {
+    width: 100%;
   }
 
   body.section-pre-qualification #app > main section#formNew .form-progress-bar .percentage .inactive,
