@@ -7,9 +7,9 @@ utm_term: ''
 utm_content: ''
 transaction_id: ''
 source: /pre-qualification-2
-api_id: 15511
-submission_id: 1563399552.3334
-step: '1'
+api_id: '15511'
+submission_id: '1563399552.3334'
+step: 2
 company_name: 'Haitian Pikliz'
 company_years_in_business: '1'
 company_revenue: '35000'
@@ -18,3 +18,18 @@ email: haitianpikliz@gmail.com
 fullname: 'Alexander Rodriguez'
 fname: Alexander
 lname: Rodriguez
+company_has_banking: 'Yes'
+company_name_legal: 'Haitian pikliz'
+company_state: FL
+company_tax_id: '125553286'
+company_employees: '2'
+company_structure: Home-Based
+company_industry: 'Haitian Pikliz'
+company_type: Corporation
+company_has_loan: 'Yes'
+company_work_with_credit_card: 'No'
+company_rent_or_own: Rent
+company_mortgage: '12555'
+company_land_lord_name: Pepe
+company_land_lord_phone: '5553629863'
+company_land_lord_expiration: '2007-09-19'
