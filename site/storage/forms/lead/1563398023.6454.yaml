@@ -7,9 +7,9 @@ utm_term: ''
 utm_content: ''
 transaction_id: ''
 source: /pre-qualification-2
-api_id: 15501
+api_id: '15501'
 submission_id: '1563398023.6454'
-step: 2
+step: 3
 company_name: 'Kia Kia Kia'
 company_years_in_business: '2'
 company_revenue: '1000000'
@@ -26,3 +26,7 @@ company_tax_id: '5700'
 company_employees: '7'
 company_industry: retail
 company_type: LLC
+company_address_line1: '3390 Mary Street, Suite 216'
+company_address_city: 'Coconut Grove'
+company_address_state: FL
+company_address_zip: '33133'
