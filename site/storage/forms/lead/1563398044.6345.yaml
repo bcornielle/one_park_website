@@ -7,9 +7,9 @@ utm_term: ''
 utm_content: ''
 transaction_id: ''
 source: /pre-qualification-2
-api_id: 15502
-submission_id: 1563398044.6345
-step: '1'
+api_id: '15502'
+submission_id: '1563398044.6345'
+step: 2
 company_name: 'The Answers'
 company_years_in_business: '4'
 company_revenue: '8000'
@@ -18,3 +18,9 @@ email: ljdnsj@gmail.com
 fullname: 'Luke Jones'
 fname: Luke
 lname: Jones
+company_has_banking: 'Yes'
+company_name_legal: 'Test answers'
+company_name_fake: Test
+company_state: FL
+company_structure: Storefront
+company_started_with_you: '1999-10-19'
