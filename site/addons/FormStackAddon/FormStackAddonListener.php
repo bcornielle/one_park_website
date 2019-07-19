@@ -505,8 +505,8 @@ class FormStackAddonListener extends Listener {
 				$params['language'] = $submission->get('language');
 			}
 			$source = null;
-			if (isset($_COOKIE['Source__c'])) {
-				$source = $_COOKIE['Source__c'] ;
+			if (isset($_COOKIE['Source__c']) || isset($_COOKIE['utm_source'])) {
+				$source = ($_COOKIE['Source__c']) ? $_COOKIE['Source__c'] : $_COOKIE['utm_source'] ;
 			}else{
 				if ($submission->get('utm_source')){
 					$source = $submission->get('utm_source');
@@ -514,8 +514,8 @@ class FormStackAddonListener extends Listener {
 			}
 			$params['utm_source'] = $source;
 			$medium = null;
-			if (isset($_COOKIE['Visitor_Medium__c'])) {
-				$medium = $_COOKIE['Visitor_Medium__c'] ;
+			if (isset($_COOKIE['Visitor_Medium__c']) || isset($_COOKIE['utm_medium'])) {
+				$medium = ($_COOKIE['Visitor_Medium__c']) ? $_COOKIE['Visitor_Medium__c'] : $_COOKIE['utm_medium'] ;
 			}else{
 				if ($submission->get('utm_medium')){
 					$medium = $submission->get('utm_medium');
@@ -523,8 +523,8 @@ class FormStackAddonListener extends Listener {
 			}
 			$params['utm_medium'] = $medium;
 			$term = null;
-			if (isset($_COOKIE['Visitor_Term__c'])) {
-				$term = $_COOKIE['Visitor_Term__c'] ;
+			if (isset($_COOKIE['Visitor_Term__c']) || isset($_COOKIE['utm_term'])) {
+				$term = ($_COOKIE['Visitor_Term__c']) ? $_COOKIE['utm_term'] : $_COOKIE['utm_term'] ;
 			}else{
 				if ($submission->get('utm_term')){
 					$term = $submission->get('utm_term');
@@ -532,8 +532,8 @@ class FormStackAddonListener extends Listener {
 			}
 			$params['utm_term'] = $term;
 			$content = null;
-			if (isset($_COOKIE['Visitor_Content__c'])) {
-				$content = $_COOKIE['Visitor_Content__c'] ;
+			if (isset($_COOKIE['Visitor_Content__c']) || isset($_COOKIE['utm_content'])) {
+				$content = ($_COOKIE['Visitor_Content__c']) ? $_COOKIE['Visitor_Content__c'] : $_COOKIE['utm_content'] ;
 			}else{
 				if ($submission->get('utm_content')){
 					$content = $submission->get('utm_content');
@@ -541,9 +541,13 @@ class FormStackAddonListener extends Listener {
 			}
 			$params['utm_content'] = $content;
 			$aff_id = null;
-			if (isset($_COOKIE['Visitor_ID__c'])) {
-				$aff_id = $_COOKIE['Visitor_ID__c'] ;
-			}else{
+			if (isset($_COOKIE['Visitor_ID__c']) || isset($_COOKIE['transaction_id']) || isset($_COOKIE['gclid'])) {
+				if ($_COOKIE['gclid']){
+					$aff_id = $_COOKIE['gclid'];
+				}else{
+					$aff_id = ($_COOKIE['Visitor_ID__c']) ? $_COOKIE['Visitor_ID__c'] : $_COOKIE['transaction_id'];
+				}
+			}else {
 				if ($submission->get('transaction_id')){
 					$aff_id = $submission->get('transaction_id');
 				}
