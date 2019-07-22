@@ -28,9 +28,10 @@ company_started_with_you: '2019-07-22'
 company_industry: asdf
 company_type: Corporation
 company_has_loan: 'No'
-company_work_with_credit_card: 'No'
+company_work_with_credit_card: 'Yes'
 company_rent_or_own: Rent
 company_mortgage: '500'
 company_land_lord_name: asdf
 company_land_lord_phone: '4564564567'
-company_land_lord_expiration: '2019-07-15'
+company_land_lord_expiration: '2019-07-23'
+company_cc_processor: Square
