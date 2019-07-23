@@ -32,14 +32,14 @@
                                                         <h3>Enter business info:</h3>
                                                     </div>
                                                     <div class="form-group input-tooltip float-label">
-                                                        <input type="text" id="company_name" name="company_name" class="form-control"  placeholder="Business Name" value="{{ old:company_name or company_name }}"  maxlength="50" required autofocus/>
+                                                        <input type="text" id="company_name" name="company_name" class="form-control"  placeholder="Business Name" value="{{ old:company_name or company_name }}"  maxlength="50" autofocus REQUIRED />
                                                         <label for="company_name">Business Name</label>
                                                     </div>
                                                     <div class="form-group input-tooltip">
                                                         <div class="form-select-container select-float-label">
                                                             <span class="down-arrow fa fa-chevron-down"></span>
                                                             <label for="company_years_in_business" class="on">Years in Business</label>
-                                                            <select id="company_years_in_business" name="company_years_in_business" class="form-control position-label-1" placeholder="Estimated Gross Monthly Sales">
+                                                            <select id="company_years_in_business" name="company_years_in_business" class="form-control position-label-1" placeholder="Estimated Gross Monthly Sales" REQUIRED >
                                                                 <option for="years_in_business" value="" selected disabled>Years in Business</option>
                                                                 {{ foreach:company_years_in_business_options }}
                                                                 {{ if old:company_years_in_business == key || company_years_in_business == key }}
@@ -54,8 +54,8 @@
                                                     <div class="form-group input-tooltip tooltip-outside-m">
                                                         <div class="form-select-container select-float-label">
                                                             <span class="down-arrow fa fa-chevron-down"></span>
-                                                            <label for="company_revenue" class="on">Est. Gross Monthly Sales</label>
-                                                            <select id="company_revenue" name="company_revenue" class="form-control position-label-1" placeholder="Est. Gross Monthly Sales">
+                                                            <label for="company_revenue" class="on foo">Est. Gross Monthly Sales</label>
+                                                            <select id="company_revenue" name="company_revenue" class="form-control position-label-1" placeholder="Est. Gross Monthly Sales" REQUIRED >
                                                                 <option value="" selected disabled>Est. Gross Monthly Sales</option>
                                                                 {{ foreach:company_revenue_options }}
                                                                     {{ if old:company_revenue == key || company_revenue == key }}
@@ -72,17 +72,17 @@
                                                         <h3>What’s your contact information?</h3>
                                                     </div>
                                                     <div class="form-group input-tooltip float-label">
-                                                        <input type="tel" id="phone" name="phone" class="form-control" placeholder="Phone Number" value="{{ old:phone or phone }}"  maxlength="10" required />
+                                                        <input type="tel" maxlength="14" id="phone" name="phone" class="form-control" placeholder="Phone Number" value="{{ old:phone or phone }}" REQUIRED />
                                                         <label for="phone">Phone Number</label>
                                                         <div class="tooltip-dot" data-toggle="tooltip" data-placement="top" title="A 10-digit number where we can best contact you.">?</div>
                                                     </div>
                                                     <div class="form-group input-tooltip float-label">
-                                                        <input type="email" id="email" name="email" class="form-control" placeholder="Email Address" value="{{ old:email or email }}"  maxlength="100" required />
+                                                        <input type="email" id="email" name="email" class="form-control" placeholder="Email Address" value="{{ old:email or email }}"  maxlength="100" REQUIRED />
                                                         <label for="email">Email Address</label>
                                                         <div class="tooltip-dot" data-toggle="tooltip" data-placement="top" title="We promise we won't spam you, or resell your info.">?</div>
                                                     </div>
                                                     <div class="form-group float-label input-tooltip">
-                                                        <input type="text" id="fullname" name="fullname" class="form-control" placeholder="Full Name (First and Last)" value="{{ old:fullname or fullname }}"  maxlength="50" required />
+                                                        <input type="text" id="fullname" name="fullname" class="form-control" placeholder="Full Name (First and Last)" value="{{ old:fullname or fullname }}"  maxlength="50" REQUIRED />
                                                         <label for="fullname">Full Name (First and Last)</label>
                                                     </div>
                                                     {{ if {form:success} }}
@@ -175,3 +175,9 @@
             $(this).addClass('position-label', this.value != '1');
     });
 </script>
+<style>
+    select:valid {
+        padding-top: 30px;
+        color: #323831 !important;
+    }
+</style>

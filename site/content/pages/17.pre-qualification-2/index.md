@@ -5,14 +5,14 @@ template: steps/step1
 es_url: preaprob-2
 body_class: section-steps
 company_revenue_options:
-  1: 'Less than $2,500'
+  1: '<$2,500'
   5000: '$2,500 - $7,500'
   8000: '$7,500 - $ 10,000'
   15000: '$10,000 - $25,000'
   35000: '$25,000 - $50,000'
   75000: '$50,000 - $100,000'
-  125000: '$100,000 - $750,000'
-  1000000: 'Over $750,000'
+  125000: '$100,000 - $500,000'
+  1000000: 'Over $500,000'
 company_years_in_business_options:
   1: 'Less than 1 year'
   2: '1-3 years'
