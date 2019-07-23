@@ -1,4 +1,4 @@
-body {
+body{
   #app {
     > nav {
       order: 1;
@@ -3571,6 +3571,20 @@ body {
                 }
               }
               .navbar-left {
+                order: 1;
+                display: flex;
+                align-items: center;
+                justify-content: left;
+                .branding.logo {
+                  background-image: url(/assets/img/tree.png);
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  text-indent: -9999px;
+                  float: left;
+                  background-size: contain;
+                  height: 69px;
+                  width: 69px;
+                }
                 @media (max-width: 767.98px) {
                   padding-left: 15px;
                 }
@@ -3649,68 +3663,73 @@ body {
         }
         section {
           &#formNew {
+            .form-progress-bar {
+              width: 92%;
+              // Small devices (landscape phones, less than 768px)
+              @media (max-width: 767.98px) {
+                width: 100%;
+              }
+              .progression-bar {
+                height: 30px;
+                background: $white;
+                border-radius: 12px;
+                border: 1px solid #d6d6d6;
+                margin: 30px 0;
+                background-image: url(/assets/img/progress-bg.png);
+              }
+              .stage {
+                .active {
+                  color: $brand-secondary;
+                  text-decoration: underline;
+                }
+                @media (max-width: 370px) {
+                  .row > .col:last-child {
+                    display: none;
+                  }
+                }
+              }
+              .percentage {
+                margin-top: -54px;
+                margin-bottom: 35px;
+                @media (max-width: 767.98px) {
+                  margin-bottom: 25px;
+                }
+                .progress-gradient {
+                  background: #03c2b3; /* Old browsers */
+                  background: -moz-linear-gradient(left,  #03c2b3 0%, #0cc48d 32%, #24c84a 68%, #31c80b 100%, 0); /* FF3.6-15 */
+                  background: -webkit-linear-gradient(left,  #03c2b3 0%,#0cc48d 32%,#24c84a 68%,#31c80b 100%); /* Chrome10-25,Safari5.1-6 */
+                  background: linear-gradient(to right,  #03c2b3 0%,#0cc48d 32%,#24c84a 68%,#31c80b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03c2b3', endColorstr='#31c80b',GradientType=1 ); /* IE6-9 */
+                  height: 40px;
+                  margin-top: -11px;
+                  padding-top: 10px;
+                  border-radius: 12px;
+                  color: $white;
+                  font-size: 15px;
+                  &.step-2 {
+                    width: 37%;
+                  }
+                  &.step-3 {
+                    width: 55%;
+                  }
+                  &.step-4 {
+                    width: 80%;
+                  }
+                  &.step-5 {
+                    width: 100%;
+                  }
+                }
+                .inactive {
+                  opacity: 0;
+                  &p {
+                    opacity: 1;
+                  }
+                }
+              }
+            }
             @media (max-width: 991.98px) {
               .container-fluid {
                 background: $form-focus;
-              }
-              .form-progress-bar {
-                .progression-bar {
-                  height: 30px;
-                  background: $white;
-                  border-radius: 12px;
-                  border: 1px solid #d6d6d6;
-                  margin: 30px 0;
-                  background-image: url(/assets/img/progress-bg.png);
-                }
-                .stage {
-                  .active {
-                    color: $brand-secondary;
-                    text-decoration: underline;
-                  }
-                  @media (max-width: 370px) {
-                    .row > .col:last-child {
-                      display: none;
-                    }
-                  }
-                }
-                .percentage {
-                  margin-top: -54px;
-                  margin-bottom: 35px;
-                  @media (max-width: 767.98px) {
-                    margin-bottom: 25px;
-                  }
-                  .progress-gradient {
-                    background: #03c2b3; /* Old browsers */
-                    background: -moz-linear-gradient(left,  #03c2b3 0%, #0cc48d 32%, #24c84a 68%, #31c80b 100%, 0); /* FF3.6-15 */
-                    background: -webkit-linear-gradient(left,  #03c2b3 0%,#0cc48d 32%,#24c84a 68%,#31c80b 100%); /* Chrome10-25,Safari5.1-6 */
-                    background: linear-gradient(to right,  #03c2b3 0%,#0cc48d 32%,#24c84a 68%,#31c80b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03c2b3', endColorstr='#31c80b',GradientType=1 ); /* IE6-9 */
-                    height: 40px;
-                    margin-top: -11px;
-                    padding-top: 10px;
-                    border-radius: 12px;
-                    color: $white;
-                    font-size: 15px;
-                    &.step-2 {
-                      width: 37%;
-                    }
-                    &.step-3 {
-                      width: 55%;
-                    }
-                    &.step-4 {
-                      width: 80%;
-                    }
-                    &.step-5 {
-                      width: 100%;
-                    }
-                  }
-                  .inactive {
-                    opacity: 0;
-                    &p {
-                      opacity: 1;
-                    }
-                  }
-                }
               }
             }
             .form-focus {

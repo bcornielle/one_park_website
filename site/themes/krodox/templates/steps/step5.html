@@ -1,69 +1,69 @@
 <main id="step5">{{ FormStackAddon:steps}}
-        {{ if step < 4 }}
-            {{ redirect to="{ redirect_to }" }}
-        {{ /if }}
-        <section id="formNew">
-            <div class="form-focus">
-                <div class="container-fluid">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8 background-focus done">
-                                <div class="form-progress-bar d-lg-none">
-                                    <div class="stage text-center">
-                                        <div class="row">
-                                            <div class="col">Start</div>
-                                            <div class="col">Company</div>
-                                            <div class="col">Owner(s)</div>
-                                            <div class="col active">Done</div>
-                                        </div>
+    {{ if step < 4 }}
+        {{ redirect to="{ redirect_to }" }}
+    {{ /if }}
+    <section id="formNew">
+        <div class="form-focus">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 background-focus done">
+                            <div class="form-progress-bar">
+                                <div class="stage text-center">
+                                    <div class="row">
+                                        <div class="col">Start</div>
+                                        <div class="col">Company</div>
+                                        <div class="col">Owner(s)</div>
+                                        <div class="col active">Done</div>
                                     </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="progression-bar"></div>
+                                    </div>
+                                </div>
+                                <div class="percentage text-center">
                                     <div class="row">
                                         <div class="col">
-                                            <div class="progression-bar"></div>
-                                        </div>
-                                    </div>
-                                    <div class="percentage text-center">
-                                        <div class="row">
-                                            <div class="col">
-                                                <div class="progress-gradient step-5">
-                                                    100%
-                                                </div>
+                                            <div class="progress-gradient step-5">
+                                                100%
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form">
-                                    <div id="prequalifed-content">
-                                        <h1>Thank You</h1>
-                                        <h3>The application was<br>submitted successfully.</h3>
-                                        <br>
-                                        <blockquote class="blockquote">Please check your email</blockquote>
-                                        <p>for a Docusign Document to complete your application. You can upload your voided check, bank statements and Drivers license there as well.</p>
-                                        <h2>Done.</h2>
-                                    </div>
+                            </div>
+                            <div class="form">
+                                <div id="prequalifed-content">
+                                    <h1>Thank You</h1>
+                                    <h3>The application was<br>submitted successfully.</h3>
+                                    <br>
+                                    <blockquote class="blockquote">Please check your email</blockquote>
+                                    <p>for a Docusign Document to complete your application. You can upload your voided check, bank statements and Drivers license there as well.</p>
+                                    <h2>Done.</h2>
                                 </div>
                             </div>
-                            <div class="col-lg-4 form-right-col progress-right done d-none d-lg-block">
-                                <h3 class="text-left">Your progress:</h3>
-                                <div class="progress-list text-center">
-                                    <div class="row stage passed">
-                                        <p>Start Now</p>
-                                    </div>
-                                    <div class="row stage passed">
-                                        <p>Your Company</p>
-                                    </div>
-                                    <div class="row stage passed">
-                                        <p>Owner Info</p>
-                                    </div>
-                                    <div class="row stage passed">
-                                        <p>All Set!</p>
-                                    </div>
+                        </div>
+                        <div class="col-lg-4 form-right-col progress-right done d-none d-lg-block">
+                            <h3 class="text-left">Your progress:</h3>
+                            <div class="progress-list text-center">
+                                <div class="row stage passed">
+                                    <p>Start Now</p>
+                                </div>
+                                <div class="row stage passed">
+                                    <p>Your Company</p>
+                                </div>
+                                <div class="row stage passed">
+                                    <p>Owner Info</p>
+                                </div>
+                                <div class="row stage passed">
+                                    <p>All Set!</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        {{ /FormStackAddon:steps }}
-    </main>
+        </div>
+    </section>
+    {{ /FormStackAddon:steps }}
+</main>

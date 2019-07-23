@@ -1,8 +1,8 @@
 <main id="step4">
     {{ FormStackAddon:steps}}
-    <!-- {{ if step < 3 }}
+    {{ if step < 3 }}
         {{ redirect to="{ redirect_to }" }}
-        {{ /if }} -->
+    {{ /if }}
     <section id="formNew">
             <div class="form-focus">
                     <div class="container-fluid">
@@ -312,7 +312,7 @@
                         <div class="intro">Based on what you provided</div>
                         <div class="ribbon"></div>
                         <div class="title">You're Pre-qualified!</div>
-                        <div class="capital">${{ company_revenue }}</div>
+                        <div class="capital" id="capital">${{ company_revenue }}</div>
                     </div>
                     <h3 class="text-left">Your progress:</h3>
                     <div class="progress-list text-center">
@@ -322,10 +322,10 @@
                         <div class="row stage passed">
                             <p>Your Company</p>
                         </div>
-                        <div class="row stage active">
+                        <div class="row stage passed">
                             <p>Owner Info</p>
                         </div>
-                        <div class="row stage inactive">
+                        <div class="row stage active">
                             <p>All Set!</p>
                         </div>
                     </div>
@@ -337,11 +337,15 @@
     {{ /FormStackAddon:steps }}
 </main>
 <script type="text/javascript">
+    $(document).ready(function(){
+        $('.navbar-left').append('<h1 style="color:#359c1c;font-weight: bold;padding-left: 15px;">'+$('#capital').text()+'<div style="font-size:10px;text-align:right;color:#bbb;text-transform:uppercase;line-height: 0;">Qualified</div></h1>');
+    });
     function toggle_visibility(id) {
         var e = document.getElementById(id);
-        if (e.style.display == 'block')
+        if (e.style.display == 'block'){
             e.style.display = 'none';
-        else
+        }else{
             e.style.display = 'block';
+        }
     }
 </script>
