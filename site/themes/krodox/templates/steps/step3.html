@@ -1,9 +1,10 @@
 <main id="step3">
-    {{ FormStackAddon:steps}}
-    <!-- {{ if step < 2 }}
+    {{ FormStackAddon:steps }}
+    {{ if step < 2 }}
         {{ redirect to="{ redirect_to }" }}
-    {{ /if }} -->
+    {{ /if }}
     <section id="formNew">
+        <!-- TrustBox script --> <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script> <!-- End TrustBox script -->
         <div class="form-focus">
             <div class="container-fluid">
                 <div class="container">
@@ -55,6 +56,7 @@
                                             <input type="hidden" name="phone" value="{{ phone }}" />
                                             <input type="hidden" name="email" value="{{ email }}" />
                                             <input type="hidden" name="company_name" value="{{ company_name }}" />
+                                            <div class="capital" id="capital" style="display: none">${{ company_revenue }}</div>
                                             <div class="form-category-title">
                                                 <h3>Enter Business Address:</h3>
                                             </div>
@@ -119,27 +121,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4 form-right-col progress-right d-none d-lg-block">
-                            <div class="qualification-amount">
-                                <div class="intro">Based on what you provided</div>
-                                <div class="ribbon"></div>
-                                <div class="title">You're Pre-qualified!</div>
-                                <div class="capital" id="capital">${{ company_revenue }}</div>
-                            </div>
-                            <h3 class="text-left">Your progress:</h3>
-                            <div class="progress-list text-center">
-                                <div class="row stage passed">
-                                    <p>Start Now</p>
-                                </div>
-                                <div class="row stage active">
-                                    <p>Your Company</p>
-                                </div>
-                                <div class="row stage inactive">
-                                    <p>Owner Info</p>
-                                </div>
-                                <div class="row stage inactive">
-                                    <p>All Set!</p>
-                                </div>
-                            </div>
+                            <!-- TrustBox widget - List --> <div class="trustpilot-widget" data-locale="en-US" data-template-id="539ad60defb9600b94d7df2c" data-businessunit-id="555cd8dd0000ff00057f8e1e" data-style-height="660px" data-style-width="100%" data-theme="light" data-stars="1,2,3,4,5"> <a href="https://www.trustpilot.com/review/oneparkfinancial.com" target="_blank" rel="noopener">Trustpilot</a> </div> <!-- End TrustBox widget -->
                         </div>
                     </div>
                 </div>
@@ -150,7 +132,7 @@
 </main>
 <script>
     $(document).ready(function(){
-        $('.navbar-left').append('<h1 style="color:#359c1c;font-weight: bold;padding-left: 15px;">'+$('#capital').text()+'<div style="font-size:10px;text-align:right;color:#bbb;text-transform:uppercase;line-height: 0;">Qualified</div></h1>');
+        $('.navbar-left').append('<h1 style="color:#359c1c;font-weight: bold;padding-left: 15px;">'+$('#capital').text()+'<div style="font-size:10px;text-align:right;color:#bbb;text-transform:uppercase;line-height: 0;">Pre-Qualified</div></h1>');
     });
     $(function () {
         var onClass = "on";
@@ -172,8 +154,10 @@
         }).trigger("checkval");
         $("select").on("change", function () {
             var $this = $(this);
+
             if ($this.val() == "") $this.addClass("watermark");
             else $this.removeClass("watermark");
+
             $this.trigger("checkval");
         }).change();
     });
