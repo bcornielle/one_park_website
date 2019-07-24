@@ -8,8 +8,8 @@ utm_content: ''
 transaction_id: ''
 source: /pre-qualification-2
 api_id: ''
-submission_id: ''
-step: '1'
+submission_id: '1563973085.267'
+step: 2
 company_name: 'Test Name'
 company_years_in_business: '1'
 company_revenue: 2500
@@ -18,3 +18,20 @@ email: test@email.com
 fullname: 'Full Name'
 fname: Full
 lname: Name
+company_has_banking: 'Yes'
+company_name_legal: 'Company Legal Name'
+company_name_fake: 'ACME Ince'
+company_state: AL
+company_tax_id: '111111111'
+company_employees: '500'
+company_started_with_you: '2019-02-01'
+company_industry: Entertainment
+company_type: LLC
+company_has_loan: 'No'
+company_work_with_credit_card: 'Yes'
+company_cc_processor: Square
+company_rent_or_own: Rent
+company_mortgage: '500'
+company_land_lord_name: Landlord
+company_land_lord_phone: '9541231234'
+company_land_lord_expiration: '2018-12-31'
