@@ -9,7 +9,7 @@ transaction_id: ''
 source: /pre-qualification-2
 api_id: ''
 submission_id: '1563848189.4692'
-step: 1
+step: 2
 company_name: 'Game of Throne'
 company_years_in_business: '2'
 company_revenue: '8000'
@@ -18,3 +18,20 @@ email: john.snow@gmail.com
 fullname: 'John Snow'
 fname: John
 lname: Snow
+company_has_banking: 'No'
+company_name_legal: HBO
+company_name_fake: HBO
+company_state: FL
+company_tax_id: '1234567890'
+company_employees: '21'
+company_started_with_you: '2019-07-04'
+company_industry: Software
+company_type: LLC
+company_has_loan: 'No'
+company_work_with_credit_card: 'Yes'
+company_cc_processor: AMEX
+company_rent_or_own: Rent
+company_mortgage: '1500'
+company_land_lord_name: Milton
+company_land_lord_phone: '2392010202'
+company_land_lord_expiration: '2019-07-09'
