@@ -7,12 +7,12 @@ utm_term: ''
 utm_content: ''
 transaction_id: ''
 source: /pre-qualification-2
-api_id: 16525
+api_id: '16525'
 submission_id: '1564098107.1088'
 step: 1
 company_name: 'Game of Throne'
 company_years_in_business: '1'
-company_revenue: '1000000'
+company_revenue: 2500
 phone: '2392020202'
 email: john.snow@gmail.com
 fullname: 'John Snow'
