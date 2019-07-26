@@ -134,7 +134,11 @@
                                                         {{ if old:company_type == key || company_type == key }}
                                                         <option value="{{ key }}" selected>{{ value }}</option>
                                                         {{ else }}
-                                                        <option value="{{ key }}">{{ value }}</option>
+                                                            {{ if key == 'LLC' }}
+                                                                <option value="{{ key }}" selected>{{ value }}</option>
+                                                            {{ else }}
+                                                                <option value="{{ key }}">{{ value }}</option>
+                                                            {{ /if }}
                                                         {{ /if }}
                                                         {{ /foreach:company_type_options }}
                                                     </select>
@@ -260,7 +264,7 @@
                             <!-- TrustBox widget - List --> <div class="trustpilot-widget" data-locale="en-US" data-template-id="539ad60defb9600b94d7df2c" data-businessunit-id="555cd8dd0000ff00057f8e1e" data-style-height="906px" data-style-width="100%" data-theme="light" data-stars="1,2,3,4,5"> <a href="https://www.trustpilot.com/review/oneparkfinancial.com" target="_blank" rel="noopener">Trustpilot</a> </div> <!-- End TrustBox widget -->
                             <div style="display: none;">
                                 <div class="qualification-amount">
-                                    <div class="capital" id="company_revenue">${{ company_revenue }}</div>
+                                    <div class="capital" id="company_revenue">${{ qualified }}</div>
                                 </div>
                             </div>
                         </div>
@@ -277,7 +281,7 @@
                     <div class="prequalification-amount-m">
                         <div class="intro">Based on what you provided</div>
                         <div class="title">Pre-qualified</div>
-                        <div class="capital" id="capital">${{ company_revenue }}</div>
+                        <div class="capital" id="capital">${{ qualified }}</div>
                         <p><span>Not enough?</span> The pre-qualification amount can be changed based on your unique situation.</p>
                         <button type="button" class="close btn btn-primary btn-block" data-dismiss="modal" aria-hidden="true">Complete Application</button>
                     </div>
@@ -291,7 +295,9 @@
         if (window.innerWidth) {
             $("#preQual").modal('show');
             $("#capital").text($('#company_revenue').text());
-            $('.navbar-left').append('<h1 style="color:#359c1c;font-weight: bold;padding-left: 15px;">'+$('#company_revenue').text()+'<div style="font-size:10px;text-align:right;color:#bbb;text-transform:uppercase;line-height: 0;">Pre-qualified</div></h1>');
+            if (window.innerWidth > 480){
+                $('.navbar-left').append('<h1 style="color:#359c1c;font-weight: bold;padding-left: 15px;">'+$('#company_revenue').text()+'<div style="font-size:10px;text-align:right;color:#bbb;text-transform:uppercase;line-height: 0;">Pre-qualified</div></h1>');
+            }
         }
     });
     $(function () {

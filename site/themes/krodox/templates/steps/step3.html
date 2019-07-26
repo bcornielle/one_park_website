@@ -56,7 +56,7 @@
                                             <input type="hidden" name="phone" value="{{ phone }}" />
                                             <input type="hidden" name="email" value="{{ email }}" />
                                             <input type="hidden" name="company_name" value="{{ company_name }}" />
-                                            <div class="capital" id="capital" style="display: none">${{ company_revenue }}</div>
+                                            <div class="capital" id="capital" style="display: none">${{ qualified }}</div>
                                             <div class="form-category-title">
                                                 <h3>Enter Business Address:</h3>
                                             </div>
@@ -132,7 +132,9 @@
 </main>
 <script>
     $(document).ready(function(){
-        $('.navbar-left').append('<h1 style="color:#359c1c;font-weight: bold;padding-left: 15px;">'+$('#capital').text()+'<div style="font-size:10px;text-align:right;color:#bbb;text-transform:uppercase;line-height: 0;">Pre-Qualified</div></h1>');
+        if (window.innerWidth > 480){
+            $('.navbar-left').append('<h1 style="color:#359c1c;font-weight: bold;padding-left: 15px;">'+$('#capital').text()+'<div style="font-size:10px;text-align:right;color:#bbb;text-transform:uppercase;line-height: 0;">Pre-Qualified</div></h1>');
+        }
     });
     $(function () {
         var onClass = "on";
