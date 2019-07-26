@@ -7,9 +7,9 @@ utm_term: ''
 utm_content: ''
 transaction_id: ''
 source: /pre-qualification-2
-api_id: 16525
+api_id: '16525'
 submission_id: '1564105596.6852'
-step: 3
+step: 4
 company_name: 'Game of Throne'
 company_years_in_business: '1'
 company_revenue: '8000'
@@ -40,3 +40,12 @@ company_address_line1: '141 Grand AVE'
 company_address_city: Miami
 company_address_state: FL
 company_address_zip: '33133'
+company_owners_total: 'Single Owner'
+company_owner1_phone: '2390202020'
+company_owner1_email: john.snow@gmail.com
+company_owner1_dob: 01/01/1980
+company_owner1_ssn: '21212121212'
+company_owner1_title: CEO
+company_owner1_address_line1: '141 Grand AVE'
+company_owner1_address_city: Miami
+company_owner1_address_zip: '33133'
