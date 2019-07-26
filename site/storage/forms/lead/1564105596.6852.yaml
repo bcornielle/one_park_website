@@ -7,9 +7,9 @@ utm_term: ''
 utm_content: ''
 transaction_id: ''
 source: /pre-qualification-2
-api_id: 16525
-submission_id: 1564105596.6852
-step: '1'
+api_id: '16525'
+submission_id: '1564105596.6852'
+step: 1
 company_name: 'Game of Throne'
 company_years_in_business: '1'
 company_revenue: '8000'
