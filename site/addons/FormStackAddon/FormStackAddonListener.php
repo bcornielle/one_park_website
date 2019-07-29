@@ -44,223 +44,234 @@ class FormStackAddonListener extends Listener {
 			if ($submission->get('company_started_month') && $submission->get('company_started_year')) {
 				$submission->set('company_started',$submission->get('company_started_month').'/01/'.$submission->get('company_started_year'));
 			}
-			if ($submission->get('company_revenue') == 1) {
-				$submission->set('company_revenue',2500);
+			if ($submission->get('company_revenue')){
+				$submission->set('qualified',number_format($submission->get('company_revenue')));
+				if ($submission->get('company_revenue') === '1'){
+					$submission->set('qualified',number_format(2500));
+				}
+				if ($submission->get('company_revenue') === '1000000'){
+					$submission->set('qualified',number_format(750000));
+				}
 			}
 			if ($submission->get('submission_id')){
 				$previous = $submission->form->submission($submission->get('submission_id'));
-				if ($submission->get('fullname')){
-					$previous->set('fullname',$submission->get('fullname'));
+				if ($previous){
+					if ($submission->get('fullname')){
+						$previous->set('fullname',$submission->get('fullname'));
+					}
+					if ($submission->get('fname')){
+						$previous->set('fname',$submission->get('fname'));
+					}
+					if ($submission->get('lname')){
+						$previous->set('lname',$submission->get('lname'));
+					}
+					if ($submission->get('phone')){
+						$previous->set('phone',$submission->get('phone'));
+					}
+					if ($submission->get('email')){
+						$previous->set('email',$submission->get('email'));
+					}
+					if ($submission->get('rent_or_own')){
+						$previous->set('rent_or_own',$submission->get('rent_or_own'));
+					}
+					if ($submission->get('utm_source')){
+						$previous->set('utm_source',$submission->get('utm_source'));
+					}
+					if ($submission->get('utm_campaign')){
+						$previous->set('utm_campaign',$submission->get('utm_campaign'));
+					}
+					if ($submission->get('utm_medium')){
+						$previous->set('utm_medium',$submission->get('utm_medium'));
+					}
+					if ($submission->get('utm_term')){
+						$previous->set('utm_term',$submission->get('utm_term'));
+					}
+					if ($submission->get('utm_content')){
+						$previous->set('utm_content',$submission->get('utm_content'));
+					}
+					if ($submission->get('transaction_id')){
+						$previous->set('transaction_id',$submission->get('transaction_id'));
+					}
+					if ($submission->get('api_id')){
+						$previous->set('api_id',$submission->get('api_id'));
+					}
+					if ($submission->get('step')){
+						$previous->set('step', intval($submission->get('step')));
+					}
+					if ($submission->get('ip')){
+						$previous->set('ip', $submission->get('ip'));
+					}
+					if ($submission->get('language')){
+						$previous->set('language', $submission->get('language'));
+					}
+					if ($submission->get('company_name')){
+						$previous->set('company_name',$submission->get('company_name'));
+					}
+					if ($submission->get('company_phone')){
+						$previous->set('company_phone',$submission->get('company_phone'));
+					}
+					if ($submission->get('company_revenue')){
+						$previous->set('company_revenue',$submission->get('company_revenue'));
+					}
+					if ($submission->get('qualified')){
+						$previous->set('qualified',$submission->get('qualified'));
+					}
+					if ($submission->get('company_has_banking')){
+						$previous->set('company_has_banking',$submission->get('company_has_banking'));
+					}
+					if ($submission->get('company_active_bankruptcy')){
+						$previous->set('company_active_bankruptcy',$submission->get('company_active_bankruptcy'));
+					}
+					if ($submission->get('company_started')){
+						$previous->set('company_started',$submission->get('company_started'));
+					}
+					if ($submission->get('company_started_month')){
+						$previous->set('company_started_month',$submission->get('company_started_month'));
+					}
+					if ($submission->get('company_started_year')){
+						$previous->set('company_started_year',$submission->get('company_started_year'));
+					}
+					if ($submission->get('company_name_legal')){
+						$previous->set('company_name_legal',$submission->get('company_name_legal'));
+					}
+					if ($submission->get('company_name_fake')){
+						$previous->set('company_name_fake',$submission->get('company_name_fake'));
+					}
+					if ($submission->get('company_state')){
+						$previous->set('company_state',$submission->get('company_state'));
+					}
+					if ($submission->get('company_tax_id')){
+						$previous->set('company_tax_id',$submission->get('company_tax_id'));
+					}
+					if ($submission->get('company_employees')){
+						$previous->set('company_employees',$submission->get('company_employees'));
+					}
+					if ($submission->get('company_structure')){
+						$previous->set('company_structure',$submission->get('company_structure'));
+					}
+					if ($submission->get('company_started_with_you')){
+						$previous->set('company_started_with_you',$submission->get('company_started_with_you'));
+					}
+					if ($submission->get('company_industry')){
+						$previous->set('company_industry',$submission->get('company_industry'));
+					}
+					if ($submission->get('company_type')){
+						$previous->set('company_type',$submission->get('company_type'));
+					}
+					if ($submission->get('company_has_loan')){
+						$previous->set('company_has_loan',$submission->get('company_has_loan'));
+					}
+					if ($submission->get('company_work_with_credit_card')){
+						$previous->set('company_work_with_credit_card',$submission->get('company_work_with_credit_card'));
+					}
+					if ($submission->get('company_cc_processor')){
+						$previous->set('company_cc_processor',$submission->get('company_cc_processor'));
+					}
+					if ($submission->get('company_rent_or_own')){
+						$previous->set('company_rent_or_own',$submission->get('company_rent_or_own'));
+					}
+					if ($submission->get('company_mortgage')){
+						$previous->set('company_mortgage',$submission->get('company_mortgage'));
+					}
+					if ($submission->get('company_years_in_business')){
+						$previous->set('company_years_in_business',$submission->get('company_years_in_business'));
+					}
+					if ($submission->get('company_land_lord_name')){
+						$previous->set('company_land_lord_name',$submission->get('company_land_lord_name'));
+					}
+					if ($submission->get('company_land_lord_phone')){
+						$previous->set('company_land_lord_phone',$submission->get('company_land_lord_phone'));
+					}
+					if ($submission->get('company_land_lord_expiration')){
+						$previous->set('company_land_lord_expiration',$submission->get('company_land_lord_expiration'));
+					}
+					if ($submission->get('company_address_line1')){
+						$previous->set('company_address_line1',$submission->get('company_address_line1'));
+					}
+					if ($submission->get('company_address_line2')){
+						$previous->set('company_address_line2',$submission->get('company_address_line2'));
+					}
+					if ($submission->get('company_address_city')){
+						$previous->set('company_address_city',$submission->get('company_address_city'));
+					}
+					if ($submission->get('company_address_state')){
+						$previous->set('company_address_state',$submission->get('company_address_state'));
+					}
+					if ($submission->get('company_address_zip')){
+						$previous->set('company_address_zip',$submission->get('company_address_zip'));
+					}
+					if ($submission->get('company_owners_total')){
+						$previous->set('company_owners_total',$submission->get('company_owners_total'));
+					}
+					if ($submission->get('company_owner1_fname')){
+						$previous->set('company_owner1_fname',$submission->get('company_owner1_fname'));
+					}
+					if ($submission->get('company_owner1_lname')){
+						$previous->set('company_owner1_lname',$submission->get('company_owner1_lname'));
+					}
+					if ($submission->get('company_owner1_phone')){
+						$previous->set('company_owner1_phone',$submission->get('company_owner1_phone'));
+					}
+					if ($submission->get('company_owner1_email')){
+						$previous->set('company_owner1_email',$submission->get('company_owner1_email'));
+					}
+					if ($submission->get('company_owner1_dob')){
+						$previous->set('company_owner1_dob',$submission->get('company_owner1_dob'));
+					}
+					if ($submission->get('company_owner1_ssn')){
+						$previous->set('company_owner1_ssn',$submission->get('company_owner1_ssn'));
+					}
+					if ($submission->get('company_owner1_title')){
+						$previous->set('company_owner1_title',$submission->get('company_owner1_title'));
+					}
+					if ($submission->get('company_owner1_address_line1')){
+						$previous->set('company_owner1_address_line1',$submission->get('company_owner1_address_line1'));
+					}
+					if ($submission->get('company_owner1_address_city')){
+						$previous->set('company_owner1_address_city',$submission->get('company_owner1_address_city'));
+					}
+					if ($submission->get('company_owner1_address_state')){
+						$previous->set('company_owner1_address_state',$submission->get('company_owner1_address_state'));
+					}
+					if ($submission->get('company_owner1_address_zip')){
+						$previous->set('company_owner1_address_zip',$submission->get('company_owner1_address_zip'));
+					}
+					if ($submission->get('company_owner2_fname')){
+						$previous->set('company_owner2_fname',$submission->get('company_owner2_fname'));
+					}
+					if ($submission->get('company_owner2_lname')){
+						$previous->set('company_owner2_lname',$submission->get('company_owner2_lname'));
+					}
+					if ($submission->get('company_owner2_phone')){
+						$previous->set('company_owner2_phone',$submission->get('company_owner2_phone'));
+					}
+					if ($submission->get('company_owner2_email')){
+						$previous->set('company_owner2_email',$submission->get('company_owner2_email'));
+					}
+					if ($submission->get('company_owner2_dob')){
+						$previous->set('company_owner2_dob',$submission->get('company_owner2_dob'));
+					}
+					if ($submission->get('company_owner2_ssn')){
+						$previous->set('company_owner2_ssn',$submission->get('company_owner2_ssn'));
+					}
+					if ($submission->get('company_owner2_title')){
+						$previous->set('company_owner2_title',$submission->get('company_owner2_title'));
+					}
+					if ($submission->get('company_owner2_address_line1')){
+						$previous->set('company_owner2_address_line1',$submission->get('company_owner2_address_line1'));
+					}
+					if ($submission->get('company_owner2_address_city')){
+						$previous->set('company_owner2_address_city',$submission->get('company_owner2_address_city'));
+					}
+					if ($submission->get('company_owner2_address_state')){
+						$previous->set('company_owner2_address_state',$submission->get('company_owner2_address_state'));
+					}
+					if ($submission->get('company_owner2_address_zip')){
+						$previous->set('company_owner2_address_zip',$submission->get('company_owner2_address_zip'));
+					}
+					$previous->set('submission_id',$submission->get('submission_id'));
+					$submission = $previous;
 				}
-				if ($submission->get('fname')){
-					$previous->set('fname',$submission->get('fname'));
-				}
-				if ($submission->get('lname')){
-					$previous->set('lname',$submission->get('lname'));
-				}
-				if ($submission->get('phone')){
-					$previous->set('phone',$submission->get('phone'));
-				}
-				if ($submission->get('email')){
-					$previous->set('email',$submission->get('email'));
-				}
-				if ($submission->get('rent_or_own')){
-					$previous->set('rent_or_own',$submission->get('rent_or_own'));
-				}
-				if ($submission->get('utm_source')){
-					$previous->set('utm_source',$submission->get('utm_source'));
-				}
-				if ($submission->get('utm_campaign')){
-					$previous->set('utm_campaign',$submission->get('utm_campaign'));
-				}
-				if ($submission->get('utm_medium')){
-					$previous->set('utm_medium',$submission->get('utm_medium'));
-				}
-				if ($submission->get('utm_term')){
-					$previous->set('utm_term',$submission->get('utm_term'));
-				}
-				if ($submission->get('utm_content')){
-					$previous->set('utm_content',$submission->get('utm_content'));
-				}
-				if ($submission->get('transaction_id')){
-					$previous->set('transaction_id',$submission->get('transaction_id'));
-				}
-				if ($submission->get('api_id')){
-					$previous->set('api_id',$submission->get('api_id'));
-				}
-				if ($submission->get('step')){
-					$previous->set('step', intval($submission->get('step')));
-				}
-				if ($submission->get('ip')){
-					$previous->set('ip', $submission->get('ip'));
-				}
-				if ($submission->get('language')){
-					$previous->set('language', $submission->get('language'));
-				}
-				if ($submission->get('company_name')){
-					$previous->set('company_name',$submission->get('company_name'));
-				}
-				if ($submission->get('company_phone')){
-					$previous->set('company_phone',$submission->get('company_phone'));
-				}
-				if ($submission->get('company_revenue')){
-					$previous->set('company_revenue',$submission->get('company_revenue'));
-				}
-				if ($submission->get('company_has_banking')){
-					$previous->set('company_has_banking',$submission->get('company_has_banking'));
-				}
-				if ($submission->get('company_active_bankruptcy')){
-					$previous->set('company_active_bankruptcy',$submission->get('company_active_bankruptcy'));
-				}
-				if ($submission->get('company_started')){
-					$previous->set('company_started',$submission->get('company_started'));
-				}
-				if ($submission->get('company_started_month')){
-					$previous->set('company_started_month',$submission->get('company_started_month'));
-				}
-				if ($submission->get('company_started_year')){
-					$previous->set('company_started_year',$submission->get('company_started_year'));
-				}
-				if ($submission->get('company_name_legal')){
-					$previous->set('company_name_legal',$submission->get('company_name_legal'));
-				}
-				if ($submission->get('company_name_fake')){
-					$previous->set('company_name_fake',$submission->get('company_name_fake'));
-				}
-				if ($submission->get('company_state')){
-					$previous->set('company_state',$submission->get('company_state'));
-				}
-				if ($submission->get('company_tax_id')){
-				$previous->set('company_tax_id',$submission->get('company_tax_id'));
-				}
-				if ($submission->get('company_employees')){
-					$previous->set('company_employees',$submission->get('company_employees'));
-				}
-				if ($submission->get('company_structure')){
-					$previous->set('company_structure',$submission->get('company_structure'));
-				}
-				if ($submission->get('company_started_with_you')){
-					$previous->set('company_started_with_you',$submission->get('company_started_with_you'));
-				}
-				if ($submission->get('company_industry')){
-					$previous->set('company_industry',$submission->get('company_industry'));
-				}
-				if ($submission->get('company_type')){
-					$previous->set('company_type',$submission->get('company_type'));
-				}
-				if ($submission->get('company_has_loan')){
-					$previous->set('company_has_loan',$submission->get('company_has_loan'));
-				}
-				if ($submission->get('company_work_with_credit_card')){
-					$previous->set('company_work_with_credit_card',$submission->get('company_work_with_credit_card'));
-				}
-				if ($submission->get('company_cc_processor')){
-					$previous->set('company_cc_processor',$submission->get('company_cc_processor'));
-				}
-				if ($submission->get('company_rent_or_own')){
-					$previous->set('company_rent_or_own',$submission->get('company_rent_or_own'));
-				}
-				if ($submission->get('company_mortgage')){
-					$previous->set('company_mortgage',$submission->get('company_mortgage'));
-				}
-				if ($submission->get('company_years_in_business')){
-					$previous->set('company_years_in_business',$submission->get('company_years_in_business'));
-				}
-				if ($submission->get('company_land_lord_name')){
-					$previous->set('company_land_lord_name',$submission->get('company_land_lord_name'));
-				}
-				if ($submission->get('company_land_lord_phone')){
-					$previous->set('company_land_lord_phone',$submission->get('company_land_lord_phone'));
-				}
-				if ($submission->get('company_land_lord_expiration')){
-					$previous->set('company_land_lord_expiration',$submission->get('company_land_lord_expiration'));
-				}
-				if ($submission->get('company_address_line1')){
-					$previous->set('company_address_line1',$submission->get('company_address_line1'));
-				}
-				if ($submission->get('company_address_line2')){
-					$previous->set('company_address_line2',$submission->get('company_address_line2'));
-				}
-				if ($submission->get('company_address_city')){
-					$previous->set('company_address_city',$submission->get('company_address_city'));
-				}
-				if ($submission->get('company_address_state')){
-					$previous->set('company_address_state',$submission->get('company_address_state'));
-				}
-				if ($submission->get('company_address_zip')){
-					$previous->set('company_address_zip',$submission->get('company_address_zip'));
-				}
-				if ($submission->get('company_owners_total')){
-					$previous->set('company_owners_total',$submission->get('company_owners_total'));
-				}
-				if ($submission->get('company_owner1_fname')){
-					$previous->set('company_owner1_fname',$submission->get('company_owner1_fname'));
-				}
-				if ($submission->get('company_owner1_lname')){
-					$previous->set('company_owner1_lname',$submission->get('company_owner1_lname'));
-				}
-				if ($submission->get('company_owner1_phone')){
-					$previous->set('company_owner1_phone',$submission->get('company_owner1_phone'));
-				}
-				if ($submission->get('company_owner1_email')){
-					$previous->set('company_owner1_email',$submission->get('company_owner1_email'));
-				}
-				if ($submission->get('company_owner1_dob')){
-					$previous->set('company_owner1_dob',$submission->get('company_owner1_dob'));
-				}
-				if ($submission->get('company_owner1_ssn')){
-					$previous->set('company_owner1_ssn',$submission->get('company_owner1_ssn'));
-				}
-				if ($submission->get('company_owner1_title')){
-					$previous->set('company_owner1_title',$submission->get('company_owner1_title'));
-				}
-				if ($submission->get('company_owner1_address_line1')){
-					$previous->set('company_owner1_address_line1',$submission->get('company_owner1_address_line1'));
-				}
-				if ($submission->get('company_owner1_address_city')){
-					$previous->set('company_owner1_address_city',$submission->get('company_owner1_address_city'));
-				}
-				if ($submission->get('company_owner1_address_state')){
-					$previous->set('company_owner1_address_state',$submission->get('company_owner1_address_state'));
-				}
-				if ($submission->get('company_owner1_address_zip')){
-					$previous->set('company_owner1_address_zip',$submission->get('company_owner1_address_zip'));
-				}
-				if ($submission->get('company_owner2_fname')){
-					$previous->set('company_owner2_fname',$submission->get('company_owner2_fname'));
-				}
-				if ($submission->get('company_owner2_lname')){
-					$previous->set('company_owner2_lname',$submission->get('company_owner2_lname'));
-				}
-				if ($submission->get('company_owner2_phone')){
-					$previous->set('company_owner2_phone',$submission->get('company_owner2_phone'));
-				}
-				if ($submission->get('company_owner2_email')){
-					$previous->set('company_owner2_email',$submission->get('company_owner2_email'));
-				}
-				if ($submission->get('company_owner2_dob')){
-					$previous->set('company_owner2_dob',$submission->get('company_owner2_dob'));
-				}
-				if ($submission->get('company_owner2_ssn')){
-					$previous->set('company_owner2_ssn',$submission->get('company_owner2_ssn'));
-				}
-				if ($submission->get('company_owner2_title')){
-					$previous->set('company_owner2_title',$submission->get('company_owner2_title'));
-				}
-				if ($submission->get('company_owner2_address_line1')){
-					$previous->set('company_owner2_address_line1',$submission->get('company_owner2_address_line1'));
-				}
-				if ($submission->get('company_owner2_address_city')){
-					$previous->set('company_owner2_address_city',$submission->get('company_owner2_address_city'));
-				}
-				if ($submission->get('company_owner2_address_state')){
-					$previous->set('company_owner2_address_state',$submission->get('company_owner2_address_state'));
-				}
-				if ($submission->get('company_owner2_address_zip')){
-					$previous->set('company_owner2_address_zip',$submission->get('company_owner2_address_zip'));
-				}
-				$previous->set('submission_id',$submission->get('submission_id'));
-				$submission = $previous;
 			}
 		}
 		if ($form_name === 'landing-page'){
@@ -341,6 +352,9 @@ class FormStackAddonListener extends Listener {
 			}
 			if ($submission->get('company_revenue')){
 				$params['company_revenue'] = $submission->get('company_revenue');
+			}
+			if ($submission->get('qualified')){
+				$params['qualified'] = $submission->get('qualified');
 			}
 			if ($submission->get('company_name_legal')){
 				$params['company_name_legal'] = $submission->get('company_name_legal');

@@ -31,6 +31,8 @@ fields:
     display: 'Business Started'
   company_revenue:
     display: 'Business Revenue'
+  qualified:
+    display: 'Qualified'
   company_name_legal:
     display: 'company_name_legal'
   company_name_fake:

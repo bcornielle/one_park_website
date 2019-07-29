@@ -276,6 +276,7 @@ class FormStackAddonTags extends Tags {
 			);
 		}
 	}
+
 	public function router() {
 		$next_step = 1;
 		if (isset($_REQUEST['clear'])){
