@@ -8,8 +8,8 @@ utm_content: ''
 transaction_id: ''
 source: /pre-qualification-2
 api_id: ''
-submission_id: 1564491978.5204
-step: '1'
+submission_id: '1564491978.5204'
+step: 2
 company_name: 'One Park Financial'
 company_years_in_business: '3'
 company_revenue: '1000000'
@@ -19,3 +19,14 @@ fullname: 'Luther Joseph'
 fname: Luther
 lname: Joseph
 qualified: '750,000'
+company_has_banking: 'Yes'
+company_name_legal: 'One Park Financial'
+company_name_fake: 'One Park Financial'
+company_state: FL
+company_tax_id: '6513216513'
+company_employees: '2'
+company_started_with_you: '1955-10-20'
+company_type: LLC
+company_has_loan: 'No'
+company_work_with_credit_card: 'No'
+company_mortgage: '2000'
