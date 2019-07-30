@@ -7,9 +7,9 @@ utm_term: ''
 utm_content: ''
 transaction_id: ''
 source: /pre-qualification-2
-api_id: 17198
-submission_id: 1564504163.0149
-step: '1'
+api_id: '17198'
+submission_id: '1564504163.0149'
+step: 2
 company_name: 'LUTHER TEST BUSINESS'
 company_years_in_business: '4'
 company_revenue: '15000'
@@ -19,3 +19,20 @@ fullname: 'LUTHER FIRST AND LAST NAME'
 fname: LUTHER
 lname: FIRST
 qualified: '15,000'
+company_has_banking: 'Yes'
+company_name_legal: 'LUTHER COMPANY LEGAL NAME'
+company_name_fake: 'LUTHER COMPANY DBA'
+company_state: HI
+company_tax_id: '9999999999'
+company_employees: '9'
+company_started_with_you: '2010-10-10'
+company_industry: 'LUTHER COMPANY BUSINESS INDUSTRY'
+company_type: LLC
+company_has_loan: 'Yes'
+company_work_with_credit_card: 'Yes'
+company_cc_processor: 'LUTHER COMPANY PROCESSOR'
+company_rent_or_own: '1'
+company_mortgage: '2055'
+company_land_lord_name: 'LUTHER COMPANY LANDLORD NAME'
+company_land_lord_phone: '7777777777'
+company_land_lord_expiration: '2027-07-07'
