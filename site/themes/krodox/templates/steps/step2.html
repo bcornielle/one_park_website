@@ -106,7 +106,7 @@
                                             <div class="form-group input-tooltip float-label">
                                                 <input type="number" id="company_employees" name="company_employees"
                                                        class="form-control" placeholder="Number Of Employees"
-                                                       value="{{ old:company_employees or company_employees }}" maxlength="9" REQUIRED />
+                                                       value="{{ old:company_employees or company_employees }}" maxlength="9" />
                                                 <label for="company_employees">Number of Employee</label>
                                                 <div class="tooltip-dot" data-toggle="tooltip" data-placement="top" title="How many employees do you have?">?</div>
                                             </div>
@@ -121,14 +121,14 @@
                                             <div class="form-group float-label">
                                                 <input type="text" id="company_industry" name="company_industry"
                                                        class="form-control" placeholder="Business Industry"
-                                                       value="{{ old:company_industry or company_industry }}" REQUIRED />
+                                                       value="{{ old:company_industry or company_industry }}" />
                                                 <label for="company_industry">Business Industry</label>
                                             </div>
                                             <div class="form-group input-tooltip">
                                                 <div class="form-select-container select-float-label">
                                                     <span class="down-arrow fa fa-chevron-down"></span>
                                                     <label for="company_type" class="on">Company Type</label>
-                                                    <select id="company_type" name="company_type" class="form-control position-label-1" REQUIRED >
+                                                    <select id="company_type" name="company_type" class="form-control position-label-1" >
                                                         <option value="" selected disabled>Company Type</option>
                                                         {{ foreach:company_type_options }}
                                                         {{ if old:company_type == key || company_type == key }}
@@ -151,7 +151,7 @@
                                                 <div class="form-select-container select-float-label">
                                                     <span class="down-arrow fa fa-chevron-down"></span>
                                                     <label for="company_has_loan" class="on">Have MCA or Business Loans?</label>
-                                                    <select id="company_has_loan" name="company_has_loan" class="form-control position-label-1" placeholder="Have MCA or Business Loans" REQUIRED >
+                                                    <select id="company_has_loan" name="company_has_loan" class="form-control" placeholder="Have MCA or Business Loans" style="padding-top:20px;" >
                                                         <option value="" selected disabled>Have MCA or Business Loans?</option>
                                                         {{ foreach:company_has_loan_options }}
                                                         {{ if old:company_has_loan == key || company_has_loan == key }}
@@ -209,41 +209,36 @@
                                                     <span class="down-arrow fa fa-chevron-down"></span>
                                                     <label for="company_rent_or_own" class="on">Rent/Own Business
                                                         Location</label>
-                                                    <select id="company_rent_or_own" name="company_rent_or_own" class="form-control position-label-1" placeholder="Rent/Own Business Location" REQUIRED >
+                                                    <select id="company_rent_or_own" name="company_rent_or_own" class="form-control position-label-1" placeholder="Rent/Own Business Location"  onchange="showDiv('hidden_div', this)" >
                                                         <option value="" selected disabled>Rent/Own Business Location</option>
-                                                        {{ foreach:company_rent_or_own_options }}
-                                                        {{ if old:company_rent_or_own == key || company_rent_or_own == key }}
-                                                        <option value="{{ key }}">{{ value }}</option>
-                                                        {{ else }}
-                                                        <option value="{{ key }}" selected>{{ value }}</option>
-                                                        {{ /if }}
-                                                        {{ /foreach:company_rent_or_own_options }}
+                                                        <option value="1">Rent</option>
+                                                        <option value="0" selected>Own</option>
                                                     </select>
                                                 </div>
                                             </div>
                                             <div class="form-group float-label">
                                                 <input type="number" maxlength="12" id="company_mortgage" name="company_mortgage"
                                                        class="form-control" placeholder="Business Rent/Mortgage Cost"
-                                                       value="{{ old:company_mortgage or company_mortgage }}" REQUIRED />
+                                                       value="{{ old:company_mortgage or company_mortgage }}" />
                                                 <label for="company_mortgage">Business Rent/Mortgage Cost</label>
                                             </div>
-                                            <div id="rent-location" style="display: none;">
+                                            <div id="hidden_div">
                                                 <div class="form-group input-tooltip float-label">
-                                                    <input type="text" id="company_land_lord_name" name="company_land_lord_name" class="form-control required"
+                                                    <input type="text" id="company_land_lord_name" name="company_land_lord_name" class="form-control"
                                                            placeholder="Landlord's Name" value="{{ old:company_land_lord_name or company_land_lord_name }}"
-                                                           maxlength="50" REQUIRED />
+                                                           maxlength="50" />
                                                     <label for="company_land_lord_name">Landlord's Name</label>
                                                     <div class="tooltip-dot" data-toggle="tooltip" data-placement="top"
                                                          title="This can be a person, bank or property management company.">?</div>
                                                 </div>
                                                 <div class="form-group float-label">
-                                                    <input type="tel" id="company_land_lord_phone" name="company_land_lord_phone" class="form-control required" placeholder="Landlord's Phone Number" value="{{ old:company_land_lord_phone or company_land_lord_phone }}" maxlength="10" REQUIRED />
+                                                    <input type="tel" id="company_land_lord_phone" name="company_land_lord_phone" class="form-control" placeholder="Landlord's Phone Number" value="{{ old:company_land_lord_phone or company_land_lord_phone }}" maxlength="10" />
                                                     <label for="company_land_lord_phone">Landlord's Phone Number</label>
                                                 </div>
                                                 <div class="form-group">
-                                                    <input type="date" id="company_land_lord_expiration" name="company_land_lord_expiration" class="form-control required"
+                                                    <input type="date" id="company_land_lord_expiration" name="company_land_lord_expiration" class="form-control"
                                                            value="{{ old:company_land_lord_expiration or company_land_lord_expiration }}" maxlength="12"
-                                                           placeholder="Lease Expiration -" REQUIRED />
+                                                           placeholder="Lease Expiration -" />
                                                 </div>
                                             </div>
                                         </div>
@@ -374,30 +369,17 @@
             $(".required").attr('required', false);
         }
     });
-    // hide or show "Rent/Own..." based on option selected
-    $('#company_rent_or_own').on('change',function() {
-        if ($(this).val()==="Rent") {
-            $("#rent-location").show();
-        }
-        else{
-            $("#rent-location").hide();
-        }
-    });
-    // remove required attribute from "Rent/Own..." inputs unless visible
-    $('#company_rent_or_own').on('change',function() {
-        if ($(this).val()==="Rent") {
-            // disable require:
-            $(".required").attr('required', true);
-        }
-        else {
-            // enable require
-            $(".required").attr('required', false);
-        }
-    });
+    function showDiv(divId, element)
+    {
+        document.getElementById(divId).style.display = element.value == 1 ? 'block' : 'none';
+    }
 </script>
 <style>
     select:valid {
         padding-top: 30px;
         color: #323831 !important;
+    }
+    #hidden_div {
+        display: none;
     }
 </style>
