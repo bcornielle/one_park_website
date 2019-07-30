@@ -7,9 +7,9 @@ utm_term: ''
 utm_content: ''
 transaction_id: ''
 source: /pre-qualification-2
-api_id: 17189
+api_id: '17189'
 submission_id: '1564502431.3748'
-step: 2
+step: 3
 company_name: 'MIAMI OPF TEST2'
 company_years_in_business: '3'
 company_revenue: '75000'
@@ -36,3 +36,8 @@ company_mortgage: '2500'
 company_land_lord_name: 'THIS IS THE LANDLORDS NAME'
 company_land_lord_phone: '3055555555'
 company_land_lord_expiration: '2019-10-25'
+company_address_line1: '200 TEST ST'
+company_address_line2: 'THIS ADDRESS LINE 2'
+company_address_city: MIAMI
+company_address_state: FL
+company_address_zip: '33313'
