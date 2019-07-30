@@ -7,9 +7,9 @@ utm_term: ''
 utm_content: ''
 transaction_id: ''
 source: /pre-qualification-2
-api_id: 17112
+api_id: '17112'
 submission_id: '1564456297.1761'
-step: 3
+step: 4
 company_name: 'Business Name'
 company_years_in_business: '2'
 company_revenue: '5000'
@@ -35,3 +35,11 @@ company_address_line1: '123 Street'
 company_address_city: 'Fort Lauderdale'
 company_address_state: FL
 company_address_zip: '33315'
+company_owners_total: 'Single Owner'
+company_owner1_phone: '9543334444'
+company_owner1_email: Donotcontact@mailinator.com
+company_owner1_dob: 01/20/1968
+company_owner1_title: CEO
+company_owner1_address_line1: '1234 Street'
+company_owner1_address_city: 'Fort Lauderdale'
+company_owner1_address_zip: '33308'
