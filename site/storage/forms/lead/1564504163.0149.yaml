@@ -7,9 +7,9 @@ utm_term: ''
 utm_content: ''
 transaction_id: '55555555555555555'
 source: /pre-qualification-2
-api_id: 17198
+api_id: '17198'
 submission_id: '1564504163.0149'
-step: 3
+step: 4
 company_name: 'LUTHER TEST BUSINESS'
 company_years_in_business: '4'
 company_revenue: '15000'
@@ -41,3 +41,12 @@ company_address_line2: 'LUTHER COMPANY STREET ADDRESS 2'
 company_address_city: 'LUTHER COMPANY CITY'
 company_address_state: HI
 company_address_zip: '00000'
+company_owners_total: 'Single Owner'
+company_owner1_phone: '2122222222'
+company_owner1_email: LJJ@KK.CO
+company_owner1_dob: 05/05/2005
+company_owner1_ssn: '26'
+company_owner1_title: 'OWNER TITLE'
+company_owner1_address_line1: 'OWNER STREET ADDRESS'
+company_owner1_address_city: 'OWNER CITY'
+company_owner1_address_zip: '00000'
