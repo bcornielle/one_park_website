@@ -5,11 +5,11 @@ utm_campaign: ''
 utm_medium: ''
 utm_term: ''
 utm_content: ''
-transaction_id: ''
+transaction_id: '55555555555555555'
 source: /pre-qualification-2
-api_id: 17198
+api_id: '17198'
 submission_id: '1564504163.0149'
-step: 2
+step: 3
 company_name: 'LUTHER TEST BUSINESS'
 company_years_in_business: '4'
 company_revenue: '15000'
@@ -36,3 +36,8 @@ company_mortgage: '2055'
 company_land_lord_name: 'LUTHER COMPANY LANDLORD NAME'
 company_land_lord_phone: '7777777777'
 company_land_lord_expiration: '2027-07-07'
+company_address_line1: 'LUTHER COMPANY STREET ADDRESS'
+company_address_line2: 'LUTHER COMPANY STREET ADDRESS 2'
+company_address_city: 'LUTHER COMPANY CITY'
+company_address_state: HI
+company_address_zip: '00000'
