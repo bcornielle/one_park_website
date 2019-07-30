@@ -9,7 +9,7 @@ transaction_id: ''
 source: /pre-qualification-2
 api_id: ''
 submission_id: '1564491978.5204'
-step: 2
+step: 3
 company_name: 'One Park Financial'
 company_years_in_business: '3'
 company_revenue: '1000000'
@@ -30,3 +30,8 @@ company_type: LLC
 company_has_loan: 'No'
 company_work_with_credit_card: 'No'
 company_mortgage: '2000'
+company_address_line1: '3390 Mary St'
+company_address_line2: 'Suite 216'
+company_address_city: 'Coconut Grove'
+company_address_state: FL
+company_address_zip: '33133'
