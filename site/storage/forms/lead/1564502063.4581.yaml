@@ -7,9 +7,9 @@ utm_term: ''
 utm_content: ''
 transaction_id: ''
 source: /pre-qualification-2
-api_id: 17186
-submission_id: 1564502063.4581
-step: '1'
+api_id: '17186'
+submission_id: '1564502063.4581'
+step: 2
 company_name: TESTERRS
 company_years_in_business: '3'
 company_revenue: '35000'
@@ -19,3 +19,14 @@ fullname: 'LLY TTY'
 fname: LLY
 lname: TTY
 qualified: '35,000'
+company_has_banking: 'Yes'
+company_name_legal: BIZNASS
+company_name_fake: BBS
+company_state: FL
+company_tax_id: 6546+54-9+
+company_employees: '2'
+company_started_with_you: '0588-10-25'
+company_type: LLC
+company_has_loan: 'No'
+company_work_with_credit_card: 'No'
+company_mortgage: '2054'
