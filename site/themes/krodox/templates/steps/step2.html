@@ -103,13 +103,6 @@
                                                      title="A Federal Employer Identification Number (FEIN/EIN) is a nine-digit number formatted like this: XX-XXXXXXX.">
                                                     ?</div>
                                             </div>
-                                            <div class="form-group input-tooltip float-label">
-                                                <input type="number" id="company_employees" name="company_employees"
-                                                       class="form-control" placeholder="Number Of Employees"
-                                                       value="{{ old:company_employees or company_employees }}" maxlength="9" />
-                                                <label for="company_employees">Number of Employee</label>
-                                                <div class="tooltip-dot" data-toggle="tooltip" data-placement="top" title="How many employees do you have?">?</div>
-                                            </div>
                                             <div class="form-group input-tooltip">
                                                 <input type="date" id="company_started_with_you" name="company_started_with_you"
                                                        class="form-control" placeholder="Operation Date -"
@@ -147,7 +140,7 @@
                                             <div class="form-category-title">
                                                 <h3>Financial Information:</h3>
                                             </div>
-                                            <div class="form-group">
+                                            <div class="form-group input-tooltip">
                                                 <div class="form-select-container select-float-label">
                                                     <span class="down-arrow fa fa-chevron-down"></span>
                                                     <label for="company_has_loan" class="on">Have MCA or Business Loans?</label>
@@ -161,33 +154,10 @@
                                                         {{ /if }}
                                                         {{ /foreach:company_has_loan_options }}
                                                     </select>
+                                                    <div class="tooltip-dot" data-toggle="tooltip" data-placement="top"
+                                                     title="Do you have any active Merchant Cash Advances or Business Loans?">
+                                                    ?</div>
                                                 </div>
-                                            </div>
-                                            <div class="form-group input-tooltip">
-                                                <div class="form-select-container select-float-label">
-                                                    <span class="down-arrow fa fa-chevron-down"></span>
-                                                    <label for="company_work_with_credit_card" class="on">Accept Credit
-                                                        Cards</label>
-                                                    <select id="company_work_with_credit_card" name="company_work_with_credit_card" class="form-control position-label-1" placeholder="Accept Credit Cards" REQUIRED >
-                                                        <option value="" selected disabled>Accept Credit Cards</option>
-                                                        {{ foreach:company_work_with_credit_card_options }}
-                                                        {{ if old:company_work_with_credit_card == key || company_work_with_credit_card == key }}
-                                                        <option value="{{ key }}">{{ value }}</option>
-                                                        {{ else }}
-                                                        <option value="{{ key }}"selected>{{ value }}</option>
-                                                        {{ /if }}
-                                                        {{ /foreach:company_work_with_credit_card_options }}
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="form-group float-label input-tooltip" id="accepts-cards" style="display: none;">
-                                                <input type="text" id="company_cc_processor" name="company_cc_processor"
-                                                       class="form-control" placeholder="Credit Card Processing Service"
-                                                       value="{{ old:company_cc_processor or company_cc_processor }}"
-                                                       maxlength="50"  />
-                                                <label for="company_cc_processor">Credit Card Processing Service</label>
-                                                <div class="tooltip-dot" data-toggle="tooltip" data-placement="top"
-                                                     title="What company do you use for accepting credit cards?">?</div>
                                             </div>
                                             <div class="form-group">
                                                 <div class="form-select-container select-float-label">
@@ -232,7 +202,7 @@
                                                          title="This can be a person, bank or property management company.">?</div>
                                                 </div>
                                                 <div class="form-group float-label">
-                                                    <input type="tel" id="company_land_lord_phone" name="company_land_lord_phone" class="form-control" placeholder="Landlord's Phone Number" value="{{ old:company_land_lord_phone or company_land_lord_phone }}" maxlength="10" />
+                                                    <input type="tel" id="company_land_lord_phone" name="phone" class="form-control" placeholder="Landlord's Phone Number" value="{{ old:company_land_lord_phone or company_land_lord_phone }}" maxlength="14" />
                                                     <label for="company_land_lord_phone">Landlord's Phone Number</label>
                                                 </div>
                                                 <div class="form-group">
@@ -296,7 +266,7 @@
             $("#preQual").modal('show');
             $("#capital").text($('#company_revenue').text());
             if (window.innerWidth > 480){
-                $('.navbar-left').append('<h1 style="color:#359c1c;font-weight: bold;padding-left: 15px;">'+$('#company_revenue').text()+'<div style="font-size:10px;text-align:right;color:#bbb;text-transform:uppercase;line-height: 0;">Pre-qualified</div></h1>');
+                $('.navbar-left').append('<h1 class="pre-qual-amount d-none d-md-block">'+$('#company_revenue').text()+'<div class="pre-qual-text d-none d-md-block">Pre-qualified</div></h1>');
             }
         }
     });
@@ -369,10 +339,13 @@
             $(".required").attr('required', false);
         }
     });
-    function showDiv(divId, element)
-    {
+    function showDiv(divId, element) {
         document.getElementById(divId).style.display = element.value == 1 ? 'block' : 'none';
     }
+    // auto format phone number
+    $("input[name='phone']").on('keydown', function() {
+        $(this).val($(this).val().replace(/^(\d{3})(\d{3})(\d)+$/g, '($1) $2-$3', 10));
+    });
 </script>
 <style>
     select:valid {

@@ -3588,6 +3588,29 @@ body{
                 @media (max-width: 767.98px) {
                   padding-left: 15px;
                 }
+                h1.pre-qual-amount {
+                  color:$brand-primary;
+                  font-weight: bold;
+                  border: 2px dashed $subtle;
+                  border-radius: 6px;
+                  margin: 5px 0 0 30px;
+                  padding: 5px 12px 10px;
+                  font-size: 30px;
+                  text-align: center;
+                }
+                .pre-qual-text {
+                  font-size:12px;
+                  text-align:center;
+                  color:$brand-secondary;
+                  text-transform:uppercase;
+                  line-height: 0;
+                  padding: 10px;
+                  background: $form-focus;
+                  margin-top: 3px;
+                  padding: 12px 0;
+                  font-weight: 600;
+                  border-radius: 3px;
+                }
               }
             }
           }

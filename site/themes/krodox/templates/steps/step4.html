@@ -138,10 +138,10 @@
                                                 <h3>Contact:</h3>
                                             </div>
                                             <div class="form-group input-tooltip float-label">
-                                                <input type="tel" id="company_owner1_phone" name="company_owner1_phone"
+                                                <input type="tel" id="company_owner1_phone" name="phone"
                                                        class="form-control" placeholder="Phone Number"
                                                        value="{{ old:company_owner1_phone or company_owner1_phone }}"
-                                                       maxlength="10" required />
+                                                       maxlength="14" required />
                                                 <label for="company_owner1_phone">Phone Number</label>
                                             </div>
                                             <div class="form-group input-tooltip float-label">
@@ -251,10 +251,10 @@
                                                 <h3>Contact:</h3>
                                             </div>
                                             <div class="form-group input-tooltip float-label">
-                                                <input type="tel" id="company_owner2_phone" name="company_owner2_phone"
+                                                <input type="tel" id="company_owner2_phone" name="phone"
                                                        class="form-control" placeholder="Phone Number"
                                                        value="{{ old:company_owner2_phone or company_owner2_phone }}"
-                                                       maxlength="10" data-validation="required" />
+                                                       maxlength="14" data-validation="required" />
                                                 <label for="company_owner2_phone">Phone Number</label>
                                             </div>
                                             <div class="form-group input-tooltip float-label">
@@ -330,4 +330,8 @@
             e.style.display = 'block';
         }
     }
+    // auto format phone number
+    $("input[name='phone']").on('keydown', function() {
+        $(this).val($(this).val().replace(/^(\d{3})(\d{3})(\d)+$/g, '($1) $2-$3', 10));
+    });
 </script>
