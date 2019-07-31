@@ -9,7 +9,7 @@ transaction_id: ''
 source: /pre-qualification-2
 api_id: ''
 submission_id: '1564538710.7381'
-step: 2
+step: 3
 company_name: 'Donot Contact'
 company_years_in_business: '3'
 company_revenue: '5000'
@@ -35,3 +35,7 @@ company_mortgage: '3000'
 company_land_lord_name: 'Landlord Name'
 company_land_lord_phone: '(954) 333-4444'
 company_land_lord_expiration: '2019-07-31'
+company_address_line1: '123 Street Address'
+company_address_city: 'Fort Lauderdale'
+company_address_state: FL
+company_address_zip: '33315'
