@@ -7,9 +7,9 @@ utm_term: ''
 utm_content: ''
 transaction_id: ''
 source: /pre-qualification-2
-api_id: 15500
-submission_id: 1564515635.9582
-step: '1'
+api_id: '15500'
+submission_id: '1564515635.9582'
+step: 1
 company_name: 'Jose Vera INC'
 company_years_in_business: '1'
 company_revenue: '15000'
