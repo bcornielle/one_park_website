@@ -7,9 +7,9 @@ utm_term: ''
 utm_content: ''
 transaction_id: ''
 source: /pre-qualification-2
-api_id: 17370
-submission_id: 1564579976.7347
-step: '1'
+api_id: '17370'
+submission_id: '1564579976.7347'
+step: 2
 company_name: 'Michelle''s Business'
 company_years_in_business: '3'
 company_revenue: '8000'
@@ -19,3 +19,15 @@ fullname: 'Michelle Delio'
 fname: Michelle
 lname: Delio
 qualified: '8,000'
+company_has_banking: 'Yes'
+company_name_legal: 'My company'
+company_name_fake: 'Michele''s Biz'
+company_state: CT
+company_tax_id: '000000000'
+company_employees: '22'
+company_started_with_you: '1981-12-12'
+company_industry: Art
+company_type: LLC
+company_has_loan: 'No'
+company_work_with_credit_card: 'No'
+company_mortgage: '2000'
