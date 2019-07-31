@@ -7,9 +7,9 @@ utm_term: ''
 utm_content: ''
 transaction_id: ''
 source: /pre-qualification-2
-api_id: 17370
+api_id: '17370'
 submission_id: '1564579976.7347'
-step: 2
+step: 3
 company_name: 'Michelle''s Business'
 company_years_in_business: '3'
 company_revenue: '8000'
@@ -31,3 +31,7 @@ company_type: LLC
 company_has_loan: 'No'
 company_work_with_credit_card: 'No'
 company_mortgage: '2000'
+company_address_line1: '1313 Mockingbird Lane'
+company_address_city: 'Staten Island'
+company_address_state: NY
+company_address_zip: '10306'
