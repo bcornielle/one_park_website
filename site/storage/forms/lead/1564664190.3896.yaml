@@ -7,8 +7,8 @@ utm_term: ''
 utm_content: ''
 transaction_id: ''
 source: /pre-qualification-2
-api_id: 17565
-step: 2
+api_id: '17565'
+step: 3
 company_name: 'One Park Financial'
 company_years_in_business: '3'
 company_revenue: '15000'
@@ -31,3 +31,7 @@ company_rent_or_own: '1'
 company_mortgage: '2200'
 company_land_lord_name: Landlord
 company_land_lord_expiration: '2020-08-20'
+company_address_line1: '3390 Mary St Suite 216'
+company_address_city: 'Coconut Grove'
+company_address_state: FL
+company_address_zip: '33133'
