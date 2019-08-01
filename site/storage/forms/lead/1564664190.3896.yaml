@@ -7,8 +7,8 @@ utm_term: ''
 utm_content: ''
 transaction_id: ''
 source: /pre-qualification-2
-api_id: 17565
-step: 3
+api_id: '17565'
+step: 4
 company_name: 'One Park Financial'
 company_years_in_business: '3'
 company_revenue: '15000'
@@ -35,3 +35,10 @@ company_address_line1: '3390 Mary St Suite 216'
 company_address_city: 'Coconut Grove'
 company_address_state: FL
 company_address_zip: '33133'
+company_owners_total: 'Single Owner'
+company_owner1_phone: '9544058057'
+company_owner1_email: ljoseph@oneparkfinancial.com
+company_owner1_title: 'One Park Financial'
+company_owner1_address_line1: '3390 Mary St Suite 216'
+company_owner1_address_city: 'Coconut Grove'
+company_owner1_address_zip: '33133'
