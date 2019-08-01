@@ -283,7 +283,7 @@ class FormStackAddonTags extends Tags {
 			unset($_COOKIE[$this->cookie_name]);
 			setcookie($this->cookie_name, '', time() - 3600, '/');
 		}
-		if (isset($_REQUEST['api_id'])){
+		if (isset($_REQUEST['qualified'])){
 			$params = [];
 			foreach ($_REQUEST as $key=>$value ) {
 				$params[$key] = $value;

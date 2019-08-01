@@ -26,7 +26,9 @@
                                         <input type="hidden" name="transaction_id" value="{{ get:transaction_id | sanitize }}"/>
                                         <input type="hidden" name="source" value="{{ current_uri }}"/>
                                         <input type="hidden" name="api_id" value="{{ api_id }}"/>
+                                        {{ if (submission_id) }}
                                         <input type="hidden" name="submission_id" value="{{ submission_id }}"/>
+                                        {{ /if }}
                                         <input type="hidden" name="step" value="1"/>
                                         <div class="form-category-title">
                                             <h3>Enter business info:</h3>
@@ -72,7 +74,7 @@
                                             <h3>What’s your contact information?</h3>
                                         </div>
                                         <div class="form-group input-tooltip float-label">
-                                            <input type="tel" maxlength="14" id="phone" name="phone" class="form-control" placeholder="Phone Number" value="{{ old:phone or phone }}" REQUIRED />
+                                            <input type="text" maxlength="14" id="phone" name="phone" class="form-control phone-format" placeholder="Phone Number" value="{{ old:phone or phone }}" REQUIRED />
                                             <label for="phone">Phone Number</label>
                                             <div class="tooltip-dot" data-toggle="tooltip" data-placement="top" title="A 10-digit number where we can best contact you.">?</div>
                                         </div>
@@ -173,10 +175,50 @@
     $('.position-label-1').on('change', function() {
         $(this).addClass('position-label', this.value != '1');
     });
-    // auto format phone number
-    $("input[name='phone']").on('keydown', function() {
-        $(this).val($(this).val().replace(/^(\d{3})(\d{3})(\d)+$/g, '($1) $2-$3', 10));
-    });
+    $('.phone-format').on('keypress', function(e) {
+          var key = e.charCode || e.keyCode || 0;
+          var phone = $(this);
+          if (phone.val().length === 0) {
+            phone.val(phone.val() + '(');
+          }
+          // Auto-format- do not expose the mask as the user begins to type
+          if (key !== 8 && key !== 9) {
+            if (phone.val().length === 4) {
+              phone.val(phone.val() + ')');
+            }
+            if (phone.val().length === 5) {
+              phone.val(phone.val() + ' ');
+            }
+            if (phone.val().length === 9) {
+              phone.val(phone.val() + '-');
+            }
+            if (phone.val().length >= 14) {
+              phone.val(phone.val().slice(0, 13));
+            }
+          }
+          // Allow numeric (and tab, backspace, delete) keys only
+          return (key == 8 ||
+            key == 9 ||
+            key == 46 ||
+            (key >= 48 && key <= 57) ||
+            (key >= 96 && key <= 105));
+        })
+        .on('focus', function() {
+          phone = $(this);
+
+          if (phone.val().length === 0) {
+            phone.val('(');
+          } else {
+            var val = phone.val();
+            phone.val('').val(val); // Ensure cursor remains at the end
+          }
+        })
+        .on('blur', function() {
+          $phone = $(this);
+          if ($phone.val() === '(') {
+            $phone.val('');
+          }
+        });
 </script>
 <style>
     select:valid {

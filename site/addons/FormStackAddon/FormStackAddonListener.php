@@ -279,7 +279,7 @@ class FormStackAddonListener extends Listener {
 			$ips = explode('.',$ip);
 			if (count($ips)>2){
 				$mask = $ips[0] . $ips[1] . $ips[2];
-				if ($mask == '193.37.252' || $mask == '76.217.95'){
+				if ($mask == '193.37.252'){
 					return array('errors' => array('Submission Blocked'));
 				}
 			}
@@ -342,7 +342,6 @@ class FormStackAddonListener extends Listener {
 			}
 			if ($submission->get('company_started_month')){
 				$params['company_started_month'] = $submission->get('company_started_month');
-
 			}
 			if ($submission->get('company_started_year')){
 				$params['company_started_year'] = $submission->get('company_started_year');
