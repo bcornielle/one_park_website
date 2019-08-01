@@ -319,7 +319,7 @@
 <script type="text/javascript">
     $(document).ready(function(){
         if (window.innerWidth > 480){
-            $('.navbar-left').append('<h1 style="color:#359c1c;font-weight: bold;padding-left: 15px;">'+$('#capital').text()+'<div style="font-size:10px;text-align:right;color:#bbb;text-transform:uppercase;line-height: 0;">Qualified</div></h1>');
+            $('.navbar-left').append('<h1 class="pre-qual-amount d-none d-md-block">'+$('#capital').text()+'<div class="pre-qual-text d-none d-md-block">Qualified</div></h1>');
         }
     });
     function toggle_visibility(id) {
