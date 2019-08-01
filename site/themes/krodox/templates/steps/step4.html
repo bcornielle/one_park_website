@@ -138,10 +138,7 @@
                                                 <h3>Contact:</h3>
                                             </div>
                                             <div class="form-group input-tooltip float-label">
-                                                <input type="tel" id="company_owner1_phone" name="phone"
-                                                       class="form-control" placeholder="Phone Number"
-                                                       value="{{ old:company_owner1_phone or company_owner1_phone }}"
-                                                       maxlength="14" required />
+                                                <input type="tel" id="company_owner1_phone" name="company_owner1_phone" class="form-control phone-format" placeholder="Phone Number" value="{{ old:company_owner1_phone or company_owner1_phone }}" maxlength="14" required />
                                                 <label for="company_owner1_phone">Phone Number</label>
                                             </div>
                                             <div class="form-group input-tooltip float-label">
@@ -251,10 +248,7 @@
                                                 <h3>Contact:</h3>
                                             </div>
                                             <div class="form-group input-tooltip float-label">
-                                                <input type="tel" id="company_owner2_phone" name="phone"
-                                                       class="form-control" placeholder="Phone Number"
-                                                       value="{{ old:company_owner2_phone or company_owner2_phone }}"
-                                                       maxlength="14" data-validation="required" />
+                                                <input type="tel" id="company_owner2_phone" name="company_owner2_phone" class="form-control phone-format" placeholder="Phone Number" value="{{ old:company_owner2_phone or company_owner2_phone }}" maxlength="14" data-validation="required" />
                                                 <label for="company_owner2_phone">Phone Number</label>
                                             </div>
                                             <div class="form-group input-tooltip float-label">
@@ -330,8 +324,48 @@
             e.style.display = 'block';
         }
     }
-    // auto format phone number
-    $("input[name='phone']").on('keydown', function() {
-        $(this).val($(this).val().replace(/^(\d{3})(\d{3})(\d)+$/g, '($1) $2-$3', 10));
-    });
+    $('.phone-format').on('keypress', function(e) {
+                var key = e.charCode || e.keyCode || 0;
+                var phone = $(this);
+                if (phone.val().length === 0) {
+                  phone.val(phone.val() + '(');
+                }
+                // Auto-format- do not expose the mask as the user begins to type
+                if (key !== 8 && key !== 9) {
+                  if (phone.val().length === 4) {
+                    phone.val(phone.val() + ')');
+                  }
+                  if (phone.val().length === 5) {
+                    phone.val(phone.val() + ' ');
+                  }
+                  if (phone.val().length === 9) {
+                    phone.val(phone.val() + '-');
+                  }
+                  if (phone.val().length >= 14) {
+                    phone.val(phone.val().slice(0, 13));
+                  }
+                }
+                // Allow numeric (and tab, backspace, delete) keys only
+                return (key == 8 ||
+                  key == 9 ||
+                  key == 46 ||
+                  (key >= 48 && key <= 57) ||
+                  (key >= 96 && key <= 105));
+              })
+              .on('focus', function() {
+                phone = $(this);
+
+                if (phone.val().length === 0) {
+                  phone.val('(');
+                } else {
+                  var val = phone.val();
+                  phone.val('').val(val); // Ensure cursor remains at the end
+                }
+              })
+              .on('blur', function() {
+                $phone = $(this);
+                if ($phone.val() === '(') {
+                  $phone.val('');
+                }
+              });
 </script>
