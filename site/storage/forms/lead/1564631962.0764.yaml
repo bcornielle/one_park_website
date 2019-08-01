@@ -7,8 +7,8 @@ utm_term: ''
 utm_content: ''
 transaction_id: ''
 source: /pre-qualification-2
-api_id: 17531
-step: '1'
+api_id: '17531'
+step: 2
 company_name: 'Game Of Thrones'
 company_years_in_business: '3'
 company_revenue: '8000'
@@ -18,4 +18,16 @@ fullname: 'John Snow'
 fname: John
 lname: Snow
 qualified: '8,000'
-submission_id: 1564631962.0764
+submission_id: '1564631962.0764'
+company_has_banking: 'Yes'
+company_name_legal: HBO
+company_name_fake: HBO
+company_state: AR
+company_tax_id: '1212121212'
+company_started_with_you: '2019-08-31'
+company_industry: Software
+company_type: LLC
+company_rent_or_own: '1'
+company_mortgage: '1500'
+company_land_lord_name: Milton
+company_land_lord_expiration: '2019-08-31'
