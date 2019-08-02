@@ -110,6 +110,7 @@
                                         <hr>
                                         <div class="text-center">
                                             <button id="submit" class="btn btn-primary btn-block">Continue</button>
+                                            <div id="loader" class="none"><div></div><div></div><div></div><div></div></div>
                                         </div>
                                         {{ if {form:success} }}
                                         {{ form_submission }}
@@ -165,6 +166,12 @@
     });
     $('.position-label-1').on('change', function() {
         $(this).addClass('position-label', this.value != '1');
+    });
+    // CSS Loader
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("#loader").addClass("lds-ring background");
+        });
     });
 </script>
 <style>
