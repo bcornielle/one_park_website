@@ -94,6 +94,7 @@
                                     <hr>
                                     <div class="text-center">
                                         <button id="submit" class="btn btn-primary btn-block">Get Funded Now</button>
+                                        <div id="loader" class="none"><div></div><div></div><div></div><div></div></div>
                                     </div>
                                     {{ if {form:success} }}
                                     {{ form_submission }}
@@ -219,6 +220,12 @@
             $phone.val('');
           }
         });
+        // CSS Loader
+        $(document).ready(function(){
+		  $("#submit").click(function(){
+            $("#loader").addClass("lds-ring background");
+		  });
+		});
 </script>
 <style>
     select:valid {
