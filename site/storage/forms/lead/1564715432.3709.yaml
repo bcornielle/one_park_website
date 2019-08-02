@@ -8,7 +8,7 @@ utm_content: ''
 transaction_id: ''
 source: /pre-qualification-2
 api_id: ''
-step: '1'
+step: 1
 company_name: 'Donot Contact'
 company_years_in_business: '1'
 company_revenue: '15000'
@@ -18,4 +18,4 @@ fullname: 'Donot Contact'
 fname: Donot
 lname: Contact
 qualified: '15,000'
-submission_id: 1564715432.3709
+submission_id: '1564715432.3709'
