@@ -3,7 +3,7 @@ template: lp/fast-capital-360
 body_class: home-page
 navigation: with-menu
 hero: light
-hero_image: /assets/untitled-design-min.png
+hero_image: /assets/img/untitled-design-min.png
 hero_title: 'Bad Credit </br>Business Loans'
 hero_subtitle: 'Get $5,000 - $750,000 Today'
 hero_notice: 'WE VALUE YOUR BUSINESS </br>NOT JUST YOUR CREDIT SCORE'
