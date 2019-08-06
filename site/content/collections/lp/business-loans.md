@@ -3,7 +3,7 @@ template: lp/fast-capital-360
 body_class: home-page
 navigation: with-menu
 hero: light
-hero_image: /assets/untitled-design-min.png
+hero_image: /assets/img/untitled-design-min.png
 hero_title: 'Business Loans & </br>Other Funding Options'
 hero_subtitle: '</br>Get $5,000 - $750,000 FAST'
 hero_notice: 'ONE <strong>SIMPLE</strong> APPLICATION — </br>INSTANT <strong>ACCESS</strong> TO <strong>20+ TOP FUNDERS</strong>'
