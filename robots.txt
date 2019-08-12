@@ -1,21 +1,42 @@
+sitemap: https://www.oneparkfinancial.com/page-sitemap.xml
+sitemap: https://www.oneparkfinancial.com/blog-sitemap.xml
+sitemap: https://www.oneparkfinancial.com/press-sitemap.xml
+sitemap: https://www.oneparkfinancial.com/es/sitemap.xml
+
 User-Agent: *
 
 Disallow: /cdn-cgi/*
+Disallow: /wp-content/uploads/*
+Disallow: /wp-content/plugins/*
+Disallow: /lp/
+Disallow: /careers/
 
+#
 Allow: /blog$
 Disallow: /blog?*page=
 
+Allow: /es/articulos$
+Disallow: /es/articulos?*page=
+
+#
 Allow: /pre-qualification$
 Disallow: /pre-qualification?*package=
+Disallow: /pre-qualification-2$*
+Disallow: /congrats$
+Disallow: /congrats-2$
+Disallow: /congrats-3$
+Disallow: /congrats-4$
+Disallow: /thanks-2$
 
-Allow: /press$
-Disallow: /press?*page=
 
 Allow: /es/preaprob$
 Disallow: /es/preaprob?*package=
 
-Disallow: /wp-content/uploads/*
-Disallow: /wp-content/plugins/*
+#
+Allow: /press$
+Disallow: /press?*page=
 
-Disallow: /lp/
-Disallow: /careers/
+Allow: /es/medios$
+Disallow: /es/medios?*page
+
+#
