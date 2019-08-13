@@ -92,9 +92,21 @@ class FormStackAddonListener extends Listener {
 					if ($submission->get('transaction_id')){
 						$previous->set('transaction_id',$submission->get('transaction_id'));
 					}
-					if ($submission->get('api_id')){
+                    if ($submission->get('gclid')){
+                        $previous->set('gclid',$submission->get('gclid'));
+                    }
+                    if ($submission->get('msclkid')){
+                        $previous->set('msclkid',$submission->get('msclkid'));
+                    }
+                    if ($submission->get('source')){
+                        $previous->set('source',$submission->get('source'));
+                    }
+                    if ($submission->get('api_id')){
 						$previous->set('api_id',$submission->get('api_id'));
 					}
+                    if ($submission->get('submission_id')){
+                        $previous->set('submission_id',$submission->get('submission_id'));
+                    }
 					if ($submission->get('step')){
 						$previous->set('step', intval($submission->get('step')));
 					}
@@ -269,7 +281,6 @@ class FormStackAddonListener extends Listener {
 					if ($submission->get('company_owner2_address_zip')){
 						$previous->set('company_owner2_address_zip',$submission->get('company_owner2_address_zip'));
 					}
-					$previous->set('submission_id',$submission->get('submission_id'));
 					$submission = $previous;
 				}
 			}
@@ -526,6 +537,24 @@ class FormStackAddonListener extends Listener {
 				}
 			}
 			$params['utm_source'] = $source;
+            $gclid = null;
+            if (isset($_COOKIE['gclid'])) {
+                $gclid = $_COOKIE['gclid'];
+            }else{
+                if ($submission->get('gclid')){
+                    $gclid = $submission->get('gclid');
+                }
+            }
+            $params['gclid'] = $gclid;
+            $msclkid = null;
+            if (isset($_COOKIE['msclkid'])) {
+                $msclkid = $_COOKIE['msclkid'];
+            }else{
+                if ($submission->get('msclkid')){
+                    $msclkid = $submission->get('msclkid');
+                }
+            }
+            $params['msclkid'] = $msclkid;
 			$medium = null;
 			if (isset($_COOKIE['Visitor_Medium__c']) || isset($_COOKIE['utm_medium'])) {
 				$medium = ($_COOKIE['Visitor_Medium__c']) ? $_COOKIE['Visitor_Medium__c'] : $_COOKIE['utm_medium'] ;

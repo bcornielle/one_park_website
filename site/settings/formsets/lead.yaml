@@ -137,6 +137,10 @@ fields:
     display: 'utm_content'
   transaction_id:
     display: 'Transaction ID'
+  gclid:
+    display: 'gclid'
+  msclkid:
+    display: 'msclkid'
   source:
     display: 'source'
   api_id:
