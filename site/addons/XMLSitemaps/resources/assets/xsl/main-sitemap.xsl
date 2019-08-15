@@ -76,7 +76,7 @@
                     </p>
                     <xsl:if test="count(sitemap:sitemapindex/sitemap:sitemap) &gt; 0">
                         <p class="expl">
-                            This XML Sitemap Index file contains <xsl:value-of select="count(sitemap:sitemapindex/sitemap:sitemap)"/> sitemaps.
+                            This XML Sitemap Index file contains <xsl:value-of select="count(sitemap:sitemapindex/sitemap:sitemap) + 1"/> sitemaps.
                         </p>
                         <table id="sitemap" cellpadding="3">
                             <thead>
@@ -99,6 +99,16 @@
                                         </td>
                                     </tr>
                                 </xsl:for-each>
+                                <tr>
+                                    <td>
+                                        <a href="https://www.oneparkfinancial.com/es/sitemap.xml">
+                                            https://www.oneparkfinancial.com/es/sitemap.xml
+                                        </a>
+                                    </td>
+                                    <td>
+                                        2019-08-14 12:00 -04:00
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                     </xsl:if>
