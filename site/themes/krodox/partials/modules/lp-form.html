@@ -28,7 +28,7 @@
                                 <input type="text" name="name" class="form-control" value="{{ old:name }}" placeholder="First & Last Name" required/>
                             </li>
                             <li>
-                                <input type="tel" name="phone" id="phone-number" class="form-control phone-format" value="{{ old:phone }}" pattern="([0-9]{3}) [0-9]{3}-[0-9]{4}" placeholder="Ex. (888) 327-0948" required/>
+                                <input type="tel" name="phone" id="phone-number" class="form-control phone-format" value="{{ old:phone }}" pattern="(?:\(\d{3}\)|\d{3})[- ]?\d{3}[- ]?\d{4}" placeholder="Ex. (888) 327-0948" required/>
                             </li>
                             <li>
                                 <input type="email" name="email" class="form-control" value="{{ old:email }}"
