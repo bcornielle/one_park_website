@@ -1,1 +1,11 @@
 # Created by .ignore support plugin (hsz.mobi)
+.idea/workspace.xml
+.idea/vcs.xml
+.idea/php.xml
+.idea/one-park-financial.iml
+.idea/modules.xml
+.idea/misc.xml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/encodings.xml
+.idea/dictionaries
+.idea/$CACHE_FILE$
