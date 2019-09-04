@@ -817,4 +817,3 @@ const app = new Vue({
         }
     }
 });
-//# sourceMappingURL=app.js.map
