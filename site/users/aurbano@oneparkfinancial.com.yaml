@@ -3,3 +3,4 @@ roles:
 first_name: Asael
 last_name: Urbano
 id: 4a5e0563-a1f7-44aa-b088-96f027124c41
+password_hash: $2y$10$kWS4KZ28k5NbvzDKCkWlFuZML9Ai3tRwQ1idHi5VIRNhRZ2bC/c5G
