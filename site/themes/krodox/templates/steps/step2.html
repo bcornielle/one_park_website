@@ -107,7 +107,7 @@
                                             <div class="form-group input-tooltip">
                                                 <input type="date" id="company_started_with_you" name="company_started_with_you"
                                                        class="form-control" placeholder="Operation Date -"
-                                                       value="{{ old:company_started_with_you or company_started_with_you }}" REQUIRED />
+                                                       value="{{ old:company_started_with_you or company_started_with_you }}" REQUIRED max="2019-09-16"/>
                                                 <div class="tooltip-dot" data-toggle="tooltip" data-placement="top"
                                                      title="What date did the business start operating with you as the owner?">?
                                                 </div>
@@ -209,7 +209,7 @@
                                                 <div class="form-group">
                                                     <input type="date" id="company_land_lord_expiration" name="company_land_lord_expiration" class="form-control"
                                                            value="{{ old:company_land_lord_expiration or company_land_lord_expiration }}" maxlength="12"
-                                                           placeholder="Lease Expiration -" />
+                                                           placeholder="Lease Expiration -" max="2019-09-16"/>
                                                 </div>
                                             </div>
                                         </div>
