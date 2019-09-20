@@ -453,7 +453,7 @@ body{
                 transition: all ease .4s;
                 font-size: 1em;
                 font-weight: 900;
-                max-width: 250px;
+                max-width: 350px;
                 &:hover {
                   background-color: darken($brand-primary,10%);
                   transform: translateX(0px) scale(1.05);
@@ -4069,7 +4069,7 @@ body{
             .select-float-label {
               position: relative;
               margin-bottom: 20px;
-              .form-control { 
+              .form-control {
                 color: $form-gray;
               }
               .position-label {
@@ -8608,5 +8608,13 @@ body{
     #error-alert, #success-alert {
       font-size: 1rem;
     }
+  }
+}
+
+
+// Helpers
+@media (max-width: 767px) {
+  .hidden-ns {
+    display: none !important;
   }
 }
