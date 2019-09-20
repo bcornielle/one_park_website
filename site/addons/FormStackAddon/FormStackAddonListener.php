@@ -294,6 +294,16 @@ class FormStackAddonListener extends Listener {
 					return array('errors' => array('Submission Blocked'));
 				}
 			}
+            #region Date Validation
+            $month = $submission->get('time_in_business_month');
+            $year = $submission->get('time_in_business_year');
+            if ($month && $year) {
+                $date = $year. '/' .$month . '/01';
+                if (strtotime($date) > time()) {
+                    return array('errors' => array('In Business Since Field cant be in the future'));
+                }
+            }
+            #endregion
 			$response = $this->api_formstack_form1($submission);
 			if ($response) {
 				session()->flash('form_stack_redirect', $response);
