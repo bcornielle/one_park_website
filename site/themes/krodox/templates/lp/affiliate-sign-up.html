@@ -1,0 +1,355 @@
+<main id="business-funding">
+    {{ if hero === 'dark'}}
+    {{ partial:modules/hero-dark }}
+    {{ /if }}
+    {{ if hero === 'light'}}
+    {{ partial:modules/hero-light }}
+    {{ /if }}
+    {{ if hero === 'default'}}
+        {{ if hero_image }}
+            <section id="hero" class="overlay" style="background-image:url('{{ glide:hero_image width="100%" height="500" fit="crop"}}')!important;">
+        {{ else }}
+        <section id="hero" class="overlay">
+        {{ /if }}
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="description">
+                        <h1>
+                            <div class="what-we-do">{{hero_title}}</div>
+                            <div class="why-we-do-it">{{hero_subtitle}}</div>
+                        </h1>
+                        <h4>{{hero_notice}}</h4>
+                        <ul>
+                            <li>
+                                <img src="/assets/img/leaf.png">
+                                <span>{{overview_text_1}}</span>
+                            </li>
+                            <li>
+                                <img src="/assets/img/leaf.png">
+                                <span>{{overview_text_2}}</span>
+                            </li>
+                            <li>
+                                <img src="/assets/img/leaf.png">
+                                <span>{{overview_text_3}}</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-5">
+                    <div class="lp-form-wrapper fast_capital_360">
+                        <div id="form" class="lp-form">
+                            <div class="phone-header">
+                                <span class="label">Speak to a funding expert</span>
+                                <span class="number">
+                                    <a href="tel:+18883271044">
+                                        <span class="number">1-888-327-1044</span>
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h2>{{form_title}}</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <article class="content">
+                                        {{ form:set is="landing-page" }}
+                                        {{ form:create }}
+                                        <div class="fields">
+                                            <input type="text" name="honeypot" class="honeypot"/>
+                                            <input type="hidden" name="source" value="{{ current_uri }}"/>
+                                            <input type="hidden" name="utm_campaign" value="{{ get:utm_campaign | sanitize }}"/>
+                                            <input type="hidden" name="utm_source" value="{{ get:utm_source | sanitize }}"/>
+                                            <input type="hidden" name="utm_medium" value="{{ get:utm_medium | sanitize }}"/>
+                                            <input type="hidden" name="transaction_id" value="{{ get:transaction_id | sanitize }}"/>
+                                            <div class="form-group">
+                                                <input type="text" name="name" class="form-control" value="{{ old:name }}" placeholder="First & Last Name" required/>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="tel" name="phone" id="phone-number" class="form-control" value="{{ old:phone }}" placeholder="Phone" required/>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="email" name="email" class="form-control" value="{{ old:email }}" placeholder="Email" required/>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="col-md-6">
+                                                    <input type="text" name="business_name" class="form-control" value="{{ old:business_name }}" placeholder="Business Name" required/>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <select name="monthly_revenue" class="form-control" title="Monthly Revenue">
+                                                        <option value="" disabled selected>Gross Monthly Sales</option>
+                                                        <option value="1">Less than $2,500</option>
+                                                        <option value="5000">$2,500 - $7,500</option>
+                                                        <option value="8000">$7,500 - $ 10,000</option>
+                                                        <option value="15000">$10,000 - $25,000</option>
+                                                        <option value="35000">$25,000 - $50,000</option>
+                                                        <option value="75000">$50,000 - $100,000</option>
+                                                        <option value="125000">$100,000 - $750,000</option>
+                                                        <option value="1000000">Over $750,000</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        {{ if form_has_business_bank_account === 'true' }}
+                                                        <div class="label mt-5">Business Bank Account</div>
+                                                        <label for="has_business_bank_account">
+                                                            <select id="has_business_bank_account" name="has_business_bank_account" class="form-control" title="Has Business Bank Account" required>
+                                                                <option value="" selected disabled>Select</option>
+                                                                <option value="No">No</option>
+                                                                <option value="Yes">Yes</option>
+                                                            </select>
+                                                        </label>
+                                                        {{ /if }}
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        {{ if form_active_bankruptcy === 'true' }}
+                                                        <div class="label mt-5">Active Bankruptcy</div>
+                                                        <label for="active_bankruptcy">
+                                                            <select id="active_bankruptcy" name="active_bankruptcy" class="form-control" title="Bankruptcy" required>
+                                                                <option value="" selected disabled>Select</option>
+                                                                <option value="No">No</option>
+                                                                <option value="Yes">Yes</option>
+                                                            </select>
+                                                        </label>
+                                                        {{ /if }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    {{ if form_time_in_business === 'true' }}
+                                                    <div class="col-sm-12">
+                                                        <div class="label">In Business Since</div>
+                                                    </div>
+                                                    <div class="col-sm-8">
+                                                        <label for="time_in_business_month">
+                                                            <select id="time_in_business_month" name="time_in_business_month" class="form-control" title="Time in Business Month" required>
+                                                                <option value="" selected disabled>Month</option>
+                                                                <option value="1">January</option>
+                                                                <option value="2">February</option>
+                                                                <option value="3">March</option>
+                                                                <option value="4">April</option>
+                                                                <option value="5">May</option>
+                                                                <option value="6">June</option>
+                                                                <option value="7">July</option>
+                                                                <option value="8">August</option>
+                                                                <option value="9">September</option>
+                                                                <option value="10">October</option>
+                                                                <option value="11">November</option>
+                                                                <option value="12">December</option>
+                                                            </select>
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <label class="lefty-25" for="time_in_business_year">
+                                                            <select id="time_in_business_year" name="time_in_business_year" class="form-control" title="Time in Business Year" required>
+                                                                <option value="" selected disabled>Year</option>
+                                                                {{ loop from="2019" to="1970" }}
+                                                                <option value="{{ value }}">{{ value }}</option>
+                                                                {{ /loop }}
+                                                            </select>
+                                                        </label>
+                                                    </div>
+                                                    {{ /if }}
+                                                </div>
+                                            </div>
+                                            {{ if {form:success} }}
+                                            {{ form_submission }}
+                                            {{ /if }}
+                                        </div>
+                                        <button class="btn btn-primary">{{form_button_text}}</button>
+                                        {{ if errors }}
+                                        <div id="error-alert">
+                                            {{ errors }}
+                                            {{ value }}<br>
+                                            {{ /errors }}
+                                        </div>
+                                        {{ /if }}
+                                        {{ /form:create }}
+                                        {{ /form:set }}
+                                        <ul>
+                                            <li>
+                                                {{ form_disclaimer }}
+                                            </li>
+                                            <li>
+                                                <div class="bbb-accredited">
+                                                    <img src="/assets/img/bbb_accredited.svg">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-1"></div>
+            </div>
+        </div>
+    </section>
+    {{ /if }}
+    <section id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Get Qualified in Minutes & Funded in Days.</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="tabs">
+                    <div class="col-lg-8 tab-descriptions">
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-1" role="tabpanel" aria-labelledby="nav-1-tab">
+                                <p>You need funding to grow your business to the next level, or to meet critical
+                                    obligations. But you may not want to wait for a bank business loan to be approved, or –
+                                    like many small or mid-sized businesses, you may not easily qualify for traditional
+                                    business loan offerings. Don’t worry, we’re here to help.</p>
+                                <p>One Park Financial believes that your business should have ready access to working
+                                    capital, just like big corporations do. So, we pair you with funders that focus on
+                                    working with small and mid-sized businesses, and are happy to work with people who may
+                                    not have a perfect credit score.</p>
+                            </div>
+                            <div class="tab-pane fade" id="nav-2" role="tabpanel" aria-labelledby="nav-2-tab">
+                                <p>Contact us now for a pre-qualification assessment. We’ll work with you to help find the
+                                    funding that your business needs, even if you do not qualify for a traditional bank
+                                    loan. We’ll need you to share a few documents that confirm your identity and business
+                                    specifics. You do need to be a U.S. citizen, a resident of any of the fifty states or
+                                    Puerto Rico, who owns a U.S.-based business. And you need to have been in business for
+                                    three months or more, with monthly revenues of at least $5,000.</p>
+                            </div>
+                            <div class="tab-pane fade" id="nav-3" role="tabpanel" aria-labelledby="nav-3-tab">
+                                <p>Your business success determines the amount of working capital amount that we can help
+                                    you to access. No need to pledge your assets - personal or business - to secure funding.
+                                    Instead, we’ll review your basic business information, and help you connect with the
+                                    funding sources that best meet your needs.</p>
+                            </div>
+                            <div class="tab-pane fade" id="nav-4" role="tabpanel" aria-labelledby="nav-4-tab">
+                                <p>We can help you connect with funding sources that work with small business owners who
+                                    have lower-than-ideal credit scores. Get started with a pre-qualification assessment
+                                    now, and let us help you access the working capital you need. It’s a quick, easy and
+                                    painless process, to get started just click the “Get Funding Now” button.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 tab-headings">
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-1-tab" data-toggle="tab" href="#nav-1"
+                                   role="tab" aria-controls="nav-1" aria-selected="true">
+                                    <i class="far fa-clock"></i>
+                                    <span>Approval in Hours</span>
+                                </a>
+                                <a class="nav-item nav-link" id="nav-2-tab" data-toggle="tab" href="#nav-2" role="tab"
+                                   aria-controls="nav-2" aria-selected="false">
+                                    <i class="fas fa-file-signature"></i>
+                                    <span>Minimal Documentation</span>
+                                </a>
+                                <a class="nav-item nav-link" id="nav-3-tab" data-toggle="tab" href="#nav-3" role="tab"
+                                   aria-controls="nav-3" aria-selected="false">
+                                    <i class="far fa-edit"></i>
+                                    <span>Collateral Not Required</span>
+                                </a>
+                                <a class="nav-item nav-link" id="nav-4-tab" data-toggle="tab" href="#nav-4" role="tab"
+                                   aria-controls="nav-4" aria-selected="false">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>
+                                Bad Credit, No Problem
+                            </span>
+                                </a>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="table-wrapper classic">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th class="text-right hidden" width="auto">
+                                    <span>The One Park Advantage</span>
+                                </th>
+                                <th class="text-center" width="150">
+                                    <a href="javascript:void(0)" class="branding logo">One Park Financial</a>
+                                </th>
+                                <th class="text-center" width="150">
+                                    Alternative Lenders
+                                </th>
+                                <th class="text-center" width="150">
+                                    Most Banks
+                                </th>
+                                <th class="text-center" width="150">
+                                    Credit Cards
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="odd">
+                                <td class="text-right">Qualification decisions in under 24 hours</td>
+                                <td class="text-center"><i class="fas fa-check"></i></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                            </tr>
+                            <tr>
+                                <td class="text-right">Low Competitive Rates</td>
+                                <td class="text-center"><i class="fas fa-check"></i></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"><i class="fas fa-check"></i></td>
+                                <td class="text-center"><i class="fas fa-check"></i></td>
+                            </tr>
+                            <tr class="odd">
+                                <td class="text-right">Minimal Documentation</td>
+                                <td class="text-center"><i class="fas fa-check"></i></td>
+                                <td class="text-center"><i class="fas fa-check"></i></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                            </tr>
+                            <tr>
+                                <td class="text-right">Funding in as little as 72 hours</td>
+                                <td class="text-center"><i class="fas fa-check"></i></td>
+                                <td class="text-center"><i class="fas fa-check"></i></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                            </tr>
+                            <tr class="odd">
+                                <td class="text-right">Banking and Tax Liens Accepted</td>
+                                <td class="text-center"><i class="fas fa-check"></i></td>
+                                <td class="text-center"><i class="fas fa-check"></i></td>
+                                <td class="text-center"><i class="fas fa-check"></i></td>
+                                <td class="text-center"><i class="fas fa-check"></i></td>
+                            <tr>
+                            <tr>
+                                <td class="text-right">Automated Online Process</td>
+                                <td class="text-center"><i class="fas fa-check"></i></td>
+                                <td class="text-center"><i class="fas fa-check"></i></td>
+                                <td class="text-center"><i class="fas fa-check"></i></td>
+                                <td class="text-center"><i class="fas fa-check"></i></td>
+                            </tr>
+                            <tr class="odd">
+                                <td class="text-right">Values Cash Flow, Not just Credit Score</td>
+                                <td class="text-center"><i class="fas fa-check"></i></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h4>Have you been rejected by the banks or others? We will work with you.</h4>
+                    <a href="#form" class="btn btn-primary">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{ partial:modules/testimonials }}
+</main>

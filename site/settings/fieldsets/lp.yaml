@@ -15,6 +15,7 @@ sections:
           lp/home-page: 'Home Page'
           lp/fast-capital-360: 'Fast Capital 360'
           lp/fast-capital-360-partners: 'Fast Capital 360 With Partners'
+          lp/affiliate-sign-up: 'Affiliate Sign Up'
         type: select
         display: Template
         width: 50
