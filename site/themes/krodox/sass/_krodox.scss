@@ -8664,6 +8664,11 @@ body.affiliate-sign-up {
       letter-spacing: 1px;
       font-weight: 900;
       margin-bottom: 60px;
+      @media (max-width: 991px) {
+        max-width: 558px;
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
   }
 }
@@ -8729,19 +8734,28 @@ body.affiliate-sign-up {
       color: $brand-primary;
       border: 3px solid $brand-primary;
       margin-right: 20px;
+      margin-bottom: 30px;
     }
     li {
-      @include columns(3);
       line-height: 1.5;
+
+      @media (min-width: 992px) {
+        @include columns(3);
+      }
+      @media (max-width: 991px) {
+        @include clearfix;
+      }
     }
   }
 }
 .commissions-aff {
   padding-bottom: 0 !important;
   .container {
-    background: url("../img/aff-commissions-bg.png") center left no-repeat;
-    background-size: contain;
     padding-bottom: 60px;
+    @media (min-width: 992px) {
+      background: url("../img/aff-commissions-bg.png") center left no-repeat;
+      background-size: contain;
+    }
   }
   div[class^="col-"] {
     margin-left: auto;
@@ -8762,14 +8776,18 @@ body.affiliate-sign-up {
 .join-aff {
   padding: 0 !important;
   .container {
-    background: url("../img/aff-join-bg.png") center right no-repeat;
-    background-size: contain;
     padding: 60px 0;
+    @media (min-width: 992px) {
+      background: url("../img/aff-join-bg.png") center right no-repeat;
+      background-size: contain;
+    }
   }
   &.join-aff h2 {
     font-size: 2.3rem;
-    text-align: left;
     margin-bottom: 20px;
+    @media (min-width: 992px) {
+      text-align: left;
+    }
   }
   p {
     padding-right: 30px;
