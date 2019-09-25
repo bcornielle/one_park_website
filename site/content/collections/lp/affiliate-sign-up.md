@@ -1,5 +1,6 @@
 title: 'Affiliate Sign Up'
 template: lp/affiliate-sign-up
+body_class: affiliate-sign-up
 navigation: with-menu
 hero: default
 hero_image: /assets/affiliate-hero.jpg
