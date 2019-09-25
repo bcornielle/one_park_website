@@ -1,5 +1,7 @@
 title: 'Affiliate Sign Up'
 template: lp/affiliate-sign-up
+navigation: with-menu
+hero: default
 hero_image: /assets/affiliate-hero.jpg
 hero_title: 'Lead Generation Affiliate Program'
 hero_subtitle: 'Merchant Cash Advance'
