@@ -3526,7 +3526,7 @@ body{
       nav.apple {
         .nav-wrapper {
           border-bottom: 1px solid $text-green-light;
-          @media (max-width: 767.98px) {
+          @media (min-width: 992px) {
             .burger-container {
               display: none;
             }
@@ -5634,9 +5634,35 @@ body{
     #app {
       > nav {
         &.apple {
+          &.shown {
+            height: 100vh;
+            overflow: auto;
+          }
           .nav-wrapper {
             .burger-container {
-              display: none;
+              display: block;
+            }
+            &.shown {
+              background-color: white;
+              .burger-container {
+                position: absolute;
+              }
+              .menu {
+                padding: 45px;
+                width: 100%;
+                overflow: auto;
+                li {
+                  &:not(:last-child){
+                    border-bottom: 1px solid $border-color;
+                  }
+                  &:last-child {
+                    border-bottom: none;
+                  }
+                }
+              }
+              .container {
+                display: none;
+              }
             }
           }
         }
@@ -6906,10 +6932,6 @@ body{
       }
       > nav {
         &.apple {
-          &.shown {
-            height: 100vh;
-            overflow: auto;
-          }
           .nav-wrapper {
             .burger-container {
               display: block;
@@ -6955,28 +6977,6 @@ body{
                     }
                   }
                 }
-              }
-            }
-            &.shown {
-              background-color: white;
-              .burger-container {
-                position: absolute;
-              }
-              .menu {
-                padding: 45px;
-                width: 100%;
-                overflow: auto;
-                li {
-                  &:not(:last-child){
-                    border-bottom: 1px solid $border-color;
-                  }
-                  &:last-child {
-                    border-bottom: none;
-                  }
-                }
-              }
-              .container {
-                display: none;
               }
             }
           }
@@ -8156,7 +8156,7 @@ body{
               .container {
                 .menus {
                   .navbar-left {
-                    display: none;
+                    // display: none;
                   }
                   .navbar-right {
                     .join-now {
