@@ -1,355 +1,126 @@
-<main id="business-funding">
-    {{ if hero === 'dark'}}
-    {{ partial:modules/hero-dark }}
-    {{ /if }}
-    {{ if hero === 'light'}}
-    {{ partial:modules/hero-light }}
-    {{ /if }}
-    {{ if hero === 'default'}}
-        {{ if hero_image }}
-            <section id="hero" class="overlay" style="background-image:url('{{ glide:hero_image width="100%" height="500" fit="crop"}}')!important;">
-        {{ else }}
-        <section id="hero" class="overlay">
-        {{ /if }}
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-6 col-lg-6">
-                    <div class="description">
-                        <h1>
-                            <div class="what-we-do">{{hero_title}}</div>
-                            <div class="why-we-do-it">{{hero_subtitle}}</div>
-                        </h1>
-                        <h4>{{hero_notice}}</h4>
+    <main>
+        <section id="hero" class="hero-aff" style="background-image:url('{{ glide:hero_image width="100%" height="800" fit="crop"}}');">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-5">
+                            <div class="light-form-wrapper">
+                                <h1>{{hero_title}}</h1>
+                                <h2>{{hero_subtitle}}</h2>
+                                <p>{{hero_notice}}</p>
+
+                                <h3><strong>{{hero_item_1}}</strong></h3>
+
+                                <a class="btn btn-primary" href="#">
+                                    <span>{{form_button_text}}</span>
+                                </a>
+                                <ul class="badgets">
+                                    <li><img src="/assets/img/google-rating.png"></li>
+                                    <li><img src="/assets/img/comodo.png"></li>
+                                    <li><img src="/assets/img/bbbb.png"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-7">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <section class="steps-aff">
+            <div class="container">
+                <h2>How the One Park Affiliate Program Works</h2>
+                <ul>
+                    <li>
+                        <span>1</span>
+                        <strong>Affiliate drives consumers</strong> to
+                        opt-in to receive business funding options/offers.
+                    </li>
+                    <li>
+                        <span>2</span>
+                        <strong>The leads</strong> are taken through our validation process and valid leads track in your account in real-time.
+                    </li>
+                    <li>
+                        <span>3</span>
+                        <strong>A funding expert</strong> contacts the merchant or business to provide funding options.
+                    </li>
+                </ul>
+
+                <div class="text-center">
+                    <a class="btn btn-primary" href="#">
+                        <span>Join Today</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="commissions-aff">
+            <h2>Start Earning Top Commissions with One Park Financial</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
                         <ul>
                             <li>
-                                <img src="/assets/img/leaf.png">
-                                <span>{{overview_text_1}}</span>
+                                <h3>Competitive Commissions</h3>
+                                Available in all 50 states
                             </li>
                             <li>
-                                <img src="/assets/img/leaf.png">
-                                <span>{{overview_text_2}}</span>
+                                <h3>Dedicated Account Managers</h3>
+                                Help to assist with campaign integration and management
                             </li>
                             <li>
-                                <img src="/assets/img/leaf.png">
-                                <span>{{overview_text_3}}</span>
+                                <h3>Optimized Creatives</h3>
+                                Transparent performance feedback
+                            </li>
+                            <li>
+                                <h3>High Converting Web Forms</h3>
+                                Allow you to get every possible lead from your traffic
+                            </li>
+                            <li>
+                                <h3>24/7 Access</h3>
+                                Real-time reporting and timely support
+                            </li>
+                            <li>
+                                <h3>On-time Payments</h3>
+                                from a reputable organization, A+ Better Business Bureau rating
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-5">
-                    <div class="lp-form-wrapper fast_capital_360">
-                        <div id="form" class="lp-form">
-                            <div class="phone-header">
-                                <span class="label">Speak to a funding expert</span>
-                                <span class="number">
-                                    <a href="tel:+18883271044">
-                                        <span class="number">1-888-327-1044</span>
-                                    </a>
-                                </span>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <h2>{{form_title}}</h2>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <article class="content">
-                                        {{ form:set is="landing-page" }}
-                                        {{ form:create }}
-                                        <div class="fields">
-                                            <input type="text" name="honeypot" class="honeypot"/>
-                                            <input type="hidden" name="source" value="{{ current_uri }}"/>
-                                            <input type="hidden" name="utm_campaign" value="{{ get:utm_campaign | sanitize }}"/>
-                                            <input type="hidden" name="utm_source" value="{{ get:utm_source | sanitize }}"/>
-                                            <input type="hidden" name="utm_medium" value="{{ get:utm_medium | sanitize }}"/>
-                                            <input type="hidden" name="transaction_id" value="{{ get:transaction_id | sanitize }}"/>
-                                            <div class="form-group">
-                                                <input type="text" name="name" class="form-control" value="{{ old:name }}" placeholder="First & Last Name" required/>
-                                            </div>
-                                            <div class="form-group">
-                                                <input type="tel" name="phone" id="phone-number" class="form-control" value="{{ old:phone }}" placeholder="Phone" required/>
-                                            </div>
-                                            <div class="form-group">
-                                                <input type="email" name="email" class="form-control" value="{{ old:email }}" placeholder="Email" required/>
-                                            </div>
-                                            <div class="form-row">
-                                                <div class="col-md-6">
-                                                    <input type="text" name="business_name" class="form-control" value="{{ old:business_name }}" placeholder="Business Name" required/>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <select name="monthly_revenue" class="form-control" title="Monthly Revenue">
-                                                        <option value="" disabled selected>Gross Monthly Sales</option>
-                                                        <option value="1">Less than $2,500</option>
-                                                        <option value="5000">$2,500 - $7,500</option>
-                                                        <option value="8000">$7,500 - $ 10,000</option>
-                                                        <option value="15000">$10,000 - $25,000</option>
-                                                        <option value="35000">$25,000 - $50,000</option>
-                                                        <option value="75000">$50,000 - $100,000</option>
-                                                        <option value="125000">$100,000 - $750,000</option>
-                                                        <option value="1000000">Over $750,000</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="row">
-                                                    <div class="col-sm-6">
-                                                        {{ if form_has_business_bank_account === 'true' }}
-                                                        <div class="label mt-5">Business Bank Account</div>
-                                                        <label for="has_business_bank_account">
-                                                            <select id="has_business_bank_account" name="has_business_bank_account" class="form-control" title="Has Business Bank Account" required>
-                                                                <option value="" selected disabled>Select</option>
-                                                                <option value="No">No</option>
-                                                                <option value="Yes">Yes</option>
-                                                            </select>
-                                                        </label>
-                                                        {{ /if }}
-                                                    </div>
-                                                    <div class="col-sm-6">
-                                                        {{ if form_active_bankruptcy === 'true' }}
-                                                        <div class="label mt-5">Active Bankruptcy</div>
-                                                        <label for="active_bankruptcy">
-                                                            <select id="active_bankruptcy" name="active_bankruptcy" class="form-control" title="Bankruptcy" required>
-                                                                <option value="" selected disabled>Select</option>
-                                                                <option value="No">No</option>
-                                                                <option value="Yes">Yes</option>
-                                                            </select>
-                                                        </label>
-                                                        {{ /if }}
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="row">
-                                                    {{ if form_time_in_business === 'true' }}
-                                                    <div class="col-sm-12">
-                                                        <div class="label">In Business Since</div>
-                                                    </div>
-                                                    <div class="col-sm-8">
-                                                        <label for="time_in_business_month">
-                                                            <select id="time_in_business_month" name="time_in_business_month" class="form-control" title="Time in Business Month" required>
-                                                                <option value="" selected disabled>Month</option>
-                                                                <option value="1">January</option>
-                                                                <option value="2">February</option>
-                                                                <option value="3">March</option>
-                                                                <option value="4">April</option>
-                                                                <option value="5">May</option>
-                                                                <option value="6">June</option>
-                                                                <option value="7">July</option>
-                                                                <option value="8">August</option>
-                                                                <option value="9">September</option>
-                                                                <option value="10">October</option>
-                                                                <option value="11">November</option>
-                                                                <option value="12">December</option>
-                                                            </select>
-                                                        </label>
-                                                    </div>
-                                                    <div class="col-sm-4">
-                                                        <label class="lefty-25" for="time_in_business_year">
-                                                            <select id="time_in_business_year" name="time_in_business_year" class="form-control" title="Time in Business Year" required>
-                                                                <option value="" selected disabled>Year</option>
-                                                                {{ loop from="2019" to="1970" }}
-                                                                <option value="{{ value }}">{{ value }}</option>
-                                                                {{ /loop }}
-                                                            </select>
-                                                        </label>
-                                                    </div>
-                                                    {{ /if }}
-                                                </div>
-                                            </div>
-                                            {{ if {form:success} }}
-                                            {{ form_submission }}
-                                            {{ /if }}
-                                        </div>
-                                        <button class="btn btn-primary">{{form_button_text}}</button>
-                                        {{ if errors }}
-                                        <div id="error-alert">
-                                            {{ errors }}
-                                            {{ value }}<br>
-                                            {{ /errors }}
-                                        </div>
-                                        {{ /if }}
-                                        {{ /form:create }}
-                                        {{ /form:set }}
-                                        <ul>
-                                            <li>
-                                                {{ form_disclaimer }}
-                                            </li>
-                                            <li>
-                                                <div class="bbb-accredited">
-                                                    <img src="/assets/img/bbb_accredited.svg">
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </article>
-                                </div>
-                            </div>
-                        </div>
+            </div>
+        </section>
+        <section class="join-aff">
+            <div class="container">
+                <div class="col-sm-6">
+                    <h2>Join Our Affiliate Program</h2>
+
+                    <p>One Park Financial provides affiliate partners with flexible
+                        options that enable our affiliate partners to grow. We want
+                        to be your partner in success!</p>
+
+                    <p><a href="#">Contact Us Today</a> to learn more about our affiliate program
+                        and how you can start earning top commissions today!</p>
+
+                    <ul>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 47"><defs><style>.cls-1,.cls-2,.cls-3{fill:none;stroke:#53a73d;stroke-width:2px;}.cls-1,.cls-2{stroke-linejoin:round;}.cls-2{stroke-linecap:round;}.cls-3{stroke-miterlimit:10;}</style></defs><title>Asset 1</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><line class="cls-1" x1="23" x2="23" y2="9"/><line class="cls-1" x1="7" y1="7" x2="13.1" y2="13.1"/><line class="cls-1" y1="23" x2="9" y2="23"/><line class="cls-1" x1="7" y1="39" x2="13.1" y2="32.9"/><polyline class="cls-1" points="24 46 21 46 20 45 19 45"/><line class="cls-1" x1="17" y1="39" x2="24" y2="39"/><line class="cls-1" x1="17" y1="42" x2="24" y2="42"/><path class="cls-1" d="M18,37V35a6.66,6.66,0,0,0-1.88-4.75A10.12,10.12,0,0,1,13,23,10,10,0,0,1,23,13h1"/><line class="cls-1" x1="16.11" y1="6.37" x2="17.64" y2="10.07"/><line class="cls-1" x1="6.37" y1="16.11" x2="10.07" y2="17.64"/><line class="cls-1" x1="6.37" y1="29.89" x2="10.07" y2="28.36"/><line class="cls-1" x1="28" y1="25" x2="28" y2="47"/><line class="cls-1" x1="32" y1="34" x2="32" y2="47"/><path class="cls-2" d="M32,20H28c-2.81,0-4,2.06-4,5v7a3,3,0,0,0,3,3h1"/><line class="cls-1" x1="36" y1="25" x2="36" y2="47"/><path class="cls-2" d="M32,20h4c2.81,0,4,2.06,4,5v7a3,3,0,0,1-3,3H36"/><path class="cls-3" d="M36,13a4,4,0,1,1-4-4,4,4,0,0,1,4,4Z"/></g></g></svg>
+                            <span>Join.</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46.31 44.38"><defs><style>.cls-1{fill:none;stroke:#53a73d;stroke-miterlimit:10;stroke-width:1.93px;}</style></defs><title>Asset 2</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M20.26,10.61V8.68a1.94,1.94,0,0,1,1.93-1.93H43.42a1.94,1.94,0,0,1,1.93,1.93V27A1.94,1.94,0,0,1,43.42,29H41.49v5.78a1,1,0,0,1-1.6.73L33.77,29H29.91"/><path class="cls-1" d="M12.17,25.09a3.09,3.09,0,0,1-.59-1.82,2.9,2.9,0,1,1,5.79,0c0,2.44-2.9,3.08-2.9,4.71v1.93"/><line class="cls-1" x1="14.47" y1="30.88" x2="14.47" y2="32.8"/><line class="cls-1" x1="32.8" y1="11.58" x2="32.8" y2="20.26"/><line class="cls-1" x1="32.8" y1="22.19" x2="32.8" y2="24.12"/><line class="cls-1" x1="16.4" x2="16.4" y2="3.86"/><line class="cls-1" x1="10.61" y1="1.93" x2="13.51" y2="4.82"/><line class="cls-1" x1="8.68" y1="7.72" x2="12.54" y2="7.72"/><path class="cls-1" d="M14.47,12.54A13.27,13.27,0,0,0,1,25.57a12.77,12.77,0,0,0,3.88,9.12v7.8a1,1,0,0,0,1.69.68L12,38.36a13.76,13.76,0,0,0,2.5.23A13.27,13.27,0,0,0,28,25.57a13.27,13.27,0,0,0-13.51-13Z"/></g></g></svg>
+                            <span>Advertise.</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39.16 46.96"><defs><style>.cls-1{fill:none;stroke:#53a73d;stroke-linejoin:round;stroke-width:2px;}</style></defs><title>Asset 3</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M8.82,13.71v.39a1.8,1.8,0,0,0,2,1.57h2a1.8,1.8,0,0,0,2-1.57v-.43a1.65,1.65,0,0,0-1.34-1.49l-3.19-.85A1.64,1.64,0,0,1,8.82,9.85V9.41a1.8,1.8,0,0,1,2-1.56h2a1.8,1.8,0,0,1,2,1.56V9.8"/><line class="cls-1" x1="11.76" y1="7.85" x2="11.76" y2="4.91"/><line class="cls-1" x1="11.76" y1="15.67" x2="11.76" y2="18.6"/><path class="cls-1" d="M22.51,11.76A10.76,10.76,0,1,1,11.76,1,10.75,10.75,0,0,1,22.51,11.76Z"/><polyline class="cls-1" points="31.31 46.96 31.31 45.01 27.4 41.09 22.51 41.09 19.58 38.16 16.65 40.12 13.71 40.12 9.8 43.05 4.91 43.05 1.98 45.01 1.98 46.96"/><path class="cls-1" d="M15.67,21.54a12.44,12.44,0,0,1,3.91,9.77v6.85"/><path class="cls-1" d="M11.76,34.25h4.89A6.85,6.85,0,0,0,9.8,27.4H4.91a6.85,6.85,0,0,0,6.85,6.85Z"/><path class="cls-1" d="M29.36,28.38H22.51a8.6,8.6,0,0,1,8.8-8.8h6.85a8.6,8.6,0,0,1-8.8,8.8Z"/></g></g></svg>
+                            <span>Earn.</span>
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <a class="btn btn-primary" href="#">
+                            <span>Get Started Today</span>
+                        </a>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-12 col-lg-1"></div>
-            </div>
-        </div>
-    </section>
-    {{ /if }}
-    <section id="features">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>Get Qualified in Minutes & Funded in Days.</h2>
+                <div class="col-sm-6">
+
                 </div>
             </div>
-            <div class="row">
-                <div class="tabs">
-                    <div class="col-lg-8 tab-descriptions">
-                        <div class="tab-content" id="nav-tabContent">
-                            <div class="tab-pane fade show active" id="nav-1" role="tabpanel" aria-labelledby="nav-1-tab">
-                                <p>You need funding to grow your business to the next level, or to meet critical
-                                    obligations. But you may not want to wait for a bank business loan to be approved, or –
-                                    like many small or mid-sized businesses, you may not easily qualify for traditional
-                                    business loan offerings. Don’t worry, we’re here to help.</p>
-                                <p>One Park Financial believes that your business should have ready access to working
-                                    capital, just like big corporations do. So, we pair you with funders that focus on
-                                    working with small and mid-sized businesses, and are happy to work with people who may
-                                    not have a perfect credit score.</p>
-                            </div>
-                            <div class="tab-pane fade" id="nav-2" role="tabpanel" aria-labelledby="nav-2-tab">
-                                <p>Contact us now for a pre-qualification assessment. We’ll work with you to help find the
-                                    funding that your business needs, even if you do not qualify for a traditional bank
-                                    loan. We’ll need you to share a few documents that confirm your identity and business
-                                    specifics. You do need to be a U.S. citizen, a resident of any of the fifty states or
-                                    Puerto Rico, who owns a U.S.-based business. And you need to have been in business for
-                                    three months or more, with monthly revenues of at least $5,000.</p>
-                            </div>
-                            <div class="tab-pane fade" id="nav-3" role="tabpanel" aria-labelledby="nav-3-tab">
-                                <p>Your business success determines the amount of working capital amount that we can help
-                                    you to access. No need to pledge your assets - personal or business - to secure funding.
-                                    Instead, we’ll review your basic business information, and help you connect with the
-                                    funding sources that best meet your needs.</p>
-                            </div>
-                            <div class="tab-pane fade" id="nav-4" role="tabpanel" aria-labelledby="nav-4-tab">
-                                <p>We can help you connect with funding sources that work with small business owners who
-                                    have lower-than-ideal credit scores. Get started with a pre-qualification assessment
-                                    now, and let us help you access the working capital you need. It’s a quick, easy and
-                                    painless process, to get started just click the “Get Funding Now” button.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 tab-headings">
-                        <nav>
-                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                <a class="nav-item nav-link active" id="nav-1-tab" data-toggle="tab" href="#nav-1"
-                                   role="tab" aria-controls="nav-1" aria-selected="true">
-                                    <i class="far fa-clock"></i>
-                                    <span>Approval in Hours</span>
-                                </a>
-                                <a class="nav-item nav-link" id="nav-2-tab" data-toggle="tab" href="#nav-2" role="tab"
-                                   aria-controls="nav-2" aria-selected="false">
-                                    <i class="fas fa-file-signature"></i>
-                                    <span>Minimal Documentation</span>
-                                </a>
-                                <a class="nav-item nav-link" id="nav-3-tab" data-toggle="tab" href="#nav-3" role="tab"
-                                   aria-controls="nav-3" aria-selected="false">
-                                    <i class="far fa-edit"></i>
-                                    <span>Collateral Not Required</span>
-                                </a>
-                                <a class="nav-item nav-link" id="nav-4-tab" data-toggle="tab" href="#nav-4" role="tab"
-                                   aria-controls="nav-4" aria-selected="false">
-                                    <i class="fas fa-check-circle"></i>
-                                    <span>
-                                Bad Credit, No Problem
-                            </span>
-                                </a>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="table-wrapper classic">
-                        <table class="table">
-                            <thead>
-                            <tr>
-                                <th class="text-right hidden" width="auto">
-                                    <span>The One Park Advantage</span>
-                                </th>
-                                <th class="text-center" width="150">
-                                    <a href="javascript:void(0)" class="branding logo">One Park Financial</a>
-                                </th>
-                                <th class="text-center" width="150">
-                                    Alternative Lenders
-                                </th>
-                                <th class="text-center" width="150">
-                                    Most Banks
-                                </th>
-                                <th class="text-center" width="150">
-                                    Credit Cards
-                                </th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr class="odd">
-                                <td class="text-right">Qualification decisions in under 24 hours</td>
-                                <td class="text-center"><i class="fas fa-check"></i></td>
-                                <td class="text-center"></td>
-                                <td class="text-center"></td>
-                                <td class="text-center"></td>
-                            </tr>
-                            <tr>
-                                <td class="text-right">Low Competitive Rates</td>
-                                <td class="text-center"><i class="fas fa-check"></i></td>
-                                <td class="text-center"></td>
-                                <td class="text-center"><i class="fas fa-check"></i></td>
-                                <td class="text-center"><i class="fas fa-check"></i></td>
-                            </tr>
-                            <tr class="odd">
-                                <td class="text-right">Minimal Documentation</td>
-                                <td class="text-center"><i class="fas fa-check"></i></td>
-                                <td class="text-center"><i class="fas fa-check"></i></td>
-                                <td class="text-center"></td>
-                                <td class="text-center"></td>
-                            </tr>
-                            <tr>
-                                <td class="text-right">Funding in as little as 72 hours</td>
-                                <td class="text-center"><i class="fas fa-check"></i></td>
-                                <td class="text-center"><i class="fas fa-check"></i></td>
-                                <td class="text-center"></td>
-                                <td class="text-center"></td>
-                            </tr>
-                            <tr class="odd">
-                                <td class="text-right">Banking and Tax Liens Accepted</td>
-                                <td class="text-center"><i class="fas fa-check"></i></td>
-                                <td class="text-center"><i class="fas fa-check"></i></td>
-                                <td class="text-center"><i class="fas fa-check"></i></td>
-                                <td class="text-center"><i class="fas fa-check"></i></td>
-                            <tr>
-                            <tr>
-                                <td class="text-right">Automated Online Process</td>
-                                <td class="text-center"><i class="fas fa-check"></i></td>
-                                <td class="text-center"><i class="fas fa-check"></i></td>
-                                <td class="text-center"><i class="fas fa-check"></i></td>
-                                <td class="text-center"><i class="fas fa-check"></i></td>
-                            </tr>
-                            <tr class="odd">
-                                <td class="text-right">Values Cash Flow, Not just Credit Score</td>
-                                <td class="text-center"><i class="fas fa-check"></i></td>
-                                <td class="text-center"></td>
-                                <td class="text-center"></td>
-                                <td class="text-center"></td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h4>Have you been rejected by the banks or others? We will work with you.</h4>
-                    <a href="#form" class="btn btn-primary">Get Started</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    {{ partial:modules/testimonials }}
+        </section>
 </main>
