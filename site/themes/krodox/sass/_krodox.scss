@@ -8658,6 +8658,12 @@ body.affiliate-sign-up {
           transform: translateX(0px) scale(1.05);
         }
       }
+      h2 {
+        padding: 0 25px;
+        @media (max-width: 767px) {
+          font-size: 1.5rem;
+        }
+      }
     }
     h2 {
       text-align: center;
@@ -8668,6 +8674,12 @@ body.affiliate-sign-up {
         max-width: 558px;
         margin-left: auto;
         margin-right: auto;
+      }
+    }
+    .container {
+      @media (max-width: 480px) {
+        padding-left: 25px;
+        padding-right: 25px;
       }
     }
   }
@@ -8682,6 +8694,9 @@ body.affiliate-sign-up {
     line-height: 1.2;
     margin: 0;
     letter-spacing: -2px;
+    @media (max-width: 480px) {
+      font-size: 2.2rem;
+    }
   }
   h2 {
     display: inline-block;
@@ -8690,11 +8705,23 @@ body.affiliate-sign-up {
     font-weight: 400 !important;
     padding-bottom: 20px;
     border-bottom: 5px solid #162c4e;
+    @media (max-width: 991px) {
+      text-align: left !important;
+    }
+    @media (max-width: 767px) {
+      padding: 0 0 20px !important;
+    }
+    @media (max-width: 480px) {
+      font-size: 1.3rem !important;
+    }
   }
   h3 {
     color: #323831;
     font-size: 1.2rem;
     letter-spacing: -1px;
+    @media (max-width: 480px) {
+      font-size: 1.1rem;
+    }
   }
   p {
     margin-bottom: 20px !important;
@@ -8711,15 +8738,25 @@ body.affiliate-sign-up {
     justify-content: space-between;
     align-items: center;
     padding: 30px 0 0;
+    @media (max-width: 480px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
     li {
       text-align: center;
+      @media (max-width: 480px) {
+        text-align: left;
+        width: 50%;
+        &:last-child {
+          margin-top: 20px;
+        }
+      }
     }
     img {
       max-width: 110px;
     }
   }
 }
-
 .steps-aff {
   ul {
     margin-bottom: 40px;
@@ -8767,6 +8804,9 @@ body.affiliate-sign-up {
       color: $brand-primary;
       font-weight: 600;
       font-size: 1.5rem;
+      @media (max-width: 480px) {
+        font-size: 1.2rem;
+      }
     }
     &:not(:last-child) {
       margin-bottom: 30px;
@@ -8781,23 +8821,34 @@ body.affiliate-sign-up {
       background: url("../img/aff-join-bg.png") center right no-repeat;
       background-size: contain;
     }
+    @media (max-width: 767px) {
+      text-align: center;
+    }
   }
   &.join-aff h2 {
     font-size: 2.3rem;
     margin-bottom: 20px;
+    padding: 0 !important;
     @media (min-width: 992px) {
       text-align: left;
     }
+    @media (max-width: 767px) {
+      font-size: 1.8rem;
+    }
   }
   p {
-    padding-right: 30px;
+    @media (min-width: 768px) {
+      padding-right: 30px;
+    }
     a {
       color: $brand-primary;
     }
   }
   ul {
-    width: 70%;
     margin: 20px auto 40px;
+    @media (min-width: 768px) {
+      width: 70%;
+    }
   }
   li {
     @include columns(3);
