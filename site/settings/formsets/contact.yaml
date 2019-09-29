@@ -18,7 +18,7 @@ fields:
     display: 'Business Name'
     validate: 'required|min:2'
   ip:
-    display: 'IP'
+    display: IP
 columns:
   - lead_id
   - firstname
@@ -28,4 +28,4 @@ columns:
 metrics:
   -
     type: total
-    label: 'Total Responses'
+    label: 'Total Submissions'
