@@ -1,4 +1,4 @@
-title: 'Business Loans Today - 2'
+title: 'Business Loans Today'
 template: lp/fast-capital-360
 body_class: home-page
 navigation: with-empty-menu
