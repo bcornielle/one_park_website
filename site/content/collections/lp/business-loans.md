@@ -1,7 +1,7 @@
 title: 'Business Loans & Other Funding Options'
 template: lp/fast-capital-360
 body_class: home-page
-navigation: with-menu
+navigation: with-empty-menu
 hero: light
 hero_image: /assets/img/untitled-design-min.png
 hero_title: 'Business Loans & </br>Other Funding Options'
