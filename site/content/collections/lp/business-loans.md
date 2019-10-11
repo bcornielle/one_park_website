@@ -1,5 +1,5 @@
 title: 'Business Loans & Other Funding Options'
-template: lp/fast-capital-360
+template: lp/affiliate-sign-up
 body_class: home-page
 navigation: with-menu
 hero: light
