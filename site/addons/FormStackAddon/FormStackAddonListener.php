@@ -95,6 +95,9 @@ class FormStackAddonListener extends Listener {
                     if ($submission->get('gclid')){
                         $previous->set('gclid',$submission->get('gclid'));
                     }
+                    if ($submission->get('aff_sub')){
+                        $previous->set('aff_sub',$submission->get('aff_sub'));
+                    }
                     if ($submission->get('msclkid')){
                         $previous->set('msclkid',$submission->get('msclkid'));
                     }
@@ -565,6 +568,15 @@ class FormStackAddonListener extends Listener {
                 }
             }
             $params['msclkid'] = $msclkid;
+            $aff_sub = null;
+            if (isset($_COOKIE['aff_sub'])) {
+                $aff_sub = $_COOKIE['aff_sub'];
+            }else{
+                if ($submission->get('aff_sub')){
+                    $aff_sub = $submission->get('aff_sub');
+                }
+            }
+            $params['aff_sub'] = $aff_sub;
 			$medium = null;
 			if (isset($_COOKIE['Visitor_Medium__c']) || isset($_COOKIE['utm_medium'])) {
 				$medium = ($_COOKIE['Visitor_Medium__c']) ? $_COOKIE['Visitor_Medium__c'] : $_COOKIE['utm_medium'] ;
@@ -659,6 +671,15 @@ class FormStackAddonListener extends Listener {
 				}
 			}
 			$params['utm_source'] = $source;
+            $aff_sub = null;
+            if (isset($_COOKIE['aff_sub'])) {
+                $aff_sub = $_COOKIE['aff_sub'] ;
+            }else{
+                if ($submission->get('aff_sub')){
+                    $aff_sub = $submission->get('aff_sub');
+                }
+            }
+            $params['aff_sub'] = $aff_sub;
 			$medium = null;
 			if (isset($_COOKIE['Visitor_Medium__c'])) {
 				$medium = $_COOKIE['Visitor_Medium__c'] ;

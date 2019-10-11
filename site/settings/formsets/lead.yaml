@@ -127,6 +127,8 @@ fields:
       display: 'company_owner2_address_zip'
   utm_source:
     display: 'utm_source'
+  aff_sub:
+    display: 'aff_sub'
   utm_campaign:
     display: 'utm_campaign'
   utm_medium:
