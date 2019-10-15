@@ -1,4 +1,4 @@
-title: 'Business Funding Today'
+title: 'Business Funding Now'
 template: lp/fast-capital-360
 body_class: home-page
 navigation: with-empty-menu
@@ -21,6 +21,6 @@ overview_icon_2: 'far fa-clock'
 overview_text_2: 'PRE-QUALIFIED IN MINUTES'
 overview_icon_3: 'fas fa-dollar-sign'
 overview_text_3: 'FUNDED IN AS  LITTLE AS 72 HOURS</br></br>'
-meta_title: 'Business Funding Today'
-meta_description: 'Business Funding Today'
+meta_title: 'Business Funding Now'
+meta_description: 'Business Funding Now'
 id: 3f595221-95e5-47c9-9dff-d76d213370ac
