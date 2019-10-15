@@ -98,6 +98,9 @@ class FormStackAddonListener extends Listener {
                     if ($submission->get('aff_sub')){
                         $previous->set('aff_sub',$submission->get('aff_sub'));
                     }
+                    if ($submission->get('aff_sub2')){
+                        $previous->set('aff_sub2',$submission->get('aff_sub2'));
+                    }
                     if ($submission->get('msclkid')){
                         $previous->set('msclkid',$submission->get('msclkid'));
                     }
@@ -577,6 +580,15 @@ class FormStackAddonListener extends Listener {
                 }
             }
             $params['aff_sub'] = $aff_sub;
+            $aff_sub2 = null;
+            if (isset($_COOKIE['aff_sub2'])) {
+                $aff_sub2 = $_COOKIE['aff_sub2'];
+            }else{
+                if ($submission->get('aff_sub2')){
+                    $aff_sub2 = $submission->get('aff_sub2');
+                }
+            }
+            $params['aff_sub2'] = $aff_sub2;
 			$medium = null;
 			if (isset($_COOKIE['Visitor_Medium__c']) || isset($_COOKIE['utm_medium'])) {
 				$medium = ($_COOKIE['Visitor_Medium__c']) ? $_COOKIE['Visitor_Medium__c'] : $_COOKIE['utm_medium'] ;
@@ -680,7 +692,16 @@ class FormStackAddonListener extends Listener {
                 }
             }
             $params['aff_sub'] = $aff_sub;
-			$medium = null;
+            $aff_sub2 = null;
+            if (isset($_COOKIE['aff_sub2'])) {
+                $aff_sub2 = $_COOKIE['aff_sub2'] ;
+            }else{
+                if ($submission->get('aff_sub2')){
+                    $aff_sub2 = $submission->get('aff_sub2');
+                }
+            }
+            $params['aff_sub2'] = $aff_sub2;
+            $medium = null;
 			if (isset($_COOKIE['Visitor_Medium__c'])) {
 				$medium = $_COOKIE['Visitor_Medium__c'] ;
 			}else{
@@ -909,6 +930,16 @@ class FormStackAddonListener extends Listener {
 			}
 		}
 		$params['gclid_google_click_identifier'] = $aff_id;
+		//aff_sub
+        $aff_sub = null;
+        if (isset($_COOKIE['aff_sub'])) {
+            $aff_sub = $_COOKIE['aff_sub'];
+        }else{
+            if ($submission->get('aff_sub')){
+                $aff_sub = $submission->get('aff_sub');
+            }
+        }
+        $params['aff_sub'] = $aff_sub;
 		//month & Year
 		$month = $submission->get('time_in_business_month');
 		$year = $submission->get('time_in_business_year');
