@@ -939,7 +939,7 @@ class FormStackAddonListener extends Listener {
                 $aff_sub = $submission->get('aff_sub');
             }
         }
-        $params['Affiliate_Sub__c'] = $aff_sub;
+        $params['affiliate_sub__c'] = $aff_sub;
         $params['reengagement'] = date('m/d/Y h:i A');
 		//month & Year
 		$month = $submission->get('time_in_business_month');
