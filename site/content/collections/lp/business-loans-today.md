@@ -4,8 +4,8 @@ body_class: home-page
 navigation: with-empty-menu
 hero: light
 hero_image: /assets/img/untitled-design-min.png
-hero_title: 'Business Loans & </br>Other Funding Options'
-hero_subtitle: '</br>Get $5,000 - $750,000 FAST'
+hero_title: '<span class="green">Business</span> Loans & </br>Other <span class="green">Funding</span> Options'
+hero_subtitle: '</br>Get $5,000 - $750,000 <span class="green">FAST</span>'
 hero_notice: 'ONE <strong>SIMPLE</strong> APPLICATION — </br>INSTANT <strong>ACCESS</strong> TO <strong>20+ TOP FUNDERS</strong>'
 hero_item_1: 'Get $5,000 to $750,000 in business funding.'
 hero_item_2: 'Your own Team of Funding Experts finds the offer that''s best for you.'
