@@ -8863,3 +8863,11 @@ body.affiliate-sign-up {
     max-height: 60px;
   }
 }
+
+h1, h2 {
+  span.green {
+    color: #359c1c !important;
+    font-size: inherit !important;
+    display: inline !important;
+  }
+}
