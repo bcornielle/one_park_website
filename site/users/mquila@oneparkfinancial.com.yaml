@@ -3,3 +3,4 @@ roles:
 first_name: Maria
 last_name: Quila
 id: d2cb24c7-2dee-4036-b2fe-a6d339893bb4
+password_hash: $2y$10$dBq81edVnpCXoIJPQcE2PeNf/ANRGb5JOLR80cO..qY1.Gk/ZA4Nm
