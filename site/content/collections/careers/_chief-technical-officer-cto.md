@@ -1,5 +1,5 @@
 title: 'Chief Technical Officer (CTO)'
-status: 1
+status: 2
 office: 1
 location: 'Miami, FL.'
 description: |
