@@ -8871,3 +8871,9 @@ h1, h2 {
     display: inline !important;
   }
 }
+
+@media (max-width: 767px) {
+  .nav-wrapper .container .menus .navbar-right .nav-top .phone, {
+    font-size: 19px;
+  }
+}
