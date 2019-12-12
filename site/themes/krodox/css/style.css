@@ -8117,13 +8117,25 @@ body.section-pre-qualification #app nav.apple .nav-wrapper .container .menus .na
   text-indent: -9999px;
   float: left;
   background-size: contain;
-  height: 69px;
-  width: 69px;
+}
+
+@media (min-width: 768px) {
+  body.section-pre-qualification #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-congrats #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-complete #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-preaprob #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-feliz #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-gracias #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-steps #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-step1 #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-step2 #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-step3 #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-step4 #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo {
+    height: 69px;
+    width: 69px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  body.section-pre-qualification #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-congrats #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-complete #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-preaprob #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-feliz #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-gracias #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-steps #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-step1 #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-step2 #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-step3 #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-step4 #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo {
+    height: 49px;
+    width: 49px;
+  }
 }
 
 @media (max-width: 767.98px) {
   body.section-pre-qualification #app nav.apple .nav-wrapper .container .menus .navbar-left, body.section-congrats #app nav.apple .nav-wrapper .container .menus .navbar-left, body.section-complete #app nav.apple .nav-wrapper .container .menus .navbar-left, body.section-preaprob #app nav.apple .nav-wrapper .container .menus .navbar-left, body.section-feliz #app nav.apple .nav-wrapper .container .menus .navbar-left, body.section-gracias #app nav.apple .nav-wrapper .container .menus .navbar-left, body.section-steps #app nav.apple .nav-wrapper .container .menus .navbar-left, body.section-step1 #app nav.apple .nav-wrapper .container .menus .navbar-left, body.section-step2 #app nav.apple .nav-wrapper .container .menus .navbar-left, body.section-step3 #app nav.apple .nav-wrapper .container .menus .navbar-left, body.section-step4 #app nav.apple .nav-wrapper .container .menus .navbar-left {
-    padding-left: 15px;
+    padding-left: 5px;
   }
 }
 
