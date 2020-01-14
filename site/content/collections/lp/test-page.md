@@ -2,7 +2,7 @@ title: 'Test Page'
 template: lp/fast-capital-360
 body_class: home-page
 navigation: with-menu
-hero: default
+hero: dark
 hero_title: TEST
 hero_subtitle: TEST
 form_title: '<!-- TrustBox widget - Micro Star --> <div class="trustpilot-widget" data-locale="en-US" data-template-id="5419b732fbfb950b10de65e5" data-businessunit-id="555cd8dd0000ff00057f8e1e" data-style-height="24px" data-style-width="100%" data-theme="light"> <a href="https://www.trustpilot.com/review/oneparkfinancial.com" target="_blank" rel="noopener">Trustpilot</a> </div> <!-- End TrustBox widget --></br><center>Get Qualified in SECONDS:</center>'
