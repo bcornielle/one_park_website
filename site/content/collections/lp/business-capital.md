@@ -3,7 +3,6 @@ template: lp/fast-capital-360
 body_class: home-page
 navigation: with-menu
 hero: light
-hero_image: /assets/untitled-design-min.png
 hero_title: 'Business Capital & </br>Other Funding Options'
 hero_subtitle: '</br>Get $5,000 - $750,000 Today'
 hero_notice: 'YOUR TIME IS MONEY </br>GET HASSLE-FREE WORKING CAPITAL'
@@ -13,7 +12,7 @@ hero_item_3: 'Poor Credit Accepted.'
 form_title: '<center>YOU COULD HAVE FUNDS</br>IN 72 HOURS</center>'
 form_time_in_business: 'true'
 form_button_text: 'Get Funded Now'
-form_disclaimer: '<a href="/terms-of-use" target="_blank">By clicking "Get Funded Now" I agree to all <span>terms and conditions</span></a>'
+form_disclaimer: '<font size="0.5">By clicking “Get Funded Now”, you consent to receive phone calls & SMS (Msg & data rates may apply) from One Park Financial at the number provided above. Calls may be generated using an auto-dialer & may contain pre-recorded messages. Consent is not a condition of purchase or receipt of services. Opt-out at any time.</font>'
 overview_icon_1: 'far fa-check-circle'
 overview_text_1: 'BAD CREDIT</br>NO PROBLEM'
 overview_icon_2: 'far fa-clock'
