@@ -1,7 +1,7 @@
 title: 'Test Page'
-template: lp/affiliate-sign-up
+template: lp/fast-capital-360
 body_class: home-page
-navigation: with-menu
+navigation: with-no-menu
 hero: light
 hero_title: TEST
 hero_subtitle: TEST
