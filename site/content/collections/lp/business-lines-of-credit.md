@@ -3,14 +3,13 @@ template: lp/fast-capital-360
 body_class: home-page
 navigation: with-menu
 hero: light
-hero_image: /assets/untitled-design-min.png
 hero_title: 'Business Lines of Credit Made for You'
 hero_subtitle: '</br>Draw as you need and pay only for what you use.'
 hero_notice: 'GET ACCESS TO THE BUSINESS LINE OF CREDIT YOU NEED FOR YOUR BUSINESS'
 form_title: '<center>Revolving Line of Credit</br>in 72 Hours</center>'
 form_time_in_business: 'true'
 form_button_text: 'Get Funded Now'
-form_disclaimer: '<a href="/terms-of-use" target="_blank">By clicking "Get Funded Now" I agree to all <span>terms and conditions</span></a>'
+form_disclaimer: '<font size="0.5">By clicking “Get Funded Now”, you consent to receive phone calls & SMS (Msg & data rates may apply) from One Park Financial at the number provided above. Calls may be generated using an auto-dialer & may contain pre-recorded messages. Consent is not a condition of purchase or receipt of services. Opt-out at any time.</font>'
 overview_icon_1: 'far fa-check-circle'
 overview_text_1: 'Credit Scores 500+ Accepted'
 overview_icon_2: 'far fa-clock'
