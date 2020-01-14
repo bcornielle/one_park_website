@@ -1,5 +1,5 @@
 title: 'Test Page'
-template: lp/fast-capital-360
+template: lp/fast-capital-360-partners
 body_class: home-page
 navigation: with-menu
 hero: light
