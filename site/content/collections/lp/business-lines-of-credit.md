@@ -3,6 +3,7 @@ template: lp/fast-capital-360
 body_class: home-page
 navigation: with-menu
 hero: light
+hero_image: /assets/white-untitled-design-min.png
 hero_title: 'Business Lines of Credit Made for You'
 hero_subtitle: '</br>Draw as you need and pay only for what you use.'
 hero_notice: 'GET ACCESS TO THE BUSINESS LINE OF CREDIT YOU NEED FOR YOUR BUSINESS'
