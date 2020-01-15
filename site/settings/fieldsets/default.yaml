@@ -17,6 +17,7 @@ sections:
       meta_title:
         type: text
         display: 'Meta Title'
+        localizable: true
       meta_description:
         type: text
         localizable: true
