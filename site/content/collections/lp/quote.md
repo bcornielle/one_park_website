@@ -3,7 +3,7 @@ template: lp/fast-capital-360
 body_class: home-page
 navigation: with-menu
 hero: light
-hero_image: /assets/untitled-design-min.png
+hero_image: /assets/white-untitled-design-min.png
 hero_title: 'Bad Credit </br>Business Loans'
 hero_subtitle: 'Get $5,000 - $750,000 Today'
 hero_notice: 'WE VALUE YOUR BUSINESS </br>NOT JUST YOUR CREDIT SCORE'
@@ -15,7 +15,7 @@ form_time_in_business: 'true'
 form_has_business_bank_account: 'true'
 form_active_bankruptcy: 'true'
 form_button_text: 'Get Funded Now'
-form_disclaimer: '<a href="/terms-of-use" target="_blank">By clicking "Get Funded Now" I agree to all <span>terms and conditions</span></a>'
+form_disclaimer: '<font size="0.5">By clicking “Get Funded Now”, you consent to receive phone calls & SMS (Msg & data rates may apply) from One Park Financial at the number provided above. Calls may be generated using an auto-dialer & may contain pre-recorded messages. Consent is not a condition of purchase or receipt of services. Opt-out at any time.</font>'
 overview_icon_1: 'far fa-check-circle'
 overview_text_1: 'CREDIT SCORES 500+ </br>ABOVE ACCEPTED'
 overview_icon_2: 'far fa-clock'
