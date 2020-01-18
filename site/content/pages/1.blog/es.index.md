@@ -1,7 +1,7 @@
 title: Articulos
-meta_description: 'Blog Para Emprendedores y PYMES | Pequeños Negocios,  Finanzas Personales y Mas'
+meta_title: 'Blog Para Emprendedores y PYMES | Pequeños Negocios,  Finanzas Personales y Mas'
+meta_description: 'Bienvenido a nuestro blog para emprendedores. Mantengase al tanto de noticias y novedades sobre la vida en OPF y el mundo de las finanzas en los negocios.'
 template: blog/es/index
 id: 168f976e-b358-434b-bbd0-66b2d36fbd59
-meta_title: 'Blog Financiero de One Park | Noticias, Cultura y Consejos'
 en_url: blog
 slug: articulos
