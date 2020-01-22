@@ -103,32 +103,62 @@ class FormStackAddonTags extends Tags {
 						$job = (new FormStackJob($form_id,$this->oauth_token,$params['email'],$idleRequest . $idleString))->delay(360);
 						dispatch($job);
 					}
-					$response = [
-						'status'=> true,
-						'first_name' => (isset($params['first_name'])) ? $params['first_name'] : null,
-						'last_name' => (isset($params['last_name'])) ? $params['last_name'] : null,
-						'email' => (isset($params['email'])) ? $params['email'] : null,
-						'phone' => (isset($params['contact_phone'])) ? $params['contact_phone'] : null,
-						'credit' => (isset($params['what_is_your_estimated_credit_score'])) ? $params['what_is_your_estimated_credit_score'] : null,
-						'business' => [
-							'name'=> (isset($params['business'])) ? $params['business'] : null,
-							'started' => (isset($params['when_was_your_business_started'])) ? $params['when_was_your_business_started'] : null,
-							'funding_needed' => (isset($params['how_much_funding_do_you_need'])) ? $params['how_much_funding_do_you_need'] : null,
-							'revenue' => (isset($params['revenue'])) ? $params['revenue'] : null,
-							'industry' => (isset($params['what_industry_are_you_in'])) ? $params['what_industry_are_you_in'] : null,
-							'phone' => (isset($params['company_phone_number'])) ? $params['company_phone_number'] : null,
-							'address'=> [
-								'line1'=> (isset($params['company_address-address'])) ? $params['company_address-address'] : null,
-								'city'=> (isset($params['company_address-city'])) ? $params['company_address-city'] : null,
-								'state'=> (isset($params['company_address-state'])) ? $params['company_address-state'] : null,
-								'zip'=> (isset($params['company_address-zip'])) ? $params['company_address-zip'] : null,
-							]
-						],
-						'qualified' => (isset($params['amount'])) ? $params['amount'] : 2500,
-						'data'=> $data,
-						'rest_request' => $restRequest,
-						'form' => $this->forms_en[1]['name'],
-					];
+					if ($params['amount'] < 2501){
+                        $response = [
+                            'status'=> false,
+                            'first_name' => (isset($params['first_name'])) ? $params['first_name'] : null,
+                            'last_name' => (isset($params['last_name'])) ? $params['last_name'] : null,
+                            'email' => (isset($params['email'])) ? $params['email'] : null,
+                            'phone' => (isset($params['contact_phone'])) ? $params['contact_phone'] : null,
+                            'credit' => (isset($params['what_is_your_estimated_credit_score'])) ? $params['what_is_your_estimated_credit_score'] : null,
+                            'business' => [
+                                'name'=> (isset($params['business'])) ? $params['business'] : null,
+                                'started' => (isset($params['when_was_your_business_started'])) ? $params['when_was_your_business_started'] : null,
+                                'funding_needed' => (isset($params['how_much_funding_do_you_need'])) ? $params['how_much_funding_do_you_need'] : null,
+                                'revenue' => (isset($params['revenue'])) ? $params['revenue'] : null,
+                                'industry' => (isset($params['what_industry_are_you_in'])) ? $params['what_industry_are_you_in'] : null,
+                                'phone' => (isset($params['company_phone_number'])) ? $params['company_phone_number'] : null,
+                                'address'=> [
+                                    'line1'=> (isset($params['company_address-address'])) ? $params['company_address-address'] : null,
+                                    'city'=> (isset($params['company_address-city'])) ? $params['company_address-city'] : null,
+                                    'state'=> (isset($params['company_address-state'])) ? $params['company_address-state'] : null,
+                                    'zip'=> (isset($params['company_address-zip'])) ? $params['company_address-zip'] : null,
+                                ]
+                            ],
+                            'qualified' => (isset($params['amount'])) ? $params['amount'] : 2500,
+                            'data'=> $data,
+                            'rest_request' => $restRequest,
+                            'form' => $this->forms_en[1]['name'],
+                            'url' => 'https://'.$_SERVER['SERVER_NAME'].'/thanks-1',
+                        ];
+                    }else{
+                        $response = [
+                            'status'=> true,
+                            'first_name' => (isset($params['first_name'])) ? $params['first_name'] : null,
+                            'last_name' => (isset($params['last_name'])) ? $params['last_name'] : null,
+                            'email' => (isset($params['email'])) ? $params['email'] : null,
+                            'phone' => (isset($params['contact_phone'])) ? $params['contact_phone'] : null,
+                            'credit' => (isset($params['what_is_your_estimated_credit_score'])) ? $params['what_is_your_estimated_credit_score'] : null,
+                            'business' => [
+                                'name'=> (isset($params['business'])) ? $params['business'] : null,
+                                'started' => (isset($params['when_was_your_business_started'])) ? $params['when_was_your_business_started'] : null,
+                                'funding_needed' => (isset($params['how_much_funding_do_you_need'])) ? $params['how_much_funding_do_you_need'] : null,
+                                'revenue' => (isset($params['revenue'])) ? $params['revenue'] : null,
+                                'industry' => (isset($params['what_industry_are_you_in'])) ? $params['what_industry_are_you_in'] : null,
+                                'phone' => (isset($params['company_phone_number'])) ? $params['company_phone_number'] : null,
+                                'address'=> [
+                                    'line1'=> (isset($params['company_address-address'])) ? $params['company_address-address'] : null,
+                                    'city'=> (isset($params['company_address-city'])) ? $params['company_address-city'] : null,
+                                    'state'=> (isset($params['company_address-state'])) ? $params['company_address-state'] : null,
+                                    'zip'=> (isset($params['company_address-zip'])) ? $params['company_address-zip'] : null,
+                                ]
+                            ],
+                            'qualified' => (isset($params['amount'])) ? $params['amount'] : 2500,
+                            'data'=> $data,
+                            'rest_request' => $restRequest,
+                            'form' => $this->forms_en[1]['name'],
+                        ];
+                    }
 				} else {
 					$response = [
 						'status' => false,
