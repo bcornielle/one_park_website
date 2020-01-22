@@ -103,7 +103,7 @@ class FormStackAddonTags extends Tags {
 						$job = (new FormStackJob($form_id,$this->oauth_token,$params['email'],$idleRequest . $idleString))->delay(360);
 						dispatch($job);
 					}
-					if ($params['amount'] < 2501){
+					if ($params['amount'] === 1){
                         $response = [
                             'status'=> false,
                             'first_name' => (isset($params['first_name'])) ? $params['first_name'] : null,
