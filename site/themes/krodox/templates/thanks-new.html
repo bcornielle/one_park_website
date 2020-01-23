@@ -1,42 +1,69 @@
+<style>
+    .ty-box{
+        background: #fff;
+        padding: 30px 60px;
+        font-size: 1.5em;
+        text-align: center;
+        box-shadow: 0 16px 48px rgba(83,167,61,.3);
+        margin: 50px auto  ;
+    }
+
+    .ty-title { margin-bottom: 35px; font-weight: bold;}
+    .ty-subtitle { margin-bottom: 35px;}
+    .pq-img {max-width: 330px; width: 100%; height:auto; padding-bottom: 25px;}
+    .pq-copy {padding-bottom: 20px;}
+    .pq-conditions li p { padding: 10px 0;}
+    .pq-conditions li i { color: #359c1c; }
+    .btn-pq-ty {
+        max-width: 100%;
+        width: 300px;
+        height: 35px !important;
+        font-size: 1rem !important;
+    }
+
+
+    @media only screen and (max-width: 414px) {
+        .ty-box{padding: 30px 30px;}
+        .ty-title { font-size: 30px}
+        .ty-subtitle { font-size: 20px}
+        .pq-copy {font-size: 20px}
+        .pq-conditions li p { padding:0; font-size: 16px;}
+    }
+
+</style>
+
 <main id="step5">
     <section id="formNew">
-        <!-- TrustBox script --> <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script> <!-- End TrustBox script -->
-        <div class="form-focus">
+        <div class="">
             <div class="container-fluid">
-                <div class="container">
+                <div class="container ty-box">
                     <div class="row">
-                        <div class="col-lg-8 background-focus done">
-                            <div class="form-progress-bar">
-                                <div class="row">
-                                    <div class="col">
-                                        <div class="progression-bar"></div>
-                                    </div>
-                                </div>
-                                <div class="percentage text-center">
-                                    <div class="row">
-                                        <div class="col">
-                                            <div class="progress-gradient step-5">
-                                                100%
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form">
-                                <div id="prequalifed-content">
-                                    <h1>Thank You</h1>
-                                    <h3>The application was<br>submitted successfully.</h3>
-                                    <br>
-                                    <h2>
-                                        <a href="/">Close</a>
-                                    </h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 form-right-col progress-right d-none d-lg-block">
-                            <!-- TrustBox widget - List --> <div class="trustpilot-widget" data-locale="en-US" data-template-id="539ad60defb9600b94d7df2c" data-businessunit-id="555cd8dd0000ff00057f8e1e" data-style-height="660px" data-style-width="100%" data-theme="light" data-stars="1,2,3,4,5"> <a href="https://www.trustpilot.com/review/oneparkfinancial.com" target="_blank" rel="noopener">Trustpilot</a> </div> <!-- End TrustBox widget -->
+                        <div class="col-lg-12 text-center ">
+                            <h1 class="ty-title">THANK YOU FOR APPLYING</h1>
+                            <h4 class="ty-subtitle">Unfortunately, we can’t move forward with the funding process due to our minimum qualifications</h4>
                         </div>
                     </div>
+
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-5">
+                            <img class="pq-img" src="../../../../assets/img/oh-no.jpg"  alt="">
+                        </div>
+                        <div class="ol-sm-12 col-lg-7 text-left ">
+                            <h4 class="pq-copy">To pre-qualify you need to have:</h4>
+
+                            <ul class="unstyled pq-conditions">
+                                <li><p><i class="far fa-check-circle"></i> At least 3 Months in business.</p></li>
+                                <li><p><i class="far fa-check-circle"></i> $2500 in monthly gross sales.</p></li>
+                                <li><p><i class="far fa-check-circle"></i> Active Business Banking Account (Not a personal account).</p></li>
+                            </ul>
+                            <div class="row">
+                                <div class="col-lg-12 ">
+                                    <a href="/blog" class="btn btn-primary btn-pq-ty">Read Our Blog to Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
