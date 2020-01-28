@@ -129,7 +129,7 @@ class FormStackAddonTags extends Tags {
                             'data'=> $data,
                             'rest_request' => $restRequest,
                             'form' => $this->forms_en[1]['name'],
-                            'url' => 'https://'.$_SERVER['SERVER_NAME'].'/thanks-1',
+                            'url' => 'https://'.$_SERVER['SERVER_NAME'].'/congrats-nq',
                         ];
                     }else{
                         $response = [
