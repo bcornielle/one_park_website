@@ -8616,15 +8616,12 @@ body{
     }
   }
 }
-
-
 // Helpers
 @media (max-width: 767px) {
   .hidden-ns {
     display: none !important;
   }
 }
-
 .light-form-wrapper {
   border: none;
   background: #fff;
@@ -8636,8 +8633,6 @@ body{
   z-index: 1;
   box-shadow: 0 8px 16px -4px rgba(30,31,30,.5);
 }
-
-
 // Affiliates
 body.affiliate-sign-up {
   main {
@@ -8869,7 +8864,6 @@ body.affiliate-sign-up {
     max-height: 60px;
   }
 }
-
 h1, h2 {
   span.green {
     color: #359c1c !important;
@@ -8877,7 +8871,6 @@ h1, h2 {
     display: inline !important;
   }
 }
-
 @media (max-width: 767px) {
   .nav-wrapper .container .menus .navbar-right .nav-top .phone, {
     font-size: 19px;
