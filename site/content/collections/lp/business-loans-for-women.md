@@ -1,7 +1,7 @@
 title: 'Business Loans for Women'
 template: lp/fast-capital-360
 body_class: home-page
-navigation: with-menu
+navigation: with-empty-menu
 hero: light
 hero_image: /assets/img/untitled-design-(1)-min.png
 hero_title: '<span class="green">Business Loans</span></br> for Women'
