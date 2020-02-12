@@ -9,30 +9,12 @@
                 <div class="row">
                     <div class="form">
                         <div id="prequalifed-content">
-                            <h1>You've been pre-qualified</h1>
-                            <img src="/assets/img/checkmark.png">
+                            <h1 style="text-transform:capitalize;">Congratulations, {{ first_name }}!</h1>
+                            <h2 style="color:#359c1c;text-transform:uppercase;font-size:3rem;">One Park LLC</h2>
                             <div>
-                                <p>{{ first_name }}, you have been pre-qualified for </p>
+                                <p><strong>Has been Pre-Qualified for Funding</strong></p>
                             </div>
-                            <div>
-                                <p class="amount">
-                                    <span>${{ qualified }}</span>
-                                </p>
-                            </div>
-                            <div>
-                                <p>in working capital for {{ business.name }}</p>
-                            </div>
-                            <br>
-                            <p>Not enough? Don’t sweat it. The pre-qualification amount can change, based on your unique business situation</p>
-                            <p><strong>Let’s complete your application below</strong></p>
-                            <p style="display: none;">One of our expert funding specialists will be giving you a call to go over the unique details of your business. Want to move faster? You can give us a call:</p>
-                            <p style="display: none;">
-                                <strong>
-                                    <a href="tel:+18883271044">
-                                        <span class="number">1-888-327-1044</span>
-                                    </a>
-                                </strong>
-                            </p>
+                            <p>Let’s complete your application below</p>
                         </div>
                         <div>
                             <script type="text/javascript" src="https://oneparkfinancial.formstack.com/forms/js.php/{{ form }}?{{ rest_request }}"></script>
