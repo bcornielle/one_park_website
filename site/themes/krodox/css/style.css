@@ -4397,8 +4397,10 @@ body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom l
   font-family: Roboto;
 }
 
+body #app > nav.apple .nav-wrapper .container .menus .navbar-right .items-nav.nav-bottom li a {
 
-
+  font-size: 0.9em;
+}
 
 body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li a:hover {
   color: #359c1c;

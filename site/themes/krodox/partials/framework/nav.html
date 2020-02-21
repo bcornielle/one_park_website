@@ -27,24 +27,7 @@
                     <a href="/" class="branding logo">One Park Financial</a>
                 </div>
                 <div class="navbar-right">
-                    <!-- <ul class="nav-top">
-                        <li class="phone">
-                            <span class="questions">Questions?</span>
-                            <span class="text">Call Us.</span>
-                            <a href="tel:+18883271044">
-                                <span class="number">1-888-327-1044</span>
-                            </a>
-                        </li>
-                        <li class="language">
-                            <a href="/es/{{ es_url }}" class="btn">
-                                <i class="fas fa-globe"></i>
-                                <span class="active">EN</span>
-                                <span>|</span>
-                                <span>ES</span>
-                            </a>
-                        </li>
-                    </ul> -->
-                    <ul class="nav-bottom">
+                    <ul class=" items-nav nav-bottom">
                         {{ if current_uri == "/how-it-works" }}
                         <li class="how-it-works active">
                         {{ else }}
@@ -79,7 +62,16 @@
                         <li class="faqs">
                         {{ /if }}
                             <a href="/faq">
-                                English |
+                                English  |
+                            </a>
+                        </li>
+                        {{ if current_uri == "/faq" }}
+                        <li class="esp active">
+                        {{ else }}
+                        <li class="esp">
+                        {{ /if }}
+                            <a href="/es">
+                                Español  |
                             </a>
                         </li>
                         {{ if current_uri == "/faq" }}
@@ -88,7 +80,7 @@
                         <li class="faqs">
                         {{ /if }}
                             <a href="/faq">
-                                Español |
+                                FAQ'S
                             </a>
                         </li>
                         <li class="phone">
