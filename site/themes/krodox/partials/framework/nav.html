@@ -79,17 +79,30 @@
                         <li class="faqs">
                         {{ /if }}
                             <a href="/faq">
+                                English |
+                            </a>
+                        </li>
+                        {{ if current_uri == "/faq" }}
+                        <li class="faqs active">
+                        {{ else }}
+                        <li class="faqs">
+                        {{ /if }}
+                            <a href="/faq">
+                                Español |
+                            </a>
+                        </li>
+                        <li class="faqs">
+                            <a href="/faq">
                                 FAQs
                             </a>
                         </li>
+                        {{ if current_uri == "/faq" }}
+                        <li class="faqs active">
+                        {{ else }}
                         <li class="faqs">
+                        {{ /if }}
                             <a href="/faq">
-                            English | 
-                            </a>
-                        </li>
-                        <li class="faqs">
-                            <a href="/faq">
-                            Español |
+                                FAQs
                             </a>
                         </li>
                         <li class="phone">
