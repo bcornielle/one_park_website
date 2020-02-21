@@ -4298,8 +4298,8 @@ body #app > nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo
   background-repeat: no-repeat;
   text-indent: -9999px;
   float: left;
-  height: 65px;
-  width: 291px;
+  height: 42px;
+  width: 191px;
 }
 
 body #app > nav.apple .nav-wrapper .container .menus .navbar-right {
@@ -4393,8 +4393,12 @@ body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom l
   font-weight: 600;
   text-decoration: none;
   transition: all ease .4s;
-  font-size: 0.7em;
+  font-size: 1em;
+  font-family: Roboto;
 }
+
+
+
 
 body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li a:hover {
   color: #359c1c;
@@ -10445,7 +10449,7 @@ body #success-alert:after {
     overflow: auto;
   }
   body #app > nav.apple .nav-wrapper .burger-container {
-    display: block;
+    display: none;
   }
   body #app > nav.apple .nav-wrapper.shown {
     background-color: white;
