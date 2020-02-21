@@ -4306,7 +4306,7 @@ body #app > nav.apple .nav-wrapper .container .menus .navbar-right {
   order: 2;
   flex-grow: 1;
   height: 120px;
-  text-align: right;
+  text-align: left;
   padding: 15px 0 15px 15px;
   display: flex;
   flex-direction: column;
@@ -4390,10 +4390,11 @@ body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom {
 
 body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li a {
   color: #323831;
-  font-weight: 900;
+  font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
   transition: all ease .4s;
+  font-size: 0.7em;
 }
 
 body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li a:hover {
@@ -4401,7 +4402,7 @@ body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom l
 }
 
 body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li a.btn {
-  background: #359c1c;
+  background: #6EB95A;
   border: none;
   padding: 8px 15px;
   margin: 0;
