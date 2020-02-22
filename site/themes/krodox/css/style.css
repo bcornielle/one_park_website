@@ -4505,7 +4505,7 @@ body #app>nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li 
 
 
 body #app>nav.apple .nav-wrapper .container .menus .navbar-right .items-nav.nav-bottom li a {
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 body #app>nav.apple .nav-wrapper .container .menus .navbar-right .items-nav.nav-bottom .esp {
@@ -4515,9 +4515,11 @@ body #app>nav.apple .nav-wrapper .container .menus .navbar-right .items-nav.nav-
 
 body #app>nav.apple .nav-wrapper .container .menus .navbar-right .items-nav.nav-bottom .en {
     font-size: 1em;
-    margin: 0px 0px 0px 45px;
+    margin: 0px 0px 0px 20px;
 }
-
+body #app>nav.apple .nav-wrapper .container .menus .navbar-right .items-nav.nav-bottom .phone-icon {
+    font-size: 1.1em;
+}
 body #app>nav.apple .nav-wrapper .container .menus .navbar-right .items-nav.nav-bottom .phone {
     font-size: 1.1em;
 }
@@ -4530,7 +4532,7 @@ body #app>nav.apple .nav-wrapper .container .menus .navbar-right .items-nav.nav-
 
 
 body #app>nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li a:hover {
-    color: #359c1c;
+    color: #97c35e;
 }
 
 body #app>nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li a.btn {
@@ -4548,7 +4550,7 @@ body #app>nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li 
 }
 
 body #app>nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li a.btn:hover {
-    background-color: #267114;
+    background-color: #359c1c;
     transform: translateX(0px) scale(1.05);
 }
 
@@ -13798,9 +13800,11 @@ body #success-alert:after {
     body #app>nav.apple .nav-wrapper .burger-container {
         display: none;
     }
+
 }
 
 @media (max-width: 1024px) {
+    
     body #app>nav.apple.shown {
         height: 100vh;
         overflow: auto;
