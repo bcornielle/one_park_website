@@ -30,57 +30,75 @@
                     <ul class=" items-nav nav-bottom">
                         {{ if current_uri == "/how-it-works" }}
                         <li class="how-it-works active">
-                        {{ else }}
+                            {{ else }}
+                        </li>
+
                         <li class="how-it-works">
-                        {{ /if }}
+                            {{ /if }}
                             <a href="/how-it-works">
                                 How it works
                             </a>
                         </li>
                         {{ if current_uri == "/about-us" }}
                         <li class="about-us active">
-                        {{ else }}
+                            {{ else }}
+                        </li>
+
                         <li class="about-us">
-                        {{ /if }}
+                            {{ /if }}
                             <a href="/about-us">
                                 About Us
                             </a>
                         </li>
-
+                        {{ if current_uri == "/blog" }}
+                        <li class="blog active">
+                            {{ else }}
+                        </li>
+                        <li class="blog">
+                            {{ /if }}
+                            <a href="/press">
+                                Blog
+                            </a>
+                        </li>
                         {{ if current_uri == "/press" }}
                         <li class="press active">
-                        {{ else }}
+                            {{ else }}
+                        </li>
                         <li class="press">
-                        {{ /if }}
+                            {{ /if }}
                             <a href="/press">
                                 Press
                             </a>
                         </li>
                         {{ if current_uri == "/faq" }}
                         <li class="faqs active">
-                        {{ else }}
+                            {{ else }}
+                        </li>
                         <li class="faqs">
-                        {{ /if }}
+                            {{ /if }}
                             <a href="/faq">
-                                English  |
+                                FAQs
                             </a>
                         </li>
-                        {{ if current_uri == "/faq" }}
+
+                        {{ if current_uri == "/" }}
+                        <li class="en active">
+                            {{ else }}
+                        </li>
+                        <li class="en">
+                            {{ /if }}
+                            <a href="/">
+                                English <span class="vertical-slash">|</span>
+                            </a>
+                        </li>
+                        {{ if current_uri == "/es" }}
                         <li class="esp active">
-                        {{ else }}
-                        <li class="esp">
-                        {{ /if }}
-                            <a href="/es">
-                                Español  |
-                            </a>
+                            {{ else }}
                         </li>
-                        {{ if current_uri == "/faq" }}
-                        <li class="faqs active">
-                        {{ else }}
-                        <li class="faqs">
-                        {{ /if }}
-                            <a href="/faq">
-                                FAQ'S
+                        <li class="esp">
+                            {{ /if }}
+                            <a href="/es">
+                                Español <span class="vertical-slash">|</span>
                             </a>
                         </li>
                         <li class="phone">
@@ -90,7 +108,7 @@
                         </li>
                         <li class="apply-now">
                             <a href="/pre-qualification" class="btn btn-primary">
-                                GET FUNDED
+                                APPLY NOW
                             </a>
                         </li>
                         {{ if logged_in }}
