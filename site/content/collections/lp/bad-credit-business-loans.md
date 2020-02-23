@@ -2,7 +2,7 @@ title: 'Bad Credit Business Loans'
 template: lp/fast-capital-360
 body_class: home-page
 navigation: with-menu
-hero: dark
+hero: light
 hero_image: /assets/img/untitled-design-min.png
 hero_title: 'Bad Credit </br>Business Loans'
 hero_subtitle: 'Get $5,000 - $750,000 Today'
