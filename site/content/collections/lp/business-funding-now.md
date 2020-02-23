@@ -14,7 +14,7 @@ form_title: '<!-- TrustBox widget - Micro Star --> <div class="trustpilot-widget
 form_time_in_business: 'true'
 form_has_business_bank_account: 'true'
 form_active_bankruptcy: 'true'
-form_button_text: 'Get Funded Now'
+form_button_text: 'LET''S GET STARTED'
 form_disclaimer: '<font size="0.5">By clicking “Get Funded Now”, you consent to receive phone calls & SMS (Msg & data rates may apply) from One Park Financial at the number provided above. Calls may be generated using an auto-dialer & may contain pre-recorded messages. Consent is not a condition of purchase or receipt of services. Opt-out at any time.</font>'
 overview_icon_1: 'far fa-check-circle'
 overview_text_1: 'CREDIT SCORES 500+  ABOVE ACCEPTED'
