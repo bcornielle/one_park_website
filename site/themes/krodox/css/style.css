@@ -4663,6 +4663,126 @@ body #app>main {
     border: none;
 }
 
+/*******************hero content new********************/
+body #app>main section#hero-new {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 500px;
+}
+
+body #app>main section#hero-new .hero-content-new {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+body #app>main section#hero-new .hero-content-new h1 {
+    order: 1;
+    font-weight: 900;
+    letter-spacing: -2px;
+    color: #ffffff;
+    font-size: 2.7rem;
+    line-height: 1;
+}
+
+body #app>main section#hero-new .hero-content-new h1 span {
+    display: block;
+    font-size: 2.5rem;
+}
+
+body #app>main section#hero-new .hero-content-new h2 {
+    order: 2;
+    font-size: 1.7rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    color: #ffffff;
+}
+
+body #app>main section#hero-new .hero-content-new h3 {
+    order: 3;
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-weight: 300;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+}
+
+body #app>main section#hero-new .hero-content-new h3 span {
+    display: block;
+}
+
+body #app>main section#hero-new .hero-content-new a.btn {
+    order: 4;
+    background: #97c35e;
+    box-shadow: 0px 6px 0px #72a531;
+    border: none;
+    padding: 8px 15px;
+    margin: 0;
+    text-transform: uppercase;
+    color: white;
+    transition: all ease .4s;
+    font-size: 1em;
+    font-weight: 300;
+    max-width: 250px;
+}
+
+
+body #app>main section#hero-new .hero-content-new a.btn:hover {
+    background-color: #267114;
+    transform: translateX(0px) scale(1.05);
+}
+
+body #app>main section#hero-new .hero-content-new ul {
+    order: 5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0 0 0;
+    max-width: 400px;
+}
+
+body #app>main section#hero-new .hero-content-new ul li {
+    float: left;
+    width: 30% !important;
+    margin: 0 5% 5% 0;
+}
+
+body #app>main section#hero-new .hero-content-new ul li:nth-child(3n) {
+    margin-right: 0;
+}
+
+body #app>main section#hero-new .hero-content-new ul li:nth-child(3n + 4) {
+    clear: left;
+}
+
+body #app>main section#hero-new .hero-content-new ul li img {
+    max-width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**********************************************************/
+
+
 body #app>main section#hero {
     display: flex;
     flex-direction: column;
@@ -4762,6 +4882,47 @@ body #app>main section#hero .hero-content ul li img {
     max-width: 100px;
 }
 
+
+/**** Welcome To Section ****/
+
+body #app>main section#how-we-do {
+    margin: 0;
+    padding: 100px 0;
+}
+body #app>main section#how-we-do .main-container {
+    padding: 50px 0;
+    background: #f1f6ef;
+} 
+body #app>main section#how-we-do .row .welcome-to {
+    padding: 0 0 0 50px;
+} 
+
+body #app>main section#how-we-do .welcome-to .title h6 {
+    font-weight: 100;
+    font-size: .9rem;
+    color:#97c35e;
+    margin:4px 0 0 8px;
+} 
+
+body #app>main section#how-we-do .line {
+    font-weight: 400;
+    height:0px;
+    width:45px;
+    margin:12px 0 0 0px;
+    border:1px solid #97c35e;
+    font-size: 3rem;
+    color:#97c35e;
+} 
+body #app>main section#how-we-do .container .experience h2 {
+    margin-top:20px;
+    font-weight: 600;
+    font-size:1.9rem;
+    line-height : 42px;
+    color:black;
+} 
+
+
+/***************************/
 body #app>main section#highlights {
     margin: -30px 0 0;
 }
@@ -5739,6 +5900,61 @@ body #app>footer .badget ul.badgets li:nth-child(3n + 4) {
 body #app>footer .badget ul.badgets li img {
     max-width: 100%;
 }
+
+
+/*******************hero new styles ***********************/
+
+body.section-home #app>main section#hero-new,
+body.section-television #app>main section#hero-new {
+    background-image: url("/assets/img/home-hero.png");
+}
+
+body.section-home #app>main section#hero-new .hero-content-new .branding.logo,
+body.section-television #app>main section#hero-new .hero-content-new .branding.logo {
+    background-image: url(/assets/img/one-park-logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    float: left;
+    height: 65px;
+    width: 291px;
+    display: none;
+}
+
+body.section-home #app>main section#hero-new .hero-content-new ul.xs,
+body.section-television #app>main section#hero-new .hero-content-new ul.xs {
+    order: 4;
+    display: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+body.section-home #app>main section#hero-new .hero-content-new ul.xs li,
+body.section-television #app>main section#hero-new .hero-content-new ul.xs li {
+    float: left;
+    width: 100% !important;
+    margin: 0 2% 2% 0;
+}
+
+body.section-home #app>main section#hero-new .hero-content-new ul.xs li:nth-child(1n),
+body.section-television #app>main section#hero-new .hero-content-new ul.xs li:nth-child(1n) {
+    margin-right: 0;
+}
+
+body.section-home #app>main section#hero-new .hero-content-new ul.xs li:nth-child(1n+2),
+body.section-television #app>main section#hero-new .hero-content-new ul.xs li:nth-child(1n+2) {
+    clear: left;
+}
+
+body.section-home #app>main section#hero-new .hero-content-new .phone,
+body.section-television #app>main section#hero-new .hero-content-new .phone {
+    display: none;
+}
+/*****************************************/
+
+
+
 
 body.section-home #app>main section#hero,
 body.section-television #app>main section#hero {
@@ -11124,6 +11340,23 @@ body.section-step4 #app>main section#formNew .form-right-col {
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
+    body #app>nav.apple .nav-wrapper .container .menus .navbar-right .items-nav.nav-bottom li a {
+        font-size: 0.8em;
+    }
+    body #app>nav.apple .nav-wrapper .container .menus .navbar-left {
+        width: 150px;
+    }
+
+    body #app>nav.apple .nav-wrapper .container .menus .navbar-left a.branding.logo {
+        width: 350px;
+        background-size: 100%; /**/
+    }
+
+    body #app>nav.apple .nav-wrapper .container .menus {
+        display: flex;
+        flex-grow: 1;
+        width: 950px;
+    }
     body.section-pre-qualification #app>main section#formNew .form-right-col,
     body.section-congrats #app>main section#formNew .form-right-col,
     body.section-complete #app>main section#formNew .form-right-col,
@@ -12629,8 +12862,8 @@ body.section-lp.home-page #app>main section#hero .hero-content .branding.logo {
     background-repeat: no-repeat;
     text-indent: -9999px;
     float: left;
-    height: 65px;
-    width: 291px;
+    height: 42px;
+    width: 191px;
     display: none;
 }
 
@@ -13806,31 +14039,8 @@ body #success-alert:after {
     }
 }
 
-@media (max-width: 1200px){
-    body #app>nav.apple .nav-wrapper .container .menus .navbar-right .items-nav.nav-bottom li a {
-        font-size: 0.8em;
-    }
-    body #app>nav.apple .nav-wrapper .container .menus .navbar-left {
-        width: 150px;
-    }
-
-    body #app>nav.apple .nav-wrapper .container .menus .navbar-left a.branding.logo {
-        width: 150px;
-        background-size: 100%;
-    }
-
-    body #app>nav.apple .nav-wrapper .container .menus {
-        display: flex;
-        flex-grow: 1;
-        width: 950px;
-    }
-}
 
 @media (max-width: 1024px) {
-    body #app>nav.apple .nav-wrapper .container .menus .navbar-left a.branding.logo {
-        width: 260px;
-        background-size: 100%;
-    }
 
     body #app>nav.apple .nav-wrapper .container .menus {
         display: flex;
@@ -16304,6 +16514,19 @@ body.affiliate-sign-up main h2 {
 }
 
 @media (max-width: 991px) {
+    body #app>nav.apple .nav-wrapper .container .menus .navbar-left {
+        background-size: auto;
+        width:300px;
+    }
+    body #app>nav.apple .nav-wrapper .container .menus .navbar-left a.branding.logo {
+        display:none;
+    }
+    body #app>nav.apple .nav-wrapper .container .menus .navbar-left a.branding.logo {
+        background-image: url(/assets/img/one-park-logo-original.png);
+        height: 65px;
+        width: 291px;
+        display:block;
+    }
     .steps-aff ul li:after {
         content: "";
         display: table;
@@ -16363,6 +16586,18 @@ body.affiliate-sign-up main h2 {
 }
 
 @media (max-width: 767px) {
+    body #app>nav.apple .nav-wrapper .container .menus .navbar-left {
+        background-size: auto;
+        width:100px;
+
+    }
+    body #app>nav.apple .nav-wrapper .container .menus .navbar-left a.branding.logo {
+        display:none;
+    }
+    body #app>nav.apple .nav-wrapper .container .menus .navbar-left a.branding.logo {
+        background-image: url(/assets/img/one-park-logo-original.png);
+        display:block;
+    }
     .join-aff .container {
         text-align: center;
     }
@@ -16381,14 +16616,23 @@ body.affiliate-sign-up main h2 {
 }
 
 @media (max-width: 767px) {
-    .join-aff.join-aff h2 {
-        font-size: 1.8rem;
+    body #app>nav.apple .nav-wrapper .container .menus .navbar-right {
+        display:none;
     }
+    .nav-wrapper .container .menus .navbar-right .nav-top .phone {
+        font-size: 19px;
+    }    
+    .join-aff.join-aff h2 {
+            font-size: 1.8rem;
+        }
 }
 
 @media (min-width: 768px) {
     .join-aff p {
         padding-right: 30px;
+    }
+    .join-aff ul {
+        width: 70%;
     }
 }
 
@@ -16400,11 +16644,6 @@ body.affiliate-sign-up main h2 {
     margin: 20px auto 40px;
 }
 
-@media (min-width: 768px) {
-    .join-aff ul {
-        width: 70%;
-    }
-}
 
 .join-aff li {
     float: left;
@@ -16436,10 +16675,4 @@ h2 span.green {
     color: #359c1c !important;
     font-size: inherit !important;
     display: inline !important;
-}
-
-@media (max-width: 767px) {
-    .nav-wrapper .container .menus .navbar-right .nav-top .phone {
-        font-size: 19px;
-    }
 }
