@@ -110,13 +110,11 @@
                         <li class="apply-now">
                             <a href="/pre-qualification" class="btn btn-primary">
                                 APPLY NOW
-                            </a>
+                            </a><br>
+                            {{ if logged_in }}
+                                <a class="logout" href="{{ user:logout_url }}">Log out</a>
+                            {{ /if }}
                         </li>
-                        {{ if logged_in }}
-                        <li>
-                            <a href="{{ user:logout_url }}">Log out</a>
-                        </li>
-                        {{ /if }}
                     </ul>
                     <div class="join-now">
                         <a class="link" href="/pre-qualification">

@@ -4503,6 +4503,10 @@ body #app>nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li 
     font-family: Roboto;
 }
 
+body #app>nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li .logout {
+ margin:0 40px 0 0;
+}
+
 
 body #app>nav.apple .nav-wrapper .container .menus .navbar-right .items-nav.nav-bottom li a {
     font-size: 1em;
@@ -13800,11 +13804,39 @@ body #success-alert:after {
     body #app>nav.apple .nav-wrapper .burger-container {
         display: none;
     }
+}
 
+@media (max-width: 1200px){
+    body #app>nav.apple .nav-wrapper .container .menus .navbar-right .items-nav.nav-bottom li a {
+        font-size: 0.8em;
+    }
+    body #app>nav.apple .nav-wrapper .container .menus .navbar-left {
+        width: 150px;
+    }
+
+    body #app>nav.apple .nav-wrapper .container .menus .navbar-left a.branding.logo {
+        width: 150px;
+        background-size: 100%;
+    }
+
+    body #app>nav.apple .nav-wrapper .container .menus {
+        display: flex;
+        flex-grow: 1;
+        width: 950px;
+    }
 }
 
 @media (max-width: 1024px) {
-    
+    body #app>nav.apple .nav-wrapper .container .menus .navbar-left a.branding.logo {
+        width: 260px;
+        background-size: 100%;
+    }
+
+    body #app>nav.apple .nav-wrapper .container .menus {
+        display: flex;
+        flex-grow: 1;
+        width: 950px;
+    }
     body #app>nav.apple.shown {
         height: 100vh;
         overflow: auto;
