@@ -4886,13 +4886,28 @@ body #app>main section#hero .hero-content ul li img {
 /**** Welcome To Section ****/
 
 body #app>main section#how-we-do {
-    margin: 0;
+    margin: 0 auto;
     padding: 100px 0;
 }
+
+
 body #app>main section#how-we-do .main-container {
     padding: 50px 0;
     background: #f1f6ef;
 } 
+body #app>main section#how-we-do .main-container .image-container {
+    float:right;
+} 
+
+body #app>main section#how-we-do .main-container .image-container .bg-image {
+    background-image: url(/assets/img/now--min.png);
+    padding: 145px 0;
+    position:relative;
+    bottom:20%;
+    margin: 0 0 80px 80px;
+    background-repeat: no-repeat;
+} 
+
 body #app>main section#how-we-do .row .welcome-to {
     padding: 0 0 0 50px;
 } 
@@ -5392,15 +5407,34 @@ body #app>main section#features .tab-content .tab-pane p {
 
 
 
-
 /**********************Features New***************************/
-
 
 body #app>main section#features-new {
     margin: 0;
     padding: 90px 0;
     background: #f1f6ef;
 }
+
+body #app>main section#features-new  .container .have-you {
+    left: 15px;
+    height:100px;
+    padding:10px 0 0 30px ;
+    border-radius: 5px;
+    background:#2B4A70;    
+}
+body #app>main section#features-new  .container .have-you h6 {
+    align-items: center;
+    display:flex;
+    font-size: 24px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    line-height: 32px;
+}
+
 
 body #app>main section#features-new h2 {
     text-align: center;
@@ -5419,16 +5453,22 @@ body #app>main section#features-new h4 {
     font-weight: 900;
 }
 
-body #app>main section#features-new a.btn {
-    background: #359c1c;
+
+body #app>main section#features-new a.btn  {
+    background: #97c35e;
+    box-shadow: 0px 4px 0px #72a531;
     border: none;
-    padding: 8px 15px;
-    margin: 0;
     text-transform: uppercase;
     color: white;
+    padding:10px 26px 10px 26px;
     transition: all ease .4s;
-    font-size: 1em;
-    font-weight: 900;
+    font-size: 1.1em;
+    line-height: 23px;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    max-width: 250px;
+    
 }
 
 body #app>main section#features-new a.btn:hover {
@@ -5439,7 +5479,6 @@ body #app>main section#features-new a.btn:hover {
 body #app>main section#features-new .tabs {
     display: flex;
 }
-
 body #app>main section#features-new .tabs .tab-headings {
     order: 2;
 }
@@ -6242,7 +6281,10 @@ body #app>footer .badget ul.badgets li img {
 
 body.section-home #app>main section#hero-new,
 body.section-television #app>main section#hero-new {
-    background-image: url("/assets/img/home-hero.png");
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 624px;
+    background: url(/assets/img/home-hero-canvas.svg);
 }
 
 body.section-home #app>main section#hero-new .hero-content-new .branding.logo,
