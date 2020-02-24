@@ -5418,24 +5418,29 @@ body #app>main section#features-new {
 body #app>main section#features-new  .container .have-you {
     left: 15px;
     height:100px;
-    padding:10px 0 0 30px ;
+    padding:30px 0 0 30px ;
     border-radius: 5px;
     background:#2B4A70;    
 }
 body #app>main section#features-new  .container .have-you h6 {
     align-items: center;
     display:flex;
-    font-size: 24px;
+    font-size: 22px;
+    margin-top: 5px;
     font-family: Roboto;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     color: #FFFFFF;
     display: flex;
     align-items: center;
     line-height: 32px;
 }
-
-
+body #app>main section#features-new  .container .have-you .we-will {
+    font-weight:300;
+    font-size: 22px;
+    font-style: normal;
+    font-family:Roboto;
+}
 body #app>main section#features-new h2 {
     text-align: center;
     letter-spacing: 1px;
@@ -5453,11 +5458,11 @@ body #app>main section#features-new h4 {
     font-weight: 900;
 }
 
-
 body #app>main section#features-new a.btn  {
     background: #97c35e;
     box-shadow: 0px 4px 0px #72a531;
     border: none;
+    
     text-transform: uppercase;
     color: white;
     padding:10px 26px 10px 26px;
@@ -5569,12 +5574,12 @@ body #app>main section#features-new .table-wrapper table thead tr th:nth-child(2
 }
 
 body #app>main section#features-new .table-wrapper table thead tr th:nth-child(2) a.branding.logo {
-    background-image: url(/assets/img/one-park-logo.png);
+    background-image: url(/assets/img/Group-65.svg);
     background-position: center;
     background-repeat: no-repeat;
     text-indent: -9999px;
     float: left;
-    width: 100%;
+    width: 120.96px;
     height: 40px;
     background-size: contain;
 }
@@ -5588,9 +5593,19 @@ body #app>main section#features-new .table-wrapper table tbody tr td {
     background: #f1f6ef;
     padding: 15px 20px;
     letter-spacing: 0;
-    font-size: .9em;
     border-bottom: solid 1px #cacec9;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 150%;
 }
+
+
+body #app>main section#features-new .table-wrapper table tbody tr td .text.center  {
+    background: url(/assets/img/check.svg);
+}
+
 
 body #app>main section#features-new .table-wrapper table tbody tr td i {
     font-size: 20px;
@@ -5614,6 +5629,11 @@ body #app>main section#features-new .table-wrapper table tbody tr td:nth-child(2
 
 body #app>main section#features-new .table-wrapper table tbody tr.odd td {
     background: #f1f6ef;
+}
+
+body #app>main section#features-new .table-wrapper table tbody tr.odd td .fa-check {
+    background: #f1f6ef;
+    color:#2B4A70;
 }
 
 body #app>main section#features-new .table-wrapper table tbody tr:last-child td {
@@ -5640,6 +5660,7 @@ body #app>main section#features-new .table-wrapper.classic table thead tr th {
     background: #97c35e;
     color: white;
     font-size: 1rem;
+    padding:10px 30px 20px 35px;
     text-transform: capitalize;
     font-weight: 100;
     font-family: Roboto;
@@ -5647,6 +5668,7 @@ body #app>main section#features-new .table-wrapper.classic table thead tr th {
 
 body #app>main section#features-new .table-wrapper.classic table thead tr .text-right {
     border-top-left-radius: 5px;
+    padding-bottom: 28px;
 }
 body #app>main section#features-new .table-wrapper.classic table thead tr .text-left {
     border-top-right-radius: 5px;
@@ -5668,12 +5690,11 @@ body #app>main section#features-new .table-wrapper.classic table thead tr th:nth
     border-right: none;
 }
 
-body #app>main section#features-new .table-wrapper.classic table thead tr th:nth-child(2) a.branding.logo {
-    background-image: url(/assets/img/logo-white.png);
-}
 
 body #app>main section#features-new .table-wrapper.classic table tbody tr td {
     background: white;
+    height:60px;
+    padding:  30px 0 0px 30px;
     border-bottom: #eeeeee;
 }
 
@@ -5692,6 +5713,7 @@ body #app>main section#features-new .table-wrapper.classic table tbody tr.odd td
 
 body #app>main section#features-new .table-wrapper.classic table tbody tr:last-child td {
     border-bottom: none;
+    padding-bottom:  40px;
 }
 
 body #app>main section#features-new .table-wrapper.classic table tbody tr:last-child td:nth-child(2) {
