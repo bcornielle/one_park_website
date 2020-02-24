@@ -5602,9 +5602,6 @@ body #app>main section#features-new .table-wrapper table tbody tr td {
 }
 
 
-body #app>main section#features-new .table-wrapper table tbody tr td .text.center  {
-    background: url(/assets/img/check.svg);
-}
 
 
 body #app>main section#features-new .table-wrapper table tbody tr td i {
