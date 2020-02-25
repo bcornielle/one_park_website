@@ -4883,7 +4883,7 @@ body #app>main section#hero .hero-content ul li img {
 }
 
 
-/**** Welcome To Section ****/
+/**** how we do Section ****/
 
 body #app>main section#how-we-do {
     margin: 0 auto;
@@ -4987,6 +4987,36 @@ body #app>main section#how-we-do .container.how-we-do .apply-now a.btn {
     max-width: 250px;
 }
 /***************************/
+
+
+/**** new hightlight section ****/
+
+body #app>main section#highlights-new {
+    margin: 30px 0 0 20px;
+}
+
+body #app>main section#highlights-new .highlight .highlight-icons {
+    margin: 0px 0 0 50px ;
+}
+body #app>main section#highlights-new .highlight div{
+    color:#2B4A70;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+}
+body #app>main section#highlights-new .highlight div:last-child{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 10px;
+    color: #97C35E;
+}
+/*******************************/
+
+
 body #app>main section#highlights {
     margin: -30px 0 0;
 }
