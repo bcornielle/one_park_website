@@ -4882,12 +4882,29 @@ body #app>main section#hero .hero-content ul li img {
     max-width: 100px;
 }
 
+/****** business funds works ******/
+body #app>main section#business-funds-works {
+    padding: 10px 0 380px 0;
+    background: linear-gradient(242.49deg, #1A2C4B 0%, #2B4A70 100%);
+}
+
+body #app>main section#business-funds-works .title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    text-align:center;
+    font-size: 1em;
+    align-items: center;
+    text-align: center;
+    color:#ffffff;
+}
+/*********************************/
 
 /**** how we do Section ****/
 
 body #app>main section#how-we-do {
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 30px 0;
 }
 
 
@@ -4895,17 +4912,16 @@ body #app>main section#how-we-do .main-container {
     padding: 50px 0;
     background: #f1f6ef;
 } 
-body #app>main section#how-we-do .main-container .image-container {
-    float:right;
-} 
 
+body #app>main section#how-we-do .main-container div .img-play {
+    margin: 20px 0 50px 10px;
+    width:100%;
+} 
 body #app>main section#how-we-do .main-container .image-container .bg-image {
-    background-image: url(/assets/img/now--min.png);
-    padding: 145px 0;
     position:relative;
-    bottom:20%;
+    bottom:15%;
+    right:50%;
     margin: 0 0 80px 80px;
-    background-repeat: no-repeat;
 } 
 
 body #app>main section#how-we-do .row .welcome-to {
@@ -4944,6 +4960,7 @@ body #app>main section#how-we-do .container .experience h2 .circle-dot {
 body #app>main section#how-we-do .container.how-we-do .video {
     background:white;
     float:right;
+    margin-right:20px;
 } 
 
 body #app>main section#how-we-do .container.how-we-do .numbers {
@@ -4996,7 +5013,10 @@ body #app>main section#highlights-new {
 }
 
 body #app>main section#highlights-new .highlight .highlight-icons {
-    margin: 0px 0 0 50px ;
+    margin: 5px 0 0 50px ;
+}
+body #app>main section#highlights-new .highlight .highlight-icons.check-square{
+    margin: 10px 0 0 50px ;
 }
 body #app>main section#highlights-new .highlight div{
     color:#2B4A70;
