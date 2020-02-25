@@ -4884,20 +4884,82 @@ body #app>main section#hero .hero-content ul li img {
 
 /****** business funds works ******/
 body #app>main section#business-funds-works {
-    padding: 10px 0 380px 0;
+    padding: 86px 0 150px 0;
     background: linear-gradient(242.49deg, #1A2C4B 0%, #2B4A70 100%);
 }
 
-body #app>main section#business-funds-works .title{
+body #app>main section#business-funds-works .title h1{
+    text-align:center;
+    align-items: center;
     font-family: Roboto;
     font-style: normal;
-    font-weight: 900;
-    text-align:center;
-    font-size: 1em;
-    align-items: center;
-    text-align: center;
+    font-weight: bold;
+    font-size: 2.2em;
+    line-height: 30px;
     color:#ffffff;
 }
+body #app>main section#business-funds-works .main-container .bg-img-sir {
+    width:47%;
+    margin: 150px 0 0 50px;
+    border-radius: 3px;
+    background-repeat: no-repeat;
+    background-image: url(/assets/img/business-funds-sir.png);
+}
+body #app>main section#business-funds-works .main-container .steps-container .subtitle-step {
+    font-size:0.6em;
+    margin-left:30px;
+    position:relative;
+}
+body #app>main section#business-funds-works .main-container .steps-container .title-step {
+    font-size:0.6em;
+}
+
+body #app>main section#business-funds-works .main-container .steps-container{
+    color:#ffffff;   
+    margin-top:7%;
+    margin-left:2%;
+    font-size:1.4em;
+}
+
+body #app>main section#business-funds-works .main-container .steps-container .numbers {
+    color:#97C35E;   
+    margin-top:8%;
+    margin-right:2%;
+    font-size:1.3em;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 30px;
+}
+
+body #app>main section#business-funds-works .main-container .steps-container .steps-line{
+    border: 1px solid #97C35E;
+    height: 100px;
+    font-weight: bold;
+    width: 2px;
+    margin-left:30px;
+}
+
+body #app>main section#business-funds-works .main-container .steps-container div{
+    padding:10px 0 10px 0;
+}
+
+body #app>main section#business-funds-works .main-container a.btn {
+    left: 23.33%;
+    right: 19.31%;
+    top: 51.7%;
+    border:none;
+    position:relative;
+    bottom: 147.47%;
+    background: #97C35E;
+    box-shadow: 0px 4px 0px #85AD52;
+    border-radius: 3px;
+}
+
+
+
+
 /*********************************/
 
 /**** how we do Section ****/
@@ -5776,11 +5838,119 @@ body #app>main section#features-new .tab-content .tab-pane {
 body #app>main section#features-new .tab-content .tab-pane p {
     padding-right: 60px;
 }
-
 /***********************************************************/
 
 
+/**************************Testimonials New********************************/
+body #app>main section#testimonials-new .main-container {
+    margin:0 auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 698.15px;
+    background-image: url(/assets/img/bg-we-succeed.png);
+}
+body #app>main section#testimonials-new .right-container {
 
+    margin:0 auto;
+    width: 100%;
+    float:right;
+    height: 545px;
+    background: #97c35e;
+}
+body #app>main section#testimonials-new .right-container   .first-title {
+    margin: 62px 0 0 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color:white;
+    background: #97c35e;
+}
+body #app>main section#testimonials-new .right-container .second-title {
+    margin: 12px 0 50px 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color:white;
+    background: #97c35e;
+}
+body #app>main section#testimonials-new .right-container .comment-customer{
+    border:none;
+    background: #FFFFFF;
+    position:relative;
+    right:8%;
+    padding:50px;
+    border-radius: 5px;
+}
+body #app>main section#testimonials-new .right-container .comment-customer .comment{
+    width:93%;
+    text-align: justify;
+
+}
+body #app>main section#testimonials-new .right-container .comment-customer .ratings {
+    width:100%;
+}
+body #app>main section#testimonials-new .right-container .comment-customer .ratings .kristie-img{
+    border-radius: 50px;
+    margin:16px 0 0 0;
+}
+body #app>main section#testimonials-new .right-container .comment-customer .ratings .stars-img{
+    margin:20px 0 0 50px;
+    float:right;
+}
+body #app>main section#testimonials-new .right-container .comment-customer .quotes{
+    margin-bottom: 25px;
+}
+
+body #app>main section#testimonials-new .bg-color {
+    height:545.20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 30px;
+    /* identical to box height, or 88% */
+    display: flex;
+    background: linear-gradient(270deg, #97C35E 2.22%, rgba(151, 195, 94, 0.9) 100%);
+}
+
+body #app>main section#testimonials-new {
+    margin: 0;
+    padding: 90px 0 120px;
+    background: white;
+}
+
+body #app>main section#testimonials-new h2 {
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+body #app>main section#testimonials-new p {
+    margin: 0 auto 30px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+body #app>main section#testimonials-new h3 {
+    text-align: center;
+    font-size: 1em;
+    margin-bottom: 60px;
+    font-weight: 900;
+    text-transform: none;
+}
+
+/*********************************************************/
 
 
 
