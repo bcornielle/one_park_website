@@ -6303,7 +6303,8 @@ body.section-television #app>main section#hero-new {
     width: 100%;
     background-repeat: no-repeat;
     height: 624px;
-    background: url(/assets/img/home-hero-canvas.svg);
+    background-size: cover;
+    background-image: url(/assets/img/home-hero-canvas.svg);
 }
 
 body.section-home #app>main section#hero-new .hero-content-new .branding.logo,
