@@ -6287,8 +6287,6 @@ body #app>main section#lp-form .container #form article:after {
     font-size: 24px;
 }
 
-
-
 /******************New LP-FORM*******************/
 
 body #app>main section#lp-form-new {
@@ -6296,32 +6294,6 @@ body #app>main section#lp-form-new {
     padding: 90px 0;
     border-bottom: solid 1px #359c1c;
 }
-body #app>main section#lp-form-new .lp-form .get-fast {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 42px;
-    line-height: 49px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color:#black;
-}
-
-
-body #app>main section#lp-form-new .lp-form .get-fast span {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 42px;
-    line-height: 49px;
-    display: flex;
-    color:#97C35E;
-    align-items: center;
-    text-align: center;
-}
-
-
 
 body #app>main section#lp-form-new .container #form {
     padding: 0;
@@ -6334,8 +6306,50 @@ body #app>main section#lp-form-new .container #form {
 
 body #app>main section#lp-form-new .container #form h2 {
     margin: 0 0 60px;
+    font-family: Roboto;
+    font-style: normal;
     font-weight: 900;
-    letter-spacing: 1px;
+    font-size: 42px;
+    line-height: 49px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color:#000;
+}
+body #app>main section#lp-form-new .container #form h3 {
+    margin: 0 0 60px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 49px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color:#000;
+}
+
+body #app>main section#lp-form-new .container #form h2 span {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 49px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color:#97c35e;
+}
+
+body #app>main section#lp-form-new .container #form h3 span {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 49px;
+    display: flex;
+    align-items: center;
+    text-align: center;
     color:#97c35e;
 }
 
@@ -6438,7 +6452,6 @@ body #app>main section#lp-form-new .container #form article ul.fields li:nth-chi
 
 body #app>main section#lp-form-new .container #form article ul.fields li .form-control {
     border-radius: 6px;
-    border: none;
     box-shadow: none;
 }
 
@@ -6470,6 +6483,10 @@ body #app>main section#lp-form-new.container #form article .btn:hover {
 body #app>main section#lp-form-new .container #form article .honeypot {
     display: none;
 }
+body #app>main section#lp-form-new .lp-form  .disclaimer-box .disclaimer {
+    width:;
+    color:#858585;
+}
 
 body #app>main section#lp-form-new .lp-form  .disclaimer {
     font-family: Roboto;
@@ -6481,6 +6498,7 @@ body #app>main section#lp-form-new .lp-form  .disclaimer {
     display: flex;
     align-items: center;
     text-align: center;
+    color: #858585;
 }
 
 /*****************************************************/
