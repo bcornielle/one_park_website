@@ -4128,13 +4128,13 @@ p {
     line-height: 2;
 }
 
-input[required] {
+/* input[required] {
     background-image: url(/assets/img/asterisk.png);
     background-repeat: no-repeat;
     background-position-x: 99%;
     background-position-y: center;
     background-size: 16px;
-}
+} */
 
 body #app>nav {
     order: 1;
@@ -4898,30 +4898,30 @@ body #app>main section#business-funds-works .title h1{
     line-height: 30px;
     color:#ffffff;
 }
-body #app>main section#business-funds-works .main-container .bg-img-sir {
+body #app>main section#business-funds-works .container .bg-img-sir {
     width:47%;
     margin: 150px 0 0 50px;
     border-radius: 3px;
     background-repeat: no-repeat;
     background-image: url(/assets/img/business-funds-sir.png);
 }
-body #app>main section#business-funds-works .main-container .steps-container .subtitle-step {
+body #app>main section#business-funds-works .container .steps-container .subtitle-step {
     font-size:0.6em;
     margin-left:30px;
     position:relative;
 }
-body #app>main section#business-funds-works .main-container .steps-container .title-step {
+body #app>main section#business-funds-works .container .steps-container .title-step {
     font-size:0.6em;
 }
 
-body #app>main section#business-funds-works .main-container .steps-container{
+body #app>main section#business-funds-works .container .steps-container{
     color:#ffffff;   
     margin-top:7%;
     margin-left:2%;
     font-size:1.4em;
 }
 
-body #app>main section#business-funds-works .main-container .steps-container .numbers {
+body #app>main section#business-funds-works .container .steps-container .numbers {
     color:#97C35E;   
     margin-top:8%;
     margin-right:2%;
@@ -4933,7 +4933,7 @@ body #app>main section#business-funds-works .main-container .steps-container .nu
     line-height: 30px;
 }
 
-body #app>main section#business-funds-works .main-container .steps-container .steps-line{
+body #app>main section#business-funds-works .container .steps-container .steps-line{
     border: 1px solid #97C35E;
     height: 100px;
     font-weight: bold;
@@ -4941,11 +4941,11 @@ body #app>main section#business-funds-works .main-container .steps-container .st
     margin-left:30px;
 }
 
-body #app>main section#business-funds-works .main-container .steps-container div{
+body #app>main section#business-funds-works .container .steps-container div{
     padding:10px 0 10px 0;
 }
 
-body #app>main section#business-funds-works .main-container a.btn {
+body #app>main section#business-funds-works .container a.btn {
     left: 23.33%;
     right: 19.31%;
     top: 51.7%;
@@ -4956,7 +4956,6 @@ body #app>main section#business-funds-works .main-container a.btn {
     box-shadow: 0px 4px 0px #85AD52;
     border-radius: 3px;
 }
-
 
 
 
@@ -6211,6 +6210,7 @@ body #app>main section#lp-form .container #form article {
 
 body #app>main section#lp-form .container #form article ul.fields {
     padding: 30px 60px 0;
+    
 }
 
 body #app>main section#lp-form .container #form article ul.fields li {
@@ -6291,67 +6291,68 @@ body #app>main section#lp-form .container #form article:after {
 
 body #app>main section#lp-form-new {
     color: white;
-    padding: 90px 0;
+    padding: 82px 0;
     border-bottom: solid 1px #359c1c;
+}
+
+body #app>main section#lp-form-new .container #form article .bank-account span{
+    color:black;
 }
 
 body #app>main section#lp-form-new .container #form {
     padding: 0;
+    margin:0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     text-align: center;
+    width:800px;
 }
 
-body #app>main section#lp-form-new .container #form h2 {
-    margin: 0 0 60px;
+body #app>main section#lp-form-new .container #form h2  {
     font-family: Roboto;
     font-style: normal;
     font-weight: 900;
-    font-size: 42px;
-    line-height: 49px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color:#000;
+    font-size:42px;
+    line-height: 52px;
+    color:#272727;
+    justify-content: center;
 }
 body #app>main section#lp-form-new .container #form h3 {
-    margin: 0 0 60px;
     font-family: Roboto;
     font-style: normal;
-    font-weight: 900;
-    font-size: 42px;
-    line-height: 49px;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 22px;
+    /* identical to box height, or 85% */
+    margin-top:20px;
     display: flex;
     align-items: center;
-    text-align: center;
-    color:#000;
+    color:#272727;
+    justify-content: center;
 }
 
 body #app>main section#lp-form-new .container #form h2 span {
     font-family: Roboto;
     font-style: normal;
     font-weight: 900;
-    font-size: 42px;
-    line-height: 49px;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color:#97c35e;
+}
+body #app>main section#lp-form-new .container #form h3 span {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1em;
     display: flex;
     align-items: center;
     text-align: center;
     color:#97c35e;
 }
 
-body #app>main section#lp-form-new .container #form h3 span {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 42px;
-    line-height: 49px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color:#97c35e;
-}
 
 body #app>main section#lp-form-new .container #form p {
     font-weight: 100;
@@ -6368,12 +6369,13 @@ body #app>main section#lp-form-new.container #form p span {
 }
 
 body #app>main section#lp-form-new .container #form p.disclaimer {
-    margin: 30px 60px 0;
+    margin: 10px 10px 0 0;
+    width:100%;
     line-height: 1.5;
     text-align: center;
     font-size: .9em;
     font-style: italic;
-    color: #d8d4d4;
+    color: #858585;
 }
 
 body #app>main section#lp-form-new .container #form p.disclaimer .terms-of-use {
@@ -6382,13 +6384,15 @@ body #app>main section#lp-form-new .container #form p.disclaimer .terms-of-use {
 }
 
 body #app>main section#lp-form-new .container #form article ul.fields {
-    padding: 30px 60px 0;
+    padding: 20px 60px 0;
 }
 
 body #app>main section#lp-form-new .container #form article ul.fields li {
     float: left;
     width: 49% !important;
-    margin: 0 2% 2% 0;
+    margin: 0 2% 3% 0;
+    background: #FFFFFF;
+    box-sizing: border-box;
 }
 
 body #app>main section#lp-form-new .container #form article ul.fields 
@@ -6451,8 +6455,12 @@ body #app>main section#lp-form-new .container #form article ul.fields li:nth-chi
 }
 
 body #app>main section#lp-form-new .container #form article ul.fields li .form-control {
-    border-radius: 6px;
+    border-radius: 0px;
     box-shadow: none;
+}
+body #app>main section#lp-form-new .container #form article ul.fields li .form-control:focus {
+    border:1px solid #97C35E;
+
 }
 
 body #app>main section#lp-form-new .container #form article ul.fields li:last-child:nth-child(1n) {
@@ -6469,30 +6477,23 @@ body #app>main section#lp-form-new .container #form article a.btn {
     font-style: normal;
     text-transform: uppercase;
     color: #ffffff;
-    transition: all ease .4s;
     font-size: 1.2em;
     font-weight: 600;
     text-align:center;
 }
-
-body #app>main section#lp-form-new.container #form article .btn:hover {
-    background-color: #267114;
-    transform: translateX(0px) scale(1.05);
+body #app>main section#lp-form-new .container #form article a.btn:hover{
+    background: #359c1c;
+    transition: all ease .4s;
 }
-
 body #app>main section#lp-form-new .container #form article .honeypot {
     display: none;
-}
-body #app>main section#lp-form-new .lp-form  .disclaimer-box .disclaimer {
-    width:;
-    color:#858585;
 }
 
 body #app>main section#lp-form-new .lp-form  .disclaimer {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 112px;
+    font-size: 12px;
     line-height: 150%;
     /* or 18px */
     display: flex;
@@ -6500,6 +6501,29 @@ body #app>main section#lp-form-new .lp-form  .disclaimer {
     text-align: center;
     color: #858585;
 }
+body #app>main section#lp-form-new .badget ul.badgets .a-rating{
+    margin-left:5%;
+}
+body #app>main section#lp-form-new .badget {
+    float: left;
+    margin: 0 0 0 20px;
+}
+
+body #app>main section#lp-form-new .badget ul {
+    display: flex;
+    align-items: center;
+}
+
+body #app>main section#lp-form-new .badget ul.badgets li {
+    float: left;
+    width: 100% !important;
+    margin: 0 5% 5% 0;
+}
+
+body #app>main section#lp-form-new .badget ul.badgets li:nth-child(3n) {
+    margin-right: 0;
+}
+
 
 /*****************************************************/
 

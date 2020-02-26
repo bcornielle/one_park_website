@@ -2,13 +2,14 @@
     <div class="container">
         <div id="form" class="lp-form">
             <div class="row">
-                <div class="col-md-12">
-                    <h2 class="get-fast">
+                <div class="col-lg-12 col-sm-12 col-md-12 titles">
+                    <h2 class="get-fast row">
                         Get $5000 - $750,000&nbsp;
                         <span>Fast</span>
                     </h2>
                     <h3 class="one-simple">
-                        One <span>Simple</span> Application - Instant <span>Access</span> to <span>20+ Top Funders</span>
+                        One&nbsp;<span>Simple</span>&nbsp;Application - Instant&nbsp;
+                        <span>Access</span>&nbsp;to&nbsp;<span>&nbsp;20+ Top Funders</span>
                     </h3>
                 </div>
             </div>
@@ -47,32 +48,28 @@
                                 </select>
                             </li>
                             <li>
-                                <select name="monthly_revenue" class="form-control" title="Monthly Revenue">
+                                <select name="time_business" class="form-control" title="Monthly Revenue">
                                     <option value="" disabled selected>Time in Business</option>
-                                    <option value="1">Less than $2,500</option>
-                                    <option value="5000">$2,500 - $7,500</option>
-                                    <option value="8000">$7,500 - $ 10,000</option>
-                                    <option value="15000">$10,000 - $25,000</option>
-                                    <option value="35000">$25,000 - $50,000</option>
-                                    <option value="75000">$50,000 - $100,000</option>
-                                    <option value="125000">$100,000 - $750,000</option>
-                                    <option value="1000000">Over $750,000</option>
+                                    <option value="1">Less than 3 months</option>
+                                    <option value="5000">3 months</option>
+                                    <option value="8000">More than 3 months</option>
                                 </select>
                             </li>
                             <li>
-                                <input type="tel" name="phone" id="phone-number" class="form-control phone-format" value="{{ old:phone }}" pattern="(?:\(\d{3}\)|\d{3})[- ]?\d{3}[- ]?\d{4}" placeholder="Phone Number (___) - ___ - ____" required/>
+                                <input type="tel" name="phone" id="phone-number" class="form-control phone-format" value="{{ old:phone }}" 
+                                pattern="(?:\(\d{3}\)|\d{3})[- ]?\d{3}[- ]?\d{4}" placeholder="Phone Number      (___) - ___ - ____" required/>
                             </li>
-                            <li class="bank-account">
-                                <label for="business-bank-account">Business Bank Account:</label>
-                                <div class="radio-toolbar">                                    
+                            <li class="bank-account row">
+                                <span>Business Bank Account:</span>
+                               <div class="radio-toolbar">                                    
                                     <label for="radioYES" class="radioYes">YES</label>
                                     <input type="radio" id="radioApple" name="test1" value="test" checked>
                                     <label for="radioNo" class="radioNo">NO</label>
                                     <input type="radio" id="radioBanana" name="radioFruit" value="banana" >
                                 </div>
                             </li>
-                            <li class="bank-account">
-                                <label for="business-bank-account">Business Bank Account:</label>
+                            <li class="bank-account row">
+                                <span>Business Bank Account:</span>
                                 <div class="radio-toolbar">                                    
                                     <label for="radioYES" class="radioYes">YES</label>
                                     <input type="radio" id="radioApple" name="test1" value="test" checked>
@@ -107,7 +104,26 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 disclaimer-box">
                     <p class="disclaimer">
-                        By clicking “Get Funded Now”, you consent to receive phone calls & SMS (Msg & data rates may apply) from One Park Financial at the number provided above.  Calls may be generated using an auto-dialer & may contain pre-recorded messages. Consent is not a condition of purchase or receipt of services. Opt-out at any time.                    </p>
+                        By clicking “Get Funded Now”, you consent to receive phone calls & SMS (Msg & data rates may apply) from One Park Financial at the number provided above. Calls may be generated using an auto-dialer & may contain pre-recorded messages. Consent is not a condition of purchase or receipt of services. Opt-out at any time.
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <div class="badget">
+                        <ul class="badgets">
+                            <li>
+                                <img src="/assets/img/excellent-trust.png">
+                            </li>
+                            <li>
+                                <img src="/assets/img/comodo-red.png">
+                            </li>
+                            <li>
+                                <img src="/assets/img/google-stars-rating.png">
+                            </li>
+                            <li class="a-rating">
+                                <img src="/assets/img/a+rating.png">
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
