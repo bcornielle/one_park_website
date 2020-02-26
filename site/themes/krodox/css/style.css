@@ -6505,8 +6505,7 @@ body #app>main section#lp-form-new .badget ul.badgets .a-rating{
     margin-left:5%;
 }
 body #app>main section#lp-form-new .badget {
-    float: left;
-    margin: 0 0 0 20px;
+    margin: 0 20px 0 0px;
 }
 
 body #app>main section#lp-form-new .badget ul {
