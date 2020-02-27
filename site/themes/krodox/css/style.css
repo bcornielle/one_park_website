@@ -4908,6 +4908,7 @@ body #app>main section#hero .hero-content ul li img {
     width: 577px;
     height: 395px ;
     margin-bottom: 41px;
+    margin-top: 72px;
 }
 
 .main-cta {
@@ -5153,9 +5154,13 @@ body #app>main section#highlights-new {
 body #app>main section#highlights-new .highlight .highlight-icons {
     margin: 5px 0 0 50px ;
 }
+body #app>main section#highlights-new .highlight .highlight-icons.approval {
+    margin-left:40px;
+}
 body #app>main section#highlights-new .highlight .highlight-icons.check-square{
     margin: 10px 0 0 50px ;
 }
+
 body #app>main section#highlights-new .highlight div{
     color:#2B4A70;
     font-family: Roboto;
@@ -5609,6 +5614,17 @@ body #app>main section#features-new  .container .have-you {
     border-radius: 5px;
     background:#2B4A70;    
 }
+
+body #app>main section#features-new  .container h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 34px;
+    /* identical to box height, or 85% */
+
+    align-items: center;
+    text-align: center;
+}
 body #app>main section#features-new  .container .have-you h6 {
     align-items: center;
     display:flex;
@@ -5738,6 +5754,12 @@ body #app>main section#features-new .table-wrapper {
 body #app>main section#features-new .table-wrapper table {
     margin: 30px 0;
 }
+body #app>main section#features-new .tab-descriptions .tab-content .arrow-left,
+body #app>main section#features-new .tab-descriptions .tab-content .arrow-right
+{
+    margin-top:55px;
+}
+
 body #app>main section#features-new .tab-descriptions .tab-content a.arrow-left{
     background-image: url('/assets/img/arrow-green-left.png');
     position: relative;
@@ -5748,7 +5770,8 @@ body #app>main section#features-new .tab-descriptions .tab-content a.arrow-right
 }
 body #app>main section#features-new .dots-headings {
     position:relative;
-    left:60%;
+    top:10%;
+    left:45.6%;
     max-width:18%;
 
 }
@@ -5927,6 +5950,18 @@ body #app>main section#features-new .tab-content .arrows .paragraph{
     position:relative;
 }
 
+body #app>main section#features-new .tab-content .arrows .carousel-titles{
+    margin-left:320px;
+    padding-bottom: 20px;
+    color:#2B4A70;
+}
+body #app>main section#features-new .tab-content .arrows .carousel-titles span{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 30px;
+}
 /***********************************************************/
 
 
