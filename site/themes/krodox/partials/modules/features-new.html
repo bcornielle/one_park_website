@@ -10,8 +10,8 @@
                 <div class="tab-descriptions">
                     <div class="tab-content id="nav-tabContent">
                         <div class="tab-pane fade show active" id="nav-1" role="tabpanel" aria-labelledby="nav-1-tab">
-                            <div class="row col-lg-12"> 
-                                <div class="arrow-2 col-lg-1"> elemento</div>
+                            <div class="row col-lg-1 arrow-right"> 
+                                <img src="/assets/img/arrow-green-right.png" onclick="pressNav2()" />
                             </div>
                             <p>You need funding to grow your business to the next level, or to meet critical
                                 obligations. But you may not want to wait for a bank business loan to be approved, or –
@@ -24,9 +24,11 @@
                                 and are happy to work with people who may not have a perfect credit score.</p>
                         </div>
                         <div class="tab-pane fade" id="nav-2" role="tabpanel" aria-labelledby="nav-2-tab">
-                            <div class="row col-lg-12"> 
-                                <div class="arrow-1 col-lg-1"> elemento</div>
-                                <div class="arrow-2 col-lg-1"> elemento</div>
+                            <div class="row col-lg-1 arrow-left"> 
+                                <img src="/assets/img/arrow-green-left.png" onclick="pressNav1()" />
+                            </div>
+                            <div class="row col-lg-1 arrow-right"> 
+                                <img src="/assets/img/arrow-green-right.png" onclick="pressNav3()" />
                             </div>
                             <p>Contact us now for a pre-qualification assessment. We’ll work with you to help find the
                                 funding that your business needs, even if you do not qualify for a traditional bank
@@ -36,9 +38,11 @@
                                 three months or more, with monthly revenues of at least $5,000.</p>
                         </div>
                         <div class="tab-pane fade" id="nav-3" role="tabpanel" aria-labelledby="nav-3-tab">
-                            <div class="row col-lg-12"> 
-                                <div class="arrow-1 col-lg-1"> elemento</div>
-                                <div class="arrow-2 col-lg-1"> elemento</div>
+                            <div class="row col-lg-1 arrow-left"> 
+                                <img src="/assets/img/arrow-green-left.png" onclick="pressNav2()" />
+                            </div>
+                            <div class="row col-lg-1 arrow-right"> 
+                                <img src="/assets/img/arrow-green-right.png" onclick="pressNav4()" />
                             </div>
                             <p>Your business success determines the amount of working capital amount that we can help
                                 you to access. No need to pledge your assets - personal or business - to secure funding.
@@ -46,8 +50,8 @@
                                 funding sources that best meet your needs.</p>
                         </div>
                         <div class="tab-pane fade" id="nav-4" role="tabpanel" aria-labelledby="nav-4-tab">
-                            <div class="row col-lg-12"> 
-                                <div class="arrow-1 col-lg-1"> elemento</div>
+                            <div class="row col-lg-1 arrow-right"> 
+                                <img src="/assets/img/arrow-green-left.png" onclick="pressNav3()" />
                             </div>
                             <p>We can help you connect with funding sources that work with small business owners who
                                 have lower-than-ideal credit scores. Get started with a pre-qualification assessment
@@ -56,26 +60,20 @@
                         </div>
                     </div>
                     <div class="col-sm-12 row tab-headings dots-headings">
-                            <div class="nav" id="nav-tab">
-                                <a class="nav-item nav-link active" id="nav-1-tab" data-toggle="tab" href="#nav-1"
-                                   role="tab" aria-controls="nav-1" aria-selected="true">
-                                    <span>1</span>
-                                </a>
-                                <a class="nav-item nav-link" id="nav-2-tab" data-toggle="tab" href="#nav-2" role="tab"
-                                   aria-controls="nav-2" aria-selected="false">
-                                    <span>1</span>
-                                </a>
-                                <a class="nav-item nav-link" id="nav-3-tab" data-toggle="tab" href="#nav-3" role="tab"
-                                   aria-controls="nav-3" aria-selected="false">
-                                    <i class="far fa-edit"></i>
-                                    <span>1</span>
-                                </a>
-                                <a class="nav-item nav-link" id="nav-4-tab" data-toggle="tab" href="#nav-4" role="tab"
-                                   aria-controls="nav-4" aria-selected="false">
-                                    <i class="fas fa-check-circle"></i>
-                                    <span>1</span>
-                                </a>
-                            </div>
+                        <div class="nav" id="nav-tab">
+                            <a class="nav-item nav-link active elipse" id="nav-1-tab" data-toggle="tab" href="#nav-1"
+                                role="tab" aria-controls="nav-1" aria-selected="true">
+                            </a>
+                            <a class="nav-item nav-link elipse" id="nav-2-tab" data-toggle="tab" href="#nav-2" role="tab"
+                                aria-controls="nav-2" aria-selected="false">
+                            </a>
+                            <a class="nav-item nav-link elipse" id="nav-3-tab" data-toggle="tab" href="#nav-3" role="tab"
+                                aria-controls="nav-3" aria-selected="false">
+                            </a>
+                            <a class="nav-item nav-link elipse" id="nav-4-tab" data-toggle="tab" href="#nav-4" role="tab"
+                                aria-controls="nav-4" aria-selected="false">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -173,5 +171,16 @@
     </div>
 </section>
 <script>
-    console.log('initial javascript commit')
+    function pressNav1(){
+        document.getElementById('nav-1-tab').click();
+    }
+    function pressNav2(){
+        document.getElementById('nav-2-tab').click();
+    }
+    function pressNav3(){
+        document.getElementById('nav-3-tab').click();
+    }
+    function pressNav4(){
+        document.getElementById('nav-4-tab').click();
+    }
 </script>
