@@ -4411,7 +4411,7 @@ body #app>nav.apple .nav-wrapper .container .menus .navbar-right {
     order: 2;
     flex-grow: 1;
     height: 120px;
-    text-align: right;
+    text-align: left;
     padding: 15px 0 15px 1px;
     display: flex;
     flex-direction: column;
@@ -4686,18 +4686,18 @@ body #app>main section#hero-new .hero-content-new h1 {
     font-weight: 900;
     letter-spacing: -2px;
     color: #ffffff;
-    font-size: 2.7rem;
+    font-size: 3rem;
     line-height: 1;
 }
 
 body #app>main section#hero-new .hero-content-new h1 span {
     display: block;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
 }
 
 body #app>main section#hero-new .hero-content-new h2 {
     order: 2;
-    font-size: 1.7rem;
+    font-size: 2rem;
     margin-bottom: 30px;
     font-weight: 600;
     letter-spacing: -1px;
@@ -4706,7 +4706,7 @@ body #app>main section#hero-new .hero-content-new h2 {
 
 body #app>main section#hero-new .hero-content-new h3 {
     order: 3;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: #ffffff;
     font-weight: 300;
     letter-spacing: -1px;
@@ -4932,15 +4932,22 @@ body #app>main section#how-business-funds-works .container .steps-container .sub
     font-size:0.6em;
     margin-left:30px;
     position:relative;
+    top:30%;
+}
+
+
+body #app>main section#how-business-funds-works .container .steps-container .subtitle-step.get-funded {
+    font-size:0.6em;
+    margin-left:60px;
 }
 body #app>main section#how-business-funds-works .container .steps-container .title-step {
     font-size:0.6em;
 }
 
-body #app>main section#how-business-funds-works .container .steps-container{
+body #app>main section#how-business-funds-works .container .steps-container {
     color:#ffffff;
     margin-top:7%;
-    margin-left:2%;
+    margin-left:12%;
     font-size:1.4em;
 }
 
@@ -5950,11 +5957,36 @@ body #app>main section#features-new .tab-content .arrows .paragraph{
     position:relative;
 }
 
-body #app>main section#features-new .tab-content .arrows .carousel-titles{
-    margin-left:320px;
-    padding-bottom: 20px;
+body #app>main section#features-new .tab-content .arrows .carousel-titles.approval{
+    margin-left:317px;
+    padding-bottom: 30px;
     color:#2B4A70;
 }
+
+body #app>main section#features-new .tab-content .arrows .carousel-titles .highlight-icons{
+    margin-right: 10px;
+}
+
+body #app>main section#features-new .tab-content .arrows .carousel-titles.bad{
+    margin-left:285px;
+    padding-bottom: 30px;
+    color:#2B4A70;
+}
+
+body #app>main section#features-new .tab-content .arrows .carousel-titles.documment{
+    margin-left:290px;
+    padding-bottom: 30px;
+    color:#2B4A70;
+}
+
+body #app>main section#features-new .tab-content .arrows .carousel-titles.collateral{
+    margin-left:290px;
+    padding-bottom: 30px;
+    color:#2B4A70;
+}
+
+
+
 body #app>main section#features-new .tab-content .arrows .carousel-titles span{
     font-family: Roboto;
     font-style: normal;
@@ -6631,6 +6663,10 @@ body #app>main section#lp-form-new .lp-form  .disclaimer {
     text-align: center;
     color: #858585;
 }
+body #app>main section#lp-form-new .badget ul.badgets{
+    margin-left:5%;
+}
+
 body #app>main section#lp-form-new .badget ul.badgets .a-rating{
     margin-left:4%;
 }

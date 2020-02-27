@@ -10,14 +10,14 @@
                 <div class="tab-descriptions">
                     <div class="tab-content" id="nav-tabContent">
                         <div class="tab-pane fade show active arrows row" id="nav-1" role="tabpanel" aria-labelledby="nav-1-tab">
-                              <div class="row ">
+                              <div class="row">
                                 <div class="col-lg-1 arrow-left"> 
                                 </div>
                                 <div class="col-lg-10 paragraph">
-                                    <div class="row carousel-titles">
+                                    <div class="row carousel-titles approval">
                                         <img 
                                             class="highlight-icons check-square" 
-                                            src="/assets/img/check-square.svg"
+                                            src="/assets/img/approval.svg"
                                          />
                                          <span>
                                              Approval In Hours
@@ -45,7 +45,7 @@
                                     <img src="/assets/img/arrow-green-left.png" onclick="pressNav1()" />
                                 </div>
                                 <div class="col-lg-10 paragraph">
-                                    <div class="row carousel-titles">
+                                    <div class="row carousel-titles documment">
                                         <img 
                                             class="highlight-icons documment" 
                                             src="/assets/img/document.svg"
@@ -75,10 +75,10 @@
                                     <img src="/assets/img/arrow-green-left.png" onclick="pressNav2()" />
                                 </div>
                                 <div class="col-lg-10 paragraph">
-                                    <div class="row carousel-titles">
+                                    <div class="row carousel-titles collateral">
                                         <img 
                                             class="highlight-icons check-square" 
-                                            src="/assets/img/task.svg"
+                                            src="/assets/img/document.svg"
                                          />
                                          <span>
                                              Collateral Not Required
@@ -101,24 +101,19 @@
                                     <img src="/assets/img/arrow-green-left.png" onclick="pressNav3()" />
                                 </div>
                                 <div class="col-lg-10 paragraph">
-                                    <div class="row carousel-titles">
+                                    <div class="row carousel-titles bad">
                                         <img 
                                             class="highlight-icons check-square" 
-                                            src="/assets/img/task.svg"
+                                            src="/assets/img/check-square.svg"
                                          />
                                          <span>
-                                             Collateral Not Required
+                                             Bad Credit , No Problem
                                          </span>
                                     </div>
-                                    <p>You need funding to grow your business to the next level, or to meet critical
-                                        obligations. But you may not want to wait for a bank business loan to be approved, or –
-                                        like many small or mid-sized businesses, you may not easily qualify for traditional
-                                        business loan offerings. Don’t worry, we’re here to help.
-                                        <br>
-                                        One Park Financial believes that your business 
-                                        should have ready access to working capital, just like big corporations do. 
-                                        So, we pair you with funders that focus on working with small and mid-sized businesses,
-                                        and are happy to work with people who may not have a perfect credit score.
+                                    <p>
+                                        We can help you connect with funding sources that work with small business owners who have lower-than-ideal credit scores.
+                                        Get started with a pre-qualification assessment now, and let us help you access the working capital you need.
+                                        It’s a quick, easy and painless process, to get started just click the “Get Funding Now” button.
                                     </p>
                                 </div>
                                 <div class="col-lg-1 arrow-right"> 
@@ -128,16 +123,16 @@
                     </div>
                     <div class="col-sm-12 arrows row tab-headings dots-headings">
                         <div class="nav" id="nav-tab">
-                            <a class="nav-item nav-link active elipse" id="nav-1-tab" data-toggle="tab" href="#nav-1"
+                            <a class="nav-item nav-link active elipse-1 " id="nav-1-tab" data-toggle="tab" href="#nav-1"
                                 role="tab" aria-controls="nav-1" aria-selected="true">
                             </a>
-                            <a class="nav-item nav-link elipse" id="nav-2-tab" data-toggle="tab" href="#nav-2" role="tab"
+                            <a class="nav-item nav-link elipse elipse-2" id="nav-2-tab" data-toggle="tab" href="#nav-2" role="tab"
                                 aria-controls="nav-2" aria-selected="false">
                             </a>
-                            <a class="nav-item nav-link elipse" id="nav-3-tab" data-toggle="tab" href="#nav-3" role="tab"
+                            <a class="nav-item nav-link elipse elipse-3" id="nav-3-tab" data-toggle="tab" href="#nav-3" role="tab"
                                 aria-controls="nav-3" aria-selected="false">
                             </a>
-                            <a class="nav-item nav-link elipse" id="nav-4-tab" data-toggle="tab" href="#nav-4" role="tab"
+                            <a class="nav-item nav-link elipse elipse-4" id="nav-4-tab" data-toggle="tab" href="#nav-4" role="tab"
                                 aria-controls="nav-4" aria-selected="false">
                             </a>
                         </div>
@@ -238,17 +233,67 @@
     </div>
 </section>
 <script>
+    document.getElementsByClassName('elipse-1')[0].setAttribute(
+        "style", "background: url(/assets/img/elipse-green.svg); background-repeat:no-repeat;)"
+        );
     function pressNav1(){
-        document.getElementById('nav-1-tab').click();
-
+       document.getElementById('nav-1-tab').click();
+       document.getElementsByClassName('elipse-1')[0].setAttribute(
+        "style", "background: url(/assets/img/elipse-green.svg); background-repeat:no-repeat;)"
+        );
+        document.getElementsByClassName('elipse-2')[0].setAttribute(
+        "style", "background: url(/assets/img/elipse-purple.svg); background-repeat:no-repeat;)"
+        );
+        document.getElementsByClassName('elipse-3')[0].setAttribute(
+        "style", "background: url(/assets/img/elipse-purple.svg); background-repeat:no-repeat;)"
+        );
+        document.getElementsByClassName('elipse-4')[0].setAttribute(
+        "style", "background: url(/assets/img/elipse-purple.svg); background-repeat:no-repeat;)"
+        );
     }
     function pressNav2(){
         document.getElementById('nav-2-tab').click();
+        document.getElementsByClassName('elipse-2')[0].setAttribute(
+            "style", "background: url(/assets/img/elipse-green.svg); background-repeat:no-repeat;)"
+        );
+        document.getElementsByClassName('elipse-3')[0].setAttribute(
+        "style", "background: url(/assets/img/elipse-purple.svg); background-repeat:no-repeat;)"
+        );
+        document.getElementsByClassName('elipse-1')[0].setAttribute(
+        "style", "background: url(/assets/img/elipse-purple.svg); background-repeat:no-repeat;)"
+        );
+        document.getElementsByClassName('elipse-4')[0].setAttribute(
+        "style", "background: url(/assets/img/elipse-purple.svg); background-repeat:no-repeat;)"
+        );
     }
     function pressNav3(){
         document.getElementById('nav-3-tab').click();
+        document.getElementsByClassName('elipse-3')[0].setAttribute(
+            "style", "background: url(/assets/img/elipse-green.svg); background-repeat:no-repeat;)"
+        );
+        document.getElementsByClassName('elipse-4')[0].setAttribute(
+        "style", "background: url(/assets/img/elipse-purple.svg); background-repeat:no-repeat;)"
+        );
+        document.getElementsByClassName('elipse-2')[0].setAttribute(
+        "style", "background: url(/assets/img/elipse-purple.svg); background-repeat:no-repeat;)"
+        );
+        document.getElementsByClassName('elipse-1')[0].setAttribute(
+        "style", "background: url(/assets/img/elipse-purple.svg); background-repeat:no-repeat;)"
+        );
     }
     function pressNav4(){
         document.getElementById('nav-4-tab').click();
+        document.getElementsByClassName('elipse-4')[0].setAttribute(
+            "style", "background: url(/assets/img/elipse-green.svg); background-repeat:no-repeat;)"
+        );
+        document.getElementsByClassName('elipse-1')[0].setAttribute(
+        "style", "background: url(/assets/img/elipse-purple.svg); background-repeat:no-repeat;)"
+        );
+        document.getElementsByClassName('elipse-3')[0].setAttribute(
+        "style", "background: url(/assets/img/elipse-purple.svg); background-repeat:no-repeat;)"
+        );
+        document.getElementsByClassName('elipse-2')[0].setAttribute(
+        "style", "background: url(/assets/img/elipse-purple.svg); background-repeat:no-repeat;)"
+        );
     }
 </script>
