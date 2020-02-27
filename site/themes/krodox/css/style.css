@@ -5250,6 +5250,13 @@ body #app>main section#stats .stats-info .video .video-cover img {
     box-shadow: 0px 4px 54px rgba(43, 74, 112, 0.1);
 }
 
+body #app>main section#stats .stats-info .video .trustpilot-horizontal {
+    width: 300px;
+    height: 22px;
+    margin: 0 auto;
+}
+
+
 
 /*********************************/
 
