@@ -5047,6 +5047,47 @@ body #app>main section#business-funds-works .main-container a.btn {
 
 /*********************************/
 
+body #app>main section#stats {
+    background-color: #ffffff;
+    margin: 45px 0 0 0;
+
+}
+
+body #app>main section#stats .bckgs {
+    min-height: 727px;
+    z-index: 1;
+
+}
+
+body #app>main section#stats .facts-bckg {
+    background-color: #F9F9F9;
+
+}
+
+
+body #app>main section#stats .stats-info {
+
+    z-index: 2;
+    min-height: 727px;
+    position: relative;
+    top: -727px;
+    color: #000000;
+
+}
+
+body #app>main section#stats .stats-info .line {
+    font-weight: 400;
+    height:0px;
+    width:45px;
+    margin:12px 0 0 0px;
+    border:1px solid #97c35e;
+    font-size: 3rem;
+    color:#97c35e;
+}
+
+
+/*********************************/
+
 /**** how we do Section ****/
 
 body #app>main section#how-we-do {
@@ -5058,7 +5099,7 @@ body #app>main section#how-we-do {
 body #app>main section#how-we-do .main-container {
     padding: 50px 0;
     background: #f1f6ef;
-} 
+}
 
 body #app>main section#how-we-do .main-container div .img-play {
     margin: 20px 0 50px 10px;
