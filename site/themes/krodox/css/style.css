@@ -5741,16 +5741,17 @@ body #app>main section#features-new .table-wrapper table {
 body #app>main section#features-new .tab-descriptions .tab-content a.arrow-left{
     background-image: url('/assets/img/arrow-green-left.png');
     position: relative;
-    top: 10%;
-    right:10%;
 }
 body #app>main section#features-new .tab-descriptions .tab-content a.arrow-right{
     background-image: url('/assets/img/arrow-green-right.png');
     position: relative;
-    top: 10%;
-    left:90%;
 }
+body #app>main section#features-new .dots-headings {
+    position:relative;
+    left:60%;
+    max-width:18%;
 
+}
 body #app>main section#features-new .dots-headings a.elipse{
     background-image: url('/assets/img/elipse-purple.svg');
     background-repeat: no-repeat;
@@ -5873,7 +5874,7 @@ body #app>main section#features-new .table-wrapper.classic table thead tr th {
 
 body #app>main section#features-new .table-wrapper.classic table thead tr .text-right {
     border-top-left-radius: 5px;
-    padding-bottom: 28px;
+    padding-bottom: 18px;
 }
 body #app>main section#features-new .table-wrapper.classic table thead tr .text-left {
     border-top-right-radius: 5px;
@@ -5922,14 +5923,10 @@ body #app>main section#features-new .table-wrapper.classic table tbody tr:last-c
     border-bottom: none;
 }
 
-body #app>main section#features-new .tab-content .tab-pane {
-    line-height: 1.5;
-    padding: 0 30px;
+body #app>main section#features-new .tab-content .arrows .paragraph{
+    position:relative;
 }
 
-body #app>main section#features-new .tab-content .tab-pane p {
-    padding-right: 60px;
-}
 /***********************************************************/
 
 
