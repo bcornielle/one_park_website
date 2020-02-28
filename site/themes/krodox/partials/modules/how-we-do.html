@@ -6,7 +6,8 @@
     <div class="row stats-info">
         <div class="container">
             <div class="play-btn">
-                <img src="/assets/img/play-btn.svg" onclick="openModalVideo()" data-toggle="modal" data-target="#myModal" alt="">
+                <img src="/assets/img/play-btn.svg" onclick="openModalVideo()"
+                data-toggle="modal" data-target="#myModal" alt="">
             </div>
             <div class="circle-responsive-3">
                 <div class="circle-responsive-2">
@@ -62,14 +63,15 @@
         </div>
     </div> 
   <!-- Modal -->
-  
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-body modal-video">
-            <iframe width="460" height="500" 
+            <iframe
+                width="560" height="315" 
                 src="https://www.youtube.com/embed/R0kUmrtKlTE"
+                type="video/mp4"
                 frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -78,22 +80,4 @@
       </div>
     </div>
   </div>
-  <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-body">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <video controls width="100%">
-            <source src="https://www.youtube.com/embed/R0kUmrtKlTE" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
 </section>
-<script>
-    function openModalVideo(){
-        console.log('open video');
-        console.log('open video');
-    }
-</script>
