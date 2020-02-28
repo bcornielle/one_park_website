@@ -4398,13 +4398,13 @@ body #app>nav.apple .nav-wrapper .container .menus .navbar-left {
 }
 
 body #app>nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo {
-    background-image: url(/assets/img/one-park-logo.png);
+    background-image: url(/assets/img/opf-logo.svg);
     background-position: center;
     background-repeat: no-repeat;
     text-indent: -9999px;
     float: left;
-    height: 42px;
-    width: 191px;
+    height: 65px;
+    width: 291px;
 }
 
 body #app>nav.apple .nav-wrapper .container .menus .navbar-right {
@@ -7145,7 +7145,7 @@ body.section-television #app>main section#hero-new {
 
 body.section-home #app>main section#hero-new .hero-content-new .branding.logo,
 body.section-television #app>main section#hero-new .hero-content-new .branding.logo {
-    background-image: url(/assets/img/one-park-logo.png);
+    background-image: url(/assets/img/opf-logo.png);
     background-position: center;
     background-repeat: no-repeat;
     text-indent: -9999px;
@@ -7197,7 +7197,7 @@ body.section-television #app>main section#hero {
 
 body.section-home #app>main section#hero .hero-content .branding.logo,
 body.section-television #app>main section#hero .hero-content .branding.logo {
-    background-image: url(/assets/img/one-park-logo.png);
+    background-image: url(/assets/img/opf-logo.png);
     background-position: center;
     background-repeat: no-repeat;
     text-indent: -9999px;
@@ -14091,7 +14091,7 @@ body.section-lp.home-page #app>main section#hero {
 }
 
 body.section-lp.home-page #app>main section#hero .hero-content .branding.logo {
-    background-image: url(/assets/img/one-park-logo.png);
+    background-image: url(/assets/img/opf-logo.png);
     background-position: center;
     background-repeat: no-repeat;
     text-indent: -9999px;
@@ -14156,7 +14156,7 @@ body.section-lp.dark #app>main section#hero .background:before {
 }
 
 body.section-lp.dark #app>main section#hero .hero-content .branding.logo {
-    background-image: url(/assets/img/one-park-logo.png);
+    background-image: url(/assets/img/opf-logo.png);
     background-position: center;
     background-repeat: no-repeat;
     text-indent: -9999px;
@@ -17756,7 +17756,7 @@ body.affiliate-sign-up main h2 {
         display:none;
     }
     body #app>nav.apple .nav-wrapper .container .menus .navbar-left a.branding.logo {
-        background-image: url(/assets/img/one-park-logo-original.png);
+        background-image: url(/assets/img/opf-logo.svg);
         height: 65px;
         width: 291px;
         display:block;
@@ -17829,7 +17829,9 @@ body.affiliate-sign-up main h2 {
         display:none;
     }
     body #app>nav.apple .nav-wrapper .container .menus .navbar-left a.branding.logo {
-        background-image: url(/assets/img/one-park-logo-original.png);
+        background-image: url(/assets/img/opf-logo.svg);
+        height: 65px;
+        width: 291px;
         display:block;
     }
     .join-aff .container {
