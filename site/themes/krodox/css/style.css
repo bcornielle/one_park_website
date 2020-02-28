@@ -5046,6 +5046,216 @@ body #app>main section#business-funds-works .main-container a.btn {
 }
 /*********************************/
 
+
+
+
+/*************************************************************************/
+body #app>main section#stats {
+    background-color: #ffffff;
+    margin: 45px 0 0 0;
+    border-top: 1px solid #f2f2f2;
+
+}
+
+body #app>main section#stats .bckgs {
+    min-height: 727px;
+    z-index: 1;
+
+}
+
+body #app>main section#stats .facts-bckg {
+    background-color: #F9F9F9;
+
+}
+
+
+body #app>main section#stats .stats-info {
+
+    z-index: 2;
+    min-height: 727px;
+    position: relative;
+    color: #000000;
+    margin-top: -727px;
+
+}
+body #app>main section#stats .stats-info .facts-info{
+
+    background-color: #F9F9F9;
+    padding: 10px 20px 10px 0;
+    background-color: #F9F9F9;
+    padding: 10px 20px 10px 0;
+    z-index: 2;
+    position: relative;
+    top: -210px;
+
+}
+
+body #app>main section#stats .stats-info .line {
+    width: 45px;
+    height: 2px;
+    background: #97C35E;
+    float: left;
+    margin: 24px 15px 0 0;
+}
+
+
+body #app>main section#stats .stats-info .hello h6{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 50px;
+    color: #97C35E;
+
+}
+.circle-responsive {
+    background: none;
+    border-radius: 50%;
+    border: 1px solid rgba(151, 195, 94, 0.15);
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+    height: 120px;
+    width: 120px;
+    top: 12%;
+    z-index: 1;
+
+ }
+
+
+.circle-responsive-2 {
+    background: none;
+    border-radius: 50%;
+    border: 1px solid rgba(151, 195, 94, 0.15);
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+    height: 162px;
+    width: 162px;
+    top: 10%;
+    z-index: 1;
+}
+
+.circle-responsive-3 {
+    background: none;
+    border-radius: 50%;
+    border: 1px solid rgba(151, 195, 94, 0.15);
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+    height: 200px;
+    width: 200px;
+    top: 25%;
+    z-index: 1;
+}
+
+
+
+body #app>main section#stats .stats-info .headline h2{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 55px;
+    text-align: left;
+    color: #000000;
+
+}
+
+body #app>main section#stats .stats-info .numbers h2{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 50px;
+    color: #97C35E;
+
+}
+
+body #app>main section#stats .stats-info .numbers h3{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 50px;
+    color: #000000;
+
+}
+
+body #app>main section#stats .stats-info .numbers p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: #6A6A6A;
+    text-align: left;
+
+}
+
+body #app>main section#stats .stats-info .numbers .little-plus{
+
+    font-size: 40px;
+    position: relative;
+    top: -30px;
+}
+
+
+body #app>main section#stats .stats-info .play-btn {
+    width: 78px;
+    height: 78px;
+    margin: 0 auto;
+    position: relative;
+    top: 42%;
+    
+    z-index: 5;
+}
+
+body #app>main section#stats .stats-info .apply-now a.secondary-cta {
+    background: #FFFFFF;
+    border: 1px solid #72A531;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 0px #72A531;
+    border-radius: 3px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #97C35E;
+    width: 225px;
+    height: 45px;
+    margin: 20px 0 0 0;
+}
+
+
+body #app>main section#stats .stats-info .video {
+    background-color: #ffffff;
+}
+
+body #app>main section#stats .stats-info .video-cover {
+    width: 501px;
+    height: 289px;
+    margin: 0 0 0 50px;
+    padding: 0;
+}
+body #app>main section#stats .stats-info .video .video-cover img {
+    width: 485px;
+    height: 280px;
+    margin: -60px auto;
+    box-shadow: 0px 4px 54px rgba(43, 74, 112, 0.1);
+}
+
+body #app>main section#stats .stats-info .video .trustpilot-horizontal {
+    width: 300px;
+    height: 22px;
+    margin: 0 auto;
+}
+
+/********************************************************************/
+
+
 /**** how we do Section ****/
 
 body #app>main section#how-we-do {
@@ -5184,6 +5394,8 @@ body #app>main section#highlights-new .highlight div:last-child{
     line-height: 10px;
     color: #97C35E;
 }
+
+
 /*******************************/
 
 

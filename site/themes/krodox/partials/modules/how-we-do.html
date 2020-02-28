@@ -1,32 +1,25 @@
-<section id="how-we-do">
-    <div class="main-container">
-        <div class="container how-we-do">
-            <div class="row">    
-                <div class="row welcome-to">
-                    <div class="line"></div>
-                    <div class="title">
-                            <h6>Welcome to One Park Financial</h6>
+<section id="stats">
+    <div class="row bckgs">
+        <div class="col-lg-6 facts-bckg "></div>
+        <div class="col-lg-6 video-bckg "></div>
+    </div>
+    <div class="row stats-info">
+        <div class="container">
+            <div class="play-btn">
+                <img src="/assets/img/play-btn.svg" onclick="openModalVideo()" data-toggle="modal" data-target="#myModal" alt="">
+            </div>
+            <div class="circle-responsive-3">
+                <div class="circle-responsive-2">
+                    <div class="circle-responsive">
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 experience">
-                <div>
-                    <h2>Experience genuine <br>substantial business growth<span class="circle-dot">●</span></h2>
-                </div>
-            </div>
-            <div class="col-lg-12 row">
-                <div class="col-lg-3 left-side">
-                    <span class="plus">+</span>
-                    <h1 class="numbers">90</h1>
-                    <h6 class="header-business">Business Increase</h6>
-                    <hr/>
-                    <h6 class="letters">Pursue sustainable <br> development build on solid backgrounds.</h6>
-                    <br>
-                    <div class="apply-now">
-                        <a href="/pre-qualification" class="btn btn-primary">
-                            WATCH HOW WE DO IT
-                        </a>
+            <div class="row">
+                <div class="col-lg-6 facts-info">
+                    <div class="hello">
+                        <h6><span class="line"></span>Welcome to One Park Fiancial</h6>
                     </div>
+<<<<<<< HEAD
                 </div>
                 <div class="col-lg-3 left-side">
                     <h1 class="numbers">200</h1>
@@ -45,10 +38,83 @@
                     <!-- TrustBox widget - Micro Star -->
                     <div class="trustpilot-widget" data-locale="en-US" data-template-id="5419b732fbfb950b10de65e5" data-businessunit-id="555cd8dd0000ff00057f8e1e" data-style-height="24px" data-style-width="100%" data-theme="light">
                         <a href="https://www.trustpilot.com/review/oneparkfinancial.com" target="_blank">Trustpilot</a>
+=======
+                    <div class="headline">
+                        <h2>
+                            Experience genuine substantial business growth.
+                        </h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 numbers">
+                            <h2>90<span class="little-plus">+</span></h2>
+                            <h3>Business Funded</h3>
+                            <hr/>
+                            <p>Pursue sustainable development built on solid backgrounds.</p>
+                        </div>
+                        <div class="col-lg-6 numbers">
+                            <h2>200<span class="little-plus">+</span></h2>
+                            <h3>Business Increased</h3>
+                            <hr/>
+                            <p>Pursue sustainable development built on solid backgrounds.</p>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="apply-now">
+                                <a href="/pre-qualification" 
+                                    data-toggle="modal" 
+                                    data-target="#myModal" 
+                                    class="btn btn-primary secondary-cta js-trigger-video-modal">
+                                    WATCH HOW WE DO IT
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 video">
+                    <div class="video-cover">
+                        <img src="/assets/img/video-cover.png" alt="">
+                    </div>
+                    <div class="trustpilot-horizontal">
+                        <img src="/assets/img/trustpilot_ratings_5star-horizontal.svg" alt="">
+>>>>>>> 46c1e5a46f18d63a8f3f3e71f27118f55fb9591d
                     </div>
                     <!-- End TrustBox widget -->
                 </div>
             </div>
         </div>
+    </div> 
+  <!-- Modal -->
+  
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-body modal-video">
+            <iframe width="460" height="500" 
+                src="https://www.youtube.com/embed/R0kUmrtKlTE"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+      </div>
     </div>
+  </div>
+  <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <video controls width="100%">
+            <source src="https://www.youtube.com/embed/R0kUmrtKlTE" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
+<script>
+    function openModalVideo(){
+        console.log('open video');
+        console.log('open video');
+    }
+</script>
