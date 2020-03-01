@@ -120,105 +120,6 @@ body #app>main section#hero-new .hero-content-new ul li img {
 /**********************************************************/
 
 
-body #app>main section#hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    min-height: 500px;
-}
-
-body #app>main section#hero .hero-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-body #app>main section#hero .hero-content h1 {
-    order: 1;
-    font-weight: 900;
-    letter-spacing: -2px;
-    color: #162c4e;
-    font-size: 3rem;
-    line-height: 1;
-}
-
-body #app>main section#hero .hero-content h1 span {
-    display: block;
-    font-size: 2.5rem;
-}
-
-body #app>main section#hero .hero-content h2 {
-    order: 2;
-    font-size: 2rem;
-    margin-bottom: 30px;
-    font-weight: 900;
-    letter-spacing: -1px;
-    color: #162c4e;
-}
-
-body #app>main section#hero .hero-content h3 {
-    order: 3;
-    font-size: 1.2rem;
-    color: #323831;
-    letter-spacing: -1px;
-    margin-bottom: 30px;
-}
-
-body #app>main section#hero .hero-content h3 span {
-    display: block;
-}
-
-body #app>main section#hero .hero-content a.btn {
-    order: 4;
-    background: #359c1c;
-    border: none;
-    padding: 8px 15px;
-    margin: 0;
-    text-transform: uppercase;
-    color: white;
-    transition: all ease .4s;
-    font-size: 1em;
-    font-weight: 900;
-    max-width: 350px;
-}
-
-body #app>main section#hero .hero-content a.btn:hover {
-    background-color: #267114;
-    transform: translateX(0px) scale(1.05);
-}
-
-body #app>main section#hero .hero-content ul {
-    order: 5;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 60px 0 0 0;
-    max-width: 400px;
-}
-
-body #app>main section#hero .hero-content ul li {
-    float: left;
-    width: 30% !important;
-    margin: 0 5% 5% 0;
-}
-
-body #app>main section#hero .hero-content ul li:nth-child(3n) {
-    margin-right: 0;
-}
-
-body #app>main section#hero .hero-content ul li:nth-child(3n + 4) {
-    clear: left;
-}
-
-body #app>main section#hero .hero-content ul li img {
-    max-width: 100px;
-}
-
 
 /****** business funds works ******/
 
@@ -1253,9 +1154,14 @@ body #app>main section#features-new .table-wrapper {
 }
 
 body #app>main section#features-new .table-wrapper table {
-    border: 1px solid #97C35E !important;
     margin: 35px 0;
 }
+body #app>main section#features-new .table-wrapper table tbody {
+    margin: 35px 0;
+    border: 1px solid #97C35E !important;
+    
+}
+
 body #app>main section#features-new .tab-descriptions .tab-content .arrow-left,
 body #app>main section#features-new .tab-descriptions .tab-content .arrow-right
 {
@@ -1338,7 +1244,6 @@ body #app>main section#features-new .table-wrapper table tbody tr td {
 
 
 
-
 body #app>main section#features-new .table-wrapper table tbody tr td i {
     font-size: 20px;
     color: #359c1c;
@@ -1396,6 +1301,11 @@ body #app>main section#features-new .table-wrapper.classic table thead tr th {
     font-weight: 100;
     font-family: Roboto;
 }
+
+body #app>main section#features-new .table-wrapper.classic table thead tr th:first-child {
+    padding:0px 30px 28px 35px;
+}
+
 
 body #app>main section#features-new .table-wrapper.classic table thead tr .text-right {
     border-top-left-radius: 5px;
@@ -1501,19 +1411,27 @@ body #app>main section#testimonials-new .container.trustpilot-features {
 body #app>main section#testimonials-new .main-container {
     margin:-35px auto;
     width: 100%;
-    max-width: 1400px;
-    background-repeat: no-repeat;
+    /* max-width: 1400px; */
     height: 698.15px;
-    background-image: url(/assets/img/bg-we-succeed.png);
 }
 body #app>main section#testimonials-new .right-container {
-
     margin:0 auto;
     width: 100%;
     float:right;
     height: 545px;
     background: #97c35e;
 }
+
+body #app>main section#testimonials-new .left-container {
+    margin:0 auto;
+    width: 100%;
+    float:right;
+    height: 545px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(/assets/img/bg-we-succeed.png);
+}
+
 body #app>main section#testimonials-new .right-container   .first-title {
     margin: 62px 0 0 0;
     font-family: Roboto;
@@ -1544,8 +1462,10 @@ body #app>main section#testimonials-new .right-container .comment-customer{
     border:none;
     background: #FFFFFF;
     position:relative;
-    right:8%;
-    padding:40px;
+    width: 600px;
+    height: 311px;
+    right:5%;
+    padding: 40px 0 0 25px;
     border-radius: 5px;
 }
 body #app>main section#testimonials-new .right-container .comment-customer .comment{
@@ -1556,17 +1476,38 @@ body #app>main section#testimonials-new .right-container .comment-customer .comm
 }
 body #app>main section#testimonials-new .right-container .comment-customer .ratings {
     width:100%;
+    margin-left:3px;
 }
 body #app>main section#testimonials-new .right-container .comment-customer .ratings .kristie-img{
     border-radius: 50px;
-    margin:16px 0 0 0;
 }
+
+body #app>main section#testimonials-new .right-container .comment-customer .ratings .stars-element{
+    margin-left:16px;
+    margin-top:4px;
+}
+body #app>main section#testimonials-new .right-container .comment-customer .ratings span{
+    margin-top:37px;
+    margin-left:13px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 150%;
+}
+
+body #app>main section#testimonials-new .right-container .comment-customer .comment{
+    margin-bottom:20px;
+}
+
 body #app>main section#testimonials-new .right-container .comment-customer .ratings .stars-img{
-    margin:20px 0 0 50px;
+    margin:20px 0 0 510px;
     float:right;
 }
 body #app>main section#testimonials-new .right-container .comment-customer .quotes{
-    margin-bottom: 25px;
+    margin-bottom: 40px;
+    width:57px;
+    height:43px;
 }
 
 body #app>main section#testimonials-new .bg-color {
@@ -1910,6 +1851,7 @@ body #app>main section#lp-form-new .container #form p.disclaimer {
     color: #858585;
 }
 
+
 body #app>main section#lp-form-new .container #form p.disclaimer .terms-of-use {
     text-decoration: none;
     color: #d8d4d4;
@@ -2069,7 +2011,23 @@ body #app>main section#lp-form-new .badget ul.badgets{
 
 body #app>main section#lp-form-new .badget ul.badgets .a-rating{
     margin-left:4%;
+    width: 107.92px;
+    height: 39px
 }
+body #app>main section#lp-form-new .badget ul.badgets .comodo-red
+{
+    width: 115.25px;
+    height: 35.05px;
+}
+body #app>main section#lp-form-new .badget ul.badgets .google-stars{
+    width: 80.13px;
+    height: 37.27px;
+}
+body #app>main section#lp-form-new .badget ul.badgets .excellent-trust{
+    width: 307.33px;
+    height: 20.85px;
+}
+
 
 body #app>main section#lp-form-new .badget ul {
     display: flex;
