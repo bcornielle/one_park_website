@@ -208,7 +208,7 @@ body #app>main section#how-business-funds-works .container .business-funds-conta
     margin-bottom: 64px;
 }
 body #app>main section#how-business-funds-works .container .business-funds-container .ceo {
-    margin-top: -20px;
+    margin-top: -60px;
 }
 
 body #app>main section#how-business-funds-works .container .steps-container .subtitle-step.get-funded {
@@ -221,7 +221,7 @@ body #app>main section#how-business-funds-works .container .steps-container .tit
 
 body #app>main section#how-business-funds-works .container .steps-container {
     color:#ffffff;
-    margin-top:7%;
+    margin-top:0%;
     margin-left:12%;
     font-size:1.4em;
 }
@@ -1173,7 +1173,7 @@ body #app>main section#features-new .tabs .tab-headings nav .nav-tabs a:hover {
 
 body #app>main section#features-new .tabs .tab-descriptions {
     background:#ffffff;
-    padding:60px;
+    padding:90px;
     width:100%;
     text-align:center;
     margin: 0 auto;
@@ -1197,16 +1197,26 @@ body #app>main section#features-new .table-wrapper table tbody {
 body #app>main section#features-new .tab-descriptions .tab-content .arrow-left,
 body #app>main section#features-new .tab-descriptions .tab-content .arrow-right
 {
+    border:1px solid;
     margin-top:55px;
+    position:relative;
+    padding:0px;
+    min-height:120px;
 }
 
 body #app>main section#features-new .tab-descriptions .tab-content a.arrow-left{
     background-image: url('/assets/img/arrow-green-left.png');
-    position: relative;
 }
+
+body #app>main section#features-new .tab-descriptions .tab-content .paragraph {
+     width:950px; 
+
+}
+
+
 body #app>main section#features-new .tab-descriptions .tab-content a.arrow-right{
     background-image: url('/assets/img/arrow-green-right.png');
-    position: relative;
+    float: right;
 }
 body #app>main section#features-new .dots-headings {
     position:relative;
@@ -1390,13 +1400,15 @@ body #app>main section#features-new .table-wrapper.classic table tbody tr:last-c
     border-bottom: none;
 }
 
-body #app>main section#features-new .tab-content .arrows .paragraph{
-    position:relative;
+body #app>main section#features-new .tab-content .arrows .carousel-titles.approval{
+    margin-left:257px;
+    padding-bottom: 30px;
+    color:#2B4A70;
 }
 
-body #app>main section#features-new .tab-content .arrows .carousel-titles.approval{
-    margin-left:317px;
-    padding-bottom: 30px;
+body #app>main section#features-new .tab-content .arrows{
+    margin-left:17px;
+    padding: 40px;
     color:#2B4A70;
 }
 
@@ -1405,19 +1417,19 @@ body #app>main section#features-new .tab-content .arrows .carousel-titles .highl
 }
 
 body #app>main section#features-new .tab-content .arrows .carousel-titles.bad{
-    margin-left:285px;
+    margin-left:240px;
     padding-bottom: 30px;
     color:#2B4A70;
 }
 
 body #app>main section#features-new .tab-content .arrows .carousel-titles.documment{
-    margin-left:290px;
+    margin-left:240px;
     padding-bottom: 30px;
     color:#2B4A70;
 }
 
 body #app>main section#features-new .tab-content .arrows .carousel-titles.collateral{
-    margin-left:290px;
+    margin-left:240px;
     padding-bottom: 30px;
     color:#2B4A70;
 }
@@ -2317,7 +2329,7 @@ body.section-television #app>main section#hero-new {
     background-repeat: no-repeat;
     height: 624px;
     background-size: cover;
-    background-image: url(/assets/img/home-hero-canvas.svg);
+    background-image: url(/assets/img/home-hero-canvas.png);
 }
 
 body.section-home #app>main section#hero-new .hero-content-new .branding.logo,
