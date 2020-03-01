@@ -1916,7 +1916,7 @@ body #app>main section#lp-form-new .container #form p.disclaimer .terms-of-use {
 }
 
 body #app>main section#lp-form-new .container #form article ul.fields {
-    padding: 20px 60px 0;
+    padding: 26px 60px 0;
 }
 
 body #app>main section#lp-form-new .container #form article ul.fields
@@ -2008,9 +2008,16 @@ body #app>main section#lp-form-new .container #form article ul.fields li:nth-chi
 }
 
 
-body #app>main section#lp-form-new .container #form article ul.fields li .form-control {
+body #app>main section#lp-form-new .container #form article ul.fields li input.form-control {
     border-radius: 0px;
     box-shadow: none;
+    padding:20px;
+}
+
+body #app>main section#lp-form-new .container #form article ul.fields li select.form-control {
+    border-radius: 0px;
+    box-shadow: none;
+    height:42px;
 }
 body #app>main section#lp-form-new .container #form article ul.fields li .form-control:focus {
     border:1px solid #97C35E;
