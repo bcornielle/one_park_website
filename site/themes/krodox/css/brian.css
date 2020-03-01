@@ -1173,8 +1173,7 @@ body #app>main section#features-new .tabs .tab-headings nav .nav-tabs a:hover {
 
 body #app>main section#features-new .tabs .tab-descriptions {
     background:#ffffff;
-    padding:90px;
-    width:100%;
+    padding:50px;
     text-align:center;
     margin: 0 auto;
 }
@@ -1197,19 +1196,27 @@ body #app>main section#features-new .table-wrapper table tbody {
 body #app>main section#features-new .tab-descriptions .tab-content .arrow-left,
 body #app>main section#features-new .tab-descriptions .tab-content .arrow-right
 {
-    border:1px solid;
     margin-top:55px;
-    position:relative;
-    padding:0px;
     min-height:120px;
 }
+
+
 
 body #app>main section#features-new .tab-descriptions .tab-content a.arrow-left{
     background-image: url('/assets/img/arrow-green-left.png');
 }
 
 body #app>main section#features-new .tab-descriptions .tab-content .paragraph {
-     width:950px; 
+     width:950px;
+     padding:10px; 
+     border:1px solid;
+     text-align: justify;
+     position:static
+
+}
+body #app>main section#features-new .tab-descriptions .tab-content .collateral .paragraph {
+    width:970px;
+    border:1px solid;
 
 }
 
@@ -1431,9 +1438,9 @@ body #app>main section#features-new .tab-content .arrows .carousel-titles.documm
 body #app>main section#features-new .tab-content .arrows .carousel-titles.collateral{
     margin-left:240px;
     padding-bottom: 30px;
+    padding-left: 0px;
     color:#2B4A70;
 }
-
 
 
 body #app>main section#features-new .tab-content .arrows .carousel-titles span{
