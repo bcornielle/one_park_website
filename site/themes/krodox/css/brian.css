@@ -1088,7 +1088,6 @@ body #app>main section#features-new .tabs .tab-descriptions {
     height:385px;
     height:355px;
     width:100%;
-    margin-left:10px;
 }
 
 body #app>main section#features-new .table-wrapper {
@@ -1106,10 +1105,14 @@ body #app>main section#features-new .table-wrapper table tbody {
     
 }
 
-body #app>main section#features-new .tab-descriptions .tab-content .arrow-left,
-body #app>main section#features-new .tab-descriptions .tab-content .arrow-right
+body #app>main section#features-new .tab-descriptions .tab-content .arrow-left
 {
     margin-top:120px;
+    min-height:70px;
+}
+
+body #app>main section#features-new .tab-descriptions .tab-content .arrow-right{
+    margin-top:116px;
     min-height:70px;
 }
 
@@ -1123,10 +1126,16 @@ body #app>main section#features-new .tab-descriptions .tab-content .paragraph {
      width:100%;
      height:300px;
      padding:10px; 
-     text-align: justify;
+     text-align: center;
      position:static
 
 }
+
+body #app>main section#features-new .carrousel-content {
+padding-right:25px;
+
+}
+
 body #app>main section#features-new .tab-descriptions .tab-content .collateral .paragraph {
     width:970px;
 
