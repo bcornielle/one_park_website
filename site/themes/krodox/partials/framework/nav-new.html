@@ -1,0 +1,139 @@
+<nav class="menu apple" v-bind:class="{'shown':menu_opened}">
+    <div class="nav-wrapper" v-bind:class="{'shown':menu_opened}">
+        <div class="menu">
+            <a href="/" class="branding logo">One Park Financial</a>
+            <ul>
+                <li class="menu-item"><a href="/">Home</a></li>
+                <li class="menu-item"><a href="/how-it-works">How it works</a></li>
+                <li class="menu-item"><a href="/about-us">About Us</a></li>
+                <li class="menu-item"><a href="/contact">Contact Us</a></li>
+                <li class="menu-item"><a href="/blog">Blog</a></li>
+                <li class="menu-item"><a href="/press">Press</a></li>
+                <li class="menu-item"><a href="/faq">FAQs</a></li>
+            </ul>
+            <div class="cta-menu">
+                <a href="/pre-qualification" class="btn btn-primary"><span>Get Funded</span></a>
+            </div>
+        </div>
+        <div class="burger-container" v-on:click="toggle_menu">
+            <div id="burger">
+                <div class="bar topBar"></div>
+                <div class="bar btmBar"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="menus">
+                <div class="navbar-left">
+                    <a href="/" class="branding logo">One Park Financial</a>
+                </div>
+                <div class="navbar-right">
+                    <ul class=" items-nav nav-bottom">
+                        {{ if current_uri == "/how-it-works" }}
+                        <li class="how-it-works active">
+                            {{ else }}
+                        </li>
+
+                        <li class="how-it-works">
+                            {{ /if }}
+                            <a href="/how-it-works">
+                                How it works
+                            </a>
+                        </li>
+                        {{ if current_uri == "/about-us" }}
+                        <li class="about-us active">
+                            {{ else }}
+                        </li>
+
+                        <li class="about-us">
+                            {{ /if }}
+                            <a href="/about-us">
+                                About Us
+                            </a>
+                        </li>
+                        {{ if current_uri == "/blog" }}
+                        <li class="blog active">
+                            {{ else }}
+                        </li>
+                        <li class="blog">
+                            {{ /if }}
+                            <a href="/press">
+                                Blog
+                            </a>
+                        </li>
+                        {{ if current_uri == "/press" }}
+                        <li class="press active">
+                            {{ else }}
+                        </li>
+                        <li class="press">
+                            {{ /if }}
+                            <a href="/press">
+                                Press
+                            </a>
+                        </li>
+                        {{ if current_uri == "/faq" }}
+                        <li class="faqs active">
+                            {{ else }}
+                        </li>
+                        <li class="faqs">
+                            {{ /if }}
+                            <a href="/faq">
+                                FAQs
+                            </a>
+                        </li>
+
+                        {{ if current_uri == "/" }}
+                        <li class="en active">
+                            {{ else }}
+                        </li>
+                        <li class="en">
+                            {{ /if }}
+                            <a href="/">
+                                English <span class="vertical-slash">|</span>
+                            </a>
+                        </li>
+                        {{ if current_uri == "/es" }}
+                        <li class="esp active">
+                            {{ else }}
+                        </li>
+                        <li class="esp">
+                            {{ /if }}
+                            <a href="/es/">
+                                Español <span class="vertical-slash">|</span>
+                            </a>
+                        </li>
+                        <li class="phone">
+                            <img src="/assets/img/phone-1.1s-128px.svg">
+                            <a href="tel:+18883271044">
+                                <span class="number">1-888-327-1044</span>
+                            </a>
+                        </li>
+                        <li class="apply-now">
+                            <a href="/pre-qualification" class="btn btn-primary">
+                                APPLY NOW
+                            </a><br>
+                            {{ if logged_in }}
+                                <a class="logout" href="{{ user:logout_url }}">Log out</a>
+                            {{ /if }}
+                        </li>
+                    </ul>
+                    <div class="join-now">
+                        <a class="link" href="/pre-qualification">
+                            <span class="text">Get Funded</span>
+                        </a>
+                        <a class="btn" href="tel:+18883277846">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-no-menu">
+                    <div class="call-us-now">
+                        <span class="text">Speak to a Funding Expert</span>
+                        <a href="tel:+18883271044">
+                            <span class="number">1-888-327-7846</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

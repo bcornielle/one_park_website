@@ -59,23 +59,26 @@
                                 <input type="tel" name="phone" id="phone-number" class="form-control phone-format" value="{{ old:phone }}" 
                                 pattern="(?:\(\d{3}\)|\d{3})[- ]?\d{3}[- ]?\d{4}" placeholder="Phone Number      (___) - ___ - ____" required/>
                             </li>
-                            <li class="bank-account row">
-                                <span>Business Bank Account:</span>
-                               <div class="radio-toolbar">                                    
-                                    <label for="radioYES" class="radioYes">YES</label>
-                                    <input type="radio" id="radioApple" name="test1" value="test" checked>
-                                    <label for="radioNo" class="radioNo">NO</label>
-                                    <input type="radio" id="radioBanana" name="test1" value="banana" >
+                            <li class="bank-business row">
+                                <span> Business Bank Account</span>
+                                <div class="radio-toolbar">
+                                    <input type="radio" id="radioBusiness1" name="business1" value="banana"  checked>     
+                                    <label for="radioYes" onclick="toggleRadio('radioBusiness1')" class="radioYes">YES</label>
+                                </div>
+                                <div class="radio-toolbar">
+                                    <input type="radio" id="radioBusiness2" name="business1" value="test">
+                                    <label for="radioNo" onclick="toggleRadio('radioBusiness2')"  class="radioNo">NO</label>
                                 </div>
                             </li>
-                            <li class="bank-account row">
-                                <span>Business Bank Account:</span>
+                            <li class="bank-bankruptcy row">
+                                <span> Active Bankruptcy</span>
                                 <div class="radio-toolbar">
-                            
-                                    <label for="radioYES" class="radioYes">YES</label>
-                                    <input type="radio" id="radioApple" name="test2" value="test" checked>
-                                    <label for="radioNo" class="radioNo">NO</label>
-                                    <input type="radio" id="radioBanana" name="test2" value="banana">     
+                                    <input type="radio" id="radioBankruptcy1" name="bankruptcy1" value="banana"  >     
+                                    <label for="radioYes"  onclick="toggleRadio2('radioBankruptcy1')" class="radioYes">YES</label>
+                                </div>
+                                <div class="radio-toolbar">
+                                    <input type="radio" id="radioBankruptcy2" name="bankruptcy1" value="test" checked>
+                                    <label for="radioNo" class="radioNo" onclick="toggleRadio2('radioBankruptcy2')">NO</label>
                                 </div>
                             </li>
                             <li>
@@ -133,3 +136,15 @@
         </div>
     </div>
 </section>
+<script>
+    function toggleRadio(name){
+        document.getElementById(name).checked = true;
+        console.log(document.getElementById(name).checked);
+        return
+    }
+    function toggleRadio2(name){
+        document.getElementById(name).checked = true;
+        console.log(document.getElementById(name).checked);
+        return
+    }
+</script>
