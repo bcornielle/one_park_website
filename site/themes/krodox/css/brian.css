@@ -139,7 +139,12 @@ body #app>main section#hero-new .hero-content-new ul li img {
     color: #ffffff;
     text-align: center;
     padding-bottom: 72px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 30px;
 }
+
 
 
 .ceo-photo img {
@@ -163,6 +168,7 @@ body #app>main section#hero-new .hero-content-new ul li img {
     color: #FFFFFF;
     width: 250px;
     height: 45px;
+    margin-left:150px;
     padding: 12px 36px;
 }
 
@@ -173,12 +179,37 @@ body #app>main section#how-business-funds-works a.btn:hover {
 }
 
 body #app>main section#how-business-funds-works .container .steps-container .subtitle-step {
-    font-size:0.6em;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
     margin-left:30px;
     position:relative;
     top:30%;
+    margin-top:-44px;
 }
 
+body #app>main section#how-business-funds-works .container .steps-container .subtitle-step .title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+}
+
+body #app>main section#how-business-funds-works .container .steps-container .subtitle-step.talk ,
+body #app>main section#how-business-funds-works .container .steps-container .subtitle-step.review,
+body #app>main section#how-business-funds-works .container .steps-container .subtitle-step.get-funded {
+    margin-top:-54px;
+}
+
+
+body #app>main section#how-business-funds-works .container .business-funds-container {
+    margin-bottom: 64px;
+}
+body #app>main section#how-business-funds-works .container .business-funds-container .ceo {
+    margin-top: -20px;
+}
 
 body #app>main section#how-business-funds-works .container .steps-container .subtitle-step.get-funded {
     font-size:0.6em;
@@ -219,6 +250,7 @@ body #app>main section#how-business-funds-works .container .steps-container div{
     padding:10px 0 10px 0;
 }
 /* ************************************************************************/
+
 
 
 

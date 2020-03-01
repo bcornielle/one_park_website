@@ -4895,108 +4895,6 @@ body #app>main section#hero .hero-content ul li img {
     max-width: 100px;
 }
 
-
-/****** business funds works ******/
-
-
-#how-business-funds-works {
-
-    padding: 80px 0;
-
-    background: rgb(26,44,75);
-    background: -moz-linear-gradient(242deg, rgba(26,44,75,1) 0%, rgba(43,74,112,1) 100%);
-    background: -webkit-linear-gradient(242deg, rgba(26,44,75,1) 0%, rgba(43,74,112,1) 100%);
-    background: linear-gradient(242deg, rgba(26,44,75,1) 0%, rgba(43,74,112,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1a2c4b",endColorstr="#2b4a70",GradientType=1);
-}
-
-.headline {
-    color: #ffffff;
-    text-align: center;
-    padding-bottom: 72px;
-}
-
-
-.ceo-photo img {
-    width: 577px;
-    height: 395px ;
-    margin-bottom: 41px;
-    margin-top: 72px;
-}
-
-.main-cta {
-    background: #97C35E;
-    box-shadow: 0px 4px 0px #72A531;
-    border-radius: 3px;
-    font-family: Roboto;
-    font-style: normal; 
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-    transition: all ease .4s;
-    color: #FFFFFF;
-    width: 250px;
-    height: 45px;
-    padding: 12px 36px;
-}
-
-body #app>main section#how-business-funds-works a.btn:hover {
-    background-color: #72A531;
-    color:#ffffff;
-    transform: translateX(0px) scale(0.95);
-}
-
-body #app>main section#how-business-funds-works .container .steps-container .subtitle-step {
-    font-size:0.6em;
-    margin-left:30px;
-    position:relative;
-    top:30%;
-}
-
-
-body #app>main section#how-business-funds-works .container .steps-container .subtitle-step.get-funded {
-    font-size:0.6em;
-    margin-left:60px;
-}
-body #app>main section#how-business-funds-works .container .steps-container .title-step {
-    font-size:0.6em;
-}
-
-body #app>main section#how-business-funds-works .container .steps-container {
-    color:#ffffff;
-    margin-top:7%;
-    margin-left:12%;
-    font-size:1.4em;
-}
-
-body #app>main section#how-business-funds-works .container .steps-container .numbers {
-    color:#97C35E;
-    margin-top:8%;
-    margin-right:2%;
-    font-size:1.3em;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 26px;
-    line-height: 30px;
-}
-
-body #app>main section#how-business-funds-works .container .steps-container .steps-line{
-    border: 1px solid #97C35E;
-    height: 100px;
-    font-weight: bold;
-    width: 2px;
-    margin-left:30px;
-}
-
-body #app>main section#how-business-funds-works .container .steps-container div{
-    padding:10px 0 10px 0;
-}
-/* ************************************************************************/
-
-
-
 /*************************************************************************/
 body #app>main section#stats {
     background-color: #ffffff;
@@ -5005,7 +4903,6 @@ body #app>main section#stats {
     width:100%;
     
 }
-
 
 
 body #app>main section#stats .bckgs {
