@@ -262,8 +262,24 @@ body #app>main section#stats {
     width:100%;
     
 }
+body #app>main section#stats .modal-content {
+    margin-top: 50%;
+}
 
+body #app>main section#stats .modal-content .modal-video {
+    padding:0px !important;
+    height: 20px !important;
+    width: 20px !important;
+        position: fixed;
+}
 
+body.modal-open {
+    padding-right: 0!important;
+    }
+
+body #app>main section#stats .modal-content .modal-video.body.modal-open {
+    overflow-y: hidden;
+}
 
 body #app>main section#stats .bckgs {
     min-height: 727px;
@@ -462,113 +478,7 @@ body #app>main section#stats .stats-info .video .trustpilot-horizontal {
 }
 
 /********************************************************************/
-
-
-/**** how we do Section ****/
-
-body #app>main section#how-we-do {
-    margin: 0 auto;
-    padding: 30px 0;
-}
-body #app>main section#how-we-do .modal-video {
-    padding:0px;
-}
-
-body #app>main section#how-we-do .main-container {
-    padding: 50px 0;
-    background: #f1f6ef;
-} 
-
-body #app>main section#how-we-do .main-container div .img-play {
-    margin: 20px 0 50px 10px;
-    width:100%;
-} 
-body #app>main section#how-we-do .main-container .image-container .bg-image {
-    position:relative;
-    bottom:15%;
-    right:50%;
-    margin: 0 0 80px 80px;
-} 
-
-body #app>main section#how-we-do .row .welcome-to {
-    padding: 0 0 0 50px;
-} 
-
-body #app>main section#how-we-do .welcome-to .title h6 {
-    font-weight: 100;
-    font-size: .9rem;
-    color:#97c35e;
-    margin:4px 0 0 8px;
-} 
-
-body #app>main section#how-we-do .line {
-    font-weight: 400;
-    height:0px;
-    width:45px;
-    margin:12px 0 0 0px;
-    border:1px solid #97c35e;
-    font-size: 3rem;
-    color:#97c35e;
-} 
-body #app>main section#how-we-do .container .experience h2 {
-    margin-top:20px;
-    font-weight: 600;
-    font-size:2.2rem;
-    line-height : 45px;
-    color:black;
-} 
-
-body #app>main section#how-we-do .container .experience h2 .circle-dot {
-    font-weight: 600;
-    font-size:0.8rem;
-} 
-
-body #app>main section#how-we-do .container.how-we-do .video {
-    background:white;
-    float:right;
-    margin-right:20px;
-} 
-
-body #app>main section#how-we-do .container.how-we-do .numbers {
-    margin-top:20px;
-    font-weight: 400;
-    font-size:4.1rem;
-    line-height : 42px;
-    color:#97c35e;
-} 
-body #app>main section#how-we-do .container.how-we-do .plus {
-    float:right;
-    margin:5px 0 0 90px;
-    font-weight: 400;
-    font-size:2rem;
-    color:#97c35e;
-    position: absolute;
-} 
-
-body #app>main section#how-we-do .container.how-we-do .letters {
-    line-height : 25px;
-    font-size:0.9rem;
-} 
-
-body #app>main section#how-we-do .container.how-we-do .header-business {
-    margin-top:20px;
-    font-weight: 600;
-    font-size:1.1rem;
-    color:black;
-} 
-body #app>main section#how-we-do .container.how-we-do .apply-now a.btn {
-    background: white;
-    border: 1px solid #97c35e;
-    box-shadow: 0px 2px 0px #72a531;
-    padding: 8px 15px;
-    margin: 10px 12px 0 0px;
-    text-transform: uppercase;
-    color: #97c35e;
-    transition: all ease .4s;
-    font-size: 1em;
-    font-weight: 600;
-    max-width: 250px;
-}
+/* \ */
 /***************************/
 
 
