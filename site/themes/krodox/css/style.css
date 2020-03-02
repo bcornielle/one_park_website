@@ -4149,7 +4149,7 @@ body #app>nav {
 body #app>nav.apple {
     display: block;
     width: 100%;
-    height: 120px;
+    height: 95px;
     margin: 0;
     overflow: hidden;
     border: none;
@@ -4159,10 +4159,10 @@ body #app>nav.apple {
 
 body #app>nav.apple .nav-wrapper {
     display: flex;
-    position: fixed;
-    top: 0;
+    position: relative;
+    bottom: 10%;
     left: 0;
-    height: 120px;
+    height: 95px;
     width: 100%;
     overflow: hidden;
     transition: all 0.5s ease-out, onClassbackground 0.4s ease-out;
@@ -4556,7 +4556,7 @@ body #app>nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li 
     border: none;
     box-shadow: 0px 4px 0px #72a531;
     padding: 4px 2px;
-    margin: 0 12px 0 -20px;
+    margin: 0 12px 5px -20px;
     text-transform: uppercase;
     color: white;
     transition: all ease .4s;
