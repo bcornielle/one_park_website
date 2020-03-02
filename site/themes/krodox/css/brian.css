@@ -1402,7 +1402,7 @@ body #app>main section#features-new .tab-content .arrows .carousel-titles span{
 
 
 body #app>main section#testimonials-new .main-container {
-    margin:-100px auto;
+    margin:-40px auto;
     width: 100%;
     /* max-width: 1400px; */
     height: 698.15px;
@@ -1410,7 +1410,8 @@ body #app>main section#testimonials-new .main-container {
 
 
 body #app>main section#testimonials-new .trustpilot-features {
-    margin: 25px auto;
+    margin: 45px auto;
+    
 }
 body #app>main section#testimonials-new .right-container {
     margin:0 auto;
