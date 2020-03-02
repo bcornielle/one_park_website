@@ -10408,3 +10408,103 @@ body #success-alert .close {
 body #success-alert:after {
     content: 'Application Submitted';
 }
+
+
+
+/* -------------------
+ RESPONSIVE HP & LP
+ -------------------- */
+
+@media only screen and (min-width: 1200px) { }
+@media only screen and (min-width: 992px) { }
+@media only screen and (max-width: 991px) { }
+@media only screen and (max-width: 767px) { }
+@media only screen and (max-width: 576px) { }
+@media only screen and (max-width: 414px) {
+
+
+    body #app>nav.apple .nav-wrapper .burger-container #burger {
+        top: 52%;
+    }
+
+    body #app>nav.apple .nav-wrapper .container .menus .navbar-left a.branding.logo {
+        top: 11px;
+    }
+
+    body.section-home #app>main section#hero-new, body.section-television #app>main section#hero-new {
+        width: 100%;
+        background-repeat: no-repeat;
+        max-height: 291px;
+        background-image: url(/assets/img/hero-bckg-mobile-360.png);
+        background-size: 360px 291px;
+    }
+
+
+    body #app>main section#hero-new .hero-content-new {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: -124px 0 0 0;
+    }
+
+    body #app>main section#hero-new .hero-content-new h1 {
+        font-size: 26px;
+        /* margin: -16px 0 0px 0; */
+        letter-spacing: 0;
+        padding: 0 0 10px 0;
+    }
+
+    body #app>main section#hero-new .hero-content-new h2 {
+        order: 2;
+        margin-bottom: 24px;
+        color: #ffffff;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 15px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+
+    }
+
+    body #app>main section#hero-new .hero-content-new h3 {
+        order: 3;
+        color: #ffffff;
+        font-family: Roboto;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 0;
+        margin-bottom: 30px;
+        align-items: center;
+    }
+
+    body #app>main section#hero-new .hero-content-new a.btn {
+        order: 4;
+        background: #97c35e;
+        box-shadow: 0px 6px 0px #72a531;
+        border: none;
+        padding: 8px 15px;
+        margin: 0;
+        text-transform: uppercase;
+        color: white;
+        transition: all ease .4s;
+        font-size: 0.9em;
+        font-weight: 600;
+        max-width: 200px;
+    }
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 320px) {
+
+
+
+}
