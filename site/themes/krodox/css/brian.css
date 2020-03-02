@@ -1970,7 +1970,7 @@ body #app>main section#lp-form-new .lp-form  .disclaimer {
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
-    line-height: 150%;
+    line-height: 150%;  
     /* or 18px */
     display: flex;
     align-items: center;
