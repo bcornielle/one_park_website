@@ -247,7 +247,7 @@ body #app>main section#how-business-funds-works .container .steps-container .ste
 }
 
 body #app>main section#how-business-funds-works .container .steps-container div{
-    padding:10px 0 10px 0;
+    padding:5px 0 5px 0;
 }
 /* ************************************************************************/
 
@@ -452,7 +452,6 @@ body #app>main section#stats .stats-info .apply-now a.secondary-cta {
     height: 45px;
     margin: 20px 0 0 0;
 }
-
 
 body #app>main section#stats .stats-info .video {
     background-color: #ffffff;
@@ -941,7 +940,7 @@ body #app>main section#features .tab-content .tab-pane p {
 /**********************Features New***************************/
 
 body #app>main section#features-new {
-    margin: -60px  auto;
+    margin: 0px auto;
     padding: 61px 0;
     background: #f1f6ef;
 }
@@ -1377,12 +1376,9 @@ body #app>main section#features-new .tab-content .arrows .carousel-titles span{
 
 /**************************Testimonials New********************************/
 
-body #app>main section#testimonials-new .container.trustpilot-features {
-    margin-top:35px;
-}
 
 body #app>main section#testimonials-new .main-container {
-    margin:-35px auto;
+    margin:-90px auto;
     width: 100%;
     /* max-width: 1400px; */
     height: 698.15px;
@@ -1474,7 +1470,7 @@ body #app>main section#testimonials-new .right-container .comment-customer .comm
 }
 
 body #app>main section#testimonials-new .right-container .comment-customer .ratings .stars-img{
-    margin:20px 0 0 510px;
+    margin:13px 0 0 0px;
     float:right;
 }
 body #app>main section#testimonials-new .right-container .comment-customer .quotes{
@@ -1824,6 +1820,9 @@ body #app>main section#lp-form-new .container #form p.disclaimer {
     color: #858585;
 }
 
+body #app>main section#lp-form-new .container #form .disclaimer-box {
+    margin: 30px 10px 0 0;
+}
 
 body #app>main section#lp-form-new .container #form p.disclaimer .terms-of-use {
     text-decoration: none;
@@ -1980,6 +1979,8 @@ body #app>main section#lp-form-new .lp-form  .disclaimer {
 }
 body #app>main section#lp-form-new .badget ul.badgets{
     margin-left:5%;
+    margin-top: 2.5%;
+    margin-bottom:2.5%;
 }
 
 body #app>main section#lp-form-new .badget ul.badgets .a-rating{
