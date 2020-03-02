@@ -4196,7 +4196,9 @@ body #app>nav.apple .nav-wrapper.shown .burger-container #burger .bar.btmBar {
 body #app>nav.apple .nav-wrapper.shown .menu {
     display: block;
 }
-
+body #app>nav.apple .nav-wrapper .container .menus .navbar-minimalist {
+    display: none;
+}
 body #app>nav.apple .nav-wrapper.shown .menu li.menu-item {
     transform: scale(1) translateY(0px);
     opacity: 1;
@@ -4330,6 +4332,7 @@ body #app>nav.apple .nav-wrapper .menu .cta-menu a.btn {
     max-width: 250px;
 }
 
+
 body #app>nav.apple .nav-wrapper .menu .cta-menu a.btn:hover {
     background-color: #267114;
     transform: translateX(0px) scale(1.05);
@@ -4362,11 +4365,16 @@ body #app>nav.apple .nav-wrapper .burger-container #burger {
 }
 
 body #app>nav.apple .nav-wrapper .burger-container #burger .bar {
-    width: 100%;
-    height: 1px;
+    width: 25px;
+    height: 2.75px;
     display: block;
+    left: 94.17%;
+    right: 88.89%;
+    margin-bottom: 4px;
+
+    border-radius: 2px;
     position: relative;
-    background: #359c1c;
+    background: #2B4A70;
     transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
     transition-delay: 0s;
 }
@@ -4377,6 +4385,10 @@ body #app>nav.apple .nav-wrapper .burger-container #burger .bar.topBar {
 
 body #app>nav.apple .nav-wrapper .burger-container #burger .bar.btmBar {
     transform: translateY(6px) rotate(0deg);
+}
+
+body #app>nav.apple .nav-wrapper .burger-container #burger .bar.mdlBar {
+    transform: translateY(3px) rotate(0deg);
 }
 
 body #app>nav.apple .nav-wrapper .container {
@@ -5212,20 +5224,25 @@ body #app>main section#how-we-do .container.how-we-do .apply-now a.btn {
 /***************************/
 
 
-/**** new hightlight section ****/
+/**** new highlight section ****/
 
 body #app>main section#highlights-new {
     margin: 30px 0 0 20px;
 }
 
+
+body #app>main section#highlights-new .container.highlight-minimalist {
+    display:none;
+}
+
 body #app>main section#highlights-new .highlight .highlight-icons {
-    margin: 5px 0 0 50px ;
+    margin: 5px 0 0 50px;
 }
 body #app>main section#highlights-new .highlight .highlight-icons.approval {
     margin-left:40px;
 }
 body #app>main section#highlights-new .highlight .highlight-icons.check-square{
-    margin: 10px 0 0 50px ;
+    margin: 10px 0 0 50px;
 }
 
 body #app>main section#highlights-new .highlight div{
@@ -13081,7 +13098,6 @@ body.section-lp.with-no-menu #app>nav.apple .nav-wrapper {
 body.section-lp.with-no-menu #app>nav.apple .nav-wrapper .container .menus .navbar-right {
     display: none;
 }
-
 body.section-lp.with-no-menu #app>nav.apple .nav-wrapper .container .menus .navbar-no-menu {
     display: flex;
 }
@@ -15183,6 +15199,63 @@ body #success-alert:after {
     }
     body #app>nav.apple .nav-wrapper {
         height: 65px;
+        margin-bottom: 20px;
+    }
+    body #app>main section#highlights-new .container.highlight-minimalist {
+        display:block;
+        font-family: Roboto;
+        font-style: medium;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        margin-left:37px;
+        padding-top: 10px;
+        margin-bottom:-50px;
+        align-items: center;
+        color: #272727;
+
+    }
+
+    body #app>main section#highlights-new .container.highlight-minimalist .content  {
+        margin-bottom: 20px;
+    }
+    body #app>main section#highlights-new .container.highlight-minimalist .content .letters {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    body #app>main section#highlights-new .container.highlight-minimalist .content .approval {
+
+        margin-left: -4px;
+        margin-bottom: 15px;
+    }
+
+    body #app>main section#highlights-new .container.highlight-minimalist .content.document div.letters
+     {
+
+        margin-left: 23px;
+        margin-bottom: 15px;
+    }
+
+    body #app>main section#highlights-new .container.highlight-minimalist .content.document img{
+        margin-bottom: 11px;
+    }
+
+    body #app>main section#highlights-new .container.highlight-minimalist .content .check-square {
+        margin-bottom: 18px;
+    }
+    
+
+    body #app>main section#highlights-new .container.highlight-minimalist .subtitle {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        color: #97C35E;
+    }
+    body #app>main section#highlights-new .container.highlight {
+        display:none;
     }
     body #app>nav.apple .nav-wrapper .burger-container {
         height: 90px;
@@ -15197,6 +15270,53 @@ body #success-alert:after {
         background-size: 80%;
         width: 200px;
     }
+
+    body #app>nav.apple .nav-wrapper .container .menus .navbar-minimalist {
+        display: block;
+        width:200px;
+        float:left;
+        position: relative;
+        left:7.5%;
+        order:2;
+
+    }
+    body #app>nav.apple .nav-wrapper .container .menus .navbar-minimalist .apply-now .phone{
+        width:28.77px;
+        height:28.77px;
+        left: 228px;
+        top: 18px;
+        background: #FFFFFF;
+        border: 1px solid #72A531;
+        box-shadow: 0px 2px 0px #72A531;
+        box-sizing: border-box;
+        border-radius: 3px;
+        line-height: 16px;
+        margin-top:22px;
+        margin-left:34px;
+        padding: 3px 1px 6px 0px;
+        cursor:pointer;
+        align-items: center;
+    }  
+
+    body #app>nav.apple .nav-wrapper .container .menus .navbar-minimalist .apply-now .apply{
+        width: 87px;
+        height: 30px;
+        top: 10px;
+        position:relative;
+        border:none;
+        background: #97C35E;
+        box-shadow: 0px 3px 0px #72A531;
+        border-radius: 5px;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        text-align:center;
+        transition: all ease .4s;
+    }
+
     body #app>nav.apple .nav-wrapper .container .menus .navbar-right {
         order: 1;
         display: block;
@@ -16931,8 +17051,11 @@ body.affiliate-sign-up main h2 {
     }
     body #app>nav.apple .nav-wrapper .container .menus .navbar-left a.branding.logo {
         background-image: url(/assets/img/opf-logo.svg);
-        height: 65px;
-        width: 291px;
+        width: 145px;
+        position:relative;
+        height: 32.48px;
+        left: 32px;
+        top: 21px;
         display:block;
     }
     .join-aff .container {
