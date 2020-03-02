@@ -4398,6 +4398,7 @@ body #app>nav.apple .nav-wrapper .container {
 body #app>nav.apple .nav-wrapper .container .menus {
     display: flex;
     flex-grow: 1;
+    height:95px;
 }
 
 body #app>nav.apple .nav-wrapper .container .menus .navbar-left {
@@ -4405,7 +4406,8 @@ body #app>nav.apple .nav-wrapper .container .menus .navbar-left {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 120px;
+    margin-top:10px;
+    height: 95px;
     width: 200px;
 }
 
@@ -4422,9 +4424,9 @@ body #app>nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo {
 body #app>nav.apple .nav-wrapper .container .menus .navbar-right {
     order: 2;
     flex-grow: 1;
-    height: 120px;
+    height: 95px;
     text-align: left;
-    padding: 15px 0 15px 1px;
+    padding: 35px 0 15px 1px;
     display: flex;
     flex-direction: column;
 }
