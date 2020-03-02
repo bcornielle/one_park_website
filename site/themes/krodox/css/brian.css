@@ -275,9 +275,9 @@ body #app>main section#stats {
     width:100%;
     
 }
-body #app>main section#stats .modal-content {
-    margin-top: 50%;
-}
+/* body #app>main section#stats .modal-content {
+    margin-top: 200px;
+} */
 
 body #app>main section#stats .modal-content .modal-video {
     padding:0px !important;
@@ -10413,3 +10413,16 @@ body #success-alert .close {
 body #success-alert:after {
     content: 'Application Submitted';
 }
+
+
+/*Media Queries ZONE*/
+
+@media only screen and (min-width: 1200px) { }
+@media only screen and (min-width: 992px) { }
+@media only screen and (max-width: 991px) { }
+@media only screen and (max-width: 767px) { }
+@media only screen and (max-width: 576px) { }
+@media only screen and (max-width: 414px) { }
+@media only screen and (max-width: 320px) { }
+
+
