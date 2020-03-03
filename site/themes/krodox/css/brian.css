@@ -1,6 +1,7 @@
 
 
 /*******************hero content new********************/
+
 body #app>main section#hero-new {
     display: flex;
     flex-direction: column;
@@ -10432,10 +10433,11 @@ body #success-alert:after {
 
 
  @media (min-width: 992px) and (max-width: 1199.98px) {
-    
-
     /*******************************business-funds***********************************************/  
-
+    .container {
+        width: 100%;
+        margin-left: 0px;
+    }
     #how-business-funds-works {
         padding:5px;
     }
@@ -10493,7 +10495,7 @@ body #success-alert:after {
     body #app>main section#how-business-funds-works .container .steps-container .subtitle-step div {
         font-size: 14px;
         line-height: 20px;
-        width: 400px;
+        /* width: 400px; */
     }
 
     body #app>main section#how-business-funds-works .container .steps-container .numbers {
@@ -10521,7 +10523,7 @@ body #success-alert:after {
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
-        margin-left:110px;
+        /* margin-left:110px; */
     }
     body #app>main section#highlights-new .highlight-tablet .row div{
         margin-left:0px;
@@ -10551,10 +10553,6 @@ body #success-alert:after {
         width:220px;
         height:auto;
     }
-
-    body #app>main section#testimonials-new .right-container .first-title {
-        margin: 64px 0 0 2px;
-    }
     body #app>main section#testimonials-new .right-container .second-title {
         margin: 14px 0 40px 6px;
     }
@@ -10573,11 +10571,11 @@ body #success-alert:after {
     }
 
     body #app>main section#testimonials-new .right-container .first-title {
-        margin: 64px 0 0 5px;
+        margin: 64px 0 0 38px;
         font-size: 30px;
     }
     body #app>main section#testimonials-new .right-container .second-title {
-        margin: 14px 0 40px 6px;
+        margin: 14px 0 40px 40px;
         font-size: 20px;
     }
 
@@ -10764,9 +10762,9 @@ body #success-alert:after {
     }
     body #app>main section#features-new .dots-headings {
         position:relative;
-        bottom:7%;
-        left:45.6%;
-        max-width:18%;
+        bottom:2%;
+        left:44.6%;
+        max-width:21%;
     
     }
     body #app>main section#features-new .dots-headings a.elipse{
@@ -10808,8 +10806,7 @@ body #success-alert:after {
     /******************************************************************************************/
 
     @media only screen and (min-width: 992px) {
-        .container {
-            width:900px;}
+
      }
     @media only screen and (max-width: 991px) { }
     @media only screen and (max-width: 767px) { }
