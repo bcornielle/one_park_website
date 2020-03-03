@@ -282,7 +282,7 @@ body #app>main section#stats .modal-content {
 body #app>main section#stats .modal-content .modal-video {
     padding:0px !important;
     height: 20px !important;
-    width: 20px !important;
+    width: 20px !important;  
         position: fixed;   
 }
 
