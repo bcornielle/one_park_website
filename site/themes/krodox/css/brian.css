@@ -10411,7 +10411,6 @@ body #success-alert:after {
     text-align: center;
     padding: 0 30px;
 }
-
 body #success-alert {
     background: #359c1c;
 }
@@ -10423,7 +10422,6 @@ body #success-alert .close {
 body #success-alert:after {
     content: 'Application Submitted';
 }
-
 
 
 /* -------------------
