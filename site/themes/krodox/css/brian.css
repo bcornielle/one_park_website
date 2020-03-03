@@ -967,7 +967,9 @@ body #app>main section#features .tab-content .tab-pane p {
 
 
 /**********************Features New***************************/
-
+body #app>main section#features-new .container .have-you-tablet {
+    display:none;
+}
 body #app>main section#features-new {
     margin: 0px auto;
     padding: 61px 0;
@@ -10559,19 +10561,97 @@ body #success-alert:after {
 
     /******************************************************************************************/
         
-    body #app>main section#testimonials-new .right-container .first-title 
+    /****************************************features-new*********************************/
+
+    body #app>main section#testimonials-new .right-container .comment-customer {
+        width:494.5px;
+    }
+
+    body #app>main section#testimonials-new .right-container .comment-customer .ratings .stars-img {
+        width:220px;
+        height:auto;
+    }
+
+    body #app>main section#testimonials-new .right-container .first-title {
+        margin: 64px 0 0 2px;
+    }
+    body #app>main section#testimonials-new .right-container .second-title {
+        margin: 14px 0 40px 6px;
+    }
+
+    body #app>main section#features-new .table-wrapper.classic table thead tr th:first-child {
+        padding: 10px 30px 10px 35px;
+    }
+
+    body #app>main section#features-new .container .have-you {
+        display:none;
+    }
+    body #app>main section#features-new .container {
+        text-align: center;
+    }
+    body #app>main section#features-new .container .have-you-tablet {
+        left: 10px;   
+    }
+    body #app>main section#features-new .container .have-you-tablet .letters-have-you {
+        margin-left: 192px;
+    }
+
+    body #app>main section#features-new  .container .have-you-tablet{
+        display: block;
+    }
+        
+    body #app>main section#features-new  .container .have-you-tablet {
+        left: 15px;
+        height:100px;
+        padding:35px 0 20px 0px;
+        border-radius: 5px;
+        background:#2B4A70;    
+    }
+    body #app>main section#features-new .container .letters-have-you {
+        margin-left:32px;
+    }
+    body #app>main section#features-new  .container .have-you-tablet h6 {
+        align-items: center;
+        display:flex;
+        font-size: 24px;
+        margin-left: 32px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 600;
+        color: #FFFFFF;
+        display: flex;
+        line-height: 22px;
+    }
+    body #app>main section#features-new  .container .have-you-tablet .we-will {
+        font-weight:300;
+        font-size: 24px;
+        font-style: normal;
+        font-family:Roboto;
+        color:white;
+        margin-right:200px;
+        
+    }
+    
+    body #app>main section#features-new .container .have-you-tablet {
+        height: 196px;
+        left: 0px;
+    }
+
+    body #app>main section#features-new .container .have-you-tablet .btn-have-you {
+        margin-top:20px;
+        margin-right:210px;
+    }
 
 
 
+    /******************************************************************************************/
 
-
- }
-@media only screen and (min-width: 992px) { }
-@media only screen and (max-width: 991px) { }
-@media only screen and (max-width: 767px) { }
-@media only screen and (max-width: 576px) { }
-@media only screen and (max-width: 414px) {
-   
+    @media only screen and (min-width: 992px) { }
+    @media only screen and (max-width: 991px) { }
+    @media only screen and (max-width: 767px) { }
+    @media only screen and (max-width: 576px) { }
+    @media only screen and (max-width: 414px) {
+    
 
     body #app>nav.apple .nav-wrapper .burger-container #burger {
         top: 52%;
@@ -10654,7 +10734,5 @@ body #success-alert:after {
 
 
 @media only screen and (max-width: 320px) {
-
-
 
 }
