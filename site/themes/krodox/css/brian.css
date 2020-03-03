@@ -7721,101 +7721,6 @@ body.section-step4 #app>main section#formNew .form-right-col {
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    
-
-    /*******************************business-funds***********************************************/  
-
-    #how-business-funds-works {
-        padding:5px;
-    }
-    
-    #how-business-funds-works .container {
-        margin-top:60px;
-
-    }
-
-    body #app>main section#how-business-funds-works .container .steps-container {
-        margin-left: 67px;
-
-    }
-    body #app>main section#how-business-funds-works .container .steps-container .subtitle-step {
-        margin-left: 52px;
-        margin-top: -109px;
-    }
-
-    body #app>main section#how-business-funds-works .container .steps-container .subtitle-step .title {
-        font-size: 16px;
-    }
-
-    body #app>main section#how-business-funds-works .container .business-funds-container {
-        margin-left:-20px;
-        margin-top:-40px;
-    }
-    body #app>main section#how-business-funds-works .container .steps-container .subtitle-step.get-funded {
-        margin-left:54px;
-        margin-top:-40px;
-    }
-    body #app>main section#how-business-funds-works .headline h1 {
-        margin-top:-25px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 34px;
-        line-height: 30px;
-    }
-
-    body #app>main section#how-business-funds-works .container .steps-container .steps-line{
-        border: 1px solid #97C35E;
-        height: 74px;
-        font-weight: bold;
-        width: 2px;
-        margin-left:30px;
-    }
-    
-
-    body #app>main section#how-business-funds-works .container .business-funds-container .ceo .ceo-photo img {
-        width: 450.00px;
-        height: 308.00px;
-        margin-left:55px;
-    }
-
-    body #app>main section#how-business-funds-works .container .steps-container .subtitle-step div {
-        font-size: 14px;
-        line-height: 20px;
-        width: 400px;
-    }
-
-    body #app>main section#how-business-funds-works .container .steps-container .numbers {
-        font-size: 16px;
-        color:#ffffff;
-        line-height: 30px;
-        margin-left:10px;
-    }
-
-    body #app>main section#how-business-funds-works .container .steps-container .subtitle-step.talk,
-    body #app>main section#how-business-funds-works .container .steps-container .subtitle-step.review {
-       margin-top:-115px;
-    }
-    /**********************************************************************************************/
-
-
-    /*******************************Hightlits-new***********************************************/  
-
-    body #app>main section#highlights-new .highlight div {
-        color: #2B4A70;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 30px;
-    }
-
-
-    /******************************************************************************************/
-
-
-
-
     body #app>nav.apple .nav-wrapper .container .menus .navbar-right .items-nav.nav-bottom li a {
         font-size: 0.8em;
     }
@@ -10519,13 +10424,106 @@ body #success-alert:after {
  RESPONSIVE HP & LP
  -------------------- */
 
-@media only screen and (min-width: 1200px) { }
+
+ @media (min-width: 992px) and (max-width: 1199.98px) {
+    
+
+    /*******************************business-funds***********************************************/  
+
+    #how-business-funds-works {
+        padding:5px;
+    }
+    
+    #how-business-funds-works .container {
+        margin-top:60px;
+
+    }
+
+    body #app>main section#how-business-funds-works .container .steps-container {
+        margin-left: 67px;
+
+    }
+    body #app>main section#how-business-funds-works .container .steps-container .subtitle-step {
+        margin-left: 52px;
+        margin-top: -109px;
+    }
+
+    body #app>main section#how-business-funds-works .container .steps-container .subtitle-step .title {
+        font-size: 16px;
+    }
+
+    body #app>main section#how-business-funds-works .container .business-funds-container {
+        margin-left:-20px;
+        margin-top:-40px;
+    }
+    body #app>main section#how-business-funds-works .container .steps-container .subtitle-step.get-funded {
+        margin-left:54px;
+        margin-top:-40px;
+    }
+    body #app>main section#how-business-funds-works .headline h1 {
+        margin-top:-25px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+    body #app>main section#how-business-funds-works .container .steps-container .steps-line{
+        border: 1px solid #97C35E;
+        height: 74px;
+        font-weight: bold;
+        width: 2px;
+        margin-left:30px;
+    }
+    
+
+    body #app>main section#how-business-funds-works .container .business-funds-container .ceo .ceo-photo img {
+        width: 450.00px;
+        height: 308.00px;
+        margin-left:55px;
+    }
+
+    body #app>main section#how-business-funds-works .container .steps-container .subtitle-step div {
+        font-size: 14px;
+        line-height: 20px;
+        width: 400px;
+    }
+
+    body #app>main section#how-business-funds-works .container .steps-container .numbers {
+        font-size: 16px;
+        color:#ffffff;
+        line-height: 30px;
+        margin-left:10px;
+    }
+
+    body #app>main section#how-business-funds-works .container .steps-container .subtitle-step.talk,
+    body #app>main section#how-business-funds-works .container .steps-container .subtitle-step.review {
+       margin-top:-115px;
+    }
+    /**********************************************************************************************/
+
+
+    /*******************************Hightlits-new***********************************************/  
+
+    body #app>main section#highlights-new .highlight div {
+        color: #2B4A70;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+
+    /******************************************************************************************/
+ }
 @media only screen and (min-width: 992px) { }
 @media only screen and (max-width: 991px) { }
 @media only screen and (max-width: 767px) { }
 @media only screen and (max-width: 576px) { }
 @media only screen and (max-width: 414px) {
-
+   
 
     body #app>nav.apple .nav-wrapper .burger-container #burger {
         top: 52%;
