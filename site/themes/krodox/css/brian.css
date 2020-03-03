@@ -1111,15 +1111,6 @@ body #app>main section#features-new .tabs .tab-headings nav .nav-tabs a:hover {
     box-shadow: 0 8px 16px -4px rgba(83, 167, 61, 0.3);
 }
 
-body #app>main section#features-new .tabs .tab-descriptions {
-    background:#ffffff;
-    padding:0px 0 0 0;
-    text-align:center;
-    height:385px;
-    height:355px;
-    width:100%;
-}
-
 body #app>main section#features-new .table-wrapper {
     box-shadow: 0 16px 48px rgba(83, 167, 61, 0.1);
     margin-top: 30px;
@@ -1134,6 +1125,16 @@ body #app>main section#features-new .table-wrapper table tbody {
     border: 1px solid #97C35E !important;
     
 }
+
+body #app>main section#features-new .tabs .tab-descriptions {
+    background:#ffffff;
+    padding:0px 0 0 0;
+    text-align:center;
+    height:385px;
+    margin-left:16px;
+    width:97.3%;
+}
+
 
 body #app>main section#features-new .tab-descriptions .tab-content .arrow-left
 {
@@ -1162,8 +1163,7 @@ body #app>main section#features-new .tab-descriptions .tab-content .paragraph {
 }
 
 body #app>main section#features-new .carrousel-content {
-padding-right:25px;
-
+    padding-right:25px;
 }
 
 body #app>main section#features-new .tab-descriptions .tab-content .collateral .paragraph {
@@ -1178,7 +1178,7 @@ body #app>main section#features-new .tab-descriptions .tab-content a.arrow-right
 }
 body #app>main section#features-new .dots-headings {
     position:relative;
-    bottom:16%;
+    bottom:14%;
     left:45.6%;
     max-width:18%;
 
@@ -10788,6 +10788,15 @@ body #success-alert:after {
 
     body #app>main section#features-new .tab-content .arrows .carousel-titles.bad {
         margin-left:215px;
+    }
+
+    /**************************************how-we-do**********************************************/
+    body #app>main section#stats .stats-info .video-cover {
+        margin: 0 0 0 10px;
+    }
+
+    body #app>main section#stats .stats-info .play-btn {
+        top: 40.4%;
     }
 
     /********************************************************************************************/
