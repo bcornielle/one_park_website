@@ -14404,9 +14404,6 @@ body #success-alert:after {
         height: 100vh;
         overflow: auto;
     }
-    /* body #app>nav.apple .nav-wrapper .burger-container {
-        display: block;
-    } */
     body #app>nav.apple .nav-wrapper.shown {
         background-color: white;
     }
@@ -16971,10 +16968,10 @@ body.affiliate-sign-up main h2 {
 }
 
 @media (max-width: 991px) {
-    body #app>nav.apple .nav-wrapper .container .menus .navbar-left {
+    /* body #app>nav.apple .nav-wrapper .container .menus .navbar-left {
         background-size: auto;
         width:300px;
-    }
+    } */
     body #app>nav.apple .nav-wrapper .container .menus .navbar-left a.branding.logo {
         display:none;
     }

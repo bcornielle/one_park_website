@@ -24,14 +24,26 @@
         </div>
         <div class="container">
             <div class="menus">
-                <div class="navbar-minimalist">
+                <div class="navbar-minimalist row">
                     <div class="apply-now">
+                        {{ if current_uri == "/" }}
+                        <span class="en active">
+                            {{ else }}
+                        </span>
+                        <span class="en">
+                            English
+                            <span class="vertical-slash">|</span>
+                        </span>
+                        {{/if}}
+                        <span class="en active">
+                        </span>
+                        <span class="es">
+                            Español
+                            <span class="vertical-slash">|</span>
+                        </span>
                         <a href="tel:+18883277846" 
                             class="btn phone btn-primary secondary-cta js-trigger-video-modal">
                             <img src="/assets/img/phone-mini.svg" />
-                        </a>
-                        <a href="/pre-qualification" class="apply btn btn-primary">
-                            APPLY NOW
                         </a>
                     </div>
                 </div>

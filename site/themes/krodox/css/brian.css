@@ -267,13 +267,12 @@ body #app>main section#how-business-funds-works .container .steps-container div{
 
 
 
-
 /*************************************************************************/
 body #app>main section#stats {
     background-color: #ffffff;
     margin: 45px  0 0 -20px;
     border-top: 1px solid #f2f2f2;
-    width:92.2%;
+    width:100%;
     
 }
 body #app>main section#stats .modal-content {
@@ -10791,6 +10790,14 @@ body #success-alert:after {
     }
 
     /**************************************how-we-do**********************************************/
+
+     body #app>main section#stats .stats-info .headline h2 {
+        font-size:30px;
+    } 
+    
+    /* body #app>main section#stats .stats-info .row .headline h2 {
+        font-size:14px;
+    } */
     body #app>main section#stats .stats-info .video-cover {
         margin: 0 0 0 10px;
     }
@@ -10812,8 +10819,101 @@ body #success-alert:after {
 
     /******************************************************************************************/
 
-    @media only screen and (min-width: 992px) { }
-    @media only screen and (max-width: 991px) { }
+    @media only screen and (min-width: 992px) {
+
+     }
+    @media only screen and (max-width: 991px) { 
+        /*nav-991*/
+        body #app>nav.apple .nav-wrapper .container .menus .navbar-left a.branding.logo {
+            padding-right:50px;
+            padding-left:50px;
+            top:8%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 200px;
+            height: 59.2px;
+            float:left;
+        }
+        body #app>nav.apple .nav-wrapper .burger-container {
+            display: inline-block;
+        }
+        body #app>nav.apple .nav-wrapper .container .menus .navbar-minimalist {
+            display: block;
+            margin-top:40px;
+            float:right;
+            padding-left: 290px;
+            padding-right:30px;
+            order:2;
+        }
+        body #app>nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom{
+            display: block;
+            width: 130px;
+            height: 35px;
+            margin: 5px 12px 5px 0px;
+        }
+
+        body #app>nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li a.btn{
+            padding: 6px 0px;
+        }
+        body #app>nav.apple .nav-wrapper .container .menus .navbar-minimalist .apply-now a.phone {
+            background: #ffffff;
+            box-shadow: 0px 2px 0px #72a531;
+            border: 1px solid #97c35e;
+            text-transform: uppercase;
+            color: white;
+            transition: all ease .4s;
+            font-size: 1.1em;
+            line-height: 23px;
+            align-items: center;
+            text-align:  center;
+            margin-left: 20px;
+            font-weight: 500;
+            width: 37.37px;
+            height: 37.37px;
+        }
+        body #app>nav.apple .nav-wrapper .container .menus .navbar-minimalist .apply-now a.phone img {
+            position:relative;
+            right:55%;
+            bottom:10%;
+            width:26px;
+        }
+        body #app>nav.apple .nav-wrapper .container .menus .navbar-minimalist .apply-now a.phone img {
+            position:relative;
+            right:55%;
+            bottom:10%;
+            width:26px;
+        }
+
+        body #app>nav.apple .nav-wrapper .container .menus .navbar-minimalist .apply-now .en {
+            position:relative;
+            right:55%;
+            bottom:10%;
+            width:26px;
+            font-family: Roboto;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 30px;
+        }
+
+        body #app>nav.apple .nav-wrapper .container .menus .navbar-minimalist .apply-now .en.active {
+            position:relative;
+            right:55%;
+            bottom:10%;
+            width:26px;
+            font-family: Roboto;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 30px;
+        }
+
+        body #app>nav.apple .nav-wrapper .burger-container #burger{
+            top: 45%;
+        }
+        body #app>nav.apple .nav-wrapper .container .menus .navbar-minimalist .apply-now a.phone:hover {
+            transform: translateX(0px) scale(0.95);
+        }
+    }
     @media only screen and (max-width: 767px) { }
     @media only screen and (max-width: 576px) { }
     @media only screen and (max-width: 414px) {
