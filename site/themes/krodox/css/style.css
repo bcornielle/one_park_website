@@ -14404,9 +14404,9 @@ body #success-alert:after {
         height: 100vh;
         overflow: auto;
     }
-    body #app>nav.apple .nav-wrapper .burger-container {
+    /* body #app>nav.apple .nav-wrapper .burger-container {
         display: block;
-    }
+    } */
     body #app>nav.apple .nav-wrapper.shown {
         background-color: white;
     }
