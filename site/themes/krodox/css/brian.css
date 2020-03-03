@@ -508,6 +508,10 @@ body #app>main section#stats .stats-info .video .trustpilot-horizontal {
 
 /**** new hightlight section ****/
 
+body #app>main section#highlights-new .highlight-tablet{
+    display:none;
+}
+
 body #app>main section#highlights-new {
     margin: 30px 0 0 20px;
 }
@@ -10505,18 +10509,62 @@ body #success-alert:after {
 
 
     /*******************************Hightlits-new***********************************************/  
-
-    body #app>main section#highlights-new .highlight div {
+    body #app>main section#highlights-new .highlight-minimalist{
+        display:none;
+    }
+    body #app>main section#highlights-new .highlight-tablet{
+        display:block;
         color: #2B4A70;
         font-family: Roboto;
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
-        line-height: 30px;
+        margin-left:110px;
+    }
+    body #app>main section#highlights-new .highlight-tablet .row div{
+        margin-left:0px;
+    }
+    
+    body #app>main section#highlights-new .highlight-tablet .row .col-lg-3 div:last-child{
+        color:#97C35E;
     }
 
+    body #app>main section#highlights-new .highlight{
+        display:none;
+    }
 
     /******************************************************************************************/
+
+    /***********************************Testimonials-new**************************************/
+
+    /* body #app>main section#testimonials-new .right-container {
+
+    } */
+
+    body #app>main section#testimonials-new .right-container .comment-customer {
+        width:494.5px;
+    }
+
+    body #app>main section#testimonials-new .right-container .comment-customer .ratings .stars-img {
+        width:220px;
+        height:auto;
+    }
+
+    body #app>main section#testimonials-new .right-container .first-title {
+        margin: 64px 0 0 2px;
+    }
+    body #app>main section#testimonials-new .right-container .second-title {
+        margin: 14px 0 40px 6px;
+    }
+
+    /******************************************************************************************/
+        
+    body #app>main section#testimonials-new .right-container .first-title 
+
+
+
+
+
  }
 @media only screen and (min-width: 992px) { }
 @media only screen and (max-width: 991px) { }
