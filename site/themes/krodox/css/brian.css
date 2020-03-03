@@ -273,7 +273,7 @@ body #app>main section#stats {
     background-color: #ffffff;
     margin: 45px  0 0 -20px;
     border-top: 1px solid #f2f2f2;
-    width:100%;
+    width:92.2%;
     
 }
 body #app>main section#stats .modal-content {
@@ -10434,10 +10434,12 @@ body #success-alert:after {
 
  @media (min-width: 992px) and (max-width: 1199.98px) {
     /*******************************business-funds***********************************************/  
-    .container {
-        width: 100%;
-        margin-left: 0px;
-    }
+     /* .row {
+        margin-right:10px;
+      }
+       .container {
+          max-width: 890px;
+      } */
     #how-business-funds-works {
         padding:5px;
     }
@@ -10468,14 +10470,14 @@ body #success-alert:after {
         margin-left:54px;
         margin-top:-40px;
     }
-    body #app>main section#how-business-funds-works .headline h1 {
+    /* body #app>main section#how-business-funds-works .headline h2 {
         margin-top:-25px;
         font-family: Roboto;
         font-style: normal;
         font-weight: 500;
         font-size: 34px;
         line-height: 30px;
-    }
+    } */
 
     body #app>main section#how-business-funds-works .container .steps-container .steps-line{
         border: 1px solid #97C35E;
@@ -10797,17 +10799,20 @@ body #success-alert:after {
         top: 40.4%;
     }
 
+    body #app>main section#stats .bckgs.row{
+        margin-right: -15px;
+        margin-left:    0px;
+    }
+
     /********************************************************************************************/
 
-
+}
 
 
 
     /******************************************************************************************/
 
-    @media only screen and (min-width: 992px) {
-
-     }
+    @media only screen and (min-width: 992px) { }
     @media only screen and (max-width: 991px) { }
     @media only screen and (max-width: 767px) { }
     @media only screen and (max-width: 576px) { }
@@ -10892,8 +10897,4 @@ body #success-alert:after {
 
 
 
-
-
-@media only screen and (max-width: 320px) {
-
-}
+@media only screen and (max-width: 320px) {}
