@@ -3691,7 +3691,7 @@
   text-indent: 100%;
   cursor: pointer;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .ns-box .ns-close:hover {
@@ -3762,16 +3762,16 @@
 
 .ns-effect-scale.ns-show {
   -webkit-animation-name: animScale;
-          animation-name: animScale;
+  animation-name: animScale;
   -webkit-animation-duration: 0.25s;
-          animation-duration: 0.25s;
+  animation-duration: 0.25s;
 }
 
 .ns-effect-scale.ns-hide {
   -webkit-animation-name: animScale;
-          animation-name: animScale;
+  animation-name: animScale;
   -webkit-animation-duration: 0.25s;
-          animation-duration: 0.25s;
+  animation-duration: 0.25s;
 }
 
 .ns-effect-jelly {
@@ -3780,18 +3780,18 @@
 
 .ns-effect-jelly.ns-show {
   -webkit-animation-name: animJelly;
-          animation-name: animJelly;
+  animation-name: animJelly;
   -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 
 .ns-effect-jelly.ns-hide {
   -webkit-animation-name: animFade;
-          animation-name: animFade;
+  animation-name: animFade;
   -webkit-animation-duration: 0.3s;
-          animation-duration: 0.3s;
+  animation-duration: 0.3s;
 }
 
 .ns-effect-slide {
@@ -3823,16 +3823,16 @@
 
 .ns-effect-genie.ns-show {
   -webkit-animation-name: animGenie;
-          animation-name: animGenie;
+  animation-name: animGenie;
   -webkit-animation-duration: 0.4s;
-          animation-duration: 0.4s;
+  animation-duration: 0.4s;
 }
 
 .ns-effect-genie.ns-hide {
   -webkit-animation-name: animGenie;
-          animation-name: animGenie;
+  animation-name: animGenie;
   -webkit-animation-duration: 0.4s;
-          animation-duration: 0.4s;
+  animation-duration: 0.4s;
 }
 
 @media screen and (max-width: 25em) {
@@ -3854,9 +3854,9 @@
 
 .yt-loader {
   -webkit-animation-name: horizontalProgressBar;
-          animation-name: horizontalProgressBar;
+  animation-name: horizontalProgressBar;
   -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
+  animation-timing-function: ease;
   background: #2b7e17;
   height: 4px;
   left: 0;
@@ -3868,9 +3868,9 @@
 
 .yt-loader.animated {
   -webkit-animation-duration: .8s;
-          animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 @keyframes horizontalProgressBar {
@@ -4016,7 +4016,7 @@ a.dylan:focus {
 
 a.dylan:focus:before {
   -webkit-animation: effect_dylan 0.8s ease-out;
-          animation: effect_dylan 0.8s ease-out;
+  animation: effect_dylan 0.8s ease-out;
 }
 
 p {
@@ -4239,9 +4239,9 @@ body #app > nav.apple .nav-wrapper .burger-container {
   transform: rotate(0deg);
   transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   -webkit-tap-highlight-color: transparent;
   display: none;
 }
@@ -5456,9 +5456,9 @@ body #app > footer ul.links {
   padding: 0;
   margin: 15px 0;
   -moz-column-count: 1;
-       column-count: 1;
+  column-count: 1;
   -moz-column-gap: 0;
-       column-gap: 0;
+  column-gap: 0;
   list-style: circle;
   padding-left: 15px;
 }
@@ -5893,9 +5893,9 @@ body.section-how-it-works #app > main section#how-it-works .advantages ol, body.
   /* Keep using default numbering for IE6/7 */
   padding: 0;
   -moz-column-count: 3;
-       column-count: 3;
+  column-count: 3;
   -moz-column-gap: 20px;
-       column-gap: 20px;
+  column-gap: 20px;
   margin: 60px 0 0;
 }
 
@@ -5965,9 +5965,9 @@ body.section-how-it-works #app > main section#how-it-works .advantages ol li:bef
 
 body.section-how-it-works #app > main section#how-it-works .advantages ul, body.section-como-trabaja #app > main section#how-it-works .advantages ul {
   -moz-column-count: 2;
-       column-count: 2;
+  column-count: 2;
   -moz-column-gap: 20px;
-       column-gap: 20px;
+  column-gap: 20px;
   line-height: 1.8;
   list-style: none;
   padding: 15px;
@@ -6079,9 +6079,9 @@ body.section-about-us #app > main section#about-us .brand ul.items li div.right 
 body.section-about-us #app > main section#about-us .brand ul.items li div.right ul, body.section-about-us #app > main section#about-us .values ul.items li div.right ul, body.section-about-us #app > main section#about-us .why ul.items li div.right ul, body.section-sobre-nosotros #app > main section#about-us .brand ul.items li div.right ul, body.section-sobre-nosotros #app > main section#about-us .values ul.items li div.right ul, body.section-sobre-nosotros #app > main section#about-us .why ul.items li div.right ul {
   list-style: circle;
   -moz-column-count: 2;
-       column-count: 2;
+  column-count: 2;
   -moz-column-gap: 20px;
-       column-gap: 20px;
+  column-gap: 20px;
 }
 
 body.section-about-us #app > main section#about-us .brand ul.items li div.right ul li, body.section-about-us #app > main section#about-us .values ul.items li div.right ul li, body.section-about-us #app > main section#about-us .why ul.items li div.right ul li, body.section-sobre-nosotros #app > main section#about-us .brand ul.items li div.right ul li, body.section-sobre-nosotros #app > main section#about-us .values ul.items li div.right ul li, body.section-sobre-nosotros #app > main section#about-us .why ul.items li div.right ul li {
@@ -8109,8 +8109,26 @@ body.section-pre-qualification #app nav.apple .nav-wrapper .container .menus .na
   justify-content: left;
 }
 
+@media (max-width: 767px) {
+  body.section-pre-qualification #app nav.apple .nav-wrapper .container .menus .navbar-left, body.section-congrats #app nav.apple .nav-wrapper .container .menus .navbar-left, body.section-complete #app nav.apple .nav-wrapper .container .menus .navbar-left, body.section-preaprob #app nav.apple .nav-wrapper .container .menus .navbar-left, body.section-feliz #app nav.apple .nav-wrapper .container .menus .navbar-left, body.section-gracias #app nav.apple .nav-wrapper .container .menus .navbar-left, body.section-steps #app nav.apple .nav-wrapper .container .menus .navbar-left, body.section-step1 #app nav.apple .nav-wrapper .container .menus .navbar-left, body.section-step2 #app nav.apple .nav-wrapper .container .menus .navbar-left, body.section-step3 #app nav.apple .nav-wrapper .container .menus .navbar-left, body.section-step4 #app nav.apple .nav-wrapper .container .menus .navbar-left {
+    width: 179px;
+  }
+}
+
+@media (max-width: 576px) {
+  body.section-pre-qualification #app nav.apple .nav-wrapper .container .menus .navbar-left, body.section-congrats #app nav.apple .nav-wrapper .container .menus .navbar-left, body.section-complete #app nav.apple .nav-wrapper .container .menus .navbar-left, body.section-preaprob #app nav.apple .nav-wrapper .container .menus .navbar-left, body.section-feliz #app nav.apple .nav-wrapper .container .menus .navbar-left, body.section-gracias #app nav.apple .nav-wrapper .container .menus .navbar-left, body.section-steps #app nav.apple .nav-wrapper .container .menus .navbar-left, body.section-step1 #app nav.apple .nav-wrapper .container .menus .navbar-left, body.section-step2 #app nav.apple .nav-wrapper .container .menus .navbar-left, body.section-step3 #app nav.apple .nav-wrapper .container .menus .navbar-left, body.section-step4 #app nav.apple .nav-wrapper .container .menus .navbar-left {
+    width: 160px;
+  }
+}
+
+@media (max-width: 414px) {
+  body.section-pre-qualification #app nav.apple .nav-wrapper .container .menus .navbar-left, body.section-congrats #app nav.apple .nav-wrapper .container .menus .navbar-left, body.section-complete #app nav.apple .nav-wrapper .container .menus .navbar-left, body.section-preaprob #app nav.apple .nav-wrapper .container .menus .navbar-left, body.section-feliz #app nav.apple .nav-wrapper .container .menus .navbar-left, body.section-gracias #app nav.apple .nav-wrapper .container .menus .navbar-left, body.section-steps #app nav.apple .nav-wrapper .container .menus .navbar-left, body.section-step1 #app nav.apple .nav-wrapper .container .menus .navbar-left, body.section-step2 #app nav.apple .nav-wrapper .container .menus .navbar-left, body.section-step3 #app nav.apple .nav-wrapper .container .menus .navbar-left, body.section-step4 #app nav.apple .nav-wrapper .container .menus .navbar-left {
+    width: 135px;
+  }
+}
+
 body.section-pre-qualification #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-congrats #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-complete #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-preaprob #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-feliz #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-gracias #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-steps #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-step1 #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-step2 #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-step3 #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-step4 #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo {
-  background-image: url(/assets/img/tree.png);
+  background-image: url(/assets/img/one-park-logo.png);
   background-position: center;
   background-repeat: no-repeat;
   text-indent: -9999px;
@@ -8120,15 +8138,22 @@ body.section-pre-qualification #app nav.apple .nav-wrapper .container .menus .na
 
 @media (min-width: 768px) {
   body.section-pre-qualification #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-congrats #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-complete #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-preaprob #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-feliz #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-gracias #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-steps #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-step1 #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-step2 #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-step3 #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-step4 #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo {
-    height: 69px;
-    width: 69px;
+    height: 56px;
+    width: 250px;
   }
 }
 
 @media (max-width: 767.98px) {
   body.section-pre-qualification #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-congrats #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-complete #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-preaprob #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-feliz #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-gracias #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-steps #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-step1 #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-step2 #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-step3 #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-step4 #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo {
-    height: 49px;
-    width: 49px;
+    height: 40px;
+    width: 179px;
+  }
+}
+
+@media (max-width: 414px) {
+  body.section-pre-qualification #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-congrats #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-complete #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-preaprob #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-feliz #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-gracias #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-steps #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-step1 #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-step2 #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-step3 #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo, body.section-step4 #app nav.apple .nav-wrapper .container .menus .navbar-left .branding.logo {
+    height: 30px;
+    width: 135px;
   }
 }
 
@@ -8261,26 +8286,26 @@ body.section-pre-qualification #app > main section#formNew .lds-ring div, body.s
   border: 7px solid #359c1c;
   border-radius: 50%;
   -webkit-animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-          animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
   border-color: #359c1c transparent transparent transparent;
   margin: -39px;
 }
 
 body.section-pre-qualification #app > main section#formNew .lds-ring div:nth-child(1), body.section-congrats #app > main section#formNew .lds-ring div:nth-child(1), body.section-complete #app > main section#formNew .lds-ring div:nth-child(1), body.section-preaprob #app > main section#formNew .lds-ring div:nth-child(1), body.section-feliz #app > main section#formNew .lds-ring div:nth-child(1), body.section-gracias #app > main section#formNew .lds-ring div:nth-child(1), body.section-steps #app > main section#formNew .lds-ring div:nth-child(1), body.section-step1 #app > main section#formNew .lds-ring div:nth-child(1), body.section-step2 #app > main section#formNew .lds-ring div:nth-child(1), body.section-step3 #app > main section#formNew .lds-ring div:nth-child(1), body.section-step4 #app > main section#formNew .lds-ring div:nth-child(1) {
   -webkit-animation-delay: -0.45s;
-          animation-delay: -0.45s;
+  animation-delay: -0.45s;
   margin: -39px;
 }
 
 body.section-pre-qualification #app > main section#formNew .lds-ring div:nth-child(2), body.section-congrats #app > main section#formNew .lds-ring div:nth-child(2), body.section-complete #app > main section#formNew .lds-ring div:nth-child(2), body.section-preaprob #app > main section#formNew .lds-ring div:nth-child(2), body.section-feliz #app > main section#formNew .lds-ring div:nth-child(2), body.section-gracias #app > main section#formNew .lds-ring div:nth-child(2), body.section-steps #app > main section#formNew .lds-ring div:nth-child(2), body.section-step1 #app > main section#formNew .lds-ring div:nth-child(2), body.section-step2 #app > main section#formNew .lds-ring div:nth-child(2), body.section-step3 #app > main section#formNew .lds-ring div:nth-child(2), body.section-step4 #app > main section#formNew .lds-ring div:nth-child(2) {
   -webkit-animation-delay: -0.3s;
-          animation-delay: -0.3s;
+  animation-delay: -0.3s;
   margin: -39px;
 }
 
 body.section-pre-qualification #app > main section#formNew .lds-ring div:nth-child(3), body.section-congrats #app > main section#formNew .lds-ring div:nth-child(3), body.section-complete #app > main section#formNew .lds-ring div:nth-child(3), body.section-preaprob #app > main section#formNew .lds-ring div:nth-child(3), body.section-feliz #app > main section#formNew .lds-ring div:nth-child(3), body.section-gracias #app > main section#formNew .lds-ring div:nth-child(3), body.section-steps #app > main section#formNew .lds-ring div:nth-child(3), body.section-step1 #app > main section#formNew .lds-ring div:nth-child(3), body.section-step2 #app > main section#formNew .lds-ring div:nth-child(3), body.section-step3 #app > main section#formNew .lds-ring div:nth-child(3), body.section-step4 #app > main section#formNew .lds-ring div:nth-child(3) {
   -webkit-animation-delay: -0.15s;
-          animation-delay: -0.15s;
+  animation-delay: -0.15s;
   margin: -39px;
 }
 
@@ -8610,6 +8635,12 @@ body.section-pre-qualification #app > main section#formNew .prequalification-hea
   }
 }
 
+@media (max-width: 576px) {
+  body.section-pre-qualification #app > main section#formNew .prequalification-header h1, body.section-congrats #app > main section#formNew .prequalification-header h1, body.section-complete #app > main section#formNew .prequalification-header h1, body.section-preaprob #app > main section#formNew .prequalification-header h1, body.section-feliz #app > main section#formNew .prequalification-header h1, body.section-gracias #app > main section#formNew .prequalification-header h1, body.section-steps #app > main section#formNew .prequalification-header h1, body.section-step1 #app > main section#formNew .prequalification-header h1, body.section-step2 #app > main section#formNew .prequalification-header h1, body.section-step3 #app > main section#formNew .prequalification-header h1, body.section-step4 #app > main section#formNew .prequalification-header h1 {
+    font-size: 1.9rem;
+  }
+}
+
 body.section-pre-qualification #app > main section#formNew .prequalification-header h2, body.section-congrats #app > main section#formNew .prequalification-header h2, body.section-complete #app > main section#formNew .prequalification-header h2, body.section-preaprob #app > main section#formNew .prequalification-header h2, body.section-feliz #app > main section#formNew .prequalification-header h2, body.section-gracias #app > main section#formNew .prequalification-header h2, body.section-steps #app > main section#formNew .prequalification-header h2, body.section-step1 #app > main section#formNew .prequalification-header h2, body.section-step2 #app > main section#formNew .prequalification-header h2, body.section-step3 #app > main section#formNew .prequalification-header h2, body.section-step4 #app > main section#formNew .prequalification-header h2 {
   font-size: 0.9375rem;
 }
@@ -8804,8 +8835,17 @@ body.section-pre-qualification #app > main section#formNew .btn-primary, body.se
   font-weight: 600;
 }
 
+body.section-pre-qualification #app > main section#formNew .step1-badges, body.section-congrats #app > main section#formNew .step1-badges, body.section-complete #app > main section#formNew .step1-badges, body.section-preaprob #app > main section#formNew .step1-badges, body.section-feliz #app > main section#formNew .step1-badges, body.section-gracias #app > main section#formNew .step1-badges, body.section-steps #app > main section#formNew .step1-badges, body.section-step1 #app > main section#formNew .step1-badges, body.section-step2 #app > main section#formNew .step1-badges, body.section-step3 #app > main section#formNew .step1-badges, body.section-step4 #app > main section#formNew .step1-badges {
+  max-width: 645px;
+}
+
 body.section-pre-qualification #app > main section#formNew .step1-badges li, body.section-congrats #app > main section#formNew .step1-badges li, body.section-complete #app > main section#formNew .step1-badges li, body.section-preaprob #app > main section#formNew .step1-badges li, body.section-feliz #app > main section#formNew .step1-badges li, body.section-gracias #app > main section#formNew .step1-badges li, body.section-steps #app > main section#formNew .step1-badges li, body.section-step1 #app > main section#formNew .step1-badges li, body.section-step2 #app > main section#formNew .step1-badges li, body.section-step3 #app > main section#formNew .step1-badges li, body.section-step4 #app > main section#formNew .step1-badges li {
-  padding: 50px;
+  padding: 35px 25px;
+}
+
+body.section-pre-qualification #app > main section#formNew .step1-badges img, body.section-congrats #app > main section#formNew .step1-badges img, body.section-complete #app > main section#formNew .step1-badges img, body.section-preaprob #app > main section#formNew .step1-badges img, body.section-feliz #app > main section#formNew .step1-badges img, body.section-gracias #app > main section#formNew .step1-badges img, body.section-steps #app > main section#formNew .step1-badges img, body.section-step1 #app > main section#formNew .step1-badges img, body.section-step2 #app > main section#formNew .step1-badges img, body.section-step3 #app > main section#formNew .step1-badges img, body.section-step4 #app > main section#formNew .step1-badges img {
+  width: 132px;
+  height: 50px;
 }
 
 body.section-pre-qualification #app > main section#formNew .form-right-col, body.section-congrats #app > main section#formNew .form-right-col, body.section-complete #app > main section#formNew .form-right-col, body.section-preaprob #app > main section#formNew .form-right-col, body.section-feliz #app > main section#formNew .form-right-col, body.section-gracias #app > main section#formNew .form-right-col, body.section-steps #app > main section#formNew .form-right-col, body.section-step1 #app > main section#formNew .form-right-col, body.section-step2 #app > main section#formNew .form-right-col, body.section-step3 #app > main section#formNew .form-right-col, body.section-step4 #app > main section#formNew .form-right-col {
@@ -9002,7 +9042,7 @@ body.section-pre-qualification #app > main section#form .form-wrapper .legal-not
   line-height: 1.5;
   text-align: left;
   padding: 0;
-  font-size: .8rem;
+  font-size: .8rem !important;
 }
 
 body.section-pre-qualification #app > main section#form .form-wrapper .legal-notice p a, body.section-congrats #app > main section#form .form-wrapper .legal-notice p a, body.section-complete #app > main section#form .form-wrapper .legal-notice p a, body.section-preaprob #app > main section#form .form-wrapper .legal-notice p a, body.section-feliz #app > main section#form .form-wrapper .legal-notice p a, body.section-gracias #app > main section#form .form-wrapper .legal-notice p a, body.section-steps #app > main section#form .form-wrapper .legal-notice p a, body.section-step1 #app > main section#form .form-wrapper .legal-notice p a, body.section-step2 #app > main section#form .form-wrapper .legal-notice p a, body.section-step3 #app > main section#form .form-wrapper .legal-notice p a, body.section-step4 #app > main section#form .form-wrapper .legal-notice p a {
@@ -9134,7 +9174,8 @@ body.section-pre-qualification #app > main section ul.badgets li img, body.secti
 }
 
 body.section-pre-qualification #app > main section p, body.section-congrats #app > main section p, body.section-complete #app > main section p, body.section-preaprob #app > main section p, body.section-feliz #app > main section p, body.section-gracias #app > main section p, body.section-steps #app > main section p, body.section-step1 #app > main section p, body.section-step2 #app > main section p, body.section-step3 #app > main section p, body.section-step4 #app > main section p {
-  line-height: 1.2 !important;
+  line-height: 1.7 !important;
+  font-size: .7rem;
 }
 
 body.section-congrats #app > main section#form .form #prequalifed-content, body.section-feliz #app > main section#form .form #prequalifed-content, body.section-steps #app > main section#form .form #prequalifed-content, body.section-step2 #app > main section#form .form #prequalifed-content {
@@ -10533,6 +10574,9 @@ body #success-alert:after {
   body #app > main section#lp-form .container #form p.disclaimer {
     padding: 0;
   }
+  body #app > footer .badget {
+    width: 48%;
+  }
   body.section-home #app > main section#hero {
     background-image: none;
   }
@@ -10795,7 +10839,7 @@ body #success-alert:after {
   }
   body.section-how-it-works #app > main section#how-it-works .advantages ol, body.section-como-trabaja #app > main section#how-it-works .advantages ol {
     -moz-column-count: 1;
-         column-count: 1;
+    column-count: 1;
     max-width: 400px;
     margin: 0 auto;
   }
@@ -10839,7 +10883,7 @@ body #success-alert:after {
   }
   body.section-about-us #app > main section#about-us .values ul.items li div.right ul, body.section-sobre-nosotros #app > main section#about-us .values ul.items li div.right ul {
     -moz-column-count: 1;
-         column-count: 1;
+    column-count: 1;
   }
   body.section-about-us #app > main section#about-us .why, body.section-sobre-nosotros #app > main section#about-us .why {
     padding: 0 0 60px;
@@ -11399,6 +11443,9 @@ body #success-alert:after {
   }
   body #app > footer .brand-info h3 {
     margin-top: 30px;
+  }
+  body #app > footer .brand-info .badget {
+    margin: 20px auto;
   }
   body #app > footer .brand-info ul {
     display: flex;
@@ -11967,6 +12014,12 @@ body #success-alert:after {
     order: 2;
     height: 65px;
   }
+  body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-top .phone .text {
+    display: none;
+  }
+  body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-top .phone .number {
+    font-size: 15px;
+  }
   body #app > nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom {
     display: none;
   }
@@ -12009,26 +12062,33 @@ body #success-alert:after {
   body #app > main section#services {
     padding: 30px 0;
   }
-  body #app > footer .brand-links ul.locations li span {
+  body #app > main section#formNew .step1-badges li {
+    padding: 25px 0 !important;
+  }
+  body #app > main section#formNew .step1-badges img {
+    width: 90px !important;
+    height: 34px !important;
+  }
+  body #app > main > footer .brand-links ul.locations li span {
     padding: 0 30px;
     margin-bottom: 15px;
   }
-  body.section-home #app > nav.apple .nav-wrapper .container .menus .navbar-right .join-now {
+  body #app.section-home #app > nav.apple .nav-wrapper .container .menus .navbar-right .join-now {
     width: 150px;
   }
-  body.section-pre-qualification #app > main section#form, body.section-congrats #app > main section#form, body.section-complete #app > main section#form, body.section-preaprob #app > main section#form, body.section-feliz #app > main section#form, body.section-gracias #app > main section#form, body.section-steps #app > main section#form, body.section-step1 #app > main section#form, body.section-step2 #app > main section#form, body.section-step3 #app > main section#form, body.section-step4 #app > main section#form {
+  body #app.section-pre-qualification #app > main section#form, body #app.section-congrats #app > main section#form, body #app.section-complete #app > main section#form, body #app.section-preaprob #app > main section#form, body #app.section-feliz #app > main section#form, body #app.section-gracias #app > main section#form, body #app.section-steps #app > main section#form, body #app.section-step1 #app > main section#form, body #app.section-step2 #app > main section#form, body #app.section-step3 #app > main section#form, body #app.section-step4 #app > main section#form {
     padding: 30px 0;
     background: white;
   }
-  body.section-pre-qualification #app > main section#form h1, body.section-congrats #app > main section#form h1, body.section-complete #app > main section#form h1, body.section-preaprob #app > main section#form h1, body.section-feliz #app > main section#form h1, body.section-gracias #app > main section#form h1, body.section-steps #app > main section#form h1, body.section-step1 #app > main section#form h1, body.section-step2 #app > main section#form h1, body.section-step3 #app > main section#form h1, body.section-step4 #app > main section#form h1 {
+  body #app.section-pre-qualification #app > main section#form h1, body #app.section-congrats #app > main section#form h1, body #app.section-complete #app > main section#form h1, body #app.section-preaprob #app > main section#form h1, body #app.section-feliz #app > main section#form h1, body #app.section-gracias #app > main section#form h1, body #app.section-steps #app > main section#form h1, body #app.section-step1 #app > main section#form h1, body #app.section-step2 #app > main section#form h1, body #app.section-step3 #app > main section#form h1, body #app.section-step4 #app > main section#form h1 {
     font-size: 1.2rem;
     margin: 0 auto;
     padding: 0;
   }
-  body.section-pre-qualification #app > main section#form h2, body.section-congrats #app > main section#form h2, body.section-complete #app > main section#form h2, body.section-preaprob #app > main section#form h2, body.section-feliz #app > main section#form h2, body.section-gracias #app > main section#form h2, body.section-steps #app > main section#form h2, body.section-step1 #app > main section#form h2, body.section-step2 #app > main section#form h2, body.section-step3 #app > main section#form h2, body.section-step4 #app > main section#form h2 {
+  body #app.section-pre-qualification #app > main section#form h2, body #app.section-congrats #app > main section#form h2, body #app.section-complete #app > main section#form h2, body #app.section-preaprob #app > main section#form h2, body #app.section-feliz #app > main section#form h2, body #app.section-gracias #app > main section#form h2, body #app.section-steps #app > main section#form h2, body #app.section-step1 #app > main section#form h2, body #app.section-step2 #app > main section#form h2, body #app.section-step3 #app > main section#form h2, body #app.section-step4 #app > main section#form h2 {
     font-size: 1rem;
   }
-  body.section-pre-qualification #app > main section#form .form-wrapper .legal-notice p, body.section-congrats #app > main section#form .form-wrapper .legal-notice p, body.section-complete #app > main section#form .form-wrapper .legal-notice p, body.section-preaprob #app > main section#form .form-wrapper .legal-notice p, body.section-feliz #app > main section#form .form-wrapper .legal-notice p, body.section-gracias #app > main section#form .form-wrapper .legal-notice p, body.section-steps #app > main section#form .form-wrapper .legal-notice p, body.section-step1 #app > main section#form .form-wrapper .legal-notice p, body.section-step2 #app > main section#form .form-wrapper .legal-notice p, body.section-step3 #app > main section#form .form-wrapper .legal-notice p, body.section-step4 #app > main section#form .form-wrapper .legal-notice p {
+  body #app.section-pre-qualification #app > main section#form .form-wrapper .legal-notice p, body #app.section-congrats #app > main section#form .form-wrapper .legal-notice p, body #app.section-complete #app > main section#form .form-wrapper .legal-notice p, body #app.section-preaprob #app > main section#form .form-wrapper .legal-notice p, body #app.section-feliz #app > main section#form .form-wrapper .legal-notice p, body #app.section-gracias #app > main section#form .form-wrapper .legal-notice p, body #app.section-steps #app > main section#form .form-wrapper .legal-notice p, body #app.section-step1 #app > main section#form .form-wrapper .legal-notice p, body #app.section-step2 #app > main section#form .form-wrapper .legal-notice p, body #app.section-step3 #app > main section#form .form-wrapper .legal-notice p, body #app.section-step4 #app > main section#form .form-wrapper .legal-notice p {
     padding: 0;
   }
   body.section-congrats #app > main section#form .form #prequalifed-content h1, body.section-feliz #app > main section#form .form #prequalifed-content h1, body.section-steps #app > main section#form .form #prequalifed-content h1, body.section-step2 #app > main section#form .form #prequalifed-content h1 {
