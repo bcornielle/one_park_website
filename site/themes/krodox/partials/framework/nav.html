@@ -26,21 +26,28 @@
             <div class="menus">
                 <div class="navbar-minimalist row">
                     <div class="apply-now">
-                        {{ if current_uri == "/" }}
-                        <span class="en active">
-                            {{ else }}
-                        </span>
-                        <span class="en">
-                            English
-                            <span class="vertical-slash">|</span>
-                        </span>
-                        {{/if}}
-                        <span class="en active">
-                        </span>
-                        <span class="es">
-                            Español
-                            <span class="vertical-slash">|</span>
-                        </span>
+                        <ul class=" items-nav nav-bottom row">
+                            {{ if current_uri == "/" }}
+                            <li class="en active">
+                                {{ else }}
+                            </li>
+                            <li class="en">
+                                {{ /if }}
+                                <a href="/">
+                                    English <span class="vertical-slash">|</span>
+                                </a>
+                            </li>
+                            {{ if current_uri == "/es" }}
+                            <li class="esp active">
+                                {{ else }}
+                            </li>
+                            <li class="esp">
+                                {{ /if }}
+                                <a href="/es/">
+                                    Español <span class="vertical-slash">|</span>
+                                </a>
+                            </li>
+                        </ul>
                         <a href="tel:+18883277846" 
                             class="btn phone btn-primary secondary-cta js-trigger-video-modal">
                             <img src="/assets/img/phone-mini.svg" />

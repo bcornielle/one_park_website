@@ -4577,7 +4577,7 @@ body #app>nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li:
 }
 
 body #app>nav.apple .nav-wrapper .container .menus .navbar-right .nav-bottom li.active a {
-    color: #a4cb72;
+    color: #97C35E;
     padding-bottom: 5px;
 }
 
@@ -14679,6 +14679,8 @@ body #success-alert:after {
     }
     body #app>nav.apple .nav-wrapper .container .menus .navbar-left {
         width: 200px;
+        position: relative;
+        left: 20px;
     }
     body #app>nav.apple .nav-wrapper .container .menus .navbar-left a.branding.logo {
         width: 200px;
@@ -16974,6 +16976,7 @@ body.affiliate-sign-up main h2 {
     } */
     body #app>nav.apple .nav-wrapper .container .menus .navbar-left a.branding.logo {
         display:none;
+        margin-top: 15px;
     }
     body #app>nav.apple .nav-wrapper .container .menus .navbar-left a.branding.logo {
         background-image: url(/assets/img/opf-logo.svg);
