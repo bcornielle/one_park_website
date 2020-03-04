@@ -543,6 +543,10 @@ body #app>main section#highlights-new .highlight div:last-child{
     color: #97C35E;
 }
 
+body #app>main section#stats .stats-info .video-link {
+
+    display: none;
+}
 
 /*******************************/
 
