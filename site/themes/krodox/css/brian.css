@@ -10439,6 +10439,10 @@ body #success-alert:after {
        .container {
           max-width: 890px;
       } */
+
+    body #app>main section#stats .stats-info .video-cover {
+        width: 451px;
+    }
     #how-business-funds-works {
         padding:5px;
     }
@@ -10469,14 +10473,6 @@ body #success-alert:after {
         margin-left:54px;
         margin-top:-40px;
     }
-    /* body #app>main section#how-business-funds-works .headline h2 {
-        margin-top:-25px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 34px;
-        line-height: 30px;
-    } */
 
     body #app>main section#how-business-funds-works .container .steps-container .steps-line{
         border: 1px solid #97C35E;
@@ -10793,7 +10789,12 @@ body #success-alert:after {
 
      body #app>main section#stats .stats-info .headline h2 {
         font-size:30px;
+        margin-left:12px;
     } 
+
+    body #app>main section#stats .stats-info .hello h6 {
+        margin-left:12px;
+    }
     
     /* body #app>main section#stats .stats-info .row .headline h2 {
         font-size:14px;
@@ -10803,14 +10804,18 @@ body #success-alert:after {
     }
 
     body #app>main section#stats .stats-info .play-btn {
-        top: 40.4%;
+        top: 41.3%;
     }
-
-    body #app>main section#stats .bckgs.row{
+    body #app>main section#stats .stats-info .apply-now a.secondary-cta{
+        margin-left: 15px;
+    }
+    body #app>main section#stats .stats-info .numbers h2, a.secondary-cta, h3, p {
+        margin-left:12px;
+    }
+     /* body #app>main section#stats .bckgs.row{
         margin-right: -15px;
         margin-left:    0px;
-    }
-
+    } */
     /********************************************************************************************/
 
 }

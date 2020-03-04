@@ -9,9 +9,12 @@ return array(
     'Webpatser\\Uuid' => array($vendorDir . '/webpatser/laravel-uuid/src'),
     'UpdateHelper\\' => array($vendorDir . '/kylekatarnls/update-helper/src'),
     'Rap2hpoutre\\LaravelLogViewer\\' => array($vendorDir . '/rap2hpoutre/laravel-log-viewer/src'),
+    'PhpSpec' => array($vendorDir . '/phpspec/phpspec/src'),
     'Netcarver\\Textile' => array($vendorDir . '/netcarver/textile/src'),
+    'Mockery' => array($vendorDir . '/mockery/mockery/library'),
     'Michelf' => array($vendorDir . '/michelf/php-smartypants'),
     'JakubOnderka\\PhpConsoleHighlighter' => array($vendorDir . '/jakub-onderka/php-console-highlighter/src'),
     'Dotenv' => array($vendorDir . '/vlucas/phpdotenv/src'),
+    'Diff' => array($vendorDir . '/phpspec/php-diff/lib'),
     'AlgoliaSearch' => array($vendorDir . '/algolia/algoliasearch-client-php/src'),
 );
