@@ -45,10 +45,10 @@ body #app>main section#hero-new .hero-content-new h2 {
     font-size: 42px;
     line-height: 49px;
     /* or 131% */
-    
+
     display: flex;
     align-items: center;
-    
+
     color: #FFFFFF;
 }
 
@@ -160,7 +160,7 @@ body #app>main section#hero-new .hero-content-new ul li img {
     box-shadow: 0px 4px 0px #72A531;
     border-radius: 3px;
     font-family: Roboto;
-    font-style: normal; 
+    font-style: normal;
     font-weight: bold;
     font-size: 18px;
     line-height: 21px;
@@ -273,7 +273,7 @@ body #app>main section#stats {
     margin: 45px  0 0 -20px;
     border-top: 1px solid #f2f2f2;
     width:100%;
-    
+
 }
 body #app>main section#stats .modal-content {
     margin-top: 50%;
@@ -282,8 +282,8 @@ body #app>main section#stats .modal-content {
 body #app>main section#stats .modal-content .modal-video {
     padding:0px !important;
     height: 20px !important;
-    width: 20px !important;  
-        position: fixed;   
+    width: 20px !important;
+        position: fixed;
 }
 
 body.modal-open {
@@ -475,7 +475,7 @@ body #app>main section#stats .stats-info .apply-now a.secondary-cta {
 body #app>main section#stats .stats-info .apply-now a.secondary-cta:hover{
     transform: translateX(0px) scale(0.95);
     box-shadow: 0px 2px 0px #FFFFFF;
-}   
+}
 
 body #app>main section#stats .stats-info .video {
     background-color: #ffffff;
@@ -543,6 +543,10 @@ body #app>main section#highlights-new .highlight div:last-child{
     color: #97C35E;
 }
 
+body #app>main section#stats .stats-info .video-link {
+
+    display: none;
+}
 
 /*******************************/
 
@@ -982,7 +986,7 @@ body #app>main section#features-new  .container .have-you {
     height:100px;
     padding:30px 0 0 0px;
     border-radius: 5px;
-    background:#2B4A70;    
+    background:#2B4A70;
 }
 body #app>main section#features-new .container .letters-have-you {
     margin-left:32px;
@@ -1050,7 +1054,7 @@ body #app>main section#features-new a.btn  {
     text-align: center;
     font-weight: 500;
     max-width: 250px;
-    
+
 }
 
 body #app>main section#features-new a.btn:hover {
@@ -1123,7 +1127,7 @@ body #app>main section#features-new .table-wrapper table {
 body #app>main section#features-new .table-wrapper table tbody {
     margin: 35px 0;
     border: 1px solid #97C35E !important;
-    
+
 }
 
 body #app>main section#features-new .tabs .tab-descriptions {
@@ -1156,7 +1160,7 @@ body #app>main section#features-new .tab-descriptions .tab-content a.arrow-left{
 body #app>main section#features-new .tab-descriptions .tab-content .paragraph {
      width:100%;
      height:300px;
-     padding:10px; 
+     padding:10px;
      text-align: center;
      position:static
 
@@ -1879,7 +1883,7 @@ body #app>main section#lp-form-new .container #form article ul.fields li {
     background: #FFFFFF;
     box-sizing: border-box;
 }
-body #app>main section#lp-form-new .container #form article ul.fields 
+body #app>main section#lp-form-new .container #form article ul.fields
 .radio-toolbar input[type="radio"] {
     opacity: 0;
     position: fixed;
@@ -2003,7 +2007,7 @@ body #app>main section#lp-form-new .lp-form  .disclaimer {
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
-    line-height: 150%;  
+    line-height: 150%;
     display: flex;
     width: 886px;
     height:35px;
@@ -10432,7 +10436,7 @@ body #success-alert:after {
 
 
  @media (min-width: 992px) and (max-width: 1199.98px) {
-    /*******************************business-funds***********************************************/  
+    /*******************************business-funds***********************************************/
      /* .row {
         margin-right:10px;
       }
@@ -10446,7 +10450,7 @@ body #success-alert:after {
     #how-business-funds-works {
         padding:5px;
     }
-    
+
     #how-business-funds-works .container {
         margin-top:60px;
 
@@ -10481,7 +10485,7 @@ body #success-alert:after {
         width: 2px;
         margin-left:30px;
     }
-    
+
 
     body #app>main section#how-business-funds-works .container .business-funds-container .ceo .ceo-photo img {
         width: 450.00px;
@@ -10509,7 +10513,7 @@ body #success-alert:after {
     /**********************************************************************************************/
 
 
-    /*******************************Hightlits-new***********************************************/  
+    /*******************************Hightlits-new***********************************************/
     body #app>main section#highlights-new .highlight-minimalist{
         display:none;
     }
@@ -10525,7 +10529,7 @@ body #success-alert:after {
     body #app>main section#highlights-new .highlight-tablet .row div{
         margin-left:0px;
     }
-    
+
     body #app>main section#highlights-new .highlight-tablet .row .col-lg-3 div:last-child{
         color:#97C35E;
     }
@@ -10555,7 +10559,7 @@ body #success-alert:after {
     }
 
     /******************************************************************************************/
-        
+
     /****************************************features-new*********************************/
 
     body #app>main section#testimonials-new .right-container .comment-customer {
@@ -10587,7 +10591,7 @@ body #success-alert:after {
         text-align: center;
     }
     body #app>main section#features-new .container .have-you-tablet {
-        left: 10px;   
+        left: 10px;
     }
     body #app>main section#features-new .container .have-you-tablet .letters-have-you {
         margin-left: 192px;
@@ -10596,13 +10600,13 @@ body #success-alert:after {
     body #app>main section#features-new  .container .have-you-tablet{
         display: block;
     }
-        
+
     body #app>main section#features-new  .container .have-you-tablet {
         left: 15px;
         height:100px;
         padding:35px 0 20px 0px;
         border-radius: 5px;
-        background:#2B4A70;    
+        background:#2B4A70;
     }
     body #app>main section#features-new .container .letters-have-you {
         margin-left:32px;
@@ -10626,9 +10630,9 @@ body #success-alert:after {
         font-family:Roboto;
         color:white;
         margin-right:200px;
-        
+
     }
-    
+
     body #app>main section#features-new .container .have-you-tablet {
         height: 196px;
         left: 0px;
@@ -10647,11 +10651,11 @@ body #success-alert:after {
     body #app>main section#features-new .tabs .tab-headings {
         order: 2;
     }
-    
+
     body #app>main section#features-new .tabs .tab-headings nav .nav-tabs {
         border: none;
     }
-    
+
     body #app>main section#features-new .tabs .tab-headings nav .nav-tabs a {
         width: 100%;
         display: flex;
@@ -10664,7 +10668,7 @@ body #success-alert:after {
         color: #323831;
         transition: ease all .4s;
     }
-    
+
     body #app>main section#features-new .tabs .tab-headings nav .nav-tabs a i {
         font-size: 24px;
         width: 64px;
@@ -10675,25 +10679,25 @@ body #success-alert:after {
         background: white;
         border-right: solid 1px #f7f7f7;
     }
-    
+
     body #app>main section#features-new .tabs .tab-headings nav .nav-tabs a span {
         padding-left: 15px;
     }
-    
+
     body #app>main section#features-new .tabs .tab-headings nav .nav-tabs a.active i {
         background: #162c4e;
         color: #c5e2bd;
     }
-    
+
     body #app>main section#features-new .tabs .tab-headings nav .nav-tabs a.active span {
         color: #359c1c;
     }
-    
+
     body #app>main section#features-new .tabs .tab-headings nav .nav-tabs a:hover {
         transform: translateY(-2px);
         box-shadow: 0 8px 16px -4px rgba(83, 167, 61, 0.3);
     }
-    
+
     body #app>main section#features-new .tabs .tab-descriptions {
         background:#ffffff;
         padding:0px 0 0 0;
@@ -10702,13 +10706,13 @@ body #success-alert:after {
         width:97%;
         margin-left:13px;
     }
-    
+
     body #app>main section#features-new .table-wrapper {
         box-shadow: 0 16px 48px rgba(83, 167, 61, 0.1);
         margin-top: 30px;
         padding: 60px 60px 30px;
     }
-    
+
     body #app>main section#features-new .table-wrapper table {
         margin: 35px 0;
     }
@@ -10721,38 +10725,38 @@ body #success-alert:after {
         margin-top:120px;
         min-height:70px;
     }
-    
+
     body #app>main section#features-new .tab-descriptions .tab-content .arrow-right{
         margin-top:116px;
         min-height:70px;
     }
-    
-    
-    
+
+
+
     body #app>main section#features-new .tab-descriptions .tab-content a.arrow-left{
         background-image: url('/assets/img/arrow-green-left.png');
     }
-    
+
     body #app>main section#features-new .tab-descriptions .tab-content .paragraph {
          width:100%;
          height:300px;
-         padding:0px; 
+         padding:0px;
          text-align: center;
          position:static
-    
+
     }
-    
+
     body #app>main section#features-new .carrousel-content {
     padding-right:25px;
-    
+
     }
-    
+
     body #app>main section#features-new .tab-descriptions .tab-content .collateral .paragraph {
         width:970px;
-    
+
     }
-    
-    
+
+
     body #app>main section#features-new .tab-descriptions .tab-content a.arrow-right{
         background-image: url('/assets/img/arrow-green-right.png');
         float: right;
@@ -10762,7 +10766,7 @@ body #success-alert:after {
         bottom:2%;
         left:44.6%;
         max-width:21%;
-    
+
     }
     body #app>main section#features-new .dots-headings a.elipse{
         background-image: url('/assets/img/elipse-purple.svg');
@@ -10790,12 +10794,12 @@ body #success-alert:after {
      body #app>main section#stats .stats-info .headline h2 {
         font-size:30px;
         margin-left:12px;
-    } 
+    }
 
     body #app>main section#stats .stats-info .hello h6 {
         margin-left:12px;
     }
-    
+
     /* body #app>main section#stats .stats-info .row .headline h2 {
         font-size:14px;
     } */
@@ -10827,7 +10831,7 @@ body #success-alert:after {
     @media only screen and (min-width: 992px) {
 
      }
-    @media only screen and (max-width: 991px) { 
+    @media only screen and (max-width: 991px) {
         /*nav-991*/
         body #app>nav.apple .nav-wrapper .container .menus .navbar-left a.branding.logo {
             padding-right:50px;
@@ -10922,7 +10926,7 @@ body #success-alert:after {
     @media only screen and (max-width: 767px) { }
     @media only screen and (max-width: 576px) { }
     @media only screen and (max-width: 414px) {
-    
+
 
     body #app>nav.apple .nav-wrapper .burger-container #burger {
         top: 52%;
@@ -10937,7 +10941,8 @@ body #success-alert:after {
         background-repeat: no-repeat;
         max-height: 291px;
         background-image: url(/assets/img/hero-bckg-mobile-360.png);
-        background-size: 360px 291px;
+        background-size: 100% 58%;
+
     }
 
 
@@ -10996,6 +11001,200 @@ body #success-alert:after {
         font-weight: 600;
         max-width: 200px;
     }
+
+    body #app>main section#stats .bckgs {
+        min-height: 727px;
+        z-index: 1;
+        max-width: 375px;
+    }
+
+    body #app>main section#highlights-new {
+
+        margin: -210px 0 0 0px;
+        padding: 25px 0 0 10px;
+        background-color: white;
+        max-width: 414px;
+        min-height: 250px;
+        width: 100%;
+        height: 100%;
+    }
+
+    body #app>main section#highlights-new .highlight {
+        display: block;
+    }
+
+    body #app>main section#highlights-new .highlight-tablet {
+        display: none;
+    }
+
+    body #app>main section#highlights-new .highlight .highlight-icons.check-square {
+        margin: 10px 0 0 5px;
+    }
+
+    body #app>main section#highlights-new .highlight .highlight-icons {
+        margin: 5px 0 0 5px;
+    }
+
+    body #app>main section#highlights-new .highlight .highlight-icons.approval {
+        margin-left: 5px;
+    }
+
+    body #app>main section#highlights-new .highlight .bad-credit-hl {
+        margin: -35px 0 25px 60px;
+        min-width: 250px;
+    }
+
+    body #app>main section#highlights-new .highlight .minimal-doc-hl {
+         margin: -35px 0 25px 60px;
+         min-width: 250px;
+     }
+
+    body #app>main section#highlights-new .highlight .approval-hr-hl {
+        margin: -35px 0 25px 60px;
+        min-width: 250px;
+    }
+
+    body #app>main section#stats {
+        background-color: white;
+        margin: 0;
+        border-top: 1px solid #f2f2f2;
+        max-width: 414px;
+        min-height: 647px;
+        width: 100%;
+        height: 100%;
+    }
+
+    body #app>main section#stats .stats-info {
+        z-index: 2;
+        min-height: 786px;
+        position: relative;
+        color: #000000;
+        margin-top: -786px;
+        padding: 0 0 0 30px;
+    }
+
+    body #app>main section#stats .stats-info .facts-info {
+
+        padding: 0 15px 0 5px;
+        max-width: 345px;
+        overflow: hidden;
+        top: 0px;
+    }
+
+        body #app>main section#stats .facts-bckg {
+            background-color: #F9F9F9;
+            height: 375px;
+        }
+
+    body #app>main section#stats .stats-info .hello h6 {
+        font-size: 16px;
+    }
+
+    body #app>main section#stats .stats-info .headline {
+        margin: -10px 0 0 0;
+        padding: 0 0 12px 0;
+    }
+
+    body #app>main section#stats .stats-info .numbers {
+            width: 50%;
+   }
+
+        body #app>main section#stats .stats-info .apply-now {
+            display: none;
+        }
+
+    body #app>main section#stats .stats-info .headline h2 {
+        font-size: 22px;
+        line-height: 34px;
+    }
+
+    body #app>main section#stats .stats-info .numbers h2 {
+        font-size: 60px;
+        line-height: 50px;
+        color: #97C35E;
+    }
+
+    body #app>main section#stats .stats-info .numbers .little-plus {
+        top: -18px;
+    }
+
+    body #app>main section#stats .stats-info .numbers h3 {
+        font-size: 14px;
+        line-height: 10px;
+    }
+    body #app>main section#stats .stats-info .numbers p {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 20px;
+        color: #6A6A6A;
+        text-align: left;
+    }
+
+        body #app>main section#stats .stats-info .circle-responsive-3 {
+            display: none;
+        }
+
+        body #app>main section#stats .stats-info .play-btn {
+
+            top: 51%;
+            right: 0%;
+        }
+
+        body #app>main section#stats .stats-info .play-btn img {
+            width: 60px;
+            height: 60px;
+
+        }
+
+        body #app>main section#stats .stats-info .video {
+            background-color: #ffffff;
+            position: relative;
+            top: 265px;
+        }
+
+        body #app>main section#stats .stats-info .video-cover {
+            width: 300px;
+            height: 173px;
+            margin: -170px 0 0 0;
+
+        }
+        body #app>main section#stats .stats-info .video .video-cover img {
+            width: 300px;
+            height: 173px;
+
+            margin: 0 auto;
+
+        }
+
+        body #app>main section#stats .stats-info .video-link {
+            position: relative;
+            z-index: 5;
+            display: block;
+            top: -415%;
+            margin: 0 auto;
+            padding: 0;
+            left: 23%;
+        }
+
+        body #app>main section#stats .stats-info .video-link a {
+            color: #97C35E;
+        }
+
+        body #app>main section#stats .stats-info .video .trustpilot-horizontal {
+            width: 270px;
+            height: auto;
+            margin: 0 auto;
+            position: relative;
+            top: 25px;
+            right: 20px;
+        }
+
+
+
+
+
 }
 
 
