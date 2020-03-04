@@ -15256,7 +15256,7 @@ body #success-alert:after {
         color: #97C35E;
     }
     body #app>main section#highlights-new .container.highlight {
-        display:none;
+        display:block;
     }
     body #app>nav.apple .nav-wrapper .burger-container {
         height: 90px;

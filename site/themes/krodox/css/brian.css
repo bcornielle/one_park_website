@@ -10965,14 +10965,6 @@ body #success-alert:after {
     @media only screen and (max-width: 576px) { }
     @media only screen and (max-width: 414px) {
 
-
-        body #app>nav.apple .nav-wrapper .burger-container #burger {
-            top: 52%;
-        }
-    
-        body #app>nav.apple .nav-wrapper .container .menus .navbar-left a.branding.logo {
-            top: 11px;
-        }
     
         body.section-home #app>main section#hero-new, body.section-television #app>main section#hero-new {
             width: 100%;
