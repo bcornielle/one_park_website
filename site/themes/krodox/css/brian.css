@@ -10960,85 +10960,276 @@ body #success-alert:after {
     @media only screen and (max-width: 767px) { }
     @media only screen and (max-width: 576px) { }
     @media only screen and (max-width: 414px) {
+
+
+        body #app>nav.apple .nav-wrapper .burger-container #burger {
+            top: 52%;
+        }
     
-
-    body #app>nav.apple .nav-wrapper .burger-container #burger {
-        top: 52%;
+        body #app>nav.apple .nav-wrapper .container .menus .navbar-left a.branding.logo {
+            top: 11px;
+        }
+    
+        body.section-home #app>main section#hero-new, body.section-television #app>main section#hero-new {
+            width: 100%;
+            background-repeat: no-repeat;
+            max-height: 291px;
+            background-image: url(/assets/img/hero-bckg-mobile-360.png);
+            background-size: 100% 58%;
+    
+        }
+    
+    
+        body #app>main section#hero-new .hero-content-new {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: -124px 0 0 0;
+        }
+    
+        body #app>main section#hero-new .hero-content-new h1 {
+            font-size: 26px;
+            /* margin: -16px 0 0px 0; */
+            letter-spacing: 0;
+            padding: 0 0 10px 0;
+        }
+    
+        body #app>main section#hero-new .hero-content-new h2 {
+            order: 2;
+            margin-bottom: 24px;
+            color: #ffffff;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 15px;
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+    
+        }
+    
+        body #app>main section#hero-new .hero-content-new h3 {
+            order: 3;
+            color: #ffffff;
+            font-family: Roboto;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 26px;
+            letter-spacing: 0;
+            margin-bottom: 30px;
+            align-items: center;
+        }
+    
+        body #app>main section#hero-new .hero-content-new a.btn {
+            order: 4;
+            background: #97c35e;
+            box-shadow: 0px 6px 0px #72a531;
+            border: none;
+            padding: 8px 15px;
+            margin: 0;
+            text-transform: uppercase;
+            color: white;
+            transition: all ease .4s;
+            font-size: 0.9em;
+            font-weight: 600;
+            max-width: 200px;
+        }
+    
+        body #app>main section#stats .bckgs {
+            min-height: 727px;
+            z-index: 1;
+            max-width: 375px;
+        }
+    
+        body #app>main section#highlights-new {
+    
+            margin: -210px 0 0 0px;
+            padding: 25px 0 0 10px;
+            background-color: white;
+            max-width: 414px;
+            min-height: 250px;
+            width: 100%;
+            height: 100%;
+        }
+    
+        body #app>main section#highlights-new .highlight {
+            display: block;
+        }
+    
+        body #app>main section#highlights-new .highlight-tablet {
+            display: none;
+        }
+    
+        body #app>main section#highlights-new .highlight .highlight-icons.check-square {
+            margin: 10px 0 0 5px;
+        }
+    
+        body #app>main section#highlights-new .highlight .highlight-icons {
+            margin: 5px 0 0 5px;
+        }
+    
+        body #app>main section#highlights-new .highlight .highlight-icons.approval {
+            margin-left: 5px;
+        }
+    
+        body #app>main section#highlights-new .highlight .bad-credit-hl {
+            margin: -35px 0 25px 60px;
+            min-width: 250px;
+        }
+    
+        body #app>main section#highlights-new .highlight .minimal-doc-hl {
+             margin: -35px 0 25px 60px;
+             min-width: 250px;
+         }
+    
+        body #app>main section#highlights-new .highlight .approval-hr-hl {
+            margin: -35px 0 25px 60px;
+            min-width: 250px;
+        }
+    
+        body #app>main section#stats {
+            background-color: white;
+            margin: 0;
+            border-top: 1px solid #f2f2f2;
+            max-width: 414px;
+            min-height: 647px;
+            width: 100%;
+            height: 100%;
+        }
+    
+        body #app>main section#stats .stats-info {
+            z-index: 2;
+            min-height: 786px;
+            position: relative;
+            color: #000000;
+            margin-top: -786px;
+            padding: 0 0 0 30px;
+        }
+    
+        body #app>main section#stats .stats-info .facts-info {
+    
+            padding: 0 15px 0 5px;
+            max-width: 345px;
+            overflow: hidden;
+            top: 0px;
+        }
+    
+            body #app>main section#stats .facts-bckg {
+                background-color: #F9F9F9;
+                height: 375px;
+            }
+    
+        body #app>main section#stats .stats-info .hello h6 {
+            font-size: 16px;
+        }
+    
+        body #app>main section#stats .stats-info .headline {
+            margin: -10px 0 0 0;
+            padding: 0 0 12px 0;
+        }
+    
+        body #app>main section#stats .stats-info .numbers {
+                width: 50%;
+       }
+    
+            body #app>main section#stats .stats-info .apply-now {
+                display: none;
+            }
+    
+        body #app>main section#stats .stats-info .headline h2 {
+            font-size: 22px;
+            line-height: 34px;
+        }
+    
+        body #app>main section#stats .stats-info .numbers h2 {
+            font-size: 60px;
+            line-height: 50px;
+            color: #97C35E;
+        }
+    
+        body #app>main section#stats .stats-info .numbers .little-plus {
+            top: -18px;
+        }
+    
+        body #app>main section#stats .stats-info .numbers h3 {
+            font-size: 14px;
+            line-height: 10px;
+        }
+        body #app>main section#stats .stats-info .numbers p {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 20px;
+            color: #6A6A6A;
+            text-align: left;
+        }
+    
+            body #app>main section#stats .stats-info .circle-responsive-3 {
+                display: none;
+            }
+    
+            body #app>main section#stats .stats-info .play-btn {
+    
+                top: 51%;
+                right: 0%;
+            }
+    
+            body #app>main section#stats .stats-info .play-btn img {
+                width: 60px;
+                height: 60px;
+    
+            }
+    
+            body #app>main section#stats .stats-info .video {
+                background-color: #ffffff;
+                position: relative;
+                top: 265px;
+            }
+    
+            body #app>main section#stats .stats-info .video-cover {
+                width: 300px;
+                height: 173px;
+                margin: -170px 0 0 0;
+    
+            }
+            body #app>main section#stats .stats-info .video .video-cover img {
+                width: 300px;
+                height: 173px;
+    
+                margin: 0 auto;
+    
+            }
+    
+            body #app>main section#stats .stats-info .video-link {
+                position: relative;
+                z-index: 5;
+                display: block;
+                top: -445%;
+                margin: 0 auto;
+                padding: 0;
+                left: 23%;
+            }
+    
+            body #app>main section#stats .stats-info .video-link a {
+                color: #97C35E;
+            }
+    
+            body #app>main section#stats .stats-info .video .trustpilot-horizontal {
+                width: 270px;
+                height: auto;
+                margin: 0 auto;
+                position: relative;
+                top: 25px;
+                right: 20px;
+            }
+    
+    
+    
+    
+    
     }
-
-    body #app>nav.apple .nav-wrapper .container .menus .navbar-left a.branding.logo {
-        margin-top: 15%;
-        position:relative;
-        right:30%;
-        background:black;
-    }
-
-
-    body.section-home #app>main section#hero-new, body.section-television #app>main section#hero-new {
-        width: 100%;
-        background-repeat: no-repeat;
-        max-height: 291px;
-        background-image: url(/assets/img/hero-bckg-mobile-360.png);
-        background-size: 360px 291px;
-    }
-
-
-    body #app>main section#hero-new .hero-content-new {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: -124px 0 0 0;
-    }
-
-    body #app>main section#hero-new .hero-content-new h1 {
-        font-size: 26px;
-        /* margin: -16px 0 0px 0; */
-        letter-spacing: 0;
-        padding: 0 0 10px 0;
-    }
-
-    body #app>main section#hero-new .hero-content-new h2 {
-        order: 2;
-        margin-bottom: 24px;
-        color: #ffffff;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 20px;
-        line-height: 15px;
-        display: flex;
-        align-items: center;
-        color: #FFFFFF;
-
-    }
-
-    body #app>main section#hero-new .hero-content-new h3 {
-        order: 3;
-        color: #ffffff;
-        font-family: Roboto;
-        font-weight: 300;
-        font-size: 18px;
-        line-height: 26px;
-        letter-spacing: 0;
-        margin-bottom: 30px;
-        align-items: center;
-    }
-
-    body #app>main section#hero-new .hero-content-new a.btn {
-        order: 4;
-        background: #97c35e;
-        box-shadow: 0px 6px 0px #72a531;
-        border: none;
-        padding: 8px 15px;
-        margin: 0;
-        text-transform: uppercase;
-        color: white;
-        transition: all ease .4s;
-        font-size: 0.9em;
-        font-weight: 600;
-        max-width: 200px;
-    }
-}
 
 
 
