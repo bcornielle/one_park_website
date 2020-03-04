@@ -11170,7 +11170,7 @@ body #success-alert:after {
             position: relative;
             z-index: 5;
             display: block;
-            top: -445%
+            top: -445%;
             margin: 0 auto;
             padding: 0;
             left: 23%;
